@@ -1,0 +1,20 @@
+ACCOUNT = REDACTED
+PASSWORD = "REDACTED"
+SERVER = "TradeMaxGlobal-Live"
+MT5_PATH = r"C:\\Program Files\\MetaTrader 5_10\\terminal64.exe"
+
+MetaTrader
+ACCOUNT = REDACTED
+PASSWORD = "REDACTED"
+COMMENT = "RSI(14; 65, 35; 4+3), BB(20; 3)"
+
+MetaTrader
+ACCOUNT = REDACTED
+PASSWORD = "REDACTED"
+COMMENT = "RSI(14; 65, 35; 4+3), BB(20; 3), SL(10*ATR)"
+
+
+MetaTrader
+ACCOUNT = REDACTED
+PASSWORD = "REDACTED"
+COMMENT = "RSI(14; 65, 35; 4+3), BB(20; 3), ADX(14; 50)"
