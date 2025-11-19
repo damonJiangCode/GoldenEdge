@@ -1,0 +1,3490 @@
+[2025-11-17 08:24:01] $:1000.0  ---  RSI[-1]:28.32 | RSI[-2]:27.91 | RSI[-3]:33.22 | RSI[-4]:38.09  ---  BB_DIFF[-1]:21.41 | BB_DIFF[-2]:18.17 | BB_DIFF[-3]:13.28  ---  ATR:4.26
+[2025-11-17 08:24:21] $:1000.0  ---  RSI[-1]:30.04 | RSI[-2]:27.21 | RSI[-3]:32.44 | RSI[-4]:37.25  ---  BB_DIFF[-1]:20.95 | BB_DIFF[-2]:18.17 | BB_DIFF[-3]:13.28  ---  ATR:4.25
+[2025-11-17 08:24:41] $:1000.0  ---  RSI[-1]:27.11 | RSI[-2]:27.21 | RSI[-3]:32.44 | RSI[-4]:37.25  ---  BB_DIFF[-1]:21.54 | BB_DIFF[-2]:18.17 | BB_DIFF[-3]:13.28  ---  ATR:4.25
+✅ Succeeded
+Order #: 54026688505
+Direction: Sell
+Price: 4067.31
+SL: 4071.56
+TP: 4024.82
+Result: order success (10009)
+
+[2025-11-17 08:25:02] $:1000.0  ---  RSI[-1]:25.75 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.17 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:3.98
+✅ Succeeded
+Order #: 54026692472
+Direction: Sell
+Price: 4065.81
+SL: 4069.79
+TP: 4026.04
+Result: order success (10009)
+
+[2025-11-17 08:25:22] $:1000.0  ---  RSI[-1]:25.68 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.20 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.01
+✅ Succeeded
+Order #: 54026697678
+Direction: Sell
+Price: 4065.74
+SL: 4069.75
+TP: 4025.60
+Result: order success (10009)
+
+[2025-11-17 08:25:42] $:1000.0  ---  RSI[-1]:24.68 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.70 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.07
+✅ Succeeded
+Order #: 54026703383
+Direction: Sell
+Price: 4064.59
+SL: 4068.66
+TP: 4023.90
+Result: order success (10009)
+
+[2025-11-17 08:26:02] $:1000.0  ---  RSI[-1]:23.53 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:26.39 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.18
+✅ Succeeded
+Order #: 54026712959
+Direction: Sell
+Price: 4063.14
+SL: 4067.32
+TP: 4021.32
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026688505
+Direction: Sell
+Profits: 2.22
+SL: 4065.02
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026692472
+Direction: Sell
+Profits: 2.22
+SL: 4063.59
+Result: order success (10009)
+[2025-11-17 08:26:23] $:1000.0  ---  RSI[-1]:22.13 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:27.38 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026730008
+Direction: Sell
+Price: 4061.26
+SL: 4065.71
+TP: 4016.78
+Result: order success (10009)
+
+[2025-11-17 08:26:43] $:1000.0  ---  RSI[-1]:22.45 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:27.13 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026735019
+Direction: Sell
+Price: 4061.64
+SL: 4066.09
+TP: 4017.16
+Result: order success (10009)
+
+[2025-11-17 08:27:03] $:1000.0  ---  RSI[-1]:23.28 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:26.55 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026738920
+Direction: Sell
+Price: 4062.81
+SL: 4067.26
+TP: 4018.33
+Result: order success (10009)
+
+[2025-11-17 08:27:23] $:1000.0  ---  RSI[-1]:23.25 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:26.57 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026742360
+Direction: Sell
+Price: 4062.76
+SL: 4067.21
+TP: 4018.28
+Result: order success (10009)
+
+[2025-11-17 08:27:43] $:1002.22  ---  RSI[-1]:23.75 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:26.25 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026746253
+Direction: Sell
+Price: 4063.53
+SL: 4067.98
+TP: 4019.05
+Result: order success (10009)
+
+[2025-11-17 08:28:03] $:1002.22  ---  RSI[-1]:24.74 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.68 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026749818
+Direction: Sell
+Price: 4064.65
+SL: 4069.10
+TP: 4020.17
+Result: order success (10009)
+
+[2025-11-17 08:28:24] $:1004.44  ---  RSI[-1]:24.91 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.58 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026753743
+Direction: Sell
+Price: 4064.86
+SL: 4069.31
+TP: 4020.38
+Result: order success (10009)
+
+[2025-11-17 08:28:44] $:999.99  ---  RSI[-1]:25.40 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.34 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026756631
+Direction: Sell
+Price: 4065.42
+SL: 4069.87
+TP: 4020.94
+Result: order success (10009)
+
+[2025-11-17 08:29:04] $:999.99  ---  RSI[-1]:24.23 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.96 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026760616
+Direction: Sell
+Price: 4064.04
+SL: 4068.49
+TP: 4019.56
+Result: order success (10009)
+
+[2025-11-17 08:29:24] $:999.99  ---  RSI[-1]:24.80 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.64 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026765048
+Direction: Sell
+Price: 4064.73
+SL: 4069.18
+TP: 4020.25
+Result: order success (10009)
+
+[2025-11-17 08:29:44] $:999.99  ---  RSI[-1]:24.95 | RSI[-2]:26.15 | RSI[-3]:27.21 | RSI[-4]:32.44  ---  BB_DIFF[-1]:25.57 | BB_DIFF[-2]:22.06 | BB_DIFF[-3]:18.17  ---  ATR:4.45
+✅ Succeeded
+Order #: 54026769049
+Direction: Sell
+Price: 4064.90
+SL: 4069.35
+TP: 4020.42
+Result: order success (10009)
+
+[2025-11-17 08:30:05] $:999.99  ---  RSI[-1]:24.18 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:28.39 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.17
+✅ Succeeded
+Order #: 54026772470
+Direction: Sell
+Price: 4063.97
+SL: 4068.14
+TP: 4022.30
+Result: order success (10009)
+
+[2025-11-17 08:30:25] $:999.99  ---  RSI[-1]:22.78 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:29.11 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.28
+✅ Succeeded
+Order #: 54026776854
+Direction: Sell
+Price: 4062.28
+SL: 4066.56
+TP: 4019.48
+Result: order success (10009)
+
+[2025-11-17 08:30:45] $:999.99  ---  RSI[-1]:22.22 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:29.44 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.46
+✅ Succeeded
+Order #: 54026783188
+Direction: Sell
+Price: 4061.53
+SL: 4065.99
+TP: 4016.90
+Result: order success (10009)
+
+[2025-11-17 08:31:05] $:999.99  ---  RSI[-1]:22.03 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:29.56 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.46
+✅ Succeeded
+Order #: 54026789069
+Direction: Sell
+Price: 4061.27
+SL: 4065.73
+TP: 4016.64
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 2.30
+SL: 4063.44
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 2.30
+SL: 4062.29
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.30
+SL: 4061.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.30
+SL: 4061.23
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 2.30
+SL: 4062.35
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 2.30
+SL: 4062.73
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 2.30
+SL: 4063.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.30
+SL: 4061.38
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 2.30
+SL: 4062.43
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 2.30
+SL: 4062.59
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 2.30
+SL: 4061.67
+Result: order success (10009)
+[2025-11-17 08:31:27] $:999.99  ---  RSI[-1]:20.22 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:30.88 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.60
+✅ Succeeded
+Order #: 54026799805
+Direction: Sell
+Price: 4059.44
+SL: 4064.04
+TP: 4013.39
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 2.32
+SL: 4063.42
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 2.32
+SL: 4062.27
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026712959
+Direction: Sell
+Profits: 2.32
+SL: 4060.84
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026738920
+Direction: Sell
+Profits: 2.32
+SL: 4060.69
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.32
+SL: 4061.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.32
+SL: 4061.21
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 2.32
+SL: 4062.33
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 2.32
+SL: 4062.71
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 2.32
+SL: 4063.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.32
+SL: 4061.36
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 2.32
+SL: 4062.41
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 2.32
+SL: 4062.57
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 2.32
+SL: 4061.65
+Result: order success (10009)
+[2025-11-17 08:31:49] $:999.99  ---  RSI[-1]:19.76 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:31.28 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.63
+✅ Succeeded
+Order #: 54026808470
+Direction: Sell
+Price: 4058.05
+SL: 4062.68
+TP: 4011.70
+Result: order success (10009)
+
+[2025-11-17 08:32:09] $:1004.63  ---  RSI[-1]:21.16 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:30.15 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.63
+✅ Succeeded
+Order #: 54026813719
+Direction: Sell
+Price: 4059.99
+SL: 4064.62
+TP: 4013.64
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 4.83
+SL: 4060.91
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 2.41
+SL: 4062.18
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 2.41
+SL: 4059.23
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.41
+SL: 4061.01
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.41
+SL: 4061.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 2.41
+SL: 4062.24
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 2.41
+SL: 4062.62
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 2.41
+SL: 4063.01
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.41
+SL: 4061.27
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 2.41
+SL: 4062.32
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 2.41
+SL: 4062.48
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 2.41
+SL: 4061.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 2.41
+SL: 4059.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 2.41
+SL: 4059.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.41
+SL: 4058.86
+Result: order success (10009)
+[2025-11-17 08:32:31] $:1004.63  ---  RSI[-1]:18.62 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:32.39 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.83
+✅ Succeeded
+Order #: 54026828627
+Direction: Sell
+Price: 4055.78
+SL: 4060.61
+TP: 4007.48
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 2.43
+SL: 4062.16
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 2.43
+SL: 4059.21
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.43
+SL: 4060.99
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.43
+SL: 4061.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 2.43
+SL: 4062.22
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 2.43
+SL: 4062.6
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 2.43
+SL: 4062.99
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.43
+SL: 4061.25
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 2.43
+SL: 4062.3
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 2.43
+SL: 4062.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 2.43
+SL: 4061.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 2.43
+SL: 4059.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 2.43
+SL: 4059.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.43
+SL: 4058.84
+Result: order success (10009)
+[2025-11-17 08:32:53] $:1004.63  ---  RSI[-1]:18.81 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:32.19 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.87
+✅ Succeeded
+Order #: 54026837258
+Direction: Sell
+Price: 4055.34
+SL: 4060.21
+TP: 4006.68
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 4.91
+SL: 4060.83
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 4.91
+SL: 4059.68
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 2.46
+SL: 4059.18
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.46
+SL: 4060.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.46
+SL: 4061.07
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 4.91
+SL: 4059.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 4.91
+SL: 4060.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 4.91
+SL: 4060.51
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.46
+SL: 4061.22
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 4.91
+SL: 4059.82
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 4.91
+SL: 4059.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 4.91
+SL: 4059.06
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 2.46
+SL: 4059.51
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 2.46
+SL: 4059.07
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.46
+SL: 4058.81
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026799805
+Direction: Sell
+Profits: 2.46
+SL: 4056.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026813719
+Direction: Sell
+Profits: 2.46
+SL: 4057.53
+Result: order success (10009)
+[2025-11-17 08:33:16] $:1004.63  ---  RSI[-1]:17.70 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:33.44 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.91
+✅ Succeeded
+Order #: 54026845763
+Direction: Sell
+Price: 4054.19
+SL: 4059.10
+TP: 4005.09
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 4.93
+SL: 4060.81
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 2.47
+SL: 4059.17
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 2.47
+SL: 4060.95
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 2.47
+SL: 4061.06
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 4.93
+SL: 4060.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 4.93
+SL: 4060.49
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 2.47
+SL: 4061.21
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 4.93
+SL: 4059.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 2.47
+SL: 4059.5
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 2.47
+SL: 4059.06
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.47
+SL: 4058.8
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026813719
+Direction: Sell
+Profits: 2.47
+SL: 4057.52
+Result: order success (10009)
+[2025-11-17 08:33:37] $:1004.63  ---  RSI[-1]:18.18 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:32.87 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.93
+✅ Succeeded
+Order #: 54026852453
+Direction: Sell
+Price: 4054.74
+SL: 4059.67
+TP: 4005.42
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 4.93
+SL: 4059.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 4.93
+SL: 4059.72
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 4.93
+SL: 4059.8
+Result: order success (10009)
+[2025-11-17 08:33:58] $:1004.63  ---  RSI[-1]:18.00 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:33.08 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.93
+✅ Succeeded
+Order #: 54026856635
+Direction: Sell
+Price: 4054.38
+SL: 4059.31
+TP: 4005.06
+Result: order success (10009)
+
+[2025-11-17 08:34:18] $:1004.63  ---  RSI[-1]:18.56 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:32.45 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.93
+✅ Succeeded
+Order #: 54026860910
+Direction: Sell
+Price: 4055.51
+SL: 4060.44
+TP: 4006.19
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 4.94
+SL: 4060.8
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 4.94
+SL: 4059.65
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 4.94
+SL: 4058.59
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 4.94
+SL: 4059.71
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 4.94
+SL: 4060.09
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 4.94
+SL: 4060.48
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 4.94
+SL: 4058.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 4.94
+SL: 4059.79
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 4.94
+SL: 4059.95
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 4.94
+SL: 4059.03
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026799805
+Direction: Sell
+Profits: 2.47
+SL: 4056.97
+Result: order success (10009)
+[2025-11-17 08:34:40] $:1004.63  ---  RSI[-1]:17.51 | RSI[-2]:24.51 | RSI[-3]:26.15 | RSI[-4]:27.21  ---  BB_DIFF[-1]:33.68 | BB_DIFF[-2]:25.80 | BB_DIFF[-3]:22.06  ---  ATR:4.94
+✅ Succeeded
+Order #: 54026867049
+Direction: Sell
+Price: 4053.09
+SL: 4058.03
+TP: 4003.72
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 4.59
+SL: 4058.83
+Result: order success (10009)
+[2025-11-17 08:35:00] $:1004.63  ---  RSI[-1]:17.60 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.15 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:4.59
+✅ Succeeded
+Order #: 54026872220
+Direction: Sell
+Price: 4053.51
+SL: 4058.10
+TP: 4007.59
+Result: order success (10009)
+
+[2025-11-17 08:35:20] $:1004.63  ---  RSI[-1]:22.89 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:38.05 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:4.80
+[2025-11-17 08:35:40] $:1004.63  ---  RSI[-1]:20.69 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:38.51 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:4.80
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 4.99
+SL: 4060.75
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 4.99
+SL: 4059.6
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 4.99
+SL: 4056.65
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 4.99
+SL: 4058.43
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 4.99
+SL: 4058.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 4.99
+SL: 4059.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 4.99
+SL: 4060.04
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 4.99
+SL: 4060.43
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 4.99
+SL: 4058.69
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 4.99
+SL: 4059.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 4.99
+SL: 4059.9
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 4.99
+SL: 4058.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 4.99
+SL: 4056.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 4.99
+SL: 4056.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.49
+SL: 4058.78
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026799805
+Direction: Sell
+Profits: 2.49
+SL: 4056.95
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026808470
+Direction: Sell
+Profits: 2.49
+SL: 4055.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026813719
+Direction: Sell
+Profits: 2.49
+SL: 4057.5
+Result: order success (10009)
+[2025-11-17 08:36:03] $:1004.63  ---  RSI[-1]:16.40 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:40.40 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:4.99
+✅ Succeeded
+Order #: 54026894292
+Direction: Sell
+Price: 4050.48
+SL: 4055.47
+TP: 4000.60
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 5.02
+SL: 4060.72
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 5.02
+SL: 4059.57
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 5.02
+SL: 4058.4
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 5.02
+SL: 4058.51
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 5.02
+SL: 4059.63
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 5.02
+SL: 4060.01
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 5.02
+SL: 4060.4
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 5.02
+SL: 4058.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 5.02
+SL: 4059.71
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 5.02
+SL: 4059.87
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 5.02
+SL: 4058.95
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 2.51
+SL: 4058.76
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026799805
+Direction: Sell
+Profits: 2.51
+SL: 4056.93
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026808470
+Direction: Sell
+Profits: 2.51
+SL: 4055.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026813719
+Direction: Sell
+Profits: 2.51
+SL: 4057.48
+Result: order success (10009)
+[2025-11-17 08:36:25] $:1004.63  ---  RSI[-1]:16.84 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.92 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.02
+✅ Succeeded
+Order #: 54026900386
+Direction: Sell
+Price: 4050.88
+SL: 4055.90
+TP: 4000.70
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 5.03
+SL: 4060.71
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 5.03
+SL: 4059.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 5.03
+SL: 4056.61
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 5.03
+SL: 4058.39
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 5.03
+SL: 4058.5
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 5.03
+SL: 4059.62
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 5.03
+SL: 4060.0
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 5.03
+SL: 4060.39
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 5.03
+SL: 4058.65
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 5.03
+SL: 4059.7
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 5.03
+SL: 4059.86
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 5.03
+SL: 4058.94
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 5.03
+SL: 4056.94
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 5.03
+SL: 4056.5
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 5.03
+SL: 4056.24
+Result: order success (10009)
+[2025-11-17 08:36:47] $:1004.63  ---  RSI[-1]:16.33 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:40.49 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.03
+✅ Succeeded
+Order #: 54026906360
+Direction: Sell
+Price: 4050.55
+SL: 4055.58
+TP: 4000.26
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026697678
+Direction: Sell
+Profits: 5.07
+SL: 4060.67
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026703383
+Direction: Sell
+Profits: 5.07
+SL: 4059.52
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026742360
+Direction: Sell
+Profits: 5.07
+SL: 4058.35
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026746253
+Direction: Sell
+Profits: 5.07
+SL: 4058.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026749818
+Direction: Sell
+Profits: 5.07
+SL: 4059.58
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026753743
+Direction: Sell
+Profits: 5.07
+SL: 4059.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026756631
+Direction: Sell
+Profits: 5.07
+SL: 4060.35
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026760616
+Direction: Sell
+Profits: 5.07
+SL: 4058.61
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026765048
+Direction: Sell
+Profits: 5.07
+SL: 4059.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026769049
+Direction: Sell
+Profits: 5.07
+SL: 4059.82
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026772470
+Direction: Sell
+Profits: 5.07
+SL: 4058.9
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026776854
+Direction: Sell
+Profits: 5.07
+SL: 4056.9
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026799805
+Direction: Sell
+Profits: 2.54
+SL: 4056.9
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026808470
+Direction: Sell
+Profits: 2.54
+SL: 4055.51
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026813719
+Direction: Sell
+Profits: 2.54
+SL: 4057.45
+Result: order success (10009)
+[2025-11-17 08:37:10] $:1004.63  ---  RSI[-1]:16.60 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:40.18 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+✅ Succeeded
+Order #: 54026914900
+Direction: Sell
+Price: 4051.20
+SL: 4056.27
+TP: 4000.46
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54026735019
+Direction: Sell
+Profits: 5.07
+SL: 4056.57
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026783188
+Direction: Sell
+Profits: 5.07
+SL: 4056.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54026789069
+Direction: Sell
+Profits: 5.07
+SL: 4056.2
+Result: order success (10009)
+[2025-11-17 08:37:30] $:1004.63  ---  RSI[-1]:16.30 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:40.53 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4050.67
+SL: 4055.74
+TP: 3999.93
+Result: order no money (10019)
+
+[2025-11-17 08:37:50] $:1004.63  ---  RSI[-1]:17.27 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.47 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4052.83
+SL: 4057.90
+TP: 4002.09
+Result: order no money (10019)
+
+[2025-11-17 08:38:10] $:1004.63  ---  RSI[-1]:17.24 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.50 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4052.76
+SL: 4057.83
+TP: 4002.02
+Result: order no money (10019)
+
+[2025-11-17 08:38:30] $:1004.63  ---  RSI[-1]:19.56 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:38.74 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+[2025-11-17 08:38:50] $:1004.63  ---  RSI[-1]:18.04 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.05 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+[2025-11-17 08:39:10] $:1004.63  ---  RSI[-1]:16.95 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.80 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4052.14
+SL: 4057.21
+TP: 4001.40
+Result: order no money (10019)
+
+[2025-11-17 08:39:30] $:1004.63  ---  RSI[-1]:16.77 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.98 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4051.75
+SL: 4056.82
+TP: 4001.01
+Result: order no money (10019)
+
+[2025-11-17 08:39:50] $:1004.63  ---  RSI[-1]:17.27 | RSI[-2]:17.61 | RSI[-3]:24.51 | RSI[-4]:26.15  ---  BB_DIFF[-1]:39.46 | BB_DIFF[-2]:33.56 | BB_DIFF[-3]:25.80  ---  ATR:5.07
+❌ Failed
+Order #: 0
+Direction: Sell
+Price: 4052.84
+SL: 4057.91
+TP: 4002.10
+Result: order no money (10019)
+
+[2025-11-17 08:40:10] $:1004.63  ---  RSI[-1]:19.24 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:42.51 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.77
+[2025-11-17 08:40:30] $:1004.63  ---  RSI[-1]:17.45 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.24 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.87
+[2025-11-17 08:40:50] $:1004.63  ---  RSI[-1]:17.44 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.25 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.90
+[2025-11-17 08:41:10] $:1004.63  ---  RSI[-1]:17.77 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:42.99 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:41:30] $:1004.63  ---  RSI[-1]:18.08 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:42.76 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:41:50] $:1004.63  ---  RSI[-1]:17.68 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.06 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:42:10] $:1004.63  ---  RSI[-1]:17.29 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.38 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:42:30] $:1004.63  ---  RSI[-1]:17.41 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.27 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:42:50] $:1004.63  ---  RSI[-1]:17.64 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:43.09 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.93
+[2025-11-17 08:43:10] $:1004.63  ---  RSI[-1]:21.15 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:42.21 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:4.96
+[2025-11-17 08:43:30] $:992.16  ---  RSI[-1]:23.29 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:41.85 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:5.03
+[2025-11-17 08:43:50] $:992.16  ---  RSI[-1]:23.19 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:41.87 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:5.03
+[2025-11-17 08:44:10] $:1009.91  ---  RSI[-1]:25.18 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:41.54 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:5.09
+[2025-11-17 08:44:30] $:1012.45  ---  RSI[-1]:25.04 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:41.56 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:5.16
+[2025-11-17 08:44:50] $:1012.45  ---  RSI[-1]:25.79 | RSI[-2]:18.18 | RSI[-3]:17.61 | RSI[-4]:24.51  ---  BB_DIFF[-1]:41.43 | BB_DIFF[-2]:39.02 | BB_DIFF[-3]:33.56  ---  ATR:5.16
+[2025-11-17 08:45:10] $:1012.45  ---  RSI[-1]:25.91 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.76 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:4.85
+[2025-11-17 08:45:30] $:1012.45  ---  RSI[-1]:25.66 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.86 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:4.91
+[2025-11-17 08:45:50] $:1012.45  ---  RSI[-1]:26.66 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.50 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:4.91
+[2025-11-17 08:46:11] $:1023.87  ---  RSI[-1]:29.33 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.13 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.05
+[2025-11-17 08:46:31] $:1029.14  ---  RSI[-1]:30.94 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:41.91 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:46:51] $:1029.14  ---  RSI[-1]:28.45 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.25 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:47:11] $:1029.14  ---  RSI[-1]:26.85 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.48 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:47:31] $:1029.14  ---  RSI[-1]:25.73 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.83 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:47:51] $:1029.14  ---  RSI[-1]:26.19 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.64 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:48:11] $:1029.14  ---  RSI[-1]:26.68 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.50 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:48:31] $:1029.14  ---  RSI[-1]:26.19 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.64 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:48:51] $:1029.14  ---  RSI[-1]:26.22 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.63 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:49:11] $:1029.14  ---  RSI[-1]:26.38 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.56 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:49:31] $:1029.14  ---  RSI[-1]:25.91 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.75 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:49:51] $:1029.14  ---  RSI[-1]:26.05 | RSI[-2]:26.47 | RSI[-3]:18.18 | RSI[-4]:17.61  ---  BB_DIFF[-1]:42.70 | BB_DIFF[-2]:41.32 | BB_DIFF[-3]:39.02  ---  ATR:5.09
+[2025-11-17 08:50:11] $:1029.14  ---  RSI[-1]:26.50 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.73 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.76
+[2025-11-17 08:50:31] $:1029.14  ---  RSI[-1]:29.24 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.40 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.85
+[2025-11-17 08:50:51] $:1029.14  ---  RSI[-1]:31.43 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.13 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.91
+[2025-11-17 08:51:11] $:1029.14  ---  RSI[-1]:32.50 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.00 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.95
+[2025-11-17 08:51:31] $:1029.14  ---  RSI[-1]:30.22 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.28 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.95
+[2025-11-17 08:51:51] $:1029.14  ---  RSI[-1]:29.45 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.37 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.95
+[2025-11-17 08:52:11] $:1029.14  ---  RSI[-1]:27.26 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.64 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:4.95
+[2025-11-17 08:52:31] $:1029.14  ---  RSI[-1]:25.40 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:44.01 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:52:51] $:1029.14  ---  RSI[-1]:27.80 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.57 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:53:11] $:1029.14  ---  RSI[-1]:26.02 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.79 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:53:31] $:1029.14  ---  RSI[-1]:25.39 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:44.01 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:53:51] $:1029.14  ---  RSI[-1]:25.32 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:44.04 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:54:11] $:1029.14  ---  RSI[-1]:25.66 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.91 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.03
+[2025-11-17 08:54:31] $:1029.14  ---  RSI[-1]:26.26 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.76 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.06
+[2025-11-17 08:54:51] $:1029.14  ---  RSI[-1]:25.66 | RSI[-2]:26.03 | RSI[-3]:26.47 | RSI[-4]:18.18  ---  BB_DIFF[-1]:43.91 | BB_DIFF[-2]:42.71 | BB_DIFF[-3]:41.32  ---  ATR:5.06
+[2025-11-17 08:55:11] $:1029.14  ---  RSI[-1]:24.66 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.49 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.75
+✅ Succeeded
+Order #: 54027116603
+Direction: Sell
+Price: 4055.19
+SL: 4059.94
+TP: 4007.73
+Result: order success (10009)
+
+[2025-11-17 08:55:31] $:1029.14  ---  RSI[-1]:23.82 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.80 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.81
+✅ Succeeded
+Order #: 54027121274
+Direction: Sell
+Price: 4054.07
+SL: 4058.88
+TP: 4005.96
+Result: order success (10009)
+
+[2025-11-17 08:55:51] $:1029.14  ---  RSI[-1]:23.82 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.80 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.85
+✅ Succeeded
+Order #: 54027126683
+Direction: Sell
+Price: 4054.07
+SL: 4058.92
+TP: 4005.53
+Result: order success (10009)
+
+[2025-11-17 08:56:11] $:1029.14  ---  RSI[-1]:24.22 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.65 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.85
+✅ Succeeded
+Order #: 54027130382
+Direction: Sell
+Price: 4054.62
+SL: 4059.47
+TP: 4006.08
+Result: order success (10009)
+
+[2025-11-17 08:56:32] $:1029.14  ---  RSI[-1]:24.75 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.46 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.85
+✅ Succeeded
+Order #: 54027134000
+Direction: Sell
+Price: 4055.31
+SL: 4060.16
+TP: 4006.77
+Result: order success (10009)
+
+[2025-11-17 08:56:52] $:1029.14  ---  RSI[-1]:25.03 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:45.36 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.86
+✅ Succeeded
+Order #: 54027137101
+Direction: Sell
+Price: 4055.67
+SL: 4060.53
+TP: 4007.07
+Result: order success (10009)
+
+[2025-11-17 08:57:12] $:1029.14  ---  RSI[-1]:28.80 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.94 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:4.97
+[2025-11-17 08:57:32] $:1029.14  ---  RSI[-1]:31.09 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.69 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.05
+[2025-11-17 08:57:52] $:1019.46  ---  RSI[-1]:29.90 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.82 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:58:12] $:1019.46  ---  RSI[-1]:30.27 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.78 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:58:32] $:1019.46  ---  RSI[-1]:30.27 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.78 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:58:52] $:1019.46  ---  RSI[-1]:29.16 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.90 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:59:12] $:1019.46  ---  RSI[-1]:28.76 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.95 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:59:32] $:1019.46  ---  RSI[-1]:29.78 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.83 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 08:59:52] $:1019.46  ---  RSI[-1]:30.62 | RSI[-2]:25.05 | RSI[-3]:26.03 | RSI[-4]:26.47  ---  BB_DIFF[-1]:44.74 | BB_DIFF[-2]:44.15 | BB_DIFF[-3]:42.71  ---  ATR:5.08
+[2025-11-17 09:00:12] $:1019.46  ---  RSI[-1]:32.11 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:44.24 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:4.79
+[2025-11-17 09:00:32] $:1019.46  ---  RSI[-1]:31.96 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:44.26 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:4.81
+[2025-11-17 09:00:52] $:1000.44  ---  RSI[-1]:35.77 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.92 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:4.94
+[2025-11-17 09:01:12] $:1000.44  ---  RSI[-1]:33.40 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:44.13 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:4.95
+[2025-11-17 09:01:32] $:1000.44  ---  RSI[-1]:34.75 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:44.01 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:4.95
+[2025-11-17 09:01:52] $:1000.44  ---  RSI[-1]:37.84 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.75 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.01
+[2025-11-17 09:02:12] $:1000.44  ---  RSI[-1]:36.91 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.82 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.06
+[2025-11-17 09:02:32] $:1000.44  ---  RSI[-1]:37.72 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.76 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.06
+[2025-11-17 09:02:52] $:1000.44  ---  RSI[-1]:38.56 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.69 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.06
+[2025-11-17 09:03:12] $:1000.44  ---  RSI[-1]:39.24 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.64 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.08
+[2025-11-17 09:03:32] $:1000.44  ---  RSI[-1]:37.77 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.75 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.12
+[2025-11-17 09:03:52] $:1000.44  ---  RSI[-1]:39.46 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.62 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.12
+[2025-11-17 09:04:12] $:1000.44  ---  RSI[-1]:40.88 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.52 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.14
+[2025-11-17 09:04:32] $:1000.44  ---  RSI[-1]:40.85 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.52 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.17
+[2025-11-17 09:04:52] $:1000.44  ---  RSI[-1]:41.05 | RSI[-2]:30.91 | RSI[-3]:25.05 | RSI[-4]:26.03  ---  BB_DIFF[-1]:43.51 | BB_DIFF[-2]:44.71 | BB_DIFF[-3]:44.15  ---  ATR:5.17
+[2025-11-17 09:05:12] $:1000.44  ---  RSI[-1]:42.52 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.86 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:4.90
+[2025-11-17 09:05:33] $:1000.44  ---  RSI[-1]:43.24 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.82 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:4.94
+[2025-11-17 09:05:53] $:1000.44  ---  RSI[-1]:41.80 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.89 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:4.96
+[2025-11-17 09:06:13] $:1000.44  ---  RSI[-1]:44.96 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.76 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:4.99
+[2025-11-17 09:06:33] $:1000.44  ---  RSI[-1]:42.60 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.85 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.00
+[2025-11-17 09:06:53] $:1000.44  ---  RSI[-1]:43.50 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.81 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.00
+[2025-11-17 09:07:13] $:1000.44  ---  RSI[-1]:43.08 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.83 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.00
+[2025-11-17 09:07:33] $:1000.44  ---  RSI[-1]:41.27 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.93 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.02
+[2025-11-17 09:07:53] $:1000.44  ---  RSI[-1]:40.92 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.95 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.03
+[2025-11-17 09:08:13] $:1000.44  ---  RSI[-1]:41.45 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:41.91 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.04
+[2025-11-17 09:08:33] $:1000.44  ---  RSI[-1]:40.42 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:42.00 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.04
+[2025-11-17 09:08:53] $:1000.44  ---  RSI[-1]:40.09 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:42.03 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.07
+[2025-11-17 09:09:13] $:1000.44  ---  RSI[-1]:38.35 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:42.24 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.20
+[2025-11-17 09:09:33] $:1000.44  ---  RSI[-1]:37.97 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:42.29 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.28
+[2025-11-17 09:09:53] $:1000.44  ---  RSI[-1]:37.28 | RSI[-2]:41.45 | RSI[-3]:30.91 | RSI[-4]:25.05  ---  BB_DIFF[-1]:42.40 | BB_DIFF[-2]:43.48 | BB_DIFF[-3]:44.71  ---  ATR:5.28
+[2025-11-17 09:10:13] $:1000.44  ---  RSI[-1]:38.08 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.16 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:4.97
+[2025-11-17 09:10:33] $:1000.44  ---  RSI[-1]:36.68 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.30 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:4.99
+[2025-11-17 09:10:53] $:1000.44  ---  RSI[-1]:36.23 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.37 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.06
+[2025-11-17 09:11:13] $:1000.44  ---  RSI[-1]:34.79 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.64 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.17
+[2025-11-17 09:11:33] $:1000.44  ---  RSI[-1]:33.90 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.84 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.21
+[2025-11-17 09:11:53] $:1000.44  ---  RSI[-1]:33.11 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:42.04 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.30
+[2025-11-17 09:12:13] $:1000.44  ---  RSI[-1]:32.35 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:42.26 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:12:33] $:1000.44  ---  RSI[-1]:34.41 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.72 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:12:53] $:1000.44  ---  RSI[-1]:34.97 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.60 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:13:13] $:1000.44  ---  RSI[-1]:34.59 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.68 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:13:33] $:1000.44  ---  RSI[-1]:34.31 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.74 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:13:53] $:1000.44  ---  RSI[-1]:34.83 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.63 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:14:13] $:1000.44  ---  RSI[-1]:35.10 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.58 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:14:33] $:1000.44  ---  RSI[-1]:35.57 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.48 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:14:53] $:1000.44  ---  RSI[-1]:35.27 | RSI[-2]:37.10 | RSI[-3]:41.45 | RSI[-4]:30.91  ---  BB_DIFF[-1]:41.54 | BB_DIFF[-2]:42.43 | BB_DIFF[-3]:43.48  ---  ATR:5.36
+[2025-11-17 09:15:13] $:1000.44  ---  RSI[-1]:35.56 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.31 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.01
+[2025-11-17 09:15:33] $:1000.44  ---  RSI[-1]:34.58 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.48 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.13
+[2025-11-17 09:15:53] $:1000.44  ---  RSI[-1]:34.04 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.58 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.13
+[2025-11-17 09:16:13] $:1000.44  ---  RSI[-1]:34.36 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.52 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.16
+[2025-11-17 09:16:33] $:1000.44  ---  RSI[-1]:34.96 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.41 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.16
+[2025-11-17 09:16:53] $:1000.44  ---  RSI[-1]:35.24 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.36 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.16
+[2025-11-17 09:17:13] $:1000.44  ---  RSI[-1]:35.39 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.34 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.16
+[2025-11-17 09:17:33] $:1000.44  ---  RSI[-1]:35.62 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.30 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.17
+[2025-11-17 09:17:53] $:1000.44  ---  RSI[-1]:37.93 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:39.11 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.25
+[2025-11-17 09:18:13] $:1000.44  ---  RSI[-1]:40.76 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.91 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.36
+[2025-11-17 09:18:33] $:1000.44  ---  RSI[-1]:40.06 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.96 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.36
+[2025-11-17 09:18:53] $:1000.44  ---  RSI[-1]:42.78 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.80 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.47
+[2025-11-17 09:19:13] $:1000.44  ---  RSI[-1]:45.17 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.70 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.58
+[2025-11-17 09:19:33] $:1000.44  ---  RSI[-1]:43.13 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.78 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.58
+[2025-11-17 09:19:53] $:1000.44  ---  RSI[-1]:43.07 | RSI[-2]:35.73 | RSI[-3]:37.10 | RSI[-4]:41.45  ---  BB_DIFF[-1]:38.79 | BB_DIFF[-2]:41.46 | BB_DIFF[-3]:42.43  ---  ATR:5.58
+[2025-11-17 09:20:13] $:1000.44  ---  RSI[-1]:42.47 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.60 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.25
+[2025-11-17 09:20:33] $:1000.44  ---  RSI[-1]:42.15 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.62 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.27
+[2025-11-17 09:20:54] $:1000.44  ---  RSI[-1]:42.01 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.63 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.31
+[2025-11-17 09:21:14] $:1000.44  ---  RSI[-1]:40.76 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.73 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.35
+[2025-11-17 09:21:34] $:1000.44  ---  RSI[-1]:41.09 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.70 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:21:54] $:1000.44  ---  RSI[-1]:41.45 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.67 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:22:14] $:1000.44  ---  RSI[-1]:41.43 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.67 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:22:34] $:1000.44  ---  RSI[-1]:41.53 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.66 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:22:54] $:1000.44  ---  RSI[-1]:41.43 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.67 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:23:14] $:1000.44  ---  RSI[-1]:40.90 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.72 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.37
+[2025-11-17 09:23:34] $:1000.44  ---  RSI[-1]:39.43 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.88 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.45
+[2025-11-17 09:23:54] $:1000.44  ---  RSI[-1]:39.43 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.88 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.48
+[2025-11-17 09:24:14] $:1000.44  ---  RSI[-1]:39.25 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.90 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.48
+[2025-11-17 09:24:34] $:1000.44  ---  RSI[-1]:39.63 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.85 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.48
+[2025-11-17 09:24:54] $:1000.44  ---  RSI[-1]:39.54 | RSI[-2]:43.42 | RSI[-3]:35.73 | RSI[-4]:37.10  ---  BB_DIFF[-1]:35.86 | BB_DIFF[-2]:38.77 | BB_DIFF[-3]:41.46  ---  ATR:5.50
+[2025-11-17 09:25:14] $:1000.44  ---  RSI[-1]:38.98 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.60 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.18
+[2025-11-17 09:25:34] $:1000.44  ---  RSI[-1]:39.20 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.58 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.25
+[2025-11-17 09:25:54] $:1000.44  ---  RSI[-1]:38.43 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.67 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.25
+[2025-11-17 09:26:14] $:1000.44  ---  RSI[-1]:38.48 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.67 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.28
+[2025-11-17 09:26:34] $:1000.44  ---  RSI[-1]:38.42 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.67 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.28
+[2025-11-17 09:26:54] $:1000.44  ---  RSI[-1]:38.20 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.70 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.28
+[2025-11-17 09:27:14] $:1000.44  ---  RSI[-1]:40.35 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.48 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.30
+[2025-11-17 09:27:34] $:1000.44  ---  RSI[-1]:40.53 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.47 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.33
+[2025-11-17 09:27:54] $:1000.44  ---  RSI[-1]:43.43 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.34 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.44
+[2025-11-17 09:28:14] $:1000.44  ---  RSI[-1]:43.59 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.33 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.48
+[2025-11-17 09:28:34] $:1000.44  ---  RSI[-1]:44.07 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.32 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.48
+[2025-11-17 09:28:54] $:1000.44  ---  RSI[-1]:45.31 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.29 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.55
+[2025-11-17 09:29:14] $:1000.44  ---  RSI[-1]:45.31 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.29 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.55
+[2025-11-17 09:29:34] $:1000.44  ---  RSI[-1]:44.53 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.31 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.55
+[2025-11-17 09:29:54] $:1000.44  ---  RSI[-1]:44.80 | RSI[-2]:40.01 | RSI[-3]:43.42 | RSI[-4]:35.73  ---  BB_DIFF[-1]:33.30 | BB_DIFF[-2]:35.81 | BB_DIFF[-3]:38.77  ---  ATR:5.55
+[2025-11-17 09:30:14] $:1000.44  ---  RSI[-1]:43.96 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.24 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.21
+[2025-11-17 09:30:34] $:1000.44  ---  RSI[-1]:45.36 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.24 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.24
+[2025-11-17 09:30:54] $:1000.44  ---  RSI[-1]:45.99 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.24 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.27
+[2025-11-17 09:31:14] $:1000.44  ---  RSI[-1]:44.54 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.24 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.29
+[2025-11-17 09:31:34] $:1000.44  ---  RSI[-1]:47.74 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.29 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.36
+[2025-11-17 09:31:54] $:1000.44  ---  RSI[-1]:46.73 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.26 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.36
+[2025-11-17 09:32:14] $:1000.44  ---  RSI[-1]:48.79 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.34 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.42
+[2025-11-17 09:32:34] $:1000.44  ---  RSI[-1]:50.93 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.50 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.56
+[2025-11-17 09:32:54] $:1000.44  ---  RSI[-1]:51.54 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.57 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.58
+[2025-11-17 09:33:14] $:1000.44  ---  RSI[-1]:52.01 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.62 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.62
+[2025-11-17 09:33:34] $:1000.44  ---  RSI[-1]:51.80 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.60 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.75
+[2025-11-17 09:33:54] $:1000.44  ---  RSI[-1]:49.44 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.38 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.75
+[2025-11-17 09:34:14] $:1000.44  ---  RSI[-1]:47.64 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.28 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.75
+[2025-11-17 09:34:34] $:1000.44  ---  RSI[-1]:46.89 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.26 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.75
+[2025-11-17 09:34:54] $:1000.44  ---  RSI[-1]:47.67 | RSI[-2]:43.89 | RSI[-3]:40.01 | RSI[-4]:43.42  ---  BB_DIFF[-1]:29.28 | BB_DIFF[-2]:33.32 | BB_DIFF[-3]:35.81  ---  ATR:5.75
+[2025-11-17 09:35:14] $:1000.44  ---  RSI[-1]:49.13 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.06 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.43
+[2025-11-17 09:35:34] $:1000.44  ---  RSI[-1]:48.10 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:25.99 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.44
+[2025-11-17 09:35:54] $:1000.44  ---  RSI[-1]:51.33 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.28 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.56
+[2025-11-17 09:36:14] $:1000.44  ---  RSI[-1]:51.69 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.33 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.58
+[2025-11-17 09:36:34] $:1000.44  ---  RSI[-1]:52.23 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.40 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.60
+[2025-11-17 09:36:55] $:1000.44  ---  RSI[-1]:52.16 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.39 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.61
+[2025-11-17 09:37:15] $:1000.44  ---  RSI[-1]:53.06 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.53 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.70
+[2025-11-17 09:37:35] $:1000.44  ---  RSI[-1]:52.65 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.47 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.70
+[2025-11-17 09:37:55] $:1000.44  ---  RSI[-1]:52.65 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.47 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.70
+[2025-11-17 09:38:15] $:1000.44  ---  RSI[-1]:51.67 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.32 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.70
+[2025-11-17 09:38:35] $:1000.44  ---  RSI[-1]:53.96 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.70 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.71
+[2025-11-17 09:38:55] $:1000.44  ---  RSI[-1]:54.84 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.88 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.77
+[2025-11-17 09:39:15] $:1000.44  ---  RSI[-1]:54.38 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.78 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.80
+[2025-11-17 09:39:35] $:1000.44  ---  RSI[-1]:54.32 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.77 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.80
+[2025-11-17 09:39:55] $:1000.44  ---  RSI[-1]:53.58 | RSI[-2]:47.67 | RSI[-3]:43.89 | RSI[-4]:40.01  ---  BB_DIFF[-1]:26.63 | BB_DIFF[-2]:29.28 | BB_DIFF[-3]:33.32  ---  ATR:5.80
+[2025-11-17 09:40:15] $:1000.44  ---  RSI[-1]:53.13 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.38 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.47
+[2025-11-17 09:40:35] $:1000.44  ---  RSI[-1]:51.61 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.15 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.53
+[2025-11-17 09:40:55] $:1000.44  ---  RSI[-1]:51.71 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.16 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.54
+[2025-11-17 09:41:15] $:1000.44  ---  RSI[-1]:50.42 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:23.98 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:41:35] $:1000.44  ---  RSI[-1]:50.87 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.04 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:41:55] $:1000.44  ---  RSI[-1]:53.24 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.40 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:42:15] $:1000.44  ---  RSI[-1]:53.36 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.42 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:42:35] $:1000.44  ---  RSI[-1]:54.05 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.56 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:42:55] $:1000.44  ---  RSI[-1]:51.74 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.17 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:43:15] $:1000.44  ---  RSI[-1]:51.95 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.20 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:43:35] $:1000.44  ---  RSI[-1]:50.85 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.04 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:43:55] $:1000.44  ---  RSI[-1]:50.66 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.01 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:44:15] $:1000.44  ---  RSI[-1]:50.94 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:24.05 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.61
+[2025-11-17 09:44:35] $:1000.44  ---  RSI[-1]:49.50 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:23.87 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.65
+[2025-11-17 09:44:55] $:1000.44  ---  RSI[-1]:49.61 | RSI[-2]:53.41 | RSI[-3]:47.67 | RSI[-4]:43.89  ---  BB_DIFF[-1]:23.88 | BB_DIFF[-2]:26.59 | BB_DIFF[-3]:29.28  ---  ATR:5.66
+[2025-11-17 09:45:15] $:1000.44  ---  RSI[-1]:49.66 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.88 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.32
+[2025-11-17 09:45:35] $:1000.44  ---  RSI[-1]:50.95 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.09 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.38
+[2025-11-17 09:45:55] $:1000.44  ---  RSI[-1]:49.84 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.91 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.38
+[2025-11-17 09:46:15] $:1000.44  ---  RSI[-1]:50.39 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.99 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.38
+[2025-11-17 09:46:35] $:1000.44  ---  RSI[-1]:51.38 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.17 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.40
+[2025-11-17 09:46:55] $:1000.44  ---  RSI[-1]:53.07 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.54 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.50
+[2025-11-17 09:47:15] $:1000.44  ---  RSI[-1]:52.54 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.41 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.50
+[2025-11-17 09:47:35] $:1000.44  ---  RSI[-1]:51.70 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.23 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.50
+[2025-11-17 09:47:55] $:1000.44  ---  RSI[-1]:51.32 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.16 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.50
+[2025-11-17 09:48:15] $:1000.44  ---  RSI[-1]:49.80 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.90 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.50
+[2025-11-17 09:48:35] $:1000.44  ---  RSI[-1]:49.33 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.84 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.53
+[2025-11-17 09:48:55] $:1000.44  ---  RSI[-1]:50.24 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.97 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.53
+[2025-11-17 09:49:15] $:1000.44  ---  RSI[-1]:50.50 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.01 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.53
+[2025-11-17 09:49:35] $:1000.44  ---  RSI[-1]:49.79 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:20.90 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.53
+[2025-11-17 09:49:55] $:1000.44  ---  RSI[-1]:50.79 | RSI[-2]:49.21 | RSI[-3]:53.41 | RSI[-4]:47.67  ---  BB_DIFF[-1]:21.06 | BB_DIFF[-2]:23.83 | BB_DIFF[-3]:26.59  ---  ATR:5.53
+[2025-11-17 09:50:15] $:1000.44  ---  RSI[-1]:50.09 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.51 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.18
+[2025-11-17 09:50:35] $:1000.44  ---  RSI[-1]:49.76 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.46 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.22
+[2025-11-17 09:50:55] $:1000.44  ---  RSI[-1]:51.87 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.84 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.28
+[2025-11-17 09:51:15] $:1000.44  ---  RSI[-1]:50.66 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.61 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.28
+[2025-11-17 09:51:35] $:1000.44  ---  RSI[-1]:50.35 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.56 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.28
+[2025-11-17 09:51:55] $:1000.44  ---  RSI[-1]:49.95 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.49 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.31
+[2025-11-17 09:52:15] $:1000.44  ---  RSI[-1]:49.24 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.38 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.31
+[2025-11-17 09:52:35] $:1000.44  ---  RSI[-1]:48.59 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.28 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.33
+[2025-11-17 09:52:55] $:1000.44  ---  RSI[-1]:49.67 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.44 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.34
+[2025-11-17 09:53:15] $:1000.44  ---  RSI[-1]:49.60 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.43 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.34
+[2025-11-17 09:53:35] $:1000.44  ---  RSI[-1]:49.54 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.42 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.34
+[2025-11-17 09:53:55] $:1000.44  ---  RSI[-1]:50.72 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.62 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.34
+[2025-11-17 09:54:15] $:1000.44  ---  RSI[-1]:49.97 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.49 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.34
+[2025-11-17 09:54:36] $:1000.44  ---  RSI[-1]:47.43 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.13 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.39
+[2025-11-17 09:54:56] $:1000.44  ---  RSI[-1]:48.91 | RSI[-2]:50.79 | RSI[-3]:49.21 | RSI[-4]:53.41  ---  BB_DIFF[-1]:19.33 | BB_DIFF[-2]:21.06 | BB_DIFF[-3]:23.83  ---  ATR:5.42
+[2025-11-17 09:55:16] $:1000.44  ---  RSI[-1]:48.23 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.05 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.08
+[2025-11-17 09:55:36] $:1000.44  ---  RSI[-1]:49.61 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.24 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.16
+[2025-11-17 09:55:56] $:1000.44  ---  RSI[-1]:49.78 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.26 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.16
+[2025-11-17 09:56:16] $:1000.44  ---  RSI[-1]:49.27 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.19 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.16
+[2025-11-17 09:56:36] $:1000.44  ---  RSI[-1]:47.79 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:18.99 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.17
+[2025-11-17 09:56:56] $:1000.44  ---  RSI[-1]:47.78 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:18.99 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.17
+[2025-11-17 09:57:16] $:1000.44  ---  RSI[-1]:48.45 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.07 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.20
+[2025-11-17 09:57:36] $:1000.44  ---  RSI[-1]:49.40 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.20 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:57:56] $:1000.44  ---  RSI[-1]:49.06 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.16 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:58:16] $:1000.44  ---  RSI[-1]:49.43 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.21 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:58:36] $:1000.44  ---  RSI[-1]:48.69 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.11 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:58:56] $:1000.44  ---  RSI[-1]:48.91 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.14 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:59:16] $:1000.44  ---  RSI[-1]:48.19 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.04 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:59:36] $:1000.44  ---  RSI[-1]:48.27 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.05 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 09:59:56] $:1000.44  ---  RSI[-1]:48.19 | RSI[-2]:48.93 | RSI[-3]:50.79 | RSI[-4]:49.21  ---  BB_DIFF[-1]:19.04 | BB_DIFF[-2]:19.33 | BB_DIFF[-3]:21.06  ---  ATR:5.21
+[2025-11-17 10:00:16] $:1000.44  ---  RSI[-1]:49.67 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.20 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:4.97
+[2025-11-17 10:00:36] $:1000.44  ---  RSI[-1]:51.07 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.42 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.04
+[2025-11-17 10:00:56] $:1000.44  ---  RSI[-1]:50.56 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.34 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.05
+[2025-11-17 10:01:16] $:1000.44  ---  RSI[-1]:52.11 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.62 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.08
+[2025-11-17 10:01:36] $:1000.44  ---  RSI[-1]:53.48 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.93 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.16
+[2025-11-17 10:01:56] $:1000.44  ---  RSI[-1]:52.92 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.80 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.16
+[2025-11-17 10:02:16] $:1000.44  ---  RSI[-1]:55.38 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.45 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.27
+[2025-11-17 10:02:36] $:1000.44  ---  RSI[-1]:55.89 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.62 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.31
+[2025-11-17 10:02:56] $:1000.44  ---  RSI[-1]:55.39 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.45 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:03:16] $:1000.44  ---  RSI[-1]:55.35 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.44 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:03:36] $:1000.44  ---  RSI[-1]:53.42 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.91 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:03:56] $:1000.44  ---  RSI[-1]:54.60 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.22 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:04:16] $:1000.44  ---  RSI[-1]:55.24 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:20.41 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:04:36] $:1000.44  ---  RSI[-1]:53.07 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.83 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:04:56] $:1000.44  ---  RSI[-1]:53.16 | RSI[-2]:48.37 | RSI[-3]:48.93 | RSI[-4]:50.79  ---  BB_DIFF[-1]:19.85 | BB_DIFF[-2]:19.06 | BB_DIFF[-3]:19.33  ---  ATR:5.33
+[2025-11-17 10:05:16] $:1000.44  ---  RSI[-1]:51.92 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.45 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.02
+[2025-11-17 10:05:36] $:1000.44  ---  RSI[-1]:50.60 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.24 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.07
+[2025-11-17 10:05:56] $:1000.44  ---  RSI[-1]:50.06 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.16 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.11
+[2025-11-17 10:06:16] $:1000.44  ---  RSI[-1]:50.63 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.25 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.11
+[2025-11-17 10:06:36] $:1000.44  ---  RSI[-1]:50.04 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.16 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.12
+[2025-11-17 10:06:56] $:1000.44  ---  RSI[-1]:49.99 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.15 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.13
+[2025-11-17 10:07:16] $:1000.44  ---  RSI[-1]:50.88 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.28 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.13
+[2025-11-17 10:07:36] $:1000.44  ---  RSI[-1]:50.57 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.24 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.13
+[2025-11-17 10:07:56] $:1000.44  ---  RSI[-1]:51.77 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.42 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.13
+[2025-11-17 10:08:16] $:1000.44  ---  RSI[-1]:53.48 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.74 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.16
+[2025-11-17 10:08:36] $:1000.44  ---  RSI[-1]:54.84 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:21.05 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.23
+[2025-11-17 10:08:56] $:1000.44  ---  RSI[-1]:54.59 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.99 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.24
+[2025-11-17 10:09:16] $:1000.44  ---  RSI[-1]:53.95 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.84 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.24
+[2025-11-17 10:09:36] $:1000.44  ---  RSI[-1]:54.27 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.91 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.24
+[2025-11-17 10:09:56] $:1000.44  ---  RSI[-1]:54.02 | RSI[-2]:52.56 | RSI[-3]:48.37 | RSI[-4]:48.93  ---  BB_DIFF[-1]:20.85 | BB_DIFF[-2]:19.71 | BB_DIFF[-3]:19.06  ---  ATR:5.24
+[2025-11-17 10:10:16] $:1000.44  ---  RSI[-1]:55.50 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.64 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:4.95
+[2025-11-17 10:10:37] $:1000.44  ---  RSI[-1]:57.60 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.19 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.04
+[2025-11-17 10:10:57] $:1000.44  ---  RSI[-1]:57.83 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.26 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.09
+[2025-11-17 10:11:17] $:1000.44  ---  RSI[-1]:56.58 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.90 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:11:37] $:1000.44  ---  RSI[-1]:55.57 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.65 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:11:57] $:1000.44  ---  RSI[-1]:55.46 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.63 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:12:17] $:1000.44  ---  RSI[-1]:56.31 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.83 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:12:37] $:1000.44  ---  RSI[-1]:56.13 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.79 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:12:57] $:1000.44  ---  RSI[-1]:57.25 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.09 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:13:17] $:1000.44  ---  RSI[-1]:56.87 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.98 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:13:37] $:1000.44  ---  RSI[-1]:57.03 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.03 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:13:57] $:1000.44  ---  RSI[-1]:56.87 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.98 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:14:17] $:1000.44  ---  RSI[-1]:55.83 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:20.71 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:14:37] $:1000.44  ---  RSI[-1]:57.18 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.07 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:14:57] $:1000.44  ---  RSI[-1]:57.50 | RSI[-2]:54.31 | RSI[-3]:52.56 | RSI[-4]:48.37  ---  BB_DIFF[-1]:21.16 | BB_DIFF[-2]:20.92 | BB_DIFF[-3]:19.71  ---  ATR:5.10
+[2025-11-17 10:15:17] $:1000.44  ---  RSI[-1]:58.05 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:20.94 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.76
+[2025-11-17 10:15:37] $:1000.44  ---  RSI[-1]:57.06 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:20.71 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.84
+[2025-11-17 10:15:57] $:1000.44  ---  RSI[-1]:57.62 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:20.83 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.85
+[2025-11-17 10:16:17] $:1000.44  ---  RSI[-1]:57.54 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:20.81 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.85
+[2025-11-17 10:16:37] $:1000.44  ---  RSI[-1]:58.64 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.10 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.85
+[2025-11-17 10:16:57] $:1000.44  ---  RSI[-1]:60.37 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.64 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.94
+[2025-11-17 10:17:17] $:1000.44  ---  RSI[-1]:60.30 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.62 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.94
+[2025-11-17 10:17:37] $:1000.44  ---  RSI[-1]:59.00 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.20 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.94
+[2025-11-17 10:17:57] $:1000.44  ---  RSI[-1]:59.07 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.23 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.94
+[2025-11-17 10:18:17] $:1000.44  ---  RSI[-1]:59.89 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.48 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.94
+[2025-11-17 10:18:37] $:1000.44  ---  RSI[-1]:60.17 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.58 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.95
+[2025-11-17 10:18:57] $:1000.44  ---  RSI[-1]:60.03 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.53 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.97
+[2025-11-17 10:19:17] $:1000.44  ---  RSI[-1]:59.57 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.38 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.97
+[2025-11-17 10:19:37] $:1000.44  ---  RSI[-1]:60.60 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:21.73 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:4.97
+[2025-11-17 10:19:57] $:1000.44  ---  RSI[-1]:61.53 | RSI[-2]:57.50 | RSI[-3]:54.31 | RSI[-4]:52.56  ---  BB_DIFF[-1]:22.08 | BB_DIFF[-2]:21.16 | BB_DIFF[-3]:20.92  ---  ATR:5.01
+[2025-11-17 10:20:17] $:1000.44  ---  RSI[-1]:61.83 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.41 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.69
+[2025-11-17 10:20:37] $:1000.44  ---  RSI[-1]:60.69 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.13 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.73
+[2025-11-17 10:20:57] $:1000.44  ---  RSI[-1]:59.98 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:22.99 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.77
+[2025-11-17 10:21:17] $:1000.44  ---  RSI[-1]:61.02 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.20 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.78
+[2025-11-17 10:21:37] $:1000.44  ---  RSI[-1]:60.80 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.15 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.78
+[2025-11-17 10:21:57] $:1000.44  ---  RSI[-1]:60.82 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.16 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.79
+[2025-11-17 10:22:17] $:1000.44  ---  RSI[-1]:59.73 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:22.94 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:22:37] $:1000.44  ---  RSI[-1]:60.53 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.10 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:22:57] $:1000.44  ---  RSI[-1]:60.76 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.15 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:23:17] $:1000.44  ---  RSI[-1]:61.57 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.33 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:23:37] $:1000.44  ---  RSI[-1]:60.91 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.17 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:23:57] $:1000.44  ---  RSI[-1]:61.11 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.21 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:24:17] $:1000.44  ---  RSI[-1]:61.59 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.33 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:24:37] $:1000.44  ---  RSI[-1]:60.03 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:23.00 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:24:57] $:1000.44  ---  RSI[-1]:59.57 | RSI[-2]:61.39 | RSI[-3]:57.50 | RSI[-4]:54.31  ---  BB_DIFF[-1]:22.91 | BB_DIFF[-2]:22.02 | BB_DIFF[-3]:21.16  ---  ATR:4.81
+[2025-11-17 10:25:17] $:1000.44  ---  RSI[-1]:58.20 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:22.83 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.54
+[2025-11-17 10:25:37] $:1000.44  ---  RSI[-1]:59.75 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.10 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:25:57] $:1000.44  ---  RSI[-1]:60.23 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.22 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:26:17] $:1000.44  ---  RSI[-1]:59.23 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:22.99 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:26:37] $:1000.44  ---  RSI[-1]:58.60 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:22.89 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:26:57] $:1000.44  ---  RSI[-1]:59.92 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.14 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:27:17] $:1000.44  ---  RSI[-1]:60.43 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.28 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.57
+[2025-11-17 10:27:38] $:1000.44  ---  RSI[-1]:61.34 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.54 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.63
+[2025-11-17 10:27:58] $:1000.44  ---  RSI[-1]:63.00 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:24.09 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.74
+[2025-11-17 10:28:18] $:1000.44  ---  RSI[-1]:63.06 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:24.11 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.76
+[2025-11-17 10:28:38] $:1000.44  ---  RSI[-1]:62.14 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.79 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.76
+[2025-11-17 10:28:58] $:1000.44  ---  RSI[-1]:62.49 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.90 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.76
+[2025-11-17 10:29:18] $:1000.44  ---  RSI[-1]:61.99 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:23.74 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.76
+[2025-11-17 10:29:38] $:1000.44  ---  RSI[-1]:63.59 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:24.31 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.79
+[2025-11-17 10:29:58] $:1000.44  ---  RSI[-1]:63.83 | RSI[-2]:59.45 | RSI[-3]:61.39 | RSI[-4]:57.50  ---  BB_DIFF[-1]:24.40 | BB_DIFF[-2]:22.89 | BB_DIFF[-3]:22.02  ---  ATR:4.84
+[2025-11-17 10:30:18] $:1000.44  ---  RSI[-1]:62.75 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.42 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.62
+[2025-11-17 10:30:38] $:1000.44  ---  RSI[-1]:63.76 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.61 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.67
+[2025-11-17 10:30:58] $:1000.44  ---  RSI[-1]:63.49 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.56 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.67
+[2025-11-17 10:31:18] $:1000.44  ---  RSI[-1]:64.25 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.76 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.67
+[2025-11-17 10:31:38] $:1000.44  ---  RSI[-1]:64.67 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.92 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.68
+[2025-11-17 10:31:58] $:1000.44  ---  RSI[-1]:64.74 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.94 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:32:18] $:1000.44  ---  RSI[-1]:64.41 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.82 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:32:38] $:1000.44  ---  RSI[-1]:64.34 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.80 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:32:58] $:1000.44  ---  RSI[-1]:64.31 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.79 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:33:18] $:1000.44  ---  RSI[-1]:63.88 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.64 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:33:38] $:1000.44  ---  RSI[-1]:64.10 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.71 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:33:58] $:1000.44  ---  RSI[-1]:63.32 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.53 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:34:18] $:1000.44  ---  RSI[-1]:63.38 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.54 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:34:38] $:1000.44  ---  RSI[-1]:63.39 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.54 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:34:58] $:1000.44  ---  RSI[-1]:64.16 | RSI[-2]:63.84 | RSI[-3]:59.45 | RSI[-4]:61.39  ---  BB_DIFF[-1]:24.73 | BB_DIFF[-2]:24.40 | BB_DIFF[-3]:22.89  ---  ATR:4.70
+[2025-11-17 10:35:18] $:1000.44  ---  RSI[-1]:64.38 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.27 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.38
+[2025-11-17 10:35:38] $:1000.44  ---  RSI[-1]:63.98 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.19 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.40
+[2025-11-17 10:35:58] $:1000.44  ---  RSI[-1]:62.57 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:24.96 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.47
+[2025-11-17 10:36:18] $:1000.44  ---  RSI[-1]:62.99 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.03 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.47
+[2025-11-17 10:36:38] $:1000.44  ---  RSI[-1]:63.81 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.16 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.47
+[2025-11-17 10:36:58] $:1000.44  ---  RSI[-1]:64.94 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.44 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:37:18] $:1000.44  ---  RSI[-1]:63.23 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.07 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:37:38] $:1000.44  ---  RSI[-1]:63.05 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.04 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:37:58] $:1000.44  ---  RSI[-1]:62.71 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:24.98 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:38:18] $:1000.44  ---  RSI[-1]:63.67 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.14 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:38:38] $:1000.44  ---  RSI[-1]:64.16 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.22 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:38:58] $:1000.44  ---  RSI[-1]:64.32 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.25 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.50
+[2025-11-17 10:39:18] $:1000.44  ---  RSI[-1]:65.03 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.47 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.52
+[2025-11-17 10:39:38] $:1000.44  ---  RSI[-1]:66.02 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:25.81 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.59
+[2025-11-17 10:39:58] $:1000.44  ---  RSI[-1]:67.00 | RSI[-2]:64.25 | RSI[-3]:63.84 | RSI[-4]:59.45  ---  BB_DIFF[-1]:26.18 | BB_DIFF[-2]:24.76 | BB_DIFF[-3]:24.40  ---  ATR:4.67
+[2025-11-17 10:40:18] $:1000.44  ---  RSI[-1]:66.44 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.05 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.39
+[2025-11-17 10:40:38] $:1000.44  ---  RSI[-1]:67.83 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.43 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.45
+[2025-11-17 10:40:58] $:1000.44  ---  RSI[-1]:65.23 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:27.86 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:41:18] $:1000.44  ---  RSI[-1]:66.86 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.12 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:41:38] $:1000.44  ---  RSI[-1]:67.04 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.16 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:41:58] $:1000.44  ---  RSI[-1]:65.85 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:27.96 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:42:18] $:1000.44  ---  RSI[-1]:67.08 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.17 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:42:38] $:1000.44  ---  RSI[-1]:67.14 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.19 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:42:58] $:1000.44  ---  RSI[-1]:67.25 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.23 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:43:18] $:1000.44  ---  RSI[-1]:67.68 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.38 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.47
+[2025-11-17 10:43:38] $:1000.44  ---  RSI[-1]:67.89 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.45 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.48
+[2025-11-17 10:43:59] $:1000.44  ---  RSI[-1]:68.16 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.55 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.50
+[2025-11-17 10:44:19] $:1000.44  ---  RSI[-1]:67.93 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.47 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.50
+[2025-11-17 10:44:39] $:1000.44  ---  RSI[-1]:68.14 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.55 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.50
+[2025-11-17 10:44:59] $:1000.44  ---  RSI[-1]:68.59 | RSI[-2]:67.01 | RSI[-3]:64.25 | RSI[-4]:63.84  ---  BB_DIFF[-1]:28.72 | BB_DIFF[-2]:26.19 | BB_DIFF[-3]:24.76  ---  ATR:4.53
+[2025-11-17 10:45:19] $:1000.44  ---  RSI[-1]:68.77 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:29.70 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.22
+✅ Succeeded
+Order #: 54028395737
+Direction: Buy
+Price: 4083.69
+SL: 4079.47
+TP: 4125.93
+Result: order success (10009)
+
+[2025-11-17 10:45:39] $:1000.44  ---  RSI[-1]:69.48 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:29.95 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.29
+✅ Succeeded
+Order #: 54028402430
+Direction: Buy
+Price: 4084.40
+SL: 4080.11
+TP: 4127.26
+Result: order success (10009)
+
+[2025-11-17 10:45:59] $:1000.44  ---  RSI[-1]:69.39 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:29.92 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.31
+✅ Succeeded
+Order #: 54028408502
+Direction: Buy
+Price: 4084.32
+SL: 4080.01
+TP: 4127.43
+Result: order success (10009)
+
+[2025-11-17 10:46:19] $:1000.44  ---  RSI[-1]:70.05 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.16 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.32
+✅ Succeeded
+Order #: 54028413370
+Direction: Buy
+Price: 4085.00
+SL: 4080.68
+TP: 4128.23
+Result: order success (10009)
+
+[2025-11-17 10:46:39] $:1000.44  ---  RSI[-1]:71.04 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.58 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.40
+✅ Succeeded
+Order #: 54028419403
+Direction: Buy
+Price: 4086.09
+SL: 4081.69
+TP: 4130.04
+Result: order success (10009)
+
+[2025-11-17 10:46:59] $:1000.44  ---  RSI[-1]:71.25 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.68 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.41
+✅ Succeeded
+Order #: 54028425522
+Direction: Buy
+Price: 4086.34
+SL: 4081.93
+TP: 4130.48
+Result: order success (10009)
+
+[2025-11-17 10:47:20] $:1000.44  ---  RSI[-1]:72.00 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:31.04 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.48
+✅ Succeeded
+Order #: 54028432172
+Direction: Buy
+Price: 4087.23
+SL: 4082.75
+TP: 4131.99
+Result: order success (10009)
+
+[2025-11-17 10:47:40] $:1000.44  ---  RSI[-1]:71.66 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.87 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.48
+✅ Succeeded
+Order #: 54028437020
+Direction: Buy
+Price: 4086.82
+SL: 4082.34
+TP: 4131.58
+Result: order success (10009)
+
+[2025-11-17 10:48:00] $:1000.44  ---  RSI[-1]:72.11 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:31.09 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028444205
+Direction: Buy
+Price: 4087.37
+SL: 4082.86
+TP: 4132.50
+Result: order success (10009)
+
+[2025-11-17 10:48:20] $:1000.44  ---  RSI[-1]:70.68 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.42 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028449339
+Direction: Buy
+Price: 4085.70
+SL: 4081.19
+TP: 4130.83
+Result: order success (10009)
+
+[2025-11-17 10:48:40] $:1000.44  ---  RSI[-1]:70.20 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.22 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028454873
+Direction: Buy
+Price: 4085.17
+SL: 4080.66
+TP: 4130.30
+Result: order success (10009)
+
+[2025-11-17 10:49:00] $:1000.44  ---  RSI[-1]:70.90 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.52 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028459062
+Direction: Buy
+Price: 4085.95
+SL: 4081.44
+TP: 4131.08
+Result: order success (10009)
+
+[2025-11-17 10:49:20] $:1000.44  ---  RSI[-1]:70.18 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.22 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028463268
+Direction: Buy
+Price: 4085.15
+SL: 4080.64
+TP: 4130.28
+Result: order success (10009)
+
+[2025-11-17 10:49:41] $:1000.44  ---  RSI[-1]:71.33 | RSI[-2]:68.65 | RSI[-3]:67.01 | RSI[-4]:64.25  ---  BB_DIFF[-1]:30.71 | BB_DIFF[-2]:28.74 | BB_DIFF[-3]:26.19  ---  ATR:4.51
+✅ Succeeded
+Order #: 54028467819
+Direction: Buy
+Price: 4086.45
+SL: 4081.94
+TP: 4131.58
+Result: order success (10009)
+
+[2025-11-17 10:50:01] $:1000.44  ---  RSI[-1]:70.69 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.71 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.19
+✅ Succeeded
+Order #: 54028472257
+Direction: Buy
+Price: 4085.70
+SL: 4081.51
+TP: 4127.65
+Result: order success (10009)
+
+[2025-11-17 10:50:21] $:1000.44  ---  RSI[-1]:71.48 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:31.01 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.30
+✅ Succeeded
+Order #: 54028477943
+Direction: Buy
+Price: 4086.55
+SL: 4082.25
+TP: 4129.60
+Result: order success (10009)
+
+[2025-11-17 10:50:41] $:1000.44  ---  RSI[-1]:71.35 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.96 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.30
+✅ Succeeded
+Order #: 54028482802
+Direction: Buy
+Price: 4086.39
+SL: 4082.09
+TP: 4129.44
+Result: order success (10009)
+
+[2025-11-17 10:51:01] $:1000.44  ---  RSI[-1]:71.70 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:31.10 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.30
+✅ Succeeded
+Order #: 54028486091
+Direction: Buy
+Price: 4086.79
+SL: 4082.49
+TP: 4129.84
+Result: order success (10009)
+
+[2025-11-17 10:51:21] $:1000.44  ---  RSI[-1]:71.01 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.83 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.30
+✅ Succeeded
+Order #: 54028489948
+Direction: Buy
+Price: 4086.04
+SL: 4081.74
+TP: 4129.09
+Result: order success (10009)
+
+[2025-11-17 10:51:41] $:1000.44  ---  RSI[-1]:70.65 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.70 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.32
+✅ Succeeded
+Order #: 54028494550
+Direction: Buy
+Price: 4085.66
+SL: 4081.34
+TP: 4128.84
+Result: order success (10009)
+
+[2025-11-17 10:52:02] $:1000.44  ---  RSI[-1]:70.28 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.64 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.32
+[2025-11-17 10:52:22] $:1000.44  ---  RSI[-1]:71.25 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.92 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.32
+✅ Succeeded
+Order #: 54028500746
+Direction: Buy
+Price: 4086.29
+SL: 4081.97
+TP: 4129.50
+Result: order success (10009)
+
+[2025-11-17 10:52:42] $:1000.44  ---  RSI[-1]:71.16 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.89 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.32
+✅ Succeeded
+Order #: 54028503622
+Direction: Buy
+Price: 4086.19
+SL: 4081.87
+TP: 4129.40
+Result: order success (10009)
+
+[2025-11-17 10:53:02] $:1000.44  ---  RSI[-1]:69.64 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.55 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.33
+[2025-11-17 10:53:22] $:1000.44  ---  RSI[-1]:70.30 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.64 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.38
+[2025-11-17 10:53:42] $:1000.44  ---  RSI[-1]:69.84 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.58 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.38
+[2025-11-17 10:54:02] $:1000.44  ---  RSI[-1]:69.30 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.50 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.38
+[2025-11-17 10:54:22] $:1000.44  ---  RSI[-1]:70.76 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.74 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.38
+✅ Succeeded
+Order #: 54028524347
+Direction: Buy
+Price: 4085.79
+SL: 4081.41
+TP: 4129.58
+Result: order success (10009)
+
+[2025-11-17 10:54:42] $:1000.44  ---  RSI[-1]:71.25 | RSI[-2]:70.63 | RSI[-3]:68.65 | RSI[-4]:67.01  ---  BB_DIFF[-1]:30.92 | BB_DIFF[-2]:30.40 | BB_DIFF[-3]:28.74  ---  ATR:4.38
+✅ Succeeded
+Order #: 54028527744
+Direction: Buy
+Price: 4086.28
+SL: 4081.90
+TP: 4130.07
+Result: order success (10009)
+
+[2025-11-17 10:55:02] $:1000.44  ---  RSI[-1]:71.53 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.10 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.08
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4086.57
+SL: 4082.49
+TP: 4127.36
+Result: order no money (10019)
+
+[2025-11-17 10:55:22] $:1000.44  ---  RSI[-1]:72.05 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.28 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.14
+✅ Succeeded
+Order #: 54028536292
+Direction: Buy
+Price: 4087.11
+SL: 4082.97
+TP: 4128.47
+Result: order success (10009)
+
+[2025-11-17 10:55:43] $:1000.44  ---  RSI[-1]:72.79 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.55 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.18
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.92
+SL: 4083.74
+TP: 4129.69
+Result: order no money (10019)
+
+[2025-11-17 10:56:03] $:1000.44  ---  RSI[-1]:72.77 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.54 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.19
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.90
+SL: 4083.71
+TP: 4129.76
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 2.13
+SL: 4085.82
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 2.13
+SL: 4086.53
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 2.13
+SL: 4086.45
+Result: order success (10009)
+[2025-11-17 10:56:23] $:1000.44  ---  RSI[-1]:73.90 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:33.02 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.27
+✅ Succeeded
+Order #: 54028554218
+Direction: Buy
+Price: 4089.31
+SL: 4085.04
+TP: 4131.99
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 2.14
+SL: 4085.83
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 2.14
+SL: 4086.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 2.14
+SL: 4086.46
+Result: order success (10009)
+[2025-11-17 10:56:44] $:1000.44  ---  RSI[-1]:73.84 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.99 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4089.16
+SL: 4084.88
+TP: 4131.94
+Result: order no money (10019)
+
+[2025-11-17 10:57:04] $:1000.44  ---  RSI[-1]:73.63 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.90 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4088.98
+SL: 4084.70
+TP: 4131.76
+Result: order no money (10019)
+
+[2025-11-17 10:57:24] $:1000.44  ---  RSI[-1]:72.31 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.37 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.41
+SL: 4083.13
+TP: 4130.19
+Result: order no money (10019)
+
+[2025-11-17 10:57:44] $:1000.44  ---  RSI[-1]:72.12 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.30 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.21
+SL: 4082.93
+TP: 4129.99
+Result: order no money (10019)
+
+[2025-11-17 10:58:04] $:1000.44  ---  RSI[-1]:71.80 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.19 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4086.87
+SL: 4082.59
+TP: 4129.65
+Result: order no money (10019)
+
+[2025-11-17 10:58:24] $:1000.44  ---  RSI[-1]:72.69 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.51 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.82
+SL: 4083.54
+TP: 4130.60
+Result: order no money (10019)
+
+[2025-11-17 10:58:44] $:1000.44  ---  RSI[-1]:72.63 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.49 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4087.76
+SL: 4083.48
+TP: 4130.54
+Result: order no money (10019)
+
+[2025-11-17 10:59:04] $:1000.44  ---  RSI[-1]:73.17 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.71 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4088.37
+SL: 4084.09
+TP: 4131.15
+Result: order no money (10019)
+
+[2025-11-17 10:59:24] $:1000.44  ---  RSI[-1]:73.91 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:33.02 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4089.24
+SL: 4084.96
+TP: 4132.08
+Result: order no money (10019)
+
+[2025-11-17 10:59:44] $:1000.44  ---  RSI[-1]:73.41 | RSI[-2]:71.34 | RSI[-3]:70.63 | RSI[-4]:68.65  ---  BB_DIFF[-1]:32.80 | BB_DIFF[-2]:30.96 | BB_DIFF[-3]:30.40  ---  ATR:4.28
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4088.64
+SL: 4084.36
+TP: 4131.48
+Result: order no money (10019)
+
+[2025-11-17 11:00:04] $:1000.44  ---  RSI[-1]:73.34 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.71 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.00
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4088.56
+SL: 4084.56
+TP: 4128.53
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028413370
+Direction: Buy
+Profits: 2.05
+SL: 4087.06
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028454873
+Direction: Buy
+Profits: 2.05
+SL: 4087.22
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028463268
+Direction: Buy
+Profits: 2.05
+SL: 4087.2
+Result: order success (10009)
+[2025-11-17 11:00:24] $:1000.44  ---  RSI[-1]:74.57 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.19 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.09
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4089.98
+SL: 4085.89
+TP: 4130.91
+Result: order no money (10019)
+
+[2025-11-17 11:00:44] $:1000.44  ---  RSI[-1]:73.05 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.64 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.14
+[2025-11-17 11:01:04] $:1006.59  ---  RSI[-1]:72.06 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.51 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.24
+[2025-11-17 11:01:24] $:1006.59  ---  RSI[-1]:70.96 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.37 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.24
+[2025-11-17 11:01:44] $:1006.59  ---  RSI[-1]:73.57 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.79 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.24
+✅ Succeeded
+Order #: 54028629147
+Direction: Buy
+Price: 4088.80
+SL: 4084.56
+TP: 4131.16
+Result: order success (10009)
+
+[2025-11-17 11:02:04] $:1006.59  ---  RSI[-1]:73.85 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.90 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.24
+✅ Succeeded
+Order #: 54028633978
+Direction: Buy
+Price: 4089.11
+SL: 4084.87
+TP: 4131.47
+Result: order success (10009)
+
+[2025-11-17 11:02:25] $:1006.59  ---  RSI[-1]:74.08 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:32.99 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.24
+✅ Succeeded
+Order #: 54028637717
+Direction: Buy
+Price: 4089.37
+SL: 4085.13
+TP: 4131.73
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54028419403
+Direction: Buy
+Profits: 2.13
+SL: 4088.22
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028425522
+Direction: Buy
+Profits: 2.13
+SL: 4088.47
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 2.13
+SL: 4087.83
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 2.13
+SL: 4088.08
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 2.13
+SL: 4087.83
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028489948
+Direction: Buy
+Profits: 2.13
+SL: 4088.2
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 2.13
+SL: 4087.79
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028500746
+Direction: Buy
+Profits: 2.13
+SL: 4088.42
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028503622
+Direction: Buy
+Profits: 2.13
+SL: 4088.32
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 2.13
+SL: 4087.92
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028527744
+Direction: Buy
+Profits: 2.13
+SL: 4088.41
+Result: order success (10009)
+[2025-11-17 11:02:46] $:1006.59  ---  RSI[-1]:75.29 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.50 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.25
+✅ Succeeded
+Order #: 54028645691
+Direction: Buy
+Price: 4091.74
+SL: 4087.49
+TP: 4134.25
+Result: order success (10009)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 2.16
+SL: 4085.85
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 2.16
+SL: 4086.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 2.16
+SL: 4086.48
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028419403
+Direction: Buy
+Profits: 2.16
+SL: 4088.25
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 2.16
+SL: 4087.86
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 2.16
+SL: 4088.11
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 2.16
+SL: 4087.86
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028489948
+Direction: Buy
+Profits: 2.16
+SL: 4088.23
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 2.16
+SL: 4087.82
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028503622
+Direction: Buy
+Profits: 2.16
+SL: 4088.35
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 2.16
+SL: 4087.95
+Result: order success (10009)
+[2025-11-17 11:03:08] $:1006.59  ---  RSI[-1]:75.21 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.46 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.33
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4090.59
+SL: 4086.26
+TP: 4133.87
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028425522
+Direction: Buy
+Profits: 2.16
+SL: 4088.5
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028500746
+Direction: Buy
+Profits: 2.16
+SL: 4088.45
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028527744
+Direction: Buy
+Profits: 2.16
+SL: 4088.44
+Result: order success (10009)
+[2025-11-17 11:03:28] $:1006.59  ---  RSI[-1]:75.33 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.52 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.33
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4090.76
+SL: 4086.43
+TP: 4134.04
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028437020
+Direction: Buy
+Profits: 2.16
+SL: 4088.95
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028467819
+Direction: Buy
+Profits: 2.16
+SL: 4088.64
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028477943
+Direction: Buy
+Profits: 2.16
+SL: 4088.71
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028482802
+Direction: Buy
+Profits: 2.16
+SL: 4088.55
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028486091
+Direction: Buy
+Profits: 2.16
+SL: 4088.95
+Result: order success (10009)
+[2025-11-17 11:03:49] $:1006.59  ---  RSI[-1]:75.91 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.80 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.33
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4091.64
+SL: 4087.31
+TP: 4134.92
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 2.17
+SL: 4085.86
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 2.17
+SL: 4086.57
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 2.17
+SL: 4086.49
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028419403
+Direction: Buy
+Profits: 2.17
+SL: 4088.26
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028425522
+Direction: Buy
+Profits: 2.17
+SL: 4088.51
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028437020
+Direction: Buy
+Profits: 2.17
+SL: 4088.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 2.17
+SL: 4087.87
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 2.17
+SL: 4088.12
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028467819
+Direction: Buy
+Profits: 2.17
+SL: 4088.65
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 2.17
+SL: 4087.87
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028477943
+Direction: Buy
+Profits: 2.17
+SL: 4088.72
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028482802
+Direction: Buy
+Profits: 2.17
+SL: 4088.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028486091
+Direction: Buy
+Profits: 2.17
+SL: 4088.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028489948
+Direction: Buy
+Profits: 2.17
+SL: 4088.24
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 2.17
+SL: 4087.83
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028500746
+Direction: Buy
+Profits: 2.17
+SL: 4088.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028503622
+Direction: Buy
+Profits: 2.17
+SL: 4088.36
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 2.17
+SL: 4087.96
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028527744
+Direction: Buy
+Profits: 2.17
+SL: 4088.45
+Result: order success (10009)
+[2025-11-17 11:04:12] $:1006.59  ---  RSI[-1]:75.88 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.79 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.35
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4090.71
+SL: 4086.36
+TP: 4134.17
+Result: order no money (10019)
+
+[2025-11-17 11:04:32] $:1006.59  ---  RSI[-1]:75.71 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.70 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.35
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4091.35
+SL: 4087.00
+TP: 4134.81
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 2.18
+SL: 4085.87
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 2.18
+SL: 4086.58
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 2.18
+SL: 4086.5
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028419403
+Direction: Buy
+Profits: 2.18
+SL: 4088.27
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028425522
+Direction: Buy
+Profits: 2.18
+SL: 4088.52
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028437020
+Direction: Buy
+Profits: 2.18
+SL: 4088.97
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 2.18
+SL: 4087.88
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 2.18
+SL: 4088.13
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028467819
+Direction: Buy
+Profits: 2.18
+SL: 4088.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 2.18
+SL: 4087.88
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028477943
+Direction: Buy
+Profits: 2.18
+SL: 4088.73
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028482802
+Direction: Buy
+Profits: 2.18
+SL: 4088.57
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028486091
+Direction: Buy
+Profits: 2.18
+SL: 4088.97
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028489948
+Direction: Buy
+Profits: 2.18
+SL: 4088.25
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 2.18
+SL: 4087.84
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028500746
+Direction: Buy
+Profits: 2.18
+SL: 4088.47
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028503622
+Direction: Buy
+Profits: 2.18
+SL: 4088.37
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 2.18
+SL: 4087.97
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028527744
+Direction: Buy
+Profits: 2.18
+SL: 4088.46
+Result: order success (10009)
+[2025-11-17 11:04:54] $:1006.59  ---  RSI[-1]:75.91 | RSI[-2]:73.17 | RSI[-3]:71.34 | RSI[-4]:70.63  ---  BB_DIFF[-1]:33.81 | BB_DIFF[-2]:32.71 | BB_DIFF[-3]:30.96  ---  ATR:4.35
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4091.59
+SL: 4087.24
+TP: 4135.12
+Result: order no money (10019)
+
+[2025-11-17 11:05:14] $:1006.59  ---  RSI[-1]:75.00 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.58 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.12
+[2025-11-17 11:05:34] $:1006.59  ---  RSI[-1]:74.80 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.55 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.16
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.08
+SL: 4089.31
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.08
+SL: 4089.45
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.08
+SL: 4089.19
+Result: order success (10009)
+[2025-11-17 11:05:55] $:1006.59  ---  RSI[-1]:76.29 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.84 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.16
+✅ Succeeded
+Order #: 54028693500
+Direction: Buy
+Price: 4092.18
+SL: 4088.02
+TP: 4133.79
+Result: order success (10009)
+
+[2025-11-17 11:06:15] $:1006.59  ---  RSI[-1]:73.63 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.39 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.17
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.09
+SL: 4089.32
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.09
+SL: 4089.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.09
+SL: 4089.2
+Result: order success (10009)
+[2025-11-17 11:06:35] $:1006.59  ---  RSI[-1]:76.01 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.72 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.17
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4091.71
+SL: 4087.54
+TP: 4133.41
+Result: order no money (10019)
+
+[2025-11-17 11:06:55] $:1006.59  ---  RSI[-1]:75.46 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:34.64 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.17
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.24
+SL: 4087.93
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.24
+SL: 4088.64
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.24
+SL: 4088.56
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.12
+SL: 4089.35
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.12
+SL: 4089.49
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.12
+SL: 4089.23
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028629147
+Direction: Buy
+Profits: 2.12
+SL: 4090.92
+Result: order success (10009)
+[2025-11-17 11:07:16] $:1006.59  ---  RSI[-1]:77.15 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.25 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.24
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4093.05
+SL: 4088.81
+TP: 4135.42
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.25
+SL: 4087.94
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.25
+SL: 4088.65
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.25
+SL: 4088.57
+Result: order success (10009)
+[2025-11-17 11:07:37] $:1006.59  ---  RSI[-1]:77.05 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.20 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.25
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4093.11
+SL: 4088.86
+TP: 4135.58
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.30
+SL: 4087.99
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.30
+SL: 4088.7
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.30
+SL: 4088.62
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.15
+SL: 4089.38
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.15
+SL: 4089.52
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.15
+SL: 4089.26
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028629147
+Direction: Buy
+Profits: 2.15
+SL: 4090.95
+Result: order success (10009)
+[2025-11-17 11:07:58] $:1006.59  ---  RSI[-1]:77.39 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.37 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.30
+✅ Succeeded
+Order #: 54028728421
+Direction: Buy
+Price: 4093.67
+SL: 4089.37
+TP: 4136.72
+Result: order success (10009)
+
+[2025-11-17 11:08:18] $:1006.59  ---  RSI[-1]:76.80 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.08 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.30
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4092.75
+SL: 4088.45
+TP: 4135.80
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028554218
+Direction: Buy
+Profits: 2.15
+SL: 4091.46
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028633978
+Direction: Buy
+Profits: 2.15
+SL: 4091.26
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028637717
+Direction: Buy
+Profits: 2.15
+SL: 4091.51
+Result: order success (10009)
+[2025-11-17 11:08:38] $:1006.59  ---  RSI[-1]:77.91 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.66 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.30
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4094.23
+SL: 4089.93
+TP: 4137.28
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.34
+SL: 4088.03
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.34
+SL: 4088.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.34
+SL: 4088.66
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.17
+SL: 4089.4
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.17
+SL: 4089.54
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.17
+SL: 4089.28
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028554218
+Direction: Buy
+Profits: 2.17
+SL: 4091.48
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028629147
+Direction: Buy
+Profits: 2.17
+SL: 4090.97
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028633978
+Direction: Buy
+Profits: 2.17
+SL: 4091.28
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028637717
+Direction: Buy
+Profits: 2.17
+SL: 4091.53
+Result: order success (10009)
+[2025-11-17 11:09:00] $:1006.59  ---  RSI[-1]:77.79 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.59 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.34
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4094.14
+SL: 4089.80
+TP: 4137.51
+Result: order no money (10019)
+
+[2025-11-17 11:09:20] $:1006.59  ---  RSI[-1]:77.68 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.53 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.34
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4093.95
+SL: 4089.61
+TP: 4137.32
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.35
+SL: 4088.04
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.35
+SL: 4088.75
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.35
+SL: 4088.67
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.18
+SL: 4089.41
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.18
+SL: 4089.55
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 2.18
+SL: 4089.29
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028554218
+Direction: Buy
+Profits: 2.18
+SL: 4091.49
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028629147
+Direction: Buy
+Profits: 2.18
+SL: 4090.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028633978
+Direction: Buy
+Profits: 2.18
+SL: 4091.29
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028637717
+Direction: Buy
+Profits: 2.18
+SL: 4091.54
+Result: order success (10009)
+[2025-11-17 11:09:41] $:1006.59  ---  RSI[-1]:77.95 | RSI[-2]:75.99 | RSI[-3]:73.17 | RSI[-4]:71.34  ---  BB_DIFF[-1]:35.68 | BB_DIFF[-2]:33.85 | BB_DIFF[-3]:32.71  ---  ATR:4.35
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4094.34
+SL: 4089.99
+TP: 4137.89
+Result: order no money (10019)
+
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 4.08
+SL: 4089.78
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 4.08
+SL: 4089.78
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 4.08
+SL: 4089.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 4.08
+SL: 4089.87
+Result: order success (10009)
+[2025-11-17 11:10:01] $:1006.59  ---  RSI[-1]:77.34 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:37.17 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.08
+🔒 Lock profit
+ORder #: 54028419403
+Direction: Buy
+Profits: 4.19
+SL: 4090.28
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028425522
+Direction: Buy
+Profits: 4.19
+SL: 4090.53
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028437020
+Direction: Buy
+Profits: 4.19
+SL: 4090.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 4.19
+SL: 4089.89
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 4.19
+SL: 4090.14
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028467819
+Direction: Buy
+Profits: 4.19
+SL: 4090.67
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 4.19
+SL: 4089.89
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028477943
+Direction: Buy
+Profits: 4.19
+SL: 4090.74
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028482802
+Direction: Buy
+Profits: 4.19
+SL: 4090.58
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028486091
+Direction: Buy
+Profits: 4.19
+SL: 4090.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028489948
+Direction: Buy
+Profits: 4.19
+SL: 4090.26
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 4.19
+SL: 4089.85
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028500746
+Direction: Buy
+Profits: 4.19
+SL: 4090.48
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028503622
+Direction: Buy
+Profits: 4.19
+SL: 4090.38
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 4.19
+SL: 4089.98
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028527744
+Direction: Buy
+Profits: 4.19
+SL: 4090.47
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028536292
+Direction: Buy
+Profits: 4.19
+SL: 4091.3
+Result: order success (10009)
+[2025-11-17 11:10:24] $:1006.59  ---  RSI[-1]:78.89 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:37.69 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.19
+✅ Succeeded
+Order #: 54028770231
+Direction: Buy
+Price: 4094.97
+SL: 4090.78
+TP: 4136.85
+Result: order success (10009)
+
+[2025-11-17 11:10:44] $:1006.59  ---  RSI[-1]:75.72 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.95 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.23
+🔒 Lock profit
+ORder #: 54028449339
+Direction: Buy
+Profits: 4.23
+SL: 4089.93
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028459062
+Direction: Buy
+Profits: 4.23
+SL: 4090.18
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028472257
+Direction: Buy
+Profits: 4.23
+SL: 4089.93
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028494550
+Direction: Buy
+Profits: 4.23
+SL: 4089.89
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028524347
+Direction: Buy
+Profits: 4.23
+SL: 4090.02
+Result: order success (10009)
+[2025-11-17 11:11:05] $:1006.59  ---  RSI[-1]:78.13 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:37.30 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.23
+❌ Failed
+Order #: 0
+Direction: Buy
+Price: 4094.59
+SL: 4090.36
+TP: 4136.90
+Result: order no money (10019)
+
+[2025-11-17 11:11:25] $:1006.59  ---  RSI[-1]:73.22 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.61 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.30
+[2025-11-17 11:11:45] $:1006.59  ---  RSI[-1]:74.45 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.77 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.31
+🔒 Lock profit
+ORder #: 54028432172
+Direction: Buy
+Profits: 2.21
+SL: 4089.44
+Result: order success (10009)
+[2025-11-17 11:12:05] $:1027.88  ---  RSI[-1]:71.92 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.43 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+🔒 Lock profit
+ORder #: 54028444205
+Direction: Buy
+Profits: 2.21
+SL: 4089.58
+Result: order success (10009)
+[2025-11-17 11:12:25] $:1027.88  ---  RSI[-1]:73.10 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.59 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+🔒 Lock profit
+ORder #: 54028395737
+Direction: Buy
+Profits: 4.41
+SL: 4088.1
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028402430
+Direction: Buy
+Profits: 4.41
+SL: 4088.81
+Result: order success (10009)
+🔒 Lock profit
+ORder #: 54028408502
+Direction: Buy
+Profits: 4.41
+SL: 4088.73
+Result: order success (10009)
+[2025-11-17 11:12:45] $:1027.88  ---  RSI[-1]:75.92 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.97 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:13:05] $:1027.88  ---  RSI[-1]:75.96 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.98 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:13:25] $:1027.88  ---  RSI[-1]:73.35 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.63 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:13:45] $:1027.88  ---  RSI[-1]:74.76 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.82 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:14:05] $:1027.88  ---  RSI[-1]:72.47 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.51 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:14:25] $:1027.88  ---  RSI[-1]:72.92 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:36.57 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.41
+[2025-11-17 11:14:46] $:1069.86  ---  RSI[-1]:68.43 | RSI[-2]:78.04 | RSI[-3]:75.99 | RSI[-4]:73.17  ---  BB_DIFF[-1]:35.96 | BB_DIFF[-2]:35.73 | BB_DIFF[-3]:33.85  ---  ATR:4.46
+[2025-11-17 11:15:06] $:1082.55  ---  RSI[-1]:68.49 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.66 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.19
+[2025-11-17 11:15:26] $:1082.55  ---  RSI[-1]:68.94 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.77 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.23
+[2025-11-17 11:15:46] $:1082.55  ---  RSI[-1]:68.27 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.64 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.25
+[2025-11-17 11:16:06] $:1084.76  ---  RSI[-1]:67.22 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.52 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.26
+[2025-11-17 11:16:26] $:1082.67  ---  RSI[-1]:67.85 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.59 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.28
+[2025-11-17 11:16:46] $:1091.49  ---  RSI[-1]:65.84 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.37 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.32
+[2025-11-17 11:17:06] $:1091.49  ---  RSI[-1]:67.37 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.54 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.32
+[2025-11-17 11:17:26] $:1091.49  ---  RSI[-1]:67.98 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.61 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.32
+[2025-11-17 11:17:46] $:1091.49  ---  RSI[-1]:68.53 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.67 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.32
+[2025-11-17 11:18:06] $:1091.49  ---  RSI[-1]:66.58 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.45 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.32
+[2025-11-17 11:18:26] $:1091.74  ---  RSI[-1]:65.33 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.31 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.39
+[2025-11-17 11:18:46] $:1091.74  ---  RSI[-1]:64.17 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.19 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.39
+[2025-11-17 11:19:06] $:1087.49  ---  RSI[-1]:64.04 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.17 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.41
+[2025-11-17 11:19:26] $:1087.49  ---  RSI[-1]:63.70 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.14 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.41
+[2025-11-17 11:19:46] $:1087.49  ---  RSI[-1]:63.35 | RSI[-2]:68.57 | RSI[-3]:78.04 | RSI[-4]:75.99  ---  BB_DIFF[-1]:36.10 | BB_DIFF[-2]:35.98 | BB_DIFF[-3]:35.73  ---  ATR:4.41
+[2025-11-17 11:20:06] $:1087.49  ---  RSI[-1]:62.68 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.91 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.16
+[2025-11-17 11:20:26] $:1087.49  ---  RSI[-1]:60.46 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.72 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.23
+[2025-11-17 11:20:46] $:1087.49  ---  RSI[-1]:59.31 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.63 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.28
+[2025-11-17 11:21:06] $:1087.49  ---  RSI[-1]:58.90 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.60 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.29
+[2025-11-17 11:21:26] $:1087.49  ---  RSI[-1]:60.43 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.71 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.31
+[2025-11-17 11:21:46] $:1087.49  ---  RSI[-1]:60.10 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.69 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.31
+[2025-11-17 11:22:06] $:1087.49  ---  RSI[-1]:59.19 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.62 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.31
+[2025-11-17 11:22:26] $:1087.49  ---  RSI[-1]:59.63 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.65 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.31
+[2025-11-17 11:22:46] $:1087.49  ---  RSI[-1]:58.27 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.55 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.32
+[2025-11-17 11:23:06] $:1087.49  ---  RSI[-1]:56.03 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.41 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.44
+[2025-11-17 11:23:26] $:1087.49  ---  RSI[-1]:55.86 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.40 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.53
+[2025-11-17 11:23:46] $:1087.49  ---  RSI[-1]:57.67 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.51 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.53
+[2025-11-17 11:24:06] $:1087.49  ---  RSI[-1]:56.48 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.44 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.53
+[2025-11-17 11:24:26] $:1087.49  ---  RSI[-1]:57.70 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.52 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.53
+[2025-11-17 11:24:46] $:1087.49  ---  RSI[-1]:56.15 | RSI[-2]:62.52 | RSI[-3]:68.57 | RSI[-4]:78.04  ---  BB_DIFF[-1]:34.42 | BB_DIFF[-2]:36.02 | BB_DIFF[-3]:35.98  ---  ATR:4.53
+[2025-11-17 11:25:06] $:1087.49  ---  RSI[-1]:51.95 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.33
+[2025-11-17 11:25:26] $:1087.49  ---  RSI[-1]:51.43 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.38
+[2025-11-17 11:25:46] $:1087.49  ---  RSI[-1]:51.82 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.42
+[2025-11-17 11:26:06] $:1087.49  ---  RSI[-1]:51.59 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.44
+[2025-11-17 11:26:26] $:1087.49  ---  RSI[-1]:51.17 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.44
+[2025-11-17 11:26:46] $:1087.49  ---  RSI[-1]:52.47 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.44
+[2025-11-17 11:27:06] $:1087.49  ---  RSI[-1]:50.74 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.44
+[2025-11-17 11:27:26] $:1087.49  ---  RSI[-1]:50.91 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.45
+[2025-11-17 11:27:46] $:1087.49  ---  RSI[-1]:52.29 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.45
+[2025-11-17 11:28:06] $:1087.49  ---  RSI[-1]:53.33 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.59 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.47
+[2025-11-17 11:28:26] $:1087.49  ---  RSI[-1]:54.11 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.61 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.52
+[2025-11-17 11:28:46] $:1087.49  ---  RSI[-1]:53.52 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.59 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.52
+[2025-11-17 11:29:06] $:1087.49  ---  RSI[-1]:51.39 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.57 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.52
+[2025-11-17 11:29:26] $:1087.49  ---  RSI[-1]:53.83 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.60 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.52
+[2025-11-17 11:29:46] $:1087.49  ---  RSI[-1]:52.73 | RSI[-2]:52.09 | RSI[-3]:62.52 | RSI[-4]:68.57  ---  BB_DIFF[-1]:32.58 | BB_DIFF[-2]:34.26 | BB_DIFF[-3]:36.02  ---  ATR:4.52
+[2025-11-17 11:30:06] $:1087.49  ---  RSI[-1]:53.35 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.07 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.26
+[2025-11-17 11:30:26] $:1087.49  ---  RSI[-1]:54.66 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.10 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.30
+[2025-11-17 11:30:46] $:1087.49  ---  RSI[-1]:54.89 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.11 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.32
+[2025-11-17 11:31:06] $:1087.49  ---  RSI[-1]:53.28 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.07 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.32
+[2025-11-17 11:31:26] $:1087.49  ---  RSI[-1]:53.72 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.08 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.33
+[2025-11-17 11:31:46] $:1087.49  ---  RSI[-1]:53.97 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.08 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.34
+[2025-11-17 11:32:07] $:1087.49  ---  RSI[-1]:54.83 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.11 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.34
+[2025-11-17 11:32:27] $:1087.49  ---  RSI[-1]:55.33 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.13 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.36
+[2025-11-17 11:32:47] $:1087.49  ---  RSI[-1]:55.90 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.15 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.38
+[2025-11-17 11:33:07] $:1087.49  ---  RSI[-1]:55.71 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.14 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.40
+[2025-11-17 11:33:27] $:1087.49  ---  RSI[-1]:55.21 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.12 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.40
+[2025-11-17 11:33:47] $:1087.49  ---  RSI[-1]:54.25 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.09 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.40
+[2025-11-17 11:34:07] $:1087.49  ---  RSI[-1]:54.09 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.08 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.40
+[2025-11-17 11:34:27] $:1087.49  ---  RSI[-1]:52.96 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.07 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.44
+[2025-11-17 11:34:47] $:1087.49  ---  RSI[-1]:52.85 | RSI[-2]:52.80 | RSI[-3]:52.09 | RSI[-4]:62.52  ---  BB_DIFF[-1]:30.07 | BB_DIFF[-2]:32.58 | BB_DIFF[-3]:34.26  ---  ATR:4.44
+[2025-11-17 11:35:07] $:1087.49  ---  RSI[-1]:52.02 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.84 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.17
+[2025-11-17 11:35:27] $:1087.49  ---  RSI[-1]:49.59 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.92 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.29
+[2025-11-17 11:35:47] $:1087.49  ---  RSI[-1]:45.93 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:27.22 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.45
+[2025-11-17 11:36:07] $:1087.49  ---  RSI[-1]:46.73 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:27.13 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:36:27] $:1087.49  ---  RSI[-1]:47.56 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:27.05 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:36:47] $:1087.49  ---  RSI[-1]:48.16 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:27.01 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:37:07] $:1087.49  ---  RSI[-1]:49.00 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.95 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:37:27] $:1087.49  ---  RSI[-1]:50.22 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.89 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:37:47] $:1087.49  ---  RSI[-1]:52.02 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.84 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:38:07] $:1087.49  ---  RSI[-1]:51.96 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.84 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:38:27] $:1087.49  ---  RSI[-1]:51.83 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.84 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:38:47] $:1087.49  ---  RSI[-1]:50.09 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.90 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:39:07] $:1087.49  ---  RSI[-1]:47.87 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:27.03 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:39:27] $:1087.49  ---  RSI[-1]:49.33 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.93 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:39:47] $:1087.49  ---  RSI[-1]:49.21 | RSI[-2]:52.57 | RSI[-3]:52.80 | RSI[-4]:52.09  ---  BB_DIFF[-1]:26.94 | BB_DIFF[-2]:30.07 | BB_DIFF[-3]:32.58  ---  ATR:4.46
+[2025-11-17 11:40:07] $:1087.49  ---  RSI[-1]:47.67 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.75 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.18
+[2025-11-17 11:40:27] $:1087.49  ---  RSI[-1]:47.24 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.79 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.21
+[2025-11-17 11:40:47] $:1087.49  ---  RSI[-1]:47.21 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.79 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.23
+[2025-11-17 11:41:07] $:1087.49  ---  RSI[-1]:47.09 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.80 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.24
+[2025-11-17 11:41:27] $:1087.49  ---  RSI[-1]:48.50 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.68 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.26
+[2025-11-17 11:41:47] $:1087.49  ---  RSI[-1]:48.47 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.68 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.28
+[2025-11-17 11:42:07] $:1087.49  ---  RSI[-1]:46.91 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.82 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.28
+[2025-11-17 11:42:27] $:1087.49  ---  RSI[-1]:46.68 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.85 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.29
+[2025-11-17 11:42:47] $:1087.49  ---  RSI[-1]:46.57 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.86 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.29
+[2025-11-17 11:43:07] $:1087.49  ---  RSI[-1]:46.53 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.87 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.29
+[2025-11-17 11:43:27] $:1087.49  ---  RSI[-1]:45.59 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.98 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.33
+[2025-11-17 11:43:47] $:1087.49  ---  RSI[-1]:45.74 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.96 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.34
+[2025-11-17 11:44:07] $:1087.49  ---  RSI[-1]:45.57 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.98 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.35
+[2025-11-17 11:44:27] $:1087.49  ---  RSI[-1]:46.39 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.88 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.35
+[2025-11-17 11:44:47] $:1087.49  ---  RSI[-1]:46.77 | RSI[-2]:48.34 | RSI[-3]:52.57 | RSI[-4]:52.80  ---  BB_DIFF[-1]:24.84 | BB_DIFF[-2]:26.99 | BB_DIFF[-3]:30.07  ---  ATR:4.35
+[2025-11-17 11:45:07] $:1087.49  ---  RSI[-1]:46.46 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.90 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.08
+[2025-11-17 11:45:27] $:1087.49  ---  RSI[-1]:46.87 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.85 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.12
+[2025-11-17 11:45:47] $:1087.49  ---  RSI[-1]:47.12 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.82 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.12
+[2025-11-17 11:46:07] $:1087.49  ---  RSI[-1]:48.19 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.72 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.19
+[2025-11-17 11:46:27] $:1087.49  ---  RSI[-1]:46.78 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.86 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.19
+[2025-11-17 11:46:47] $:1087.49  ---  RSI[-1]:46.30 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.92 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.19
+[2025-11-17 11:47:07] $:1087.49  ---  RSI[-1]:46.67 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:22.87 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.19
+[2025-11-17 11:47:27] $:1087.49  ---  RSI[-1]:45.64 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.01 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.20
+[2025-11-17 11:47:47] $:1087.49  ---  RSI[-1]:43.37 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.38 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.32
+[2025-11-17 11:48:07] $:1087.49  ---  RSI[-1]:44.94 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.11 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.32
+[2025-11-17 11:48:27] $:1087.49  ---  RSI[-1]:43.34 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.39 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.32
+[2025-11-17 11:48:47] $:1087.49  ---  RSI[-1]:40.87 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.95 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.46
+[2025-11-17 11:49:07] $:1087.49  ---  RSI[-1]:41.19 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.87 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.48
+[2025-11-17 11:49:27] $:1087.49  ---  RSI[-1]:42.41 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.58 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.48
+[2025-11-17 11:49:48] $:1087.49  ---  RSI[-1]:41.90 | RSI[-2]:47.37 | RSI[-3]:48.34 | RSI[-4]:52.57  ---  BB_DIFF[-1]:23.70 | BB_DIFF[-2]:24.78 | BB_DIFF[-3]:26.99  ---  ATR:4.48
+[2025-11-17 11:50:08] $:1087.49  ---  RSI[-1]:41.19 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:23.65 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.25
+[2025-11-17 11:50:28] $:1087.49  ---  RSI[-1]:40.95 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:23.71 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.30
+[2025-11-17 11:50:48] $:1087.49  ---  RSI[-1]:42.76 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:23.36 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.30
+[2025-11-17 11:51:08] $:1087.49  ---  RSI[-1]:44.41 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:23.10 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.37
+[2025-11-17 11:51:28] $:1087.49  ---  RSI[-1]:47.52 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.67 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.50
+[2025-11-17 11:51:48] $:1087.49  ---  RSI[-1]:47.31 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.69 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.51
+[2025-11-17 11:52:08] $:1087.49  ---  RSI[-1]:47.68 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.65 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.54
+[2025-11-17 11:52:28] $:1087.49  ---  RSI[-1]:49.45 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.44 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.61
+[2025-11-17 11:52:48] $:1087.49  ---  RSI[-1]:49.07 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.48 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.62
+[2025-11-17 11:53:08] $:1087.49  ---  RSI[-1]:49.71 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.42 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.64
+[2025-11-17 11:53:28] $:1087.49  ---  RSI[-1]:50.25 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.36 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.66
+[2025-11-17 11:53:48] $:1087.49  ---  RSI[-1]:48.81 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.51 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.68
+[2025-11-17 11:54:08] $:1087.49  ---  RSI[-1]:49.08 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.48 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.68
+[2025-11-17 11:54:28] $:1087.49  ---  RSI[-1]:46.23 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.84 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.68
+[2025-11-17 11:54:48] $:1087.49  ---  RSI[-1]:46.13 | RSI[-2]:41.75 | RSI[-3]:47.37 | RSI[-4]:48.34  ---  BB_DIFF[-1]:22.85 | BB_DIFF[-2]:23.73 | BB_DIFF[-3]:24.78  ---  ATR:4.68
+[2025-11-17 11:55:08] $:1087.49  ---  RSI[-1]:45.10 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:23.01 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.42
+[2025-11-17 11:55:28] $:1087.49  ---  RSI[-1]:45.22 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.99 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.42
+[2025-11-17 11:55:48] $:1087.49  ---  RSI[-1]:46.23 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.83 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.45
+[2025-11-17 11:56:08] $:1087.49  ---  RSI[-1]:45.84 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.89 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.45
+[2025-11-17 11:56:28] $:1087.49  ---  RSI[-1]:47.27 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.70 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.51
+[2025-11-17 11:56:48] $:1087.49  ---  RSI[-1]:48.18 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.59 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.52
+[2025-11-17 11:57:08] $:1087.49  ---  RSI[-1]:50.05 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.40 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:57:28] $:1087.49  ---  RSI[-1]:49.65 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.44 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:57:48] $:1087.49  ---  RSI[-1]:49.25 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.48 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:58:08] $:1087.49  ---  RSI[-1]:47.51 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.67 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:58:28] $:1087.49  ---  RSI[-1]:49.25 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.48 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:58:48] $:1087.49  ---  RSI[-1]:49.88 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.41 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.62
+[2025-11-17 11:59:08] $:1087.49  ---  RSI[-1]:51.25 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.29 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.66
+[2025-11-17 11:59:28] $:1087.49  ---  RSI[-1]:50.40 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.36 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.68
+[2025-11-17 11:59:48] $:1087.49  ---  RSI[-1]:48.17 | RSI[-2]:46.15 | RSI[-3]:41.75 | RSI[-4]:47.37  ---  BB_DIFF[-1]:22.59 | BB_DIFF[-2]:22.85 | BB_DIFF[-3]:23.73  ---  ATR:4.68
+[2025-11-17 12:00:08] $:1087.49  ---  RSI[-1]:49.09 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:21.96 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.42
+[2025-11-17 12:00:28] $:1087.49  ---  RSI[-1]:46.62 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.27 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.51
+[2025-11-17 12:00:48] $:1087.49  ---  RSI[-1]:47.57 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.14 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.51
+[2025-11-17 12:01:08] $:1087.49  ---  RSI[-1]:46.25 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.33 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.51
+[2025-11-17 12:01:28] $:1087.49  ---  RSI[-1]:46.54 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.28 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.51
+[2025-11-17 12:01:48] $:1087.49  ---  RSI[-1]:45.81 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.40 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.52
+[2025-11-17 12:02:08] $:1087.49  ---  RSI[-1]:44.84 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.57 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.60
+[2025-11-17 12:02:28] $:1087.49  ---  RSI[-1]:44.68 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.61 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.60
+[2025-11-17 12:02:48] $:1087.49  ---  RSI[-1]:44.76 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.59 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.60
+[2025-11-17 12:03:08] $:1087.49  ---  RSI[-1]:44.46 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.65 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.60
+[2025-11-17 12:03:28] $:1087.49  ---  RSI[-1]:44.86 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.57 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.63
+[2025-11-17 12:03:48] $:1087.49  ---  RSI[-1]:43.05 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.96 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.65
+[2025-11-17 12:04:08] $:1087.49  ---  RSI[-1]:41.91 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:23.25 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.73
+[2025-11-17 12:04:28] $:1087.49  ---  RSI[-1]:42.43 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:23.12 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.75
+[2025-11-17 12:04:48] $:1087.49  ---  RSI[-1]:43.45 | RSI[-2]:48.15 | RSI[-3]:46.15 | RSI[-4]:41.75  ---  BB_DIFF[-1]:22.86 | BB_DIFF[-2]:22.59 | BB_DIFF[-3]:22.85  ---  ATR:4.75
+[2025-11-17 12:05:09] $:1087.49  ---  RSI[-1]:44.18 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:23.26 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.53
+[2025-11-17 12:05:29] $:1087.49  ---  RSI[-1]:44.25 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:23.24 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.53
+[2025-11-17 12:05:49] $:1087.49  ---  RSI[-1]:46.84 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.86 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.59
+[2025-11-17 12:06:09] $:1087.49  ---  RSI[-1]:48.48 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.67 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.67
+[2025-11-17 12:06:29] $:1087.49  ---  RSI[-1]:48.99 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.62 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.68
+[2025-11-17 12:06:49] $:1087.49  ---  RSI[-1]:49.18 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.60 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.71
+[2025-11-17 12:07:09] $:1087.49  ---  RSI[-1]:48.24 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.70 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.71
+[2025-11-17 12:07:29] $:1087.49  ---  RSI[-1]:48.06 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.72 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.71
+[2025-11-17 12:07:49] $:1087.49  ---  RSI[-1]:45.87 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.99 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.71
+[2025-11-17 12:08:09] $:1087.49  ---  RSI[-1]:49.21 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.60 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.71
+[2025-11-17 12:08:29] $:1087.49  ---  RSI[-1]:50.10 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.51 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.74
+[2025-11-17 12:08:49] $:1087.49  ---  RSI[-1]:49.41 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.58 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.74
+[2025-11-17 12:09:09] $:1087.49  ---  RSI[-1]:48.91 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.63 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.74
+[2025-11-17 12:09:29] $:1087.49  ---  RSI[-1]:49.64 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.55 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.74
+[2025-11-17 12:09:49] $:1087.49  ---  RSI[-1]:50.11 | RSI[-2]:45.55 | RSI[-3]:48.15 | RSI[-4]:46.15  ---  BB_DIFF[-1]:22.51 | BB_DIFF[-2]:22.44 | BB_DIFF[-3]:22.59  ---  ATR:4.77
+[2025-11-17 12:10:09] $:1087.49  ---  RSI[-1]:50.36 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.54 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.46
+[2025-11-17 12:10:29] $:1087.49  ---  RSI[-1]:50.39 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.54 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.46
+[2025-11-17 12:10:49] $:1087.49  ---  RSI[-1]:50.87 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.50 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.48
+[2025-11-17 12:11:09] $:1087.49  ---  RSI[-1]:52.05 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.41 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.54
+[2025-11-17 12:11:29] $:1087.49  ---  RSI[-1]:51.53 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.45 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.54
+[2025-11-17 12:11:49] $:1087.49  ---  RSI[-1]:52.76 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.37 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.60
+[2025-11-17 12:12:09] $:1087.49  ---  RSI[-1]:52.63 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.38 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.61
+[2025-11-17 12:12:29] $:1087.49  ---  RSI[-1]:51.64 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.44 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.61
+[2025-11-17 12:12:49] $:1087.49  ---  RSI[-1]:50.18 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.56 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.61
+[2025-11-17 12:13:09] $:1087.49  ---  RSI[-1]:50.84 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.50 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.66
+[2025-11-17 12:13:29] $:1087.49  ---  RSI[-1]:51.96 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.42 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.66
+[2025-11-17 12:13:49] $:1087.49  ---  RSI[-1]:51.32 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.47 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.66
+[2025-11-17 12:14:09] $:1087.49  ---  RSI[-1]:52.42 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.39 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.66
+[2025-11-17 12:14:29] $:1087.49  ---  RSI[-1]:52.39 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.39 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.66
+[2025-11-17 12:14:49] $:1087.49  ---  RSI[-1]:54.10 | RSI[-2]:50.63 | RSI[-3]:45.55 | RSI[-4]:48.15  ---  BB_DIFF[-1]:22.31 | BB_DIFF[-2]:22.46 | BB_DIFF[-3]:22.44  ---  ATR:4.69
+[2025-11-17 12:15:09] $:1087.49  ---  RSI[-1]:54.94 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.27 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.47
+[2025-11-17 12:15:29] $:1087.49  ---  RSI[-1]:55.52 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.27 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.49
+[2025-11-17 12:15:49] $:1087.49  ---  RSI[-1]:54.34 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.28 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.50
+[2025-11-17 12:16:09] $:1087.49  ---  RSI[-1]:52.95 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.33 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.56
+[2025-11-17 12:16:29] $:1087.49  ---  RSI[-1]:51.73 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.39 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.63
+[2025-11-17 12:16:49] $:1087.49  ---  RSI[-1]:54.39 | RSI[-2]:55.62 | RSI[-3]:50.63 | RSI[-4]:45.55  ---  BB_DIFF[-1]:22.28 | BB_DIFF[-2]:22.27 | BB_DIFF[-3]:22.46  ---  ATR:4.64
