@@ -1,5 +1,5 @@
 // head to root folder
-cd 2025
+cd GoldenEdge
 
 // setup virtual enviorment 
 python -m venv .venv
