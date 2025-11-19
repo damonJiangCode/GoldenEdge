@@ -1,0 +1,17 @@
+// head to root folder
+cd 2025
+
+// setup virtual enviorment 
+python -m venv .venv
+
+// activate virtual enviorment -- windows
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.venv\Scripts\activate
+
+// activate virtual enviorment // mac
+source .venv/bin/activate
+
+// install requirements
+pip install -r ./utlib/requirements.txt
+
+
