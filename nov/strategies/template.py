@@ -7,12 +7,13 @@ import os
 
 # META DATA
 METADATA = {
-    "account": 10008240404,
-    "password": "N_Kd1nWn",
+    "account": 1234567890,
+    "password": "paswword",
     "server": "MetaQuotes-Demo",
-    "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
-    "log_file": f"TMGM_{datetime.now().strftime('%m-%d__%H-%M')}.log",
-    "comment": "template",
+    "path": r"C:\\Program Files\\MetaTrader 5_int\\terminal64.exe",
+    "log_file": f"INDICATORS_TYPE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
+    "title": "INDICATORS_TYPE",
+    "comment": "RSI(14; 70, 30; 3+2), BB(20), EMA(20), SL(1*ATR), TP(2*ATR)",
 }
 
 # PARAMETERS
@@ -23,10 +24,11 @@ PARAMETERS = {
     "TP_MULTIPLIER": 2.0,
     "SL_MULTIPLIER": 1.0,
     "RSI_PERIOD": 14,
-    "RSI_OVERBOUGHT": 65,
-    "RSI_OVERSOLD": 35,
+    "RSI_OVERBOUGHT": 70,
+    "RSI_OVERSOLD": 30,
     "ATR_PERIOD": 14,
     "BB_PERIOD": 20,
+    "EMA_PERIOD": 20,
     "RUNTIME_SECONDS": 20
 }
 
@@ -39,13 +41,13 @@ def get_data(bars=1000):
         df["time"] = pd.to_datetime(df["time"], unit="s")
         df["rsi"] = talib.RSI(df["close"], timeperiod=PARAMETERS["RSI_PERIOD"])  # type: ignore
         df["atr"] = talib.ATR(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ATR_PERIOD"])  # type: ignore
+        df["ema"] = talib.EMA(df["close"], timeperiod=PARAMETERS["EMA_PERIOD"])  # type: ignore
         upper, middle, lower = talib.BBANDS(
             df["close"], timeperiod=PARAMETERS["BB_PERIOD"], nbdevup=2, nbdevdn=2, matype=0  # type: ignore
         )
         df["bb_upper"] = upper
         df["bb_middle"] = middle
         df["bb_lower"] = lower
-        df["bb_diff"] = upper - lower
         return df.dropna()
     except Exception as e:
         msg = f"❌ get_data() ERROR: {e}"
@@ -209,73 +211,42 @@ def close_all_positions():
 # ==== check trend signal ====
 def check_trend_signal(df):
     pass
-    # # global pause_until
-    # try:
-    #     # if datetime.now() + timedelta(hours=9) < pause_until:
-    #     #     msg = f"⏸️ pause till: {pause_until.strftime('%Y-%m-%d %H:%M:%S')}"
-    #     #     print(msg)
-    #     #     log_message(msg)
-    #     #     # send_telegram_message(message)
-    #     #     return None
-        
-    #     # if has_positions():
-    #     #     update_sl(df)
-    #     #     current_direction = has_positions()
-    #     #     if current_direction == 'long' and df.iloc[-2]['close'] < df.iloc[-2]['open']:
-    #     #         pause_until = datetime.now() + timedelta(hours=9) + timedelta(minutes=15)
-    #     #         local_time = datetime.now() + timedelta(minutes=15)
-    #     #         msg = f"⚠️ pause till {local_time.strftime('%H:%M')}"
-    #     #         print(msg)
-    #     #         log_message(msg)
-    #     #         send_telegram_message(msg)
-
-    #     #         max_attempts, attempt = 3, 0
-    #     #         while attempt < max_attempts and has_positions():
-    #     #             close_all_positions()
-    #     #             attempt += 1
-    #     #     elif current_direction == 'short' and df.iloc[-2]['close'] > df.iloc[-2]['open']:
-    #     #         pause_until = datetime.now() + timedelta(hours=9) + timedelta(minutes=15)
-    #     #         local_time = datetime.now() + timedelta(minutes=15)
-    #     #         msg = f"⚠️ pause till {local_time.strftime('%H:%M')}"
-    #     #         print(msg)
-    #     #         log_message(msg)
-
-    #     #         max_attempts, attempt = 3, 0
-    #     #         while attempt < max_attempts and has_positions():
-    #     #             close_all_positions()
-    #     #             attempt += 1
-    #     #     return None
-
-    #     # RSI signal
-    #     rsi_up = df.iloc[-4]["rsi"] < df.iloc[-3]["rsi"] < df.iloc[-2]["rsi"] < df.iloc[-1]["rsi"]
-    #     rsi_down = df.iloc[-4]["rsi"] > df.iloc[-3]["rsi"] > df.iloc[-2]["rsi"] > df.iloc[-1]["rsi"]
-    #     rsi_overbought_trend = (
-    #         df.iloc[-3]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and df.iloc[-2]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and df.iloc[-1]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"]
-    #     )
-    #     rsi_oversold_trend = (
-    #         df.iloc[-3]["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and df.iloc[-2]["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and df.iloc[-1]["rsi"] <= PARAMETERS["RSI_OVERSOLD"]
-    #     )
-    #     rsi_signal = 'long' if rsi_up and rsi_overbought_trend else 'short' if rsi_down and rsi_oversold_trend else None
-
-    #     # BB signal
-    #     bb_open = (
-    #         df.iloc[-1]["bb_diff"] > df.iloc[-2]["bb_diff"] > df.iloc[-3]["bb_diff"]
-    #     )
-    #     bb_signal = True if bb_open else None
-
-    #     # signal check
-    #     signal = rsi_signal if rsi_signal and bb_signal else None
-
-    #     return signal
-    # except Exception as e:
-    #     msg = f"❌ check_trend_signal() ERROR: {e}"
-    #     print(msg)
-    #     log_message(msg)
-
+    
 
 # === check range signal ===
 def check_range_signal(df):
     pass
+    try:
+        last1 = df.iloc[-1]
+        last2 = df.iloc[-2]
+        last3 = df.iloc[-3]
+
+        # in range check
+        if not last1["is_range"]:
+            return None
+        
+        # RSI signal
+        rsi_up = last3["rsi"] < last2["rsi"] < last1["rsi"]
+        rsi_down = last3["rsi"] > last2["rsi"] > last1["rsi"]
+        rsi_overbought = (
+            last2["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last1["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"]
+        )
+        rsi_oversold = (
+            last2["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last1["rsi"] <= PARAMETERS["RSI_OVERSOLD"]
+        )
+        rsi_signal = 'short' if rsi_up and rsi_overbought else 'long' if rsi_down and rsi_oversold else None
+
+        # BB range touch check
+        touch_upper = last2["close"] > last2["range_upper"] and last1["close"] > last1["range_upper"]
+        touch_lower = last2["close"] < last2["range_lower"] and last1["close"] < last1["range_lower"]
+
+        signal = rsi_signal if (rsi_signal == 'short' and touch_upper) or (rsi_signal == 'long' and touch_lower) else None
+
+        return signal
+    except Exception as e:
+        msg = f"❌ check_trend_signal() ERROR: {e}"
+        print(msg)
+        log_message(msg)
 
 
 # ==== place order ====
@@ -367,11 +338,14 @@ def run():
             return
 
         df = get_data()
-        signal = check_trend_signal(df)
+        signal = check_range_signal(df)
 
         timestamp = (datetime.now() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
-        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{df.iloc[-1]['rsi']:.2f} | RSI[-2]:{df.iloc[-2]['rsi']:.2f} | RSI[-3]:{df.iloc[-3]['rsi']:.2f} | RSI[-4]:{df.iloc[-4]['rsi']:.2f}  ---  BB_DIFF[-1]:{df.iloc[-1]['bb_diff']:.2f} | BB_DIFF[-2]:{df.iloc[-2]['bb_diff']:.2f} | BB_DIFF[-3]:{df.iloc[-3]['bb_diff']:.2f}  ---  ATR:{df.iloc[-1]['atr']:.2f}"  # type: ignore
-        short_msg = f"[{timestamp}] --- ${METADATA["comment"]} --- ${mt5.account_info().balance}" #type: ignore
+        last1 = df.iloc[-1]
+        last2 = df.iloc[-2]
+        last3 = df.iloc[-3]
+        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  INDICATOR1  ---  INDICATOR2  ---  INDICATOR3"  # type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
 
