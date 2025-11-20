@@ -13,7 +13,7 @@ METADATA = {
     "path": r"C:\\Program Files\\MetaTrader 5_3\\terminal64.exe",
     "log_file": f"RSI_BB_ADX_TREND_{datetime.now().strftime('%m-%d__%H-%M')}.log",
     "title": "RSI_BB_ADX_TREND",
-    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3), ADX(14; 50)",
+    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3), ADX(14; 40)",
 }
 
 # PARAMETERS
@@ -27,7 +27,7 @@ PARAMETERS = {
     "RSI_OVERBOUGHT": 65,
     "RSI_OVERSOLD": 35,
     "ADX_PERIOD": 14,
-    "ADX_THRESHOLD": 50,
+    "ADX_THRESHOLD": 40,
     "ATR_PERIOD": 14,
     "BB_PERIOD": 20,
     "RUNTIME_SECONDS": 20

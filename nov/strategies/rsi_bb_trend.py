@@ -13,7 +13,7 @@ METADATA = {
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
     "log_file": f"RSI_BB_TREND_{datetime.now().strftime('%m-%d__%H-%M')}.log",
     "title": "RSI_BB_TREND",
-    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3)",
+    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3), SL(1*ATR), TP(2*ATR)",
 }
 
 # PARAMETERS
