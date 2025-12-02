@@ -8,7 +8,7 @@ python -m venv .venv
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .venv\Scripts\activate
 
-// activate virtual enviorment // mac
+// activate virtual enviorment -- mac
 source .venv/bin/activate
 
 // install requirements
