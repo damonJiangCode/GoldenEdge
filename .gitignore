@@ -1,4 +1,6 @@
 .DS_Store
-nov/logs/*.log
-dec/logs/*.log
+nov/logs/
+nov/*.txt
+dec/logs/
+dec/*.txt
 jan-26/logs/
