@@ -7,13 +7,13 @@ import os
 
 # META DATA
 METADATA = {
-    "account": 5042582045,
-    "password": "_mRiAxY8",
+    "account": 99851148,
+    "password": "Wr@d6hMi",
     "server": "MetaQuotes-Demo",
-    "path": r"C:\\Program Files\\MetaTrader 5_3\\terminal64.exe",
-    "log_file": f"RSI_BB_ADX_TREND_{datetime.now().strftime('%m-%d__%H-%M')}.log",
-    "title": "RSI_BB_ADX_TREND",
-    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3), ADX(14; 50)",
+    "path": r"C:\\Program Files\\MetaTrader 5_4\\terminal64.exe",
+    "log_file": f"RSI_BB_ATR_RANGE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
+    "title": "RSI_BB_ATR_RANGE",
+    "comment": "RSI(70, 30)",
 }
 
 # PARAMETERS
@@ -21,13 +21,12 @@ PARAMETERS = {
     "SYMBOL": "XAUUSD",
     "TIMEFRAME": mt5.TIMEFRAME_M5,
     "LOT": 0.01,
-    "TP_MULTIPLIER": 2.0,
-    "SL_MULTIPLIER": 1.0,
+    "TP_MULTIPLIER": 1.5,
+    "SL_MULTIPLIER": 0.8,
     "RSI_PERIOD": 14,
-    "RSI_OVERBOUGHT": 65,
-    "RSI_OVERSOLD": 35,
-    "ADX_PERIOD": 14,
-    "ADX_THRESHOLD": 50,
+    "RSI_OVERBOUGHT": 70,
+    "RSI_OVERSOLD": 30,
+    "EMA_PERIOD": 50,
     "ATR_PERIOD": 14,
     "BB_PERIOD": 20,
     "RUNTIME_SECONDS": 20
@@ -35,21 +34,34 @@ PARAMETERS = {
 
 
 # ==== get indicators ====
-def get_data(bars=1000):
+def get_data(bars=2000):
     try:
         rates = mt5.copy_rates_from_pos(PARAMETERS["SYMBOL"], PARAMETERS["TIMEFRAME"], 0, bars)  # type: ignore
         df = pd.DataFrame(rates)
+
         df["time"] = pd.to_datetime(df["time"], unit="s")
         df["rsi"] = talib.RSI(df["close"], timeperiod=PARAMETERS["RSI_PERIOD"])  # type: ignore
-        df["adx"] = talib.ADX(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ADX_PERIOD"])  # type: ignore
         df["atr"] = talib.ATR(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ATR_PERIOD"])  # type: ignore
+        df['atr_smooth'] = df['atr'].rolling(3, min_periods=1).mean()  # 平滑 ATR，min_periods=1 可减少 NaN
+        atr_mean = df['atr'].rolling(50, min_periods=10).mean()  # 50 根平均，min_periods 可调
+        df["ema"] = talib.EMA(df["close"], timeperiod=PARAMETERS["EMA_PERIOD"])  # type: ignore
+        
+        df['range_upper'] = df['ema'] + df['atr_smooth'] * 1.2
+        df['range_lower'] = df['ema'] - df['atr_smooth'] * 1.2
+
         upper, middle, lower = talib.BBANDS(
             df["close"], timeperiod=PARAMETERS["BB_PERIOD"], nbdevup=2, nbdevdn=2, matype=0  # type: ignore
         )
         df["bb_upper"] = upper
         df["bb_middle"] = middle
         df["bb_lower"] = lower
-        df["bb_diff"] = upper - lower
+        df['bb_upper_smooth'] = df['bb_upper'].rolling(2, min_periods=1).mean()
+        df['bb_lower_smooth'] = df['bb_lower'].rolling(2, min_periods=1).mean()
+        df['bb_width_smooth'] = df['bb_upper_smooth'] - df['bb_lower_smooth']
+
+        # in range
+        df['is_range'] = df['bb_width_smooth'] < atr_mean * 1.2  # 1.2 可调（越小越严格）
+        
         return df.dropna()
     except Exception as e:
         msg = f"❌ get_data() ERROR: {e}"
@@ -105,24 +117,34 @@ def is_close_to_market_close():
         return False
     
 
-# ==== positions check ====
+# ==== check positions ====
 def has_positions():
     try:
-        positions = mt5.positions_get(symbol=PARAMETERS["SYMBOL"])  # type: ignore
+        positions = mt5.positions_get(symbol=PARAMETERS["SYMBOL"]) # type: ignore
+
         if positions is None:
-            msg = "⚠️ Failed to query positions from mt5"
+            msg = f"⚠️ positions_get() return None, possibly due to MT5 connection issues, error code: {mt5.last_error()}" # type: ignore
             print(msg)
             log_message(msg)
-            return None
+            return "error"    # error state
+
         if len(positions) == 0:
+            return None       # no positions
+
+        pos = positions[0]
+
+        if pos.type == mt5.POSITION_TYPE_BUY:
+            return "long"
+        elif pos.type == mt5.POSITION_TYPE_SELL:
+            return "short"
+        else:
             return None
-        pos = positions[0]  
-        direction = "long" if pos.type == mt5.POSITION_TYPE_BUY else "short" if pos.type == mt5.POSITION_TYPE_SELL else None
-        return direction
+
     except Exception as e:
         msg = f"❌ has_positions() ERROR: {e}"
         print(msg)
         log_message(msg)
+        return "error"
 
 
 # RET CODE MESSAGES
@@ -212,44 +234,44 @@ def close_all_positions():
 
 # ==== check trend signal ====
 def check_trend_signal(df):
-    try:
-        # RSI signal
-        rsi_up = df.iloc[-4]["rsi"] < df.iloc[-3]["rsi"] < df.iloc[-2]["rsi"] < df.iloc[-1]["rsi"]
-        rsi_down = df.iloc[-4]["rsi"] > df.iloc[-3]["rsi"] > df.iloc[-2]["rsi"] > df.iloc[-1]["rsi"]
-        rsi_overbought_trend = (
-            df.iloc[-3]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and df.iloc[-2]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and df.iloc[-1]["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"]
-        )
-        rsi_oversold_trend = (
-            df.iloc[-3]["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and df.iloc[-2]["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and df.iloc[-1]["rsi"] <= PARAMETERS["RSI_OVERSOLD"]
-        )
-        rsi_signal = 'long' if rsi_up and rsi_overbought_trend else 'short' if rsi_down and rsi_oversold_trend else None
-
-        # BB signal
-        bb_open = (
-            df.iloc[-1]["bb_diff"] > df.iloc[-2]["bb_diff"] > df.iloc[-3]["bb_diff"]
-        )
-        bb_signal = True if bb_open else None
-
-        # signal check
-        signal = rsi_signal if rsi_signal and bb_signal else None
-
-        # ADX check
-        if df.iloc[-1]["adx"] > PARAMETERS["ADX_THRESHOLD"]:
-            return signal
-        return None
-    except Exception as e:
-        msg = f"❌ check_trend_signal() ERROR: {e}"
-        print(msg)
-        log_message(msg)
-
+    pass
+    
 
 # === check range signal ===
 def check_range_signal(df):
-    pass
+    try:
+        if df.empty or len(df) < 5:
+            return None
+        last1 = df.iloc[-1]
+        last2 = df.iloc[-2]
+        last3 = df.iloc[-3]
+
+        # in range check
+        if not last1.get("is_range", False):
+            return None
+
+        # RSI signal
+        rsi_up = last3["rsi"] < last2["rsi"] < last1["rsi"]
+        rsi_down = last3["rsi"] > last2["rsi"] > last1["rsi"]
+        rsi_overbought = (last2["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last1["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"])
+        rsi_oversold = (last2["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last1["rsi"] <= PARAMETERS["RSI_OVERSOLD"])
+
+        signal = None
+        if rsi_up and rsi_overbought and last1['rsi'] > PARAMETERS['RSI_OVERBOUGHT'] + 2:
+            signal = 'short'
+        elif rsi_down and rsi_oversold and last1['rsi'] < PARAMETERS['RSI_OVERSOLD'] - 2:
+            signal = 'long'
+
+        return signal
+    except Exception as e:
+        msg = f"❌ check_range_signal() ERROR: {e}"
+        print(msg)
+        log_message(msg)
+        return None
 
 
 # ==== place order ====
-def place_order(signal, atr):
+def place_order(signal, df):
     try:
         tick = mt5.symbol_info_tick(PARAMETERS["SYMBOL"])  # type: ignore
         if tick is None:
@@ -267,16 +289,31 @@ def place_order(signal, atr):
 
         price = tick.ask if signal == "long" else tick.bid
         digits = symbol_info.digits
-        sl = (
-            price - PARAMETERS["SL_MULTIPLIER"] * atr
-            if signal == "long"
-            else price + PARAMETERS["SL_MULTIPLIER"] * atr
-        )
-        tp = (
-            price + PARAMETERS["TP_MULTIPLIER"] * atr
-            if signal == "long"
-            else price - PARAMETERS["TP_MULTIPLIER"] * atr
-        )
+        spread = abs(tick.ask - tick.bid)
+
+        range_upper = float(df.iloc[-1]['range_upper'])
+        range_lower = float(df.iloc[-1]['range_lower'])
+
+        # tp/sl calculation
+        if signal == 'long':
+            tp = range_upper
+            sl = range_lower
+            # If SL is too close to price (due to spread/execution interference), move SL further away (e.g., 0.5 * ATR)
+            min_dist = max(spread * 1.5, df.iloc[-1]['atr_smooth'] * 0.2)
+            if (price - sl) < min_dist:
+                sl = price - min_dist
+        else:
+            tp = range_lower
+            sl = range_upper
+            min_dist = max(spread * 1.5, df.iloc[-1]['atr_smooth'] * 0.2)
+            if (sl - price) < min_dist:
+                sl = price + min_dist
+        
+        # round to symbol digits
+        price_r = round(price, digits)
+        sl_r = round(sl, digits)
+        tp_r = round(tp, digits)
+
         order_type = mt5.ORDER_TYPE_BUY if signal == "long" else mt5.ORDER_TYPE_SELL
 
         request = {
@@ -284,11 +321,11 @@ def place_order(signal, atr):
             "symbol": PARAMETERS["SYMBOL"],
             "volume": PARAMETERS["LOT"],
             "type": order_type,
-            "price": round(price, digits),
-            "sl": round(sl, digits),
-            "tp": round(tp, digits),
+            "price": price_r,
+            "sl": sl_r,
+            "tp": tp_r,
             "deviation": 50,
-            "comment": "TMGM-ORDER",
+            "comment": "rsi_bb_atr_range",
             "type_time": mt5.ORDER_TIME_GTC,
             "type_filling": mt5.ORDER_FILLING_IOC,
         }
@@ -323,31 +360,55 @@ def place_order(signal, atr):
 def run():
     try:
         if is_close_to_market_close():
-            position_direction = has_positions()
-            if position_direction:
-                max_attempts = 3  
-                attempt = 0
-                while attempt < max_attempts and has_positions():
+            pos = has_positions()
+            if pos == "error":
+                return
+            if pos:
+                for _ in range(3):
+                    if not has_positions():
+                        break
                     close_all_positions()
-                    attempt += 1
-                msg = "⏸ Market closed, pause trading for 1 hour..."
-                print(msg)
-                log_message(msg)
+                    time.sleep(1)
+
+                log_message("⏸ Market closed, pause trading for 1 hour...")
                 time.sleep(3540)
+
             return
 
+
         df = get_data()
-        signal = check_trend_signal(df)
+        signal = check_range_signal(df)
 
         timestamp = (datetime.now() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
-        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{df.iloc[-1]['rsi']:.2f} | RSI[-2]:{df.iloc[-2]['rsi']:.2f} | RSI[-3]:{df.iloc[-3]['rsi']:.2f} | RSI[-4]:{df.iloc[-4]['rsi']:.2f}  ---  BB_DIFF[-1]:{df.iloc[-1]['bb_diff']:.2f} | BB_DIFF[-2]:{df.iloc[-2]['bb_diff']:.2f} | BB_DIFF[-3]:{df.iloc[-3]['bb_diff']:.2f}  ---  ATR:{df.iloc[-1]['atr']:.2f}"  # type: ignore
+        if df.empty:
+            print(f"[{timestamp}] get_data returned empty")
+            log_message(f"[{timestamp}] get_data returned empty")
+            return
+        last1 = df.iloc[-1]
+        last2 = df.iloc[-2]
+        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f}  ---  IS_RANGE:{last1['is_range']:.2f} | RANGE_UPPER:{last1['range_upper']:.2f} | RANGE_LOWER:{last1['range_lower']:.2f}  ---  ATR:{last1['atr']:.2f}"  # type: ignore
         short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
 
         if signal:
-            atr = df.iloc[-1]["atr"]
-            place_order(signal, atr)
+            current_position = has_positions()
+            if current_position == "error":
+                log_message(f"[{timestamp}] has_positions returned error, skipping trading cycle")
+                return
+            # If there is an existing position in the opposite direction, close it first
+            if current_position is not None:
+                if current_position != signal:
+                    close_all_positions()
+                    # wait and re-check positions
+                    time.sleep(1.5)
+                    if has_positions() not in (None, "error"):
+                        log_message(f"[{timestamp}] positions still present after close_all_positions(); abort new order")
+                        return
+                else:
+                    log_message(f"[{timestamp}] already have position in same direction ({current_position}), skip")
+                    return
+            place_order(signal, df)
     except Exception as e:
         msg = f"❌ run() ERROR: {e}"
         print(msg)
