@@ -134,7 +134,7 @@ def initialize_mt5():
 def is_close_to_market_close():
     try:
         now = datetime.now().time()
-        if dtime(14, 59, 0) <= now <= dtime(14, 59, 1 + PARAMETERS["RUNTIME_SECONDS"]):
+        if dtime(15, 59, 0) <= now <= dtime(15, 59, 1 + PARAMETERS["RUNTIME_SECONDS"]):
             msg = "⏳ Market is closing soon."
             print(msg)      
             log_message(msg)
