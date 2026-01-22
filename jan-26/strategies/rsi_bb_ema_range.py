@@ -420,7 +420,7 @@ def run():
                 print(msg)      
                 log_message(msg)
                 send_telegram_message(msg)
-                time.sleep(3540)
+            time.sleep(3540)
             return
 
         df = get_data()
@@ -436,7 +436,7 @@ def run():
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         last3 = df.iloc[-3]
-        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  IS_IN_RANGE:{last1['is_in_range']}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f} | RSI[-3]:{last3['rsi']:.2f}  ---  RANGE_UPPER[-1]:{last1['range_upper']} | RANGE_LOWER[-1]:{last1['range_lower']} | CLOSE[-1]:{last1['close']}  ---  RANGE_UPPER[-2]:{last2['range_upper']} | RANGE_LOWER[-2]:{last2['range_lower']} | CLOSE[-2]:{last2['close']}  ---  ATR:{last1['atr']:.2f}"  # type: ignore
+        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  CLOSE: ({last1['close']:.2f})  ---  IS_IN_RANGE: ({last1['is_in_range']})  ---  RSI: ({last3['rsi']:.2f}, {last2['rsi']:.2f}, {last1['rsi']:.2f})  ---  RANGE_UPPER: ({last2['range_upper']:.2f}, {last1['range_upper']:.2f})  ---  RANGE_LOWER: ({last2['range_lower']:.2f}, {last1['range_lower']:.2f})  ---  ATR:{last1['atr']:.2f}"  # type: ignore
         short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
