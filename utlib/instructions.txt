@@ -7,6 +7,8 @@ python -m venv .venv
 // activate virtual enviorment -- windows
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .venv\Scripts\activate
+cd jan-26/strategies
+python 
 
 // activate virtual enviorment -- mac
 source .venv/bin/activate
