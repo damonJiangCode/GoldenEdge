@@ -8,13 +8,13 @@ import requests #type: ignore
 
 # META DATA
 METADATA = {
-    "account": 5043351020,
-    "password": "!v5zBdRb",
+    "account": 5043350910,
+    "password": "6gNi!gPi",
     "server": "MetaQuotes-Demo",
-    "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
-    "log_file": f"RSI_BB_EMA_RANGE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
-    "title": "RSI_BB_EMA_RANGE",
-    "comment": "RSI(14; 70, 30; 3+2), BB(20), EMA(20), SL(1*ATR), TP(2*ATR)",
+    "path": r"C:\\Program Files\\MetaTrader 5_2\\terminal64.exe",
+    "log_file": f"T02_V1_{datetime.now().strftime('%m-%d__%H-%M')}.log",
+    "title": "T02_V1",
+    "comment": "RSI(14; 65, 35; 4+3), BB(20; 3), ADX(14; 50), SL(1*ATR), TP(2*ATR)",
 }
 
 # PARAMETERS
@@ -25,17 +25,18 @@ PARAMETERS = {
     "TP_MULTIPLIER": 2.0,
     "SL_MULTIPLIER": 1.0,
     "RSI_PERIOD": 14,
-    "RSI_OVERBOUGHT": 70,
-    "RSI_OVERSOLD": 30,
+    "RSI_OVERBOUGHT": 65,
+    "RSI_OVERSOLD": 35,
+    "ADX_PERIOD": 14,
+    "ADX_THRESHOLD": 50,
     "ATR_PERIOD": 14,
     "BB_PERIOD": 20,
-    "EMA_PERIOD": 20,
     "RUNTIME_SECONDS": 20
 }
 
 # TELEGRAM
 TELEGRAM = {
-    "BOT_TOKEN": "8221803362:AAGSmueTIdc5Ca_snea-gloHj1VQtPPSk8c",
+    "BOT_TOKEN": "8231104565:AAGBVAaRM2IEtNLCeoyxoUs89peMZ8xzPrI",
     "CHAT_ID": "7262692073"
 }
 TELEGRAM['API'] = f"https://api.telegram.org/bot{TELEGRAM['BOT_TOKEN']}"
@@ -89,19 +90,13 @@ def get_data(bars=1000):
 
         df["time"] = pd.to_datetime(df["time"], unit="s")
         df["rsi"] = talib.RSI(df["close"], timeperiod=PARAMETERS["RSI_PERIOD"])  # type: ignore
+        df["adx"] = talib.ADX(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ADX_PERIOD"])  # type: ignore
+        df["atr"] = talib.ATR(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ATR_PERIOD"])  # type: ignore
         df["bb_upper"], df["bb_middle"], df["bb_lower"] = talib.BBANDS(
             df["close"], timeperiod=PARAMETERS["BB_PERIOD"], nbdevup=2, nbdevdn=2, matype=0  # type: ignore
         )
-        df["ema"] = talib.EMA(df["close"], timeperiod=PARAMETERS["EMA_PERIOD"])  # type: ignore
-        df["atr"] = talib.ATR(df["high"], df["low"], df["close"], timeperiod=PARAMETERS["ATR_PERIOD"])  # type: ignore
+        df["bb_diff"] = df["bb_upper"] - df["bb_lower"]
 
-        # range upper/lower
-        df["range_upper"] = df["ema"] + df["atr"] * 1.5
-        df["range_lower"] = df["ema"] - df["atr"] * 1.5
-
-        # is in range 
-        df["is_in_range"] = (df["bb_upper"] - df["bb_lower"]) < (df["atr"] * 5)
-        
         return df.dropna()
     except Exception as e:
         msg = f"❌ get_data() ERROR: {e}"
@@ -130,7 +125,7 @@ def log_message(message: str):
         send_telegram_message(msg)
 
 
-# ==== initialize mt5 ====
+# ==== MT5 initialization ====
 def initialize_mt5():
     try:
         if not mt5.initialize(METADATA["path"]):  # type: ignore
@@ -166,7 +161,7 @@ def is_close_to_market_close():
         print(msg)
         log_message(msg)
         send_telegram_message(msg)
-
+    
 
 # ==== check positions ====
 def has_positions():
@@ -280,40 +275,59 @@ def close_all_positions():
 
 # ==== check trend signal ====
 def check_trend_signal(df: pd.DataFrame):
-    pass
-    
-
-# === check range signal ===
-def check_range_signal(df: pd.DataFrame):
     try:
         if df.empty or len(df) < 5:
-            msg = "❌ check_range_signal(): DataFrame is empty or has insufficient data"
+            msg = "❌ check_trend_signal(): DataFrame is empty or has insufficient data"
             print(msg)
             log_message(msg)
             send_telegram_message(msg)
             return None
+        
+        # ---------------------------
+        # lastest bars
+        # ---------------------------
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         last3 = df.iloc[-3]
+        last4 = df.iloc[-4]
 
-        # is in range check
-        if not last1["is_in_range"]:
+        # ---------------------------
+        # 1. ADX trend market check
+        # ---------------------------
+        if last1["adx"] < PARAMETERS["ADX_THRESHOLD"]:
             return None
-        
-        # RSI signal
-        rsi_up = last3["rsi"] < last2["rsi"] < last1["rsi"]
-        rsi_down = last3["rsi"] > last2["rsi"] > last1["rsi"]
-        rsi_overbought = (last2["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last1["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"])
-        rsi_oversold = (last2["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last1["rsi"] <= PARAMETERS["RSI_OVERSOLD"])
-    
-        rsi_signal = 'short' if rsi_up and rsi_overbought else 'long' if rsi_down and rsi_oversold else None
 
-        # BB range touch check
-        touch_upper = last2["close"] > last2["range_upper"] and last1["close"] > last1["range_upper"]
-        touch_lower = last2["close"] < last2["range_lower"] and last1["close"] < last1["range_lower"]
+        # ---------------------------
+        # 2. RSI momentum breakout
+        #   - increasing and overbought -> long 
+        #   - decreasing and oversold -> short 
+        # ---------------------------
+        rsi_up = last4["rsi"] < last3["rsi"] < last2["rsi"] < last1["rsi"]
+        rsi_down = last4["rsi"] > last3["rsi"] > last2["rsi"] > last1["rsi"]
+        rsi_overbought_trend = (
+            last3["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last2["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last1["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"]
+        )
+        rsi_oversold_trend = (
+            last3["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last2["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last1["rsi"] <= PARAMETERS["RSI_OVERSOLD"]
+        )
+        rsi_signal = 'long' if rsi_up and rsi_overbought_trend else 'short' if rsi_down and rsi_oversold_trend else None
 
-        # signal check
-        signal = rsi_signal if (rsi_signal == 'short' and touch_upper) or (rsi_signal == 'long' and touch_lower) else None
+        # ---------------------------
+        # 3. Bollinger Bands opening (trend strengthening)
+        # ---------------------------
+        bb_open = (
+            last1["bb_diff"] > last2["bb_diff"] > last3["bb_diff"]
+        )
+        bb_signal = True if bb_open else None
+
+        # ---------------------------
+        # 4. final signal
+        # must satisfy:
+        #  - ADX trend market
+        #  - RSI momentum breakout
+        #  - Bollinger Bands opening (trend strengthening)
+        # ---------------------------
+        signal = rsi_signal if rsi_signal and bb_signal else None
 
         return signal
     except Exception as e:
@@ -321,6 +335,11 @@ def check_range_signal(df: pd.DataFrame):
         print(msg)
         log_message(msg)
         send_telegram_message(msg)
+
+
+# === check range signal ===
+def check_range_signal(df: pd.DataFrame):
+    pass
 
 
 # ==== place order ====
@@ -342,8 +361,11 @@ def place_order(signal: str, atr: float):
             send_telegram_message(msg)
             return
 
+        # ====== 价格获取 ======
         price = tick.ask if signal == "long" else tick.bid
         digits = symbol_info.digits
+
+        # ====== 计算 TP SL ======
         sl = (
             price - PARAMETERS["SL_MULTIPLIER"] * atr
             if signal == "long"
@@ -354,8 +376,10 @@ def place_order(signal: str, atr: float):
             if signal == "long"
             else price - PARAMETERS["TP_MULTIPLIER"] * atr
         )
+
         order_type = mt5.ORDER_TYPE_BUY if signal == "long" else mt5.ORDER_TYPE_SELL
 
+        # ====== 下单 request ======
         request = {
             "action": mt5.TRADE_ACTION_DEAL,
             "symbol": PARAMETERS["SYMBOL"],
@@ -365,13 +389,14 @@ def place_order(signal: str, atr: float):
             "sl": round(sl, digits),
             "tp": round(tp, digits),
             "deviation": 50,
-            "comment": "TMGM-ORDER",
+            "comment": "T02_V1",
             "type_time": mt5.ORDER_TIME_GTC,
             "type_filling": mt5.ORDER_FILLING_IOC,
         }
 
         result = mt5.order_send(request)  # type: ignore
 
+        # ========== 输出结果 ==========
         if result is None:
             msg = "❌ place_order(): Failed to place order: no return result"
         elif hasattr(result, "retcode"):
@@ -424,7 +449,7 @@ def run():
             return
 
         df = get_data()
-        signal = check_range_signal(df)
+        signal = check_trend_signal(df)
 
         timestamp = (datetime.now() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
         if df.empty:
@@ -436,8 +461,10 @@ def run():
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         last3 = df.iloc[-3]
-        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  CLOSE: ({last1['close']:.2f})  ---  IS_IN_RANGE: ({last1['is_in_range']})  ---  RSI: ({last3['rsi']:.2f}, {last2['rsi']:.2f}, {last1['rsi']:.2f})  ---  RANGE_UPPER: ({last2['range_upper']:.2f}, {last1['range_upper']:.2f})  ---  RANGE_LOWER: ({last2['range_lower']:.2f}, {last1['range_lower']:.2f})  ---  ATR:{last1['atr']:.2f}"  # type: ignore
-        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
+        last4 = df.iloc[-4]
+
+        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f} | RSI[-3]:{last3['rsi']:.2f} | RSI[-4]:{last4['rsi']:.2f}  ---  BB_DIFF[-1]:{last1['bb_diff']:.2f} | BB_DIFF[-2]:{last2['bb_diff']:.2f} | BB_DIFF[-3]:{last3['bb_diff']:.2f}  ---  ADX: {last1['adx']:.2f}  ---  ATR: {last1['atr']:.2f}"  # type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
         
@@ -480,7 +507,7 @@ def run():
         print(msg)
         log_message(msg)
         send_telegram_message(msg)
-        
+
 
 # ==== main ====
 def main():
