@@ -12,8 +12,8 @@ METADATA = {
     "password": "REDACTED",
     "server": "MetaQuotes-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
-    "log_file": f"RSI_BB_EMA_RANGE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
-    "title": "RSI_BB_EMA_RANGE",
+    "log_file": f"R01_V1_{datetime.now().strftime('%m-%d__%H-%M')}.log",
+    "title": "R01_V1",
     "comment": "RSI(14; 70, 30; 3+2), BB(20), EMA(20), SL(1*ATR), TP(2*ATR)",
 }
 
@@ -292,27 +292,44 @@ def check_range_signal(df: pd.DataFrame):
             log_message(msg)
             send_telegram_message(msg)
             return None
+        
+        # ---------------------------
+        # latest bars
+        # ---------------------------
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         last3 = df.iloc[-3]
 
-        # is in range check
+        # ---------------------------
+        # 1. in range: bb width between 5 * atr
+        # ---------------------------
         if not last1["is_in_range"]:
             return None
         
-        # RSI signal
+        # ---------------------------
+        # 2. rsi momentum reversal
+        #   - increasing and overbought -> short 
+        #   - decreasing and oversold -> long 
+        # ---------------------------
         rsi_up = last3["rsi"] < last2["rsi"] < last1["rsi"]
         rsi_down = last3["rsi"] > last2["rsi"] > last1["rsi"]
         rsi_overbought = (last2["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"] and last1["rsi"] >= PARAMETERS["RSI_OVERBOUGHT"])
         rsi_oversold = (last2["rsi"] <= PARAMETERS["RSI_OVERSOLD"] and last1["rsi"] <= PARAMETERS["RSI_OVERSOLD"])
-    
         rsi_signal = 'short' if rsi_up and rsi_overbought else 'long' if rsi_down and rsi_oversold else None
 
-        # BB range touch check
+        # ---------------------------
+        # 3. price touch range upper/lower
+        # ---------------------------
         touch_upper = last2["close"] > last2["range_upper"] and last1["close"] > last1["range_upper"]
         touch_lower = last2["close"] < last2["range_lower"] and last1["close"] < last1["range_lower"]
 
-        # signal check
+        # ---------------------------
+        # 4. final signal
+        # must satisfy:
+        #  - in range market
+        #  - rsi momentum reversal
+        #  - price touch range upper/lower
+        # ---------------------------
         signal = rsi_signal if (rsi_signal == 'short' and touch_upper) or (rsi_signal == 'long' and touch_lower) else None
 
         return signal

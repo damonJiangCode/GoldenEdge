@@ -1,0 +1,5 @@
+Code, Type, Core, Version, Account, Bot, Created
+
+R01_V1, T, rsi+bb+ema,     v1, REDACTED, @damonjiang3_bot, 2026-01
+T02_V1, R, rsi+bb+adx,     v1, REDACTED, @damonjiang1_bot, 2026-01
+R03_V1, R, adx+bb+rsi+atr, v1, REDACTED,  @damonjiang2_bot, 2026-01
