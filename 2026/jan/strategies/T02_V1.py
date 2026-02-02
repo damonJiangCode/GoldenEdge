@@ -445,7 +445,7 @@ def run():
                 print(msg)      
                 log_message(msg)
                 send_telegram_message(msg)
-            time.sleep(3540)
+            # time.sleep(3540)
             return
 
         df = get_data()
@@ -463,7 +463,13 @@ def run():
         last3 = df.iloc[-3]
         last4 = df.iloc[-4]
 
-        msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f} | RSI[-3]:{last3['rsi']:.2f} | RSI[-4]:{last4['rsi']:.2f}  ---  BB_DIFF[-1]:{last1['bb_diff']:.2f} | BB_DIFF[-2]:{last2['bb_diff']:.2f} | BB_DIFF[-3]:{last3['bb_diff']:.2f}  ---  ADX: {last1['adx']:.2f}  ---  ATR: {last1['atr']:.2f}"  # type: ignore
+        msg = (
+            f"[{timestamp}] $:{mt5.account_info().balance}  ---  CLOSE: ({last1['close']:.2f})"
+            f"  ---  ADX: ({last1['adx']:.2f})"
+            f"  ---  RSI: ({last4['rsi']:.2f}, {last3['rsi']:.2f}, {last2['rsi']:.2f}, {last1['rsi']:.2f})"
+            f"  ---  BB_DIFF: ({last3['bb_diff']:.2f}, {last2['bb_diff']:.2f}, {last1['bb_diff']:.2f})"
+            f"  ---  ATR: {last1['atr']:.2f}"  # type: ignore
+        )
         short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)

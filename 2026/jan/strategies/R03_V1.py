@@ -462,7 +462,7 @@ def run():
                 print(msg)      
                 log_message(msg)
                 send_telegram_message(msg)
-            time.sleep(3540)
+            # time.sleep(3540)
             return
 
         df = get_data()
