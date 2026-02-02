@@ -1,2 +1,6 @@
-Month, Code, Trades, WinRate, NetPnL, MaxDD, PF, Verdict
+Month,   Code,   Trades,    WinRate,    NetPnL,   MaxDD,     PF,   Note
 
+2026-01, R01_V1,     38,      36.8%,    +3.21%,   2.31%,   1.19,   KEEP
+2026-01, T02_V1,     13,      53.8%,    +10.5%,   2.79%,   3.08,   KEEP (pretty good)
+2026-01, R03_V1,      0,         0%,        0%,      0%,      0,   no trades
+2026-01, R01_V1_1,    0,         0%,        0%,      0%,      0,   no trades
