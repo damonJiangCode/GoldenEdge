@@ -1,5 +1,6 @@
-Code, Type, Core, Version, Account, Bot, Created
+Code,     Type, Core,           Version, Account,    Bot,              Created
 
-R01_V1, T, rsi+bb+ema,     v1, 5043351020, @damonjiang3_bot, 2026-01
-T02_V1, R, rsi+bb+adx,     v1, 5043350910, @damonjiang1_bot, 2026-01
-R03_V1, R, adx+bb+rsi+atr, v1, 100833884,  @damonjiang2_bot, 2026-01
+R01_V1,   T,    rsi+bb+ema,     v1,      5043351020, @damonjiang3_bot, 2026-01
+T02_V1,   R,    rsi+bb+adx,     v1,      5043350910, @damonjiang1_bot, 2026-01
+R03_V1,   R,    adx+bb+rsi+atr, v1,      100833884,  @damonjiang2_bot, 2026-01
+R01_V1_1, R,    ema+atr+bb+rsi, v1.1,    101838442,  @damonjiang4_bot, 2026-01
