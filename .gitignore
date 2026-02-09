@@ -1,3 +1,4 @@
 .DS_Store
 2026/jan/logs/
 2026/feb/logs/
+.venv/*
