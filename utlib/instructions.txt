@@ -7,7 +7,7 @@ python -m venv .venv
 // activate virtual enviorment -- windows
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .venv\Scripts\activate
-cd 2026/jan/strategies
+cd mt5_account/2026/jan/strategies
 python 
 
 // activate virtual enviorment -- mac
