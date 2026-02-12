@@ -156,7 +156,7 @@ def close_all_positions():
             return
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ Failed to get {PARAMETERS["SYMBOL"]} info, cannot close positions"
+            msg = f"❌ Failed to get {PARAMETERS['SYMBOL']} info, cannot close positions"
             print(msg)
             log_message(msg)
             return
@@ -254,7 +254,7 @@ def place_order(signal, atr):
 
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ Failed to get mt5.symbol_info({PARAMETERS["SYMBOL"]}), cannot place order"
+            msg = f"❌ Failed to get mt5.symbol_info({PARAMETERS['SYMBOL']}), cannot place order"
             print(msg)
             log_message(msg)
             return
@@ -338,7 +338,7 @@ def run():
         last4 = df.iloc[-4]
         timestamp = (datetime.now() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
         msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f} | RSI[-3]:{last3['rsi']:.2f} | RSI[-4]:{last4['rsi']:.2f}  ---  BB_DIFF[-1]:{last1['bb_diff']:.2f} | BB_DIFF[-2]:{last2['bb_diff']:.2f} | BB_DIFF[-3]:{last3['bb_diff']:.2f}  ---  ATR:{last1['atr']:.2f}"  # type: ignore
-        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
 
