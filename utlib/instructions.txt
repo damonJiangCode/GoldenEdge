@@ -5,9 +5,9 @@ cd GoldenEdge
 python -m venv .venv
 
 // activate virtual enviorment -- windows
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .venv\Scripts\activate
-cd mt5_account/2026/jan/strategies
+cd mt5_account/2026/feb/strategies
 python 
 
 // activate virtual enviorment -- mac
@@ -17,3 +17,4 @@ source .venv/bin/activate
 pip install -r ./utlib/requirements.txt
 
 
+// python -m ipykernel install --user --name goldenedge-venv --display-name "Python (goldenedge .venv)"

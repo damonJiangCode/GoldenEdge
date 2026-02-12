@@ -1,20 +1,20 @@
-import MetaTrader5 as mt5  # type: ignore
-import pandas as pd  # type: ignore
+import MetaTrader5 as mt5  
+import pandas as pd  
 from datetime import datetime
-import pytz  # type: ignore
+import pytz  
 
 # data from
-DATA_FROM_YEAR = 2020
+DATA_FROM_YEAR = 2018
 DATA_FROM_MONTH = 1
 DATA_FROM_DAY = 1
 
 # data to
-DATA_TO_YEAR = 2021
+DATA_TO_YEAR = 2019
 DATA_TO_MONTH = 1
 DATA_TO_DAY = 1
 
 # output file
-OUTPUT_FILE = "XAUUSD_M5_2020.csv"
+OUTPUT_FILE = "XAUUSD_M5_2018.csv"
 
 # CONFIGURATION
 METADATA = {
