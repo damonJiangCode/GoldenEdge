@@ -1,4 +1,4 @@
-from datetime import timedelta, datetime, time as dtime
+from datetime import timedelta, datetime, time as dtime, timezone
 import time
 import pandas as pd #type: ignore
 import MetaTrader5 as mt5 #type: ignore
@@ -151,10 +151,27 @@ def initialize_mt5():
 
 
 # ==== market closing check ====
+def get_mt5_utc_now():
+    try:
+        tick = mt5.symbol_info_tick(PARAMETERS["SYMBOL"])  # type: ignore
+        if tick is None:
+            return None
+        return datetime.fromtimestamp(tick.time, tz=timezone.utc)
+    except Exception as e:
+        msg = f"❌ get_mt5_utc_now() ERROR: {e}"
+        print(msg)
+        log_message(msg)
+        send_telegram_message(msg)
+        return None
+
 def is_close_to_market_close():
     try:
-        now = datetime.now().time()
-        if dtime(15, 59, 0) <= now <= dtime(15, 59, 1 + PARAMETERS["RUNTIME_SECONDS"]):
+        utc_now = get_mt5_utc_now()
+        if utc_now is None:
+            return False
+        close_end = utc_now.replace(hour=23, minute=59, second=59, microsecond=0)
+        close_start = close_end - timedelta(seconds=PARAMETERS["RUNTIME_SECONDS"])
+        if close_start <= utc_now <= close_end:
             msg = "⏳ Market is closing soon."
             print(msg)      
             log_message(msg)
@@ -443,7 +460,14 @@ def run():
         df = get_data()
         signal = check_range_signal(df)
 
-        timestamp = (datetime.now() + timedelta(hours=9)).strftime("%Y-%m-%d %H:%M:%S")
+        utc_now = get_mt5_utc_now()
+        if utc_now is None:
+            msg = "❌ run(): Failed to get MT5 UTC time, skipping cycle"
+            print(msg)
+            log_message(msg)
+            send_telegram_message(msg)
+            return
+        timestamp = utc_now.strftime("%Y-%m-%d %H:%M:%S")
         if df.empty:
             msg = f"❌ run(): [{timestamp}] get_data returned empty"
             print(msg)
