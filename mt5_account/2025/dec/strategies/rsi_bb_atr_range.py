@@ -181,7 +181,7 @@ def close_all_positions():
             return
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ Failed to get {PARAMETERS["SYMBOL"]} info, cannot close positions"
+            msg = f"❌ Failed to get {PARAMETERS['SYMBOL']} info, cannot close positions"
             print(msg)
             log_message(msg)
             return
@@ -282,7 +282,7 @@ def place_order(signal, df):
 
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ Failed to get mt5.symbol_info({PARAMETERS["SYMBOL"]}), cannot place order"
+            msg = f"❌ Failed to get mt5.symbol_info({PARAMETERS['SYMBOL']}), cannot place order"
             print(msg)
             log_message(msg)
             return
@@ -387,7 +387,7 @@ def run():
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  RSI[-1]:{last1['rsi']:.2f} | RSI[-2]:{last2['rsi']:.2f}  ---  IS_RANGE:{last1['is_range']:.2f} | RANGE_UPPER:{last1['range_upper']:.2f} | RANGE_LOWER:{last1['range_lower']:.2f}  ---  ATR:{last1['atr']:.2f}"  # type: ignore
-        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
 

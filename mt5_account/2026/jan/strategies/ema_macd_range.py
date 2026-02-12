@@ -213,7 +213,7 @@ def close_all_positions():
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
 
         if symbol_info is None:
-            msg = f"❌ close_all_positions(): Failed to get {PARAMETERS["SYMBOL"]} info, cannot close positions"
+            msg = f"❌ close_all_positions(): Failed to get {PARAMETERS['SYMBOL']} info, cannot close positions"
             print(msg)
             log_message(msg)
             send_telegram_message(msg)
@@ -329,7 +329,7 @@ def place_order(signal: str, atr: float):
 
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ place_order(): Failed to get mt5.symbol_info({PARAMETERS["SYMBOL"]}), cannot place order"
+            msg = f"❌ place_order(): Failed to get mt5.symbol_info({PARAMETERS['SYMBOL']}), cannot place order"
             print(msg)
             log_message(msg)
             send_telegram_message(msg)
@@ -429,7 +429,7 @@ def run():
         last1 = df.iloc[-1]
         last2 = df.iloc[-2]
         msg = f"[{timestamp}] $:{mt5.account_info().balance}  ---  EMA50:{last2['ema_fast']:.2f}; {last1['ema_fast']:.2f} | EMA200:{last2['ema_slow']:.2f}; {last1['ema_slow']:.2f}  ---  MACD:{last2['macd']:.2f}; {last1['macd']:.2f} | MACD_SIGNAL:{last2['macdsignal']:.2f}, {last1['macdsignal']:.2f} | MACD_HIST:{last2['macdhist']:.2f}; {last1['macdhist']:.2f}  --- ATR:{last1['atr']:.2f}"  # type: ignore
-        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
         

@@ -222,7 +222,7 @@ def close_all_positions():
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
 
         if symbol_info is None:
-            msg = f"❌ close_all_positions(): Failed to get {PARAMETERS["SYMBOL"]} info, cannot close positions"
+            msg = f"❌ close_all_positions(): Failed to get {PARAMETERS['SYMBOL']} info, cannot close positions"
             print(msg)
             log_message(msg)
             send_telegram_message(msg)
@@ -353,7 +353,7 @@ def place_order(signal: str, atr: float):
 
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None:
-            msg = f"❌ place_order(): Failed to get mt5.symbol_info({PARAMETERS["SYMBOL"]}), cannot place order"
+            msg = f"❌ place_order(): Failed to get mt5.symbol_info({PARAMETERS['SYMBOL']}), cannot place order"
             print(msg)
             log_message(msg)
             send_telegram_message(msg)
@@ -461,7 +461,7 @@ def run():
             f"  ---  RANGE_LOW: ({last2['range_lower']:.2f}, {last1['range_lower']:.2f})"
             f"  ---  ATR: {last1['atr']:.2f}"  # type: ignore
         )
-        short_msg = f"[{timestamp}] --- {METADATA["title"]} --- ${mt5.account_info().balance}" #type: ignore
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${mt5.account_info().balance}" #type: ignore
         print(short_msg)
         log_message(msg)
         
