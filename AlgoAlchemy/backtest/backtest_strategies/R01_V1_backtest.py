@@ -3,8 +3,8 @@ import talib
 import numpy as np
 
 # --- STRATEGY CONFIGURATION ---
-INPUT_FILE = "../../data/XAUUSD_M5_2024.csv"
-OUTPUT_FILE = "../backtest_results/R01_V1_2024.csv"
+INPUT_FILE = "../../raw_data/XAUUSD_M5_2023.csv"
+OUTPUT_FILE = "../backtest_results/R01_V1_2023.csv"
 INITIAL_BALANCE = 1000.0
 LOT_SIZE = 0.01
 CONTRACT_SIZE = 100
