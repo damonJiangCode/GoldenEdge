@@ -9,7 +9,7 @@ import requests #type: ignore
 # META DATA
 METADATA = {
     "account": 5043351020,
-    "password": "!v5zBdRb",
+    "password": "Jwz990118.",
     "server": "MetaQuotes-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
     "log_file": f"R01_V1_{datetime.now().strftime('%m-%d__%H-%M')}.log",
