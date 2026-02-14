@@ -14,7 +14,7 @@ DATA_TO_MONTH = 1
 DATA_TO_DAY = 31
 
 # output file
-OUTPUT_FILE = "XAUUSD_M5_2026_01.csv"
+OUTPUT_FILE = "XAUUSD_M5_2026_01_M1.csv"
 
 # CONFIGURATION
 METADATA = {
@@ -48,10 +48,10 @@ def download_historical_data():
     utc_to = datetime(DATA_TO_YEAR, DATA_TO_MONTH, DATA_TO_DAY, tzinfo=timezone)
 
     symbol = "XAUUSD"
-    timeframe = mt5.TIMEFRAME_M5
+    timeframe = mt5.TIMEFRAME_M1
 
     # 4. Fetch Rates
-    print(f"Downloading M5 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
+    print(f"Downloading M1 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
     if not mt5.symbol_select(symbol, True):
         print(f"❌ Symbol {symbol} not found")
         mt5.shutdown()
