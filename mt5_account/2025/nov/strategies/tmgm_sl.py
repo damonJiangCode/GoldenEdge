@@ -5,6 +5,7 @@ import MetaTrader5 as mt5 #type: ignore
 import talib #type: ignore
 import requests #type: ignore
 import os
+from pathlib import Path
 
 
 
@@ -59,11 +60,10 @@ sent_evening_balance = None
 
 
 # ==== Logs foler ====
-LOG_DIR = "../logs"
-os.makedirs(LOG_DIR, exist_ok=True)
-LOG_FILE = os.path.join(
-    LOG_DIR, f"TMGM_SL_{datetime.now().strftime('%m-%d__%H-%M')}.log"
-)
+BASE_DIR = Path(__file__).resolve().parent
+LOG_DIR = BASE_DIR.parent / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+LOG_FILE = LOG_DIR / f"TMGM_SL_{datetime.now().strftime('%m-%d__%H-%M')}.log"
 
 
 # ==== Log message ====
