@@ -4,6 +4,7 @@ import pandas as pd #type: ignore
 import MetaTrader5 as mt5 #type: ignore
 import talib #type: ignore
 import os
+from pathlib import Path
 import requests #type: ignore
 
 # META DATA
@@ -112,11 +113,10 @@ def get_data(bars=1000):
 
 
 # ==== log in the foler ====
-LOG_DIR = "../logs"
-os.makedirs(LOG_DIR, exist_ok=True)
-LOG_FILE = os.path.join(
-    LOG_DIR, METADATA["log_file"]
-)
+BASE_DIR = Path(__file__).resolve().parent
+LOG_DIR = BASE_DIR.parent / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+LOG_FILE = LOG_DIR / METADATA["log_file"]
 
 
 # ==== log message format ====

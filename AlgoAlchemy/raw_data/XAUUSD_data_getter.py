@@ -4,22 +4,22 @@ from datetime import datetime
 import pytz  
 
 # data from
-DATA_FROM_YEAR = 2026
+DATA_FROM_YEAR = 2017
 DATA_FROM_MONTH = 1
 DATA_FROM_DAY = 1
 
 # data to
-DATA_TO_YEAR = 2026
+DATA_TO_YEAR = 2018
 DATA_TO_MONTH = 1
-DATA_TO_DAY = 31
+DATA_TO_DAY = 1
 
 # output file
-OUTPUT_FILE = "XAUUSD_M5_2026_01_M1.csv"
+OUTPUT_FILE = "XAUUSD_M5_2017.csv"
 
 # CONFIGURATION
 METADATA = {
-    "account": 5043351020,
-    "password": "Jwz990118.",
+    "account": 10009666460,
+    "password": "L!RsP8Uv",
     "server": "MetaQuotes-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
 }
