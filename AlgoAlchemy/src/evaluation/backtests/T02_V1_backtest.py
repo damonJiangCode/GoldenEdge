@@ -1,10 +1,12 @@
 import pandas as pd
 import talib
 import numpy as np
+from pathlib import Path
 
 # --- CONFIGURATION (MATCHING YOUR SCRIPT) ---
-INPUT_FILE = "../../raw_data/XAUUSD_M5_2023.csv"
-OUTPUT_FILE = "../backtest_results/T02_V1_2023.csv"
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+INPUT_FILE = PROJECT_ROOT / "data" / "raw" / "market" / "XAUUSD" / "M5" / "XAUUSD_M5_2023.csv"
+OUTPUT_FILE = PROJECT_ROOT / "artifacts" / "reports" / "backtests" / "T02_V1_2023.csv"
 INITIAL_BALANCE = 1000.0
 LOT_SIZE = 0.01
 CONTRACT_SIZE = 100
@@ -142,6 +144,7 @@ def t02_v1_backtest_with_commission():
     res = pd.DataFrame(trade_history)
 
     # Write the results into a csv file
+    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     res.to_csv(OUTPUT_FILE, index=False)
     print(f"✅ Detailed trade history saved to: {OUTPUT_FILE}")
 
