@@ -160,25 +160,18 @@ def get_mt5_utc_now():
         send_telegram_message(msg)
         return None
 
-def is_close_to_market_close():
-    try:
-        utc_now = get_mt5_utc_now()
-        if utc_now is None:
-            return False
-        close_end = utc_now.replace(hour=23, minute=59, second=59, microsecond=0)
-        close_start = close_end - timedelta(seconds=PARAMETERS["RUNTIME_SECONDS"])
-        if close_start <= utc_now <= close_end:
-            msg = "⏳ Market is closing soon."
-            print(msg)
-            log_message(msg)
-            send_telegram_message(msg)
-            return True
-        return False
-    except Exception as e:
-        msg = f"❌ is_close_to_market_close() ERROR: {e}"
+def is_close_to_market_close() -> bool:
+    utc_now = get_mt5_utc_now()
+    if utc_now is None:
+        msg = "❌ is_close_to_market_close(): Failed to get MT5 UTC time, cannot determine market close status"
         print(msg)
         log_message(msg)
         send_telegram_message(msg)
+        return False
+
+    close_end = utc_now.replace(hour=23, minute=59, second=30, microsecond=0)
+    close_start = close_end - timedelta(seconds=PARAMETERS["RUNTIME_SECONDS"])
+    return close_start <= utc_now <= close_end
     
 
 # ==== check positions ====
@@ -471,15 +464,17 @@ def run():
 
             if pos:
                 for _ in range(3):
+                    close_all_positions()
                     if not has_positions():
                         break
-                    close_all_positions()
                     time.sleep(1)
+                msg = "⏸ Market is closing soon, closed all positions."
+            else:
                 msg = "⏸ Market is closing soon, no positions to close."
-                print(msg)      
-                log_message(msg)
-                send_telegram_message(msg)
-            # time.sleep(3540)
+            print(msg)
+            log_message(msg)
+            send_telegram_message(msg)
+            time.sleep(3600)
             return
 
         df = get_data()
