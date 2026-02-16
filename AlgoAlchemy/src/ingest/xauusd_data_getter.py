@@ -1,6 +1,7 @@
 import MetaTrader5 as mt5  
 import pandas as pd  
 from datetime import datetime
+from pathlib import Path
 import pytz  
 
 # data from
@@ -14,7 +15,10 @@ DATA_TO_MONTH = 1
 DATA_TO_DAY = 1
 
 # output file
-OUTPUT_FILE = "XAUUSD_M5_2017.csv"
+OUTPUT_NAME = "XAUUSD_M5_2017.csv"
+BASE_DIR = Path(__file__).resolve().parents[2]
+OUTPUT_DIR = BASE_DIR / "data" / "raw" / "market" / "XAUUSD" / "M5"
+OUTPUT_FILE = OUTPUT_DIR / OUTPUT_NAME
 
 # CONFIGURATION
 METADATA = {
@@ -71,6 +75,7 @@ def download_historical_data():
     df["time"] = pd.to_datetime(df["time"], unit="s")
 
     # 6. Export to CSV
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUTPUT_FILE, index=False)
 
     print("-" * 40)
