@@ -7,8 +7,23 @@ python -m venv .venv
 // activate virtual enviorment -- windows
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .venv\Scripts\activate
-cd mt5_account/2026/feb/strategies
-python 
+cd mt5/2026/feb/strategies
+python R01_V1.py
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.venv\Scripts\activate
+cd mt5/2026/feb/strategies
+python T02_V1.py
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.venv\Scripts\activate
+cd mt5/2026/feb/strategies
+python R03_V1.py
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.venv\Scripts\activate
+cd mt5/2026/feb/strategies
+python R01_V1_1.py
 
 // activate virtual enviorment -- mac
 source .venv/bin/activate

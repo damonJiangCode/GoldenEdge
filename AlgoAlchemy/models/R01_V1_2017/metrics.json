@@ -1,0 +1,31 @@
+{
+  "dataset": {
+    "features_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\data\\ml\\features\\R01_V1_2017_features.csv",
+    "labels_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\data\\ml\\labels\\R01_V1_2017_labels.csv",
+    "rows": 646,
+    "train_rows": 452,
+    "test_rows": 194
+  },
+  "classifier": {
+    "selected_model": "logistic_regression",
+    "metrics": {
+      "accuracy": 0.7989690721649485,
+      "precision": 0.3333333333333333,
+      "recall": 0.625,
+      "f1": 0.43478260869565216,
+      "roc_auc": 0.7647058823529412
+    }
+  },
+  "regressor": {
+    "selected_model": "random_forest_regressor",
+    "metrics": {
+      "mae": 0.23401899558512573,
+      "rmse": 0.4313294744385952,
+      "r2": -0.08977228186107378
+    }
+  },
+  "artifacts": {
+    "classifier": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\models\\R01_V1_2017\\classifier.pkl",
+    "regressor": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\models\\R01_V1_2017\\regressor.pkl"
+  }
+}
