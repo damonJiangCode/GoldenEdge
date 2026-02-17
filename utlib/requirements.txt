@@ -4,3 +4,10 @@ requests
 ./utlib/ta_lib-0.6.3-cp313-cp313-win_amd64.whl
 pytz
 pandas
+
+# ML
+pyzmq 
+tornado 
+traitlets
+numpy
+scikit-learn
