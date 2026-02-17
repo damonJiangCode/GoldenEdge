@@ -6,8 +6,5 @@ pytz
 pandas
 
 # ML
-pyzmq 
-tornado 
-traitlets
 numpy
 scikit-learn

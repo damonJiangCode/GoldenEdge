@@ -31,5 +31,4 @@ source .venv/bin/activate
 // install requirements
 pip install -r ./utlib/requirements.txt
 
-
-// python -m ipykernel install --user --name goldenedge-venv --display-name "Python (goldenedge .venv)"
+
