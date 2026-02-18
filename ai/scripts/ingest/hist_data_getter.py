@@ -17,7 +17,7 @@ DATA_TO_DAY = 1
 # output file
 OUTPUT_NAME = "M5_2017.csv"
 BASE_DIR = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = BASE_DIR / "data" / "historical"
+OUTPUT_DIR = BASE_DIR / ".." / "data" / "historical"
 OUTPUT_FILE = OUTPUT_DIR / OUTPUT_NAME
 
 # CONFIGURATION
@@ -52,10 +52,10 @@ def download_historical_data():
     utc_to = datetime(DATA_TO_YEAR, DATA_TO_MONTH, DATA_TO_DAY, tzinfo=timezone)
 
     symbol = "XAUUSD"
-    timeframe = mt5.TIMEFRAME_M1
+    timeframe = mt5.TIMEFRAME_M5
 
     # 4. Fetch Rates
-    print(f"Downloading M1 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
+    print(f"Downloading M5 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
     if not mt5.symbol_select(symbol, True):
         print(f"❌ Symbol {symbol} not found")
         mt5.shutdown()
