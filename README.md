@@ -48,7 +48,7 @@ GoldenEdge_win/
 
 - `AlgoAlchemy/scripts/ml/R01_V1_train.py`
 - `AlgoAlchemy/scripts/ml/R01_V1_threshold_eval.py`
-- `AlgoAlchemy/data/ml/features/R01_V1_2017_feature_engineering.py`
+- `AlgoAlchemy/scripts/ml/R01_V1_2017_feature_engineering.py`
 
 ## Standard Pipeline (R01_V1)
 
@@ -76,7 +76,7 @@ Run R01 base backtest:
 Build ML features/labels:
 
 ```powershell
-.\.venv\Scripts\python.exe .\AlgoAlchemy\data\ml\features\R01_V1_2017_feature_engineering.py
+.\.venv\Scripts\python.exe .\AlgoAlchemy\scripts\ml\R01_V1_2017_feature_engineering.py
 ```
 
 Train ML:
