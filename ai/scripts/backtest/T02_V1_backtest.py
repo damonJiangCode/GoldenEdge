@@ -4,7 +4,7 @@ import numpy as np
 from pathlib import Path
 
 # --- CONFIGURATION (MATCHING YOUR SCRIPT) ---
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 INPUT_FILE = PROJECT_ROOT / "data" / "historical" / "M5_2023.csv"
 OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / "T02_V1_2023.csv"
 INITIAL_BALANCE = 1000.0
