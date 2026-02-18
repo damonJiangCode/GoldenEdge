@@ -39,13 +39,22 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train baseline models for R01_V1.")
     parser.add_argument("--features", type=Path, help="Path to features csv.")
     parser.add_argument("--labels", type=Path, help="Path to labels csv.")
-    parser.add_argument("--out-dir", type=Path, help="Directory to save models and report.")
-    parser.add_argument("--train-ratio", type=float, default=0.7, help="Train split ratio (default: 0.7).")
+    parser.add_argument(
+        "--out-dir", type=Path, help="Directory to save models and report."
+    )
+    parser.add_argument(
+        "--train-ratio",
+        type=float,
+        default=0.7,
+        help="Train split ratio (default: 0.7).",
+    )
     parser.add_argument("--seed", type=int, default=42, help="Random seed.")
     return parser.parse_args()
 
 
-def load_xy(features_path: Path, labels_path: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
+def load_xy(
+    features_path: Path, labels_path: Path
+) -> tuple[pd.DataFrame, pd.DataFrame]:
     x = pd.read_csv(features_path)
     y = pd.read_csv(labels_path)
     if len(x) != len(y):
@@ -61,7 +70,9 @@ def preprocess_features(x: pd.DataFrame) -> pd.DataFrame:
     return out
 
 
-def split_time_aware(x: pd.DataFrame, y: pd.DataFrame, train_ratio: float) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def split_time_aware(
+    x: pd.DataFrame, y: pd.DataFrame, train_ratio: float
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     split_idx = int(len(x) * train_ratio)
     x_train = x.iloc[:split_idx].copy()
     x_test = x.iloc[split_idx:].copy()
@@ -70,9 +81,17 @@ def split_time_aware(x: pd.DataFrame, y: pd.DataFrame, train_ratio: float) -> tu
     return x_train, x_test, y_train, y_test
 
 
-def train_classifier(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataFrame, y_test: pd.Series, seed: int) -> tuple[str, object, dict]:
+def train_classifier(
+    x_train: pd.DataFrame,
+    y_train: pd.Series,
+    x_test: pd.DataFrame,
+    y_test: pd.Series,
+    seed: int,
+) -> tuple[str, object, dict]:
     candidates = {
-        "logistic_regression": LogisticRegression(max_iter=2000, class_weight="balanced", random_state=seed),
+        "logistic_regression": LogisticRegression(
+            max_iter=2000, class_weight="balanced", random_state=seed
+        ),
         "random_forest_classifier": RandomForestClassifier(
             n_estimators=300,
             min_samples_leaf=5,
@@ -109,7 +128,13 @@ def train_classifier(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataF
     return best_name, best_model, best_metrics
 
 
-def train_regressor(x_train: pd.DataFrame, y_train: pd.Series, x_test: pd.DataFrame, y_test: pd.Series, seed: int) -> tuple[str, object, dict]:
+def train_regressor(
+    x_train: pd.DataFrame,
+    y_train: pd.Series,
+    x_test: pd.DataFrame,
+    y_test: pd.Series,
+    seed: int,
+) -> tuple[str, object, dict]:
     candidates = {
         "ridge": Ridge(alpha=1.0, random_state=seed),
         "random_forest_regressor": RandomForestRegressor(
@@ -153,8 +178,12 @@ def main() -> None:
     args = parse_args()
     root = find_ai_root()
 
-    features_path = args.features or root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
-    labels_path = args.labels or root / "data" / "ml" / "labels" / "R01_V1_2017_labels.csv"
+    features_path = (
+        args.features or root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
+    )
+    labels_path = (
+        args.labels or root / "data" / "ml" / "labels" / "R01_V1_2017_labels.csv"
+    )
     out_dir = args.out_dir or root / "models" / "R01_V1_2017"
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -163,7 +192,9 @@ def main() -> None:
 
     x_train, x_test, y_train, y_test = split_time_aware(x, y, args.train_ratio)
     if len(x_train) == 0 or len(x_test) == 0:
-        raise ValueError("Train/test split is empty. Check --train-ratio and dataset size.")
+        raise ValueError(
+            "Train/test split is empty. Check --train-ratio and dataset size."
+        )
 
     clf_name, clf_model, clf_metrics = train_classifier(
         x_train,
@@ -218,7 +249,9 @@ def main() -> None:
             "regressor": str(out_dir / "regressor.pkl"),
         },
     }
-    (out_dir / "metrics.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (out_dir / "metrics.json").write_text(
+        json.dumps(report, indent=2), encoding="utf-8"
+    )
 
     print("Training complete.")
     print(f"Classifier: {clf_name} -> {clf_metrics}")
