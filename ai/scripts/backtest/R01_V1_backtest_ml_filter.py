@@ -7,9 +7,10 @@ import talib
 
 # --- STRATEGY CONFIGURATION ---
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-INPUT_FILE = PROJECT_ROOT / "data" / "historical" / "M5_2017.csv"
-OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / "R01_V1_2017_ml_filtered.csv"
-MODEL_FILE = PROJECT_ROOT / "models" / "R01_V1_2017" / "classifier.pkl"
+YEAR = 2017
+INPUT_FILE = PROJECT_ROOT / "data" / "historical" / f"M5_{YEAR}.csv"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / f"R01_V1_{YEAR}_ml_filtered.csv"
+MODEL_FILE = PROJECT_ROOT / "models" / f"R01_V1_{YEAR}" / "classifier.pkl"
 INITIAL_BALANCE = 1000.0
 LOT_SIZE = 0.01
 CONTRACT_SIZE = 100
