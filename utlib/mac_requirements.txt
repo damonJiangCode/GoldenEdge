@@ -1,2 +1,13 @@
-# local python version is Python@3.14.3
+# macOS environment (Python 3.14.x)
+# Install TA-Lib C library first:
+#   brew install ta-lib
+#
+# Note:
+# - MetaTrader5 Python package is Windows-only and is intentionally excluded.
+# - ai/scripts/ingest/hist_data_getter.py depends on MetaTrader5, so run that on Windows.
 
+pandas
+numpy
+scikit-learn
+TA-Lib
+pytz
