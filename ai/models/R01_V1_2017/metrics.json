@@ -1,7 +1,7 @@
 {
   "dataset": {
-    "features_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\data\\ml\\features\\R01_V1_2017_features.csv",
-    "labels_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\data\\ml\\labels\\R01_V1_2017_labels.csv",
+    "features_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\data\\ml\\features\\R01_V1_2017_features.csv",
+    "labels_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\data\\ml\\labels\\R01_V1_2017_labels.csv",
     "rows": 646,
     "train_rows": 452,
     "test_rows": 194
@@ -25,7 +25,7 @@
     }
   },
   "artifacts": {
-    "classifier": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\models\\R01_V1_2017\\classifier.pkl",
-    "regressor": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\AlgoAlchemy\\models\\R01_V1_2017\\regressor.pkl"
+    "classifier": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\models\\R01_V1_2017\\classifier.pkl",
+    "regressor": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\models\\R01_V1_2017\\regressor.pkl"
   }
 }

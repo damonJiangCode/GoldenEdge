@@ -10,16 +10,16 @@ import numpy as np
 import pandas as pd
 
 
-def find_algoalchemy_root(start: Path | None = None) -> Path:
+def find_ai_root(start: Path | None = None) -> Path:
     cwd = (start or Path.cwd()).resolve()
-    if cwd.name == "AlgoAlchemy":
+    if cwd.name == "ai":
         return cwd
-    if (cwd / "AlgoAlchemy").exists():
-        return (cwd / "AlgoAlchemy").resolve()
+    if (cwd / "ai").exists():
+        return (cwd / "ai").resolve()
     for parent in [cwd, *cwd.parents]:
-        if parent.name == "AlgoAlchemy":
+        if parent.name == "ai":
             return parent
-    raise FileNotFoundError("Cannot locate AlgoAlchemy folder from current working directory.")
+    raise FileNotFoundError("Cannot locate ai folder from current working directory.")
 
 
 def parse_args() -> argparse.Namespace:
@@ -60,7 +60,7 @@ def summarize_bucket(df: pd.DataFrame) -> dict:
 
 def main() -> None:
     args = parse_args()
-    root = find_algoalchemy_root()
+    root = find_ai_root()
 
     features_path = args.features or root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
     labels_path = args.labels or root / "data" / "ml" / "labels" / "R01_V1_2017_labels.csv"
