@@ -1,10 +1,7 @@
+# Windows runtime requirements for mt5 strategies
+# Local TA-Lib wheel (Windows CPython 3.13 x64)
+./utlib/ta_lib-0.6.3-cp313-cp313-win_amd64.whl
+
 MetaTrader5
 pandas
 requests
-./utlib/ta_lib-0.6.3-cp313-cp313-win_amd64.whl
-pytz
-pandas
-
-# ML
-numpy
-scikit-learn
