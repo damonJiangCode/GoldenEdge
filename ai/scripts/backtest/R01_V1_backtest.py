@@ -6,8 +6,9 @@ from pathlib import Path
 PROJECT_ROOT = (
     Path(__file__).resolve().parents[2]
 )  # Path(__file__): GoldenEdge_mac/ai/scripts/backtest
-INPUT_FILE = PROJECT_ROOT / "data" / "historical" / "M5_2025.csv"
-OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / "R01_V1_2025.csv"
+YEAR = 2017
+INPUT_FILE = PROJECT_ROOT / "data" / "historical" / f"M5_{YEAR}.csv"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / f"R01_V1_{YEAR}.csv"
 INITIAL_BALANCE = 1000.0
 LOT_SIZE = 0.01
 CONTRACT_SIZE = 100
@@ -382,7 +383,7 @@ def run_backtest() -> None:
     print("=" * 50)
     if not res.empty:
         total_comm = res["commission"].sum()
-        print("REPORT             : R01_V1 M5-only backtest")
+        print(f"REPORT             : R01_V1 {YEAR}")
         print(f"Total Trades       : {len(res)}")
         print(f"Win Rate           : {(res['net_pnl'] > 0).mean() * 100:.2f}%")
         print(f"Total Commissions  : ${total_comm:.2f}")

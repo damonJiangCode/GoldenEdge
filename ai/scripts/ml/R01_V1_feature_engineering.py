@@ -1,4 +1,4 @@
-"""Build baseline ML features/labels for R01_V1 (2017)."""
+"""Build baseline ML features/labels for R01_V1."""
 
 from pathlib import Path
 import argparse
@@ -32,17 +32,14 @@ FEATURE_COLUMNS = [
     "vol_z_t",
 ]
 
-
-def find_ai_root(start: Path | None = None) -> Path:
-    cwd = (start or Path.cwd()).resolve()
-    if cwd.name == "ai":
-        return cwd
-    if (cwd / "ai").exists():
-        return (cwd / "ai").resolve()
-    for parent in [cwd, *cwd.parents]:
-        if parent.name == "ai":
-            return parent
-    raise FileNotFoundError("Cannot locate ai folder from current working directory.")
+# --- STRATEGY CONFIGURATION ---
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+YEAR = 2017
+INPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / f"R01_V1_{YEAR}.csv"
+FEATURES_OUT_FILE = (
+    PROJECT_ROOT / "data" / "ml" / "features" / f"R01_V1_{YEAR}_features.csv"
+)
+LABELS_OUT_FILE = PROJECT_ROOT / "data" / "ml" / "labels" / f"R01_V1_{YEAR}_labels.csv"
 
 
 def load_backtest_data(input_csv: Path) -> pd.DataFrame:
@@ -74,7 +71,9 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
     return x
 
 
-def scale_features_time_aware(x: pd.DataFrame, train_ratio: float = 0.7) -> tuple[pd.DataFrame, int]:
+def scale_features_time_aware(
+    x: pd.DataFrame, train_ratio: float = 0.7
+) -> tuple[pd.DataFrame, int]:
     split_idx = int(len(x) * train_ratio)
     x_train = x.iloc[:split_idx].copy()
 
@@ -88,22 +87,24 @@ def scale_features_time_aware(x: pd.DataFrame, train_ratio: float = 0.7) -> tupl
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate R01_V1 2017 ML feature/label datasets.")
+    parser = argparse.ArgumentParser(
+        description="Generate R01_V1 ML feature/label datasets."
+    )
     parser.add_argument("--input", type=Path, help="Path to backtest csv.")
-    parser.add_argument("--features-out", type=Path, help="Path for output features csv.")
+    parser.add_argument(
+        "--features-out", type=Path, help="Path for output features csv."
+    )
     parser.add_argument("--labels-out", type=Path, help="Path for output labels csv.")
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    project_root = find_ai_root()
+    input_csv = args.input or INPUT_FILE
+    features_out = args.features_out or FEATURES_OUT_FILE
+    labels_out = args.labels_out or LABELS_OUT_FILE
 
-    input_csv = args.input or project_root / "data" / "backtest_results" / "R01_V1_2017.csv"
-    features_out = args.features_out or project_root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
-    labels_out = args.labels_out or project_root / "data" / "ml" / "labels" / "R01_V1_2017_labels.csv"
-
-    print(f"Project root: {project_root}")
+    print(f"Project root: {PROJECT_ROOT}")
     print(f"Input: {input_csv}")
     print(f"Features out: {features_out}")
     print(f"Labels out: {labels_out}")

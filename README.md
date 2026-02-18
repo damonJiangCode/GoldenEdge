@@ -17,7 +17,7 @@ GoldenEdge/
 │   │       ├── features/         # ML feature tables
 │   │       └── labels/           # ML label tables
 │   ├── models/
-│   │   └── R01_V1_2017/          # Trained artifacts + reports
+│   │   └── R01_V1_<YEAR>/        # Trained artifacts + reports
 │   └── scripts/
 │       ├── ingest/               # Data ingestion scripts
 │       ├── backtest/             # Backtest scripts
@@ -27,7 +27,8 @@ GoldenEdge/
 │   ├── 2026/
 │   └── records/
 └── utlib/
-   ├── requirements.txt
+   ├── mac_requirements.txt
+   ├── win_requirements.txt
    └── ta_lib-*.whl
 ```
 
@@ -47,7 +48,7 @@ GoldenEdge/
 
 - `ai/scripts/ml/R01_V1_train.py`
 - `ai/scripts/ml/R01_V1_threshold_eval.py`
-- `ai/scripts/ml/R01_V1_2017_feature_engineering.py`
+- `ai/scripts/ml/R01_V1_feature_engineering.py`
 
 ## Standard Pipeline (R01_V1)
 
@@ -57,12 +58,22 @@ GoldenEdge/
 4. Evaluate probability thresholds.
 5. Run ML-filtered backtest and compare with base backtest.
 
+## YEAR-Driven Usage
+
+All core scripts now use a top-level `YEAR` constant. For a new year, update `YEAR` in:
+
+- `ai/scripts/backtest/R01_V1_backtest.py`
+- `ai/scripts/ml/R01_V1_feature_engineering.py`
+- `ai/scripts/ml/R01_V1_train.py`
+- `ai/scripts/ml/R01_V1_threshold_eval.py`
+- `ai/scripts/backtest/R01_V1_backtest_ml_filter.py`
+
 ## Key Output Files
 
-- Base backtest: `ai/data/backtest_results/R01_V1_2017.csv`
-- ML-filtered backtest: `ai/data/backtest_results/R01_V1_2017_ml_filtered.csv`
-- Features: `ai/data/ml/features/R01_V1_2017_features.csv`
-- Labels: `ai/data/ml/labels/R01_V1_2017_labels.csv`
-- Trained models: `ai/models/R01_V1_2017/classifier.pkl`, `regressor.pkl`
-- Training report: `ai/models/R01_V1_2017/metrics.json`
-- Threshold report: `ai/models/R01_V1_2017/threshold_report.csv`
+- Base backtest: `ai/data/backtest_results/R01_V1_<YEAR>.csv`
+- ML-filtered backtest: `ai/data/backtest_results/R01_V1_<YEAR>_ml_filtered.csv`
+- Features: `ai/data/ml/features/R01_V1_<YEAR>_features.csv`
+- Labels: `ai/data/ml/labels/R01_V1_<YEAR>_labels.csv`
+- Trained models: `ai/models/R01_V1_<YEAR>/classifier.pkl`, `regressor.pkl`
+- Training report: `ai/models/R01_V1_<YEAR>/metrics.json`
+- Threshold report: `ai/models/R01_V1_<YEAR>/threshold_report.csv`

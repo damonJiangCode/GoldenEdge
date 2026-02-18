@@ -22,18 +22,12 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 
-
-def find_ai_root(start: Path | None = None) -> Path:
-    cwd = (start or Path.cwd()).resolve()
-    if cwd.name == "ai":
-        return cwd
-    if (cwd / "ai").exists():
-        return (cwd / "ai").resolve()
-    for parent in [cwd, *cwd.parents]:
-        if parent.name == "ai":
-            return parent
-    raise FileNotFoundError("Cannot locate ai folder from current working directory.")
-
+# --- STRATEGY CONFIGURATION ---
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+YEAR = 2017
+FEATURES_FILE = PROJECT_ROOT / "data" / "ml" / "features" / f"R01_V1_{YEAR}_features.csv"
+LABELS_FILE = PROJECT_ROOT / "data" / "ml" / "labels" / f"R01_V1_{YEAR}_labels.csv"
+OUT_DIR = PROJECT_ROOT / "models" / f"R01_V1_{YEAR}"
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train baseline models for R01_V1.")
@@ -176,15 +170,9 @@ def save_pickle(obj: object, path: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    root = find_ai_root()
-
-    features_path = (
-        args.features or root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
-    )
-    labels_path = (
-        args.labels or root / "data" / "ml" / "labels" / "R01_V1_2017_labels.csv"
-    )
-    out_dir = args.out_dir or root / "models" / "R01_V1_2017"
+    features_path = args.features or FEATURES_FILE
+    labels_path = args.labels or LABELS_FILE
+    out_dir = args.out_dir or OUT_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
 
     x_raw, y = load_xy(features_path, labels_path)

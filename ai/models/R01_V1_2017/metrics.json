@@ -1,31 +1,31 @@
 {
   "dataset": {
-    "features_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\data\\ml\\features\\R01_V1_2017_features.csv",
-    "labels_path": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\data\\ml\\labels\\R01_V1_2017_labels.csv",
-    "rows": 646,
-    "train_rows": 452,
-    "test_rows": 194
+    "features_path": "/Users/damon/Documents/GoldenEdge_mac/ai/data/ml/features/R01_V1_2017_features.csv",
+    "labels_path": "/Users/damon/Documents/GoldenEdge_mac/ai/data/ml/labels/R01_V1_2017_labels.csv",
+    "rows": 252,
+    "train_rows": 176,
+    "test_rows": 76
   },
   "classifier": {
     "selected_model": "logistic_regression",
     "metrics": {
-      "accuracy": 0.7989690721649485,
-      "precision": 0.3333333333333333,
-      "recall": 0.625,
-      "f1": 0.43478260869565216,
-      "roc_auc": 0.7647058823529412
+      "accuracy": 0.5,
+      "precision": 0.17142857142857143,
+      "recall": 0.4,
+      "f1": 0.24,
+      "roc_auc": 0.48743169398907105
     }
   },
   "regressor": {
-    "selected_model": "random_forest_regressor",
+    "selected_model": "ridge",
     "metrics": {
-      "mae": 0.23401899558512573,
-      "rmse": 0.4313294744385952,
-      "r2": -0.08977228186107378
+      "mae": 0.8097768693668033,
+      "rmse": 1.036631282889004,
+      "r2": -0.15033597713794244
     }
   },
   "artifacts": {
-    "classifier": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\models\\R01_V1_2017\\classifier.pkl",
-    "regressor": "C:\\Users\\damon\\Documents\\GoldenEdge_win\\ai\\models\\R01_V1_2017\\regressor.pkl"
+    "classifier": "/Users/damon/Documents/GoldenEdge_mac/ai/models/R01_V1_2017/classifier.pkl",
+    "regressor": "/Users/damon/Documents/GoldenEdge_mac/ai/models/R01_V1_2017/regressor.pkl"
   }
 }
