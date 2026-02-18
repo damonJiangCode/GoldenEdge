@@ -1,4 +1,4 @@
-# AlgoAlchemy
+# ai
 
 Project module for backtesting and ML workflow.
 

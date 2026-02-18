@@ -33,16 +33,16 @@ FEATURE_COLUMNS = [
 ]
 
 
-def find_algoalchemy_root(start: Path | None = None) -> Path:
+def find_ai_root(start: Path | None = None) -> Path:
     cwd = (start or Path.cwd()).resolve()
-    if cwd.name == "AlgoAlchemy":
+    if cwd.name == "ai":
         return cwd
-    if (cwd / "AlgoAlchemy").exists():
-        return (cwd / "AlgoAlchemy").resolve()
+    if (cwd / "ai").exists():
+        return (cwd / "ai").resolve()
     for parent in [cwd, *cwd.parents]:
-        if parent.name == "AlgoAlchemy":
+        if parent.name == "ai":
             return parent
-    raise FileNotFoundError("Cannot locate AlgoAlchemy folder from current working directory.")
+    raise FileNotFoundError("Cannot locate ai folder from current working directory.")
 
 
 def load_backtest_data(input_csv: Path) -> pd.DataFrame:
@@ -97,7 +97,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    project_root = find_algoalchemy_root()
+    project_root = find_ai_root()
 
     input_csv = args.input or project_root / "data" / "backtest_results" / "R01_V1_2017.csv"
     features_out = args.features_out or project_root / "data" / "ml" / "features" / "R01_V1_2017_features.csv"
@@ -132,4 +132,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
