@@ -3,9 +3,11 @@ import talib
 from pathlib import Path
 
 # --- STRATEGY CONFIGURATION ---
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-INPUT_FILE = PROJECT_ROOT / "data" / "historical" / "M5_2017.csv"
-OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / "R01_V1_2017.csv"
+PROJECT_ROOT = (
+    Path(__file__).resolve().parents[2]
+)  # Path(__file__): GoldenEdge_mac/ai/scripts/backtest
+INPUT_FILE = PROJECT_ROOT / "data" / "historical" / "M5_2025.csv"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "backtest_results" / "R01_V1_2025.csv"
 INITIAL_BALANCE = 1000.0
 LOT_SIZE = 0.01
 CONTRACT_SIZE = 100
@@ -32,9 +34,8 @@ def compute_m5_indicators(df_m5: pd.DataFrame) -> pd.DataFrame:
     df["is_in_range"] = (df["bb_upper"] - df["bb_lower"]) < (df["atr"] * 5)
     df["vol_ma20"] = df["tick_volume"].rolling(20).mean()
     df["vol_std20"] = df["tick_volume"].rolling(20).std(ddof=0)
-    df["vol_z"] = (
-        (df["tick_volume"] - df["vol_ma20"])
-        / df["vol_std20"].replace(0.0, pd.NA)
+    df["vol_z"] = (df["tick_volume"] - df["vol_ma20"]) / df["vol_std20"].replace(
+        0.0, pd.NA
     )
     df["vol_z"] = df["vol_z"].fillna(0.0)
 
@@ -53,13 +54,21 @@ def calc_signal(prev2: pd.Series, prev: pd.Series, curr: pd.Series) -> str | Non
     rsi_oversold = prev["rsi"] <= 30 and curr["rsi"] <= 30
 
     rsi_signal = (
-        "short" if rsi_up and rsi_overbought else "long" if rsi_down and rsi_oversold else None
+        "short"
+        if rsi_up and rsi_overbought
+        else "long" if rsi_down and rsi_oversold else None
     )
 
-    touch_upper = prev["close"] > prev["range_upper"] and curr["close"] > curr["range_upper"]
-    touch_lower = prev["close"] < prev["range_lower"] and curr["close"] < curr["range_lower"]
+    touch_upper = (
+        prev["close"] > prev["range_upper"] and curr["close"] > curr["range_upper"]
+    )
+    touch_lower = (
+        prev["close"] < prev["range_lower"] and curr["close"] < curr["range_lower"]
+    )
 
-    if (rsi_signal == "short" and touch_upper) or (rsi_signal == "long" and touch_lower):
+    if (rsi_signal == "short" and touch_upper) or (
+        rsi_signal == "long" and touch_lower
+    ):
         return rsi_signal
     return None
 
@@ -73,16 +82,15 @@ def build_signal_features(
 
     bb_width_t = float(curr["bb_upper"] - curr["bb_lower"])
     close_t = float(curr["close"])
+    close_t1 = float(prev["close"])
     ema_t = float(curr["ema"])
     range_upper_t = float(curr["range_upper"])
+    range_upper_t1 = float(prev["range_upper"])
     range_lower_t = float(curr["range_lower"])
+    range_lower_t1 = float(prev["range_lower"])
 
-    touch_upper_flag = int(
-        float(prev["close"]) > float(prev["range_upper"]) and close_t > range_upper_t
-    )
-    touch_lower_flag = int(
-        float(prev["close"]) < float(prev["range_lower"]) and close_t < range_lower_t
-    )
+    touch_upper_flag = int(close_t1 > range_lower_t1 and close_t > range_upper_t)
+    touch_lower_flag = int(close_t1 < range_upper_t1 and close_t < range_lower_t)
     rsi_overbought_flag = int(rsi_t1 >= 70 and rsi_t >= 70)
     rsi_oversold_flag = int(rsi_t1 <= 30 and rsi_t <= 30)
 
@@ -95,7 +103,7 @@ def build_signal_features(
     upper_wick_t = (high_t - max(open_t, close_t)) / max(atr_t, EPS)
     lower_wick_t = (min(open_t, close_t) - low_t) / max(atr_t, EPS)
     close_pos_t = (close_t - low_t) / (high_t - low_t + EPS)
-    ret_1_t = (close_t - float(prev["close"])) / max(atr_t, EPS)
+    ret_1_t = (close_t - close_t1) / max(atr_t, EPS)
     vol_z_t = float(curr["vol_z"])
 
     return {
@@ -155,16 +163,26 @@ def get_entry_price_from_close(row: pd.Series, signal: str) -> float:
 
 def run_backtest() -> None:
     df_m5 = pd.read_csv(INPUT_FILE)
+    # print(f"Loaded {len(df_m5)} M5 bars from: {INPUT_FILE}: ")
+    # print(df_m5.head(10).to_string(index=False))
+    # print()
+
     if "spread" not in df_m5.columns:
         raise ValueError("Input CSV must include 'spread' column.")
     if df_m5["spread"].isna().any():
         raise ValueError("Input CSV has NaN in 'spread' column.")
 
     df_m5["time"] = pd.to_datetime(df_m5["time"], utc=True)
+    # print("Sample data after processing 'time' and checking 'spread':")
+    # print(df_m5.head(10).to_string(index=False))
+    # print()
 
     df_m5.sort_values("time", inplace=True)
     df_m5.reset_index(drop=True, inplace=True)
     df_m5 = compute_m5_indicators(df_m5)
+    # print("Sample data after computing indicators:")
+    # print(df_m5.head(10).to_string(index=False))
+    # print()
 
     balance = INITIAL_BALANCE
     trades: list[dict] = []
@@ -253,9 +271,13 @@ def run_backtest() -> None:
 
                 exit_price = raw_exit
                 if current_signal == "long":
-                    gross_pnl = (exit_price - current_entry_price) * CONTRACT_SIZE * LOT_SIZE
+                    gross_pnl = (
+                        (exit_price - current_entry_price) * CONTRACT_SIZE * LOT_SIZE
+                    )
                 else:
-                    gross_pnl = (current_entry_price - exit_price) * CONTRACT_SIZE * LOT_SIZE
+                    gross_pnl = (
+                        (current_entry_price - exit_price) * CONTRACT_SIZE * LOT_SIZE
+                    )
 
                 net_pnl = gross_pnl - COMMISSION_PER_TRADE
                 balance += net_pnl
@@ -292,9 +314,17 @@ def run_backtest() -> None:
                 if reverse_signal is not None and reverse_signal != current_signal:
                     reverse_exit_price = get_close_price(bar, current_signal)
                     if current_signal == "long":
-                        gross_pnl = (reverse_exit_price - current_entry_price) * CONTRACT_SIZE * LOT_SIZE
+                        gross_pnl = (
+                            (reverse_exit_price - current_entry_price)
+                            * CONTRACT_SIZE
+                            * LOT_SIZE
+                        )
                     else:
-                        gross_pnl = (current_entry_price - reverse_exit_price) * CONTRACT_SIZE * LOT_SIZE
+                        gross_pnl = (
+                            (current_entry_price - reverse_exit_price)
+                            * CONTRACT_SIZE
+                            * LOT_SIZE
+                        )
 
                     net_pnl = gross_pnl - COMMISSION_PER_TRADE
                     balance += net_pnl
@@ -322,7 +352,9 @@ def run_backtest() -> None:
                     current_signal = reverse_signal
                     current_signal_time = bar["time"]
                     current_entry_time = bar["time"]
-                    current_entry_price = get_entry_price_from_close(bar, current_signal)
+                    current_entry_price = get_entry_price_from_close(
+                        bar, current_signal
+                    )
                     current_features = build_signal_features(
                         rev_prev2, rev_prev, rev_curr, current_signal
                     )
@@ -356,7 +388,9 @@ def run_backtest() -> None:
         print(f"Total Commissions  : ${total_comm:.2f}")
         print(f"Final Balance      : ${balance:.2f}")
         print(f"Net PnL            : ${balance - INITIAL_BALANCE:.2f}")
-        print(f"Net PnL Percentage : {(balance - INITIAL_BALANCE) / INITIAL_BALANCE * 100:.2f}%")
+        print(
+            f"Net PnL Percentage : {(balance - INITIAL_BALANCE) / INITIAL_BALANCE * 100:.2f}%"
+        )
         print(f"Exit TP/SL/EOD     : {res['reason'].value_counts().to_dict()}")
     else:
         print("No trades found.")
