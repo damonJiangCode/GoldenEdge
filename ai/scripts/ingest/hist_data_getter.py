@@ -5,19 +5,19 @@ from pathlib import Path
 import pytz  
 
 # data from
-DATA_FROM_YEAR = 2017
+DATA_FROM_YEAR = 2025
 DATA_FROM_MONTH = 1
 DATA_FROM_DAY = 1
 
 # data to
-DATA_TO_YEAR = 2018
-DATA_TO_MONTH = 1
-DATA_TO_DAY = 1
+DATA_TO_YEAR = 2025
+DATA_TO_MONTH = 12
+DATA_TO_DAY = 31
 
 # output file
-OUTPUT_NAME = "M5_2017.csv"
+OUTPUT_NAME = "M15_2025.csv"
 BASE_DIR = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = BASE_DIR / ".." / "data" / "historical"
+OUTPUT_DIR = BASE_DIR / ".." / "data" / "historical" / "eur"
 OUTPUT_FILE = OUTPUT_DIR / OUTPUT_NAME
 
 # CONFIGURATION
@@ -51,11 +51,11 @@ def download_historical_data():
     utc_from = datetime(DATA_FROM_YEAR, DATA_FROM_MONTH, DATA_FROM_DAY, tzinfo=timezone)
     utc_to = datetime(DATA_TO_YEAR, DATA_TO_MONTH, DATA_TO_DAY, tzinfo=timezone)
 
-    symbol = "XAUUSD"
-    timeframe = mt5.TIMEFRAME_M5
+    symbol = "EURUSD"
+    timeframe = mt5.TIMEFRAME_M15
 
     # 4. Fetch Rates
-    print(f"Downloading M5 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
+    print(f"Downloading M15 data for {symbol} (Full Year {DATA_FROM_YEAR})...")
     if not mt5.symbol_select(symbol, True):
         print(f"❌ Symbol {symbol} not found")
         mt5.shutdown()
