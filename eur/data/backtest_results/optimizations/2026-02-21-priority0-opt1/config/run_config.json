@@ -1,0 +1,78 @@
+{
+  "code_version": "c1339935e75638f4550c26a0aa7f37b56f088711",
+  "data_dir": "/Users/damon/Documents/GoldenEdge_mac/eur/data/historical",
+  "run_dir": "/Users/damon/Documents/GoldenEdge_mac/eur/data/backtest_results/optimizations/2026-02-21-priority0-opt1",
+  "years_requested": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "years_available": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "years_missing": [],
+  "split": {
+    "train_years": [
+      2017,
+      2021
+    ],
+    "validation_years": [
+      2022,
+      2023
+    ],
+    "test_years": [
+      2024,
+      2025
+    ]
+  },
+  "base_costs": {
+    "initial_balance": 1000.0,
+    "lot_size": 0.005,
+    "contract_size": 100000,
+    "slippage_pips": 0.2,
+    "commission_per_lot_per_side": 3.5
+  },
+  "grid": {
+    "adx_range_threshold": [
+      19.0,
+      21.0
+    ],
+    "rsi_pairs": [
+      [
+        70.0,
+        30.0
+      ],
+      [
+        72.0,
+        28.0
+      ]
+    ],
+    "atr_sl_mult": [
+      0.8,
+      1.0
+    ],
+    "atr_tp_mult": [
+      1.8,
+      2.2
+    ],
+    "confirm_use_rsi": [
+      false,
+      true
+    ]
+  },
+  "score_formula": "0.10*train_return + 0.40*val_return + 0.50*test_return - 0.08*val_dd - 0.12*test_dd + 4.0*oos_consistency - 0.25*stability_penalty"
+}

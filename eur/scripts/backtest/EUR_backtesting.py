@@ -228,6 +228,57 @@ class EURSimpleBacktestEngine:
             return (exit_price - entry_price) * units
         return (entry_price - exit_price) * units
 
+    @staticmethod
+    def compute_performance_metrics(
+        trades: list[dict[str, Any]], initial_balance: float, final_balance: float
+    ) -> dict[str, float]:
+        net_pnl = final_balance - initial_balance
+        trade_pnls = [float(t["net_pnl"]) for t in trades]
+
+        gross_profit = sum(p for p in trade_pnls if p > 0)
+        gross_loss_abs = -sum(p for p in trade_pnls if p < 0)
+        if gross_loss_abs > 0:
+            profit_factor = gross_profit / gross_loss_abs
+        elif gross_profit > 0:
+            profit_factor = float("inf")
+        else:
+            profit_factor = 0.0
+
+        expectancy = float(np.mean(trade_pnls)) if trade_pnls else 0.0
+        if len(trade_pnls) >= 2:
+            pnl_std = float(np.std(trade_pnls, ddof=1))
+            sharpe_per_trade = expectancy / pnl_std if pnl_std > 0 else 0.0
+        else:
+            sharpe_per_trade = 0.0
+
+        equity_curve = [initial_balance] + [float(t["equity_after"]) for t in trades]
+        peak = equity_curve[0]
+        max_drawdown_abs = 0.0
+        max_drawdown_pct = 0.0
+        for eq in equity_curve:
+            if eq > peak:
+                peak = eq
+            dd_abs = peak - eq
+            dd_pct = (dd_abs / peak) if peak > 0 else 0.0
+            if dd_abs > max_drawdown_abs:
+                max_drawdown_abs = dd_abs
+            if dd_pct > max_drawdown_pct:
+                max_drawdown_pct = dd_pct
+
+        return {
+            "net_pnl": float(net_pnl),
+            "return_pct": float((net_pnl / initial_balance) * 100.0)
+            if initial_balance
+            else 0.0,
+            "gross_profit": float(gross_profit),
+            "gross_loss_abs": float(gross_loss_abs),
+            "profit_factor": float(profit_factor),
+            "expectancy_per_trade": float(expectancy),
+            "sharpe_per_trade": float(sharpe_per_trade),
+            "max_drawdown_abs": float(max_drawdown_abs),
+            "max_drawdown_pct": float(max_drawdown_pct * 100.0),
+        }
+
     def run(self) -> dict[str, Any]:
         if self.df is None:
             raise RuntimeError("Data not loaded. Call load_data() first.")
@@ -363,6 +414,11 @@ class EURSimpleBacktestEngine:
             position = None
 
         wins = sum(1 for t in trades if t["net_pnl"] > 0)
+        performance = self.compute_performance_metrics(
+            trades=trades,
+            initial_balance=float(self.config.initial_balance),
+            final_balance=float(equity),
+        )
         report = {
             "engine": "eur_simple_adx_bb_rsi_atr",
             "input_file": str(self.config.input_file),
@@ -373,6 +429,7 @@ class EURSimpleBacktestEngine:
             "final_balance": float(equity),
             "trades": int(len(trades)),
             "win_rate": float((wins / len(trades)) if trades else 0.0),
+            "performance": performance,
             "lot_size": float(self.config.lot_size),
             "contract_size": int(self.config.contract_size),
             "costs": {
@@ -394,9 +451,12 @@ class EURSimpleBacktestEngine:
         }
         return report
 
-    def save_report(self, report: dict[str, Any]) -> Path:
-        RESULT_DIR.mkdir(parents=True, exist_ok=True)
-        output_path = RESULT_DIR / "EUR_simple_backtest_report.json"
+    def save_report(self, report: dict[str, Any], output_path: Path | None = None) -> Path:
+        if output_path is None:
+            RESULT_DIR.mkdir(parents=True, exist_ok=True)
+            output_path = RESULT_DIR / "EUR_simple_backtest_report.json"
+        else:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
         return output_path
 
@@ -422,6 +482,11 @@ def parse_args() -> argparse.Namespace:
         description="Simple EURUSD M15 backtest: ADX<20 + BB touch + RSI with ATR SL/TP."
     )
     parser.add_argument("--input", default=None)
+    parser.add_argument(
+        "--output",
+        default=None,
+        help="Optional output JSON path. Defaults to data/backtest_results/EUR_simple_backtest_report.json",
+    )
     parser.add_argument("--initial-balance", type=float, default=1000.0)
     parser.add_argument("--lot-size", type=float, default=0.005)
     parser.add_argument("--contract-size", type=int, default=100000)
@@ -450,7 +515,13 @@ def main() -> None:
     engine = EURSimpleBacktestEngine(config)
     engine.load_data()
     report = engine.run()
-    report_path = engine.save_report(report)
+    output_path = None
+    if args.output:
+        output_path = Path(args.output).expanduser()
+        if not output_path.is_absolute():
+            output_path = (Path.cwd() / output_path).resolve()
+
+    report_path = engine.save_report(report, output_path=output_path)
 
     print("Simple EUR backtest finished.")
     print(json.dumps(report, indent=2))
