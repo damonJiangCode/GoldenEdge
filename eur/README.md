@@ -1,28 +1,28 @@
-# EUR 回测工作区说明
+# EUR Backtesting Workspace
 
-这个目录是 EURUSD M15 回测与优化的独立工作区。  
-目标不是追求某一年最高收益，而是看策略在多年数据上的稳定性（特别是样本外表现）。
+This directory is a dedicated EURUSD M15 research workspace.
+The objective is not to maximize one-year return. The objective is robust multi-year performance, especially out-of-sample (OOS).
 
-## 1. 目录结构（你最常看这几块）
+## 1. Directory Layout
 
 - `eur/data/historical/`
-  - 历史数据，当前是 `M15_2017.csv ... M15_2025.csv`
+  - Historical M15 data (`M15_2017.csv` ... `M15_2025.csv`)
 - `eur/scripts/backtest/engine_1.py`
-  - 单次回测引擎（基准策略）
+  - Core backtest engine
 - `eur/scripts/backtest/run_yearly_backtests.py`
-  - 按年批量跑回测（2017-2025），并自动出汇总
+  - Year-by-year batch runner with summary outputs
 - `eur/scripts/backtest/optimize_base_strategy.py`
-  - 网格参数优化（按 Train/Validation/Test 打分）
+  - Grid-search optimizer with train/validation/test scoring
 - `eur/data/backtest/runs/`
-  - 每次“按年批跑”的结果目录
+  - Outputs for fixed-parameter backtest runs
 - `eur/data/backtest/optimizations/`
-  - 每次“参数优化”的结果目录
+  - Outputs for optimization experiments
 - `eur/data/backtest/samples/`
-  - 样例/模板输出（单次回测默认写到这里）
+  - Sample/template outputs from single-file runs
 
-## 2. 数据要求（CSV 必须有这些列）
+## 2. Data Requirements
 
-`engine_1.py` 读取 CSV 时要求以下列名存在：
+`engine_1.py` expects the following CSV columns:
 
 - `time`
 - `open`
@@ -32,62 +32,62 @@
 - `tick_volume`
 - `spread`
 
-说明：
-- `time` 会转成 UTC 时间并排序去重
-- 缺失/无效价格会被清理
-- `spread` 的单位按 MT point 处理（EURUSD: `1 point = 0.00001`）
+Notes:
 
-## 3. 三个脚本分别做什么
+- `time` is parsed as UTC, sorted, and deduplicated.
+- Invalid numeric values are coerced and dropped.
+- `spread` is interpreted in MT-style points (`1 point = 0.00001` for EURUSD).
 
-### A) 单文件回测：`engine_1.py`
+## 3. Scripts and Usage
 
-用途：对单个年份或单个 CSV 直接跑一次策略。
+### A. Single-file Backtest (`engine_1.py`)
 
-示例：
+Use this for a direct run on one input file.
+
 ```bash
 .venv/bin/python eur/scripts/backtest/engine_1.py \
   --input eur/data/historical/M15_2025.csv \
   --output eur/data/backtest/samples/EUR_simple_backtest_report.json
 ```
 
-常用参数：
-- `--initial-balance` 初始资金（默认 1000）
-- `--lot-size` 手数（默认 0.005）
-- `--slippage-pips` 滑点
-- `--commission-per-lot-per-side` 手续费
-- `--confirm-use-rsi` 是否启用 RSI 二次确认（开关）
+Common parameters:
 
----
+- `--initial-balance`
+- `--lot-size`
+- `--contract-size`
+- `--leverage`
+- `--stop-out-level-pct`
+- `--slippage-pips`
+- `--commission-per-lot-per-side`
+- `--confirm-use-rsi`
 
-### B) 按年批跑：`run_yearly_backtests.py`
+### B. Yearly Batch Backtest (`run_yearly_backtests.py`)
 
-用途：把 2017-2025 每年跑一遍，并自动汇总。
+Use this to evaluate one parameter set across multiple years.
 
-示例（你现在常用）：
 ```bash
 .venv/bin/python eur/scripts/backtest/run_yearly_backtests.py \
   --run-dir eur/data/backtest/runs/2026-02-21-base
 ```
 
-默认数据分组（可改）：
-- Train: 2017-2021
-- Validation: 2022-2023
-- Test: 2024-2025
+Default split:
 
-输出结构：
-- `reports/EUR_M15_YYYY_report.json`：每年一份详细报告
-- `summary/yearly_summary.csv`：年度总表（最常用于横向比较）
-- `summary/yearly_summary.json`：机器可读汇总
-- `summary/README.md`：本次运行摘要（总收益、OOS consistency 等）
-- `config/run_config.json`：本次参数和代码版本（`code_version`）
+- Train: `2017-2021`
+- Validation: `2022-2023`
+- Test: `2024-2025`
 
----
+Main outputs:
 
-### C) 参数优化：`optimize_base_strategy.py`
+- `reports/EUR_M15_YYYY_report.json`
+- `summary/yearly_summary.csv`
+- `summary/yearly_summary.json`
+- `summary/README.md`
+- `config/run_config.json`
 
-用途：在给定参数网格里批量试验，按 Train/Validation/Test 综合打分，找“更稳”的组合。
+### C. Parameter Optimization (`optimize_base_strategy.py`)
 
-示例（首轮小网格）：
+Use this to search parameter combinations and rank robustness.
+
 ```bash
 PYTHONUNBUFFERED=1 .venv/bin/python -u eur/scripts/backtest/optimize_base_strategy.py \
   --run-dir eur/data/backtest/optimizations/2026-02-21-priority0-opt1 \
@@ -98,57 +98,101 @@ PYTHONUNBUFFERED=1 .venv/bin/python -u eur/scripts/backtest/optimize_base_strate
   --confirm-rsi-grid false,true
 ```
 
-输出结构：
-- `trials/trials_all.csv`：所有参数组合 + 分数（已排序）
-- `summary/top10.csv`：前 10 组合
-- `summary/best_params.json`：最佳参数摘要
-- `summary/best_yearly_results.csv`：最佳参数的逐年表现
-- `config/run_config.json`：网格范围、分组设置、评分公式、代码版本
+Main outputs:
 
-## 4. 关键指标怎么理解（大白话）
+- `trials/trials_all.csv`
+- `summary/top10.csv`
+- `summary/best_params.json`
+- `summary/best_yearly_results.csv`
+- `config/run_config.json`
 
-- `return_pct`：这一年的收益率（正数赚钱，负数亏钱）
-- `max_drawdown_pct`：最大回撤（越小越稳）
-- `profit_factor`：总盈利 / 总亏损（>1 通常更健康）
-- `sharpe_per_trade`：每笔交易收益稳定性（越高越好）
-- `trades`：交易次数（太少可能不可靠）
-- `oos_consistency`：样本外（Validation+Test）里正收益年份占比
+## 4. Metric Definitions
 
-## 5. 怎么看“改动前后谁更好”
+- `return_pct`: yearly return in percent
+- `max_drawdown_pct`: maximum peak-to-trough equity drawdown
+- `profit_factor`: gross profit / gross loss
+- `sharpe_per_trade`: average trade return divided by trade-return volatility
+- `trades`: number of completed trades
+- `oos_consistency`: percentage of positive years in validation + test
 
-每次你改策略后，按下面流程：
+## 5. Benchmarks (Quick Quality Guide)
 
-1. 新建一个 run 目录名（建议带日期和标签）  
-   例：`eur/data/backtest/runs/2026-02-22-v2`
+These are practical research thresholds, not guarantees.
 
-2. 跑批量按年回测  
-```bash
-.venv/bin/python eur/scripts/backtest/run_yearly_backtests.py \
-  --run-dir eur/data/backtest/runs/2026-02-22-v2
-```
+### Profit Factor (`profit_factor`)
 
-3. 对比两份 `yearly_summary.csv`  
-   重点看：
-- Validation/Test 的 `return_pct` 是否改善
-- `max_drawdown_pct` 是否下降
-- `profit_factor` 是否上升
-- `oos_consistency` 是否提高
+- `< 1.00`: `Bad` (losing edge)
+- `1.00 - 1.15`: `Weak`
+- `1.15 - 1.40`: `Acceptable`
+- `1.40 - 1.80`: `Good`
+- `> 1.80`: `Excellent`
 
-结论标准建议：
-- 如果只在 Train 变好，而 Validation/Test 变差，基本是过拟合
-- 如果 Validation/Test 同时改善，才算有效优化
+### Sharpe per Trade (`sharpe_per_trade`)
 
-## 6. 当前已完成的基础设施（Priority 0）
+- `< 0.00`: `Bad`
+- `0.00 - 0.20`: `Weak`
+- `0.20 - 0.50`: `Acceptable`
+- `0.50 - 1.00`: `Good`
+- `> 1.00`: `Excellent`
 
-已经落地的内容：
-- 统一指标：Net PnL / MaxDD / ProfitFactor / Sharpe / TradeCount
-- 固定分组：Train / Validation / Test
-- 成本模型统一：spread/slippage/commission 一致使用
-- 实验可追踪：每次输出记录参数与 `code_version`
+### Max Drawdown (`max_drawdown_pct`)
 
-## 7. 常见注意事项
+- `> 25%`: `Bad` (risk too high for most systems)
+- `15% - 25%`: `Weak`
+- `8% - 15%`: `Acceptable`
+- `4% - 8%`: `Good`
+- `< 4%`: `Excellent`
 
-- 请优先用 `.venv/bin/python` 运行（系统 Python 可能缺少 `numpy/pandas`）
-- 不要用单一年份评估策略是否有效
-- 参数网格先粗后细：先大范围找方向，再局部细化
-- 保留每次 run/optimization 目录，方便之后回看和复盘
+### OOS Consistency (`oos_consistency`)
+
+- `< 40%`: `Bad`
+- `40% - 60%`: `Weak`
+- `60% - 75%`: `Acceptable`
+- `75% - 90%`: `Good`
+- `> 90%`: `Excellent`
+
+### Trade Count (`trades` per year)
+
+- `< 15`: `Too sparse` (low statistical confidence)
+- `15 - 30`: `Minimum usable`
+- `30 - 80`: `Healthy sample`
+- `> 80`: `High frequency` (re-check costs/slippage assumptions)
+
+## 6. How to Compare Two Strategy Versions
+
+1. Run both versions into separate run folders.
+
+Example:
+
+- `eur/data/backtest/runs/2026-02-22-v1`
+- `eur/data/backtest/runs/2026-02-22-v2`
+
+2. Compare `summary/yearly_summary.csv` between the two runs.
+
+Focus on validation/test first:
+
+- better `return_pct`
+- lower `max_drawdown_pct`
+- higher `profit_factor`
+- higher `oos_consistency`
+
+Rule of thumb:
+
+- Better train but worse validation/test = likely overfitting.
+- Better validation/test with similar or lower drawdown = meaningful improvement.
+
+## 7. Current Research Infrastructure (Priority 0)
+
+Implemented:
+
+- unified metrics (`Net PnL`, `MaxDD`, `Profit Factor`, `Sharpe`, `Trade Count`)
+- fixed data split (`Train/Validation/Test`)
+- consistent execution costs (`spread/slippage/commission`)
+- traceable outputs (`run_config`, parameters, `code_version`)
+
+## 8. Practical Notes
+
+- Prefer `.venv/bin/python` for consistency.
+- Do not judge strategy quality from a single year.
+- Start optimization with coarse ranges, then refine locally.
+- Keep all run folders for reproducibility and auditability.
