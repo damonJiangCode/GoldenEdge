@@ -6,3 +6,5 @@ mt5/2026/feb/logs/
 .vscode/
 run.ps1
 utlib/instructions.txt
+__pycache__/
+*.py[cod]
