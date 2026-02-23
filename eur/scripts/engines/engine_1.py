@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -11,7 +12,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 EUR_DATA_DIR = PROJECT_ROOT / "data" / "historical"
-RESULT_DIR = PROJECT_ROOT / "data" / "backtest"
+RESULT_DIR = PROJECT_ROOT / "data" / "engines" / "engine_1"
 
 REQUIRED_COLUMNS = [
     "time",
@@ -299,7 +300,7 @@ class EURSimpleBacktestEngine:
                 float((net_pnl / initial_balance) * 100.0) if initial_balance else 0.0
             ),
             "gross_profit": float(gross_profit),
-            "gross_loss_abs": float(gross_loss_abs),
+            "gross_loss_abs": -float(gross_loss_abs),
             "profit_factor": float(profit_factor),
             "expectancy_per_trade": float(expectancy),
             "sharpe_per_trade": float(sharpe_per_trade),
@@ -611,12 +612,24 @@ class EURSimpleBacktestEngine:
         }
         return report
 
+    def _default_report_filename(self, report: dict[str, Any]) -> str:
+        # Prefer year from input filename, e.g. M15_2017.csv -> report_2017.json
+        year_match = re.search(r"(19|20)\d{2}", self.config.input_file.stem)
+        if year_match:
+            return f"report_{year_match.group(0)}.json"
+
+        # Fallback to report start year.
+        start_utc = str(report.get("time_start_utc", ""))
+        if len(start_utc) >= 4 and start_utc[:4].isdigit():
+            return f"report_{start_utc[:4]}.json"
+        return "report_UNKNOWN_YEAR.json"
+
     def save_report(
         self, report: dict[str, Any], output_path: Path | None = None
     ) -> Path:
         if output_path is None:
             RESULT_DIR.mkdir(parents=True, exist_ok=True)
-            output_path = RESULT_DIR / "samples" / "EUR_simple_backtest_report.json"
+            output_path = RESULT_DIR / self._default_report_filename(report)
         else:
             output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
@@ -647,7 +660,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         default=None,
-        help="Optional output JSON path. Defaults to data/backtest/samples/EUR_simple_backtest_report.json",
+        help="Optional output JSON path. Defaults to data/engines/engine_1/report_YEAR.json (YEAR inferred from input file).",
     )
     parser.add_argument("--initial-balance", type=float, default=1000.0)
     parser.add_argument("--lot-size", type=float, default=0.005)
