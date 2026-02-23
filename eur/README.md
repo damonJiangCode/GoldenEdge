@@ -10,7 +10,9 @@ The objective is multi-year robustness, not a high return in a single year.
 - `eur/data/engines/engine_1/`
   - Default results folder for `engine_1.py`
 - `eur/scripts/engines/engine_1.py`
-  - Current core backtest engine
+  - Mean-reversion engine (v1)
+- `eur/scripts/engines/ema_pullback_trend_v1.py`
+  - Trend pullback engine (EMA50/EMA200 + ADX filter)
 - `eur/scripts/optimizations/`
   - Folder for optimization-related scripts
 - `eur/ROADMAP.md`
@@ -105,5 +107,7 @@ Roadmap follows `eur/ROADMAP.md`. Priority order remains unchanged:
 
 ## 7. Notes
 
-- The only directly runnable backtest script in this repo right now is `engine_1.py`.
+- Backtest engines in this repo:
+  - `engine_1.py`
+  - `ema_pullback_trend_v1.py`
 - This README only describes existing implementation and does not reference missing scripts.
