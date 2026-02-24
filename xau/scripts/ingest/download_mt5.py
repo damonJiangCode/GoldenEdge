@@ -28,18 +28,14 @@ TIMEFRAME_MAP = {
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Download XAUUSD historical data from MT5 and save yearly CSV files "
-            "plus one merged summary CSV per timeframe."
+            "Download one year of XAUUSD historical data from MT5, and refresh "
+            "one merged summary CSV per timeframe."
         )
     )
     parser.add_argument(
         "--timeframe", required=True, choices=sorted(TIMEFRAME_MAP.keys())
     )
-    parser.add_argument(
-        "--year", type=int, default=None, help="Single year, e.g. 2017."
-    )
-    parser.add_argument("--from-year", type=int, default=2016)
-    parser.add_argument("--to-year", type=int, default=2025)
+    parser.add_argument("--year", type=int, required=True, help="Single year, e.g. 2017.")
     parser.add_argument(
         "--aggregate-from-year",
         type=int,
@@ -63,11 +59,9 @@ def parse_args() -> argparse.Namespace:
         default=os.getenv("MT5_TERMINAL_PATH"),
         help="MT5 terminal executable path. Optional.",
     )
-    parser.add_argument(
-        "--login", type=int, default="10009666460", help="MT5 account login."
-    )
-    parser.add_argument("--password", default="L!RsP8Uv", help="MT5 account password.")
-    parser.add_argument("--server", default="MetaQuotes-Demo", help="MT5 server name.")
+    parser.add_argument("--login", type=int, default=None, help="MT5 account login.")
+    parser.add_argument("--password", default=None, help="MT5 account password.")
+    parser.add_argument("--server", default=None, help="MT5 server name.")
     return parser.parse_args()
 
 
@@ -149,23 +143,18 @@ def build_aggregate_file(
 def main() -> None:
     args = parse_args()
     output_root = Path(args.output_root).expanduser().resolve()
-
-    if args.year is not None:
-        years = [args.year]
-    else:
-        years = list(range(args.from_year, args.to_year + 1))
+    year = args.year
 
     print(f"Connecting MT5 for {args.symbol} {args.timeframe} ...")
     initialize_mt5(args)
     try:
-        for year in years:
-            print(f"Downloading {args.symbol} {args.timeframe} {year} ...")
-            year_df = get_year_bars(args.symbol, args.timeframe, year)
-            if year_df.empty:
-                print(f"[WARN] No data for {args.symbol} {args.timeframe} {year}")
-                continue
-            out_path = save_year_file(year_df, args.timeframe, year, output_root)
-            print(f"[OK] Saved: {out_path}")
+        print(f"Downloading {args.symbol} {args.timeframe} {year} ...")
+        year_df = get_year_bars(args.symbol, args.timeframe, year)
+        if year_df.empty:
+            print(f"[WARN] No data for {args.symbol} {args.timeframe} {year}")
+            return
+        out_path = save_year_file(year_df, args.timeframe, year, output_root)
+        print(f"[OK] Saved: {out_path}")
 
         agg_path = build_aggregate_file(
             timeframe=args.timeframe,
