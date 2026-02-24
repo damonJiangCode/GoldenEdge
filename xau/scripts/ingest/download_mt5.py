@@ -16,7 +16,7 @@ except ImportError as exc:  # pragma: no cover
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "historiccal"
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "historical"
 DEFAULT_SYMBOL = "XAUUSD"
 
 TIMEFRAME_MAP = {
@@ -30,11 +30,38 @@ TIMEFRAME_MAP = {
 }
 
 
+def ensure_symbol_ready(symbol: str) -> str:
+    info = mt5.symbol_info(symbol)
+    if info is not None:
+        if not info.visible and not mt5.symbol_select(symbol, True):
+            raise RuntimeError(
+                f"Symbol {symbol} is not visible and symbol_select failed: {mt5.last_error()}"
+            )
+        return symbol
+
+    # Try broker-specific aliases when exact symbol is unavailable, e.g. XAUUSDm.
+    candidates = mt5.symbols_get(f"*{symbol}*") or []
+    names = [s.name for s in candidates]
+    if not names:
+        raise RuntimeError(
+            f"Symbol {symbol} not found in terminal. "
+            "Please check broker symbol name (e.g. XAUUSDm/XAUUSD.a)."
+        )
+
+    resolved = names[0]
+    if not mt5.symbol_select(resolved, True):
+        raise RuntimeError(
+            f"Resolved symbol {resolved} from {symbol}, but symbol_select failed: {mt5.last_error()}"
+        )
+    print(f"[INFO] Symbol {symbol} not found, using broker symbol: {resolved}")
+    return resolved
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Download one year of MT5 historical data and save to "
-            "data/historiccal/<TIMEFRAME>/<TIMEFRAME>_<YEAR>.csv."
+            "data/historical/<TIMEFRAME>/<TIMEFRAME>_<YEAR>.csv."
         )
     )
     parser.add_argument(
@@ -57,7 +84,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-root",
         default=str(DEFAULT_OUTPUT_ROOT),
-        help="Output root directory (default: xau/data/historiccal).",
+        help="Output root directory (default: xau/data/historical).",
     )
     parser.add_argument(
         "--terminal-path",
@@ -85,14 +112,39 @@ def initialize_mt5(args: argparse.Namespace) -> None:
 
 
 def get_year_bars(symbol: str, timeframe: str, year: int) -> pd.DataFrame:
-    start = datetime(year, 1, 1, tzinfo=timezone.utc)
-    end = datetime(year + 1, 1, 1, tzinfo=timezone.utc)
-    rates = mt5.copy_rates_range(symbol, TIMEFRAME_MAP[timeframe], start, end)
+    resolved_symbol = ensure_symbol_ready(symbol)
+
+    start_aware = datetime(year, 1, 1, tzinfo=timezone.utc)
+    end_aware = datetime(year + 1, 1, 1, tzinfo=timezone.utc)
+    rates = mt5.copy_rates_range(
+        resolved_symbol, TIMEFRAME_MAP[timeframe], start_aware, end_aware
+    )
 
     if rates is None:
-        raise RuntimeError(
-            f"copy_rates_range returned None for {symbol} {timeframe} {year}: {mt5.last_error()}"
-        )
+        err = mt5.last_error()
+        # Some terminals/packages reject tz-aware datetime and only accept naive datetime.
+        if err and err[0] == -2:
+            start_naive = datetime(year, 1, 1)
+            end_naive = datetime(year + 1, 1, 1)
+            rates = mt5.copy_rates_range(
+                resolved_symbol, TIMEFRAME_MAP[timeframe], start_naive, end_naive
+            )
+            if rates is None:
+                err2 = mt5.last_error()
+                similar = mt5.symbols_get("*XAU*") or []
+                similar_names = [s.name for s in similar][:10]
+                raise RuntimeError(
+                    "copy_rates_range failed after UTC-aware + naive datetime retry. "
+                    f"symbol={resolved_symbol}, timeframe={timeframe}, year={year}, error={err2}. "
+                    f"XAU-like symbols: {similar_names}"
+                )
+        else:
+            similar = mt5.symbols_get("*XAU*") or []
+            similar_names = [s.name for s in similar][:10]
+            raise RuntimeError(
+                f"copy_rates_range returned None for {resolved_symbol} {timeframe} {year}: {err}. "
+                f"XAU-like symbols: {similar_names}"
+            )
     if len(rates) == 0:
         return pd.DataFrame()
 
