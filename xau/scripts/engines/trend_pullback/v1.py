@@ -68,12 +68,12 @@ class TrendPullbackVolFilterV1Engine:
 
     def timeframe_label(self) -> str:
         parent_name = self.config.input_file.parent.name.upper()
-        if parent_name in {"M15", "H1", "H4"}:
+        if re.fullmatch(r"[MHDW]\d+", parent_name):
             return parent_name
         stem = self.config.input_file.stem.upper()
-        for tf in ("M15", "H1", "H4"):
-            if stem.startswith(f"{tf}_"):
-                return tf
+        for token in stem.split("_"):
+            if re.fullmatch(r"[MHDW]\d+", token):
+                return token
         return "UNKNOWN_TF"
 
     def calc_pnl(self, entry_price: float, exit_price: float, side: str) -> float:
@@ -214,8 +214,10 @@ class TrendPullbackVolFilterV1Engine:
         if len(trade_pnls) >= 2:
             pnl_std = float(np.std(trade_pnls, ddof=1))
             sharpe_per_trade = expectancy / pnl_std if pnl_std > 0 else 0.0
+            sqn = (np.sqrt(len(trade_pnls)) * expectancy / pnl_std) if pnl_std > 0 else 0.0
         else:
             sharpe_per_trade = 0.0
+            sqn = 0.0
 
         dd_curve = (
             equity_values
@@ -235,7 +237,19 @@ class TrendPullbackVolFilterV1Engine:
             if dd_pct > max_drawdown_pct:
                 max_drawdown_pct = dd_pct
 
+        wins = [p for p in trade_pnls if p > 0]
+        losses = [p for p in trade_pnls if p < 0]
+        avg_win = float(np.mean(wins)) if wins else 0.0
+        avg_loss_abs = float(abs(np.mean(losses))) if losses else 0.0
+        payoff_ratio = (avg_win / avg_loss_abs) if avg_loss_abs > 0 else 0.0
+        recovery_factor = (net_pnl / max_drawdown_abs) if max_drawdown_abs > 0 else 0.0
+
         return {
+            "trades": int(len(trade_pnls)),
+            "wins": int(len(wins)),
+            "losses": int(len(losses)),
+            "breakeven": int(len(trade_pnls) - len(wins) - len(losses)),
+            "win_rate": float((len(wins) / len(trade_pnls)) if trade_pnls else 0.0),
             "net_pnl": float(net_pnl),
             "return_pct": (
                 float((net_pnl / initial_balance) * 100.0) if initial_balance else 0.0
@@ -243,10 +257,17 @@ class TrendPullbackVolFilterV1Engine:
             "gross_profit": float(gross_profit),
             "gross_loss_abs": float(gross_loss_abs),
             "profit_factor": float(profit_factor),
+            "avg_win": float(avg_win),
+            "avg_loss_abs": float(avg_loss_abs),
+            "payoff_ratio": float(payoff_ratio),
+            "largest_win": float(max(wins) if wins else 0.0),
+            "largest_loss": float(min(losses) if losses else 0.0),
             "expectancy_per_trade": float(expectancy),
             "sharpe_per_trade": float(sharpe_per_trade),
+            "sqn": float(sqn),
             "max_drawdown_abs": float(max_drawdown_abs),
             "max_drawdown_pct": float(max_drawdown_pct * 100.0),
+            "recovery_factor": float(recovery_factor),
         }
 
     def run(self) -> dict[str, Any]:
@@ -258,6 +279,7 @@ class TrendPullbackVolFilterV1Engine:
         equity_series: list[dict[str, Any]] = []
         position: dict[str, Any] | None = None
         total_swap = 0.0
+        total_commission = 0.0
 
         for i in range(len(self.df)):
             row = self.df.iloc[i]
@@ -312,6 +334,7 @@ class TrendPullbackVolFilterV1Engine:
                         - float(exit_commission)
                     )
                     total_swap += swap_total
+                    total_commission += float(exit_commission)
                     trades.append(
                         {
                             "side": side,
@@ -329,6 +352,7 @@ class TrendPullbackVolFilterV1Engine:
                             "exit_commission": float(exit_commission),
                             "net_pnl": float(trade_net_pnl),
                             "equity_after": float(balance),
+                            "holding_bars": int(i - int(position["entry_idx"]) + 1),
                         }
                     )
                     position = None
@@ -351,6 +375,7 @@ class TrendPullbackVolFilterV1Engine:
 
                     entry_commission = self.commission_one_side()
                     balance -= entry_commission
+                    total_commission += float(entry_commission)
                     position = {
                         "side": signal,
                         "signal_time": row["time"],
@@ -390,12 +415,40 @@ class TrendPullbackVolFilterV1Engine:
             equity_values=[float(point["equity"]) for point in equity_series],
         )
         wins = sum(1 for t in trades if t["net_pnl"] > 0)
+        start_ts = self.df.iloc[0]["time"]
+        end_ts = self.df.iloc[-1]["time"]
+        duration_days = max((end_ts - start_ts).total_seconds() / 86400.0, 0.0)
+        duration_years = duration_days / 365.25 if duration_days > 0 else 0.0
+        annualized_return_pct = 0.0
+        if (
+            duration_years > 0
+            and self.config.initial_balance > 0
+            and final_equity > 0
+        ):
+            annualized_return_pct = (
+                (final_equity / self.config.initial_balance) ** (1.0 / duration_years)
+                - 1.0
+            ) * 100.0
+
+        max_dd_pct = float(performance["max_drawdown_pct"])
+        performance["annualized_return_pct"] = float(annualized_return_pct)
+        performance["calmar_ratio"] = (
+            float(annualized_return_pct / max_dd_pct) if max_dd_pct > 0 else 0.0
+        )
+        holding_bars = [int(t["holding_bars"]) for t in trades]
+        performance["avg_holding_bars"] = (
+            float(np.mean(holding_bars)) if holding_bars else 0.0
+        )
+        performance["median_holding_bars"] = (
+            float(np.median(holding_bars)) if holding_bars else 0.0
+        )
         report = {
             "engine": "trend_pullback_v1",
             "input_file": str(self.config.input_file),
             "bars": int(len(self.df)),
-            "time_start_utc": self.df.iloc[0]["time"].isoformat(),
-            "time_end_utc": self.df.iloc[-1]["time"].isoformat(),
+            "time_start_utc": start_ts.isoformat(),
+            "time_end_utc": end_ts.isoformat(),
+            "period_days": float(duration_days),
             "initial_balance": float(self.config.initial_balance),
             "final_balance": float(balance),
             "final_equity": final_equity,
@@ -419,6 +472,7 @@ class TrendPullbackVolFilterV1Engine:
                     self.config.swap_short_per_lot_per_night
                 ),
                 "total_realized_swap": float(total_swap),
+                "total_commission": float(total_commission),
                 "spread_mean_points": float(self.df["spread"].mean()),
                 "spread_mean_price": float(
                     self.df["spread"].mean() * self.config.point_value
@@ -471,12 +525,12 @@ class TrendPullbackVolFilterV1Engine:
         return output_path
 
 
-def resolve_input_file(cli_input: str | None) -> Path:
+def resolve_input_files(cli_input: str | None) -> list[Path]:
     if cli_input:
         path = Path(cli_input).expanduser()
         if not path.is_absolute():
             path = (Path.cwd() / path).resolve()
-        return path
+        return [path]
 
     candidates = sorted(XAU_DATA_DIR.rglob("*.csv"))
     if not candidates:
@@ -484,7 +538,7 @@ def resolve_input_file(cli_input: str | None) -> Path:
             f"No XAU CSV found under {XAU_DATA_DIR}. "
             "Please place your XAU data there first."
         )
-    return candidates[0]
+    return candidates
 
 
 def parse_args() -> argparse.Namespace:
@@ -524,40 +578,54 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    config = EngineConfig(
-        input_file=resolve_input_file(args.input),
-        initial_balance=args.initial_balance,
-        lot_size=args.lot_size,
-        contract_size=args.contract_size,
-        leverage=args.leverage,
-        ema_fast_period=args.ema_fast_period,
-        ema_slow_period=args.ema_slow_period,
-        atr_period=args.atr_period,
-        pullback_depth_atr_mult=args.pullback_depth_atr_mult,
-        atr_sl_mult=args.atr_sl_mult,
-        tp_rr=args.tp_rr,
-        point_value=args.point_value,
-        pip_value=args.pip_value,
-        slippage_ticks=args.slippage_ticks,
-        commission_per_lot_per_side=args.commission_per_lot_per_side,
-        swap_long_per_lot_per_night=args.swap_long_per_lot_per_night,
-        swap_short_per_lot_per_night=args.swap_short_per_lot_per_night,
-    )
-
-    engine = TrendPullbackVolFilterV1Engine(config)
-    engine.load_data()
-    report = engine.run()
-
-    output_path = None
+    input_files = resolve_input_files(args.input)
+    report_paths: list[Path] = []
+    reports: list[dict[str, Any]] = []
+    explicit_output = None
     if args.output:
-        output_path = Path(args.output).expanduser()
-        if not output_path.is_absolute():
-            output_path = (Path.cwd() / output_path).resolve()
+        explicit_output = Path(args.output).expanduser()
+        if not explicit_output.is_absolute():
+            explicit_output = (Path.cwd() / explicit_output).resolve()
+        if len(input_files) > 1:
+            raise ValueError("--output is only allowed when using a single input file.")
 
-    report_path = engine.save_report(report, output_path=output_path)
+    for idx, input_file in enumerate(input_files, start=1):
+        config = EngineConfig(
+            input_file=input_file,
+            initial_balance=args.initial_balance,
+            lot_size=args.lot_size,
+            contract_size=args.contract_size,
+            leverage=args.leverage,
+            ema_fast_period=args.ema_fast_period,
+            ema_slow_period=args.ema_slow_period,
+            atr_period=args.atr_period,
+            pullback_depth_atr_mult=args.pullback_depth_atr_mult,
+            atr_sl_mult=args.atr_sl_mult,
+            tp_rr=args.tp_rr,
+            point_value=args.point_value,
+            pip_value=args.pip_value,
+            slippage_ticks=args.slippage_ticks,
+            commission_per_lot_per_side=args.commission_per_lot_per_side,
+            swap_long_per_lot_per_night=args.swap_long_per_lot_per_night,
+            swap_short_per_lot_per_night=args.swap_short_per_lot_per_night,
+        )
+
+        engine = TrendPullbackVolFilterV1Engine(config)
+        engine.load_data()
+        report = engine.run()
+        report_path = engine.save_report(report, output_path=explicit_output)
+        report_paths.append(report_path)
+        reports.append(report)
+        print(
+            f"[{idx}/{len(input_files)}] finished {input_file.name} -> {report_path}"
+        )
+
     print("Trend Pullback Vol Filter V1 backtest finished.")
-    print(json.dumps(report, indent=2))
-    print(f"Saved report: {report_path}")
+    if len(reports) == 1:
+        print(json.dumps(reports[0], indent=2))
+    print("Saved reports:")
+    for path in report_paths:
+        print(path)
 
 
 if __name__ == "__main__":
