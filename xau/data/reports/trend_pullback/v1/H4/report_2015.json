@@ -1,10 +1,10 @@
 {
   "engine": "trend_pullback_v1",
   "input_file": "/Users/damon/Documents/GoldenEdge_mac/xau/data/historical/H4/H4_2015.csv",
-  "bars": 1531,
-  "time_start_utc": "2015-01-02T12:00:00+00:00",
+  "bars": 1513,
+  "time_start_utc": "2015-01-07T12:00:00+00:00",
   "time_end_utc": "2015-12-31T16:00:00+00:00",
-  "period_days": 363.1666666666667,
+  "period_days": 358.1666666666667,
   "initial_balance": 1000.0,
   "final_balance": 928.7558350042801,
   "final_equity": 947.8658350042803,
@@ -32,10 +32,34 @@
     "max_drawdown_abs": 92.47039648615782,
     "max_drawdown_pct": 9.13758370746301,
     "recovery_factor": -0.5637930297349149,
-    "annualized_return_pct": -5.242525686159438,
-    "calmar_ratio": -0.5737321653072978,
+    "annualized_return_pct": -5.313731662432963,
+    "calmar_ratio": -0.5815248136214651,
     "avg_holding_bars": 24.5625,
     "median_holding_bars": 21.5
+  },
+  "regime_bar_share": {
+    "true_track_up": {
+      "bars": 106,
+      "pct": 0.07005948446794448
+    },
+    "true_track_down": {
+      "bars": 101,
+      "pct": 0.0667547918043622
+    },
+    "fake_track": {
+      "bars": 1078,
+      "pct": 0.712491738268341
+    },
+    "neutral": {
+      "bars": 228,
+      "pct": 0.15069398545935228
+    }
+  },
+  "regime_trade_counts": {
+    "true_track_up": 0,
+    "true_track_down": 0,
+    "fake_track": 14,
+    "neutral": 2
   },
   "lot_size": 0.01,
   "contract_size": 100,
@@ -49,8 +73,8 @@
     "swap_short_per_lot_per_night": 0.0,
     "total_realized_swap": 0.0,
     "total_commission": 1.1550000000000002,
-    "spread_mean_points": 42.732854343566295,
-    "spread_mean_price": 0.42732854343566296
+    "spread_mean_points": 42.68010575016523,
+    "spread_mean_price": 0.4268010575016523
   },
   "params": {
     "ema_fast_period": 50,
@@ -59,120 +83,15 @@
     "short_trend_filter": "EMA50<EMA200 and EMA200 slope<0 and close<EMA200",
     "pullback_depth_atr_mult": 0.3,
     "atr_period": 14,
+    "adx_period": 14,
+    "atr_pct_window": 200,
+    "slope_th_norm": 0.04,
     "atr_sl_mult": 2.0,
     "tp_rr": 3.0,
     "position_mode": "single_position_no_pyramiding",
     "force_close_policy": "none"
   },
   "equity_series": [
-    {
-      "time": "2015-01-02T12:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-02T16:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-02T20:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T00:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T04:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T08:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T12:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T16:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-05T20:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T00:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T04:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T08:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T12:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T16:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-06T20:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-07T00:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-07T04:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
-    {
-      "time": "2015-01-07T08:00:00+00:00",
-      "balance": 1000.0,
-      "equity": 1000.0,
-      "open_position": 0
-    },
     {
       "time": "2015-01-07T12:00:00+00:00",
       "balance": 1000.0,
@@ -9269,7 +9188,8 @@
       "exit_commission": 0.035,
       "net_pnl": -18.366418069304764,
       "equity_after": 981.6335819306953,
-      "holding_bars": 12
+      "holding_bars": 12,
+      "entry_regime_label": "neutral"
     },
     {
       "side": "short",
@@ -9287,7 +9207,8 @@
       "exit_commission": 0.035,
       "net_pnl": -12.54948791390786,
       "equity_after": 969.0840940167875,
-      "holding_bars": 9
+      "holding_bars": 9,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9305,7 +9226,8 @@
       "exit_commission": 0.035,
       "net_pnl": 38.139558617975524,
       "equity_after": 1007.2236526347631,
-      "holding_bars": 24
+      "holding_bars": 24,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9323,7 +9245,8 @@
       "exit_commission": 0.035,
       "net_pnl": -12.959207766359732,
       "equity_after": 994.2644448684034,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9341,7 +9264,8 @@
       "exit_commission": 0.035,
       "net_pnl": -11.410109528115136,
       "equity_after": 982.8543353402883,
-      "holding_bars": 21
+      "holding_bars": 21,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9359,7 +9283,8 @@
       "exit_commission": 0.035,
       "net_pnl": -11.017270534679774,
       "equity_after": 971.8370648056086,
-      "holding_bars": 7
+      "holding_bars": 7,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9377,7 +9302,8 @@
       "exit_commission": 0.035,
       "net_pnl": -11.77697421452769,
       "equity_after": 960.060090591081,
-      "holding_bars": 31
+      "holding_bars": 31,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9395,7 +9321,8 @@
       "exit_commission": 0.035,
       "net_pnl": -10.760318115216542,
       "equity_after": 949.2997724758645,
-      "holding_bars": 23
+      "holding_bars": 23,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9413,7 +9340,8 @@
       "exit_commission": 0.035,
       "net_pnl": -10.59465632831013,
       "equity_after": 938.7051161475545,
-      "holding_bars": 77
+      "holding_bars": 77,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9431,7 +9359,8 @@
       "exit_commission": 0.035,
       "net_pnl": 29.06212710079233,
       "equity_after": 967.7672432483469,
-      "holding_bars": 65
+      "holding_bars": 65,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "short",
@@ -9449,7 +9378,8 @@
       "exit_commission": 0.035,
       "net_pnl": -13.673457705401297,
       "equity_after": 954.0937855429456,
-      "holding_bars": 36
+      "holding_bars": 36,
+      "entry_regime_label": "neutral"
     },
     {
       "side": "long",
@@ -9467,7 +9397,8 @@
       "exit_commission": 0.035,
       "net_pnl": -17.408722395194964,
       "equity_after": 936.6850631477507,
-      "holding_bars": 2
+      "holding_bars": 2,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9485,7 +9416,8 @@
       "exit_commission": 0.035,
       "net_pnl": -14.851806999145374,
       "equity_after": 921.8332561486054,
-      "holding_bars": 29
+      "holding_bars": 29,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9503,7 +9435,8 @@
       "exit_commission": 0.035,
       "net_pnl": 29.462653036884767,
       "equity_after": 951.2959091854902,
-      "holding_bars": 12
+      "holding_bars": 12,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9521,7 +9454,8 @@
       "exit_commission": 0.035,
       "net_pnl": -11.658291804247092,
       "equity_after": 939.6376173812432,
-      "holding_bars": 10
+      "holding_bars": 10,
+      "entry_regime_label": "fake_track"
     },
     {
       "side": "long",
@@ -9539,7 +9473,8 @@
       "exit_commission": 0.035,
       "net_pnl": -10.846782376963183,
       "equity_after": 928.7908350042801,
-      "holding_bars": 22
+      "holding_bars": 22,
+      "entry_regime_label": "fake_track"
     }
   ],
   "open_position_at_end": {

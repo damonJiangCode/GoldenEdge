@@ -35,6 +35,9 @@ class EngineConfig:
     ema_fast_period: int = 50
     ema_slow_period: int = 200
     atr_period: int = 14
+    adx_period: int = 14
+    atr_pct_window: int = 200
+    slope_th_norm: float = 0.04
     pullback_depth_atr_mult: float = 0.3
     atr_sl_mult: float = 2.0
     tp_rr: float = 3.0
@@ -149,9 +152,55 @@ class TrendPullbackVolFilterV1Engine:
             out["tr"].ewm(alpha=1 / self.config.atr_period, adjust=False).mean()
         )
 
+        up_move = out["high"].diff()
+        down_move = -out["low"].diff()
+        out["+dm"] = np.where(
+            (up_move > down_move) & (up_move > 0.0), up_move, 0.0
+        )
+        out["-dm"] = np.where(
+            (down_move > up_move) & (down_move > 0.0), down_move, 0.0
+        )
+        plus_dm_smoothed = out["+dm"].ewm(
+            alpha=1 / self.config.adx_period, adjust=False
+        ).mean()
+        minus_dm_smoothed = out["-dm"].ewm(
+            alpha=1 / self.config.adx_period, adjust=False
+        ).mean()
+        out["+di"] = 100.0 * plus_dm_smoothed / out["atr"].replace(0.0, np.nan)
+        out["-di"] = 100.0 * minus_dm_smoothed / out["atr"].replace(0.0, np.nan)
+        di_sum = (out["+di"] + out["-di"]).replace(0.0, np.nan)
+        out["dx"] = 100.0 * (out["+di"] - out["-di"]).abs() / di_sum
+        out["adx"] = out["dx"].ewm(alpha=1 / self.config.adx_period, adjust=False).mean()
+
+        def _last_rank_pct(values: np.ndarray) -> float:
+            if len(values) == 0:
+                return 0.0
+            last = values[-1]
+            return float(np.mean(values <= last))
+
+        out["atr_pct"] = out["atr"].rolling(
+            window=self.config.atr_pct_window, min_periods=20
+        ).apply(_last_rank_pct, raw=True)
+
         out.dropna(inplace=True)
         out.reset_index(drop=True, inplace=True)
         return out
+
+    def calc_regime_label(self, row: pd.Series) -> str:
+        atr = float(row["atr"])
+        ema_slow_slope = float(row["ema_slow_slope"])
+        adx = float(row["adx"])
+        atr_pct = float(row["atr_pct"])
+        slope_norm = (ema_slow_slope / atr) if atr > 0 else 0.0
+        th = float(self.config.slope_th_norm)
+
+        if slope_norm > th and adx >= 25.0 and atr_pct >= 0.4:
+            return "true_track_up"
+        if slope_norm < -th and adx >= 25.0 and atr_pct >= 0.4:
+            return "true_track_down"
+        if abs(slope_norm) <= th or adx < 20.0:
+            return "fake_track"
+        return "neutral"
 
     def calc_signal(self, row: pd.Series) -> str | None:
         ema_fast = float(row["ema_fast"])
@@ -280,10 +329,14 @@ class TrendPullbackVolFilterV1Engine:
         position: dict[str, Any] | None = None
         total_swap = 0.0
         total_commission = 0.0
+        regime_labels = ("true_track_up", "true_track_down", "fake_track", "neutral")
+        regime_bar_counts: dict[str, int] = {label: 0 for label in regime_labels}
 
         for i in range(len(self.df)):
             row = self.df.iloc[i]
             bar_time = row["time"]
+            current_regime = self.calc_regime_label(row)
+            regime_bar_counts[current_regime] += 1
 
             # One position at a time (no pyramiding / no opposite overlap).
             if position is not None and i >= int(position["entry_idx"]):
@@ -353,6 +406,7 @@ class TrendPullbackVolFilterV1Engine:
                             "net_pnl": float(trade_net_pnl),
                             "equity_after": float(balance),
                             "holding_bars": int(i - int(position["entry_idx"]) + 1),
+                            "entry_regime_label": str(position["entry_regime_label"]),
                         }
                     )
                     position = None
@@ -385,6 +439,7 @@ class TrendPullbackVolFilterV1Engine:
                         "sl": float(sl),
                         "tp": float(tp),
                         "entry_commission": float(entry_commission),
+                        "entry_regime_label": self.calc_regime_label(entry_row),
                     }
 
             floating = 0.0
@@ -442,6 +497,22 @@ class TrendPullbackVolFilterV1Engine:
         performance["median_holding_bars"] = (
             float(np.median(holding_bars)) if holding_bars else 0.0
         )
+        regime_trade_counts: dict[str, int] = {label: 0 for label in regime_labels}
+        for t in trades:
+            lbl = str(t.get("entry_regime_label", "neutral"))
+            if lbl not in regime_trade_counts:
+                regime_trade_counts[lbl] = 0
+            regime_trade_counts[lbl] += 1
+        bars_total = int(len(self.df))
+        regime_bar_share = {
+            label: {
+                "bars": int(regime_bar_counts.get(label, 0)),
+                "pct": float(
+                    (regime_bar_counts.get(label, 0) / bars_total) if bars_total else 0.0
+                ),
+            }
+            for label in regime_labels
+        }
         report = {
             "engine": "trend_pullback_v1",
             "input_file": str(self.config.input_file),
@@ -455,6 +526,8 @@ class TrendPullbackVolFilterV1Engine:
             "trades": int(len(trades)),
             "win_rate": float((wins / len(trades)) if trades else 0.0),
             "performance": performance,
+            "regime_bar_share": regime_bar_share,
+            "regime_trade_counts": regime_trade_counts,
             "lot_size": float(self.config.lot_size),
             "contract_size": int(self.config.contract_size),
             "leverage": float(self.config.leverage),
@@ -485,6 +558,9 @@ class TrendPullbackVolFilterV1Engine:
                 "short_trend_filter": "EMA50<EMA200 and EMA200 slope<0 and close<EMA200",
                 "pullback_depth_atr_mult": float(self.config.pullback_depth_atr_mult),
                 "atr_period": int(self.config.atr_period),
+                "adx_period": int(self.config.adx_period),
+                "atr_pct_window": int(self.config.atr_pct_window),
+                "slope_th_norm": float(self.config.slope_th_norm),
                 "atr_sl_mult": float(self.config.atr_sl_mult),
                 "tp_rr": float(self.config.tp_rr),
                 "position_mode": "single_position_no_pyramiding",
@@ -564,6 +640,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--ema-fast-period", type=int, default=50)
     parser.add_argument("--ema-slow-period", type=int, default=200)
     parser.add_argument("--atr-period", type=int, default=14)
+    parser.add_argument("--adx-period", type=int, default=14)
+    parser.add_argument("--atr-pct-window", type=int, default=200)
+    parser.add_argument("--slope-th-norm", type=float, default=0.04)
     parser.add_argument("--pullback-depth-atr-mult", type=float, default=0.3)
     parser.add_argument("--atr-sl-mult", type=float, default=2.0)
     parser.add_argument("--tp-rr", type=float, default=3.0)
@@ -599,6 +678,9 @@ def main() -> None:
             ema_fast_period=args.ema_fast_period,
             ema_slow_period=args.ema_slow_period,
             atr_period=args.atr_period,
+            adx_period=args.adx_period,
+            atr_pct_window=args.atr_pct_window,
+            slope_th_norm=args.slope_th_norm,
             pullback_depth_atr_mult=args.pullback_depth_atr_mult,
             atr_sl_mult=args.atr_sl_mult,
             tp_rr=args.tp_rr,
