@@ -1,5 +1,123 @@
 # Strategy Changelog
 
+## [2026-04-28-VB-V1-H4-PARAM-ISLAND] volatility_breakout / v1 / H4
+
+- 日期：2026-04-28
+- 变更类型：`optimization`
+- 优化对象：`volatility_breakout/v1`，仅聚焦 `H4`
+- 对比基线：`xau/data/reports/volatility_breakout/v1/H4/`
+- 第一轮运行命令：`.venv/bin/python xau/scripts/optimization/vb_h4_grid.py --workers 4 --top-n 30`
+- 第二轮运行命令：`.venv/bin/python xau/scripts/optimization/vb_h4_island.py`
+- 第一轮输出目录：`xau/data/optimizations/volatility_breakout/v1/H4/`
+- 第二轮输出目录：`xau/data/optimizations/volatility_breakout/v1/H4_island/`
+
+### 策略目的
+
+- 正确使用 2015-2025 十一年 H4 历史数据，避免直接全样本找最优导致过拟合。
+- 将数据切成：
+- `2015-2021`：开发集
+- `2022-2023`：验证集
+- `2024-2025`：最终 OOS
+- 目标不是找单点最高收益，而是确认 `VB/H4` 是否存在稳定参数岛。
+
+### 改了什么
+
+- 新增 `xau/scripts/optimization/vb_h4_grid.py`：
+- 复用 `volatility_breakout/v1.py` 的 EngineConfig 和 Engine，不复制策略逻辑。
+- 对参数组合分别输出 dev / validation / OOS / full 四段统计。
+- 新增 `xau/scripts/optimization/vb_h4_island.py`：
+- 围绕第一轮候选做二轮参数岛精扫。
+- 自动生成 `island_notes.md`，筛出稳健组合与参数簇。
+
+### 第一轮结果
+
+- 第一轮网格：`864` 组。
+- 当前基线：
+- `N=20, exit=10, SL=2.0, trail=3.0, ADX=20, ATRr=1.0`
+- Full Avg Return：`22.74%`
+- Full PF：`2.68`
+- Full MaxDD：`8.77%`
+- Positive Years：`9/11`
+- 第一轮最高分：
+- `N=20, exit=10/20, SL=2.0, trail=3.0, ADX=18, ATRr=1.0`
+- Full Avg Return：`23.07%`
+- Full PF：`2.10`
+- Full MaxDD：`8.96%`
+- Positive Years：`9/11`
+- 第一轮保守候选：
+- `N=20, exit=10/20, SL=2.2, trail=3.0, ADX=18, ATRr=1.0`
+- Full Avg Return：`22.54%`
+- Full PF：`2.11`
+- Full MaxDD：`9.10%`
+- Positive Years：`11/11`
+
+### 第二轮参数岛结果
+
+- 第二轮网格：`1440` 组。
+- 稳健过滤条件：
+- Full positive years >= `10`
+- OOS average PF >= `1.5`
+- Validation average PF >= `1.3`
+- Full average max drawdown <= `12%`
+- Full average trades >= `18/year`
+- 通过稳健过滤：`690/1440`。
+- 说明 `VB/H4` 附近不是单点过拟合，而是存在大面积可用参数岛。
+
+### 推荐主候选
+
+- 当前推荐先锁定：
+- `donchian_breakout_period = 18`
+- `donchian_exit_period = 10`
+- `sl_atr_mult = 2.2`
+- `trail_atr_mult = 3.2`
+- `h1_adx_min = 18`
+- `atr_ratio_min = 1.0`
+
+结果：
+
+| Metric | Value |
+| --- | ---: |
+| Full Avg Return | `25.73%` |
+| Full PF | `2.12` |
+| Full MaxDD | `9.28%` |
+| Positive Years | `11/11` |
+| OOS Avg Return | `81.30%` |
+| OOS PF | `3.04` |
+
+### 备选候选
+
+更激进的高分候选：
+
+- `N=20, exit=10/20, SL=2.2, trail=3.2, ADX=16, ATRr=0.95`
+- Full Avg Return：`27.22%`
+- Full PF：`1.94`
+- Full MaxDD：`10.27%`
+- Positive Years：`10/11`
+- OOS Avg Return：`87.33%`
+
+判断：
+
+- 该组合收益更高，但 `ADX=16` 与 `ATRr=0.95` 都是在放松过滤。
+- 它更容易吃到 2024-2025 的大趋势红利，不建议直接作为默认生产候选。
+
+### 参数岛结论
+
+- 核心稳定区域：
+- `N = 18-20`
+- `SL = 2.2-2.5`
+- `trail = 3.2`
+- `ATRr = 1.0`
+- `ADX = 18-20`
+- `donchian_exit_period=10` 和 `20` 多数组合结果一致，说明当前 `chandelier` trailing 主导退出，Donchian exit 暂时不是关键参数。
+- 相比原基线，推荐候选牺牲少量 PF，但换来更高平均收益与 `11/11` 年正收益。
+
+### 下一步
+
+1. 用推荐主候选生成正式年度报告目录，避免只停留在 optimization csv。
+2. 对推荐主候选做成本压力测试：spread/slippage 上浮。
+3. 做 rolling / walk-forward 验证，确认 `2015-2021 -> 2022-2025` 之外的切片也稳定。
+4. 若压力测试通过，再考虑迁移到 MT5 策略实现，不直接把研究参数硬塞进旧 M5 RSI/BB 脚本。
+
 ## [2026-02-27-VB-V2-EMA200] volatility_breakout / v2
 
 - 日期：2026-02-27
