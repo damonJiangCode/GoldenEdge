@@ -1,5 +1,65 @@
 # Strategy Changelog
 
+## [2026-04-28-VB-V1-H4-CANDIDATE-VALIDATION] volatility_breakout / v1 / H4
+
+- 日期：2026-04-28
+- 变更类型：`validation`
+- 验证对象：`volatility_breakout/v1`，`H4` 推荐主候选
+- 运行命令：`.venv/bin/python xau/scripts/validation/vb_h4_candidate_validate.py`
+- 正式报告目录：`xau/data/reports/volatility_breakout/v1_h4_candidate/`
+- 验证输出目录：`xau/data/validation/volatility_breakout/v1_h4_candidate/`
+
+### 验证参数
+
+- `donchian_breakout_period = 18`
+- `donchian_exit_period = 10`
+- `sl_atr_mult = 2.2`
+- `trail_atr_mult = 3.2`
+- `h1_adx_min = 18`
+- `atr_ratio_min = 1.0`
+
+### 正式年度报告
+
+| Metric | Value |
+| --- | ---: |
+| Full Avg Return | `25.73%` |
+| Full PF | `2.12` |
+| Full MaxDD | `9.28%` |
+| Positive Years | `11/11` |
+| Worst Year Return | `1.18%` |
+| Avg Trades | `25.55/year` |
+
+### 成本压力测试
+
+| Scenario | Avg Return | Avg PF | Avg MaxDD | Positive Years | Worst Year |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| base | `25.73%` | `2.12` | `9.28%` | `11/11` | `1.18%` |
+| spread_1_25x | `23.69%` | `1.56` | `8.43%` | `9/11` | `0.00%` |
+| spread_1_50x | `23.43%` | `2.25` | `7.14%` | `8/11` | `-4.13%` |
+| slippage_2x | `25.69%` | `2.12` | `9.30%` | `11/11` | `1.12%` |
+| spread_1_50x_slippage_2x | `23.40%` | `2.24` | `7.14%` | `8/11` | `-4.17%` |
+
+结论：
+
+- `slippage` 上浮对 H4 候选影响很小。
+- `spread` 上浮会减少交易、降低正收益年份数量，但策略未崩；`1.5x spread + 2x slippage` 下仍保持平均正收益与 PF > 2。
+- 因为 spread 压力测试会触发 `spread_max_points` 过滤，交易数量下降，PF 变化不完全等同于单纯成本劣化。
+
+### Rolling / Walk-forward
+
+| Window | Train Avg Return | Train PF | Test Avg Return | Test PF | Test Positive Years |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| 2015-2019 -> 2020-2021 | `4.74%` | `1.94` | `22.23%` | `1.84` | `2/2` |
+| 2016-2020 -> 2021-2022 | `7.59%` | `1.34` | `21.00%` | `1.82` | `2/2` |
+| 2017-2021 -> 2022-2023 | `11.86%` | `1.48` | `26.14%` | `1.95` | `2/2` |
+| 2018-2022 -> 2023-2024 | `13.52%` | `1.43` | `29.19%` | `2.12` | `2/2` |
+| 2019-2023 -> 2024-2025 | `20.31%` | `1.71` | `81.30%` | `3.04` | `2/2` |
+
+结论：
+
+- 所有 rolling OOS 窗口都是正收益，且测试段 PF 全部 > `1.8`。
+- 候选参数通过迁移到 MT5 前的研究验证，但仍建议先生成独立 MT5 脚本，不要混入旧 M5 RSI/BB 系列。
+
 ## [2026-04-28-VB-V1-H4-PARAM-ISLAND] volatility_breakout / v1 / H4
 
 - 日期：2026-04-28
