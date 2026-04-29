@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<rect width="100%" height="100%" fill="#ffffff" />
+<text x="24" y="32" font-family="Arial" font-size="18" font-weight="700" fill="#111827">Trade return histogram (R multiple)</text>
+<line x1="56" y1="384" x2="844" y2="384" stroke="#d1d5db" />
+<rect x="56.00" y="56.00" width="30.83" height="328.00" fill="#dc2626" opacity="0.75" />
+<rect x="88.83" y="250.12" width="30.83" height="133.88" fill="#dc2626" opacity="0.75" />
+<rect x="121.67" y="260.16" width="30.83" height="123.84" fill="#dc2626" opacity="0.75" />
+<rect x="154.50" y="307.02" width="30.83" height="76.98" fill="#16a34a" opacity="0.75" />
+<rect x="187.33" y="333.80" width="30.83" height="50.20" fill="#16a34a" opacity="0.75" />
+<rect x="220.17" y="347.18" width="30.83" height="36.82" fill="#16a34a" opacity="0.75" />
+<rect x="253.00" y="307.02" width="30.83" height="76.98" fill="#16a34a" opacity="0.75" />
+<rect x="285.83" y="347.18" width="30.83" height="36.82" fill="#16a34a" opacity="0.75" />
+<rect x="318.67" y="350.53" width="30.83" height="33.47" fill="#16a34a" opacity="0.75" />
+<rect x="351.50" y="343.84" width="30.83" height="40.16" fill="#16a34a" opacity="0.75" />
+<rect x="384.33" y="367.27" width="30.83" height="16.73" fill="#16a34a" opacity="0.75" />
+<rect x="417.17" y="373.96" width="30.83" height="10.04" fill="#16a34a" opacity="0.75" />
+<rect x="450.00" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<rect x="482.83" y="370.61" width="30.83" height="13.39" fill="#16a34a" opacity="0.75" />
+<rect x="515.67" y="384.00" width="30.83" height="0.00" fill="#16a34a" opacity="0.75" />
+<rect x="548.50" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<rect x="581.33" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<rect x="614.17" y="377.31" width="30.83" height="6.69" fill="#16a34a" opacity="0.75" />
+<rect x="647.00" y="384.00" width="30.83" height="0.00" fill="#16a34a" opacity="0.75" />
+<rect x="679.83" y="377.31" width="30.83" height="6.69" fill="#16a34a" opacity="0.75" />
+<rect x="712.67" y="384.00" width="30.83" height="0.00" fill="#16a34a" opacity="0.75" />
+<rect x="745.50" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<rect x="778.33" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<rect x="811.17" y="380.65" width="30.83" height="3.35" fill="#16a34a" opacity="0.75" />
+<text x="56" y="422" font-family="Arial" font-size="12" fill="#6b7280">-1.01</text>
+<text x="764" y="422" font-family="Arial" font-size="12" fill="#6b7280">7.61</text>
+</svg>

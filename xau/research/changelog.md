@@ -1,5 +1,62 @@
 # Strategy Changelog
 
+## [2026-04-28-VB-V1-H4-TRADE-DIAGNOSTICS] volatility_breakout / v1 / H4
+
+- 日期：2026-04-28
+- 变更类型：`diagnostics`
+- 诊断对象：`volatility_breakout/v1`，`H4` 推荐主候选
+- 运行命令：`.venv/bin/python xau/scripts/diagnostics/vb_h4_trade_diagnostics.py`
+- 输出目录：`xau/data/diagnostics/volatility_breakout/v1_h4_candidate/`
+
+### 改了什么
+
+- `volatility_breakout/v1.py` 报告新增完整 `trade_details`，不再只保留前 30 笔 `sample_trades`。
+- `vb_h4_candidate_validate.py` 年度 summary 新增 trade-level 指标：
+- `avg_win`
+- `avg_loss`
+- `payoff_ratio`
+- `avg_holding_bars`
+- `trade_sharpe`
+- 新增 `xau/scripts/diagnostics/vb_h4_trade_diagnostics.py`：
+- 输出连续 2015-2025 trade list。
+- 输出 equity / drawdown / overlay / trade histogram / rolling Sharpe SVG。
+- 输出按 year、quarter、side、holding bucket、ADX bucket、ATR ratio bucket 的 PnL breakdown。
+
+### 连续 2015-2025 Trade Metrics
+
+| Metric | Value |
+| --- | ---: |
+| Trades | `302` |
+| Win Rate | `43.71%` |
+| Avg Win | `40.12` |
+| Avg Loss | `-14.69` |
+| Payoff Ratio | `2.73` |
+| Profit Factor | `2.12` |
+| Expectancy / Trade | `9.27` |
+| Sharpe / Trade | `0.23` |
+| Avg R Multiple | `0.35` |
+| Avg Holding | `23.74 bars / 5.45 days` |
+
+### 关键诊断结论
+
+- `long` 贡献显著高于 `short`：long net PnL `2107.21`，short net PnL `692.22`。
+- ADX 最好的区域是 `25-30`：PF `2.86`，avg PnL `15.28`。
+- ATR ratio 最好的区域是 `1.25-1.5`：PF `3.99`，avg PnL `23.69`。
+- 持仓时间是最强诊断信号：
+- `1-24` 根 H4 的 trade bucket 整体为负。
+- `25+` 根 H4 的 bucket 贡献 `4607.85` net PnL，PF `38.76`，win rate `85.34%`。
+- 这说明策略真正赚钱的是跑出来的大趋势单，短时间失败的 breakout 是主要拖累。
+
+### 质量过滤网格
+
+- 新增输出目录：`xau/data/optimizations/volatility_breakout/v1/H4_quality_filter/`
+- 目的：测试提高 ADX / ATR ratio 是否能过滤坏单。
+- 结论：
+- 大幅提高 `ATRr` 到 `1.2+` 会显著减少交易，正收益年份下降，不适合作为默认主线。
+- `ADX=20/22` 与 `ATRr=1.0` 是更现实的过滤方向。
+- 候选 `N=18, SL=2.5, trail=3.2, ADX=20, ATRr=1.0` 提高 PF 到 `2.64`，但 Positive Years 从 `11/11` 降到 `10/11`。
+- 当前仍保留 `N=18, SL=2.2, trail=3.2, ADX=18, ATRr=1.0` 作为默认候选；过滤增强版作为对照候选。
+
 ## [2026-04-28-VB-V1-H4-CANDIDATE-VALIDATION] volatility_breakout / v1 / H4
 
 - 日期：2026-04-28

@@ -53,12 +53,14 @@ xau/
 │   ├── historical/
 │   ├── reports/
 │   ├── optimizations/
+│   ├── diagnostics/
 │   └── validation/
 ├── research/
 └── scripts/
     ├── ingest/
     ├── engines/
     ├── optimization/
+    ├── diagnostics/
     └── validation/
 ```
 
@@ -161,6 +163,29 @@ Important files:
 - `validation_summary.md`: readable validation summary.
 - `cost_stress_summary.csv`: spread/slippage stress test results.
 - `walk_forward_summary.csv`: rolling/walk-forward validation results.
+
+### `xau/data/diagnostics`
+
+Trade-level diagnostics for selected candidates. This is where you look when the
+question is not "what is the total return?" but "which trades made money, which
+trades lost, and what market conditions mattered?"
+
+Current folder:
+
+```text
+xau/data/diagnostics/volatility_breakout/v1_h4_candidate/
+```
+
+Important files:
+
+- `diagnostics_summary.md`: readable trade-level summary.
+- `trade_details.csv`: every closed trade with derived metrics such as R multiple,
+  holding time, ADX bucket, ATR-ratio bucket, and PnL.
+- `continuous_report.json`: one continuous 2015-2025 backtest report.
+- `breakdowns/`: PnL grouped by year, quarter, side, holding bucket, ADX bucket,
+  ATR-ratio bucket, and exit reason.
+- `plots/`: SVG charts for equity, drawdown, overlay, trade return histogram,
+  and rolling Sharpe.
 
 ## `xau/research`
 
@@ -367,6 +392,36 @@ Run:
 .venv/bin/python xau/scripts/validation/vb_h4_candidate_validate.py
 ```
 
+### `xau/scripts/diagnostics`
+
+Trade-level analysis scripts for selected candidates.
+
+#### `vb_h4_trade_diagnostics.py`
+
+Runs the selected VB/H4 candidate on one continuous 2015-2025 H4 dataset and
+generates:
+
+- full trade list,
+- PnL breakdowns,
+- holding-time analysis,
+- ADX / ATR-ratio regime analysis,
+- equity and drawdown curves,
+- price/equity overlay with trade markers,
+- trade return histogram,
+- rolling 30-trade Sharpe curve.
+
+Default output:
+
+```text
+xau/data/diagnostics/volatility_breakout/v1_h4_candidate/
+```
+
+Run:
+
+```bash
+.venv/bin/python xau/scripts/diagnostics/vb_h4_trade_diagnostics.py
+```
+
 ## Current Workflow
 
 For XAUUSD research, the intended flow is:
@@ -389,4 +444,3 @@ For XAUUSD research, the intended flow is:
   - spread filter,
   - ATR/Donchian calculations,
   - Chandelier trailing behavior.
-
