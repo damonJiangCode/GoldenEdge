@@ -172,12 +172,34 @@ def summarize_reports(reports: list[dict[str, Any]], years: list[int]) -> dict[s
     }
 
 
+def trade_stats(trades: list[dict[str, Any]]) -> dict[str, float | int]:
+    pnls = [float(t["net_pnl"]) for t in trades]
+    wins = [pnl for pnl in pnls if pnl > 0.0]
+    losses = [pnl for pnl in pnls if pnl < 0.0]
+    avg_win = mean(wins)
+    avg_loss = mean(losses)
+    return {
+        "trade_count": len(pnls),
+        "trade_win_rate_pct": (len(wins) / len(pnls) * 100.0) if pnls else 0.0,
+        "avg_win": avg_win,
+        "avg_loss": avg_loss,
+        "payoff_ratio": (avg_win / abs(avg_loss)) if avg_loss < 0.0 else 0.0,
+        "trade_sharpe": (mean(pnls) / stdev(pnls)) if len(pnls) >= 2 and stdev(pnls) > 0 else 0.0,
+        "avg_holding_bars": mean([int(t["holding_bars"]) for t in trades]) if trades else 0.0,
+    }
+
+
 def report_to_year_row(year: int, report: dict[str, Any]) -> dict[str, Any]:
     perf = report["performance"]
+    stats = trade_stats(report.get("trade_details", report.get("sample_trades", [])))
     return {
         "year": year,
         "trades": int(report["trades"]),
         "win_rate_pct": round(float(report["win_rate"]) * 100.0, 6),
+        "avg_win": round(float(stats["avg_win"]), 6),
+        "avg_loss": round(float(stats["avg_loss"]), 6),
+        "payoff_ratio": round(float(stats["payoff_ratio"]), 6),
+        "avg_holding_bars": round(float(stats["avg_holding_bars"]), 6),
         "return_pct": round(float(perf["return_pct"]), 6),
         "profit_factor": round(float(perf["profit_factor"]), 6),
         "max_drawdown_pct": round(float(perf["max_drawdown_pct"]), 6),
@@ -225,8 +247,16 @@ def save_formal_reports(
         [reports_by_year[year] for year in sorted(reports_by_year)],
         sorted(reports_by_year),
     )
+    all_trades = [
+        trade
+        for year in sorted(reports_by_year)
+        for trade in reports_by_year[year].get("trade_details", [])
+    ]
+    stats = trade_stats(all_trades)
     md = [
         "# XAUUSD VB/H4 Candidate Annual Report",
+        "",
+        "Metric note: annual averages below are calculated by running each year independently and averaging the yearly results. Trade metrics are calculated across all closed trades in the listed reports.",
         "",
         "Parameters:",
         "",
@@ -244,6 +274,12 @@ def save_formal_reports(
         f"- Avg MaxDD: `{summary['avg_maxdd_pct']:.2f}%`",
         f"- Positive Years: `{summary['positive_years']}/{summary['year_count']}`",
         f"- Avg Trades: `{summary['avg_trades']:.2f}`",
+        f"- Trade Win Rate: `{stats['trade_win_rate_pct']:.2f}%`",
+        f"- Avg Win: `{stats['avg_win']:.2f}`",
+        f"- Avg Loss: `{stats['avg_loss']:.2f}`",
+        f"- Payoff Ratio: `{stats['payoff_ratio']:.2f}`",
+        f"- Trade Sharpe: `{stats['trade_sharpe']:.2f}`",
+        f"- Avg Holding Bars: `{stats['avg_holding_bars']:.2f}`",
         "",
     ]
     (output_dir / "summary.md").write_text("\n".join(md), encoding="utf-8")

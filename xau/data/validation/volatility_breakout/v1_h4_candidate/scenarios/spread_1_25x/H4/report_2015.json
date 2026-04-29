@@ -1,6 +1,6 @@
 {
   "engine": "volatility_breakout_v1",
-  "input_file": "/var/folders/kz/jc_bkqn501q_g0c76dy4_s3m0000gn/T/vb_h4_stress_ofc62r0e/H4_2015_spread_1_25x.csv",
+  "input_file": "/var/folders/kz/jc_bkqn501q_g0c76dy4_s3m0000gn/T/vb_h4_stress_vtu1jml0/H4_2015_spread_1_25x.csv",
   "bars": 1433,
   "time_start_utc": "2015-01-28T00:00:00+00:00",
   "time_end_utc": "2015-12-31T16:00:00+00:00",
@@ -8657,6 +8657,7 @@
       "open_position": 0
     }
   ],
+  "trade_details": [],
   "sample_trades": [],
   "original_input_file": "/Users/damon/Documents/GoldenEdge/xau/data/historical/H4/H4_2015.csv",
   "stress_scenario": {

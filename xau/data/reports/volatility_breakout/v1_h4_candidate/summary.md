@@ -1,5 +1,7 @@
 # XAUUSD VB/H4 Candidate Annual Report
 
+Metric note: annual averages below are calculated by running each year independently and averaging the yearly results. Trade metrics are calculated across all closed trades in the listed reports.
+
 Parameters:
 
 - donchian_breakout_period: `18`
@@ -16,3 +18,9 @@ Full-period summary:
 - Avg MaxDD: `9.28%`
 - Positive Years: `11/11`
 - Avg Trades: `25.55`
+- Trade Win Rate: `43.77%`
+- Avg Win: `40.80`
+- Avg Loss: `-15.00`
+- Payoff Ratio: `2.72`
+- Trade Sharpe: `0.23`
+- Avg Holding Bars: `23.24`

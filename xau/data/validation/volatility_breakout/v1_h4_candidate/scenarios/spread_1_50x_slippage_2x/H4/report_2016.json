@@ -1,6 +1,6 @@
 {
   "engine": "volatility_breakout_v1",
-  "input_file": "/var/folders/kz/jc_bkqn501q_g0c76dy4_s3m0000gn/T/vb_h4_stress_ofc62r0e/H4_2016_spread_1_50x_slippage_2x.csv",
+  "input_file": "/var/folders/kz/jc_bkqn501q_g0c76dy4_s3m0000gn/T/vb_h4_stress_vtu1jml0/H4_2016_spread_1_50x_slippage_2x.csv",
   "bars": 1443,
   "time_start_utc": "2016-01-26T16:00:00+00:00",
   "time_end_utc": "2016-12-30T20:00:00+00:00",
@@ -8715,6 +8715,28 @@
       "balance": 1029.6340883871076,
       "equity": 1029.6340883871076,
       "open_position": 0
+    }
+  ],
+  "trade_details": [
+    {
+      "side": "short",
+      "signal_time": "2016-10-04T12:00:00+00:00",
+      "entry_time": "2016-10-04T16:00:00+00:00",
+      "exit_time": "2016-10-11T08:00:00+00:00",
+      "entry_price": 1291.8,
+      "exit_price": 1262.1159116128924,
+      "sl": 1262.0959116128925,
+      "entry_atr": 6.97653183091295,
+      "entry_atr_ratio": 1.3998549490032384,
+      "entry_h1_adx": 42.254160683597554,
+      "exit_reason": "SL",
+      "gross_pnl": 29.684088387107522,
+      "swap_total": 0.0,
+      "entry_commission": 0.025,
+      "exit_commission": 0.025,
+      "net_pnl": 29.634088387107525,
+      "equity_after": 1029.6340883871076,
+      "holding_bars": 29
     }
   ],
   "sample_trades": [

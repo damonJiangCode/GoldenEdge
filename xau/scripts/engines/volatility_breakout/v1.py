@@ -554,6 +554,7 @@ class VolatilityBreakoutV1Engine:
                 "position_mode": "single_position_no_pyramiding",
             },
             "equity_series": equity_series,
+            "trade_details": trades,
             "sample_trades": trades[:30],
         }
         if position is not None:
