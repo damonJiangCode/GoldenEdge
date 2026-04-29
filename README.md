@@ -50,7 +50,7 @@ Primary outputs:
 ```text
 xau/
 ├── data/
-│   ├── historical/
+│   ├── market_data/
 │   ├── reports/
 │   ├── optimizations/
 │   ├── diagnostics/
@@ -68,12 +68,12 @@ xau/
 
 This is the storage area for XAUUSD inputs and generated outputs.
 
-### `xau/data/historical`
+### `xau/data/market_data`
 
-Clean historical OHLCV data, split by timeframe and year.
+Clean market OHLCV data, split by timeframe and year.
 
 ```text
-xau/data/historical/
+xau/data/market_data/
 ├── M1/
 ├── M15/
 ├── M30/
@@ -217,9 +217,9 @@ Data download, cleaning, and timeframe-building tools.
   symbol aliases such as `XAUUSDm`.
 - `clean_mt5_csv.py`: cleans MT5-exported CSV data into the expected schema.
 - `resample_m1_timeframes.py`: builds higher timeframes from M1 data.
-- `build_all_from_m1.py`: helper to build the full historical set from M1.
+- `build_all_from_m1.py`: helper to build the full market data set from M1.
 
-These scripts are for maintaining `xau/data/historical`.
+These scripts are for maintaining `xau/data/market_data`.
 
 ### `xau/scripts/engines`
 
@@ -426,7 +426,7 @@ Run:
 
 For XAUUSD research, the intended flow is:
 
-1. Maintain or rebuild historical data under `xau/data/historical/`.
+1. Maintain or rebuild market data under `xau/data/market_data/`.
 2. Run engine backtests under `xau/scripts/engines/`.
 3. Use `xau/scripts/optimization/` to search candidate parameters.
 4. Use `xau/scripts/validation/` to stress-test selected candidates.

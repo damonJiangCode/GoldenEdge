@@ -25,7 +25,7 @@ from scripts.engines.volatility_breakout.v1 import (  # noqa: E402
 )
 
 
-DATA_DIR = PROJECT_ROOT / "data" / "historical" / "H4"
+DATA_DIR = PROJECT_ROOT / "data" / "market_data" / "H4"
 OUTPUT_DIR = PROJECT_ROOT / "data" / "diagnostics" / "volatility_breakout" / "v1_h4_candidate"
 
 

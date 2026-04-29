@@ -16,7 +16,7 @@ except ImportError as exc:  # pragma: no cover
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "historical"
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "market_data"
 DEFAULT_SYMBOL = "XAUUSD"
 
 TIMEFRAME_MAP = {
@@ -60,8 +60,8 @@ def ensure_symbol_ready(symbol: str) -> str:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Download one year of MT5 historical data and save to "
-            "data/historical/<TIMEFRAME>/<TIMEFRAME>_<YEAR>.csv."
+            "Download one year of MT5 market data and save to "
+            "data/market_data/<TIMEFRAME>/<TIMEFRAME>_<YEAR>.csv."
         )
     )
     parser.add_argument(
@@ -84,7 +84,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-root",
         default=str(DEFAULT_OUTPUT_ROOT),
-        help="Output root directory (default: xau/data/historical).",
+        help="Output root directory (default: xau/data/market_data).",
     )
     parser.add_argument(
         "--terminal-path",

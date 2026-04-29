@@ -2,7 +2,7 @@
 
 日期：2026-04-28
 
-本次已汇总以下策略在 `xau/data/historical` 全量数据（5 个 timeframe，2015-2025）的结果：
+本次已汇总以下策略在 `xau/data/market_data` 全量数据（5 个 timeframe，2015-2025）的结果：
 - `trend_pullback/v1`
 - `mean_reversion/v1`
 - `volatility_breakout/v1`

@@ -6,8 +6,8 @@ from pathlib import Path
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT_DIR = PROJECT_ROOT / "data" / "historical" / "M1"
-DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "historical"
+DEFAULT_INPUT_DIR = PROJECT_ROOT / "data" / "market_data" / "M1"
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "market_data"
 
 SUPPORTED_TIMEFRAMES = {
     "M15": "15min",
