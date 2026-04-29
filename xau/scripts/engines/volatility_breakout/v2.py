@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-XAU_DATA_DIR = PROJECT_ROOT / "data" / "historical"
+XAU_DATA_DIR = PROJECT_ROOT / "data" / "market_data"
 RESULT_DIR = PROJECT_ROOT / "data" / "reports" / "volatility_breakout" / "v2"
 
 REQUIRED_COLUMNS = [
