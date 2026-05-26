@@ -69,6 +69,8 @@ RET_CODE_MESSAGES = {
     mt5.TRADE_RETCODE_ORDER_CHANGED: "order changed",
     mt5.TRADE_RETCODE_TOO_MANY_REQUESTS: "order too many requests",
 }
+if hasattr(mt5, "TRADE_RETCODE_NO_CHANGES"):
+    RET_CODE_MESSAGES[mt5.TRADE_RETCODE_NO_CHANGES] = "order no changes"
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -370,6 +372,10 @@ def update_trailing_stop(df: pd.DataFrame):
                 return
 
         new_sl = round(new_sl, symbol_info.digits)
+        old_sl = round(old_sl, symbol_info.digits)
+        if new_sl == old_sl:
+            return
+
         request = {
             "action": mt5.TRADE_ACTION_SLTP,
             "symbol": PARAMETERS["SYMBOL"],
