@@ -33,7 +33,7 @@ class EngineConfig:
     contract_size: int = 100
     leverage: float = 100.0
 
-    donchian_breakout_period: int = 20
+    donchian_breakout_period: int = 18
     donchian_exit_period: int = 10
     atr_period: int = 14
     atr_ratio_lookback: int = 100
@@ -41,15 +41,15 @@ class EngineConfig:
 
     enable_h1_adx_filter: bool = True
     adx_period: int = 14
-    h1_adx_min: float = 20.0
+    h1_adx_min: float = 18.0
 
     spread_max_points: float = 30.0
     session_start_hour_utc: int = 0
     session_end_hour_utc: int = 24
 
-    sl_atr_mult: float = 2.0
+    sl_atr_mult: float = 2.2
     trail_mode: str = "chandelier"  # chandelier | donchian
-    trail_atr_mult: float = 3.0
+    trail_atr_mult: float = 3.2
 
     point_value: float = 0.01
     pip_value: float = 0.01
@@ -621,8 +621,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output", default=None)
     parser.add_argument(
         "--timeframes",
-        default="H1,H4",
-        help="Comma separated list when --input is not provided. Default: H1,H4",
+        default="H4",
+        help="Comma separated list when --input is not provided. Default: H4",
     )
 
     parser.add_argument("--initial-balance", type=float, default=1000.0)
@@ -630,7 +630,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--contract-size", type=int, default=100)
     parser.add_argument("--leverage", type=float, default=100.0)
 
-    parser.add_argument("--donchian-breakout-period", type=int, default=20)
+    parser.add_argument("--donchian-breakout-period", type=int, default=18)
     parser.add_argument("--donchian-exit-period", type=int, default=10)
     parser.add_argument("--atr-period", type=int, default=14)
     parser.add_argument("--atr-ratio-lookback", type=int, default=100)
@@ -639,19 +639,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--enable-h1-adx-filter", action="store_true")
     parser.add_argument("--disable-h1-adx-filter", action="store_true")
     parser.add_argument("--adx-period", type=int, default=14)
-    parser.add_argument("--h1-adx-min", type=float, default=20.0)
+    parser.add_argument("--h1-adx-min", type=float, default=18.0)
 
     parser.add_argument("--spread-max-points", type=float, default=30.0)
     parser.add_argument("--session-start-hour-utc", type=int, default=0)
     parser.add_argument("--session-end-hour-utc", type=int, default=24)
 
-    parser.add_argument("--sl-atr-mult", type=float, default=2.0)
+    parser.add_argument("--sl-atr-mult", type=float, default=2.2)
     parser.add_argument(
         "--trail-mode",
         choices=["chandelier", "donchian"],
         default="chandelier",
     )
-    parser.add_argument("--trail-atr-mult", type=float, default=3.0)
+    parser.add_argument("--trail-atr-mult", type=float, default=3.2)
 
     parser.add_argument("--point-value", type=float, default=0.01)
     parser.add_argument("--pip-value", type=float, default=0.01)

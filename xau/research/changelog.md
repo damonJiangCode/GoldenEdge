@@ -1,5 +1,58 @@
 # Strategy Changelog
 
+## [2026-05-26-VB-V1-H4-QUALITY-DEFAULTS] volatility_breakout / v1 / H4
+
+- 日期：2026-05-26
+- 变更类型：`parameter-default`
+- 目标：将 `volatility_breakout/v1` 固定为只做高质量 VB 单的 H4 主线，后续可与其他策略一起进入组合层验证。
+- 修改文件：`xau/scripts/engines/volatility_breakout/v1.py`
+
+### 默认参数更新
+
+| Param | Old | New |
+| --- | ---: | ---: |
+| default timeframes | `H1,H4` | `H4` |
+| donchian_breakout_period | `20` | `18` |
+| donchian_exit_period | `10` | `10` |
+| sl_atr_mult | `2.0` | `2.2` |
+| trail_atr_mult | `3.0` | `3.2` |
+| h1_adx_min | `20` | `18` |
+| atr_ratio_min | `1.0` | `1.0` |
+
+### 复核结果
+
+- 复核方式：使用新默认参数跑 `H4` 年度报告。
+- 先完整查看 `2015-2025`，再单独排除强趋势年份 `2025`，验证策略是否过度依赖 2025。
+
+`2015-2025`：
+
+| Metric | Value |
+| --- | ---: |
+| Avg Return | `25.73%` |
+| Avg PF | `2.12` |
+| Avg MaxDD | `9.28%` |
+| Positive Years | `11/11` |
+| Avg Trades | `25.55/year` |
+
+`2015-2024`，排除 `2025`：
+
+| Metric | Value |
+| --- | ---: |
+| Avg Return | `14.37%` |
+| Avg PF | `1.92` |
+| Avg MaxDD | `8.99%` |
+| Positive Years | `10/10` |
+| Avg Trades | `24.90/year` |
+| Worst Year | `2018: +1.18%` |
+| Best Year | `2023: +35.10%` |
+
+### 判断
+
+- 去掉 `2025` 后收益明显降温，但结构没有崩，仍保持 `10/10` 正收益年份。
+- 当前默认参数适合作为 VB/H4 主策略候选，不再把 H1 混入默认运行。
+- 下一步调参重点不再追求增加交易数，而是围绕坏单过滤继续研究，例如对照 `ADX=20`、`SL=2.5` 的质量增强候选。
+- 后续与其他策略组合运行时，VB 这一侧应定位为低频趋势突破模块，而不是全市场高频信号源。
+
 ## [2026-04-28-VB-V1-H4-TRADE-DIAGNOSTICS] volatility_breakout / v1 / H4
 
 - 日期：2026-04-28
