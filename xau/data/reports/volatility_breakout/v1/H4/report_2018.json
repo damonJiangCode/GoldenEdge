@@ -8717,8 +8717,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -13.507109533413132,
+      "pnl_result": "loss",
       "equity_after": 986.4928904665869,
-      "holding_bars": 3
+      "holding_bars": 3,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -8737,8 +8740,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.5901980880858444,
+      "pnl_result": "loss",
       "equity_after": 983.9026923785011,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2018-02-01T12:00:00+00:00",
+          "old_sl": 1357.2922048042897,
+          "new_sl": 1356.2072345375161,
+          "atr": 5.927260792973762,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-01T16:00:00+00:00",
+          "old_sl": 1356.2072345375161,
+          "new_sl": 1356.0661463562649,
+          "atr": 5.883170736332775,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T04:00:00+00:00",
+          "old_sl": 1356.0661463562649,
+          "new_sl": 1355.6891849652748,
+          "atr": 5.765370301648356,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T08:00:00+00:00",
+          "old_sl": 1355.6891849652748,
+          "new_sl": 1355.271957467755,
+          "atr": 5.634986708673478,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T12:00:00+00:00",
+          "old_sl": 1355.271957467755,
+          "new_sl": 1354.528531934344,
+          "atr": 6.08391622948252,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1335.06
+        },
+        {
+          "time": "2018-02-02T16:00:00+00:00",
+          "old_sl": 1354.528531934344,
+          "new_sl": 1347.6724939390338,
+          "atr": 6.325779355948057,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T04:00:00+00:00",
+          "old_sl": 1347.6724939390338,
+          "new_sl": 1347.0176702565807,
+          "atr": 6.121146955181458,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T08:00:00+00:00",
+          "old_sl": 1347.0176702565807,
+          "new_sl": 1346.7042652382536,
+          "atr": 6.023207886954211,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T12:00:00+00:00",
+          "old_sl": 1346.7042652382536,
+          "new_sl": 1346.1846748640926,
+          "atr": 5.86083589502891,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T16:00:00+00:00",
+          "old_sl": 1346.1846748640926,
+          "new_sl": 1345.910198088086,
+          "atr": 5.7750619025268515,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        }
+      ]
     },
     {
       "side": "short",
@@ -8757,8 +8844,116 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 0.8950182454065725,
+      "pnl_result": "profit",
       "equity_after": 984.7977106239077,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 13,
+      "trail_updates": [
+        {
+          "time": "2018-02-06T20:00:00+00:00",
+          "old_sl": 1342.3489647815984,
+          "new_sl": 1341.516676045961,
+          "atr": 6.667711264362842,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T00:00:00+00:00",
+          "old_sl": 1341.516676045961,
+          "new_sl": 1341.1789134712496,
+          "atr": 6.5621604597655,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T04:00:00+00:00",
+          "old_sl": 1341.1789134712496,
+          "new_sl": 1340.2252767947318,
+          "atr": 6.2641489983536855,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T08:00:00+00:00",
+          "old_sl": 1340.2252767947318,
+          "new_sl": 1339.6551855951082,
+          "atr": 6.085995498471278,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T16:00:00+00:00",
+          "old_sl": 1339.6551855951082,
+          "new_sl": 1335.6691957427206,
+          "atr": 6.502873669600244,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1314.86
+        },
+        {
+          "time": "2018-02-07T20:00:00+00:00",
+          "old_sl": 1335.6691957427206,
+          "new_sl": 1332.316538903955,
+          "atr": 6.542668407485937,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1311.38
+        },
+        {
+          "time": "2018-02-08T00:00:00+00:00",
+          "old_sl": 1332.316538903955,
+          "new_sl": 1331.9456432679583,
+          "atr": 6.426763521236947,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1311.38
+        },
+        {
+          "time": "2018-02-08T04:00:00+00:00",
+          "old_sl": 1331.9456432679583,
+          "new_sl": 1330.4938116059611,
+          "atr": 6.48556612686288,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1309.74
+        },
+        {
+          "time": "2018-02-08T08:00:00+00:00",
+          "old_sl": 1330.4938116059611,
+          "new_sl": 1329.4485393483926,
+          "atr": 6.340168546372661,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1309.16
+        },
+        {
+          "time": "2018-02-08T12:00:00+00:00",
+          "old_sl": 1329.4485393483926,
+          "new_sl": 1327.83364368065,
+          "atr": 6.498013650203182,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T00:00:00+00:00",
+          "old_sl": 1327.83364368065,
+          "new_sl": 1327.6001119411037,
+          "atr": 6.425034981594909,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T04:00:00+00:00",
+          "old_sl": 1327.6001119411037,
+          "new_sl": 1326.9429610881677,
+          "atr": 6.219675340052412,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T12:00:00+00:00",
+          "old_sl": 1326.9429610881677,
+          "new_sl": 1326.7249817545935,
+          "atr": 6.151556798310495,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        }
+      ]
     },
     {
       "side": "long",
@@ -8777,8 +8972,36 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -7.427989444723199,
+      "pnl_result": "loss",
       "equity_after": 977.3697211791846,
-      "holding_bars": 8
+      "holding_bars": 8,
+      "sl_update_count": 3,
+      "trail_updates": [
+        {
+          "time": "2018-02-14T00:00:00+00:00",
+          "old_sl": 1313.6169308253093,
+          "new_sl": 1315.697799223871,
+          "atr": 5.666312742540284,
+          "highest_since_entry": 1333.83,
+          "lowest_since_entry": 1324.63
+        },
+        {
+          "time": "2018-02-14T04:00:00+00:00",
+          "old_sl": 1315.697799223871,
+          "new_sl": 1318.9692421364518,
+          "atr": 5.615861832358838,
+          "highest_since_entry": 1336.94,
+          "lowest_since_entry": 1324.63
+        },
+        {
+          "time": "2018-02-14T08:00:00+00:00",
+          "old_sl": 1318.9692421364518,
+          "new_sl": 1319.1420105552768,
+          "atr": 5.561871701476057,
+          "highest_since_entry": 1336.94,
+          "lowest_since_entry": 1324.63
+        }
+      ]
     },
     {
       "side": "long",
@@ -8797,8 +9020,100 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.090379003771023,
+      "pnl_result": "loss",
       "equity_after": 972.2793421754136,
-      "holding_bars": 19
+      "holding_bars": 19,
+      "sl_update_count": 11,
+      "trail_updates": [
+        {
+          "time": "2018-02-15T04:00:00+00:00",
+          "old_sl": 1333.144000480352,
+          "new_sl": 1333.443703756434,
+          "atr": 6.892592576114393,
+          "highest_since_entry": 1355.5,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T08:00:00+00:00",
+          "old_sl": 1333.443703756434,
+          "new_sl": 1335.47829634526,
+          "atr": 6.747407392106215,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T12:00:00+00:00",
+          "old_sl": 1335.47829634526,
+          "new_sl": 1335.5851323205986,
+          "atr": 6.714021149812912,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T16:00:00+00:00",
+          "old_sl": 1335.5851323205986,
+          "new_sl": 1335.8146228691273,
+          "atr": 6.642305353397691,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T20:00:00+00:00",
+          "old_sl": 1335.8146228691273,
+          "new_sl": 1336.318006949904,
+          "atr": 6.484997828155003,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T00:00:00+00:00",
+          "old_sl": 1336.318006949904,
+          "new_sl": 1337.2585778820537,
+          "atr": 6.1910694118582095,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T04:00:00+00:00",
+          "old_sl": 1337.2585778820537,
+          "new_sl": 1340.1885366047643,
+          "atr": 6.18170731101119,
+          "highest_since_entry": 1359.97,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T08:00:00+00:00",
+          "old_sl": 1340.1885366047643,
+          "new_sl": 1342.2083554187097,
+          "atr": 6.088013931653257,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T08:00:00+00:00",
+          "old_sl": 1342.2083554187097,
+          "new_sl": 1342.88757227965,
+          "atr": 5.875758662609398,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T12:00:00+00:00",
+          "old_sl": 1342.88757227965,
+          "new_sl": 1343.5997456882465,
+          "atr": 5.6532044724230115,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T16:00:00+00:00",
+          "old_sl": 1343.5997456882465,
+          "new_sl": 1344.249620996229,
+          "atr": 5.450118438678507,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        }
+      ]
     },
     {
       "side": "short",
@@ -8817,8 +9132,36 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.045163920653568,
+      "pnl_result": "loss",
       "equity_after": 967.2341782547601,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 3,
+      "trail_updates": [
+        {
+          "time": "2018-03-01T08:00:00+00:00",
+          "old_sl": 1328.3163520121648,
+          "new_sl": 1326.3085806417048,
+          "atr": 5.018306450532773,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1310.25
+        },
+        {
+          "time": "2018-03-01T12:00:00+00:00",
+          "old_sl": 1326.3085806417048,
+          "new_sl": 1321.2692534530117,
+          "atr": 5.184141704066141,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1304.68
+        },
+        {
+          "time": "2018-03-01T16:00:00+00:00",
+          "old_sl": 1321.2692534530117,
+          "new_sl": 1320.4751639206536,
+          "atr": 5.535988725204267,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1302.76
+        }
+      ]
     },
     {
       "side": "long",
@@ -8837,8 +9180,68 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.1115027743001518,
+      "pnl_result": "loss",
       "equity_after": 965.12267548046,
-      "holding_bars": 16
+      "holding_bars": 16,
+      "sl_update_count": 7,
+      "trail_updates": [
+        {
+          "time": "2018-03-06T12:00:00+00:00",
+          "old_sl": 1313.5683854299918,
+          "new_sl": 1315.918712904283,
+          "atr": 5.081652217411562,
+          "highest_since_entry": 1332.18,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-06T16:00:00+00:00",
+          "old_sl": 1315.918712904283,
+          "new_sl": 1321.37623341112,
+          "atr": 5.338677059025026,
+          "highest_since_entry": 1338.46,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-06T20:00:00+00:00",
+          "old_sl": 1321.37623341112,
+          "new_sl": 1321.7073595960399,
+          "atr": 5.235200126237531,
+          "highest_since_entry": 1338.46,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T00:00:00+00:00",
+          "old_sl": 1321.7073595960399,
+          "new_sl": 1323.4105481963227,
+          "atr": 5.299828688649128,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T04:00:00+00:00",
+          "old_sl": 1323.4105481963227,
+          "new_sl": 1323.565937610871,
+          "atr": 5.25126949660277,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T08:00:00+00:00",
+          "old_sl": 1323.565937610871,
+          "new_sl": 1323.870227781523,
+          "atr": 5.1561788182740065,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T12:00:00+00:00",
+          "old_sl": 1323.870227781523,
+          "new_sl": 1324.0384972257,
+          "atr": 5.103594616968709,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        }
+      ]
     },
     {
       "side": "long",
@@ -8857,8 +9260,52 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.367993358538616,
+      "pnl_result": "loss",
       "equity_after": 954.7546821219214,
-      "holding_bars": 14
+      "holding_bars": 14,
+      "sl_update_count": 5,
+      "trail_updates": [
+        {
+          "time": "2018-03-14T04:00:00+00:00",
+          "old_sl": 1313.2703304595732,
+          "new_sl": 1313.6274916616392,
+          "atr": 5.119533855737776,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-14T20:00:00+00:00",
+          "old_sl": 1313.6274916616392,
+          "new_sl": 1314.3870023778652,
+          "atr": 4.882186756917094,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T00:00:00+00:00",
+          "old_sl": 1314.3870023778652,
+          "new_sl": 1314.6549307794464,
+          "atr": 4.7984591314230185,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T04:00:00+00:00",
+          "old_sl": 1314.6549307794464,
+          "new_sl": 1315.274007152343,
+          "atr": 4.604997764892813,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T08:00:00+00:00",
+          "old_sl": 1315.274007152343,
+          "new_sl": 1315.3620066414614,
+          "atr": 4.577497924543328,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        }
+      ]
     },
     {
       "side": "long",
@@ -8877,8 +9324,132 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 8.409662682602129,
+      "pnl_result": "profit",
       "equity_after": 963.1643448045236,
-      "holding_bars": 22
+      "holding_bars": 22,
+      "sl_update_count": 15,
+      "trail_updates": [
+        {
+          "time": "2018-03-23T00:00:00+00:00",
+          "old_sl": 1319.5046469343008,
+          "new_sl": 1320.1747993380745,
+          "atr": 5.914125206851704,
+          "highest_since_entry": 1339.1,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T04:00:00+00:00",
+          "old_sl": 1320.1747993380745,
+          "new_sl": 1320.9528850996405,
+          "atr": 5.670973406362296,
+          "highest_since_entry": 1339.1,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T08:00:00+00:00",
+          "old_sl": 1320.9528850996405,
+          "new_sl": 1325.1628218782378,
+          "atr": 5.6366181630507075,
+          "highest_since_entry": 1343.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T12:00:00+00:00",
+          "old_sl": 1325.1628218782378,
+          "new_sl": 1330.0037631726493,
+          "atr": 5.842574008547085,
+          "highest_since_entry": 1348.7,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T16:00:00+00:00",
+          "old_sl": 1330.0037631726493,
+          "new_sl": 1331.7237800888886,
+          "atr": 5.773818722222301,
+          "highest_since_entry": 1350.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T20:00:00+00:00",
+          "old_sl": 1331.7237800888886,
+          "new_sl": 1332.3006529396823,
+          "atr": 5.5935459563492795,
+          "highest_since_entry": 1350.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T00:00:00+00:00",
+          "old_sl": 1332.3006529396823,
+          "new_sl": 1333.0977491582764,
+          "atr": 5.572578388038614,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T04:00:00+00:00",
+          "old_sl": 1333.0977491582764,
+          "new_sl": 1333.642338504114,
+          "atr": 5.4023942174644315,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T08:00:00+00:00",
+          "old_sl": 1333.642338504114,
+          "new_sl": 1333.80288575382,
+          "atr": 5.352223201931261,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T12:00:00+00:00",
+          "old_sl": 1333.80288575382,
+          "new_sl": 1334.4593939142615,
+          "atr": 5.147064401793315,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T16:00:00+00:00",
+          "old_sl": 1334.4593939142615,
+          "new_sl": 1338.7130086346713,
+          "atr": 5.361559801665212,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T20:00:00+00:00",
+          "old_sl": 1338.7130086346713,
+          "new_sl": 1339.0722223036232,
+          "atr": 5.249305530117694,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T00:00:00+00:00",
+          "old_sl": 1339.0722223036232,
+          "new_sl": 1339.577206424793,
+          "atr": 5.091497992252158,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T04:00:00+00:00",
+          "old_sl": 1339.577206424793,
+          "new_sl": 1339.808405965879,
+          "atr": 5.019248135662729,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T08:00:00+00:00",
+          "old_sl": 1339.808405965879,
+          "new_sl": 1340.4696626826021,
+          "atr": 5.115730411686813,
+          "highest_since_entry": 1356.84,
+          "lowest_since_entry": 1329.45
+        }
+      ]
     },
     {
       "side": "short",
@@ -8897,8 +9468,108 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -1.4366670679576599,
+      "pnl_result": "loss",
       "equity_after": 961.727677736566,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 12,
+      "trail_updates": [
+        {
+          "time": "2018-03-28T16:00:00+00:00",
+          "old_sl": 1347.8228714846475,
+          "new_sl": 1344.2323585231236,
+          "atr": 5.769487038476113,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1325.77
+        },
+        {
+          "time": "2018-03-28T20:00:00+00:00",
+          "old_sl": 1344.2323585231236,
+          "new_sl": 1341.861332914329,
+          "atr": 5.756666535727813,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T00:00:00+00:00",
+          "old_sl": 1341.861332914329,
+          "new_sl": 1341.1786662775912,
+          "atr": 5.543333211747254,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T04:00:00+00:00",
+          "old_sl": 1341.1786662775912,
+          "new_sl": 1340.494475829192,
+          "atr": 5.329523696622447,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T08:00:00+00:00",
+          "old_sl": 1340.494475829192,
+          "new_sl": 1339.993727555678,
+          "atr": 5.332414861149407,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1322.93
+        },
+        {
+          "time": "2018-03-29T12:00:00+00:00",
+          "old_sl": 1339.993727555678,
+          "new_sl": 1338.5994613017012,
+          "atr": 5.302956656781581,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.63
+        },
+        {
+          "time": "2018-03-29T16:00:00+00:00",
+          "old_sl": 1338.5994613017012,
+          "new_sl": 1337.8862140658653,
+          "atr": 5.211316895582896,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-03-29T20:00:00+00:00",
+          "old_sl": 1337.8862140658653,
+          "new_sl": 1337.7350559183035,
+          "atr": 5.1640799744698285,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T00:00:00+00:00",
+          "old_sl": 1337.7350559183035,
+          "new_sl": 1337.1626947812817,
+          "atr": 4.985217119150561,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T04:00:00+00:00",
+          "old_sl": 1337.1626947812817,
+          "new_sl": 1336.8483594397617,
+          "atr": 4.886987324925514,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T08:00:00+00:00",
+          "old_sl": 1336.8483594397617,
+          "new_sl": 1336.6593337654929,
+          "atr": 4.827916801716545,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T12:00:00+00:00",
+          "old_sl": 1336.6593337654929,
+          "new_sl": 1336.5066670679578,
+          "atr": 4.780208458736798,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        }
+      ]
     },
     {
       "side": "long",
@@ -8917,8 +9588,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.460039686064466,
+      "pnl_result": "loss",
       "equity_after": 950.2676380505015,
-      "holding_bars": 4
+      "holding_bars": 4,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2018-04-04T12:00:00+00:00",
+          "old_sl": 1330.1393477158308,
+          "new_sl": 1330.7499603139356,
+          "atr": 5.459387401895096,
+          "highest_since_entry": 1348.22,
+          "lowest_since_entry": 1341.84
+        }
+      ]
     },
     {
       "side": "short",
@@ -8937,8 +9620,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 3.2823059932315575,
+      "pnl_result": "profit",
       "equity_after": 953.5499440437331,
-      "holding_bars": 29
+      "holding_bars": 29,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-05-15T16:00:00+00:00",
+          "old_sl": 1308.4271335083151,
+          "new_sl": 1306.751285103004,
+          "atr": 4.944151594688713,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1290.93
+        },
+        {
+          "time": "2018-05-15T20:00:00+00:00",
+          "old_sl": 1306.751285103004,
+          "new_sl": 1304.3111933099322,
+          "atr": 4.890997909353792,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T00:00:00+00:00",
+          "old_sl": 1304.3111933099322,
+          "new_sl": 1303.8515366449371,
+          "atr": 4.747355201542798,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T04:00:00+00:00",
+          "old_sl": 1303.8515366449371,
+          "new_sl": 1303.529855456013,
+          "atr": 4.646829830004037,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T08:00:00+00:00",
+          "old_sl": 1303.529855456013,
+          "new_sl": 1303.4757229234406,
+          "atr": 4.629913413575167,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T12:00:00+00:00",
+          "old_sl": 1303.4757229234406,
+          "new_sl": 1301.7785998574805,
+          "atr": 4.812062455462644,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-16T16:00:00+00:00",
+          "old_sl": 1301.7785998574805,
+          "new_sl": 1301.6775570105176,
+          "atr": 4.780486565786733,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-16T20:00:00+00:00",
+          "old_sl": 1301.6775570105176,
+          "new_sl": 1301.387160081195,
+          "atr": 4.689737525373395,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-17T00:00:00+00:00",
+          "old_sl": 1301.387160081195,
+          "new_sl": 1300.6603629325382,
+          "atr": 4.462613416418152,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-17T12:00:00+00:00",
+          "old_sl": 1300.6603629325382,
+          "new_sl": 1299.7793547240476,
+          "atr": 4.640423351264824,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-17T16:00:00+00:00",
+          "old_sl": 1299.7793547240476,
+          "new_sl": 1299.6535436723298,
+          "atr": 4.6011073976030445,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-17T20:00:00+00:00",
+          "old_sl": 1299.6535436723298,
+          "new_sl": 1299.0452905528778,
+          "atr": 4.411028297774259,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T00:00:00+00:00",
+          "old_sl": 1299.0452905528778,
+          "new_sl": 1298.4736269419577,
+          "atr": 4.232383419361802,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T04:00:00+00:00",
+          "old_sl": 1298.4736269419577,
+          "new_sl": 1298.0067964461036,
+          "atr": 4.086498889407391,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T08:00:00+00:00",
+          "old_sl": 1298.0067964461036,
+          "new_sl": 1297.7287395570963,
+          "atr": 3.99960611159257,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T12:00:00+00:00",
+          "old_sl": 1297.7287395570963,
+          "new_sl": 1297.4476867315893,
+          "atr": 3.9117771036216706,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-21T08:00:00+00:00",
+          "old_sl": 1297.4476867315893,
+          "new_sl": 1295.1520194926816,
+          "atr": 4.110006091463005,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-21T16:00:00+00:00",
+          "old_sl": 1295.1520194926816,
+          "new_sl": 1295.0205882360367,
+          "atr": 4.068933823761475,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-21T20:00:00+00:00",
+          "old_sl": 1295.0205882360367,
+          "new_sl": 1294.9202605048913,
+          "atr": 4.037581407778505,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-22T00:00:00+00:00",
+          "old_sl": 1294.9202605048913,
+          "new_sl": 1294.3196704688276,
+          "atr": 3.8498970215086175,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-22T04:00:00+00:00",
+          "old_sl": 1294.3196704688276,
+          "new_sl": 1294.2076940067684,
+          "atr": 3.814904377115154,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        }
+      ]
     },
     {
       "side": "long",
@@ -8957,8 +9812,28 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -9.44878973796408,
+      "pnl_result": "loss",
       "equity_after": 944.1011543057691,
-      "holding_bars": 17
+      "holding_bars": 17,
+      "sl_update_count": 2,
+      "trail_updates": [
+        {
+          "time": "2018-05-28T16:00:00+00:00",
+          "old_sl": 1295.106790837013,
+          "new_sl": 1295.2457468127755,
+          "atr": 3.907579121007666,
+          "highest_since_entry": 1307.75,
+          "lowest_since_entry": 1304.13
+        },
+        {
+          "time": "2018-05-29T04:00:00+00:00",
+          "old_sl": 1295.2457468127755,
+          "new_sl": 1295.4112102620359,
+          "atr": 3.8558717931137614,
+          "highest_since_entry": 1307.75,
+          "lowest_since_entry": 1304.13
+        }
+      ]
     },
     {
       "side": "short",
@@ -8977,8 +9852,316 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 26.07050919946478,
+      "pnl_result": "profit",
       "equity_after": 970.1716635052339,
-      "holding_bars": 71
+      "holding_bars": 71,
+      "sl_update_count": 38,
+      "trail_updates": [
+        {
+          "time": "2018-06-19T12:00:00+00:00",
+          "old_sl": 1287.510203264671,
+          "new_sl": 1285.718295564859,
+          "atr": 4.815092364018513,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-19T16:00:00+00:00",
+          "old_sl": 1285.718295564859,
+          "new_sl": 1285.5502744530836,
+          "atr": 4.762585766588614,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-19T20:00:00+00:00",
+          "old_sl": 1285.5502744530836,
+          "new_sl": 1285.2205405635775,
+          "atr": 4.659543926117995,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T00:00:00+00:00",
+          "old_sl": 1285.2205405635775,
+          "new_sl": 1284.733787666179,
+          "atr": 4.507433645680994,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T04:00:00+00:00",
+          "old_sl": 1284.733787666179,
+          "new_sl": 1284.414374261452,
+          "atr": 4.407616956703773,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T08:00:00+00:00",
+          "old_sl": 1284.414374261452,
+          "new_sl": 1284.1817760999197,
+          "atr": 4.334930031224939,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T20:00:00+00:00",
+          "old_sl": 1284.1817760999197,
+          "new_sl": 1281.880118109156,
+          "atr": 4.475036909111234,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1267.56
+        },
+        {
+          "time": "2018-06-21T00:00:00+00:00",
+          "old_sl": 1281.880118109156,
+          "new_sl": 1281.357823958502,
+          "atr": 4.311819987031864,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1267.56
+        },
+        {
+          "time": "2018-06-21T04:00:00+00:00",
+          "old_sl": 1281.357823958502,
+          "new_sl": 1278.7876936757518,
+          "atr": 4.377404273672447,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1264.78
+        },
+        {
+          "time": "2018-06-21T08:00:00+00:00",
+          "old_sl": 1278.7876936757518,
+          "new_sl": 1275.771144127484,
+          "atr": 4.334732539838699,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.9
+        },
+        {
+          "time": "2018-06-21T12:00:00+00:00",
+          "old_sl": 1275.771144127484,
+          "new_sl": 1275.3314909755206,
+          "atr": 4.387965929850215,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-21T16:00:00+00:00",
+          "old_sl": 1275.3314909755206,
+          "new_sl": 1275.3022416201263,
+          "atr": 4.378825506289485,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-21T20:00:00+00:00",
+          "old_sl": 1275.3022416201263,
+          "new_sl": 1275.0099386472602,
+          "atr": 4.287480827268801,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T00:00:00+00:00",
+          "old_sl": 1275.0099386472602,
+          "new_sl": 1274.4322287438845,
+          "atr": 4.106946482463886,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T04:00:00+00:00",
+          "old_sl": 1274.4322287438845,
+          "new_sl": 1274.071783833607,
+          "atr": 3.9943074480021785,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T08:00:00+00:00",
+          "old_sl": 1274.071783833607,
+          "new_sl": 1274.0067992740635,
+          "atr": 3.973999773144883,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T12:00:00+00:00",
+          "old_sl": 1274.0067992740635,
+          "new_sl": 1273.7041707544877,
+          "atr": 3.8794283607773816,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T20:00:00+00:00",
+          "old_sl": 1273.7041707544877,
+          "new_sl": 1273.3329941709612,
+          "atr": 3.7634356784254024,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-25T00:00:00+00:00",
+          "old_sl": 1273.3329941709612,
+          "new_sl": 1273.2384945873212,
+          "atr": 3.7339045585378674,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-26T08:00:00+00:00",
+          "old_sl": 1273.2384945873212,
+          "new_sl": 1270.5506778429803,
+          "atr": 4.0252118259313425,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1257.67
+        },
+        {
+          "time": "2018-06-26T12:00:00+00:00",
+          "old_sl": 1270.5506778429803,
+          "new_sl": 1267.6763437113389,
+          "atr": 4.051982409793379,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1254.71
+        },
+        {
+          "time": "2018-06-27T00:00:00+00:00",
+          "old_sl": 1267.6763437113389,
+          "new_sl": 1267.3253765064912,
+          "atr": 3.9423051582784705,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1254.71
+        },
+        {
+          "time": "2018-06-27T04:00:00+00:00",
+          "old_sl": 1267.3253765064912,
+          "new_sl": 1266.5157067560276,
+          "atr": 4.0892833612585795,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1253.43
+        },
+        {
+          "time": "2018-06-27T16:00:00+00:00",
+          "old_sl": 1266.5157067560276,
+          "new_sl": 1265.9621405768921,
+          "atr": 4.25691893027882,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1252.34
+        },
+        {
+          "time": "2018-06-27T20:00:00+00:00",
+          "old_sl": 1265.9621405768921,
+          "new_sl": 1264.2928448214,
+          "atr": 4.282139006687485,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T00:00:00+00:00",
+          "old_sl": 1264.2928448214,
+          "new_sl": 1263.7437844770143,
+          "atr": 4.110557649066958,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T04:00:00+00:00",
+          "old_sl": 1263.7437844770143,
+          "new_sl": 1263.275085585799,
+          "atr": 3.964089245562172,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T08:00:00+00:00",
+          "old_sl": 1263.275085585799,
+          "new_sl": 1261.1390080439562,
+          "atr": 4.030940013736309,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1248.24
+        },
+        {
+          "time": "2018-06-28T20:00:00+00:00",
+          "old_sl": 1261.1390080439562,
+          "new_sl": 1259.015702869013,
+          "atr": 4.1174071465665785,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-06-29T00:00:00+00:00",
+          "old_sl": 1259.015702869013,
+          "new_sl": 1258.4791526640834,
+          "atr": 3.9497352075261074,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-06-29T12:00:00+00:00",
+          "old_sl": 1258.4791526640834,
+          "new_sl": 1258.356464432577,
+          "atr": 3.911395135180341,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T04:00:00+00:00",
+          "old_sl": 1258.356464432577,
+          "new_sl": 1258.2410476014898,
+          "atr": 3.875327375465568,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T08:00:00+00:00",
+          "old_sl": 1258.2410476014898,
+          "new_sl": 1258.1164013442406,
+          "atr": 3.836375420075165,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T12:00:00+00:00",
+          "old_sl": 1258.1164013442406,
+          "new_sl": 1257.874944105366,
+          "atr": 3.760920032926937,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T16:00:00+00:00",
+          "old_sl": 1257.874944105366,
+          "new_sl": 1254.3841623835544,
+          "atr": 4.05442574486072,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1241.41
+        },
+        {
+          "time": "2018-07-02T20:00:00+00:00",
+          "old_sl": 1254.3841623835544,
+          "new_sl": 1252.4248650704435,
+          "atr": 3.9983953345135244,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1239.63
+        },
+        {
+          "time": "2018-07-03T00:00:00+00:00",
+          "old_sl": 1252.4248650704435,
+          "new_sl": 1251.9383747082688,
+          "atr": 3.8463670963339953,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1239.63
+        },
+        {
+          "time": "2018-07-03T04:00:00+00:00",
+          "old_sl": 1251.9383747082688,
+          "new_sl": 1250.2994908005353,
+          "atr": 3.862340875167277,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1237.94
+        }
+      ]
     },
     {
       "side": "long",
@@ -8997,8 +10180,132 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 1.3767749331975212,
+      "pnl_result": "profit",
       "equity_after": 971.5484384384315,
-      "holding_bars": 27
+      "holding_bars": 27,
+      "sl_update_count": 15,
+      "trail_updates": [
+        {
+          "time": "2018-07-04T00:00:00+00:00",
+          "old_sl": 1243.2356650088911,
+          "new_sl": 1243.4140410509697,
+          "atr": 4.43936217157191,
+          "highest_since_entry": 1257.62,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T04:00:00+00:00",
+          "old_sl": 1243.4140410509697,
+          "new_sl": 1246.1833238330435,
+          "atr": 4.445836302173914,
+          "highest_since_entry": 1260.41,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T08:00:00+00:00",
+          "old_sl": 1246.1833238330435,
+          "new_sl": 1246.732657844969,
+          "atr": 4.480419423447194,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T12:00:00+00:00",
+          "old_sl": 1246.732657844969,
+          "new_sl": 1246.9567537131854,
+          "atr": 4.410389464629538,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T16:00:00+00:00",
+          "old_sl": 1246.9567537131854,
+          "new_sl": 1247.1762713051007,
+          "atr": 4.341790217156003,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-05T00:00:00+00:00",
+          "old_sl": 1247.1762713051007,
+          "new_sl": 1247.6566804975935,
+          "atr": 4.191662344502004,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-05T04:00:00+00:00",
+          "old_sl": 1247.6566804975935,
+          "new_sl": 1247.8216318906225,
+          "atr": 4.140115034180434,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-06T08:00:00+00:00",
+          "old_sl": 1247.8216318906225,
+          "new_sl": 1247.9526765021915,
+          "atr": 4.099163593065155,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-06T20:00:00+00:00",
+          "old_sl": 1247.9526765021915,
+          "new_sl": 1248.3503703627239,
+          "atr": 3.974884261648743,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T00:00:00+00:00",
+          "old_sl": 1248.3503703627239,
+          "new_sl": 1248.714915336815,
+          "atr": 3.860963957245269,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T04:00:00+00:00",
+          "old_sl": 1248.714915336815,
+          "new_sl": 1248.760849955614,
+          "atr": 3.846609388870597,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T08:00:00+00:00",
+          "old_sl": 1248.760849955614,
+          "new_sl": 1249.8600749587845,
+          "atr": 3.8218515753798403,
+          "highest_since_entry": 1262.09,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T12:00:00+00:00",
+          "old_sl": 1249.8600749587845,
+          "new_sl": 1253.4139267474427,
+          "atr": 3.8831478914241258,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-10T00:00:00+00:00",
+          "old_sl": 1253.4139267474427,
+          "new_sl": 1253.9479114665203,
+          "atr": 3.7162776667123825,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-10T04:00:00+00:00",
+          "old_sl": 1253.9479114665203,
+          "new_sl": 1254.2967749331974,
+          "atr": 3.6072578333757876,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        }
+      ]
     },
     {
       "side": "short",
@@ -9017,8 +10324,204 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 19.40839038479176,
+      "pnl_result": "profit",
       "equity_after": 990.9568288232233,
-      "holding_bars": 37
+      "holding_bars": 37,
+      "sl_update_count": 24,
+      "trail_updates": [
+        {
+          "time": "2018-07-12T00:00:00+00:00",
+          "old_sl": 1254.0917113582605,
+          "new_sl": 1253.9662594968713,
+          "atr": 3.9769560927722822,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T04:00:00+00:00",
+          "old_sl": 1253.9662594968713,
+          "new_sl": 1253.7840981042377,
+          "atr": 3.9200306575742667,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T12:00:00+00:00",
+          "old_sl": 1253.7840981042377,
+          "new_sl": 1253.7564927531437,
+          "atr": 3.911403985357389,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T20:00:00+00:00",
+          "old_sl": 1253.7564927531437,
+          "new_sl": 1253.5238738534758,
+          "atr": 3.838710579211213,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T00:00:00+00:00",
+          "old_sl": 1253.5238738534758,
+          "new_sl": 1252.9390257210848,
+          "atr": 3.655945537838982,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T04:00:00+00:00",
+          "old_sl": 1252.9390257210848,
+          "new_sl": 1252.8713810267216,
+          "atr": 3.634806570850476,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T08:00:00+00:00",
+          "old_sl": 1252.8713810267216,
+          "new_sl": 1252.4951395248129,
+          "atr": 3.8016061015040155,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1240.33
+        },
+        {
+          "time": "2018-07-13T12:00:00+00:00",
+          "old_sl": 1252.4951395248129,
+          "new_sl": 1249.2442009873262,
+          "atr": 4.045062808539446,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-13T16:00:00+00:00",
+          "old_sl": 1249.2442009873262,
+          "new_sl": 1249.1721866310886,
+          "atr": 4.022558322215201,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-13T20:00:00+00:00",
+          "old_sl": 1249.1721866310886,
+          "new_sl": 1248.668744728868,
+          "atr": 3.8652327277712537,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T00:00:00+00:00",
+          "old_sl": 1248.668744728868,
+          "new_sl": 1248.2012629625203,
+          "atr": 3.7191446757876045,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T04:00:00+00:00",
+          "old_sl": 1248.2012629625203,
+          "new_sl": 1248.0391727509118,
+          "atr": 3.668491484659918,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T20:00:00+00:00",
+          "old_sl": 1248.0391727509118,
+          "new_sl": 1248.0135014821633,
+          "atr": 3.660469213176077,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-17T00:00:00+00:00",
+          "old_sl": 1248.0135014821633,
+          "new_sl": 1247.6591085191517,
+          "atr": 3.549721412234938,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-17T16:00:00+00:00",
+          "old_sl": 1247.6591085191517,
+          "new_sl": 1240.4993680345558,
+          "atr": 4.5248025107986765,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-17T20:00:00+00:00",
+          "old_sl": 1240.4993680345558,
+          "new_sl": 1240.0228417463732,
+          "atr": 4.3758880457416325,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T00:00:00+00:00",
+          "old_sl": 1240.0228417463732,
+          "new_sl": 1239.4203530502036,
+          "atr": 4.18761032818866,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T04:00:00+00:00",
+          "old_sl": 1239.4203530502036,
+          "new_sl": 1239.048327832332,
+          "atr": 4.0713524476037515,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T08:00:00+00:00",
+          "old_sl": 1239.048327832332,
+          "new_sl": 1234.5451615585941,
+          "atr": 4.239112987060632,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-18T12:00:00+00:00",
+          "old_sl": 1234.5451615585941,
+          "new_sl": 1234.344221447266,
+          "atr": 4.176319202270596,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-18T20:00:00+00:00",
+          "old_sl": 1234.344221447266,
+          "new_sl": 1233.9171093091222,
+          "atr": 4.0428466591006815,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-19T00:00:00+00:00",
+          "old_sl": 1233.9171093091222,
+          "new_sl": 1233.4913157870421,
+          "atr": 3.9097861834506373,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-19T08:00:00+00:00",
+          "old_sl": 1233.4913157870421,
+          "new_sl": 1230.824348816378,
+          "atr": 4.173234005118151,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1217.47
+        },
+        {
+          "time": "2018-07-19T12:00:00+00:00",
+          "old_sl": 1230.824348816378,
+          "new_sl": 1225.5716096152082,
+          "atr": 4.413003004752567,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1211.45
+        }
+      ]
     },
     {
       "side": "long",
@@ -9037,8 +10540,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.777964139240158,
+      "pnl_result": "loss",
       "equity_after": 980.1788646839832,
-      "holding_bars": 8
+      "holding_bars": 8,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2018-07-24T00:00:00+00:00",
+          "old_sl": 1219.5275178664067,
+          "new_sl": 1219.91203586076,
+          "atr": 4.7618637935125205,
+          "highest_since_entry": 1235.15,
+          "lowest_since_entry": 1229.87
+        }
+      ]
     },
     {
       "side": "long",
@@ -9057,8 +10572,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.176804314395259,
+      "pnl_result": "loss",
       "equity_after": 970.002060369588,
-      "holding_bars": 7
+      "holding_bars": 7,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -9077,8 +10595,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 5.129479784851082,
+      "pnl_result": "profit",
       "equity_after": 975.1315401544391,
-      "holding_bars": 31
+      "holding_bars": 31,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-07-30T04:00:00+00:00",
+          "old_sl": 1233.3106840239948,
+          "new_sl": 1233.1000316992934,
+          "atr": 4.35938490602912,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1219.15
+        },
+        {
+          "time": "2018-07-30T08:00:00+00:00",
+          "old_sl": 1233.1000316992934,
+          "new_sl": 1232.6907437207722,
+          "atr": 4.290857412741316,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T12:00:00+00:00",
+          "old_sl": 1232.6907437207722,
+          "new_sl": 1232.3088334550027,
+          "atr": 4.171510454688357,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T16:00:00+00:00",
+          "old_sl": 1232.3088334550027,
+          "new_sl": 1232.0044882082168,
+          "atr": 4.076402565067754,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T20:00:00+00:00",
+          "old_sl": 1232.0044882082168,
+          "new_sl": 1231.6053104790585,
+          "atr": 3.9516595247057666,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T00:00:00+00:00",
+          "old_sl": 1231.6053104790585,
+          "new_sl": 1231.1592168734114,
+          "atr": 3.8122552729410693,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T04:00:00+00:00",
+          "old_sl": 1231.1592168734114,
+          "new_sl": 1231.003272811025,
+          "atr": 3.7635227534452866,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T08:00:00+00:00",
+          "old_sl": 1231.003272811025,
+          "new_sl": 1230.3033247530946,
+          "atr": 3.8354139853420506,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.03
+        },
+        {
+          "time": "2018-07-31T16:00:00+00:00",
+          "old_sl": 1230.3033247530946,
+          "new_sl": 1229.4691830779234,
+          "atr": 4.855994711851055,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-07-31T20:00:00+00:00",
+          "old_sl": 1229.4691830779234,
+          "new_sl": 1228.9352414295004,
+          "atr": 4.689137946718836,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T00:00:00+00:00",
+          "old_sl": 1228.9352414295004,
+          "new_sl": 1228.290867041679,
+          "atr": 4.487770950524626,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T04:00:00+00:00",
+          "old_sl": 1228.290867041679,
+          "new_sl": 1228.1085193958447,
+          "atr": 4.430787311201427,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T12:00:00+00:00",
+          "old_sl": 1228.1085193958447,
+          "new_sl": 1227.7969886627436,
+          "atr": 4.333433957107351,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T04:00:00+00:00",
+          "old_sl": 1227.7969886627436,
+          "new_sl": 1227.705091815822,
+          "atr": 4.304716192444366,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T08:00:00+00:00",
+          "old_sl": 1227.705091815822,
+          "new_sl": 1227.5668709718348,
+          "atr": 4.2615221786983435,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T12:00:00+00:00",
+          "old_sl": 1227.5668709718348,
+          "new_sl": 1227.0253801881322,
+          "atr": 4.323556308791311,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.19
+        },
+        {
+          "time": "2018-08-02T16:00:00+00:00",
+          "old_sl": 1227.0253801881322,
+          "new_sl": 1226.9779958889799,
+          "atr": 4.361873715306226,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.02
+        },
+        {
+          "time": "2018-08-02T20:00:00+00:00",
+          "old_sl": 1226.9779958889799,
+          "new_sl": 1221.428139039767,
+          "atr": 4.518168449927207,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.97
+        },
+        {
+          "time": "2018-08-03T00:00:00+00:00",
+          "old_sl": 1221.428139039767,
+          "new_sl": 1220.850271965498,
+          "atr": 4.337584989218121,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.97
+        },
+        {
+          "time": "2018-08-03T04:00:00+00:00",
+          "old_sl": 1220.850271965498,
+          "new_sl": 1220.152252539391,
+          "atr": 4.316328918559698,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.34
+        },
+        {
+          "time": "2018-08-03T08:00:00+00:00",
+          "old_sl": 1220.152252539391,
+          "new_sl": 1218.080520215149,
+          "atr": 4.275162567234006,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1204.4
+        }
+      ]
     },
     {
       "side": "short",
@@ -9097,8 +10787,60 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 16.29995554391094,
+      "pnl_result": "profit",
       "equity_after": 991.4314956983501,
-      "holding_bars": 15
+      "holding_bars": 15,
+      "sl_update_count": 6,
+      "trail_updates": [
+        {
+          "time": "2018-08-15T04:00:00+00:00",
+          "old_sl": 1204.1400213883662,
+          "new_sl": 1200.8518658082746,
+          "atr": 4.269333065085797,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1187.19
+        },
+        {
+          "time": "2018-08-15T08:00:00+00:00",
+          "old_sl": 1200.8518658082746,
+          "new_sl": 1199.592589679112,
+          "atr": 4.200809274722522,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1186.15
+        },
+        {
+          "time": "2018-08-15T12:00:00+00:00",
+          "old_sl": 1199.592589679112,
+          "new_sl": 1197.1195475591755,
+          "atr": 4.168608612242342,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1183.78
+        },
+        {
+          "time": "2018-08-15T16:00:00+00:00",
+          "old_sl": 1197.1195475591755,
+          "new_sl": 1190.2532941620914,
+          "atr": 4.582279425653606,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1175.59
+        },
+        {
+          "time": "2018-08-15T20:00:00+00:00",
+          "old_sl": 1190.2532941620914,
+          "new_sl": 1188.016201721942,
+          "atr": 4.670688038106932,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1173.07
+        },
+        {
+          "time": "2018-08-16T00:00:00+00:00",
+          "old_sl": 1188.016201721942,
+          "new_sl": 1177.640044456089,
+          "atr": 5.490638892527872,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1160.07
+        }
+      ]
     },
     {
       "side": "long",
@@ -9117,8 +10859,84 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -1.5147484093977708,
+      "pnl_result": "loss",
       "equity_after": 989.9167472889524,
-      "holding_bars": 18
+      "holding_bars": 18,
+      "sl_update_count": 9,
+      "trail_updates": [
+        {
+          "time": "2018-08-21T00:00:00+00:00",
+          "old_sl": 1176.9076091445038,
+          "new_sl": 1178.2283690911609,
+          "atr": 5.0505096590122545,
+          "highest_since_entry": 1194.39,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T04:00:00+00:00",
+          "old_sl": 1178.2283690911609,
+          "new_sl": 1179.6019141560778,
+          "atr": 4.911901826225658,
+          "highest_since_entry": 1195.32,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T08:00:00+00:00",
+          "old_sl": 1179.6019141560778,
+          "new_sl": 1180.982348859215,
+          "atr": 4.786765981495243,
+          "highest_since_entry": 1196.3,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T20:00:00+00:00",
+          "old_sl": 1180.982348859215,
+          "new_sl": 1181.2403383541166,
+          "atr": 4.896769264338571,
+          "highest_since_entry": 1196.91,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T00:00:00+00:00",
+          "old_sl": 1181.2403383541166,
+          "new_sl": 1182.530742757394,
+          "atr": 4.75914288831439,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T04:00:00+00:00",
+          "old_sl": 1182.530742757394,
+          "new_sl": 1183.1431182747228,
+          "atr": 4.567775539149087,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T08:00:00+00:00",
+          "old_sl": 1183.1431182747228,
+          "new_sl": 1183.1974669693857,
+          "atr": 4.550791572067005,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T12:00:00+00:00",
+          "old_sl": 1183.1974669693857,
+          "new_sl": 1186.6970764715722,
+          "atr": 4.632163602633651,
+          "highest_since_entry": 1201.52,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-23T04:00:00+00:00",
+          "old_sl": 1186.6970764715722,
+          "new_sl": 1186.9752515906023,
+          "atr": 4.545233877936777,
+          "highest_since_entry": 1201.52,
+          "lowest_since_entry": 1184.91
+        }
+      ]
     },
     {
       "side": "short",
@@ -9137,8 +10955,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.370659611174734,
+      "pnl_result": "loss",
       "equity_after": 979.5460876777777,
-      "holding_bars": 4
+      "holding_bars": 4,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -9157,8 +10978,60 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.844457976527611,
+      "pnl_result": "loss",
       "equity_after": 973.7016297012501,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 6,
+      "trail_updates": [
+        {
+          "time": "2018-08-27T16:00:00+00:00",
+          "old_sl": 1194.226968889141,
+          "new_sl": 1196.597633187892,
+          "atr": 4.916364628783747,
+          "highest_since_entry": 1212.33,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-27T20:00:00+00:00",
+          "old_sl": 1196.597633187892,
+          "new_sl": 1197.0082308173282,
+          "atr": 4.7880528695849165,
+          "highest_since_entry": 1212.33,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T00:00:00+00:00",
+          "old_sl": 1197.0082308173282,
+          "new_sl": 1197.6277857589478,
+          "atr": 4.613191950328861,
+          "highest_since_entry": 1212.39,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T04:00:00+00:00",
+          "old_sl": 1197.6277857589478,
+          "new_sl": 1198.0536582047373,
+          "atr": 4.480106811019657,
+          "highest_since_entry": 1212.39,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T08:00:00+00:00",
+          "old_sl": 1198.0536582047373,
+          "new_sl": 1199.1259683329702,
+          "atr": 4.529384895946813,
+          "highest_since_entry": 1213.62,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T12:00:00+00:00",
+          "old_sl": 1199.1259683329702,
+          "new_sl": 1199.9055420234724,
+          "atr": 4.470143117664901,
+          "highest_since_entry": 1214.21,
+          "lowest_since_entry": 1204.62
+        }
+      ]
     },
     {
       "side": "short",
@@ -9177,8 +11050,140 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 2.123006965846071,
+      "pnl_result": "profit",
       "equity_after": 975.8246366670962,
-      "holding_bars": 31
+      "holding_bars": 31,
+      "sl_update_count": 16,
+      "trail_updates": [
+        {
+          "time": "2018-09-24T04:00:00+00:00",
+          "old_sl": 1206.4916170830634,
+          "new_sl": 1205.8666370164274,
+          "atr": 4.402074067633576,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-24T12:00:00+00:00",
+          "old_sl": 1205.8666370164274,
+          "new_sl": 1205.656253345797,
+          "atr": 4.3363291705616085,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T00:00:00+00:00",
+          "old_sl": 1205.656253345797,
+          "new_sl": 1205.038081851573,
+          "atr": 4.143150578616568,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T04:00:00+00:00",
+          "old_sl": 1205.038081851573,
+          "new_sl": 1204.625933147889,
+          "atr": 4.014354108715379,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T08:00:00+00:00",
+          "old_sl": 1204.625933147889,
+          "new_sl": 1204.2660807801828,
+          "atr": 3.9019002438071415,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T12:00:00+00:00",
+          "old_sl": 1204.2660807801828,
+          "new_sl": 1204.0210750101699,
+          "atr": 3.825335940678055,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T16:00:00+00:00",
+          "old_sl": 1204.0210750101699,
+          "new_sl": 1203.8804267951575,
+          "atr": 3.7813833734867517,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T20:00:00+00:00",
+          "old_sl": 1203.8804267951575,
+          "new_sl": 1203.4366820240748,
+          "atr": 3.6427131325234066,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-26T00:00:00+00:00",
+          "old_sl": 1203.4366820240748,
+          "new_sl": 1203.0360618794982,
+          "atr": 3.5175193373431703,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-26T04:00:00+00:00",
+          "old_sl": 1203.0360618794982,
+          "new_sl": 1202.7874860309626,
+          "atr": 3.4398393846758055,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-27T12:00:00+00:00",
+          "old_sl": 1202.7874860309626,
+          "new_sl": 1200.703848840675,
+          "atr": 4.41057776271095,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1186.59
+        },
+        {
+          "time": "2018-09-27T16:00:00+00:00",
+          "old_sl": 1200.703848840675,
+          "new_sl": 1196.3011453520553,
+          "atr": 4.519107922517316,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-27T20:00:00+00:00",
+          "old_sl": 1196.3011453520553,
+          "new_sl": 1195.9607778269085,
+          "atr": 4.412743070908935,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T00:00:00+00:00",
+          "old_sl": 1195.9607778269085,
+          "new_sl": 1195.281293696415,
+          "atr": 4.200404280129729,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T04:00:00+00:00",
+          "old_sl": 1195.281293696415,
+          "new_sl": 1194.8789155752424,
+          "atr": 4.074661117263324,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T08:00:00+00:00",
+          "old_sl": 1194.8789155752424,
+          "new_sl": 1193.6269930341539,
+          "atr": 4.052185323173086,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1180.66
+        }
+      ]
     },
     {
       "side": "long",
@@ -9197,8 +11202,76 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -3.643498616860188,
+      "pnl_result": "loss",
       "equity_after": 972.1811380502361,
-      "holding_bars": 23
+      "holding_bars": 23,
+      "sl_update_count": 8,
+      "trail_updates": [
+        {
+          "time": "2018-10-02T16:00:00+00:00",
+          "old_sl": 1187.593746883199,
+          "new_sl": 1192.849995466471,
+          "atr": 4.793751416727843,
+          "highest_since_entry": 1208.19,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-02T20:00:00+00:00",
+          "old_sl": 1192.849995466471,
+          "new_sl": 1193.2805672188658,
+          "atr": 4.659197744104431,
+          "highest_since_entry": 1208.19,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-03T04:00:00+00:00",
+          "old_sl": 1193.2805672188658,
+          "new_sl": 1193.7331931632057,
+          "atr": 4.536502136498202,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-03T08:00:00+00:00",
+          "old_sl": 1193.7331931632057,
+          "new_sl": 1193.8421079372624,
+          "atr": 4.50246626960547,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-04T00:00:00+00:00",
+          "old_sl": 1193.8421079372624,
+          "new_sl": 1193.9253828299707,
+          "atr": 4.476442865634158,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-04T04:00:00+00:00",
+          "old_sl": 1193.9253828299707,
+          "new_sl": 1194.3519983421156,
+          "atr": 4.343125518088854,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-05T08:00:00+00:00",
+          "old_sl": 1194.3519983421156,
+          "new_sl": 1194.460207105308,
+          "atr": 4.3093102795912275,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-08T00:00:00+00:00",
+          "old_sl": 1194.460207105308,
+          "new_sl": 1194.55650138314,
+          "atr": 4.279218317768748,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        }
+      ]
     },
     {
       "side": "short",
@@ -9217,8 +11290,100 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.163553261419838,
+      "pnl_result": "loss",
       "equity_after": 970.0175847888163,
-      "holding_bars": 18
+      "holding_bars": 18,
+      "sl_update_count": 11,
+      "trail_updates": [
+        {
+          "time": "2018-10-08T12:00:00+00:00",
+          "old_sl": 1205.2593177176034,
+          "new_sl": 1199.7917348619685,
+          "atr": 4.922417144365141,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1184.04
+        },
+        {
+          "time": "2018-10-08T16:00:00+00:00",
+          "old_sl": 1199.7917348619685,
+          "new_sl": 1199.440039514685,
+          "atr": 5.03438734833906,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-08T20:00:00+00:00",
+          "old_sl": 1199.440039514685,
+          "new_sl": 1199.258465263636,
+          "atr": 4.977645394886271,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T00:00:00+00:00",
+          "old_sl": 1199.258465263636,
+          "new_sl": 1198.8818606019477,
+          "atr": 4.859956438108692,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T04:00:00+00:00",
+          "old_sl": 1198.8818606019477,
+          "new_sl": 1198.4018705589515,
+          "atr": 4.709959549672356,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T08:00:00+00:00",
+          "old_sl": 1198.4018705589515,
+          "new_sl": 1198.0361655190263,
+          "atr": 4.595676724695752,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-10T00:00:00+00:00",
+          "old_sl": 1198.0361655190263,
+          "new_sl": 1197.531168924118,
+          "atr": 4.490990288786842,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-10T04:00:00+00:00",
+          "old_sl": 1197.531168924118,
+          "new_sl": 1197.1217997152523,
+          "atr": 4.363062411016356,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-10T16:00:00+00:00",
+          "old_sl": 1197.1217997152523,
+          "new_sl": 1197.1109832268257,
+          "atr": 4.359682258383003,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-11T00:00:00+00:00",
+          "old_sl": 1197.1109832268257,
+          "new_sl": 1196.877980435375,
+          "atr": 4.286868886054715,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-11T04:00:00+00:00",
+          "old_sl": 1196.877980435375,
+          "new_sl": 1196.53355326142,
+          "atr": 4.179235394193662,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        }
+      ]
     },
     {
       "side": "long",
@@ -9237,8 +11402,172 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 20.816355979311723,
+      "pnl_result": "profit",
       "equity_after": 990.8339407681281,
-      "holding_bars": 30
+      "holding_bars": 30,
+      "sl_update_count": 20,
+      "trail_updates": [
+        {
+          "time": "2018-10-11T12:00:00+00:00",
+          "old_sl": 1187.3986646961162,
+          "new_sl": 1194.4689668307146,
+          "atr": 4.95969786540168,
+          "highest_since_entry": 1210.34,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-11T16:00:00+00:00",
+          "old_sl": 1194.4689668307146,
+          "new_sl": 1202.4031834856635,
+          "atr": 5.724005160730138,
+          "highest_since_entry": 1220.72,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-11T20:00:00+00:00",
+          "old_sl": 1202.4031834856635,
+          "new_sl": 1207.7669560938305,
+          "atr": 5.791576220677974,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T00:00:00+00:00",
+          "old_sl": 1207.7669560938305,
+          "new_sl": 1208.0027449442712,
+          "atr": 5.717892204915261,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T04:00:00+00:00",
+          "old_sl": 1208.0027449442712,
+          "new_sl": 1208.2902631625375,
+          "atr": 5.6280427617070306,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T08:00:00+00:00",
+          "old_sl": 1208.2902631625375,
+          "new_sl": 1208.3149586509276,
+          "atr": 5.620325421585099,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T12:00:00+00:00",
+          "old_sl": 1208.3149586509276,
+          "new_sl": 1208.3470330330042,
+          "atr": 5.610302177186164,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T20:00:00+00:00",
+          "old_sl": 1208.3470330330042,
+          "new_sl": 1208.6856152172331,
+          "atr": 5.504495244614598,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T00:00:00+00:00",
+          "old_sl": 1208.6856152172331,
+          "new_sl": 1209.068356987431,
+          "atr": 5.384888441427837,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T04:00:00+00:00",
+          "old_sl": 1209.068356987431,
+          "new_sl": 1209.826045774043,
+          "atr": 5.1481106956115585,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T08:00:00+00:00",
+          "old_sl": 1209.826045774043,
+          "new_sl": 1213.05161393304,
+          "atr": 5.443245645925017,
+          "highest_since_entry": 1230.47,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T12:00:00+00:00",
+          "old_sl": 1213.05161393304,
+          "new_sl": 1215.9737843663943,
+          "atr": 5.389442385501805,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T20:00:00+00:00",
+          "old_sl": 1215.9737843663943,
+          "new_sl": 1216.2125589689829,
+          "atr": 5.314825322192875,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-16T00:00:00+00:00",
+          "old_sl": 1216.2125589689829,
+          "new_sl": 1216.9588047569127,
+          "atr": 5.08162351346481,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-16T04:00:00+00:00",
+          "old_sl": 1216.9588047569127,
+          "new_sl": 1217.4140329885618,
+          "atr": 4.93936469107446,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T00:00:00+00:00",
+          "old_sl": 1217.4140329885618,
+          "new_sl": 1217.8146592238763,
+          "atr": 4.814168992538641,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T04:00:00+00:00",
+          "old_sl": 1217.8146592238763,
+          "new_sl": 1218.0738978507422,
+          "atr": 4.733156921643029,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T20:00:00+00:00",
+          "old_sl": 1218.0738978507422,
+          "new_sl": 1218.099892141687,
+          "atr": 4.72503370572282,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-18T00:00:00+00:00",
+          "old_sl": 1218.099892141687,
+          "new_sl": 1218.6976141315665,
+          "atr": 4.538245583885469,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-18T04:00:00+00:00",
+          "old_sl": 1218.6976141315665,
+          "new_sl": 1219.1863559793117,
+          "atr": 4.385513756465085,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        }
+      ]
     },
     {
       "side": "short",
@@ -9257,8 +11586,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.593223729549255,
+      "pnl_result": "loss",
       "equity_after": 980.2407170385789,
-      "holding_bars": 5
+      "holding_bars": 5,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -9277,8 +11609,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.190443705243116,
+      "pnl_result": "loss",
       "equity_after": 969.0502733333358,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -9297,8 +11632,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 17.009720866863248,
+      "pnl_result": "profit",
       "equity_after": 986.0599942001991,
-      "holding_bars": 35
+      "holding_bars": 35,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-11-08T08:00:00+00:00",
+          "old_sl": 1237.5559393578728,
+          "new_sl": 1236.4112844646472,
+          "atr": 4.6941513952022405,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1221.39
+        },
+        {
+          "time": "2018-11-08T12:00:00+00:00",
+          "old_sl": 1236.4112844646472,
+          "new_sl": 1235.3523355743152,
+          "atr": 4.80385486697351,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-08T16:00:00+00:00",
+          "old_sl": 1235.3523355743152,
+          "new_sl": 1235.1960258904355,
+          "atr": 4.755008090761125,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-09T00:00:00+00:00",
+          "old_sl": 1235.1960258904355,
+          "new_sl": 1234.9833692626717,
+          "atr": 4.688552894584853,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-09T04:00:00+00:00",
+          "old_sl": 1234.9833692626717,
+          "new_sl": 1232.4939857439092,
+          "atr": 4.6043705449716485,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1217.76
+        },
+        {
+          "time": "2018-11-09T08:00:00+00:00",
+          "old_sl": 1232.4939857439092,
+          "new_sl": 1232.2049867622015,
+          "atr": 4.51405836318797,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1217.76
+        },
+        {
+          "time": "2018-11-09T12:00:00+00:00",
+          "old_sl": 1232.2049867622015,
+          "new_sl": 1226.45005913633,
+          "atr": 4.918768480103119,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1210.71
+        },
+        {
+          "time": "2018-11-09T16:00:00+00:00",
+          "old_sl": 1226.45005913633,
+          "new_sl": 1222.8040549123066,
+          "atr": 5.048142160095755,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-09T20:00:00+00:00",
+          "old_sl": 1222.8040549123066,
+          "new_sl": 1222.2124795614275,
+          "atr": 4.863274862946061,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T00:00:00+00:00",
+          "old_sl": 1222.2124795614275,
+          "new_sl": 1221.6471595927542,
+          "atr": 4.6866123727356195,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T04:00:00+00:00",
+          "old_sl": 1221.6471595927542,
+          "new_sl": 1221.3942196218431,
+          "atr": 4.607568631825943,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T08:00:00+00:00",
+          "old_sl": 1221.3942196218431,
+          "new_sl": 1218.6933467917115,
+          "atr": 4.629170872409794,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1203.88
+        },
+        {
+          "time": "2018-11-12T12:00:00+00:00",
+          "old_sl": 1218.6933467917115,
+          "new_sl": 1218.4946791637321,
+          "atr": 4.567087238666237,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1203.88
+        },
+        {
+          "time": "2018-11-12T16:00:00+00:00",
+          "old_sl": 1218.4946791637321,
+          "new_sl": 1216.6136306520368,
+          "atr": 4.498009578761499,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1202.22
+        },
+        {
+          "time": "2018-11-12T20:00:00+00:00",
+          "old_sl": 1216.6136306520368,
+          "new_sl": 1214.2706570340342,
+          "atr": 4.409580323135677,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1200.16
+        },
+        {
+          "time": "2018-11-13T04:00:00+00:00",
+          "old_sl": 1214.2706570340342,
+          "new_sl": 1213.6946787691418,
+          "atr": 4.229587115356764,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1200.16
+        },
+        {
+          "time": "2018-11-13T08:00:00+00:00",
+          "old_sl": 1213.6946787691418,
+          "new_sl": 1212.5107731427745,
+          "atr": 4.334616607116982,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1198.64
+        },
+        {
+          "time": "2018-11-13T12:00:00+00:00",
+          "old_sl": 1212.5107731427745,
+          "new_sl": 1210.8294322040047,
+          "atr": 4.568572563751476,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-13T20:00:00+00:00",
+          "old_sl": 1210.8294322040047,
+          "new_sl": 1210.6795308289634,
+          "atr": 4.521728384051015,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-14T00:00:00+00:00",
+          "old_sl": 1210.6795308289634,
+          "new_sl": 1210.2219929126088,
+          "atr": 4.378747785190227,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-14T04:00:00+00:00",
+          "old_sl": 1210.2219929126088,
+          "new_sl": 1209.7902791331367,
+          "atr": 4.243837229105211,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        }
+      ]
     },
     {
       "side": "long",
@@ -9317,8 +11824,244 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 8.639210561981553,
+      "pnl_result": "profit",
       "equity_after": 994.6992047621807,
-      "holding_bars": 39
+      "holding_bars": 39,
+      "sl_update_count": 29,
+      "trail_updates": [
+        {
+          "time": "2018-11-15T08:00:00+00:00",
+          "old_sl": 1200.2387861644822,
+          "new_sl": 1200.5524887702968,
+          "atr": 4.958597259282279,
+          "highest_since_entry": 1216.42,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-15T16:00:00+00:00",
+          "old_sl": 1200.5524887702968,
+          "new_sl": 1200.557747970307,
+          "atr": 4.956953759279095,
+          "highest_since_entry": 1216.42,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-15T20:00:00+00:00",
+          "old_sl": 1200.557747970307,
+          "new_sl": 1200.753623115285,
+          "atr": 4.895742776473439,
+          "highest_since_entry": 1216.42,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T00:00:00+00:00",
+          "old_sl": 1200.753623115285,
+          "new_sl": 1201.2592214641932,
+          "atr": 4.834618292439619,
+          "highest_since_entry": 1216.73,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T04:00:00+00:00",
+          "old_sl": 1201.2592214641932,
+          "new_sl": 1201.9322770738938,
+          "atr": 4.624288414408209,
+          "highest_since_entry": 1216.73,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T08:00:00+00:00",
+          "old_sl": 1201.9322770738938,
+          "new_sl": 1203.5592572829014,
+          "atr": 4.59398209909334,
+          "highest_since_entry": 1218.26,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T12:00:00+00:00",
+          "old_sl": 1203.5592572829014,
+          "new_sl": 1208.315024619837,
+          "atr": 4.9015548063009655,
+          "highest_since_entry": 1224.0,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T16:00:00+00:00",
+          "old_sl": 1208.315024619837,
+          "new_sl": 1209.4310942898485,
+          "atr": 4.937158034422332,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-16T20:00:00+00:00",
+          "old_sl": 1209.4310942898485,
+          "new_sl": 1209.9424446977166,
+          "atr": 4.777361031963597,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-19T00:00:00+00:00",
+          "old_sl": 1209.9424446977166,
+          "new_sl": 1210.5018415050224,
+          "atr": 4.602549529680478,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-19T04:00:00+00:00",
+          "old_sl": 1210.5018415050224,
+          "new_sl": 1210.5778528260923,
+          "atr": 4.578795991846157,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-19T08:00:00+00:00",
+          "old_sl": 1210.5778528260923,
+          "new_sl": 1210.9135776242285,
+          "atr": 4.473881992428567,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-19T12:00:00+00:00",
+          "old_sl": 1210.9135776242285,
+          "new_sl": 1211.0241792224979,
+          "atr": 4.439318992969385,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-19T20:00:00+00:00",
+          "old_sl": 1211.0241792224979,
+          "new_sl": 1211.4563688193987,
+          "atr": 4.304259743937903,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-20T00:00:00+00:00",
+          "old_sl": 1211.4563688193987,
+          "new_sl": 1211.7636281894418,
+          "atr": 4.208241190799485,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-20T04:00:00+00:00",
+          "old_sl": 1211.7636281894418,
+          "new_sl": 1212.3095118901958,
+          "atr": 4.037652534313819,
+          "highest_since_entry": 1225.23,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-20T08:00:00+00:00",
+          "old_sl": 1212.3095118901958,
+          "new_sl": 1212.9509753266104,
+          "atr": 4.052820210434261,
+          "highest_since_entry": 1225.92,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-20T12:00:00+00:00",
+          "old_sl": 1212.9509753266104,
+          "new_sl": 1215.0070485175668,
+          "atr": 4.279047338260387,
+          "highest_since_entry": 1228.7,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-21T00:00:00+00:00",
+          "old_sl": 1215.0070485175668,
+          "new_sl": 1215.3292629712444,
+          "atr": 4.178355321486171,
+          "highest_since_entry": 1228.7,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-21T04:00:00+00:00",
+          "old_sl": 1215.3292629712444,
+          "new_sl": 1215.879744187584,
+          "atr": 4.006329941380015,
+          "highest_since_entry": 1228.7,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-21T16:00:00+00:00",
+          "old_sl": 1215.879744187584,
+          "new_sl": 1216.6653389140386,
+          "atr": 4.176456589362932,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-21T20:00:00+00:00",
+          "old_sl": 1216.6653389140386,
+          "new_sl": 1216.9891004201786,
+          "atr": 4.07528111869415,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-22T00:00:00+00:00",
+          "old_sl": 1216.9891004201786,
+          "new_sl": 1217.5571646758801,
+          "atr": 3.8977610387874355,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-22T04:00:00+00:00",
+          "old_sl": 1217.5571646758801,
+          "new_sl": 1218.0435100561745,
+          "atr": 3.745778107445475,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-22T08:00:00+00:00",
+          "old_sl": 1218.0435100561745,
+          "new_sl": 1218.3762593378763,
+          "atr": 3.6417939569136526,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-22T12:00:00+00:00",
+          "old_sl": 1218.3762593378763,
+          "new_sl": 1218.751526528028,
+          "atr": 3.524522959991249,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-22T16:00:00+00:00",
+          "old_sl": 1218.751526528028,
+          "new_sl": 1219.125131776026,
+          "atr": 3.407771319991865,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-23T00:00:00+00:00",
+          "old_sl": 1219.125131776026,
+          "new_sl": 1219.5017652205956,
+          "atr": 3.290073368563874,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        },
+        {
+          "time": "2018-11-23T04:00:00+00:00",
+          "old_sl": 1219.5017652205956,
+          "new_sl": 1219.9292105619816,
+          "atr": 3.1564966993807455,
+          "highest_since_entry": 1230.03,
+          "lowest_since_entry": 1208.25
+        }
+      ]
     },
     {
       "side": "long",
@@ -9337,8 +12080,164 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -0.22635320023418898,
+      "pnl_result": "loss",
       "equity_after": 994.4728515619465,
-      "holding_bars": 42
+      "holding_bars": 42,
+      "sl_update_count": 19,
+      "trail_updates": [
+        {
+          "time": "2018-12-06T16:00:00+00:00",
+          "old_sl": 1231.1745795765635,
+          "new_sl": 1231.2466127799344,
+          "atr": 4.0760585062704955,
+          "highest_since_entry": 1244.29,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T00:00:00+00:00",
+          "old_sl": 1231.2466127799344,
+          "new_sl": 1231.5960589786168,
+          "atr": 3.9668565691822195,
+          "highest_since_entry": 1244.29,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T04:00:00+00:00",
+          "old_sl": 1231.5960589786168,
+          "new_sl": 1231.9381976230013,
+          "atr": 3.859938242812063,
+          "highest_since_entry": 1244.29,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T08:00:00+00:00",
+          "old_sl": 1231.9381976230013,
+          "new_sl": 1232.07304064993,
+          "atr": 3.8177997968969146,
+          "highest_since_entry": 1244.29,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T12:00:00+00:00",
+          "old_sl": 1232.07304064993,
+          "new_sl": 1232.8251091749348,
+          "atr": 3.976528382832847,
+          "highest_since_entry": 1245.55,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T16:00:00+00:00",
+          "old_sl": 1232.8251091749348,
+          "new_sl": 1234.1528870910108,
+          "atr": 4.030347784059074,
+          "highest_since_entry": 1247.05,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-07T20:00:00+00:00",
+          "old_sl": 1234.1528870910108,
+          "new_sl": 1237.1081094416531,
+          "atr": 4.022465799483431,
+          "highest_since_entry": 1249.98,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-10T00:00:00+00:00",
+          "old_sl": 1237.1081094416531,
+          "new_sl": 1237.8655301958206,
+          "atr": 3.9451468138060473,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-10T04:00:00+00:00",
+          "old_sl": 1237.8655301958206,
+          "new_sl": 1238.3649923246905,
+          "atr": 3.7890648985341864,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-11T00:00:00+00:00",
+          "old_sl": 1238.3649923246905,
+          "new_sl": 1238.4962497568188,
+          "atr": 3.7480469509941137,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-11T04:00:00+00:00",
+          "old_sl": 1238.4962497568188,
+          "new_sl": 1238.8318033456176,
+          "atr": 3.6431864544945323,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-11T08:00:00+00:00",
+          "old_sl": 1238.8318033456176,
+          "new_sl": 1238.9033888209306,
+          "atr": 3.6208159934592032,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-12T08:00:00+00:00",
+          "old_sl": 1238.9033888209306,
+          "new_sl": 1239.0529395300543,
+          "atr": 3.5740813968580114,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-12T12:00:00+00:00",
+          "old_sl": 1239.0529395300543,
+          "new_sl": 1239.0881581350504,
+          "atr": 3.56307558279673,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-12T16:00:00+00:00",
+          "old_sl": 1239.0881581350504,
+          "new_sl": 1239.175718268261,
+          "atr": 3.5357130411683966,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-12T20:00:00+00:00",
+          "old_sl": 1239.175718268261,
+          "new_sl": 1239.2181669633853,
+          "atr": 3.5224478239420924,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-13T00:00:00+00:00",
+          "old_sl": 1239.2181669633853,
+          "new_sl": 1239.4267264660007,
+          "atr": 3.4572729793748094,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-13T04:00:00+00:00",
+          "old_sl": 1239.4267264660007,
+          "new_sl": 1239.9083888612863,
+          "atr": 3.306753480848047,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        },
+        {
+          "time": "2018-12-13T08:00:00+00:00",
+          "old_sl": 1239.9083888612863,
+          "new_sl": 1240.0836467997658,
+          "atr": 3.2519853750731844,
+          "highest_since_entry": 1250.49,
+          "lowest_since_entry": 1236.62
+        }
+      ]
     }
   ],
   "sample_trades": [
@@ -9359,8 +12258,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -13.507109533413132,
+      "pnl_result": "loss",
       "equity_after": 986.4928904665869,
-      "holding_bars": 3
+      "holding_bars": 3,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -9379,8 +12281,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.5901980880858444,
+      "pnl_result": "loss",
       "equity_after": 983.9026923785011,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2018-02-01T12:00:00+00:00",
+          "old_sl": 1357.2922048042897,
+          "new_sl": 1356.2072345375161,
+          "atr": 5.927260792973762,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-01T16:00:00+00:00",
+          "old_sl": 1356.2072345375161,
+          "new_sl": 1356.0661463562649,
+          "atr": 5.883170736332775,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T04:00:00+00:00",
+          "old_sl": 1356.0661463562649,
+          "new_sl": 1355.6891849652748,
+          "atr": 5.765370301648356,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T08:00:00+00:00",
+          "old_sl": 1355.6891849652748,
+          "new_sl": 1355.271957467755,
+          "atr": 5.634986708673478,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1337.24
+        },
+        {
+          "time": "2018-02-02T12:00:00+00:00",
+          "old_sl": 1355.271957467755,
+          "new_sl": 1354.528531934344,
+          "atr": 6.08391622948252,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1335.06
+        },
+        {
+          "time": "2018-02-02T16:00:00+00:00",
+          "old_sl": 1354.528531934344,
+          "new_sl": 1347.6724939390338,
+          "atr": 6.325779355948057,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T04:00:00+00:00",
+          "old_sl": 1347.6724939390338,
+          "new_sl": 1347.0176702565807,
+          "atr": 6.121146955181458,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T08:00:00+00:00",
+          "old_sl": 1347.0176702565807,
+          "new_sl": 1346.7042652382536,
+          "atr": 6.023207886954211,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T12:00:00+00:00",
+          "old_sl": 1346.7042652382536,
+          "new_sl": 1346.1846748640926,
+          "atr": 5.86083589502891,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        },
+        {
+          "time": "2018-02-05T16:00:00+00:00",
+          "old_sl": 1346.1846748640926,
+          "new_sl": 1345.910198088086,
+          "atr": 5.7750619025268515,
+          "highest_since_entry": 1347.06,
+          "lowest_since_entry": 1327.43
+        }
+      ]
     },
     {
       "side": "short",
@@ -9399,8 +12385,116 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 0.8950182454065725,
+      "pnl_result": "profit",
       "equity_after": 984.7977106239077,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 13,
+      "trail_updates": [
+        {
+          "time": "2018-02-06T20:00:00+00:00",
+          "old_sl": 1342.3489647815984,
+          "new_sl": 1341.516676045961,
+          "atr": 6.667711264362842,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T00:00:00+00:00",
+          "old_sl": 1341.516676045961,
+          "new_sl": 1341.1789134712496,
+          "atr": 6.5621604597655,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T04:00:00+00:00",
+          "old_sl": 1341.1789134712496,
+          "new_sl": 1340.2252767947318,
+          "atr": 6.2641489983536855,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T08:00:00+00:00",
+          "old_sl": 1340.2252767947318,
+          "new_sl": 1339.6551855951082,
+          "atr": 6.085995498471278,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1320.18
+        },
+        {
+          "time": "2018-02-07T16:00:00+00:00",
+          "old_sl": 1339.6551855951082,
+          "new_sl": 1335.6691957427206,
+          "atr": 6.502873669600244,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1314.86
+        },
+        {
+          "time": "2018-02-07T20:00:00+00:00",
+          "old_sl": 1335.6691957427206,
+          "new_sl": 1332.316538903955,
+          "atr": 6.542668407485937,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1311.38
+        },
+        {
+          "time": "2018-02-08T00:00:00+00:00",
+          "old_sl": 1332.316538903955,
+          "new_sl": 1331.9456432679583,
+          "atr": 6.426763521236947,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1311.38
+        },
+        {
+          "time": "2018-02-08T04:00:00+00:00",
+          "old_sl": 1331.9456432679583,
+          "new_sl": 1330.4938116059611,
+          "atr": 6.48556612686288,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1309.74
+        },
+        {
+          "time": "2018-02-08T08:00:00+00:00",
+          "old_sl": 1330.4938116059611,
+          "new_sl": 1329.4485393483926,
+          "atr": 6.340168546372661,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1309.16
+        },
+        {
+          "time": "2018-02-08T12:00:00+00:00",
+          "old_sl": 1329.4485393483926,
+          "new_sl": 1327.83364368065,
+          "atr": 6.498013650203182,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T00:00:00+00:00",
+          "old_sl": 1327.83364368065,
+          "new_sl": 1327.6001119411037,
+          "atr": 6.425034981594909,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T04:00:00+00:00",
+          "old_sl": 1327.6001119411037,
+          "new_sl": 1326.9429610881677,
+          "atr": 6.219675340052412,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        },
+        {
+          "time": "2018-02-09T12:00:00+00:00",
+          "old_sl": 1326.9429610881677,
+          "new_sl": 1326.7249817545935,
+          "atr": 6.151556798310495,
+          "highest_since_entry": 1329.73,
+          "lowest_since_entry": 1307.04
+        }
+      ]
     },
     {
       "side": "long",
@@ -9419,8 +12513,36 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -7.427989444723199,
+      "pnl_result": "loss",
       "equity_after": 977.3697211791846,
-      "holding_bars": 8
+      "holding_bars": 8,
+      "sl_update_count": 3,
+      "trail_updates": [
+        {
+          "time": "2018-02-14T00:00:00+00:00",
+          "old_sl": 1313.6169308253093,
+          "new_sl": 1315.697799223871,
+          "atr": 5.666312742540284,
+          "highest_since_entry": 1333.83,
+          "lowest_since_entry": 1324.63
+        },
+        {
+          "time": "2018-02-14T04:00:00+00:00",
+          "old_sl": 1315.697799223871,
+          "new_sl": 1318.9692421364518,
+          "atr": 5.615861832358838,
+          "highest_since_entry": 1336.94,
+          "lowest_since_entry": 1324.63
+        },
+        {
+          "time": "2018-02-14T08:00:00+00:00",
+          "old_sl": 1318.9692421364518,
+          "new_sl": 1319.1420105552768,
+          "atr": 5.561871701476057,
+          "highest_since_entry": 1336.94,
+          "lowest_since_entry": 1324.63
+        }
+      ]
     },
     {
       "side": "long",
@@ -9439,8 +12561,100 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.090379003771023,
+      "pnl_result": "loss",
       "equity_after": 972.2793421754136,
-      "holding_bars": 19
+      "holding_bars": 19,
+      "sl_update_count": 11,
+      "trail_updates": [
+        {
+          "time": "2018-02-15T04:00:00+00:00",
+          "old_sl": 1333.144000480352,
+          "new_sl": 1333.443703756434,
+          "atr": 6.892592576114393,
+          "highest_since_entry": 1355.5,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T08:00:00+00:00",
+          "old_sl": 1333.443703756434,
+          "new_sl": 1335.47829634526,
+          "atr": 6.747407392106215,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T12:00:00+00:00",
+          "old_sl": 1335.47829634526,
+          "new_sl": 1335.5851323205986,
+          "atr": 6.714021149812912,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T16:00:00+00:00",
+          "old_sl": 1335.5851323205986,
+          "new_sl": 1335.8146228691273,
+          "atr": 6.642305353397691,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-15T20:00:00+00:00",
+          "old_sl": 1335.8146228691273,
+          "new_sl": 1336.318006949904,
+          "atr": 6.484997828155003,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T00:00:00+00:00",
+          "old_sl": 1336.318006949904,
+          "new_sl": 1337.2585778820537,
+          "atr": 6.1910694118582095,
+          "highest_since_entry": 1357.07,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T04:00:00+00:00",
+          "old_sl": 1337.2585778820537,
+          "new_sl": 1340.1885366047643,
+          "atr": 6.18170731101119,
+          "highest_since_entry": 1359.97,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-16T08:00:00+00:00",
+          "old_sl": 1340.1885366047643,
+          "new_sl": 1342.2083554187097,
+          "atr": 6.088013931653257,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T08:00:00+00:00",
+          "old_sl": 1342.2083554187097,
+          "new_sl": 1342.88757227965,
+          "atr": 5.875758662609398,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T12:00:00+00:00",
+          "old_sl": 1342.88757227965,
+          "new_sl": 1343.5997456882465,
+          "atr": 5.6532044724230115,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        },
+        {
+          "time": "2018-02-19T16:00:00+00:00",
+          "old_sl": 1343.5997456882465,
+          "new_sl": 1344.249620996229,
+          "atr": 5.450118438678507,
+          "highest_since_entry": 1361.69,
+          "lowest_since_entry": 1349.04
+        }
+      ]
     },
     {
       "side": "short",
@@ -9459,8 +12673,36 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.045163920653568,
+      "pnl_result": "loss",
       "equity_after": 967.2341782547601,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 3,
+      "trail_updates": [
+        {
+          "time": "2018-03-01T08:00:00+00:00",
+          "old_sl": 1328.3163520121648,
+          "new_sl": 1326.3085806417048,
+          "atr": 5.018306450532773,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1310.25
+        },
+        {
+          "time": "2018-03-01T12:00:00+00:00",
+          "old_sl": 1326.3085806417048,
+          "new_sl": 1321.2692534530117,
+          "atr": 5.184141704066141,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1304.68
+        },
+        {
+          "time": "2018-03-01T16:00:00+00:00",
+          "old_sl": 1321.2692534530117,
+          "new_sl": 1320.4751639206536,
+          "atr": 5.535988725204267,
+          "highest_since_entry": 1318.82,
+          "lowest_since_entry": 1302.76
+        }
+      ]
     },
     {
       "side": "long",
@@ -9479,8 +12721,68 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.1115027743001518,
+      "pnl_result": "loss",
       "equity_after": 965.12267548046,
-      "holding_bars": 16
+      "holding_bars": 16,
+      "sl_update_count": 7,
+      "trail_updates": [
+        {
+          "time": "2018-03-06T12:00:00+00:00",
+          "old_sl": 1313.5683854299918,
+          "new_sl": 1315.918712904283,
+          "atr": 5.081652217411562,
+          "highest_since_entry": 1332.18,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-06T16:00:00+00:00",
+          "old_sl": 1315.918712904283,
+          "new_sl": 1321.37623341112,
+          "atr": 5.338677059025026,
+          "highest_since_entry": 1338.46,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-06T20:00:00+00:00",
+          "old_sl": 1321.37623341112,
+          "new_sl": 1321.7073595960399,
+          "atr": 5.235200126237531,
+          "highest_since_entry": 1338.46,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T00:00:00+00:00",
+          "old_sl": 1321.7073595960399,
+          "new_sl": 1323.4105481963227,
+          "atr": 5.299828688649128,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T04:00:00+00:00",
+          "old_sl": 1323.4105481963227,
+          "new_sl": 1323.565937610871,
+          "atr": 5.25126949660277,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T08:00:00+00:00",
+          "old_sl": 1323.565937610871,
+          "new_sl": 1323.870227781523,
+          "atr": 5.1561788182740065,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        },
+        {
+          "time": "2018-03-07T12:00:00+00:00",
+          "old_sl": 1323.870227781523,
+          "new_sl": 1324.0384972257,
+          "atr": 5.103594616968709,
+          "highest_since_entry": 1340.37,
+          "lowest_since_entry": 1325.07
+        }
+      ]
     },
     {
       "side": "long",
@@ -9499,8 +12801,52 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.367993358538616,
+      "pnl_result": "loss",
       "equity_after": 954.7546821219214,
-      "holding_bars": 14
+      "holding_bars": 14,
+      "sl_update_count": 5,
+      "trail_updates": [
+        {
+          "time": "2018-03-14T04:00:00+00:00",
+          "old_sl": 1313.2703304595732,
+          "new_sl": 1313.6274916616392,
+          "atr": 5.119533855737776,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-14T20:00:00+00:00",
+          "old_sl": 1313.6274916616392,
+          "new_sl": 1314.3870023778652,
+          "atr": 4.882186756917094,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T00:00:00+00:00",
+          "old_sl": 1314.3870023778652,
+          "new_sl": 1314.6549307794464,
+          "atr": 4.7984591314230185,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T04:00:00+00:00",
+          "old_sl": 1314.6549307794464,
+          "new_sl": 1315.274007152343,
+          "atr": 4.604997764892813,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        },
+        {
+          "time": "2018-03-15T08:00:00+00:00",
+          "old_sl": 1315.274007152343,
+          "new_sl": 1315.3620066414614,
+          "atr": 4.577497924543328,
+          "highest_since_entry": 1330.01,
+          "lowest_since_entry": 1318.5
+        }
+      ]
     },
     {
       "side": "long",
@@ -9519,8 +12865,132 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 8.409662682602129,
+      "pnl_result": "profit",
       "equity_after": 963.1643448045236,
-      "holding_bars": 22
+      "holding_bars": 22,
+      "sl_update_count": 15,
+      "trail_updates": [
+        {
+          "time": "2018-03-23T00:00:00+00:00",
+          "old_sl": 1319.5046469343008,
+          "new_sl": 1320.1747993380745,
+          "atr": 5.914125206851704,
+          "highest_since_entry": 1339.1,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T04:00:00+00:00",
+          "old_sl": 1320.1747993380745,
+          "new_sl": 1320.9528850996405,
+          "atr": 5.670973406362296,
+          "highest_since_entry": 1339.1,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T08:00:00+00:00",
+          "old_sl": 1320.9528850996405,
+          "new_sl": 1325.1628218782378,
+          "atr": 5.6366181630507075,
+          "highest_since_entry": 1343.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T12:00:00+00:00",
+          "old_sl": 1325.1628218782378,
+          "new_sl": 1330.0037631726493,
+          "atr": 5.842574008547085,
+          "highest_since_entry": 1348.7,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T16:00:00+00:00",
+          "old_sl": 1330.0037631726493,
+          "new_sl": 1331.7237800888886,
+          "atr": 5.773818722222301,
+          "highest_since_entry": 1350.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-23T20:00:00+00:00",
+          "old_sl": 1331.7237800888886,
+          "new_sl": 1332.3006529396823,
+          "atr": 5.5935459563492795,
+          "highest_since_entry": 1350.2,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T00:00:00+00:00",
+          "old_sl": 1332.3006529396823,
+          "new_sl": 1333.0977491582764,
+          "atr": 5.572578388038614,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T04:00:00+00:00",
+          "old_sl": 1333.0977491582764,
+          "new_sl": 1333.642338504114,
+          "atr": 5.4023942174644315,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T08:00:00+00:00",
+          "old_sl": 1333.642338504114,
+          "new_sl": 1333.80288575382,
+          "atr": 5.352223201931261,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T12:00:00+00:00",
+          "old_sl": 1333.80288575382,
+          "new_sl": 1334.4593939142615,
+          "atr": 5.147064401793315,
+          "highest_since_entry": 1350.93,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T16:00:00+00:00",
+          "old_sl": 1334.4593939142615,
+          "new_sl": 1338.7130086346713,
+          "atr": 5.361559801665212,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-26T20:00:00+00:00",
+          "old_sl": 1338.7130086346713,
+          "new_sl": 1339.0722223036232,
+          "atr": 5.249305530117694,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T00:00:00+00:00",
+          "old_sl": 1339.0722223036232,
+          "new_sl": 1339.577206424793,
+          "atr": 5.091497992252158,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T04:00:00+00:00",
+          "old_sl": 1339.577206424793,
+          "new_sl": 1339.808405965879,
+          "atr": 5.019248135662729,
+          "highest_since_entry": 1355.87,
+          "lowest_since_entry": 1329.45
+        },
+        {
+          "time": "2018-03-27T08:00:00+00:00",
+          "old_sl": 1339.808405965879,
+          "new_sl": 1340.4696626826021,
+          "atr": 5.115730411686813,
+          "highest_since_entry": 1356.84,
+          "lowest_since_entry": 1329.45
+        }
+      ]
     },
     {
       "side": "short",
@@ -9539,8 +13009,108 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -1.4366670679576599,
+      "pnl_result": "loss",
       "equity_after": 961.727677736566,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 12,
+      "trail_updates": [
+        {
+          "time": "2018-03-28T16:00:00+00:00",
+          "old_sl": 1347.8228714846475,
+          "new_sl": 1344.2323585231236,
+          "atr": 5.769487038476113,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1325.77
+        },
+        {
+          "time": "2018-03-28T20:00:00+00:00",
+          "old_sl": 1344.2323585231236,
+          "new_sl": 1341.861332914329,
+          "atr": 5.756666535727813,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T00:00:00+00:00",
+          "old_sl": 1341.861332914329,
+          "new_sl": 1341.1786662775912,
+          "atr": 5.543333211747254,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T04:00:00+00:00",
+          "old_sl": 1341.1786662775912,
+          "new_sl": 1340.494475829192,
+          "atr": 5.329523696622447,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1323.44
+        },
+        {
+          "time": "2018-03-29T08:00:00+00:00",
+          "old_sl": 1340.494475829192,
+          "new_sl": 1339.993727555678,
+          "atr": 5.332414861149407,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1322.93
+        },
+        {
+          "time": "2018-03-29T12:00:00+00:00",
+          "old_sl": 1339.993727555678,
+          "new_sl": 1338.5994613017012,
+          "atr": 5.302956656781581,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.63
+        },
+        {
+          "time": "2018-03-29T16:00:00+00:00",
+          "old_sl": 1338.5994613017012,
+          "new_sl": 1337.8862140658653,
+          "atr": 5.211316895582896,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-03-29T20:00:00+00:00",
+          "old_sl": 1337.8862140658653,
+          "new_sl": 1337.7350559183035,
+          "atr": 5.1640799744698285,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T00:00:00+00:00",
+          "old_sl": 1337.7350559183035,
+          "new_sl": 1337.1626947812817,
+          "atr": 4.985217119150561,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T04:00:00+00:00",
+          "old_sl": 1337.1626947812817,
+          "new_sl": 1336.8483594397617,
+          "atr": 4.886987324925514,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T08:00:00+00:00",
+          "old_sl": 1336.8483594397617,
+          "new_sl": 1336.6593337654929,
+          "atr": 4.827916801716545,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        },
+        {
+          "time": "2018-04-02T12:00:00+00:00",
+          "old_sl": 1336.6593337654929,
+          "new_sl": 1336.5066670679578,
+          "atr": 4.780208458736798,
+          "highest_since_entry": 1336.3,
+          "lowest_since_entry": 1321.21
+        }
+      ]
     },
     {
       "side": "long",
@@ -9559,8 +13129,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.460039686064466,
+      "pnl_result": "loss",
       "equity_after": 950.2676380505015,
-      "holding_bars": 4
+      "holding_bars": 4,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2018-04-04T12:00:00+00:00",
+          "old_sl": 1330.1393477158308,
+          "new_sl": 1330.7499603139356,
+          "atr": 5.459387401895096,
+          "highest_since_entry": 1348.22,
+          "lowest_since_entry": 1341.84
+        }
+      ]
     },
     {
       "side": "short",
@@ -9579,8 +13161,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 3.2823059932315575,
+      "pnl_result": "profit",
       "equity_after": 953.5499440437331,
-      "holding_bars": 29
+      "holding_bars": 29,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-05-15T16:00:00+00:00",
+          "old_sl": 1308.4271335083151,
+          "new_sl": 1306.751285103004,
+          "atr": 4.944151594688713,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1290.93
+        },
+        {
+          "time": "2018-05-15T20:00:00+00:00",
+          "old_sl": 1306.751285103004,
+          "new_sl": 1304.3111933099322,
+          "atr": 4.890997909353792,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T00:00:00+00:00",
+          "old_sl": 1304.3111933099322,
+          "new_sl": 1303.8515366449371,
+          "atr": 4.747355201542798,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T04:00:00+00:00",
+          "old_sl": 1303.8515366449371,
+          "new_sl": 1303.529855456013,
+          "atr": 4.646829830004037,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T08:00:00+00:00",
+          "old_sl": 1303.529855456013,
+          "new_sl": 1303.4757229234406,
+          "atr": 4.629913413575167,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1288.66
+        },
+        {
+          "time": "2018-05-16T12:00:00+00:00",
+          "old_sl": 1303.4757229234406,
+          "new_sl": 1301.7785998574805,
+          "atr": 4.812062455462644,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-16T16:00:00+00:00",
+          "old_sl": 1301.7785998574805,
+          "new_sl": 1301.6775570105176,
+          "atr": 4.780486565786733,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-16T20:00:00+00:00",
+          "old_sl": 1301.6775570105176,
+          "new_sl": 1301.387160081195,
+          "atr": 4.689737525373395,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-17T00:00:00+00:00",
+          "old_sl": 1301.387160081195,
+          "new_sl": 1300.6603629325382,
+          "atr": 4.462613416418152,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1286.38
+        },
+        {
+          "time": "2018-05-17T12:00:00+00:00",
+          "old_sl": 1300.6603629325382,
+          "new_sl": 1299.7793547240476,
+          "atr": 4.640423351264824,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-17T16:00:00+00:00",
+          "old_sl": 1299.7793547240476,
+          "new_sl": 1299.6535436723298,
+          "atr": 4.6011073976030445,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-17T20:00:00+00:00",
+          "old_sl": 1299.6535436723298,
+          "new_sl": 1299.0452905528778,
+          "atr": 4.411028297774259,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T00:00:00+00:00",
+          "old_sl": 1299.0452905528778,
+          "new_sl": 1298.4736269419577,
+          "atr": 4.232383419361802,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T04:00:00+00:00",
+          "old_sl": 1298.4736269419577,
+          "new_sl": 1298.0067964461036,
+          "atr": 4.086498889407391,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T08:00:00+00:00",
+          "old_sl": 1298.0067964461036,
+          "new_sl": 1297.7287395570963,
+          "atr": 3.99960611159257,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-18T12:00:00+00:00",
+          "old_sl": 1297.7287395570963,
+          "new_sl": 1297.4476867315893,
+          "atr": 3.9117771036216706,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1284.93
+        },
+        {
+          "time": "2018-05-21T08:00:00+00:00",
+          "old_sl": 1297.4476867315893,
+          "new_sl": 1295.1520194926816,
+          "atr": 4.110006091463005,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-21T16:00:00+00:00",
+          "old_sl": 1295.1520194926816,
+          "new_sl": 1295.0205882360367,
+          "atr": 4.068933823761475,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-21T20:00:00+00:00",
+          "old_sl": 1295.0205882360367,
+          "new_sl": 1294.9202605048913,
+          "atr": 4.037581407778505,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-22T00:00:00+00:00",
+          "old_sl": 1294.9202605048913,
+          "new_sl": 1294.3196704688276,
+          "atr": 3.8498970215086175,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        },
+        {
+          "time": "2018-05-22T04:00:00+00:00",
+          "old_sl": 1294.3196704688276,
+          "new_sl": 1294.2076940067684,
+          "atr": 3.814904377115154,
+          "highest_since_entry": 1298.27,
+          "lowest_since_entry": 1282.0
+        }
+      ]
     },
     {
       "side": "long",
@@ -9599,8 +13353,28 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -9.44878973796408,
+      "pnl_result": "loss",
       "equity_after": 944.1011543057691,
-      "holding_bars": 17
+      "holding_bars": 17,
+      "sl_update_count": 2,
+      "trail_updates": [
+        {
+          "time": "2018-05-28T16:00:00+00:00",
+          "old_sl": 1295.106790837013,
+          "new_sl": 1295.2457468127755,
+          "atr": 3.907579121007666,
+          "highest_since_entry": 1307.75,
+          "lowest_since_entry": 1304.13
+        },
+        {
+          "time": "2018-05-29T04:00:00+00:00",
+          "old_sl": 1295.2457468127755,
+          "new_sl": 1295.4112102620359,
+          "atr": 3.8558717931137614,
+          "highest_since_entry": 1307.75,
+          "lowest_since_entry": 1304.13
+        }
+      ]
     },
     {
       "side": "short",
@@ -9619,8 +13393,316 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 26.07050919946478,
+      "pnl_result": "profit",
       "equity_after": 970.1716635052339,
-      "holding_bars": 71
+      "holding_bars": 71,
+      "sl_update_count": 38,
+      "trail_updates": [
+        {
+          "time": "2018-06-19T12:00:00+00:00",
+          "old_sl": 1287.510203264671,
+          "new_sl": 1285.718295564859,
+          "atr": 4.815092364018513,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-19T16:00:00+00:00",
+          "old_sl": 1285.718295564859,
+          "new_sl": 1285.5502744530836,
+          "atr": 4.762585766588614,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-19T20:00:00+00:00",
+          "old_sl": 1285.5502744530836,
+          "new_sl": 1285.2205405635775,
+          "atr": 4.659543926117995,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T00:00:00+00:00",
+          "old_sl": 1285.2205405635775,
+          "new_sl": 1284.733787666179,
+          "atr": 4.507433645680994,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T04:00:00+00:00",
+          "old_sl": 1284.733787666179,
+          "new_sl": 1284.414374261452,
+          "atr": 4.407616956703773,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T08:00:00+00:00",
+          "old_sl": 1284.414374261452,
+          "new_sl": 1284.1817760999197,
+          "atr": 4.334930031224939,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1270.31
+        },
+        {
+          "time": "2018-06-20T20:00:00+00:00",
+          "old_sl": 1284.1817760999197,
+          "new_sl": 1281.880118109156,
+          "atr": 4.475036909111234,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1267.56
+        },
+        {
+          "time": "2018-06-21T00:00:00+00:00",
+          "old_sl": 1281.880118109156,
+          "new_sl": 1281.357823958502,
+          "atr": 4.311819987031864,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1267.56
+        },
+        {
+          "time": "2018-06-21T04:00:00+00:00",
+          "old_sl": 1281.357823958502,
+          "new_sl": 1278.7876936757518,
+          "atr": 4.377404273672447,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1264.78
+        },
+        {
+          "time": "2018-06-21T08:00:00+00:00",
+          "old_sl": 1278.7876936757518,
+          "new_sl": 1275.771144127484,
+          "atr": 4.334732539838699,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.9
+        },
+        {
+          "time": "2018-06-21T12:00:00+00:00",
+          "old_sl": 1275.771144127484,
+          "new_sl": 1275.3314909755206,
+          "atr": 4.387965929850215,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-21T16:00:00+00:00",
+          "old_sl": 1275.3314909755206,
+          "new_sl": 1275.3022416201263,
+          "atr": 4.378825506289485,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-21T20:00:00+00:00",
+          "old_sl": 1275.3022416201263,
+          "new_sl": 1275.0099386472602,
+          "atr": 4.287480827268801,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T00:00:00+00:00",
+          "old_sl": 1275.0099386472602,
+          "new_sl": 1274.4322287438845,
+          "atr": 4.106946482463886,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T04:00:00+00:00",
+          "old_sl": 1274.4322287438845,
+          "new_sl": 1274.071783833607,
+          "atr": 3.9943074480021785,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T08:00:00+00:00",
+          "old_sl": 1274.071783833607,
+          "new_sl": 1274.0067992740635,
+          "atr": 3.973999773144883,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T12:00:00+00:00",
+          "old_sl": 1274.0067992740635,
+          "new_sl": 1273.7041707544877,
+          "atr": 3.8794283607773816,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-22T20:00:00+00:00",
+          "old_sl": 1273.7041707544877,
+          "new_sl": 1273.3329941709612,
+          "atr": 3.7634356784254024,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-25T00:00:00+00:00",
+          "old_sl": 1273.3329941709612,
+          "new_sl": 1273.2384945873212,
+          "atr": 3.7339045585378674,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1261.29
+        },
+        {
+          "time": "2018-06-26T08:00:00+00:00",
+          "old_sl": 1273.2384945873212,
+          "new_sl": 1270.5506778429803,
+          "atr": 4.0252118259313425,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1257.67
+        },
+        {
+          "time": "2018-06-26T12:00:00+00:00",
+          "old_sl": 1270.5506778429803,
+          "new_sl": 1267.6763437113389,
+          "atr": 4.051982409793379,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1254.71
+        },
+        {
+          "time": "2018-06-27T00:00:00+00:00",
+          "old_sl": 1267.6763437113389,
+          "new_sl": 1267.3253765064912,
+          "atr": 3.9423051582784705,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1254.71
+        },
+        {
+          "time": "2018-06-27T04:00:00+00:00",
+          "old_sl": 1267.3253765064912,
+          "new_sl": 1266.5157067560276,
+          "atr": 4.0892833612585795,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1253.43
+        },
+        {
+          "time": "2018-06-27T16:00:00+00:00",
+          "old_sl": 1266.5157067560276,
+          "new_sl": 1265.9621405768921,
+          "atr": 4.25691893027882,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1252.34
+        },
+        {
+          "time": "2018-06-27T20:00:00+00:00",
+          "old_sl": 1265.9621405768921,
+          "new_sl": 1264.2928448214,
+          "atr": 4.282139006687485,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T00:00:00+00:00",
+          "old_sl": 1264.2928448214,
+          "new_sl": 1263.7437844770143,
+          "atr": 4.110557649066958,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T04:00:00+00:00",
+          "old_sl": 1263.7437844770143,
+          "new_sl": 1263.275085585799,
+          "atr": 3.964089245562172,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1250.59
+        },
+        {
+          "time": "2018-06-28T08:00:00+00:00",
+          "old_sl": 1263.275085585799,
+          "new_sl": 1261.1390080439562,
+          "atr": 4.030940013736309,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1248.24
+        },
+        {
+          "time": "2018-06-28T20:00:00+00:00",
+          "old_sl": 1261.1390080439562,
+          "new_sl": 1259.015702869013,
+          "atr": 4.1174071465665785,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-06-29T00:00:00+00:00",
+          "old_sl": 1259.015702869013,
+          "new_sl": 1258.4791526640834,
+          "atr": 3.9497352075261074,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-06-29T12:00:00+00:00",
+          "old_sl": 1258.4791526640834,
+          "new_sl": 1258.356464432577,
+          "atr": 3.911395135180341,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T04:00:00+00:00",
+          "old_sl": 1258.356464432577,
+          "new_sl": 1258.2410476014898,
+          "atr": 3.875327375465568,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T08:00:00+00:00",
+          "old_sl": 1258.2410476014898,
+          "new_sl": 1258.1164013442406,
+          "atr": 3.836375420075165,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T12:00:00+00:00",
+          "old_sl": 1258.1164013442406,
+          "new_sl": 1257.874944105366,
+          "atr": 3.760920032926937,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1245.84
+        },
+        {
+          "time": "2018-07-02T16:00:00+00:00",
+          "old_sl": 1257.874944105366,
+          "new_sl": 1254.3841623835544,
+          "atr": 4.05442574486072,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1241.41
+        },
+        {
+          "time": "2018-07-02T20:00:00+00:00",
+          "old_sl": 1254.3841623835544,
+          "new_sl": 1252.4248650704435,
+          "atr": 3.9983953345135244,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1239.63
+        },
+        {
+          "time": "2018-07-03T00:00:00+00:00",
+          "old_sl": 1252.4248650704435,
+          "new_sl": 1251.9383747082688,
+          "atr": 3.8463670963339953,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1239.63
+        },
+        {
+          "time": "2018-07-03T04:00:00+00:00",
+          "old_sl": 1251.9383747082688,
+          "new_sl": 1250.2994908005353,
+          "atr": 3.862340875167277,
+          "highest_since_entry": 1280.52,
+          "lowest_since_entry": 1237.94
+        }
+      ]
     },
     {
       "side": "long",
@@ -9639,8 +13721,132 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 1.3767749331975212,
+      "pnl_result": "profit",
       "equity_after": 971.5484384384315,
-      "holding_bars": 27
+      "holding_bars": 27,
+      "sl_update_count": 15,
+      "trail_updates": [
+        {
+          "time": "2018-07-04T00:00:00+00:00",
+          "old_sl": 1243.2356650088911,
+          "new_sl": 1243.4140410509697,
+          "atr": 4.43936217157191,
+          "highest_since_entry": 1257.62,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T04:00:00+00:00",
+          "old_sl": 1243.4140410509697,
+          "new_sl": 1246.1833238330435,
+          "atr": 4.445836302173914,
+          "highest_since_entry": 1260.41,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T08:00:00+00:00",
+          "old_sl": 1246.1833238330435,
+          "new_sl": 1246.732657844969,
+          "atr": 4.480419423447194,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T12:00:00+00:00",
+          "old_sl": 1246.732657844969,
+          "new_sl": 1246.9567537131854,
+          "atr": 4.410389464629538,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-04T16:00:00+00:00",
+          "old_sl": 1246.9567537131854,
+          "new_sl": 1247.1762713051007,
+          "atr": 4.341790217156003,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-05T00:00:00+00:00",
+          "old_sl": 1247.1762713051007,
+          "new_sl": 1247.6566804975935,
+          "atr": 4.191662344502004,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-05T04:00:00+00:00",
+          "old_sl": 1247.6566804975935,
+          "new_sl": 1247.8216318906225,
+          "atr": 4.140115034180434,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-06T08:00:00+00:00",
+          "old_sl": 1247.8216318906225,
+          "new_sl": 1247.9526765021915,
+          "atr": 4.099163593065155,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-06T20:00:00+00:00",
+          "old_sl": 1247.9526765021915,
+          "new_sl": 1248.3503703627239,
+          "atr": 3.974884261648743,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T00:00:00+00:00",
+          "old_sl": 1248.3503703627239,
+          "new_sl": 1248.714915336815,
+          "atr": 3.860963957245269,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T04:00:00+00:00",
+          "old_sl": 1248.714915336815,
+          "new_sl": 1248.760849955614,
+          "atr": 3.846609388870597,
+          "highest_since_entry": 1261.07,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T08:00:00+00:00",
+          "old_sl": 1248.760849955614,
+          "new_sl": 1249.8600749587845,
+          "atr": 3.8218515753798403,
+          "highest_since_entry": 1262.09,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-09T12:00:00+00:00",
+          "old_sl": 1249.8600749587845,
+          "new_sl": 1253.4139267474427,
+          "atr": 3.8831478914241258,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-10T00:00:00+00:00",
+          "old_sl": 1253.4139267474427,
+          "new_sl": 1253.9479114665203,
+          "atr": 3.7162776667123825,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        },
+        {
+          "time": "2018-07-10T04:00:00+00:00",
+          "old_sl": 1253.9479114665203,
+          "new_sl": 1254.2967749331974,
+          "atr": 3.6072578333757876,
+          "highest_since_entry": 1265.84,
+          "lowest_since_entry": 1251.85
+        }
+      ]
     },
     {
       "side": "short",
@@ -9659,8 +13865,204 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 19.40839038479176,
+      "pnl_result": "profit",
       "equity_after": 990.9568288232233,
-      "holding_bars": 37
+      "holding_bars": 37,
+      "sl_update_count": 24,
+      "trail_updates": [
+        {
+          "time": "2018-07-12T00:00:00+00:00",
+          "old_sl": 1254.0917113582605,
+          "new_sl": 1253.9662594968713,
+          "atr": 3.9769560927722822,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T04:00:00+00:00",
+          "old_sl": 1253.9662594968713,
+          "new_sl": 1253.7840981042377,
+          "atr": 3.9200306575742667,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T12:00:00+00:00",
+          "old_sl": 1253.7840981042377,
+          "new_sl": 1253.7564927531437,
+          "atr": 3.911403985357389,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-12T20:00:00+00:00",
+          "old_sl": 1253.7564927531437,
+          "new_sl": 1253.5238738534758,
+          "atr": 3.838710579211213,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T00:00:00+00:00",
+          "old_sl": 1253.5238738534758,
+          "new_sl": 1252.9390257210848,
+          "atr": 3.655945537838982,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T04:00:00+00:00",
+          "old_sl": 1252.9390257210848,
+          "new_sl": 1252.8713810267216,
+          "atr": 3.634806570850476,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1241.24
+        },
+        {
+          "time": "2018-07-13T08:00:00+00:00",
+          "old_sl": 1252.8713810267216,
+          "new_sl": 1252.4951395248129,
+          "atr": 3.8016061015040155,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1240.33
+        },
+        {
+          "time": "2018-07-13T12:00:00+00:00",
+          "old_sl": 1252.4951395248129,
+          "new_sl": 1249.2442009873262,
+          "atr": 4.045062808539446,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-13T16:00:00+00:00",
+          "old_sl": 1249.2442009873262,
+          "new_sl": 1249.1721866310886,
+          "atr": 4.022558322215201,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-13T20:00:00+00:00",
+          "old_sl": 1249.1721866310886,
+          "new_sl": 1248.668744728868,
+          "atr": 3.8652327277712537,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T00:00:00+00:00",
+          "old_sl": 1248.668744728868,
+          "new_sl": 1248.2012629625203,
+          "atr": 3.7191446757876045,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T04:00:00+00:00",
+          "old_sl": 1248.2012629625203,
+          "new_sl": 1248.0391727509118,
+          "atr": 3.668491484659918,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-16T20:00:00+00:00",
+          "old_sl": 1248.0391727509118,
+          "new_sl": 1248.0135014821633,
+          "atr": 3.660469213176077,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-17T00:00:00+00:00",
+          "old_sl": 1248.0135014821633,
+          "new_sl": 1247.6591085191517,
+          "atr": 3.549721412234938,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1236.3
+        },
+        {
+          "time": "2018-07-17T16:00:00+00:00",
+          "old_sl": 1247.6591085191517,
+          "new_sl": 1240.4993680345558,
+          "atr": 4.5248025107986765,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-17T20:00:00+00:00",
+          "old_sl": 1240.4993680345558,
+          "new_sl": 1240.0228417463732,
+          "atr": 4.3758880457416325,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T00:00:00+00:00",
+          "old_sl": 1240.0228417463732,
+          "new_sl": 1239.4203530502036,
+          "atr": 4.18761032818866,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T04:00:00+00:00",
+          "old_sl": 1239.4203530502036,
+          "new_sl": 1239.048327832332,
+          "atr": 4.0713524476037515,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1226.02
+        },
+        {
+          "time": "2018-07-18T08:00:00+00:00",
+          "old_sl": 1239.048327832332,
+          "new_sl": 1234.5451615585941,
+          "atr": 4.239112987060632,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-18T12:00:00+00:00",
+          "old_sl": 1234.5451615585941,
+          "new_sl": 1234.344221447266,
+          "atr": 4.176319202270596,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-18T20:00:00+00:00",
+          "old_sl": 1234.344221447266,
+          "new_sl": 1233.9171093091222,
+          "atr": 4.0428466591006815,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-19T00:00:00+00:00",
+          "old_sl": 1233.9171093091222,
+          "new_sl": 1233.4913157870421,
+          "atr": 3.9097861834506373,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1220.98
+        },
+        {
+          "time": "2018-07-19T08:00:00+00:00",
+          "old_sl": 1233.4913157870421,
+          "new_sl": 1230.824348816378,
+          "atr": 4.173234005118151,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1217.47
+        },
+        {
+          "time": "2018-07-19T12:00:00+00:00",
+          "old_sl": 1230.824348816378,
+          "new_sl": 1225.5716096152082,
+          "atr": 4.413003004752567,
+          "highest_since_entry": 1245.07,
+          "lowest_since_entry": 1211.45
+        }
+      ]
     },
     {
       "side": "long",
@@ -9679,8 +14081,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.777964139240158,
+      "pnl_result": "loss",
       "equity_after": 980.1788646839832,
-      "holding_bars": 8
+      "holding_bars": 8,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2018-07-24T00:00:00+00:00",
+          "old_sl": 1219.5275178664067,
+          "new_sl": 1219.91203586076,
+          "atr": 4.7618637935125205,
+          "highest_since_entry": 1235.15,
+          "lowest_since_entry": 1229.87
+        }
+      ]
     },
     {
       "side": "long",
@@ -9699,8 +14113,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.176804314395259,
+      "pnl_result": "loss",
       "equity_after": 970.002060369588,
-      "holding_bars": 7
+      "holding_bars": 7,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -9719,8 +14136,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 5.129479784851082,
+      "pnl_result": "profit",
       "equity_after": 975.1315401544391,
-      "holding_bars": 31
+      "holding_bars": 31,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-07-30T04:00:00+00:00",
+          "old_sl": 1233.3106840239948,
+          "new_sl": 1233.1000316992934,
+          "atr": 4.35938490602912,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1219.15
+        },
+        {
+          "time": "2018-07-30T08:00:00+00:00",
+          "old_sl": 1233.1000316992934,
+          "new_sl": 1232.6907437207722,
+          "atr": 4.290857412741316,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T12:00:00+00:00",
+          "old_sl": 1232.6907437207722,
+          "new_sl": 1232.3088334550027,
+          "atr": 4.171510454688357,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T16:00:00+00:00",
+          "old_sl": 1232.3088334550027,
+          "new_sl": 1232.0044882082168,
+          "atr": 4.076402565067754,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-30T20:00:00+00:00",
+          "old_sl": 1232.0044882082168,
+          "new_sl": 1231.6053104790585,
+          "atr": 3.9516595247057666,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T00:00:00+00:00",
+          "old_sl": 1231.6053104790585,
+          "new_sl": 1231.1592168734114,
+          "atr": 3.8122552729410693,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T04:00:00+00:00",
+          "old_sl": 1231.1592168734114,
+          "new_sl": 1231.003272811025,
+          "atr": 3.7635227534452866,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.96
+        },
+        {
+          "time": "2018-07-31T08:00:00+00:00",
+          "old_sl": 1231.003272811025,
+          "new_sl": 1230.3033247530946,
+          "atr": 3.8354139853420506,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1218.03
+        },
+        {
+          "time": "2018-07-31T16:00:00+00:00",
+          "old_sl": 1230.3033247530946,
+          "new_sl": 1229.4691830779234,
+          "atr": 4.855994711851055,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-07-31T20:00:00+00:00",
+          "old_sl": 1229.4691830779234,
+          "new_sl": 1228.9352414295004,
+          "atr": 4.689137946718836,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T00:00:00+00:00",
+          "old_sl": 1228.9352414295004,
+          "new_sl": 1228.290867041679,
+          "atr": 4.487770950524626,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T04:00:00+00:00",
+          "old_sl": 1228.290867041679,
+          "new_sl": 1228.1085193958447,
+          "atr": 4.430787311201427,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-01T12:00:00+00:00",
+          "old_sl": 1228.1085193958447,
+          "new_sl": 1227.7969886627436,
+          "atr": 4.333433957107351,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T04:00:00+00:00",
+          "old_sl": 1227.7969886627436,
+          "new_sl": 1227.705091815822,
+          "atr": 4.304716192444366,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T08:00:00+00:00",
+          "old_sl": 1227.705091815822,
+          "new_sl": 1227.5668709718348,
+          "atr": 4.2615221786983435,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.93
+        },
+        {
+          "time": "2018-08-02T12:00:00+00:00",
+          "old_sl": 1227.5668709718348,
+          "new_sl": 1227.0253801881322,
+          "atr": 4.323556308791311,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.19
+        },
+        {
+          "time": "2018-08-02T16:00:00+00:00",
+          "old_sl": 1227.0253801881322,
+          "new_sl": 1226.9779958889799,
+          "atr": 4.361873715306226,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1213.02
+        },
+        {
+          "time": "2018-08-02T20:00:00+00:00",
+          "old_sl": 1226.9779958889799,
+          "new_sl": 1221.428139039767,
+          "atr": 4.518168449927207,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.97
+        },
+        {
+          "time": "2018-08-03T00:00:00+00:00",
+          "old_sl": 1221.428139039767,
+          "new_sl": 1220.850271965498,
+          "atr": 4.337584989218121,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.97
+        },
+        {
+          "time": "2018-08-03T04:00:00+00:00",
+          "old_sl": 1220.850271965498,
+          "new_sl": 1220.152252539391,
+          "atr": 4.316328918559698,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1206.34
+        },
+        {
+          "time": "2018-08-03T08:00:00+00:00",
+          "old_sl": 1220.152252539391,
+          "new_sl": 1218.080520215149,
+          "atr": 4.275162567234006,
+          "highest_since_entry": 1227.32,
+          "lowest_since_entry": 1204.4
+        }
+      ]
     },
     {
       "side": "short",
@@ -9739,8 +14328,60 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 16.29995554391094,
+      "pnl_result": "profit",
       "equity_after": 991.4314956983501,
-      "holding_bars": 15
+      "holding_bars": 15,
+      "sl_update_count": 6,
+      "trail_updates": [
+        {
+          "time": "2018-08-15T04:00:00+00:00",
+          "old_sl": 1204.1400213883662,
+          "new_sl": 1200.8518658082746,
+          "atr": 4.269333065085797,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1187.19
+        },
+        {
+          "time": "2018-08-15T08:00:00+00:00",
+          "old_sl": 1200.8518658082746,
+          "new_sl": 1199.592589679112,
+          "atr": 4.200809274722522,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1186.15
+        },
+        {
+          "time": "2018-08-15T12:00:00+00:00",
+          "old_sl": 1199.592589679112,
+          "new_sl": 1197.1195475591755,
+          "atr": 4.168608612242342,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1183.78
+        },
+        {
+          "time": "2018-08-15T16:00:00+00:00",
+          "old_sl": 1197.1195475591755,
+          "new_sl": 1190.2532941620914,
+          "atr": 4.582279425653606,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1175.59
+        },
+        {
+          "time": "2018-08-15T20:00:00+00:00",
+          "old_sl": 1190.2532941620914,
+          "new_sl": 1188.016201721942,
+          "atr": 4.670688038106932,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1173.07
+        },
+        {
+          "time": "2018-08-16T00:00:00+00:00",
+          "old_sl": 1188.016201721942,
+          "new_sl": 1177.640044456089,
+          "atr": 5.490638892527872,
+          "highest_since_entry": 1194.81,
+          "lowest_since_entry": 1160.07
+        }
+      ]
     },
     {
       "side": "long",
@@ -9759,8 +14400,84 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -1.5147484093977708,
+      "pnl_result": "loss",
       "equity_after": 989.9167472889524,
-      "holding_bars": 18
+      "holding_bars": 18,
+      "sl_update_count": 9,
+      "trail_updates": [
+        {
+          "time": "2018-08-21T00:00:00+00:00",
+          "old_sl": 1176.9076091445038,
+          "new_sl": 1178.2283690911609,
+          "atr": 5.0505096590122545,
+          "highest_since_entry": 1194.39,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T04:00:00+00:00",
+          "old_sl": 1178.2283690911609,
+          "new_sl": 1179.6019141560778,
+          "atr": 4.911901826225658,
+          "highest_since_entry": 1195.32,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T08:00:00+00:00",
+          "old_sl": 1179.6019141560778,
+          "new_sl": 1180.982348859215,
+          "atr": 4.786765981495243,
+          "highest_since_entry": 1196.3,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-21T20:00:00+00:00",
+          "old_sl": 1180.982348859215,
+          "new_sl": 1181.2403383541166,
+          "atr": 4.896769264338571,
+          "highest_since_entry": 1196.91,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T00:00:00+00:00",
+          "old_sl": 1181.2403383541166,
+          "new_sl": 1182.530742757394,
+          "atr": 4.75914288831439,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T04:00:00+00:00",
+          "old_sl": 1182.530742757394,
+          "new_sl": 1183.1431182747228,
+          "atr": 4.567775539149087,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T08:00:00+00:00",
+          "old_sl": 1183.1431182747228,
+          "new_sl": 1183.1974669693857,
+          "atr": 4.550791572067005,
+          "highest_since_entry": 1197.76,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-22T12:00:00+00:00",
+          "old_sl": 1183.1974669693857,
+          "new_sl": 1186.6970764715722,
+          "atr": 4.632163602633651,
+          "highest_since_entry": 1201.52,
+          "lowest_since_entry": 1184.91
+        },
+        {
+          "time": "2018-08-23T04:00:00+00:00",
+          "old_sl": 1186.6970764715722,
+          "new_sl": 1186.9752515906023,
+          "atr": 4.545233877936777,
+          "highest_since_entry": 1201.52,
+          "lowest_since_entry": 1184.91
+        }
+      ]
     },
     {
       "side": "short",
@@ -9779,8 +14496,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.370659611174734,
+      "pnl_result": "loss",
       "equity_after": 979.5460876777777,
-      "holding_bars": 4
+      "holding_bars": 4,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -9799,8 +14519,60 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.844457976527611,
+      "pnl_result": "loss",
       "equity_after": 973.7016297012501,
-      "holding_bars": 13
+      "holding_bars": 13,
+      "sl_update_count": 6,
+      "trail_updates": [
+        {
+          "time": "2018-08-27T16:00:00+00:00",
+          "old_sl": 1194.226968889141,
+          "new_sl": 1196.597633187892,
+          "atr": 4.916364628783747,
+          "highest_since_entry": 1212.33,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-27T20:00:00+00:00",
+          "old_sl": 1196.597633187892,
+          "new_sl": 1197.0082308173282,
+          "atr": 4.7880528695849165,
+          "highest_since_entry": 1212.33,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T00:00:00+00:00",
+          "old_sl": 1197.0082308173282,
+          "new_sl": 1197.6277857589478,
+          "atr": 4.613191950328861,
+          "highest_since_entry": 1212.39,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T04:00:00+00:00",
+          "old_sl": 1197.6277857589478,
+          "new_sl": 1198.0536582047373,
+          "atr": 4.480106811019657,
+          "highest_since_entry": 1212.39,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T08:00:00+00:00",
+          "old_sl": 1198.0536582047373,
+          "new_sl": 1199.1259683329702,
+          "atr": 4.529384895946813,
+          "highest_since_entry": 1213.62,
+          "lowest_since_entry": 1204.62
+        },
+        {
+          "time": "2018-08-28T12:00:00+00:00",
+          "old_sl": 1199.1259683329702,
+          "new_sl": 1199.9055420234724,
+          "atr": 4.470143117664901,
+          "highest_since_entry": 1214.21,
+          "lowest_since_entry": 1204.62
+        }
+      ]
     },
     {
       "side": "short",
@@ -9819,8 +14591,140 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 2.123006965846071,
+      "pnl_result": "profit",
       "equity_after": 975.8246366670962,
-      "holding_bars": 31
+      "holding_bars": 31,
+      "sl_update_count": 16,
+      "trail_updates": [
+        {
+          "time": "2018-09-24T04:00:00+00:00",
+          "old_sl": 1206.4916170830634,
+          "new_sl": 1205.8666370164274,
+          "atr": 4.402074067633576,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-24T12:00:00+00:00",
+          "old_sl": 1205.8666370164274,
+          "new_sl": 1205.656253345797,
+          "atr": 4.3363291705616085,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T00:00:00+00:00",
+          "old_sl": 1205.656253345797,
+          "new_sl": 1205.038081851573,
+          "atr": 4.143150578616568,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T04:00:00+00:00",
+          "old_sl": 1205.038081851573,
+          "new_sl": 1204.625933147889,
+          "atr": 4.014354108715379,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T08:00:00+00:00",
+          "old_sl": 1204.625933147889,
+          "new_sl": 1204.2660807801828,
+          "atr": 3.9019002438071415,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T12:00:00+00:00",
+          "old_sl": 1204.2660807801828,
+          "new_sl": 1204.0210750101699,
+          "atr": 3.825335940678055,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T16:00:00+00:00",
+          "old_sl": 1204.0210750101699,
+          "new_sl": 1203.8804267951575,
+          "atr": 3.7813833734867517,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-25T20:00:00+00:00",
+          "old_sl": 1203.8804267951575,
+          "new_sl": 1203.4366820240748,
+          "atr": 3.6427131325234066,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-26T00:00:00+00:00",
+          "old_sl": 1203.4366820240748,
+          "new_sl": 1203.0360618794982,
+          "atr": 3.5175193373431703,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-26T04:00:00+00:00",
+          "old_sl": 1203.0360618794982,
+          "new_sl": 1202.7874860309626,
+          "atr": 3.4398393846758055,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1191.78
+        },
+        {
+          "time": "2018-09-27T12:00:00+00:00",
+          "old_sl": 1202.7874860309626,
+          "new_sl": 1200.703848840675,
+          "atr": 4.41057776271095,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1186.59
+        },
+        {
+          "time": "2018-09-27T16:00:00+00:00",
+          "old_sl": 1200.703848840675,
+          "new_sl": 1196.3011453520553,
+          "atr": 4.519107922517316,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-27T20:00:00+00:00",
+          "old_sl": 1196.3011453520553,
+          "new_sl": 1195.9607778269085,
+          "atr": 4.412743070908935,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T00:00:00+00:00",
+          "old_sl": 1195.9607778269085,
+          "new_sl": 1195.281293696415,
+          "atr": 4.200404280129729,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T04:00:00+00:00",
+          "old_sl": 1195.281293696415,
+          "new_sl": 1194.8789155752424,
+          "atr": 4.074661117263324,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1181.84
+        },
+        {
+          "time": "2018-09-28T08:00:00+00:00",
+          "old_sl": 1194.8789155752424,
+          "new_sl": 1193.6269930341539,
+          "atr": 4.052185323173086,
+          "highest_since_entry": 1201.13,
+          "lowest_since_entry": 1180.66
+        }
+      ]
     },
     {
       "side": "long",
@@ -9839,8 +14743,76 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -3.643498616860188,
+      "pnl_result": "loss",
       "equity_after": 972.1811380502361,
-      "holding_bars": 23
+      "holding_bars": 23,
+      "sl_update_count": 8,
+      "trail_updates": [
+        {
+          "time": "2018-10-02T16:00:00+00:00",
+          "old_sl": 1187.593746883199,
+          "new_sl": 1192.849995466471,
+          "atr": 4.793751416727843,
+          "highest_since_entry": 1208.19,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-02T20:00:00+00:00",
+          "old_sl": 1192.849995466471,
+          "new_sl": 1193.2805672188658,
+          "atr": 4.659197744104431,
+          "highest_since_entry": 1208.19,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-03T04:00:00+00:00",
+          "old_sl": 1193.2805672188658,
+          "new_sl": 1193.7331931632057,
+          "atr": 4.536502136498202,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-03T08:00:00+00:00",
+          "old_sl": 1193.7331931632057,
+          "new_sl": 1193.8421079372624,
+          "atr": 4.50246626960547,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-04T00:00:00+00:00",
+          "old_sl": 1193.8421079372624,
+          "new_sl": 1193.9253828299707,
+          "atr": 4.476442865634158,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-04T04:00:00+00:00",
+          "old_sl": 1193.9253828299707,
+          "new_sl": 1194.3519983421156,
+          "atr": 4.343125518088854,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-05T08:00:00+00:00",
+          "old_sl": 1194.3519983421156,
+          "new_sl": 1194.460207105308,
+          "atr": 4.3093102795912275,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        },
+        {
+          "time": "2018-10-08T00:00:00+00:00",
+          "old_sl": 1194.460207105308,
+          "new_sl": 1194.55650138314,
+          "atr": 4.279218317768748,
+          "highest_since_entry": 1208.25,
+          "lowest_since_entry": 1197.92
+        }
+      ]
     },
     {
       "side": "short",
@@ -9859,8 +14831,100 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -2.163553261419838,
+      "pnl_result": "loss",
       "equity_after": 970.0175847888163,
-      "holding_bars": 18
+      "holding_bars": 18,
+      "sl_update_count": 11,
+      "trail_updates": [
+        {
+          "time": "2018-10-08T12:00:00+00:00",
+          "old_sl": 1205.2593177176034,
+          "new_sl": 1199.7917348619685,
+          "atr": 4.922417144365141,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1184.04
+        },
+        {
+          "time": "2018-10-08T16:00:00+00:00",
+          "old_sl": 1199.7917348619685,
+          "new_sl": 1199.440039514685,
+          "atr": 5.03438734833906,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-08T20:00:00+00:00",
+          "old_sl": 1199.440039514685,
+          "new_sl": 1199.258465263636,
+          "atr": 4.977645394886271,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T00:00:00+00:00",
+          "old_sl": 1199.258465263636,
+          "new_sl": 1198.8818606019477,
+          "atr": 4.859956438108692,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T04:00:00+00:00",
+          "old_sl": 1198.8818606019477,
+          "new_sl": 1198.4018705589515,
+          "atr": 4.709959549672356,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-09T08:00:00+00:00",
+          "old_sl": 1198.4018705589515,
+          "new_sl": 1198.0361655190263,
+          "atr": 4.595676724695752,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.33
+        },
+        {
+          "time": "2018-10-10T00:00:00+00:00",
+          "old_sl": 1198.0361655190263,
+          "new_sl": 1197.531168924118,
+          "atr": 4.490990288786842,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-10T04:00:00+00:00",
+          "old_sl": 1197.531168924118,
+          "new_sl": 1197.1217997152523,
+          "atr": 4.363062411016356,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-10T16:00:00+00:00",
+          "old_sl": 1197.1217997152523,
+          "new_sl": 1197.1109832268257,
+          "atr": 4.359682258383003,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-11T00:00:00+00:00",
+          "old_sl": 1197.1109832268257,
+          "new_sl": 1196.877980435375,
+          "atr": 4.286868886054715,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        },
+        {
+          "time": "2018-10-11T04:00:00+00:00",
+          "old_sl": 1196.877980435375,
+          "new_sl": 1196.53355326142,
+          "atr": 4.179235394193662,
+          "highest_since_entry": 1194.97,
+          "lowest_since_entry": 1183.16
+        }
+      ]
     },
     {
       "side": "long",
@@ -9879,8 +14943,172 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 20.816355979311723,
+      "pnl_result": "profit",
       "equity_after": 990.8339407681281,
-      "holding_bars": 30
+      "holding_bars": 30,
+      "sl_update_count": 20,
+      "trail_updates": [
+        {
+          "time": "2018-10-11T12:00:00+00:00",
+          "old_sl": 1187.3986646961162,
+          "new_sl": 1194.4689668307146,
+          "atr": 4.95969786540168,
+          "highest_since_entry": 1210.34,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-11T16:00:00+00:00",
+          "old_sl": 1194.4689668307146,
+          "new_sl": 1202.4031834856635,
+          "atr": 5.724005160730138,
+          "highest_since_entry": 1220.72,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-11T20:00:00+00:00",
+          "old_sl": 1202.4031834856635,
+          "new_sl": 1207.7669560938305,
+          "atr": 5.791576220677974,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T00:00:00+00:00",
+          "old_sl": 1207.7669560938305,
+          "new_sl": 1208.0027449442712,
+          "atr": 5.717892204915261,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T04:00:00+00:00",
+          "old_sl": 1208.0027449442712,
+          "new_sl": 1208.2902631625375,
+          "atr": 5.6280427617070306,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T08:00:00+00:00",
+          "old_sl": 1208.2902631625375,
+          "new_sl": 1208.3149586509276,
+          "atr": 5.620325421585099,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T12:00:00+00:00",
+          "old_sl": 1208.3149586509276,
+          "new_sl": 1208.3470330330042,
+          "atr": 5.610302177186164,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-12T20:00:00+00:00",
+          "old_sl": 1208.3470330330042,
+          "new_sl": 1208.6856152172331,
+          "atr": 5.504495244614598,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T00:00:00+00:00",
+          "old_sl": 1208.6856152172331,
+          "new_sl": 1209.068356987431,
+          "atr": 5.384888441427837,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T04:00:00+00:00",
+          "old_sl": 1209.068356987431,
+          "new_sl": 1209.826045774043,
+          "atr": 5.1481106956115585,
+          "highest_since_entry": 1226.3,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T08:00:00+00:00",
+          "old_sl": 1209.826045774043,
+          "new_sl": 1213.05161393304,
+          "atr": 5.443245645925017,
+          "highest_since_entry": 1230.47,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T12:00:00+00:00",
+          "old_sl": 1213.05161393304,
+          "new_sl": 1215.9737843663943,
+          "atr": 5.389442385501805,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-15T20:00:00+00:00",
+          "old_sl": 1215.9737843663943,
+          "new_sl": 1216.2125589689829,
+          "atr": 5.314825322192875,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-16T00:00:00+00:00",
+          "old_sl": 1216.2125589689829,
+          "new_sl": 1216.9588047569127,
+          "atr": 5.08162351346481,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-16T04:00:00+00:00",
+          "old_sl": 1216.9588047569127,
+          "new_sl": 1217.4140329885618,
+          "atr": 4.93936469107446,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T00:00:00+00:00",
+          "old_sl": 1217.4140329885618,
+          "new_sl": 1217.8146592238763,
+          "atr": 4.814168992538641,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T04:00:00+00:00",
+          "old_sl": 1217.8146592238763,
+          "new_sl": 1218.0738978507422,
+          "atr": 4.733156921643029,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-17T20:00:00+00:00",
+          "old_sl": 1218.0738978507422,
+          "new_sl": 1218.099892141687,
+          "atr": 4.72503370572282,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-18T00:00:00+00:00",
+          "old_sl": 1218.099892141687,
+          "new_sl": 1218.6976141315665,
+          "atr": 4.538245583885469,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        },
+        {
+          "time": "2018-10-18T04:00:00+00:00",
+          "old_sl": 1218.6976141315665,
+          "new_sl": 1219.1863559793117,
+          "atr": 4.385513756465085,
+          "highest_since_entry": 1233.22,
+          "lowest_since_entry": 1197.51
+        }
+      ]
     },
     {
       "side": "short",
@@ -9899,8 +15127,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -10.593223729549255,
+      "pnl_result": "loss",
       "equity_after": 980.2407170385789,
-      "holding_bars": 5
+      "holding_bars": 5,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -9919,8 +15150,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.190443705243116,
+      "pnl_result": "loss",
       "equity_after": 969.0502733333358,
-      "holding_bars": 20
+      "holding_bars": 20,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "short",
@@ -9939,8 +15173,180 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 17.009720866863248,
+      "pnl_result": "profit",
       "equity_after": 986.0599942001991,
-      "holding_bars": 35
+      "holding_bars": 35,
+      "sl_update_count": 21,
+      "trail_updates": [
+        {
+          "time": "2018-11-08T08:00:00+00:00",
+          "old_sl": 1237.5559393578728,
+          "new_sl": 1236.4112844646472,
+          "atr": 4.6941513952022405,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1221.39
+        },
+        {
+          "time": "2018-11-08T12:00:00+00:00",
+          "old_sl": 1236.4112844646472,
+          "new_sl": 1235.3523355743152,
+          "atr": 4.80385486697351,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-08T16:00:00+00:00",
+          "old_sl": 1235.3523355743152,
+          "new_sl": 1235.1960258904355,
+          "atr": 4.755008090761125,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-09T00:00:00+00:00",
+          "old_sl": 1235.1960258904355,
+          "new_sl": 1234.9833692626717,
+          "atr": 4.688552894584853,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1219.98
+        },
+        {
+          "time": "2018-11-09T04:00:00+00:00",
+          "old_sl": 1234.9833692626717,
+          "new_sl": 1232.4939857439092,
+          "atr": 4.6043705449716485,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1217.76
+        },
+        {
+          "time": "2018-11-09T08:00:00+00:00",
+          "old_sl": 1232.4939857439092,
+          "new_sl": 1232.2049867622015,
+          "atr": 4.51405836318797,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1217.76
+        },
+        {
+          "time": "2018-11-09T12:00:00+00:00",
+          "old_sl": 1232.2049867622015,
+          "new_sl": 1226.45005913633,
+          "atr": 4.918768480103119,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1210.71
+        },
+        {
+          "time": "2018-11-09T16:00:00+00:00",
+          "old_sl": 1226.45005913633,
+          "new_sl": 1222.8040549123066,
+          "atr": 5.048142160095755,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-09T20:00:00+00:00",
+          "old_sl": 1222.8040549123066,
+          "new_sl": 1222.2124795614275,
+          "atr": 4.863274862946061,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T00:00:00+00:00",
+          "old_sl": 1222.2124795614275,
+          "new_sl": 1221.6471595927542,
+          "atr": 4.6866123727356195,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T04:00:00+00:00",
+          "old_sl": 1221.6471595927542,
+          "new_sl": 1221.3942196218431,
+          "atr": 4.607568631825943,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1206.65
+        },
+        {
+          "time": "2018-11-12T08:00:00+00:00",
+          "old_sl": 1221.3942196218431,
+          "new_sl": 1218.6933467917115,
+          "atr": 4.629170872409794,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1203.88
+        },
+        {
+          "time": "2018-11-12T12:00:00+00:00",
+          "old_sl": 1218.6933467917115,
+          "new_sl": 1218.4946791637321,
+          "atr": 4.567087238666237,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1203.88
+        },
+        {
+          "time": "2018-11-12T16:00:00+00:00",
+          "old_sl": 1218.4946791637321,
+          "new_sl": 1216.6136306520368,
+          "atr": 4.498009578761499,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1202.22
+        },
+        {
+          "time": "2018-11-12T20:00:00+00:00",
+          "old_sl": 1216.6136306520368,
+          "new_sl": 1214.2706570340342,
+          "atr": 4.409580323135677,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1200.16
+        },
+        {
+          "time": "2018-11-13T04:00:00+00:00",
+          "old_sl": 1214.2706570340342,
+          "new_sl": 1213.6946787691418,
+          "atr": 4.229587115356764,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1200.16
+        },
+        {
+          "time": "2018-11-13T08:00:00+00:00",
+          "old_sl": 1213.6946787691418,
+          "new_sl": 1212.5107731427745,
+          "atr": 4.334616607116982,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1198.64
+        },
+        {
+          "time": "2018-11-13T12:00:00+00:00",
+          "old_sl": 1212.5107731427745,
+          "new_sl": 1210.8294322040047,
+          "atr": 4.568572563751476,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-13T20:00:00+00:00",
+          "old_sl": 1210.8294322040047,
+          "new_sl": 1210.6795308289634,
+          "atr": 4.521728384051015,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-14T00:00:00+00:00",
+          "old_sl": 1210.6795308289634,
+          "new_sl": 1210.2219929126088,
+          "atr": 4.378747785190227,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        },
+        {
+          "time": "2018-11-14T04:00:00+00:00",
+          "old_sl": 1210.2219929126088,
+          "new_sl": 1209.7902791331367,
+          "atr": 4.243837229105211,
+          "highest_since_entry": 1230.32,
+          "lowest_since_entry": 1196.21
+        }
+      ]
     }
   ],
   "open_position_at_end": {

@@ -149,6 +149,7 @@ class VBExperimentEngine(VolatilityBreakoutV1Engine):
                             "entry_commission": float(position["entry_commission"]),
                             "exit_commission": float(exit_commission),
                             "net_pnl": float(trade_net_pnl),
+                            "pnl_result": self.pnl_result(float(trade_net_pnl)),
                             "equity_after": float(balance),
                             "holding_bars": int(i - int(position["entry_idx"]) + 1),
                             "initial_risk_price": float(position["initial_risk_price"]),
@@ -158,6 +159,8 @@ class VBExperimentEngine(VolatilityBreakoutV1Engine):
                                 if float(position["initial_risk_money"]) > 0.0
                                 else 0.0
                             ),
+                            "sl_update_count": int(position["sl_update_count"]),
+                            "trail_updates": list(position["trail_updates"]),
                         }
                     )
                     position = None
@@ -187,6 +190,21 @@ class VBExperimentEngine(VolatilityBreakoutV1Engine):
                             position["sl"] = float(min(old_sl, new_sl))
                         if float(position["sl"]) != old_sl:
                             trail_move_count += 1
+                            position["sl_update_count"] = int(position["sl_update_count"]) + 1
+                            position["trail_updates"].append(
+                                {
+                                    "time": bar_time.isoformat(),
+                                    "old_sl": float(old_sl),
+                                    "new_sl": float(position["sl"]),
+                                    "atr": float(atr_now),
+                                    "highest_since_entry": float(
+                                        position["highest_since_entry"]
+                                    ),
+                                    "lowest_since_entry": float(
+                                        position["lowest_since_entry"]
+                                    ),
+                                }
+                            )
 
             if position is None and i + 1 < len(self.df):
                 signal, reject_reason = self.calc_signal(row)
@@ -244,6 +262,8 @@ class VBExperimentEngine(VolatilityBreakoutV1Engine):
                             "entry_commission": float(entry_commission),
                             "initial_risk_price": float(initial_risk_price),
                             "initial_risk_money": float(initial_risk_money),
+                            "sl_update_count": 0,
+                            "trail_updates": [],
                         }
 
             floating = 0.0
@@ -416,6 +436,7 @@ UNIFIED_TRADE_COLUMNS = [
     "commission",
     "swap",
     "net_pnl",
+    "pnl_result",
     "initial_risk_price",
     "initial_risk_money",
     "r_multiple",
@@ -450,6 +471,8 @@ UNIFIED_TRADE_COLUMNS = [
     "max_favorable_excursion_r",
     "max_adverse_excursion_r",
     "post_entry_holding_bucket",
+    "sl_update_count",
+    "trail_updates_json",
 ]
 
 
@@ -537,6 +560,7 @@ def report_to_unified_rows(
             "commission": commission,
             "swap": float(trade.get("swap_total", 0.0)),
             "net_pnl": net_pnl,
+            "pnl_result": trade.get("pnl_result", VBExperimentEngine.pnl_result(net_pnl)),
             "initial_risk_price": float(trade.get("initial_risk_price", np.nan)),
             "initial_risk_money": float(trade.get("initial_risk_money", np.nan)),
             "r_multiple": float(trade.get("r_multiple", np.nan)),
@@ -573,6 +597,11 @@ def report_to_unified_rows(
             "max_favorable_excursion_r": "",
             "max_adverse_excursion_r": "",
             "post_entry_holding_bucket": _bucket_holding(holding_bars),
+            "sl_update_count": int(trade.get("sl_update_count", 0)),
+            "trail_updates_json": json.dumps(
+                trade.get("trail_updates", []),
+                separators=(",", ":"),
+            ),
         }
         rows.append(row)
     return rows

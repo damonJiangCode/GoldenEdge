@@ -256,6 +256,14 @@ class VolatilityBreakoutV1Engine:
         return None, None
 
     @staticmethod
+    def pnl_result(net_pnl: float, epsilon: float = 1e-9) -> str:
+        if net_pnl > epsilon:
+            return "profit"
+        if net_pnl < -epsilon:
+            return "loss"
+        return "flat"
+
+    @staticmethod
     def compute_performance_metrics(
         trades: list[dict[str, Any]],
         initial_balance: float,
@@ -398,8 +406,11 @@ class VolatilityBreakoutV1Engine:
                             "entry_commission": float(position["entry_commission"]),
                             "exit_commission": float(exit_commission),
                             "net_pnl": float(trade_net_pnl),
+                            "pnl_result": self.pnl_result(float(trade_net_pnl)),
                             "equity_after": float(balance),
                             "holding_bars": int(i - int(position["entry_idx"]) + 1),
+                            "sl_update_count": int(position["sl_update_count"]),
+                            "trail_updates": list(position["trail_updates"]),
                         }
                     )
                     position = None
@@ -429,6 +440,21 @@ class VolatilityBreakoutV1Engine:
                             position["sl"] = float(min(old_sl, new_sl))
                         if float(position["sl"]) != old_sl:
                             trail_move_count += 1
+                            position["sl_update_count"] = int(position["sl_update_count"]) + 1
+                            position["trail_updates"].append(
+                                {
+                                    "time": bar_time.isoformat(),
+                                    "old_sl": float(old_sl),
+                                    "new_sl": float(position["sl"]),
+                                    "atr": float(atr_now),
+                                    "highest_since_entry": float(
+                                        position["highest_since_entry"]
+                                    ),
+                                    "lowest_since_entry": float(
+                                        position["lowest_since_entry"]
+                                    ),
+                                }
+                            )
 
             if position is None and i + 1 < len(self.df):
                 signal, reject_reason = self.calc_signal(row)
@@ -472,6 +498,8 @@ class VolatilityBreakoutV1Engine:
                             "highest_since_entry": float(entry_row["high"]),
                             "lowest_since_entry": float(entry_row["low"]),
                             "entry_commission": float(entry_commission),
+                            "sl_update_count": 0,
+                            "trail_updates": [],
                         }
 
             floating = 0.0

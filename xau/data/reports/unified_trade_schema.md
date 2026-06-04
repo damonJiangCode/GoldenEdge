@@ -61,11 +61,14 @@ These fields must exist for every strategy.
 | `commission` | float | Total commission for the trade |
 | `swap` | float | Total swap for the trade |
 | `net_pnl` | float | Final net PnL |
+| `pnl_result` | string | `profit`, `loss`, or `flat` based on `net_pnl` |
 | `initial_risk_price` | float | Absolute price distance between entry and initial SL |
 | `initial_risk_money` | float | Money risk represented by initial SL |
 | `r_multiple` | float | `net_pnl / initial_risk_money` |
 | `holding_bars` | int | Number of strategy timeframe bars held |
 | `holding_hours` | float | Holding duration in hours |
+| `sl_update_count` | int | Number of trailing stop updates during the trade |
+| `trail_updates_json` | JSON string | Stop update history; each item records time, old SL, new SL, ATR, and high/low since entry |
 
 ## Recommended Entry Snapshot Fields
 
@@ -147,7 +150,10 @@ For `VB / volatility_breakout_v1 / H4`, existing report fields can map as:
 | `swap_total` | `swap` |
 | `entry_commission + exit_commission` | `commission` |
 | `net_pnl` | `net_pnl` |
+| `pnl_result` | `pnl_result` |
 | `holding_bars` | `holding_bars` |
+| `sl_update_count` | `sl_update_count` |
+| `trail_updates` | `trail_updates_json` |
 
 Missing fields to add for VB export:
 
