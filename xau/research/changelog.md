@@ -1,5 +1,142 @@
 # Strategy Changelog
 
+## [2026-06-04-DAILY-SUMMARY] VB v1 / unified trades / regime prep
+
+- 日期：2026-06-04
+- 变更类型：`daily-summary`
+- 范围：`VB v1` 单质量研究、unified trade 输出、regime 项目准备。
+
+### 今日完成事项
+
+1. 明确组合研究方向：
+   - 将 `VB`、`MR`、`TF` 定义为三个策略因子。
+   - `Regime` 不直接预测涨跌，第一阶段只做策略适用环境判断。
+   - 后续组合层目标是降低回撤、减少坏年份、减少策略冲突，而不是追求单策略最高收益。
+
+2. 建立 unified trade schema：
+   - 文件：`xau/data/reports/unified_trade_schema.md`
+   - 目的：让 `VB`、`MR`、`TF` 后续都输出同一套 trade-level 字段。
+   - 关键字段包括：
+   - `strategy`
+   - `engine_version`
+   - `signal_time_utc`
+   - `entry_time_utc`
+   - `exit_time_utc`
+   - `initial_sl`
+   - `final_sl`
+   - `net_pnl`
+   - `pnl_result`
+   - `initial_risk_money`
+   - `r_multiple`
+   - `entry_atr`
+   - `entry_atr_ratio`
+   - `entry_h1_adx`
+   - `adx_bucket`
+   - `atr_ratio_bucket`
+   - `post_entry_holding_bucket`
+   - `sl_update_count`
+   - `trail_updates_json`
+
+3. 将 `VB v1` baseline 和 7 个过滤实验统一输出为 regime 可读格式：
+   - 输出目录：`xau/data/optimizatons/vb/`
+   - 每个版本只保留：
+   - `summary.csv`
+   - `summary.json`
+   - `unified_trades.csv`
+   - 顶层对照表：
+   - `xau/data/optimizatons/vb/comparison_summary.csv`
+   - `xau/data/optimizatons/vb/comparison_summary.json`
+
+4. 清理 optimization 旧 JSON report 输出：
+   - 已删除：`xau/data/optimizatons/vb/*/reports/report_YEAR.json`
+   - 保留正式 engine report：
+   - `xau/data/reports/volatility_breakout/v1/H4/report_2015.json`
+   - ...
+   - `xau/data/reports/volatility_breakout/v1/H4/report_2025.json`
+
+5. 新增 7 个 VB v1 过滤实验脚本：
+   - `01_close_breakout_confirm.py`
+   - `02_candle_close_quality.py`
+   - `03_adx20_rising.py`
+   - `04_atr_ratio_1_1.py`
+   - `05_overextension_filter.py`
+   - `06_early_failure_exit.py`
+   - `07_candle_quality_adx20_rising.py`
+
+6. 新增统一 runner：
+   - `xau/scripts/optimizatons/vb/run_all_unified.py`
+   - 用途：一次性重跑 baseline + `01` 到 `07`，覆盖 unified 输出。
+
+7. 增强 `VB v1` 正式 report 与 unified trades：
+   - 每笔 trade 新增 `sl_update_count`。
+   - 每笔 trade 新增 `trail_updates` / `trail_updates_json`。
+   - 每笔 trade 新增 `pnl_result`，区分最终赚钱还是亏钱。
+
+### 当前 VB v1 对照结果
+
+| Version | Avg Return | PF | Positive Years | Avg Trades | Profit Trades / Total | Profit Ratio |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| baseline | `25.73%` | `2.12` | `11/11` | `25.55` | `123 / 281` | `43.77%` |
+| 01 close confirm | `17.76%` | `2.65` | `9/11` | `20.73` | `101 / 228` | `44.30%` |
+| 02 candle quality | `19.34%` | `2.38` | `10/11` | `20.36` | `99 / 224` | `44.20%` |
+| 03 ADX20 rising | `16.01%` | `2.46` | `10/11` | `17.18` | `85 / 189` | `44.97%` |
+| 04 ATRr 1.1 | `17.89%` | `1.91` | `9/11` | `16.82` | `86 / 185` | `46.49%` |
+| 05 overextension | `16.69%` | `2.09` | `9/11` | `22.00` | `103 / 242` | `42.56%` |
+| 06 early failure | `17.29%` | `1.80` | `8/11` | `31.00` | `140 / 341` | `41.06%` |
+| 07 candle + ADX | `10.67%` | `2.33` | `9/11` | `13.64` | `68 / 150` | `45.33%` |
+
+### SL 更新统计结论
+
+- `VB v1` 是高度依赖 trailing stop 的趋势策略。
+- baseline 中：
+  - 交易数：`281`
+  - 至少更新过一次 SL：`80.78%`
+  - 平均每笔 SL 更新次数：`12.33`
+  - 更新过 SL 的交易赚钱率：`54.19%`
+  - 未更新 SL 的交易赚钱率：`0.00%`
+- 解释：
+  - 未更新 SL 的交易基本等价于突破后快速失败。
+  - 更新过 SL 的交易才进入可管理趋势状态。
+  - 因此后续不应只看传统 win rate，而应重点看 `pnl_result`、`r_multiple`、`sl_update_count`、`trail_updates_json` 和 regime bucket。
+
+### 今日取留判断
+
+- 主策略继续保留 `00_baseline_current_v1_default`。
+  - 理由：唯一保持 `11/11` 正收益，排除 `2025` 后仍保持 `10/10` 正收益。
+- `02_candle_close_quality` 保留为重点研究候选。
+  - 理由：PF 和赚钱率有改善，但交易数仍相对足够。
+- `03_adx20_rising` 保留为 regime 候选条件。
+  - 理由：PF 和回撤结构较好，但交易数偏少。
+- `01_close_breakout_confirm` 保留为对照。
+  - 理由：PF 高，但正收益年份下降。
+- `04_atr_ratio_1_1` 暂不推进。
+  - 理由：赚钱率最高，但整体收益和正收益年份不如 baseline。
+- `05_overextension_filter` 暂不推进。
+  - 理由：没有改善赚钱率。
+- `06_early_failure_exit` 丢弃当前版本。
+  - 理由：交易结构变差，PF 和正收益年份下降。
+- `07_candle_quality_adx20_rising` 暂不推进。
+  - 理由：过滤过猛，交易数过低，收益明显下降。
+
+### 当前结论
+
+- `VB v1 baseline` 已经可以作为第一个策略因子进入组合研究。
+- 不建议继续在 `VB v1` 内部强行追求更高赚钱率。
+- 后续应把 `02`、`03` 作为 regime selector 的候选条件，而不是直接替换主策略。
+- 下一阶段应开始开发第二个因子，优先建议 `MR`，因为它和 `VB` 的市场适用环境互补性更强。
+
+### 下一步
+
+1. 用 `unified_trades.csv` 做 `VB` bucket analysis。
+2. 重点分析：
+   - `pnl_result`
+   - `r_multiple`
+   - `sl_update_count`
+   - `adx_bucket`
+   - `atr_ratio_bucket`
+   - `post_entry_holding_bucket`
+3. 再开始 `MR v1` 因子开发，并按同一份 unified trade schema 输出。
+
 ## [2026-06-04-VB-V1-UNIFIED-OPTIMIZATION-OUTPUTS] volatility_breakout / v1 / H4
 
 - 日期：2026-06-04
