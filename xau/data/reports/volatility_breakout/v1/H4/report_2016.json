@@ -8735,8 +8735,52 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -7.5562058914179495,
+      "pnl_result": "loss",
       "equity_after": 992.4437941085821,
-      "holding_bars": 9
+      "holding_bars": 9,
+      "sl_update_count": 5,
+      "trail_updates": [
+        {
+          "time": "2016-02-11T16:00:00+00:00",
+          "old_sl": 1209.1588180355823,
+          "new_sl": 1225.0546444153924,
+          "atr": 11.964173620189856,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T08:00:00+00:00",
+          "old_sl": 1225.0546444153924,
+          "new_sl": 1225.377649082362,
+          "atr": 11.863234661761847,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T12:00:00+00:00",
+          "old_sl": 1225.377649082362,
+          "new_sl": 1225.6983884336219,
+          "atr": 11.763003614493131,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T16:00:00+00:00",
+          "old_sl": 1225.6983884336219,
+          "new_sl": 1226.2979321169346,
+          "atr": 11.5756462134579,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T20:00:00+00:00",
+          "old_sl": 1226.2979321169346,
+          "new_sl": 1227.983794108582,
+          "atr": 11.048814341068052,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        }
+      ]
     },
     {
       "side": "long",
@@ -8755,8 +8799,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -21.458196529314634,
+      "pnl_result": "loss",
       "equity_after": 970.9855975792675,
-      "holding_bars": 3
+      "holding_bars": 3,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -8775,8 +8822,28 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.475855478424638,
+      "pnl_result": "loss",
       "equity_after": 965.5097421008429,
-      "holding_bars": 11
+      "holding_bars": 11,
+      "sl_update_count": 2,
+      "trail_updates": [
+        {
+          "time": "2016-04-21T08:00:00+00:00",
+          "old_sl": 1235.6678962323588,
+          "new_sl": 1236.8690787155426,
+          "atr": 7.265912901392906,
+          "highest_since_entry": 1260.12,
+          "lowest_since_entry": 1245.5
+        },
+        {
+          "time": "2016-04-21T12:00:00+00:00",
+          "old_sl": 1236.8690787155426,
+          "new_sl": 1245.5341445215754,
+          "atr": 7.661204837007696,
+          "highest_since_entry": 1270.05,
+          "lowest_since_entry": 1245.5
+        }
+      ]
     },
     {
       "side": "long",
@@ -8795,8 +8862,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 15.817864760460633,
+      "pnl_result": "profit",
       "equity_after": 981.3276068613036,
-      "holding_bars": 21
+      "holding_bars": 21,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2016-04-29T04:00:00+00:00",
+          "old_sl": 1247.7521575588414,
+          "new_sl": 1256.3871734875265,
+          "atr": 7.6602582851479815,
+          "highest_since_entry": 1280.9,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T12:00:00+00:00",
+          "old_sl": 1256.3871734875265,
+          "new_sl": 1256.426471017306,
+          "atr": 7.647977807091901,
+          "highest_since_entry": 1280.9,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T16:00:00+00:00",
+          "old_sl": 1256.426471017306,
+          "new_sl": 1269.4785802303554,
+          "atr": 8.481693678013905,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T20:00:00+00:00",
+          "old_sl": 1269.4785802303554,
+          "new_sl": 1269.762395928187,
+          "atr": 8.393001272441484,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T00:00:00+00:00",
+          "old_sl": 1269.762395928187,
+          "new_sl": 1270.4739390761738,
+          "atr": 8.170644038695663,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T04:00:00+00:00",
+          "old_sl": 1270.4739390761738,
+          "new_sl": 1271.4318005707328,
+          "atr": 7.871312321645974,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T08:00:00+00:00",
+          "old_sl": 1271.4318005707328,
+          "new_sl": 1271.969243387109,
+          "atr": 7.703361441528403,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T12:00:00+00:00",
+          "old_sl": 1271.969243387109,
+          "new_sl": 1278.6960117166013,
+          "atr": 7.798121338562103,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-03T00:00:00+00:00",
+          "old_sl": 1278.6960117166013,
+          "new_sl": 1279.7652389728037,
+          "atr": 7.463987820998883,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-03T04:00:00+00:00",
+          "old_sl": 1279.7652389728037,
+          "new_sl": 1280.1478647604606,
+          "atr": 7.344417262356103,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        }
+      ]
     },
     {
       "side": "long",
@@ -8815,8 +8966,332 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 54.70999959290971,
+      "pnl_result": "profit",
       "equity_after": 1036.0376064542133,
-      "holding_bars": 56
+      "holding_bars": 56,
+      "sl_update_count": 40,
+      "trail_updates": [
+        {
+          "time": "2016-06-03T20:00:00+00:00",
+          "old_sl": 1222.7576455968788,
+          "new_sl": 1223.87367716981,
+          "atr": 6.473850884434321,
+          "highest_since_entry": 1244.59,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T00:00:00+00:00",
+          "old_sl": 1223.87367716981,
+          "new_sl": 1228.3345573719666,
+          "atr": 6.348575821260443,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T04:00:00+00:00",
+          "old_sl": 1228.3345573719666,
+          "new_sl": 1228.7730889882548,
+          "atr": 6.211534691170416,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T08:00:00+00:00",
+          "old_sl": 1228.7730889882548,
+          "new_sl": 1229.669439774808,
+          "atr": 5.931425070372527,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T12:00:00+00:00",
+          "old_sl": 1229.669439774808,
+          "new_sl": 1229.7337655051788,
+          "atr": 5.911323279631639,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T20:00:00+00:00",
+          "old_sl": 1229.7337655051788,
+          "new_sl": 1229.794430461098,
+          "atr": 5.892365480906878,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T00:00:00+00:00",
+          "old_sl": 1229.794430461098,
+          "new_sl": 1230.4075425710196,
+          "atr": 5.70076794655639,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T04:00:00+00:00",
+          "old_sl": 1230.4075425710196,
+          "new_sl": 1230.8351466730896,
+          "atr": 5.567141664659499,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T08:00:00+00:00",
+          "old_sl": 1230.8351466730896,
+          "new_sl": 1231.421921910726,
+          "atr": 5.383774402898107,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T00:00:00+00:00",
+          "old_sl": 1231.421921910726,
+          "new_sl": 1232.0931444630428,
+          "atr": 5.174017355299171,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T04:00:00+00:00",
+          "old_sl": 1232.0931444630428,
+          "new_sl": 1232.3989198585398,
+          "atr": 5.231587544206374,
+          "highest_since_entry": 1249.14,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T08:00:00+00:00",
+          "old_sl": 1232.3989198585398,
+          "new_sl": 1236.5375684400726,
+          "atr": 5.275759862477358,
+          "highest_since_entry": 1253.42,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T12:00:00+00:00",
+          "old_sl": 1236.5375684400726,
+          "new_sl": 1240.818313551496,
+          "atr": 5.356777015157553,
+          "highest_since_entry": 1257.96,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T16:00:00+00:00",
+          "old_sl": 1240.818313551496,
+          "new_sl": 1246.847576869246,
+          "atr": 5.457007228360584,
+          "highest_since_entry": 1264.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T20:00:00+00:00",
+          "old_sl": 1246.847576869246,
+          "new_sl": 1247.2240356643,
+          "atr": 5.339363854906253,
+          "highest_since_entry": 1264.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T00:00:00+00:00",
+          "old_sl": 1247.2240356643,
+          "new_sl": 1249.1167474025642,
+          "atr": 5.357266436698658,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T04:00:00+00:00",
+          "old_sl": 1249.1167474025642,
+          "new_sl": 1249.438408302381,
+          "atr": 5.2567474055059,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T08:00:00+00:00",
+          "old_sl": 1249.438408302381,
+          "new_sl": 1249.5313791379253,
+          "atr": 5.227694019398346,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T12:00:00+00:00",
+          "old_sl": 1249.5313791379253,
+          "new_sl": 1249.7091377709305,
+          "atr": 5.1721444465841815,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T16:00:00+00:00",
+          "old_sl": 1249.7091377709305,
+          "new_sl": 1253.4267707872928,
+          "atr": 5.704134128971035,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T20:00:00+00:00",
+          "old_sl": 1253.4267707872928,
+          "new_sl": 1254.1408585882004,
+          "atr": 5.4809816911874005,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T00:00:00+00:00",
+          "old_sl": 1254.1408585882004,
+          "new_sl": 1254.5365115461861,
+          "atr": 5.357340141816872,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T04:00:00+00:00",
+          "old_sl": 1254.5365115461861,
+          "new_sl": 1255.1553321500298,
+          "atr": 5.163958703115673,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T12:00:00+00:00",
+          "old_sl": 1255.1553321500298,
+          "new_sl": 1255.1933221089544,
+          "atr": 5.152086840951769,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T16:00:00+00:00",
+          "old_sl": 1255.1933221089544,
+          "new_sl": 1260.577513386886,
+          "atr": 5.472652066598062,
+          "highest_since_entry": 1278.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T00:00:00+00:00",
+          "old_sl": 1260.577513386886,
+          "new_sl": 1260.7487232774681,
+          "atr": 5.487898975791186,
+          "highest_since_entry": 1278.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T04:00:00+00:00",
+          "old_sl": 1260.7487232774681,
+          "new_sl": 1261.166528757649,
+          "atr": 5.357334763234679,
+          "highest_since_entry": 1278.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T08:00:00+00:00",
+          "old_sl": 1261.166528757649,
+          "new_sl": 1265.8699195606741,
+          "atr": 5.712525137289356,
+          "highest_since_entry": 1284.15,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T12:00:00+00:00",
+          "old_sl": 1265.8699195606741,
+          "new_sl": 1269.0367824491973,
+          "atr": 5.641630484625833,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T00:00:00+00:00",
+          "old_sl": 1269.0367824491973,
+          "new_sl": 1269.098603877874,
+          "atr": 5.622311288164322,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T04:00:00+00:00",
+          "old_sl": 1269.098603877874,
+          "new_sl": 1269.464846458026,
+          "atr": 5.507860481866869,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T08:00:00+00:00",
+          "old_sl": 1269.464846458026,
+          "new_sl": 1269.4849288538812,
+          "atr": 5.501584733162098,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T16:00:00+00:00",
+          "old_sl": 1269.4849288538812,
+          "new_sl": 1270.721056001561,
+          "atr": 5.940294999512214,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T20:00:00+00:00",
+          "old_sl": 1270.721056001561,
+          "new_sl": 1270.8445520014495,
+          "atr": 5.901702499547063,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T00:00:00+00:00",
+          "old_sl": 1270.8445520014495,
+          "new_sl": 1271.4003697156315,
+          "atr": 5.728009463865131,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T04:00:00+00:00",
+          "old_sl": 1271.4003697156315,
+          "new_sl": 1271.957629021658,
+          "atr": 5.553865930731905,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T20:00:00+00:00",
+          "old_sl": 1271.957629021658,
+          "new_sl": 1277.076824252592,
+          "atr": 6.150992421065027,
+          "highest_since_entry": 1296.76,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T00:00:00+00:00",
+          "old_sl": 1277.076824252592,
+          "new_sl": 1277.8373368059783,
+          "atr": 6.185207248131818,
+          "highest_since_entry": 1297.63,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T04:00:00+00:00",
+          "old_sl": 1277.8373368059783,
+          "new_sl": 1282.9053841769796,
+          "atr": 6.232692444693825,
+          "highest_since_entry": 1302.85,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T08:00:00+00:00",
+          "old_sl": 1282.9053841769796,
+          "new_sl": 1291.9399995929098,
+          "atr": 6.712500127215698,
+          "highest_since_entry": 1313.42,
+          "lowest_since_entry": 1235.94
+        }
+      ]
     },
     {
       "side": "short",
@@ -8835,8 +9310,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -6.829975244805883,
+      "pnl_result": "loss",
       "equity_after": 1029.2076312094073,
-      "holding_bars": 16
+      "holding_bars": 16,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2016-06-22T00:00:00+00:00",
+          "old_sl": 1292.0200833137203,
+          "new_sl": 1291.2344644157233,
+          "atr": 8.37327012991352,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1264.44
+        },
+        {
+          "time": "2016-06-22T04:00:00+00:00",
+          "old_sl": 1291.2344644157233,
+          "new_sl": 1290.0611455288858,
+          "atr": 8.00660797777684,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1264.44
+        },
+        {
+          "time": "2016-06-22T08:00:00+00:00",
+          "old_sl": 1290.0611455288858,
+          "new_sl": 1286.642206562537,
+          "atr": 7.972564550792778,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T12:00:00+00:00",
+          "old_sl": 1286.642206562537,
+          "new_sl": 1286.1067632366414,
+          "atr": 7.805238511450428,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T16:00:00+00:00",
+          "old_sl": 1286.1067632366414,
+          "new_sl": 1285.59128014831,
+          "atr": 7.644150046346823,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T20:00:00+00:00",
+          "old_sl": 1285.59128014831,
+          "new_sl": 1285.1469029948591,
+          "atr": 7.505282185893466,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-23T00:00:00+00:00",
+          "old_sl": 1285.1469029948591,
+          "new_sl": 1283.1234099237977,
+          "atr": 7.454190601186788,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1259.27
+        },
+        {
+          "time": "2016-06-23T04:00:00+00:00",
+          "old_sl": 1283.1234099237977,
+          "new_sl": 1282.4915949292408,
+          "atr": 7.256748415387736,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1259.27
+        },
+        {
+          "time": "2016-06-23T20:00:00+00:00",
+          "old_sl": 1282.4915949292408,
+          "new_sl": 1279.7428964174835,
+          "atr": 7.929030130463608,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1254.37
+        },
+        {
+          "time": "2016-06-24T00:00:00+00:00",
+          "old_sl": 1279.7428964174835,
+          "new_sl": 1279.399975244806,
+          "atr": 9.081242264001935,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1250.34
+        }
+      ]
     },
     {
       "side": "long",
@@ -8855,8 +9414,244 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 14.567737752944321,
+      "pnl_result": "profit",
       "equity_after": 1043.7753689623514,
-      "holding_bars": 61
+      "holding_bars": 61,
+      "sl_update_count": 29,
+      "trail_updates": [
+        {
+          "time": "2016-06-29T08:00:00+00:00",
+          "old_sl": 1302.35473533798,
+          "new_sl": 1303.305159087746,
+          "atr": 10.645262785079305,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-29T12:00:00+00:00",
+          "old_sl": 1303.305159087746,
+          "new_sl": 1304.05836201005,
+          "atr": 10.40988687185935,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-29T20:00:00+00:00",
+          "old_sl": 1304.05836201005,
+          "new_sl": 1304.1048427535634,
+          "atr": 10.395361639511371,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T00:00:00+00:00",
+          "old_sl": 1304.1048427535634,
+          "new_sl": 1305.4203539854518,
+          "atr": 9.984264379546264,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T04:00:00+00:00",
+          "old_sl": 1305.4203539854518,
+          "new_sl": 1306.811042986491,
+          "atr": 9.549674066721538,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T08:00:00+00:00",
+          "old_sl": 1306.811042986491,
+          "new_sl": 1307.5401113445987,
+          "atr": 9.32184020481285,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T12:00:00+00:00",
+          "old_sl": 1307.5401113445987,
+          "new_sl": 1308.4159605342702,
+          "atr": 9.048137333040504,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T16:00:00+00:00",
+          "old_sl": 1308.4159605342702,
+          "new_sl": 1308.5503919246796,
+          "atr": 9.006127523537614,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T20:00:00+00:00",
+          "old_sl": 1308.5503919246796,
+          "new_sl": 1308.7232210729167,
+          "atr": 8.9521184147135,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T00:00:00+00:00",
+          "old_sl": 1308.7232210729167,
+          "new_sl": 1309.402562424851,
+          "atr": 8.739824242233965,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T08:00:00+00:00",
+          "old_sl": 1309.402562424851,
+          "new_sl": 1309.6267298459177,
+          "atr": 8.838521923150717,
+          "highest_since_entry": 1337.91,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T12:00:00+00:00",
+          "old_sl": 1309.6267298459177,
+          "new_sl": 1310.4446777140665,
+          "atr": 8.582913214354237,
+          "highest_since_entry": 1337.91,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T16:00:00+00:00",
+          "old_sl": 1310.4446777140665,
+          "new_sl": 1314.1690578773475,
+          "atr": 8.503419413328936,
+          "highest_since_entry": 1341.38,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T20:00:00+00:00",
+          "old_sl": 1314.1690578773475,
+          "new_sl": 1317.1998394575369,
+          "atr": 8.52817516951972,
+          "highest_since_entry": 1344.49,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T00:00:00+00:00",
+          "old_sl": 1317.1998394575369,
+          "new_sl": 1318.2708509248557,
+          "atr": 8.299734085982593,
+          "highest_since_entry": 1344.83,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T04:00:00+00:00",
+          "old_sl": 1318.2708509248557,
+          "new_sl": 1328.7599330016517,
+          "atr": 8.921895936983836,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T08:00:00+00:00",
+          "old_sl": 1328.7599330016517,
+          "new_sl": 1328.9272235015337,
+          "atr": 8.869617655770693,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T12:00:00+00:00",
+          "old_sl": 1328.9272235015337,
+          "new_sl": 1329.9785646799955,
+          "atr": 8.541073537501372,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T16:00:00+00:00",
+          "old_sl": 1329.9785646799955,
+          "new_sl": 1330.7925243457103,
+          "atr": 8.286711141965561,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-05T00:00:00+00:00",
+          "old_sl": 1330.7925243457103,
+          "new_sl": 1331.6854868924452,
+          "atr": 8.007660346110887,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T00:00:00+00:00",
+          "old_sl": 1331.6854868924452,
+          "new_sl": 1338.2815915742797,
+          "atr": 8.227627633037567,
+          "highest_since_entry": 1364.61,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T04:00:00+00:00",
+          "old_sl": 1338.2815915742797,
+          "new_sl": 1344.583049318974,
+          "atr": 8.267797087820595,
+          "highest_since_entry": 1371.04,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T08:00:00+00:00",
+          "old_sl": 1344.583049318974,
+          "new_sl": 1344.9231172247617,
+          "atr": 8.161525867261979,
+          "highest_since_entry": 1371.04,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T12:00:00+00:00",
+          "old_sl": 1344.9231172247617,
+          "new_sl": 1349.0226088515644,
+          "atr": 8.133559733886122,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-07T04:00:00+00:00",
+          "old_sl": 1349.0226088515644,
+          "new_sl": 1349.6153494744256,
+          "atr": 7.948328289242017,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-07T08:00:00+00:00",
+          "old_sl": 1349.6153494744256,
+          "new_sl": 1350.634395940538,
+          "atr": 7.6298762685818735,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T00:00:00+00:00",
+          "old_sl": 1350.634395940538,
+          "new_sl": 1351.0575538436512,
+          "atr": 7.497639423858971,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T04:00:00+00:00",
+          "old_sl": 1351.0575538436512,
+          "new_sl": 1351.6878714262475,
+          "atr": 7.300665179297617,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T08:00:00+00:00",
+          "old_sl": 1351.6878714262475,
+          "new_sl": 1352.1977377529442,
+          "atr": 7.141331952204926,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        }
+      ]
     },
     {
       "side": "short",
@@ -8875,8 +9670,212 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 29.654088387107507,
+      "pnl_result": "profit",
       "equity_after": 1073.4294573494587,
-      "holding_bars": 29
+      "holding_bars": 29,
+      "sl_update_count": 25,
+      "trail_updates": [
+        {
+          "time": "2016-10-04T16:00:00+00:00",
+          "old_sl": 1307.1583700280084,
+          "new_sl": 1292.8049018589215,
+          "atr": 6.97653183091295,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1270.48
+        },
+        {
+          "time": "2016-10-04T20:00:00+00:00",
+          "old_sl": 1292.8049018589215,
+          "new_sl": 1289.1748374404272,
+          "atr": 6.954636700133443,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.92
+        },
+        {
+          "time": "2016-10-05T00:00:00+00:00",
+          "old_sl": 1289.1748374404272,
+          "new_sl": 1288.2540633375395,
+          "atr": 6.820019792981049,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T04:00:00+00:00",
+          "old_sl": 1288.2540633375395,
+          "new_sl": 1287.6323445277153,
+          "atr": 6.625732664910984,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T08:00:00+00:00",
+          "old_sl": 1287.6323445277153,
+          "new_sl": 1287.1647484900213,
+          "atr": 6.4796089031316235,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T12:00:00+00:00",
+          "old_sl": 1287.1647484900213,
+          "new_sl": 1286.9705521693054,
+          "atr": 6.418922552907928,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T16:00:00+00:00",
+          "old_sl": 1286.9705521693054,
+          "new_sl": 1283.985084157212,
+          "atr": 6.854713799128789,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T00:00:00+00:00",
+          "old_sl": 1283.985084157212,
+          "new_sl": 1283.0226797069838,
+          "atr": 6.553962408432461,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T04:00:00+00:00",
+          "old_sl": 1283.0226797069838,
+          "new_sl": 1282.4229168707707,
+          "atr": 6.366536522115845,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T08:00:00+00:00",
+          "old_sl": 1282.4229168707707,
+          "new_sl": 1281.6968513800014,
+          "atr": 6.139641056250431,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T12:00:00+00:00",
+          "old_sl": 1281.6968513800014,
+          "new_sl": 1279.2480762814298,
+          "atr": 6.352523837946821,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1258.92
+        },
+        {
+          "time": "2016-10-06T16:00:00+00:00",
+          "old_sl": 1279.2480762814298,
+          "new_sl": 1271.394356547042,
+          "atr": 6.529486420950614,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1250.5
+        },
+        {
+          "time": "2016-10-06T20:00:00+00:00",
+          "old_sl": 1271.394356547042,
+          "new_sl": 1270.3633310793962,
+          "atr": 6.441665962311282,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T00:00:00+00:00",
+          "old_sl": 1270.3633310793962,
+          "new_sl": 1270.2715217165821,
+          "atr": 6.412975536431902,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T08:00:00+00:00",
+          "old_sl": 1270.2715217165821,
+          "new_sl": 1270.1211488270528,
+          "atr": 6.365984008454025,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T16:00:00+00:00",
+          "old_sl": 1270.1211488270528,
+          "new_sl": 1267.1710415906732,
+          "atr": 8.084700497085372,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-07T20:00:00+00:00",
+          "old_sl": 1267.1710415906732,
+          "new_sl": 1267.0305386199109,
+          "atr": 8.040793318722134,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T00:00:00+00:00",
+          "old_sl": 1267.0305386199109,
+          "new_sl": 1266.39950014706,
+          "atr": 7.843593795956266,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T04:00:00+00:00",
+          "old_sl": 1266.39950014706,
+          "new_sl": 1266.33696442227,
+          "atr": 7.824051381959385,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T08:00:00+00:00",
+          "old_sl": 1266.33696442227,
+          "new_sl": 1265.3394669635363,
+          "atr": 7.51233342610513,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T12:00:00+00:00",
+          "old_sl": 1265.3394669635363,
+          "new_sl": 1264.9686478947124,
+          "atr": 7.396452467097611,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T16:00:00+00:00",
+          "old_sl": 1264.9686478947124,
+          "new_sl": 1264.4208873308044,
+          "atr": 7.225277290876353,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T20:00:00+00:00",
+          "old_sl": 1264.4208873308044,
+          "new_sl": 1263.368252521461,
+          "atr": 6.896328912956623,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-11T00:00:00+00:00",
+          "old_sl": 1263.368252521461,
+          "new_sl": 1262.8365201984996,
+          "atr": 6.730162562031145,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-11T04:00:00+00:00",
+          "old_sl": 1262.8365201984996,
+          "new_sl": 1262.0959116128925,
+          "atr": 6.498722379028921,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        }
+      ]
     },
     {
       "side": "long",
@@ -8895,8 +9894,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.361526067111573,
+      "pnl_result": "loss",
       "equity_after": 1062.067931282347,
-      "holding_bars": 6
+      "holding_bars": 6,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2016-11-02T16:00:00+00:00",
+          "old_sl": 1290.7914508288607,
+          "new_sl": 1290.9584739328884,
+          "atr": 5.2129768959723854,
+          "highest_since_entry": 1307.64,
+          "lowest_since_entry": 1300.65
+        }
+      ]
     },
     {
       "side": "long",
@@ -8915,8 +9926,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -27.44604612395237,
+      "pnl_result": "loss",
       "equity_after": 1034.6218851583944,
-      "holding_bars": 1
+      "holding_bars": 1,
+      "sl_update_count": 0,
+      "trail_updates": []
     }
   ],
   "sample_trades": [
@@ -8937,8 +9951,52 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -7.5562058914179495,
+      "pnl_result": "loss",
       "equity_after": 992.4437941085821,
-      "holding_bars": 9
+      "holding_bars": 9,
+      "sl_update_count": 5,
+      "trail_updates": [
+        {
+          "time": "2016-02-11T16:00:00+00:00",
+          "old_sl": 1209.1588180355823,
+          "new_sl": 1225.0546444153924,
+          "atr": 11.964173620189856,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T08:00:00+00:00",
+          "old_sl": 1225.0546444153924,
+          "new_sl": 1225.377649082362,
+          "atr": 11.863234661761847,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T12:00:00+00:00",
+          "old_sl": 1225.377649082362,
+          "new_sl": 1225.6983884336219,
+          "atr": 11.763003614493131,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T16:00:00+00:00",
+          "old_sl": 1225.6983884336219,
+          "new_sl": 1226.2979321169346,
+          "atr": 11.5756462134579,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        },
+        {
+          "time": "2016-02-12T20:00:00+00:00",
+          "old_sl": 1226.2979321169346,
+          "new_sl": 1227.983794108582,
+          "atr": 11.048814341068052,
+          "highest_since_entry": 1263.34,
+          "lowest_since_entry": 1231.68
+        }
+      ]
     },
     {
       "side": "long",
@@ -8957,8 +10015,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -21.458196529314634,
+      "pnl_result": "loss",
       "equity_after": 970.9855975792675,
-      "holding_bars": 3
+      "holding_bars": 3,
+      "sl_update_count": 0,
+      "trail_updates": []
     },
     {
       "side": "long",
@@ -8977,8 +10038,28 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -5.475855478424638,
+      "pnl_result": "loss",
       "equity_after": 965.5097421008429,
-      "holding_bars": 11
+      "holding_bars": 11,
+      "sl_update_count": 2,
+      "trail_updates": [
+        {
+          "time": "2016-04-21T08:00:00+00:00",
+          "old_sl": 1235.6678962323588,
+          "new_sl": 1236.8690787155426,
+          "atr": 7.265912901392906,
+          "highest_since_entry": 1260.12,
+          "lowest_since_entry": 1245.5
+        },
+        {
+          "time": "2016-04-21T12:00:00+00:00",
+          "old_sl": 1236.8690787155426,
+          "new_sl": 1245.5341445215754,
+          "atr": 7.661204837007696,
+          "highest_since_entry": 1270.05,
+          "lowest_since_entry": 1245.5
+        }
+      ]
     },
     {
       "side": "long",
@@ -8997,8 +10078,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 15.817864760460633,
+      "pnl_result": "profit",
       "equity_after": 981.3276068613036,
-      "holding_bars": 21
+      "holding_bars": 21,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2016-04-29T04:00:00+00:00",
+          "old_sl": 1247.7521575588414,
+          "new_sl": 1256.3871734875265,
+          "atr": 7.6602582851479815,
+          "highest_since_entry": 1280.9,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T12:00:00+00:00",
+          "old_sl": 1256.3871734875265,
+          "new_sl": 1256.426471017306,
+          "atr": 7.647977807091901,
+          "highest_since_entry": 1280.9,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T16:00:00+00:00",
+          "old_sl": 1256.426471017306,
+          "new_sl": 1269.4785802303554,
+          "atr": 8.481693678013905,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-04-29T20:00:00+00:00",
+          "old_sl": 1269.4785802303554,
+          "new_sl": 1269.762395928187,
+          "atr": 8.393001272441484,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T00:00:00+00:00",
+          "old_sl": 1269.762395928187,
+          "new_sl": 1270.4739390761738,
+          "atr": 8.170644038695663,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T04:00:00+00:00",
+          "old_sl": 1270.4739390761738,
+          "new_sl": 1271.4318005707328,
+          "atr": 7.871312321645974,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T08:00:00+00:00",
+          "old_sl": 1271.4318005707328,
+          "new_sl": 1271.969243387109,
+          "atr": 7.703361441528403,
+          "highest_since_entry": 1296.62,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-02T12:00:00+00:00",
+          "old_sl": 1271.969243387109,
+          "new_sl": 1278.6960117166013,
+          "atr": 7.798121338562103,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-03T00:00:00+00:00",
+          "old_sl": 1278.6960117166013,
+          "new_sl": 1279.7652389728037,
+          "atr": 7.463987820998883,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        },
+        {
+          "time": "2016-05-03T04:00:00+00:00",
+          "old_sl": 1279.7652389728037,
+          "new_sl": 1280.1478647604606,
+          "atr": 7.344417262356103,
+          "highest_since_entry": 1303.65,
+          "lowest_since_entry": 1263.54
+        }
+      ]
     },
     {
       "side": "long",
@@ -9017,8 +10182,332 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 54.70999959290971,
+      "pnl_result": "profit",
       "equity_after": 1036.0376064542133,
-      "holding_bars": 56
+      "holding_bars": 56,
+      "sl_update_count": 40,
+      "trail_updates": [
+        {
+          "time": "2016-06-03T20:00:00+00:00",
+          "old_sl": 1222.7576455968788,
+          "new_sl": 1223.87367716981,
+          "atr": 6.473850884434321,
+          "highest_since_entry": 1244.59,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T00:00:00+00:00",
+          "old_sl": 1223.87367716981,
+          "new_sl": 1228.3345573719666,
+          "atr": 6.348575821260443,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T04:00:00+00:00",
+          "old_sl": 1228.3345573719666,
+          "new_sl": 1228.7730889882548,
+          "atr": 6.211534691170416,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T08:00:00+00:00",
+          "old_sl": 1228.7730889882548,
+          "new_sl": 1229.669439774808,
+          "atr": 5.931425070372527,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T12:00:00+00:00",
+          "old_sl": 1229.669439774808,
+          "new_sl": 1229.7337655051788,
+          "atr": 5.911323279631639,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-06T20:00:00+00:00",
+          "old_sl": 1229.7337655051788,
+          "new_sl": 1229.794430461098,
+          "atr": 5.892365480906878,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T00:00:00+00:00",
+          "old_sl": 1229.794430461098,
+          "new_sl": 1230.4075425710196,
+          "atr": 5.70076794655639,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T04:00:00+00:00",
+          "old_sl": 1230.4075425710196,
+          "new_sl": 1230.8351466730896,
+          "atr": 5.567141664659499,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-07T08:00:00+00:00",
+          "old_sl": 1230.8351466730896,
+          "new_sl": 1231.421921910726,
+          "atr": 5.383774402898107,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T00:00:00+00:00",
+          "old_sl": 1231.421921910726,
+          "new_sl": 1232.0931444630428,
+          "atr": 5.174017355299171,
+          "highest_since_entry": 1248.65,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T04:00:00+00:00",
+          "old_sl": 1232.0931444630428,
+          "new_sl": 1232.3989198585398,
+          "atr": 5.231587544206374,
+          "highest_since_entry": 1249.14,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T08:00:00+00:00",
+          "old_sl": 1232.3989198585398,
+          "new_sl": 1236.5375684400726,
+          "atr": 5.275759862477358,
+          "highest_since_entry": 1253.42,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T12:00:00+00:00",
+          "old_sl": 1236.5375684400726,
+          "new_sl": 1240.818313551496,
+          "atr": 5.356777015157553,
+          "highest_since_entry": 1257.96,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T16:00:00+00:00",
+          "old_sl": 1240.818313551496,
+          "new_sl": 1246.847576869246,
+          "atr": 5.457007228360584,
+          "highest_since_entry": 1264.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-08T20:00:00+00:00",
+          "old_sl": 1246.847576869246,
+          "new_sl": 1247.2240356643,
+          "atr": 5.339363854906253,
+          "highest_since_entry": 1264.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T00:00:00+00:00",
+          "old_sl": 1247.2240356643,
+          "new_sl": 1249.1167474025642,
+          "atr": 5.357266436698658,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T04:00:00+00:00",
+          "old_sl": 1249.1167474025642,
+          "new_sl": 1249.438408302381,
+          "atr": 5.2567474055059,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T08:00:00+00:00",
+          "old_sl": 1249.438408302381,
+          "new_sl": 1249.5313791379253,
+          "atr": 5.227694019398346,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T12:00:00+00:00",
+          "old_sl": 1249.5313791379253,
+          "new_sl": 1249.7091377709305,
+          "atr": 5.1721444465841815,
+          "highest_since_entry": 1266.26,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T16:00:00+00:00",
+          "old_sl": 1249.7091377709305,
+          "new_sl": 1253.4267707872928,
+          "atr": 5.704134128971035,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-09T20:00:00+00:00",
+          "old_sl": 1253.4267707872928,
+          "new_sl": 1254.1408585882004,
+          "atr": 5.4809816911874005,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T00:00:00+00:00",
+          "old_sl": 1254.1408585882004,
+          "new_sl": 1254.5365115461861,
+          "atr": 5.357340141816872,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T04:00:00+00:00",
+          "old_sl": 1254.5365115461861,
+          "new_sl": 1255.1553321500298,
+          "atr": 5.163958703115673,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T12:00:00+00:00",
+          "old_sl": 1255.1553321500298,
+          "new_sl": 1255.1933221089544,
+          "atr": 5.152086840951769,
+          "highest_since_entry": 1271.68,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-10T16:00:00+00:00",
+          "old_sl": 1255.1933221089544,
+          "new_sl": 1260.577513386886,
+          "atr": 5.472652066598062,
+          "highest_since_entry": 1278.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T00:00:00+00:00",
+          "old_sl": 1260.577513386886,
+          "new_sl": 1260.7487232774681,
+          "atr": 5.487898975791186,
+          "highest_since_entry": 1278.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T04:00:00+00:00",
+          "old_sl": 1260.7487232774681,
+          "new_sl": 1261.166528757649,
+          "atr": 5.357334763234679,
+          "highest_since_entry": 1278.31,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T08:00:00+00:00",
+          "old_sl": 1261.166528757649,
+          "new_sl": 1265.8699195606741,
+          "atr": 5.712525137289356,
+          "highest_since_entry": 1284.15,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-13T12:00:00+00:00",
+          "old_sl": 1265.8699195606741,
+          "new_sl": 1269.0367824491973,
+          "atr": 5.641630484625833,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T00:00:00+00:00",
+          "old_sl": 1269.0367824491973,
+          "new_sl": 1269.098603877874,
+          "atr": 5.622311288164322,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T04:00:00+00:00",
+          "old_sl": 1269.098603877874,
+          "new_sl": 1269.464846458026,
+          "atr": 5.507860481866869,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T08:00:00+00:00",
+          "old_sl": 1269.464846458026,
+          "new_sl": 1269.4849288538812,
+          "atr": 5.501584733162098,
+          "highest_since_entry": 1287.09,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T16:00:00+00:00",
+          "old_sl": 1269.4849288538812,
+          "new_sl": 1270.721056001561,
+          "atr": 5.940294999512214,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-14T20:00:00+00:00",
+          "old_sl": 1270.721056001561,
+          "new_sl": 1270.8445520014495,
+          "atr": 5.901702499547063,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T00:00:00+00:00",
+          "old_sl": 1270.8445520014495,
+          "new_sl": 1271.4003697156315,
+          "atr": 5.728009463865131,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T04:00:00+00:00",
+          "old_sl": 1271.4003697156315,
+          "new_sl": 1271.957629021658,
+          "atr": 5.553865930731905,
+          "highest_since_entry": 1289.73,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-15T20:00:00+00:00",
+          "old_sl": 1271.957629021658,
+          "new_sl": 1277.076824252592,
+          "atr": 6.150992421065027,
+          "highest_since_entry": 1296.76,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T00:00:00+00:00",
+          "old_sl": 1277.076824252592,
+          "new_sl": 1277.8373368059783,
+          "atr": 6.185207248131818,
+          "highest_since_entry": 1297.63,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T04:00:00+00:00",
+          "old_sl": 1277.8373368059783,
+          "new_sl": 1282.9053841769796,
+          "atr": 6.232692444693825,
+          "highest_since_entry": 1302.85,
+          "lowest_since_entry": 1235.94
+        },
+        {
+          "time": "2016-06-16T08:00:00+00:00",
+          "old_sl": 1282.9053841769796,
+          "new_sl": 1291.9399995929098,
+          "atr": 6.712500127215698,
+          "highest_since_entry": 1313.42,
+          "lowest_since_entry": 1235.94
+        }
+      ]
     },
     {
       "side": "short",
@@ -9037,8 +10526,92 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -6.829975244805883,
+      "pnl_result": "loss",
       "equity_after": 1029.2076312094073,
-      "holding_bars": 16
+      "holding_bars": 16,
+      "sl_update_count": 10,
+      "trail_updates": [
+        {
+          "time": "2016-06-22T00:00:00+00:00",
+          "old_sl": 1292.0200833137203,
+          "new_sl": 1291.2344644157233,
+          "atr": 8.37327012991352,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1264.44
+        },
+        {
+          "time": "2016-06-22T04:00:00+00:00",
+          "old_sl": 1291.2344644157233,
+          "new_sl": 1290.0611455288858,
+          "atr": 8.00660797777684,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1264.44
+        },
+        {
+          "time": "2016-06-22T08:00:00+00:00",
+          "old_sl": 1290.0611455288858,
+          "new_sl": 1286.642206562537,
+          "atr": 7.972564550792778,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T12:00:00+00:00",
+          "old_sl": 1286.642206562537,
+          "new_sl": 1286.1067632366414,
+          "atr": 7.805238511450428,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T16:00:00+00:00",
+          "old_sl": 1286.1067632366414,
+          "new_sl": 1285.59128014831,
+          "atr": 7.644150046346823,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-22T20:00:00+00:00",
+          "old_sl": 1285.59128014831,
+          "new_sl": 1285.1469029948591,
+          "atr": 7.505282185893466,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1261.13
+        },
+        {
+          "time": "2016-06-23T00:00:00+00:00",
+          "old_sl": 1285.1469029948591,
+          "new_sl": 1283.1234099237977,
+          "atr": 7.454190601186788,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1259.27
+        },
+        {
+          "time": "2016-06-23T04:00:00+00:00",
+          "old_sl": 1283.1234099237977,
+          "new_sl": 1282.4915949292408,
+          "atr": 7.256748415387736,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1259.27
+        },
+        {
+          "time": "2016-06-23T20:00:00+00:00",
+          "old_sl": 1282.4915949292408,
+          "new_sl": 1279.7428964174835,
+          "atr": 7.929030130463608,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1254.37
+        },
+        {
+          "time": "2016-06-24T00:00:00+00:00",
+          "old_sl": 1279.7428964174835,
+          "new_sl": 1279.399975244806,
+          "atr": 9.081242264001935,
+          "highest_since_entry": 1275.69,
+          "lowest_since_entry": 1250.34
+        }
+      ]
     },
     {
       "side": "long",
@@ -9057,8 +10630,244 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 14.567737752944321,
+      "pnl_result": "profit",
       "equity_after": 1043.7753689623514,
-      "holding_bars": 61
+      "holding_bars": 61,
+      "sl_update_count": 29,
+      "trail_updates": [
+        {
+          "time": "2016-06-29T08:00:00+00:00",
+          "old_sl": 1302.35473533798,
+          "new_sl": 1303.305159087746,
+          "atr": 10.645262785079305,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-29T12:00:00+00:00",
+          "old_sl": 1303.305159087746,
+          "new_sl": 1304.05836201005,
+          "atr": 10.40988687185935,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-29T20:00:00+00:00",
+          "old_sl": 1304.05836201005,
+          "new_sl": 1304.1048427535634,
+          "atr": 10.395361639511371,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T00:00:00+00:00",
+          "old_sl": 1304.1048427535634,
+          "new_sl": 1305.4203539854518,
+          "atr": 9.984264379546264,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T04:00:00+00:00",
+          "old_sl": 1305.4203539854518,
+          "new_sl": 1306.811042986491,
+          "atr": 9.549674066721538,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T08:00:00+00:00",
+          "old_sl": 1306.811042986491,
+          "new_sl": 1307.5401113445987,
+          "atr": 9.32184020481285,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T12:00:00+00:00",
+          "old_sl": 1307.5401113445987,
+          "new_sl": 1308.4159605342702,
+          "atr": 9.048137333040504,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T16:00:00+00:00",
+          "old_sl": 1308.4159605342702,
+          "new_sl": 1308.5503919246796,
+          "atr": 9.006127523537614,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-06-30T20:00:00+00:00",
+          "old_sl": 1308.5503919246796,
+          "new_sl": 1308.7232210729167,
+          "atr": 8.9521184147135,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T00:00:00+00:00",
+          "old_sl": 1308.7232210729167,
+          "new_sl": 1309.402562424851,
+          "atr": 8.739824242233965,
+          "highest_since_entry": 1337.37,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T08:00:00+00:00",
+          "old_sl": 1309.402562424851,
+          "new_sl": 1309.6267298459177,
+          "atr": 8.838521923150717,
+          "highest_since_entry": 1337.91,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T12:00:00+00:00",
+          "old_sl": 1309.6267298459177,
+          "new_sl": 1310.4446777140665,
+          "atr": 8.582913214354237,
+          "highest_since_entry": 1337.91,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T16:00:00+00:00",
+          "old_sl": 1310.4446777140665,
+          "new_sl": 1314.1690578773475,
+          "atr": 8.503419413328936,
+          "highest_since_entry": 1341.38,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-01T20:00:00+00:00",
+          "old_sl": 1314.1690578773475,
+          "new_sl": 1317.1998394575369,
+          "atr": 8.52817516951972,
+          "highest_since_entry": 1344.49,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T00:00:00+00:00",
+          "old_sl": 1317.1998394575369,
+          "new_sl": 1318.2708509248557,
+          "atr": 8.299734085982593,
+          "highest_since_entry": 1344.83,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T04:00:00+00:00",
+          "old_sl": 1318.2708509248557,
+          "new_sl": 1328.7599330016517,
+          "atr": 8.921895936983836,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T08:00:00+00:00",
+          "old_sl": 1328.7599330016517,
+          "new_sl": 1328.9272235015337,
+          "atr": 8.869617655770693,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T12:00:00+00:00",
+          "old_sl": 1328.9272235015337,
+          "new_sl": 1329.9785646799955,
+          "atr": 8.541073537501372,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-04T16:00:00+00:00",
+          "old_sl": 1329.9785646799955,
+          "new_sl": 1330.7925243457103,
+          "atr": 8.286711141965561,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-05T00:00:00+00:00",
+          "old_sl": 1330.7925243457103,
+          "new_sl": 1331.6854868924452,
+          "atr": 8.007660346110887,
+          "highest_since_entry": 1357.31,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T00:00:00+00:00",
+          "old_sl": 1331.6854868924452,
+          "new_sl": 1338.2815915742797,
+          "atr": 8.227627633037567,
+          "highest_since_entry": 1364.61,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T04:00:00+00:00",
+          "old_sl": 1338.2815915742797,
+          "new_sl": 1344.583049318974,
+          "atr": 8.267797087820595,
+          "highest_since_entry": 1371.04,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T08:00:00+00:00",
+          "old_sl": 1344.583049318974,
+          "new_sl": 1344.9231172247617,
+          "atr": 8.161525867261979,
+          "highest_since_entry": 1371.04,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-06T12:00:00+00:00",
+          "old_sl": 1344.9231172247617,
+          "new_sl": 1349.0226088515644,
+          "atr": 8.133559733886122,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-07T04:00:00+00:00",
+          "old_sl": 1349.0226088515644,
+          "new_sl": 1349.6153494744256,
+          "atr": 7.948328289242017,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-07T08:00:00+00:00",
+          "old_sl": 1349.6153494744256,
+          "new_sl": 1350.634395940538,
+          "atr": 7.6298762685818735,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T00:00:00+00:00",
+          "old_sl": 1350.634395940538,
+          "new_sl": 1351.0575538436512,
+          "atr": 7.497639423858971,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T04:00:00+00:00",
+          "old_sl": 1351.0575538436512,
+          "new_sl": 1351.6878714262475,
+          "atr": 7.300665179297617,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        },
+        {
+          "time": "2016-07-08T08:00:00+00:00",
+          "old_sl": 1351.6878714262475,
+          "new_sl": 1352.1977377529442,
+          "atr": 7.141331952204926,
+          "highest_since_entry": 1375.05,
+          "lowest_since_entry": 1308.65
+        }
+      ]
     },
     {
       "side": "short",
@@ -9077,8 +10886,212 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": 29.654088387107507,
+      "pnl_result": "profit",
       "equity_after": 1073.4294573494587,
-      "holding_bars": 29
+      "holding_bars": 29,
+      "sl_update_count": 25,
+      "trail_updates": [
+        {
+          "time": "2016-10-04T16:00:00+00:00",
+          "old_sl": 1307.1583700280084,
+          "new_sl": 1292.8049018589215,
+          "atr": 6.97653183091295,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1270.48
+        },
+        {
+          "time": "2016-10-04T20:00:00+00:00",
+          "old_sl": 1292.8049018589215,
+          "new_sl": 1289.1748374404272,
+          "atr": 6.954636700133443,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.92
+        },
+        {
+          "time": "2016-10-05T00:00:00+00:00",
+          "old_sl": 1289.1748374404272,
+          "new_sl": 1288.2540633375395,
+          "atr": 6.820019792981049,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T04:00:00+00:00",
+          "old_sl": 1288.2540633375395,
+          "new_sl": 1287.6323445277153,
+          "atr": 6.625732664910984,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T08:00:00+00:00",
+          "old_sl": 1287.6323445277153,
+          "new_sl": 1287.1647484900213,
+          "atr": 6.4796089031316235,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T12:00:00+00:00",
+          "old_sl": 1287.1647484900213,
+          "new_sl": 1286.9705521693054,
+          "atr": 6.418922552907928,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1266.43
+        },
+        {
+          "time": "2016-10-05T16:00:00+00:00",
+          "old_sl": 1286.9705521693054,
+          "new_sl": 1283.985084157212,
+          "atr": 6.854713799128789,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T00:00:00+00:00",
+          "old_sl": 1283.985084157212,
+          "new_sl": 1283.0226797069838,
+          "atr": 6.553962408432461,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T04:00:00+00:00",
+          "old_sl": 1283.0226797069838,
+          "new_sl": 1282.4229168707707,
+          "atr": 6.366536522115845,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T08:00:00+00:00",
+          "old_sl": 1282.4229168707707,
+          "new_sl": 1281.6968513800014,
+          "atr": 6.139641056250431,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1262.05
+        },
+        {
+          "time": "2016-10-06T12:00:00+00:00",
+          "old_sl": 1281.6968513800014,
+          "new_sl": 1279.2480762814298,
+          "atr": 6.352523837946821,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1258.92
+        },
+        {
+          "time": "2016-10-06T16:00:00+00:00",
+          "old_sl": 1279.2480762814298,
+          "new_sl": 1271.394356547042,
+          "atr": 6.529486420950614,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1250.5
+        },
+        {
+          "time": "2016-10-06T20:00:00+00:00",
+          "old_sl": 1271.394356547042,
+          "new_sl": 1270.3633310793962,
+          "atr": 6.441665962311282,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T00:00:00+00:00",
+          "old_sl": 1270.3633310793962,
+          "new_sl": 1270.2715217165821,
+          "atr": 6.412975536431902,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T08:00:00+00:00",
+          "old_sl": 1270.2715217165821,
+          "new_sl": 1270.1211488270528,
+          "atr": 6.365984008454025,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1249.75
+        },
+        {
+          "time": "2016-10-07T16:00:00+00:00",
+          "old_sl": 1270.1211488270528,
+          "new_sl": 1267.1710415906732,
+          "atr": 8.084700497085372,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-07T20:00:00+00:00",
+          "old_sl": 1267.1710415906732,
+          "new_sl": 1267.0305386199109,
+          "atr": 8.040793318722134,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T00:00:00+00:00",
+          "old_sl": 1267.0305386199109,
+          "new_sl": 1266.39950014706,
+          "atr": 7.843593795956266,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T04:00:00+00:00",
+          "old_sl": 1266.39950014706,
+          "new_sl": 1266.33696442227,
+          "atr": 7.824051381959385,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T08:00:00+00:00",
+          "old_sl": 1266.33696442227,
+          "new_sl": 1265.3394669635363,
+          "atr": 7.51233342610513,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T12:00:00+00:00",
+          "old_sl": 1265.3394669635363,
+          "new_sl": 1264.9686478947124,
+          "atr": 7.396452467097611,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T16:00:00+00:00",
+          "old_sl": 1264.9686478947124,
+          "new_sl": 1264.4208873308044,
+          "atr": 7.225277290876353,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-10T20:00:00+00:00",
+          "old_sl": 1264.4208873308044,
+          "new_sl": 1263.368252521461,
+          "atr": 6.896328912956623,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-11T00:00:00+00:00",
+          "old_sl": 1263.368252521461,
+          "new_sl": 1262.8365201984996,
+          "atr": 6.730162562031145,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        },
+        {
+          "time": "2016-10-11T04:00:00+00:00",
+          "old_sl": 1262.8365201984996,
+          "new_sl": 1262.0959116128925,
+          "atr": 6.498722379028921,
+          "highest_since_entry": 1293.17,
+          "lowest_since_entry": 1241.3
+        }
+      ]
     },
     {
       "side": "long",
@@ -9097,8 +11110,20 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -11.361526067111573,
+      "pnl_result": "loss",
       "equity_after": 1062.067931282347,
-      "holding_bars": 6
+      "holding_bars": 6,
+      "sl_update_count": 1,
+      "trail_updates": [
+        {
+          "time": "2016-11-02T16:00:00+00:00",
+          "old_sl": 1290.7914508288607,
+          "new_sl": 1290.9584739328884,
+          "atr": 5.2129768959723854,
+          "highest_since_entry": 1307.64,
+          "lowest_since_entry": 1300.65
+        }
+      ]
     },
     {
       "side": "long",
@@ -9117,8 +11142,11 @@
       "entry_commission": 0.025,
       "exit_commission": 0.025,
       "net_pnl": -27.44604612395237,
+      "pnl_result": "loss",
       "equity_after": 1034.6218851583944,
-      "holding_bars": 1
+      "holding_bars": 1,
+      "sl_update_count": 0,
+      "trail_updates": []
     }
   ]
 }
