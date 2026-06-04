@@ -1,5 +1,337 @@
 # Strategy Changelog
 
+## [2026-06-04-VB-V1-UNIFIED-OPTIMIZATION-OUTPUTS] volatility_breakout / v1 / H4
+
+- 日期：2026-06-04
+- 变更类型：`research-output`
+- 目标：将 `VB v1` baseline 与 7 个过滤实验统一输出为 regime 后续可直接读取的 trade-level CSV，不再保留每年一个 JSON report 的 optimization 输出。
+- 输出目录：`xau/data/optimizatons/vb/`
+- 脚本目录：`xau/scripts/optimizatons/vb/`
+
+### 新增 / 更新脚本
+
+- `common.py`：统一实验 runner，输出 `summary.csv`、`summary.json`、`unified_trades.csv`。
+- `run_all_unified.py`：一次性重跑 baseline + `01` 到 `07`。
+- `compare_results.py`：从各实验的 `summary.json` 生成总对照表。
+- `01_close_breakout_confirm.py`：H4 close 必须突破 Donchian。
+- `02_candle_close_quality.py`：突破 K 线必须收在突破方向强势一侧。
+- `03_adx20_rising.py`：`H1 ADX >= 20` 且 ADX 正在上升。
+- `04_atr_ratio_1_1.py`：`ATR ratio min = 1.1`。
+- `05_overextension_filter.py`：过滤过度拉伸的突破 K 线。
+- `06_early_failure_exit.py`：8 根 H4 内未达到 `+0.5R` 提前退出。
+- `07_candle_quality_adx20_rising.py`：`02 + 03` 组合过滤。
+
+### Unified Trade Schema
+
+- 新增文档：`xau/data/reports/unified_trade_schema.md`
+- 目的：为 `VB`、`MR`、`TF` 后续进入 regime analysis 提供统一 trade-level 字段。
+- 当前 `VB` unified 输出已包含：
+- `trade_id`
+- `strategy`
+- `engine_version`
+- `symbol`
+- `timeframe`
+- `signal_time_utc`
+- `entry_time_utc`
+- `exit_time_utc`
+- `initial_sl`
+- `final_sl`
+- `net_pnl`
+- `initial_risk_money`
+- `r_multiple`
+- `entry_atr`
+- `entry_atr_ratio`
+- `entry_h1_adx`
+- `adx_bucket`
+- `atr_ratio_bucket`
+- `spread_bucket`
+- `post_entry_holding_bucket`
+
+### 输出结构
+
+每个实验目录只保留：
+
+```text
+summary.csv
+summary.json
+unified_trades.csv
+```
+
+总对照表：
+
+```text
+xau/data/optimizatons/vb/comparison_summary.csv
+xau/data/optimizatons/vb/comparison_summary.json
+```
+
+已删除旧 optimization 输出：
+
+```text
+xau/data/optimizatons/vb/*/reports/report_YEAR.json
+```
+
+说明：正式 engine report 目录 `xau/data/reports/volatility_breakout/v1/H4/` 未清理，仍保留为主策略年度 report 来源。
+
+### 对照结果
+
+| Version | Avg Return | PF | Positive Years | Avg Trades | Win Rate | Worst |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| baseline | `25.73%` | `2.12` | `11/11` | `25.55` | `43.86%` | `2018: +1.18%` |
+| baseline ex 2025 | `14.37%` | `1.92` | `10/10` | `24.90` | `41.37%` | `2018: +1.18%` |
+| 01 close confirm | `17.76%` | `2.65` | `9/11` | `20.73` | `46.62%` | `2018: -2.63%` |
+| 02 candle quality | `19.34%` | `2.38` | `10/11` | `20.36` | `45.30%` | `2018: -3.46%` |
+| 03 ADX20 rising | `16.01%` | `2.46` | `10/11` | `17.18` | `46.44%` | `2018: -3.10%` |
+| 04 ATRr 1.1 | `17.89%` | `1.91` | `9/11` | `16.82` | `44.61%` | `2018: -1.52%` |
+| 05 overextension | `16.69%` | `2.09` | `9/11` | `22.00` | `42.99%` | `2018: -3.05%` |
+| 06 early failure | `17.29%` | `1.80` | `8/11` | `31.00` | `41.03%` | `2018: -4.47%` |
+| 07 candle + ADX | `10.67%` | `2.33` | `9/11` | `13.64` | `46.93%` | `2016: -5.40%` |
+
+### 取留判断
+
+- 主策略保留 `00_baseline_current_v1_default`。理由：唯一保持 `11/11` 正收益，排除 `2025` 后仍保持 `10/10`。
+- `02_candle_close_quality` 保留为重点研究候选。理由：过滤后胜率和 PF 提升，但仍保留相对足够交易数。
+- `03_adx20_rising` 保留为 regime 特征候选。理由：胜率、PF、回撤结构较好，但交易数偏少，不适合直接替换主线。
+- `01_close_breakout_confirm` 保留为对照。理由：PF 最高，但正收益年份下降，过滤过硬。
+- `04_atr_ratio_1_1` 暂不推进。理由：交易数减少，PF 不优于 baseline。
+- `05_overextension_filter` 暂不推进。理由：没有提高胜率，回撤也没有改善。
+- `06_early_failure_exit` 丢弃当前版本。理由：胜率、PF、正收益年份均变差。
+- `07_candle_quality_adx20_rising` 暂不推进。理由：胜率最高但交易数过低，收益与正收益年份明显下降，组合过滤过猛。
+
+### 下一步
+
+1. 用 `unified_trades.csv` 做 VB bucket analysis，不再从 JSON report 读取 trade details。
+2. 优先分析 `baseline`、`02`、`03` 三组的 `adx_bucket`、`atr_ratio_bucket`、`post_entry_holding_bucket`。
+3. 不直接替换主策略，先把 `02` / `03` 当作 regime selector 的候选条件。
+4. 后续将 `MR`、`TF` 接入同一份 unified trade schema。
+
+## [2026-06-04-REGIME-FACTOR-ROADMAP] portfolio / regime / VB-MR-TF
+
+- 日期：2026-06-04
+- 变更类型：`roadmap`
+- 目标：把单策略研究推进到组合层。将 `VB`、`MR`、`TF` 视为三个可独立评估的交易因子，再用 regime 对市场状态进行评估，决定哪些因子允许出手。
+- 当前前提：先继续独立研究 `VB v1` 的单质量，后续再把 `MR`、`TF` 纳入同一套 trade log / regime analysis 框架。
+
+### 核心定义
+
+- `VB`：趋势突破因子，适合波动扩张和趋势延续环境。
+- `MR`：均值回归因子，适合震荡、过度偏离后回归环境。
+- `TF`：趋势跟随 / 趋势回调因子，适合已有趋势中的回踩延续环境。
+- `Regime`：组合层市场状态评估模块，不直接预测涨跌，第一阶段只判断当前市场是否适合某个因子出手。
+
+### 设计原则
+
+- Regime 不是用来拯救弱策略。每个因子必须先在独立回测中证明有基本 edge。
+- 第一版 regime 只做 hard filter / strategy selector，不做复杂权重。
+- 所有 regime 特征必须在 `entry_time` 之前可见，不能使用未来信息。
+- 评估标准以组合层结果为主：更低回撤、更少坏年份、更稳定 PF，而不是单一策略最高收益。
+
+### Step 1: 统一 Trade Log
+
+目标：
+
+- 让 `VB`、`MR`、`TF` 输出同一种 trade-level 格式。
+- 后续 regime analysis 不关心策略内部细节，只读取统一 trade log。
+
+每笔 trade 至少包含：
+
+| Field | Meaning |
+| --- | --- |
+| `strategy` | `VB` / `MR` / `TF` |
+| `engine_version` | 例如 `volatility_breakout_v1` |
+| `symbol` | 当前主要是 `XAUUSD` |
+| `timeframe` | 例如 `H4` |
+| `side` | `long` / `short` |
+| `signal_time` | 信号出现时间 |
+| `entry_time` | 实际入场时间 |
+| `exit_time` | 出场时间 |
+| `entry_price` | 入场价 |
+| `exit_price` | 出场价 |
+| `initial_sl` | 初始止损 |
+| `exit_reason` | `SL` / `TRAIL` / `DONCHIAN_EXIT` / strategy-specific |
+| `net_pnl` | 扣除成本后的净 PnL |
+| `r_multiple` | 以初始风险归一化后的 R 倍数 |
+| `holding_bars` | 持仓 bar 数 |
+| `entry_atr` | 入场时 ATR |
+| `entry_spread` | 入场时 spread |
+
+产物：
+
+- `xau/data/trades/<strategy>/<version>/trades_YEAR.csv`
+- 或后续统一为 `xau/data/factors/trades/<strategy>/<version>/...`
+
+### Step 2: 对齐 Regime Features
+
+目标：
+
+- 给每笔 trade 的 `entry_time` 对齐当时可见的市场状态特征。
+- 不预测未来，只描述入场前市场结构。
+
+候选特征：
+
+| Feature | Purpose |
+| --- | --- |
+| `atr_ratio` | 当前波动是否扩张 |
+| `adx` | 趋势强度 |
+| `adx_slope` | 趋势强度是否正在增强 |
+| `ema_slope` | 大方向趋势斜率 |
+| `donchian_width` | 区间宽度 / 压缩扩张 |
+| `bb_width` | 波动压缩程度 |
+| `range_efficiency` | 行情是否方向性移动 |
+| `close_to_ema_distance_atr` | 是否过度偏离均值 |
+| `spread_points` | 成本环境 |
+| `session_utc` | 交易时段 |
+| `weekday` | 星期特征 |
+
+产物：
+
+- `trades_with_regime_features.csv`
+- 每行 = 一笔 trade + 入场前 regime feature snapshot。
+
+### Step 3: 分析各策略适合的 Regime
+
+目标：
+
+- 按 regime feature bucket 统计每个策略的表现。
+- 找出每个策略真正有 edge 的环境。
+
+核心统计：
+
+| Metric | Purpose |
+| --- | --- |
+| `trades` | 样本数是否足够 |
+| `win_rate` | 胜率 |
+| `avg_win` | 平均盈利 |
+| `avg_loss` | 平均亏损 |
+| `payoff_ratio` | 盈亏比 |
+| `profit_factor` | 盈亏质量 |
+| `expectancy` | 单笔期望 |
+| `avg_r_multiple` | 风险归一化表现 |
+| `max_drawdown_pct` | 回撤压力 |
+
+分析方式：
+
+- 对 `VB` 看趋势扩张类 regime：`ADX`、`ADX slope`、`ATR ratio`、Donchian width。
+- 对 `MR` 看震荡回归类 regime：低 ADX、均值偏离、波动压缩。
+- 对 `TF` 看趋势回调类 regime：EMA slope、价格回踩幅度、趋势方向一致性。
+
+产物：
+
+- `xau/data/regime/analysis/<strategy>_bucket_stats.csv`
+- `xau/data/regime/analysis/regime_notes.md`
+
+### Step 4: Hard Filter
+
+目标：
+
+- 第一版 regime 只做允许 / 禁止，不做复杂预测。
+- 如果某个策略在某类 regime 明显表现差，就禁止该策略在该环境开仓。
+
+示例：
+
+```text
+VB_on = ADX rising and ATR ratio >= 1.0 and spread <= max_spread
+MR_on = ADX low/falling and price far from mean and volatility not extreme
+TF_on = EMA slope aligned and pullback depth within acceptable range
+```
+
+评估标准：
+
+- 单策略过滤后是否减少坏年份。
+- PF 是否提升。
+- MaxDD 是否下降。
+- 交易数是否仍然足够。
+- OOS 是否保持，不只看全样本。
+
+产物：
+
+- `xau/scripts/regime/hard_filters.py`
+- `xau/data/regime/filter_tests/<strategy>/summary.csv`
+
+### Step 5: Strategy Selector
+
+目标：
+
+- 从“每个策略自己开关”升级到“当前市场最适合哪个策略”。
+- 解决策略冲突，例如 `VB` 想追突破，`MR` 想反向回归。
+
+第一版 selector 规则：
+
+```text
+trend_expansion -> allow VB, optionally TF, block MR
+range_reversion -> allow MR, block VB
+trend_pullback -> allow TF, optionally VB, block MR if trend is strong
+unclear/noisy -> block all or reduce exposure
+```
+
+输出：
+
+```text
+selected_strategy = VB / MR / TF / NONE
+allowed_strategies = [VB, TF]
+```
+
+评估标准：
+
+- 组合层 PF 是否高于简单策略叠加。
+- 组合 MaxDD 是否低于单策略和无筛选组合。
+- 策略冲突时是否减少互相抵消的亏损。
+- 每年是否仍有足够交易机会。
+
+产物：
+
+- `xau/scripts/regime/strategy_selector.py`
+- `xau/data/regime/selector_tests/summary.csv`
+
+### Step 6: 权重和组合风控
+
+目标：
+
+- 在 hard filter 和 selector 可靠之后，再做权重。
+- 第一版权重应保持简单，避免过拟合。
+
+可选权重方式：
+
+```text
+equal_weight_allowed_strategies
+regime_score_weight
+volatility_target_weight
+drawdown_reduction_weight
+```
+
+组合风控规则：
+
+- 同一时间最大总风险。
+- 单策略最大开放风险。
+- 同方向重复暴露限制。
+- 相反方向信号冲突处理。
+- 连续亏损后的降权或暂停。
+
+评估标准：
+
+- 组合 equity curve 是否更平滑。
+- 年度 worst year 是否改善。
+- MaxDD 是否下降。
+- 收益是否不过度依赖单一策略或单一年份。
+
+### 当前执行顺序
+
+1. 继续完成 `VB v1` 单质量研究，先明确哪些过滤真的能砍坏单。
+2. 为 `VB` 固化统一 trade log 输出格式。
+3. 将 `MR`、`TF` 接入同样 trade log 格式。
+4. 构建 `entry_time` regime feature snapshot。
+5. 做 bucket analysis，先得到数据证据，再写 hard filter。
+6. 最后再做 selector 和组合权重。
+
+### 成功标准
+
+- Regime 第一版成功，不要求总收益最大。
+- 只要求：
+- 坏年份减少。
+- MaxDD 下降。
+- PF 更稳定。
+- 策略冲突减少。
+- OOS 没有明显崩坏。
+
 ## [2026-05-26-VB-V1-H4-QUALITY-DEFAULTS] volatility_breakout / v1 / H4
 
 - 日期：2026-05-26
