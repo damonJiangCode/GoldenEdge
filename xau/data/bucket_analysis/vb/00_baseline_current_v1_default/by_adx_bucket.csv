@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,adx_bucket,adx_20_25,107,45,62,0,42.06,57.94,766.4947,1560.5585,794.0637,1.9653,7.1635,0.2769,-0.1862,29.6267,11.24,10,21.95
+00_baseline_current_v1_default,adx_bucket,adx_ge30,74,32,42,0,43.24,56.76,720.3036,1445.4617,725.1581,1.9933,9.7338,0.2649,-0.1248,19.6049,12.86,10.0,23.65
+00_baseline_current_v1_default,adx_bucket,adx_25_30,68,34,34,0,50.0,50.0,1091.0512,1646.2327,555.1815,2.9652,16.0449,0.5857,0.162,39.8302,14.34,11.0,25.51
+00_baseline_current_v1_default,adx_bucket,adx_lt20,32,12,20,0,37.5,62.5,71.2275,366.0477,294.8202,1.2416,2.2259,0.2366,-0.7084,7.5699,10.5,7.0,21.78

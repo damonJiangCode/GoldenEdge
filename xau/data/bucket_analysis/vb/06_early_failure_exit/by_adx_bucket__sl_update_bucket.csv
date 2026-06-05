@@ -1,0 +1,17 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_0,45,6,39,0,13.33,86.67,-435.5051,40.42,475.9251,0.0849,-9.6779,-0.4814,-0.4918,-21.6613,0.0,0,6.67
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_gt_10,36,30,6,0,83.33,16.67,1010.8583,1054.0783,43.22,24.3887,28.0794,1.2684,0.9602,45.6607,19.56,19.0,31.47
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_0,35,2,33,0,5.71,94.29,-552.0941,6.19,558.2841,0.0111,-15.7741,-0.5564,-0.5567,-19.4732,0.0,0,6.37
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_gt_10,29,22,7,0,75.86,24.14,1081.4741,1107.2134,25.7393,43.0164,37.2922,1.4169,1.1968,41.0905,21.83,18,34.0
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_1_3,28,12,16,0,42.86,57.14,-18.3432,111.7152,130.0585,0.859,-0.6551,-0.0755,-0.1234,-2.1138,1.86,2.0,7.57
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_gt_10,27,23,4,0,85.19,14.81,1065.0376,1100.6151,35.5775,30.9357,39.4458,1.4104,0.8829,38.0796,22.33,20,32.52
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_0,25,3,22,0,12.0,88.0,-362.3178,10.19,372.5078,0.0274,-14.4927,-0.5868,-0.5861,-14.6696,0.0,0,7.12
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_4_10,23,6,17,0,26.09,73.91,75.4813,188.1426,112.6614,1.67,3.2818,-0.0511,-0.3174,-1.1745,6.57,5,12.78
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_4_10,19,8,11,0,42.11,57.89,89.0357,222.4719,133.4361,1.6673,4.6861,0.1505,-0.3869,2.8601,6.74,7,12.84
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_0,16,2,14,0,12.5,87.5,-187.2782,7.07,194.3482,0.0364,-11.7049,-0.6759,-1.0023,-10.8137,0.0,0.0,6.12
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_4_10,15,4,11,0,26.67,73.33,-138.4373,39.863,178.3003,0.2236,-9.2292,-0.3313,-0.5712,-4.9694,6.73,6,14.4
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_1_3,14,5,9,0,35.71,64.29,-39.6865,33.88,73.5665,0.4605,-2.8348,-0.2468,-0.1127,-3.4548,1.71,1.5,7.64
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_1_3,8,4,4,0,50.0,50.0,-43.6909,18.45,62.1409,0.2969,-5.4614,-0.1778,-0.0859,-1.4222,2.38,2.5,8.12
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_1_3,8,4,4,0,50.0,50.0,15.22,37.24,22.02,1.6912,1.9025,-0.0293,0.0296,-0.2345,1.75,1.5,8.0
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_4_10,7,4,3,0,57.14,42.86,-14.6839,13.3879,28.0718,0.4769,-2.0977,0.0838,0.0854,0.5864,6.29,5,12.57
+06_early_failure_exit,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_gt_10,6,5,1,0,83.33,16.67,195.2554,199.1411,3.8857,51.2498,32.5426,2.6,2.1858,15.6002,22.67,19.5,38.67

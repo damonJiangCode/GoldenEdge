@@ -1,0 +1,4 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+01_close_breakout_confirm,post_entry_holding_bucket,hold_8_24,103,29,74,0,28.16,71.84,-455.9012,571.9858,1027.887,0.5565,-4.4262,-0.2408,-0.3629,-24.8016,7.47,7,15.9
+01_close_breakout_confirm,post_entry_holding_bucket,hold_25_plus,80,68,12,0,85.0,15.0,2934.8423,3013.5231,78.6808,38.3006,36.6855,1.5941,1.3526,127.5302,23.54,21.5,40.0
+01_close_breakout_confirm,post_entry_holding_bucket,hold_1_7,45,4,41,0,8.89,91.11,-644.6391,101.3757,746.0148,0.1359,-14.3253,-0.7608,-1.0025,-34.2338,0.67,0,4.51

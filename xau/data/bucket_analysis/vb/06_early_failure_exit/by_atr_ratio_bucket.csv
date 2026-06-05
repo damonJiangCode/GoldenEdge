@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+06_early_failure_exit,atr_ratio_bucket,atrr_lt1_1,177,67,110,0,37.85,62.15,457.9855,1649.4368,1191.4513,1.3844,2.5875,0.1357,-0.1447,24.0191,6.88,2,15.2
+06_early_failure_exit,atr_ratio_bucket,atrr_1_1_1_25,105,46,59,0,43.81,56.19,419.4636,1068.5172,649.0535,1.6463,3.9949,0.1414,-0.1315,14.8444,8.1,5,15.32
+06_early_failure_exit,atr_ratio_bucket,atrr_1_25_1_5,45,22,23,0,48.89,51.11,680.8298,1054.1879,373.3581,2.8235,15.1296,0.5398,-0.0525,24.2897,9.53,5,17.62
+06_early_failure_exit,atr_ratio_bucket,atrr_ge1_5,14,5,9,0,35.71,64.29,182.0465,417.9266,235.8802,1.7718,13.0033,0.0527,-0.0962,0.7372,8.0,3.5,16.07

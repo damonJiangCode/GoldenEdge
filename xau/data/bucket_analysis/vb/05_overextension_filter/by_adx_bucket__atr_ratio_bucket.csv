@@ -1,0 +1,15 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_lt1_1,49,19,30,0,38.78,61.22,429.4844,725.9863,296.5018,2.4485,8.765,0.4014,-0.1603,19.6679,11.0,9,22.49
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_lt1_1,37,16,21,0,43.24,56.76,335.0274,598.6754,263.648,2.2707,9.0548,0.2918,-0.0696,10.7949,12.49,9,22.59
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_lt1_1,29,11,18,0,37.93,62.07,-91.1322,203.4864,294.6186,0.6907,-3.1425,-0.0491,-0.2538,-1.4236,9.66,9,20.45
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_1_1_1_25,23,11,12,0,47.83,52.17,126.1406,280.7521,154.6115,1.8159,5.4844,0.3581,-0.2172,8.2367,13.74,7,25.09
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_1_1_1_25,20,8,12,0,40.0,60.0,58.869,229.0341,170.1651,1.346,2.9435,0.1049,-0.2284,2.0985,13.35,11.5,23.7
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_1_1_1_25,20,9,11,0,45.0,55.0,-39.0154,132.9484,171.9638,0.7731,-1.9508,-0.0332,-0.1223,-0.6637,11.45,11.0,22.1
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_1_25_1_5,20,10,10,0,50.0,50.0,210.5376,410.8744,200.3368,2.0509,10.5269,0.521,0.0399,10.4193,12.35,13.0,24.0
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_lt1_1,15,6,9,0,40.0,60.0,104.5651,235.3609,130.7957,1.7995,6.971,0.223,-0.6712,3.3445,11.87,7,24.0
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_1_25_1_5,9,5,4,0,55.56,44.44,309.527,358.4551,48.9282,7.3261,34.3919,1.1553,0.338,10.3973,15.22,13,24.56
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_1_1_1_25,6,0,6,0,0.0,100.0,-89.7889,0,89.7889,0.0,-14.9648,-0.7704,-1.0025,-4.6223,2.5,0.0,7.17
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_1_25_1_5,5,3,2,0,60.0,40.0,274.7907,327.2619,52.4712,6.237,54.9581,1.0641,2.1604,5.3205,8.6,5,17.2
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_ge1_5,5,4,1,0,80.0,20.0,234.1978,347.275,113.0772,3.0711,46.8396,0.8751,0.6176,4.3756,12.0,7,22.2
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_ge1_5,2,1,1,0,50.0,50.0,-23.2145,16.1443,39.3588,0.4102,-11.6073,-0.2447,-0.2447,-0.4894,9.5,9.5,22.5
+05_overextension_filter,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_1_25_1_5,2,0,2,0,0.0,100.0,-30.7657,0,30.7657,0.0,-15.3829,-0.5797,-0.5797,-1.1594,5.5,5.5,24.5

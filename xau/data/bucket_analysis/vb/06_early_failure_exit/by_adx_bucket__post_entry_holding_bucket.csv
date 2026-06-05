@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,84,30,54,0,35.71,64.29,65.9106,413.8453,347.9347,1.1894,0.7846,-0.0299,-0.1377,-2.5113,4.11,2.0,11.48
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,54,14,40,0,25.93,74.07,-266.3679,186.9809,453.3489,0.4124,-4.9327,-0.1946,-0.2232,-10.5065,4.2,1.5,11.28
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,52,18,34,0,34.62,65.38,-194.0027,204.0328,398.0355,0.5126,-3.7308,-0.1403,-0.1875,-7.2946,5.44,4.5,12.1
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,26,2,24,0,7.69,92.31,-363.215,50.7152,413.9302,0.1225,-13.9698,-0.7287,-1.002,-18.9465,1.35,0.0,4.69
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,23,10,13,0,43.48,56.52,-38.9395,57.6979,96.6375,0.5971,-1.693,-0.0687,-0.0798,-1.5808,3.0,2,9.87
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,22,22,0,0,100.0,0.0,929.7956,929.7956,0,,42.2634,1.9168,1.4095,42.1689,23.95,21.5,38.77
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,20,20,0,0,100.0,0.0,993.5671,993.5671,0,,49.6784,1.8177,1.1633,36.354,24.7,21.5,37.25
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,19,18,1,0,94.74,5.26,1068.1085,1075.0687,6.9602,154.4598,56.2162,2.1949,2.1601,41.7025,25.63,23,41.47
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,17,0,17,0,0.0,100.0,-392.3795,0,392.3795,0.0,-23.0811,-0.9215,-1.0024,-15.6652,0.41,0,4.12
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,10,1,9,0,10.0,90.0,-109.6047,79.2238,188.8285,0.4196,-10.9605,-0.6549,-1.0025,-6.5491,1.0,0.0,5.6
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,9,0,9,0,0.0,100.0,-151.6882,0,151.6882,0.0,-16.8542,-1.0041,-1.0035,-9.037,0.0,0,4.67
+06_early_failure_exit,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_25_plus,5,5,0,0,100.0,0.0,199.1411,199.1411,0,,39.8282,3.1513,2.3819,15.7563,25.0,20,42.6

@@ -1,0 +1,3 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+02_candle_close_quality,pnl_result,loss,125,0,125,0,0.0,100.0,-1729.3663,0,1729.3663,0.0,-13.8349,-0.6553,-0.7341,-81.9113,5.35,5,13.05
+02_candle_close_quality,pnl_result,profit,99,99,0,0,100.0,0.0,3737.2495,3737.2495,0,,37.75,1.5664,1.2319,155.0768,20.3,19,34.04

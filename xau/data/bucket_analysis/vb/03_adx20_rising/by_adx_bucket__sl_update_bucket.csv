@@ -1,0 +1,14 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_gt_10,39,32,7,0,82.05,17.95,1061.7504,1115.1003,53.3499,20.9016,27.2244,1.3685,1.2144,53.3702,19.82,18,35.15
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_gt_10,27,20,7,0,74.07,25.93,923.2016,943.8073,20.6056,45.8034,34.1927,1.5119,1.1968,40.8207,23.63,21,39.37
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_gt_10,24,18,6,0,75.0,25.0,742.2579,770.2368,27.9789,27.5292,30.9274,1.1651,0.5469,27.9613,19.5,17.5,31.33
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_4_10,22,4,18,0,18.18,81.82,-15.7314,147.8231,163.5544,0.9038,-0.7151,-0.1824,-0.445,-4.0131,6.59,7.0,16.41
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_4_10,16,6,10,0,37.5,62.5,-37.8602,114.233,152.0932,0.7511,-2.3663,0.0195,-0.2892,0.3127,7.0,7.5,15.62
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_4_10,12,3,9,0,25.0,75.0,-99.0144,61.7738,160.7882,0.3842,-8.2512,-0.0955,-0.4352,-1.1456,7.0,7.5,13.67
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_0,11,0,11,0,0.0,100.0,-206.9811,0,206.9811,0.0,-18.8165,-1.0035,-1.0028,-11.039,0.0,0,4.64
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_0,9,0,9,0,0.0,100.0,-190.0907,0,190.0907,0.0,-21.1212,-1.0036,-1.0031,-9.0323,0.0,0,6.33
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_0,9,0,9,0,0.0,100.0,-227.4952,0,227.4952,0.0,-25.2772,-1.003,-1.0022,-9.0267,0.0,0,5.0
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_1_3,7,0,7,0,0.0,100.0,-99.4302,0,99.4302,0.0,-14.2043,-0.7141,-0.9057,-4.9985,1.57,1,9.43
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_1_3,6,2,4,0,33.33,66.67,-59.3024,57.0214,116.3238,0.4902,-9.8837,-0.1698,-0.7974,-1.0185,2.33,3.0,6.33
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_1_3,6,0,6,0,0.0,100.0,-66.1781,0,66.1781,0.0,-11.0297,-0.6452,-0.775,-3.8713,2.0,2.0,7.0
+03_adx20_rising,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_0,1,0,1,0,0.0,100.0,-10.5115,0,10.5115,0.0,-10.5115,-1.0057,-1.0057,-1.0057,0.0,0,2.0

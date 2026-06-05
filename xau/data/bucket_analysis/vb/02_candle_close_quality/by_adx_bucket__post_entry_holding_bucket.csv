@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,35,9,26,0,25.71,74.29,-74.098,200.5703,274.6683,0.7302,-2.1171,-0.1631,-0.2121,-5.7094,8.14,8,17.31
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,30,7,23,0,23.33,76.67,-128.7883,217.3149,346.1032,0.6279,-4.2929,-0.15,-0.4113,-4.5012,7.93,7.0,15.77
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,28,24,4,0,85.71,14.29,751.0139,787.9792,36.9653,21.3167,26.8219,1.3875,1.2722,38.8494,22.89,22.0,39.36
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,28,25,3,0,89.29,10.71,1292.2072,1307.826,15.6189,83.7337,46.1503,1.8456,1.5452,51.6764,24.86,22.5,41.82
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,23,9,14,0,39.13,60.87,-59.4958,137.4893,196.9851,0.698,-2.5868,-0.2014,-0.3869,-4.6326,8.35,8,16.13
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,18,2,16,0,11.11,88.89,-219.8121,50.7152,270.5274,0.1875,-12.2118,-0.6428,-0.9862,-11.5705,1.44,0.5,5.0
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,18,14,4,0,77.78,22.22,825.6656,846.8469,21.1812,39.981,45.8703,1.549,0.9611,27.8826,24.39,22.0,40.28
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,14,0,14,0,0.0,100.0,-205.2789,0,205.2789,0.0,-14.6628,-0.8306,-1.0021,-11.6281,0.86,0.0,4.79
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,11,3,8,0,27.27,72.73,-80.5542,19.3901,99.9444,0.194,-7.3231,-0.3456,-0.3155,-3.8019,6.0,5,15.82
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,10,2,8,0,20.0,80.0,-117.8072,50.6605,168.4677,0.3007,-11.7807,-0.6731,-1.0026,-6.7308,0.7,0.0,3.9
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_25_plus,5,4,1,0,80.0,20.0,105.8613,118.4571,12.5959,9.4045,21.1723,1.4691,0.3435,7.3455,15.4,16,33.0
+02_candle_close_quality,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,4,0,4,0,0.0,100.0,-81.0301,0,81.0301,0.0,-20.2575,-1.0035,-1.0031,-4.0139,0.0,0.0,4.5

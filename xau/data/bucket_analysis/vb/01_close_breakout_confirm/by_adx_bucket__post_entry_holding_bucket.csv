@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,39,10,29,0,25.64,74.36,-74.2984,276.8356,351.134,0.7884,-1.9051,-0.1857,-0.3455,-7.2426,7.54,7,16.59
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,28,25,3,0,89.29,10.71,652.4637,676.6999,24.2362,27.9211,23.3023,1.416,1.2936,39.6489,24.32,22.0,40.96
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,28,9,19,0,32.14,67.86,-150.5029,120.7303,271.2333,0.4451,-5.3751,-0.3128,-0.4473,-8.7588,7.07,6.5,14.5
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,26,22,4,0,84.62,15.38,1250.28,1269.2697,18.9897,66.84,48.0877,1.8503,1.5452,48.1066,24.12,22.0,41.12
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,26,7,19,0,26.92,73.08,-160.9136,155.0298,315.9434,0.4907,-6.189,-0.2244,-0.3885,-5.8344,8.31,7.5,16.35
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,20,16,4,0,80.0,20.0,923.2208,944.629,21.4082,44.1247,46.161,1.6155,1.1633,32.3098,23.8,22.0,39.85
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,15,2,13,0,13.33,86.67,-172.8527,50.7152,223.5679,0.2268,-11.5235,-0.6246,-1.0025,-9.3691,0.87,0,4.73
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,14,0,14,0,0.0,100.0,-208.1599,0,208.1599,0.0,-14.8686,-0.8655,-1.0021,-12.1174,0.71,0.0,4.57
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,12,2,10,0,16.67,83.33,-180.1544,50.6605,230.8149,0.2195,-15.0129,-0.7278,-1.0025,-8.7338,0.58,0.0,4.0
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,10,3,7,0,30.0,70.0,-70.1862,19.3901,89.5764,0.2165,-7.0186,-0.2966,-0.2509,-2.9657,6.1,6.5,16.0
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_25_plus,6,5,1,0,83.33,16.67,108.8777,122.9245,14.0468,8.7511,18.1463,1.2441,0.3424,7.4649,16.5,16.0,31.17
+01_close_breakout_confirm,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,4,0,4,0,0.0,100.0,-83.4721,0,83.4721,0.0,-20.868,-1.0034,-1.0029,-4.0135,0.0,0.0,5.0

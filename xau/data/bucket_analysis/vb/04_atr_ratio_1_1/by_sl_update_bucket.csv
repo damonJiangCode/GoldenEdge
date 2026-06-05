@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+04_atr_ratio_1_1,sl_update_bucket,sl_updates_gt_10,87,69,18,0,79.31,20.69,2735.0082,2858.9295,123.9212,23.0705,31.4369,1.1639,0.822,101.2568,21.3,18,35.72
+04_atr_ratio_1_1,sl_update_bucket,sl_updates_4_10,51,14,37,0,27.45,72.55,-23.9506,380.7019,404.6526,0.9408,-0.4696,-0.11,-0.3522,-5.6116,6.86,7,15.63
+04_atr_ratio_1_1,sl_update_bucket,sl_updates_0,28,0,28,0,0.0,100.0,-721.4314,0,721.4314,0.0,-25.7654,-1.0031,-1.0027,-28.0858,0.0,0.0,5.75
+04_atr_ratio_1_1,sl_update_bucket,sl_updates_1_3,19,3,16,0,15.79,84.21,-193.6161,78.1058,271.7219,0.2874,-10.1903,-0.4763,-0.8916,-9.0504,1.89,2,12.0

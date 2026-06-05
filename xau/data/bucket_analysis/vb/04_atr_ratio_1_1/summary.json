@@ -1,0 +1,12 @@
+{
+  "variant": "04_atr_ratio_1_1",
+  "source_file": "/Users/damon/Documents/GoldenEdge/xau/data/optimization/vb/04_atr_ratio_1_1/unified_trades.csv",
+  "trades": 185,
+  "profit_ratio_pct": 46.49,
+  "net_pnl": 1796.0101,
+  "profit_factor": 2.1802,
+  "avg_r": 0.3163,
+  "sum_r": 58.5091,
+  "avg_sl_update_count": 12.1,
+  "output_dir": "/Users/damon/Documents/GoldenEdge/xau/data/bucket_analysis/vb/04_atr_ratio_1_1"
+}

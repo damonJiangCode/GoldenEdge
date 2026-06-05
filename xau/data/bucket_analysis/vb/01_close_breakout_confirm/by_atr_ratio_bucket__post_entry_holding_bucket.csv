@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,48,13,35,0,27.08,72.92,-365.3892,116.7915,482.1807,0.2422,-7.6123,-0.3623,-0.4852,-17.3914,6.17,6.5,15.65
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,36,29,7,0,80.56,19.44,957.9145,996.6138,38.6993,25.7528,26.6087,1.4396,1.2997,51.8258,22.19,21.0,38.03
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,35,11,24,0,31.43,68.57,25.7025,286.0369,260.3344,1.0987,0.7344,-0.0585,-0.3155,-2.048,8.23,8,16.31
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,25,22,3,0,88.0,12.0,794.0392,831.3276,37.2884,22.2945,31.7616,1.5732,1.2166,39.3311,24.8,22,42.56
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,21,1,20,0,4.76,95.24,-334.2259,0.8967,335.1226,0.0027,-15.9155,-0.8851,-1.0026,-18.5872,0.52,0,4.81
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,18,2,16,0,11.11,88.89,-242.9227,50.7152,293.6379,0.1727,-13.4957,-0.7259,-1.0027,-13.0659,0.44,0.0,4.22
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,15,13,2,0,86.67,13.33,763.1672,765.8603,2.6931,284.3828,50.8778,2.0578,1.9321,30.8663,22.93,21,38.07
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,15,3,12,0,20.0,80.0,-117.7577,127.1801,244.9378,0.5192,-7.8505,-0.3441,-0.5428,-5.161,9.07,10,15.93
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,5,2,3,0,40.0,60.0,1.5432,41.9774,40.4342,1.0382,0.3086,-0.0402,-0.1129,-0.2011,9.8,7,15.4
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,4,1,3,0,25.0,75.0,3.4152,49.7638,46.3486,1.0737,0.8538,-0.1443,-0.3938,-0.5772,2.75,3.0,6.0
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,4,4,0,0,100.0,0.0,419.7214,419.7214,0,,104.9303,1.3767,0.6352,5.507,30.0,30.0,49.0
+01_close_breakout_confirm,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,2,0,2,0,0.0,100.0,-70.9058,0,70.9058,0.0,-35.4529,-1.0018,-1.0018,-2.0036,0.0,0.0,1.0

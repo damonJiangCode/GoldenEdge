@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,sl_update_bucket,sl_updates_gt_10,110,81,29,0,73.64,26.36,3198.8427,3373.0638,174.2211,19.3608,29.0804,1.2137,0.6268,133.5067,21.19,19.0,35.37
+05_overextension_filter,sl_update_bucket,sl_updates_4_10,62,22,40,0,35.48,64.52,-20.5455,493.1904,513.7359,0.96,-0.3314,-0.0098,-0.2018,-0.6057,7.13,7.0,16.29
+05_overextension_filter,sl_update_bucket,sl_updates_0,54,0,54,0,0.0,100.0,-1181.4538,0,1181.4538,0.0,-21.8788,-1.0034,-1.0031,-54.1855,0.0,0.0,6.69
+05_overextension_filter,sl_update_bucket,sl_updates_1_3,16,0,16,0,0.0,100.0,-187.6206,0,187.6206,0.0,-11.7263,-0.7762,-0.9354,-12.4187,1.88,2.0,9.81

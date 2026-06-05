@@ -1,0 +1,8 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,r_multiple_bucket,r_minus_1_to_0,83,0,83,0,0.0,100.0,-846.0942,0,846.0942,0.0,-10.1939,-0.4404,-0.4139,-36.5522,8.36,8,18.11
+05_overextension_filter,r_multiple_bucket,r_lte_minus_1,56,0,56,0,0.0,100.0,-1210.9373,0,1210.9373,0.0,-21.6239,-1.0034,-1.0031,-56.1908,0.04,0.0,6.86
+05_overextension_filter,r_multiple_bucket,r_0_to_0_5,27,27,0,0,100.0,0.0,144.7559,144.7559,0,,5.3613,0.2227,0.2148,6.0119,14.0,13,24.07
+05_overextension_filter,r_multiple_bucket,r_1_to_2,27,27,0,0,100.0,0.0,1170.1529,1170.1529,0,,43.339,1.4726,1.4169,39.7612,20.11,20,36.15
+05_overextension_filter,r_multiple_bucket,r_2_to_4,23,23,0,0,100.0,0.0,1601.3073,1601.3073,0,,69.6221,2.8482,2.6501,65.5077,28.91,30,45.17
+05_overextension_filter,r_multiple_bucket,r_0_5_to_1,20,20,0,0,100.0,0.0,321.4844,321.4844,0,,16.0742,0.6443,0.6194,12.8857,15.15,15.5,26.8
+05_overextension_filter,r_multiple_bucket,r_gte_4,6,6,0,0,100.0,0.0,628.5536,628.5536,0,,104.7589,5.8122,5.8247,34.8732,36.33,35.0,55.17

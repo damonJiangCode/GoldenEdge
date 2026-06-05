@@ -1,0 +1,15 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_lt1_1,61,22,39,0,36.07,63.93,434.4426,916.8558,482.4132,1.9006,7.122,0.2223,-0.2092,13.5614,10.69,8,21.75
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_1_1_1_25,34,18,16,0,52.94,47.06,152.0686,358.8045,206.7359,1.7356,4.4726,0.2602,0.0483,8.8481,11.44,9.0,21.85
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_lt1_1,31,11,20,0,35.48,64.52,148.6424,467.5684,318.926,1.4661,4.7949,0.1953,-0.3869,6.0552,11.48,9,21.81
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_lt1_1,28,12,16,0,42.86,57.14,179.6795,400.6249,220.9454,1.8132,6.4171,0.1024,-0.3479,2.8679,11.54,8.0,23.04
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_1_1_1_25,26,14,12,0,53.85,46.15,413.6658,587.5581,173.8923,3.3789,15.9102,0.7494,0.5105,19.4848,16.96,12.0,26.92
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_lt1_1,23,10,13,0,43.48,56.52,149.893,334.8568,184.9638,1.8104,6.5171,0.4833,-0.6712,11.1155,12.48,7,25.3
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_1_1_1_25,19,7,12,0,36.84,63.16,50.8346,209.7887,158.954,1.3198,2.6755,0.1554,-0.1315,2.9517,11.53,12,22.47
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_1_25_1_5,17,8,9,0,47.06,52.94,293.6191,458.7076,165.0885,2.7786,17.2717,0.6578,-0.0001,11.1832,16.59,18,27.53
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_20_25__atrr_1_25_1_5,12,5,7,0,41.67,58.33,179.9835,284.8981,104.9146,2.7155,14.9986,0.6014,-0.1776,7.2172,13.5,12.0,23.25
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_ge30__atrr_ge1_5,10,5,5,0,50.0,50.0,196.1703,376.3405,180.1702,2.0888,19.617,0.2602,-0.0334,2.602,12.8,8.5,21.0
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_1_25_1_5,8,7,1,0,87.5,12.5,477.9068,500.9112,23.0044,21.7746,59.7383,1.7881,2.1602,14.3044,15.88,15.5,30.75
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_1_1_1_25,8,2,6,0,25.0,75.0,-57.058,31.1909,88.2489,0.3534,-7.1322,-0.346,-0.6587,-2.7682,5.12,2.5,12.0
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_25_30__atrr_ge1_5,3,2,1,0,66.67,33.33,50.8363,90.1951,39.3588,2.2916,16.9454,-0.0047,0.4137,-0.0142,17.0,22,37.67
+00_baseline_current_v1_default,adx_bucket__atr_ratio_bucket,adx_lt20__atrr_1_25_1_5,1,0,1,0,0.0,100.0,-21.6076,0,21.6076,0.0,-21.6076,-0.7774,-0.7774,-0.7774,8.0,8,19.0

@@ -1,0 +1,4 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+02_candle_close_quality,post_entry_holding_bucket,hold_8_24,99,28,71,0,28.28,71.72,-342.9364,574.7646,917.701,0.6263,-3.464,-0.1883,-0.3455,-18.645,7.89,8,16.4
+02_candle_close_quality,post_entry_holding_bucket,hold_25_plus,79,67,12,0,84.81,15.19,2974.7479,3061.1092,86.3613,35.4454,37.655,1.5918,1.3465,125.7538,23.46,22,40.04
+02_candle_close_quality,post_entry_holding_bucket,hold_1_7,46,4,42,0,8.7,91.3,-623.9283,101.3757,725.304,0.1398,-13.5637,-0.7379,-1.0024,-33.9433,0.98,0.0,4.65

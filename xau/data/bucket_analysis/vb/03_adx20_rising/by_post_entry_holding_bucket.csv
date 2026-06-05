@@ -1,0 +1,4 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,post_entry_holding_bucket,hold_8_24,77,26,51,0,33.77,66.23,-356.3634,419.6911,776.0545,0.5408,-4.6281,-0.1616,-0.2871,-12.4413,7.51,8,15.49
+03_adx20_rising,post_entry_holding_bucket,hold_25_plus,73,57,16,0,78.08,21.92,2645.9273,2733.2831,87.3558,31.2891,36.2456,1.6478,1.3626,120.2916,22.45,21,39.45
+03_adx20_rising,post_entry_holding_bucket,hold_1_7,39,2,37,0,5.13,94.87,-574.9492,57.0214,631.9706,0.0902,-14.7423,-0.783,-1.0022,-30.5362,1.03,0,4.85

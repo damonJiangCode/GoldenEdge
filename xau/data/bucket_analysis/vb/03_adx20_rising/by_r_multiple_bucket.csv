@@ -1,0 +1,8 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,r_multiple_bucket,r_minus_1_to_0,73,0,73,0,0.0,100.0,-850.5983,0,850.5983,0.0,-11.652,-0.4724,-0.4332,-34.4867,7.77,7,17.27
+03_adx20_rising,r_multiple_bucket,r_lte_minus_1,31,0,31,0,0.0,100.0,-644.7826,0,644.7826,0.0,-20.7994,-1.0035,-1.0028,-31.1074,0.03,0,5.52
+03_adx20_rising,r_multiple_bucket,r_1_to_2,26,26,0,0,100.0,0.0,713.5648,713.5648,0,,27.4448,1.4314,1.3556,37.2157,19.88,20.0,34.12
+03_adx20_rising,r_multiple_bucket,r_2_to_4,22,22,0,0,100.0,0.0,1600.2379,1600.2379,0,,72.7381,2.9467,2.9254,64.8273,27.73,30.0,43.5
+03_adx20_rising,r_multiple_bucket,r_0_to_0_5,21,21,0,0,100.0,0.0,151.5848,151.5848,0,,7.2183,0.2655,0.2662,5.5753,13.71,12,23.19
+03_adx20_rising,r_multiple_bucket,r_0_5_to_1,11,11,0,0,100.0,0.0,249.3055,249.3055,0,,22.6641,0.7033,0.677,7.7358,12.64,11,23.0
+03_adx20_rising,r_multiple_bucket,r_gte_4,5,5,0,0,100.0,0.0,495.3025,495.3025,0,,99.0605,5.5108,5.2252,27.5541,27.0,24,49.2

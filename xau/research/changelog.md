@@ -38,17 +38,17 @@
    - `trail_updates_json`
 
 3. 将 `VB v1` baseline 和 7 个过滤实验统一输出为 regime 可读格式：
-   - 输出目录：`xau/data/optimizatons/vb/`
+   - 输出目录：`xau/data/optimization/vb/`
    - 每个版本只保留：
    - `summary.csv`
    - `summary.json`
    - `unified_trades.csv`
    - 顶层对照表：
-   - `xau/data/optimizatons/vb/comparison_summary.csv`
-   - `xau/data/optimizatons/vb/comparison_summary.json`
+   - `xau/data/optimization/vb/comparison_summary.csv`
+   - `xau/data/optimization/vb/comparison_summary.json`
 
 4. 清理 optimization 旧 JSON report 输出：
-   - 已删除：`xau/data/optimizatons/vb/*/reports/report_YEAR.json`
+   - 已删除：`xau/data/optimization/vb/*/reports/report_YEAR.json`
    - 保留正式 engine report：
    - `xau/data/reports/volatility_breakout/v1/H4/report_2015.json`
    - ...
@@ -64,7 +64,7 @@
    - `07_candle_quality_adx20_rising.py`
 
 6. 新增统一 runner：
-   - `xau/scripts/optimizatons/vb/run_all_unified.py`
+   - `xau/scripts/optimization/vb/run_all_unified.py`
    - 用途：一次性重跑 baseline + `01` 到 `07`，覆盖 unified 输出。
 
 7. 增强 `VB v1` 正式 report 与 unified trades：
@@ -142,8 +142,8 @@
 - 日期：2026-06-04
 - 变更类型：`research-output`
 - 目标：将 `VB v1` baseline 与 7 个过滤实验统一输出为 regime 后续可直接读取的 trade-level CSV，不再保留每年一个 JSON report 的 optimization 输出。
-- 输出目录：`xau/data/optimizatons/vb/`
-- 脚本目录：`xau/scripts/optimizatons/vb/`
+- 输出目录：`xau/data/optimization/vb/`
+- 脚本目录：`xau/scripts/optimization/vb/`
 
 ### 新增 / 更新脚本
 
@@ -197,14 +197,14 @@ unified_trades.csv
 总对照表：
 
 ```text
-xau/data/optimizatons/vb/comparison_summary.csv
-xau/data/optimizatons/vb/comparison_summary.json
+xau/data/optimization/vb/comparison_summary.csv
+xau/data/optimization/vb/comparison_summary.json
 ```
 
 已删除旧 optimization 输出：
 
 ```text
-xau/data/optimizatons/vb/*/reports/report_YEAR.json
+xau/data/optimization/vb/*/reports/report_YEAR.json
 ```
 
 说明：正式 engine report 目录 `xau/data/reports/volatility_breakout/v1/H4/` 未清理，仍保留为主策略年度 report 来源。

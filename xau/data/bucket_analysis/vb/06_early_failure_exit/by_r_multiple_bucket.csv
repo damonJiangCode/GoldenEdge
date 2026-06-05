@@ -1,0 +1,8 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+06_early_failure_exit,r_multiple_bucket,r_minus_1_to_0,152,0,152,0,0.0,100.0,-1343.7279,0,1343.7279,0.0,-8.8403,-0.3937,-0.3921,-59.8408,3.75,2.0,10.43
+06_early_failure_exit,r_multiple_bucket,r_0_to_0_5,61,61,0,0,100.0,0.0,336.7329,336.7329,0,,5.5202,0.2119,0.1985,12.9274,6.49,3,14.39
+06_early_failure_exit,r_multiple_bucket,r_lte_minus_1,49,0,49,0,0.0,100.0,-1106.0152,0,1106.0152,0.0,-22.5717,-1.014,-1.0031,-49.6867,0.02,0,4.55
+06_early_failure_exit,r_multiple_bucket,r_1_to_2,25,25,0,0,100.0,0.0,801.9759,801.9759,0,,32.079,1.4614,1.3772,36.534,20.48,20,34.04
+06_early_failure_exit,r_multiple_bucket,r_0_5_to_1,24,24,0,0,100.0,0.0,492.0321,492.0321,0,,20.5013,0.7354,0.708,17.649,13.17,14.0,22.17
+06_early_failure_exit,r_multiple_bucket,r_2_to_4,23,23,0,0,100.0,0.0,1802.7913,1802.7913,0,,78.3822,2.775,2.5214,63.8255,24.65,26,37.96
+06_early_failure_exit,r_multiple_bucket,r_gte_4,7,7,0,0,100.0,0.0,756.5363,756.5363,0,,108.0766,6.0689,5.9583,42.4822,35.29,35,53.57

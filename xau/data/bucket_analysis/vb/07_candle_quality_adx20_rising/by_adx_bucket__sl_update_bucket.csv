@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_gt_10,25,19,6,0,76.0,24.0,786.1449,807.7974,21.6526,37.3072,31.4458,1.2586,0.677,31.4647,21.68,16,37.28
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_gt_10,22,18,4,0,81.82,18.18,555.441,589.141,33.7,17.4819,25.2473,1.5096,1.3603,33.2104,19.82,20.0,34.73
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_gt_10,21,17,4,0,80.95,19.05,649.8178,664.0333,14.2155,46.712,30.9437,1.151,0.8275,24.171,19.19,16,29.76
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_4_10,15,6,9,0,40.0,60.0,-7.234,122.6716,129.9055,0.9443,-0.4823,0.029,-0.3869,0.435,7.13,7,16.0
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_4_10,14,2,12,0,14.29,85.71,-121.2693,86.3282,207.5976,0.4158,-8.6621,-0.045,-0.4789,-0.6306,6.64,7.0,14.57
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_0,10,0,10,0,0.0,100.0,-218.9831,0,218.9831,0.0,-21.8983,-1.0033,-1.0027,-10.0328,0.0,0.0,5.1
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_1_3,9,0,9,0,0.0,100.0,-120.0658,0,120.0658,0.0,-13.3406,-0.6493,-0.7449,-5.844,1.78,2,7.44
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_4_10,8,3,5,0,37.5,62.5,101.0829,136.6858,35.6029,3.8392,12.6354,0.1926,-0.2533,1.541,6.38,5.5,15.12
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_1_3,8,3,5,0,37.5,62.5,-38.785,57.9181,96.7031,0.5989,-4.8481,-0.1968,-0.7263,-1.5746,2.25,2.5,8.62
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_0,8,0,8,0,0.0,100.0,-192.0134,0,192.0134,0.0,-24.0017,-1.0035,-1.0035,-8.0278,0.0,0.0,6.62
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_0,7,0,7,0,0.0,100.0,-135.1343,0,135.1343,0.0,-19.3049,-1.0034,-1.0028,-7.0237,0.0,0,4.14
+07_candle_quality_adx20_rising,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_1_3,3,0,3,0,0.0,100.0,-70.0135,0,70.0135,0.0,-23.3378,-0.8601,-0.9013,-2.5803,2.0,2,10.67

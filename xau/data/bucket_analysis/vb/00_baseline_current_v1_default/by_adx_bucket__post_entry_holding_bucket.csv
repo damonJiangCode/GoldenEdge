@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,48,11,37,0,22.92,77.08,-234.9034,154.0115,388.9149,0.396,-4.8938,-0.2437,-0.3552,-11.6982,7.04,7.0,16.42
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,37,32,5,0,86.49,13.51,1319.1484,1355.8317,36.6833,36.9604,35.6527,1.5559,1.3036,57.5684,22.84,22,39.54
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,32,9,23,0,28.12,71.88,-195.497,148.8149,344.3118,0.4322,-6.1093,-0.291,-0.4028,-9.3116,8.19,8.0,16.56
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,30,8,22,0,26.67,73.33,-223.6372,127.0969,350.7341,0.3624,-7.4546,-0.2729,-0.4389,-8.1861,7.93,7.0,15.43
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,28,25,3,0,89.29,10.71,1424.2931,1439.912,15.6189,92.1905,50.8676,1.9488,1.5665,54.5654,25.96,22.5,43.43
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,28,23,5,0,82.14,17.86,1271.1204,1296.6468,25.5265,50.7962,45.3972,1.5188,1.1273,42.5256,24.43,22.5,41.54
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,22,2,20,0,9.09,90.91,-317.7503,50.7152,368.4655,0.1376,-14.4432,-0.7383,-1.0024,-16.2436,0.91,0.0,4.45
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,14,0,14,0,0.0,100.0,-355.3199,0,355.3199,0.0,-25.38,-0.9721,-1.0025,-13.6091,0.43,0.0,4.07
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,12,2,10,0,16.67,83.33,-123.8583,6.6779,130.5362,0.0512,-10.3215,-0.4847,-0.7541,-5.8162,6.08,6.0,15.67
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_25_plus,11,10,1,0,90.91,9.09,346.7739,359.3698,12.5959,28.5308,31.5249,2.0385,1.664,22.4231,23.91,21,42.45
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,10,1,9,0,10.0,90.0,-109.6047,79.2238,188.8285,0.4196,-10.9605,-0.6549,-1.0025,-6.5491,1.0,0.0,5.6
+00_baseline_current_v1_default,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,9,0,9,0,0.0,100.0,-151.6882,0,151.6882,0.0,-16.8542,-1.0041,-1.0035,-9.037,0.0,0,4.67

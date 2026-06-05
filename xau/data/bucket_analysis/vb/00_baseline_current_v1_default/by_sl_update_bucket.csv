@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,sl_update_bucket,sl_updates_gt_10,132,103,29,0,78.03,21.97,4354.3851,4517.1323,162.7471,27.7555,32.9878,1.3363,1.1255,176.3945,22.18,20.5,36.78
+00_baseline_current_v1_default,sl_update_bucket,sl_updates_4_10,71,18,53,0,25.35,74.65,-224.1171,450.4531,674.5702,0.6678,-3.1566,-0.1528,-0.4567,-10.8495,6.92,7,15.76
+00_baseline_current_v1_default,sl_update_bucket,sl_updates_0,54,0,54,0,0.0,100.0,-1204.4812,0,1204.4812,0.0,-22.3052,-1.0033,-1.0028,-54.1775,0.0,0.0,5.85
+00_baseline_current_v1_default,sl_update_bucket,sl_updates_1_3,24,2,22,0,8.33,91.67,-276.7099,50.7152,327.4251,0.1549,-11.5296,-0.614,-0.8829,-14.7359,1.96,2.0,10.04

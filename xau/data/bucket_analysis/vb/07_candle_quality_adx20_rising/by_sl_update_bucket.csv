@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+07_candle_quality_adx20_rising,sl_update_bucket,sl_updates_gt_10,68,54,14,0,79.41,20.59,1991.4037,2060.9718,69.5681,29.6253,29.2853,1.3066,0.957,88.8462,20.31,17.0,34.13
+07_candle_quality_adx20_rising,sl_update_bucket,sl_updates_4_10,37,11,26,0,29.73,70.27,-27.4204,345.6856,373.106,0.9265,-0.7411,0.0364,-0.4749,1.3454,6.78,7,15.27
+07_candle_quality_adx20_rising,sl_update_bucket,sl_updates_0,25,0,25,0,0.0,100.0,-546.1307,0,546.1307,0.0,-21.8452,-1.0034,-1.0027,-25.0843,0.0,0,5.32
+07_candle_quality_adx20_rising,sl_update_bucket,sl_updates_1_3,20,3,17,0,15.0,85.0,-228.8643,57.9181,286.7824,0.202,-11.4432,-0.4999,-0.7598,-9.999,2.0,2.0,8.4
