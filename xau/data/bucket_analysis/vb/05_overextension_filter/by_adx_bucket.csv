@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,adx_bucket,adx_20_25,81,35,46,0,43.21,56.79,865.152,1365.1934,500.0415,2.7302,10.6809,0.4729,-0.1603,38.302,12.25,10,23.46
+05_overextension_filter,adx_bucket,adx_ge30,74,34,40,0,45.95,54.05,314.5878,1094.5842,779.9964,1.4033,4.2512,0.1717,-0.1223,12.7075,11.03,10.0,21.97
+05_overextension_filter,adx_bucket,adx_25_30,64,28,36,0,43.75,56.25,645.4725,1171.1157,525.6432,2.228,10.0855,0.2769,-0.1151,17.7244,12.36,10.5,22.52
+05_overextension_filter,adx_bucket,adx_lt20,23,6,17,0,26.09,73.91,-15.9895,235.3609,251.3504,0.9364,-0.6952,-0.106,-0.7624,-2.4373,8.87,5,19.65

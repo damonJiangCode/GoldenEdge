@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,56,17,39,0,30.36,69.64,-264.816,166.4453,431.2613,0.386,-4.7289,-0.2053,-0.2073,-11.4947,7.18,8.0,16.34
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,47,35,12,0,74.47,25.53,1492.7763,1597.0637,104.2873,15.3141,31.7612,1.4956,1.243,70.2947,22.23,21,39.0
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,29,8,21,0,27.59,72.41,-152.1873,136.808,288.9953,0.4734,-5.2478,-0.2255,-0.2868,-6.5402,7.66,7,15.24
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,27,0,27,0,0.0,100.0,-450.0155,0,450.0155,0.0,-16.6672,-0.9784,-1.0028,-26.4162,0.44,0,5.3
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,24,20,4,0,83.33,16.67,483.9006,505.9265,22.026,22.9695,20.1625,1.13,1.1832,27.1205,24.92,22.0,43.08
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,16,0,16,0,0.0,100.0,-275.508,0,275.508,0.0,-17.2192,-0.9707,-1.0032,-15.5311,0.44,0.0,3.75
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,16,5,11,0,31.25,68.75,-60.1018,177.7935,237.8953,0.7474,-3.7564,-0.1758,-0.4731,-2.8122,8.31,9.5,16.69
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,15,12,3,0,80.0,20.0,825.1394,839.5741,14.4347,58.1636,55.0093,1.9406,1.7512,29.1091,19.87,17,36.27
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,5,1,4,0,20.0,80.0,-0.9481,79.2238,80.1719,0.9882,-0.1896,-0.2639,-1.002,-1.3193,1.4,0,5.0
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,4,3,1,0,75.0,25.0,3.3242,42.683,39.3588,1.0845,0.831,0.1379,0.3319,0.5517,5.5,6.0,16.75
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,2,2,0,0,100.0,0.0,320.7363,320.7363,0,,160.3681,2.1675,2.1675,4.335,28.5,28.5,42.5
+05_overextension_filter,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,1,0,1,0,0.0,100.0,-113.0772,0,113.0772,0.0,-113.0772,-1.0005,-1.0005,-1.0005,0.0,0,4.0

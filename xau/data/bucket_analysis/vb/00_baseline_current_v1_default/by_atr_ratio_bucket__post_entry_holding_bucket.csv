@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,63,13,50,0,20.63,79.37,-514.0853,118.5752,632.6604,0.1874,-8.1601,-0.3478,-0.4427,-21.91,6.56,6,16.06
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,50,42,8,0,84.0,16.0,1958.2529,2001.3307,43.0778,46.4585,39.1651,1.6906,1.43,84.5281,23.74,21.0,41.34
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,39,12,27,0,30.77,69.23,-67.4888,220.9442,288.433,0.766,-1.7305,-0.159,-0.1998,-6.202,8.26,8,16.26
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,30,0,30,0,0.0,100.0,-531.5101,0,531.5101,0.0,-17.717,-0.9673,-1.0026,-29.0181,0.6,0.0,5.03
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,29,27,2,0,93.1,6.9,891.9442,915.6828,23.7386,38.5735,30.7567,1.6651,1.3945,48.2893,26.03,23,43.07
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,21,17,4,0,80.95,19.05,1091.4174,1115.0254,23.608,47.2308,51.9723,1.8456,1.5961,38.7581,21.76,21,37.95
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,19,2,17,0,10.53,89.47,-264.9443,50.7152,315.6595,0.1607,-13.9444,-0.7143,-1.0026,-13.5709,0.68,0,4.37
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,13,2,11,0,15.38,84.62,-164.1303,50.2677,214.398,0.2345,-12.6254,-0.4603,-0.5712,-5.9835,9.0,8,15.46
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,7,3,4,0,42.86,57.14,-32.1915,46.8142,79.0057,0.5925,-4.5988,-0.1309,-0.1129,-0.9165,8.43,7,17.43
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,4,1,3,0,25.0,75.0,2.6148,79.2238,76.609,1.0341,0.6537,-0.2118,-1.0023,-0.8472,1.25,0.0,3.5
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,4,4,0,0,100.0,0.0,419.7214,419.7214,0,,104.9303,1.3767,0.6352,5.507,30.0,30.0,49.0
+00_baseline_current_v1_default,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,2,0,2,0,0.0,100.0,-140.5233,0,140.5233,0.0,-70.2616,-1.0014,-1.0014,-2.0027,0.0,0.0,2.5

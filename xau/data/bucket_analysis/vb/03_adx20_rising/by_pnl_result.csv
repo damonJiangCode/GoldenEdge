@@ -1,0 +1,3 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,pnl_result,loss,104,0,104,0,0.0,100.0,-1495.3808,0,1495.3808,0.0,-14.3787,-0.6307,-0.7006,-65.5941,5.46,4.0,13.77
+03_adx20_rising,pnl_result,profit,85,85,0,0,100.0,0.0,3209.9955,3209.9955,0,,37.7647,1.6813,1.3059,142.9082,19.87,17,33.29

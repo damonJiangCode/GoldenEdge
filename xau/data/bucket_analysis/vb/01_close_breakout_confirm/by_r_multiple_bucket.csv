@@ -1,0 +1,8 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+01_close_breakout_confirm,r_multiple_bucket,r_minus_1_to_0,81,0,81,0,0.0,100.0,-880.3242,0,880.3242,0.0,-10.8682,-0.4927,-0.4703,-39.9084,7.91,7,16.54
+01_close_breakout_confirm,r_multiple_bucket,r_lte_minus_1,46,0,46,0,0.0,100.0,-972.2585,0,972.2585,0.0,-21.1361,-1.0034,-1.0028,-46.1565,0.0,0.0,6.11
+01_close_breakout_confirm,r_multiple_bucket,r_0_to_0_5,28,28,0,0,100.0,0.0,186.0626,186.0626,0,,6.6451,0.2224,0.2138,6.2263,13.93,13.5,25.68
+01_close_breakout_confirm,r_multiple_bucket,r_1_to_2,28,28,0,0,100.0,0.0,1007.413,1007.413,0,,35.979,1.4581,1.368,40.8264,21.43,21.0,36.39
+01_close_breakout_confirm,r_multiple_bucket,r_2_to_4,22,22,0,0,100.0,0.0,1513.4144,1513.4144,0,,68.7916,2.8527,2.5935,62.7599,26.91,25.0,42.68
+01_close_breakout_confirm,r_multiple_bucket,r_0_5_to_1,17,17,0,0,100.0,0.0,356.6004,356.6004,0,,20.9765,0.7185,0.6868,12.2138,15.71,15,25.82
+01_close_breakout_confirm,r_multiple_bucket,r_gte_4,6,6,0,0,100.0,0.0,623.3942,623.3942,0,,103.899,5.4222,5.3289,32.5334,32.0,33.0,50.67

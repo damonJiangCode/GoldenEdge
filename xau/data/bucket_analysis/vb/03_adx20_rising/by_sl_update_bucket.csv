@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,sl_update_bucket,sl_updates_gt_10,90,70,20,0,77.78,22.22,2727.2099,2829.1443,101.9344,27.7546,30.3023,1.3572,1.0907,122.1522,20.88,18.0,35.4
+03_adx20_rising,sl_update_bucket,sl_updates_4_10,50,13,37,0,26.0,74.0,-152.606,323.8298,476.4358,0.6797,-3.0521,-0.0969,-0.4144,-4.846,6.82,7.0,15.5
+03_adx20_rising,sl_update_bucket,sl_updates_0,30,0,30,0,0.0,100.0,-635.0785,0,635.0785,0.0,-21.1693,-1.0035,-1.0028,-30.1037,0.0,0.0,5.17
+03_adx20_rising,sl_update_bucket,sl_updates_1_3,19,2,17,0,10.53,89.47,-224.9107,57.0214,281.9321,0.2023,-11.8374,-0.5204,-0.777,-9.8884,1.95,2,7.68

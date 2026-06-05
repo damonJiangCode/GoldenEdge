@@ -1,0 +1,12 @@
+{
+  "variant": "00_baseline_current_v1_default",
+  "source_file": "/Users/damon/Documents/GoldenEdge/xau/data/optimization/vb/00_baseline_current_v1_default/unified_trades.csv",
+  "trades": 281,
+  "profit_ratio_pct": 43.77,
+  "net_pnl": 2649.077,
+  "profit_factor": 2.1181,
+  "avg_r": 0.3439,
+  "sum_r": 96.6316,
+  "avg_sl_update_count": 12.33,
+  "output_dir": "/Users/damon/Documents/GoldenEdge/xau/data/bucket_analysis/vb/00_baseline_current_v1_default"
+}

@@ -1,0 +1,3 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,pnl_result,loss,158,0,158,0,0.0,100.0,-2369.2236,0,2369.2236,0.0,-14.9951,-0.6744,-0.7671,-106.5566,5.15,4.0,13.22
+00_baseline_current_v1_default,pnl_result,profit,123,123,0,0,100.0,0.0,5018.3006,5018.3006,0,,40.7992,1.6519,1.3036,203.1881,21.56,21,36.12

@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,110,35,75,0,31.82,68.18,-286.1136,336.3954,622.509,0.5404,-2.601,-0.1211,-0.1446,-13.3168,3.59,2.0,10.87
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,66,26,40,0,39.39,60.61,114.4494,405.0441,290.5947,1.3938,1.7341,-0.0085,-0.1438,-0.564,5.59,5.0,12.35
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,34,0,34,0,0.0,100.0,-561.9821,0,561.9821,0.0,-16.5289,-0.9339,-1.0026,-31.753,0.71,0.0,5.09
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,33,32,1,0,96.97,3.03,1306.0813,1313.0415,6.9602,188.6504,39.5782,2.0936,1.7416,69.0889,24.21,21,40.06
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,27,8,19,0,29.63,70.37,-204.0858,83.4101,287.496,0.2901,-7.5587,-0.2354,-0.2121,-6.356,4.0,1,10.74
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,21,2,19,0,9.52,90.48,-307.7436,50.7152,358.4588,0.1415,-14.6545,-0.7275,-1.0025,-15.2776,0.86,0,4.33
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,18,18,0,0,100.0,0.0,612.7578,612.7578,0,,34.0421,1.7048,1.2835,30.686,25.72,23.5,39.06
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,13,13,0,0,100.0,0.0,891.5539,891.5539,0,,68.5811,2.4469,2.1601,31.8103,23.92,21,37.08
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,10,3,7,0,30.0,70.0,-57.6496,37.7073,95.3569,0.3954,-5.765,-0.1657,-0.0962,-1.6566,5.2,3.5,12.8
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,5,1,4,0,20.0,80.0,-6.6383,79.2238,85.8621,0.9227,-1.3277,-0.2329,-1.0017,-1.1645,2.0,0,4.2
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,2,0,2,0,0.0,100.0,-140.5233,0,140.5233,0.0,-70.2616,-1.0014,-1.0014,-2.0027,0.0,0.0,2.5
+06_early_failure_exit,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,2,2,0,0,100.0,0.0,380.2193,380.2193,0,,190.1097,2.1983,2.1983,4.3965,30.0,30.0,46.0

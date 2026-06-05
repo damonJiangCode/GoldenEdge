@@ -1,0 +1,12 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,34,9,25,0,26.47,73.53,-188.7752,208.5786,397.3538,0.5249,-5.5522,-0.2275,-0.4784,-7.7338,7.41,6.0,15.88
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,29,8,21,0,27.59,72.41,-116.4699,112.1316,228.6015,0.4905,-4.0162,-0.2427,-0.2253,-7.0389,7.48,8,16.93
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,26,8,18,0,30.77,69.23,-119.8765,124.6253,244.5018,0.5097,-4.6106,-0.2795,-0.5419,-7.2679,7.27,7.0,15.19
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,23,23,0,0,100.0,0.0,1242.1997,1242.1997,0,,54.0087,2.1026,1.672,48.3597,25.3,22,45.17
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,23,18,5,0,78.26,21.74,884.4376,911.3388,26.9011,33.8774,38.4538,1.1913,0.6968,27.3995,22.48,21,38.3
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,18,15,3,0,83.33,16.67,541.4872,568.2579,26.7706,21.2269,30.0826,1.2245,1.2094,22.0408,22.89,22.0,40.39
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,12,1,11,0,8.33,91.67,-309.0195,31.6261,340.6456,0.0928,-25.7516,-0.7963,-1.0025,-9.5557,0.08,0.0,3.25
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,7,0,7,0,0.0,100.0,-121.5944,0,121.5944,0.0,-17.3706,-0.8928,-1.0025,-6.2497,0.86,0,4.57
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,7,2,5,0,28.57,71.43,-48.1555,6.6779,54.8334,0.1218,-6.8794,-0.197,-0.1864,-1.3789,8.14,8,18.0
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,3,2,1,0,66.67,33.33,73.8435,112.3014,38.4579,2.9201,24.6145,0.9826,1.7891,2.9479,2.0,1,4.0
+04_atr_ratio_1_1,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,3,0,3,0,0.0,100.0,-42.0669,0,42.0669,0.0,-14.0223,-1.0046,-1.0051,-3.0139,0.0,0,4.0

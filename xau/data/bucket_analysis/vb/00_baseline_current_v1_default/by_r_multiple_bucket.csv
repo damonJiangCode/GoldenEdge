@@ -1,0 +1,8 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,r_multiple_bucket,r_minus_1_to_0,103,0,103,0,0.0,100.0,-1155.0384,0,1155.0384,0.0,-11.214,-0.4988,-0.5083,-51.3755,7.89,7,17.05
+00_baseline_current_v1_default,r_multiple_bucket,r_lte_minus_1,55,0,55,0,0.0,100.0,-1214.1852,0,1214.1852,0.0,-22.0761,-1.0033,-1.0028,-55.1811,0.02,0,6.04
+00_baseline_current_v1_default,r_multiple_bucket,r_1_to_2,36,36,0,0,100.0,0.0,1465.0379,1465.0379,0,,40.6955,1.4579,1.4095,52.483,20.97,21.0,37.06
+00_baseline_current_v1_default,r_multiple_bucket,r_2_to_4,30,30,0,0,100.0,0.0,2156.9783,2156.9783,0,,71.8993,2.7385,2.539,82.1536,27.13,30.5,43.9
+00_baseline_current_v1_default,r_multiple_bucket,r_0_to_0_5,27,27,0,0,100.0,0.0,147.8485,147.8485,0,,5.4759,0.2189,0.2054,5.9105,15.07,15,27.3
+00_baseline_current_v1_default,r_multiple_bucket,r_0_5_to_1,22,22,0,0,100.0,0.0,437.295,437.295,0,,19.877,0.7131,0.6799,15.6876,16.27,14.5,26.36
+00_baseline_current_v1_default,r_multiple_bucket,r_gte_4,8,8,0,0,100.0,0.0,811.1409,811.1409,0,,101.3926,5.8692,5.685,46.9534,39.75,35.0,59.38

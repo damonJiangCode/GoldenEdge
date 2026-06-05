@@ -1,0 +1,3 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,pnl_result,loss,139,0,139,0,0.0,100.0,-2057.0314,0,2057.0314,0.0,-14.7988,-0.6672,-0.7624,-92.7429,5.01,3,13.58
+05_overextension_filter,pnl_result,profit,103,103,0,0,100.0,0.0,3866.2542,3866.2542,0,,37.5364,1.5441,1.2166,159.0396,20.46,19,34.29

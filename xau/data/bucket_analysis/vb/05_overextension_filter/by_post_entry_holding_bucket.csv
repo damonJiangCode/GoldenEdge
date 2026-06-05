@@ -1,0 +1,4 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,post_entry_holding_bucket,hold_8_24,105,33,72,0,31.43,68.57,-473.781,523.7298,997.5108,0.525,-4.5122,-0.1933,-0.253,-20.2955,7.42,7,16.1
+05_overextension_filter,post_entry_holding_bucket,hold_25_plus,88,69,19,0,78.41,21.59,3122.5526,3263.3006,140.748,23.1854,35.4836,1.487,1.241,130.8593,22.7,21.0,39.73
+05_overextension_filter,post_entry_holding_bucket,hold_1_7,49,1,48,0,2.04,97.96,-839.5488,79.2238,918.7726,0.0862,-17.1336,-0.9034,-1.0029,-44.2671,0.53,0,4.73

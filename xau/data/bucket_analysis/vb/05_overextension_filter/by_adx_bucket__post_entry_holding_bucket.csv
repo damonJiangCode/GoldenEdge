@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_8_24,38,11,27,0,28.95,71.05,-45.0611,209.2613,254.3224,0.8228,-1.1858,-0.1254,-0.2101,-4.7659,7.45,8.0,16.61
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_8_24,35,14,21,0,40.0,60.0,-205.4294,197.5022,402.9316,0.4902,-5.8694,-0.186,-0.253,-6.5108,7.69,9,16.54
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_25_plus,28,24,4,0,85.71,14.29,1128.6141,1155.9322,27.3181,42.3138,40.3076,2.0553,2.026,57.5487,25.0,22.0,42.71
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_25_plus,26,20,6,0,76.92,23.08,955.3852,980.6622,25.2771,38.7965,36.7456,1.2586,1.1832,32.7223,22.69,19.0,38.15
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_25_plus,26,20,6,0,76.92,23.08,838.8265,897.082,58.2556,15.3991,32.2626,1.2081,0.5855,31.4106,20.77,19.0,38.15
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_8_24,25,7,18,0,28.0,72.0,-140.6632,111.2297,251.8929,0.4416,-5.6265,-0.2175,-0.2868,-5.4375,7.64,7,15.28
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_20_25__hold_1_7,15,0,15,0,0.0,100.0,-218.401,0,218.401,0.0,-14.5601,-0.9654,-1.0031,-14.4808,0.6,0,4.87
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_25_30__hold_1_7,13,1,12,0,7.69,92.31,-169.2494,79.2238,248.4732,0.3188,-13.0192,-0.7354,-1.0024,-9.5603,0.77,0,5.15
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_ge30__hold_1_7,13,0,13,0,0.0,100.0,-318.8093,0,318.8093,0.0,-24.5238,-0.9379,-1.0026,-12.1922,0.54,0,4.23
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_1_7,8,0,8,0,0.0,100.0,-133.0891,0,133.0891,0.0,-16.6361,-1.0042,-1.0043,-8.0338,0.0,0.0,4.62
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_25_plus,8,5,3,0,62.5,37.5,199.7269,229.6242,29.8973,7.6804,24.9659,1.1472,0.5338,9.1778,21.0,18.5,39.5
+05_overextension_filter,adx_bucket__post_entry_holding_bucket,adx_lt20__hold_8_24,7,1,6,0,14.29,85.71,-82.6273,5.7367,88.364,0.0649,-11.8039,-0.5116,-0.7624,-3.5812,5.14,5,14.14

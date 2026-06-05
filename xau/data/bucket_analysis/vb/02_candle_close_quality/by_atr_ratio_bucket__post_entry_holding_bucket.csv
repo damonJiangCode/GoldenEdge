@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,40,11,29,0,27.5,72.5,-217.0261,117.3922,334.4184,0.351,-5.4257,-0.2509,-0.3641,-10.0364,7.25,7.0,16.45
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,39,31,8,0,79.49,20.51,1211.6557,1262.4188,50.7631,24.8688,31.0681,1.5441,1.3036,60.2214,21.77,21,38.38
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,38,10,28,0,26.32,73.68,-153.9212,179.7251,333.6463,0.5387,-4.0506,-0.2316,-0.3857,-8.8016,7.71,7.0,16.05
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,24,1,23,0,4.17,95.83,-369.6574,0.8967,370.5541,0.0024,-15.4024,-0.8549,-1.0024,-20.5169,0.92,0.0,4.92
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,21,19,2,0,90.48,9.52,556.1837,589.0888,32.9052,17.9026,26.4849,1.3575,1.2166,28.507,25.67,23,42.67
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,17,5,12,0,29.41,70.59,7.6021,244.9399,237.3378,1.032,0.4472,-0.0104,-0.3522,-0.1772,9.06,10,16.76
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,16,2,14,0,12.5,87.5,-186.7803,50.7152,237.4955,0.2135,-11.6738,-0.6779,-1.0029,-10.8456,0.75,0.0,4.38
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,15,13,2,0,86.67,13.33,787.1872,789.8803,2.6931,293.302,52.4791,2.1012,1.9321,31.5185,23.0,21,38.27
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,4,1,3,0,25.0,75.0,3.4152,49.7638,46.3486,1.0737,0.8538,-0.1443,-0.3938,-0.5772,2.75,3.0,6.0
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,4,4,0,0,100.0,0.0,419.7214,419.7214,0,,104.9303,1.3767,0.6352,5.507,30.0,30.0,49.0
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,4,2,2,0,50.0,50.0,20.4088,32.7073,12.2985,2.6595,5.1022,0.0925,0.0728,0.3701,11.0,9.0,17.75
+02_candle_close_quality,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,2,0,2,0,0.0,100.0,-70.9058,0,70.9058,0.0,-35.4529,-1.0018,-1.0018,-2.0036,0.0,0.0,1.0

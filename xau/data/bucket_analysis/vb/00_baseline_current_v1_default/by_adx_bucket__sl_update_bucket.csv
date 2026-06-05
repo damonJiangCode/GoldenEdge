@@ -1,0 +1,17 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_gt_10,49,38,11,0,77.55,22.45,1265.5944,1332.7891,67.1947,19.8347,25.8285,1.1592,0.8899,56.7986,20.43,20,34.73
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_gt_10,36,29,7,0,80.56,19.44,1423.6595,1449.8577,26.1982,55.3418,39.5461,1.4893,1.245,53.613,23.72,19.0,38.11
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_gt_10,36,26,10,0,72.22,27.78,1310.8519,1375.1157,64.2638,21.398,36.4126,1.2001,0.713,43.2041,22.39,21.0,36.81
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_4_10,25,5,20,0,20.0,80.0,-22.1223,177.0542,199.1764,0.8889,-0.8849,-0.098,-0.4332,-2.4501,6.84,7,16.0
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_4_10,19,6,13,0,31.58,68.42,-143.2844,70.346,213.6304,0.3293,-7.5413,-0.2754,-0.3629,-5.233,7.16,7,16.58
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_0,18,0,18,0,0.0,100.0,-370.0316,0,370.0316,0.0,-20.5573,-1.0032,-1.003,-18.0585,0.0,0.0,5.5
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_4_10,17,5,12,0,29.41,70.59,37.5875,196.375,158.7876,1.2367,2.211,0.0605,-0.4806,1.0283,6.88,7,13.88
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_1_3,15,2,13,0,13.33,86.67,-106.9458,50.7152,157.661,0.3217,-7.1297,-0.4442,-0.7235,-6.6633,2.07,2,9.87
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_0,14,0,14,0,0.0,100.0,-386.8195,0,386.8195,0.0,-27.63,-1.003,-1.0027,-14.0422,0.0,0.0,5.07
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_0,12,0,12,0,0.0,100.0,-270.3248,0,270.3248,0.0,-22.5271,-1.0031,-1.0026,-12.0374,0.0,0.0,7.5
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_gt_10,11,10,1,0,90.91,9.09,354.2794,359.3698,5.0904,70.5978,32.2072,2.0708,1.664,22.7788,24.27,21,41.45
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_0,10,0,10,0,0.0,100.0,-177.3053,0,177.3053,0.0,-17.7305,-1.0039,-1.0034,-10.0394,0.0,0.0,5.6
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_4_10,10,2,8,0,20.0,80.0,-96.2979,6.6779,102.9758,0.0648,-9.6298,-0.4195,-0.7084,-4.1948,6.7,7.0,16.8
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_1_3,5,0,5,0,0.0,100.0,-60.4444,0,60.4444,0.0,-12.0889,-0.8648,-0.8125,-4.3241,2.0,2,7.8
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_1_3,3,0,3,0,0.0,100.0,-99.8709,0,99.8709,0.0,-33.2903,-0.9246,-0.9001,-2.7738,1.33,1,12.33
+00_baseline_current_v1_default,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_1_3,1,0,1,0,0.0,100.0,-9.4488,0,9.4488,0.0,-9.4488,-0.9748,-0.9748,-0.9748,2.0,2,17.0

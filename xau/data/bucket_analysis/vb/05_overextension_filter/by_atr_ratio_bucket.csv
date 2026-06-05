@@ -1,0 +1,5 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+05_overextension_filter,atr_ratio_bucket,atrr_lt1_1,130,52,78,0,40.0,60.0,777.9448,1763.509,985.5642,1.7893,5.9842,0.2491,-0.1925,32.3838,11.22,9.0,22.24
+05_overextension_filter,atr_ratio_bucket,atrr_1_1_1_25,69,28,41,0,40.58,59.42,56.2053,642.7345,586.5292,1.0958,0.8146,0.0732,-0.2172,5.0492,11.99,10,22.26
+05_overextension_filter,atr_ratio_bucket,atrr_1_25_1_5,36,18,18,0,50.0,50.0,764.0895,1096.5914,332.5019,3.298,21.2247,0.6938,0.0399,24.9776,12.17,12.0,23.22
+05_overextension_filter,atr_ratio_bucket,atrr_ge1_5,7,5,2,0,71.43,28.57,210.9832,363.4193,152.436,2.3841,30.1405,0.5552,0.5121,3.8861,11.29,7,22.29

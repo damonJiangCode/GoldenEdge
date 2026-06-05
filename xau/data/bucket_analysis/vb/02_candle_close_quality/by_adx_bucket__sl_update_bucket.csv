@@ -1,0 +1,17 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_gt_10,38,29,9,0,76.32,23.68,782.929,836.2853,53.3562,15.6736,20.6034,1.0509,0.7105,39.9333,20.32,20.0,34.32
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_gt_10,34,29,5,0,85.29,14.71,1307.458,1327.2903,19.8323,66.9256,38.4546,1.4873,1.2278,50.5675,23.24,20.0,37.88
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_gt_10,25,18,7,0,72.0,28.0,967.2871,1017.8065,50.5194,20.1468,38.6915,1.3296,0.8275,33.2397,22.24,20,34.56
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_4_10,23,4,19,0,17.39,82.61,-38.4426,152.2642,190.7068,0.7984,-1.6714,-0.1884,-0.3522,-4.3331,6.83,6,15.65
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_4_10,16,3,13,0,18.75,81.25,-91.369,46.3553,137.7243,0.3366,-5.7106,-0.2168,-0.3857,-3.4686,7.19,7.0,15.62
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_4_10,14,6,8,0,42.86,57.14,53.8433,167.7888,113.9455,1.4725,3.8459,0.1179,-0.4338,1.6501,7.07,7.0,14.64
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_0,12,0,12,0,0.0,100.0,-271.4365,0,271.4365,0.0,-22.6197,-1.0034,-1.0028,-12.0413,0.0,0.0,6.0
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_0,10,0,10,0,0.0,100.0,-212.5304,0,212.5304,0.0,-21.253,-1.0031,-1.0027,-10.0313,0.0,0.0,5.4
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_20_25__sl_updates_1_3,10,2,8,0,20.0,80.0,-74.8524,50.7152,125.5676,0.4039,-7.4852,-0.3999,-0.8965,-3.9995,2.3,2.5,8.0
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_0,10,0,10,0,0.0,100.0,-214.8754,0,214.8754,0.0,-21.4875,-1.0033,-1.0027,-10.0333,0.0,0.0,4.6
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_ge30__sl_updates_1_3,9,0,9,0,0.0,100.0,-112.8831,0,112.8831,0.0,-12.5426,-0.6641,-0.801,-5.9765,2.0,2,8.78
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_4_10,9,3,6,0,33.33,66.67,-52.9938,19.3901,72.3839,0.2679,-5.8882,-0.2423,-0.1864,-2.1804,6.67,7,17.11
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_0,5,0,5,0,0.0,100.0,-106.6472,0,106.6472,0.0,-21.3294,-1.0032,-1.0028,-5.0162,0.0,0,6.4
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_gt_10,5,4,1,0,80.0,20.0,113.3667,118.4571,5.0904,23.2708,22.6733,1.5402,0.3435,7.7012,16.2,16,30.8
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_25_30__sl_updates_1_3,3,1,2,0,33.33,66.67,-31.5217,0.8967,32.4184,0.0277,-10.5072,-0.6237,-0.9556,-1.8712,2.0,2,14.0
+02_candle_close_quality,adx_bucket__sl_update_bucket,adx_lt20__sl_updates_1_3,1,0,1,0,0.0,100.0,-9.4488,0,9.4488,0.0,-9.4488,-0.9748,-0.9748,-0.9748,2.0,2,17.0

@@ -1,0 +1,13 @@
+variant,bucket,bucket_value,trades,profit_trades,loss_trades,flat_trades,profit_ratio_pct,loss_ratio_pct,net_pnl,gross_profit,gross_loss_abs,profit_factor,avg_net_pnl,avg_r,median_r,sum_r,avg_sl_update_count,median_sl_update_count,avg_holding_bars
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_25_plus,38,29,9,0,76.32,23.68,1168.6938,1213.8303,45.1365,26.8924,30.7551,1.6495,1.3898,62.6822,21.92,20.5,39.37
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_8_24,36,11,25,0,30.56,69.44,-217.8364,168.0037,385.8402,0.4354,-6.051,-0.1805,-0.3726,-6.4993,6.33,7.0,14.97
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_8_24,27,11,16,0,40.74,59.26,1.8959,186.271,184.3751,1.0103,0.0702,-0.062,-0.1493,-1.6749,8.78,9,16.74
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_25_plus,21,15,6,0,71.43,28.57,549.4372,590.8328,41.3956,14.2728,26.1637,1.5154,1.1982,31.8239,23.76,22,40.86
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_lt1_1__hold_1_7,21,0,21,0,0.0,100.0,-295.2365,0,295.2365,0.0,-14.0589,-0.8776,-1.0023,-18.4295,1.24,0,5.57
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_1_1_25__hold_1_7,14,1,13,0,7.14,92.86,-238.8657,33.0776,271.9433,0.1216,-17.0618,-0.7469,-1.0026,-10.456,0.43,0.0,3.79
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_25_plus,11,10,1,0,90.91,9.09,635.9693,636.7929,0.8236,773.1409,57.8154,2.0133,2.1601,22.146,20.27,18,34.64
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_8_24,10,3,7,0,30.0,70.0,-115.5517,49.432,164.9837,0.2996,-11.5552,-0.3983,-0.566,-3.9831,7.1,7.0,13.8
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_8_24,4,1,3,0,25.0,75.0,-24.8712,15.9843,40.8555,0.3912,-6.2178,-0.071,-0.2,-0.284,10.5,8.0,16.0
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_1_25_1_5__hold_1_7,3,1,2,0,33.33,66.67,-13.4009,23.9438,37.3447,0.6412,-4.467,-0.2162,-0.4703,-0.6485,2.67,3,6.0
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_25_plus,3,3,0,0,100.0,0.0,291.827,291.827,0,,97.2757,1.2132,0.4137,3.6395,28.0,29,48.33
+03_adx20_rising,atr_ratio_bucket__post_entry_holding_bucket,atrr_ge1_5__hold_1_7,1,0,1,0,0.0,100.0,-27.446,0,27.446,0.0,-27.446,-1.0022,-1.0022,-1.0022,0.0,0,1.0
