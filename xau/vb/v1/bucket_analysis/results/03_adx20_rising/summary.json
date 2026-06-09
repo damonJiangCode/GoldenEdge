@@ -1,0 +1,12 @@
+{
+  "variant": "03_adx20_rising",
+  "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/03_adx20_rising/unified_trades.csv",
+  "trades": 189,
+  "profit_ratio_pct": 44.97,
+  "net_pnl": 1714.6147,
+  "profit_factor": 2.1466,
+  "avg_r": 0.4091,
+  "sum_r": 77.3141,
+  "avg_sl_update_count": 11.94,
+  "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/03_adx20_rising"
+}

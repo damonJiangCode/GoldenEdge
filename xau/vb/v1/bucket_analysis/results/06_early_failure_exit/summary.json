@@ -1,0 +1,12 @@
+{
+  "variant": "06_early_failure_exit",
+  "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/06_early_failure_exit/unified_trades.csv",
+  "trades": 341,
+  "profit_ratio_pct": 41.06,
+  "net_pnl": 1740.3254,
+  "profit_factor": 1.7104,
+  "avg_r": 0.1874,
+  "sum_r": 63.8905,
+  "avg_sl_update_count": 7.65,
+  "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/06_early_failure_exit"
+}

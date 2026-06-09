@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "00_baseline_current_v1_default",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/00_baseline_current_v1_default/unified_trades.csv",
+    "trades": 281,
+    "profit_ratio_pct": 43.77,
+    "net_pnl": 2649.077,
+    "profit_factor": 2.1181,
+    "avg_r": 0.3439,
+    "sum_r": 96.6316,
+    "avg_sl_update_count": 12.33,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/00_baseline_current_v1_default"
+  },
+  {
+    "variant": "01_close_breakout_confirm",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/01_close_breakout_confirm/unified_trades.csv",
+    "trades": 228,
+    "profit_ratio_pct": 44.3,
+    "net_pnl": 1834.302,
+    "profit_factor": 1.9901,
+    "avg_r": 0.3004,
+    "sum_r": 68.4948,
+    "avg_sl_update_count": 11.76,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/01_close_breakout_confirm"
+  },
+  {
+    "variant": "02_candle_close_quality",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/02_candle_close_quality/unified_trades.csv",
+    "trades": 224,
+    "profit_ratio_pct": 44.2,
+    "net_pnl": 2007.8832,
+    "profit_factor": 2.1611,
+    "avg_r": 0.3266,
+    "sum_r": 73.1655,
+    "avg_sl_update_count": 11.96,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/02_candle_close_quality"
+  },
+  {
+    "variant": "03_adx20_rising",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/03_adx20_rising/unified_trades.csv",
+    "trades": 189,
+    "profit_ratio_pct": 44.97,
+    "net_pnl": 1714.6147,
+    "profit_factor": 2.1466,
+    "avg_r": 0.4091,
+    "sum_r": 77.3141,
+    "avg_sl_update_count": 11.94,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/03_adx20_rising"
+  },
+  {
+    "variant": "04_atr_ratio_1_1",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/04_atr_ratio_1_1/unified_trades.csv",
+    "trades": 185,
+    "profit_ratio_pct": 46.49,
+    "net_pnl": 1796.0101,
+    "profit_factor": 2.1802,
+    "avg_r": 0.3163,
+    "sum_r": 58.5091,
+    "avg_sl_update_count": 12.1,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/04_atr_ratio_1_1"
+  },
+  {
+    "variant": "05_overextension_filter",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/05_overextension_filter/unified_trades.csv",
+    "trades": 242,
+    "profit_ratio_pct": 42.56,
+    "net_pnl": 1809.2228,
+    "profit_factor": 1.8795,
+    "avg_r": 0.274,
+    "sum_r": 66.2967,
+    "avg_sl_update_count": 11.58,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/05_overextension_filter"
+  },
+  {
+    "variant": "06_early_failure_exit",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/06_early_failure_exit/unified_trades.csv",
+    "trades": 341,
+    "profit_ratio_pct": 41.06,
+    "net_pnl": 1740.3254,
+    "profit_factor": 1.7104,
+    "avg_r": 0.1874,
+    "sum_r": 63.8905,
+    "avg_sl_update_count": 7.65,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/06_early_failure_exit"
+  },
+  {
+    "variant": "07_candle_quality_adx20_rising",
+    "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/07_candle_quality_adx20_rising/unified_trades.csv",
+    "trades": 150,
+    "profit_ratio_pct": 45.33,
+    "net_pnl": 1188.9883,
+    "profit_factor": 1.9321,
+    "avg_r": 0.3674,
+    "sum_r": 55.1082,
+    "avg_sl_update_count": 11.15,
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/07_candle_quality_adx20_rising"
+  }
+]

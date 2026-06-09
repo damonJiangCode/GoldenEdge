@@ -1,0 +1,134 @@
+{
+  "years": 11,
+  "avg_return_pct": 16.685025421053698,
+  "avg_profit_factor": 2.0864410892927605,
+  "avg_max_drawdown_pct": 9.670678424148544,
+  "positive_years": 9,
+  "avg_trades": 22.0,
+  "avg_win_rate": 0.4298721967687485,
+  "total_early_exits": 0,
+  "worst_year": {
+    "year": "2018",
+    "return_pct": -3.0547154004988553,
+    "profit_factor": 0.6812730189843916,
+    "max_drawdown_pct": 6.56172032180308,
+    "trades": 29,
+    "win_rate": 0.3448275862068966,
+    "early_exit_count": 0
+  },
+  "best_year": {
+    "year": "2025",
+    "return_pct": 73.0236453658024,
+    "profit_factor": 2.5437926239657953,
+    "max_drawdown_pct": 19.55940027545366,
+    "trades": 29,
+    "win_rate": 0.6206896551724138,
+    "early_exit_count": 0
+  },
+  "rows": [
+    {
+      "year": "2015",
+      "return_pct": 5.434361167110388,
+      "profit_factor": 4.54606473219094,
+      "max_drawdown_pct": 1.6569187466482134,
+      "trades": 4,
+      "win_rate": 0.5,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2016",
+      "return_pct": 2.285231103371359,
+      "profit_factor": 1.5064161955385746,
+      "max_drawdown_pct": 3.473429492214966,
+      "trades": 6,
+      "win_rate": 0.3333333333333333,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2017",
+      "return_pct": 5.891339290799124,
+      "profit_factor": 1.5228522360668741,
+      "max_drawdown_pct": 5.841594402373636,
+      "trades": 25,
+      "win_rate": 0.44,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2018",
+      "return_pct": -3.0547154004988553,
+      "profit_factor": 0.6812730189843916,
+      "max_drawdown_pct": 6.56172032180308,
+      "trades": 29,
+      "win_rate": 0.3448275862068966,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2019",
+      "return_pct": -1.5901457900006448,
+      "profit_factor": 0.9224189169750837,
+      "max_drawdown_pct": 11.119020565697031,
+      "trades": 30,
+      "win_rate": 0.36666666666666664,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2020",
+      "return_pct": 20.57033989918393,
+      "profit_factor": 1.7643524728406552,
+      "max_drawdown_pct": 12.922030910819435,
+      "trades": 25,
+      "win_rate": 0.4,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2021",
+      "return_pct": 12.847239081614543,
+      "profit_factor": 1.609149371407137,
+      "max_drawdown_pct": 10.14781928900556,
+      "trades": 26,
+      "win_rate": 0.38461538461538464,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2022",
+      "return_pct": 15.61704239037747,
+      "profit_factor": 1.6498718592963288,
+      "max_drawdown_pct": 13.711571745388088,
+      "trades": 30,
+      "win_rate": 0.4,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2023",
+      "return_pct": 19.28366997502558,
+      "profit_factor": 1.8204515831115438,
+      "max_drawdown_pct": 15.477050656928757,
+      "trades": 25,
+      "win_rate": 0.4,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2024",
+      "return_pct": 33.227272548805416,
+      "profit_factor": 4.384208971843039,
+      "max_drawdown_pct": 5.906906259301557,
+      "trades": 13,
+      "win_rate": 0.5384615384615384,
+      "early_exit_count": 0
+    },
+    {
+      "year": "2025",
+      "return_pct": 73.0236453658024,
+      "profit_factor": 2.5437926239657953,
+      "max_drawdown_pct": 19.55940027545366,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "early_exit_count": 0
+    }
+  ],
+  "experiment": {
+    "name": "05_overextension_filter",
+    "description": "Reject breakout bars with range greater than 1.8 ATR.",
+    "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/05_overextension_filter"
+  }
+}
