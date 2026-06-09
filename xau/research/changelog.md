@@ -50,9 +50,9 @@
 4. 清理 optimization 旧 JSON report 输出：
    - 已删除：`xau/data/optimization/vb/*/reports/report_YEAR.json`
    - 保留正式 engine report：
-   - `xau/data/reports/volatility_breakout/v1/H4/report_2015.json`
+   - `xau/data/reports/vb/v1/H4/report_2015.json`
    - ...
-   - `xau/data/reports/volatility_breakout/v1/H4/report_2025.json`
+   - `xau/data/reports/vb/v1/H4/report_2025.json`
 
 5. 新增 7 个 VB v1 过滤实验脚本：
    - `01_close_breakout_confirm.py`
@@ -207,7 +207,7 @@ xau/data/optimization/vb/comparison_summary.json
 xau/data/optimization/vb/*/reports/report_YEAR.json
 ```
 
-说明：正式 engine report 目录 `xau/data/reports/volatility_breakout/v1/H4/` 未清理，仍保留为主策略年度 report 来源。
+说明：正式 engine report 目录 `xau/data/reports/vb/v1/H4/` 未清理，仍保留为主策略年度 report 来源。
 
 ### 对照结果
 
@@ -585,7 +585,7 @@ drawdown_reduction_weight
 - 变更类型：`validation`
 - 验证对象：`volatility_breakout/v1`，`H4` 推荐主候选
 - 运行命令：`.venv/bin/python xau/scripts/validation/vb_h4_candidate_validate.py`
-- 正式报告目录：`xau/data/reports/volatility_breakout/v1_h4_candidate/`
+- 正式报告目录：`xau/data/reports/vb/v1_h4_candidate/`
 - 验证输出目录：`xau/data/validation/volatility_breakout/v1_h4_candidate/`
 
 ### 验证参数
@@ -644,7 +644,7 @@ drawdown_reduction_weight
 - 日期：2026-04-28
 - 变更类型：`optimization`
 - 优化对象：`volatility_breakout/v1`，仅聚焦 `H4`
-- 对比基线：`xau/data/reports/volatility_breakout/v1/H4/`
+- 对比基线：`xau/data/reports/vb/v1/H4/`
 - 第一轮运行命令：`.venv/bin/python xau/scripts/optimization/vb_h4_grid.py --workers 4 --top-n 30`
 - 第二轮运行命令：`.venv/bin/python xau/scripts/optimization/vb_h4_island.py`
 - 第一轮输出目录：`xau/data/optimizations/volatility_breakout/v1/H4/`
@@ -761,9 +761,9 @@ drawdown_reduction_weight
 
 - 日期：2026-02-27
 - 变更类型：`filter`
-- 对比基线：`xau/data/reports/volatility_breakout/v1/`（默认 `ADX` 过滤）
+- 对比基线：`xau/data/reports/vb/v1/`（默认 `ADX` 过滤）
 - 运行命令：`.venv/bin/python xau/scripts/engines/volatility_breakout/v2.py --timeframes M1,M15,M30,H1,H4 --trend-filter ema200`
-- 输出目录：`xau/data/reports/volatility_breakout/v2/`
+- 输出目录：`xau/data/reports/vb/v2/`
 
 ### 改了什么
 
@@ -831,9 +831,9 @@ drawdown_reduction_weight
 
 - 日期：2026-02-27
 - 变更类型：`logic`
-- 对比基线：`xau/data/reports/volatility_breakout/v1/`
+- 对比基线：`xau/data/reports/vb/v1/`
 - 运行命令：`.venv/bin/python xau/scripts/engines/volatility_breakout/v3.py --timeframes M1,M15,M30,H1,H4`
-- 输出目录：`xau/data/reports/volatility_breakout/v3/`
+- 输出目录：`xau/data/reports/vb/v3/`
 
 ### 策略目的
 
