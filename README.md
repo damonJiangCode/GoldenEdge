@@ -40,7 +40,7 @@ Worst Year:      +1.18%
 
 Primary outputs:
 
-- `xau/data/reports/volatility_breakout/v1_h4_candidate/`
+- `xau/data/reports/vb/v1_h4_candidate/`
 - `xau/data/validation/volatility_breakout/v1_h4_candidate/`
 - `xau/research/notes.md`
 - `xau/research/changelog.md`
@@ -116,7 +116,7 @@ Main folders:
 Typical structure:
 
 ```text
-xau/data/reports/volatility_breakout/v1/
+xau/data/reports/vb/v1/
 ├── M1/
 ├── M15/
 ├── M30/
@@ -244,7 +244,7 @@ Mean-reversion experiment:
 Outputs to:
 
 ```text
-xau/data/reports/mean_reversion/v1/
+xau/data/reports/mr/v1/
 ```
 
 #### `trend_pullback/v1.py`
@@ -283,13 +283,13 @@ Logic:
 Original baseline outputs:
 
 ```text
-xau/data/reports/volatility_breakout/v1/
+xau/data/reports/vb/v1/
 ```
 
 Current selected candidate outputs:
 
 ```text
-xau/data/reports/volatility_breakout/v1_h4_candidate/
+xau/data/reports/vb/v1_h4_candidate/
 ```
 
 #### `volatility_breakout/v2.py`
@@ -301,7 +301,7 @@ research branch, not the main candidate.
 Outputs to:
 
 ```text
-xau/data/reports/volatility_breakout/v2/
+xau/data/reports/vb/v2/
 ```
 
 #### `volatility_breakout/v3.py`
@@ -313,7 +313,7 @@ stability, so it remains a research branch.
 Outputs to:
 
 ```text
-xau/data/reports/volatility_breakout/v3/
+xau/data/reports/vb/v3/
 ```
 
 ### `xau/scripts/optimization`
@@ -382,7 +382,7 @@ It creates:
 Default outputs:
 
 ```text
-xau/data/reports/volatility_breakout/v1_h4_candidate/
+xau/data/reports/vb/v1_h4_candidate/
 xau/data/validation/volatility_breakout/v1_h4_candidate/
 ```
 

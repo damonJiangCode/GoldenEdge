@@ -12,7 +12,7 @@ import pandas as pd
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 XAU_DATA_DIR = PROJECT_ROOT / "data" / "market_data"
-RESULT_DIR = PROJECT_ROOT / "data" / "reports" / "mean_reversion" / "v1"
+RESULT_DIR = PROJECT_ROOT / "data" / "reports" / "mr" / "v1"
 
 REQUIRED_COLUMNS = [
     "time",
@@ -32,21 +32,21 @@ class EngineConfig:
     lot_size: float = 0.01
     contract_size: int = 100
     leverage: float = 100.0
-    ema_period: int = 20
-    atr_period: int = 14
-    band_atr_mult: float = 2.0
-    sl_atr_mult: float = 1.0
-    adx_period: int = 14
-    h1_adx_limit: float = 25.0
-    atr_ratio_lookback: int = 100
-    atr_ratio_min: float = 0.8
-    atr_ratio_max: float = 1.6
+    ema_period: int = 36
+    atr_period: int = 7
+    band_atr_mult: float = 2.25
+    sl_atr_mult: float = 8.0
+    adx_period: int = 28
+    h1_adx_limit: float = 28.0
+    atr_ratio_lookback: int = 160
+    atr_ratio_min: float = 0.3
+    atr_ratio_max: float = 2.0
     session_start_hour_utc: int = 0
-    session_end_hour_utc: int = 6
+    session_end_hour_utc: int = 24
     wick_body_ratio: float = 1.5
-    fat_tail_body_lookback: int = 5
-    fat_tail_body_mult: float = 2.0
-    breakeven_retrace_ratio: float = 0.5
+    fat_tail_body_lookback: int = 3
+    fat_tail_body_mult: float = 2.5
+    breakeven_retrace_ratio: float = 2.0
     point_value: float = 0.01
     pip_value: float = 0.01
     slippage_ticks: float = 1.0
@@ -189,7 +189,8 @@ class MeanReversionV1Engine:
         if h1.empty:
             return pd.Series(dtype=float)
         h1["adx"] = self._calc_adx(h1, self.config.adx_period)
-        return h1["adx"]
+        # M15 bars inside an H1 candle may only use the last completed H1 ADX.
+        return h1["adx"].shift(1)
 
     def compute_indicators(self, df: pd.DataFrame) -> pd.DataFrame:
         out = df.copy()
@@ -432,11 +433,16 @@ class MeanReversionV1Engine:
                             "exit_time": bar_time.isoformat(),
                             "entry_price": float(position["entry_price"]),
                             "exit_price": float(exit_price),
+                            "initial_sl": float(position["initial_sl"]),
                             "tp": float(position["tp"]),
                             "sl": float(position["sl"]),
                             "target_ema": float(position["target_ema"]),
+                            "entry_atr": float(position["entry_atr"]),
                             "entry_h1_adx": float(position["entry_h1_adx"]),
                             "entry_atr_ratio": float(position["entry_atr_ratio"]),
+                            "entry_spread_points": float(
+                                position["entry_spread_points"]
+                            ),
                             "breakeven_trigger_price": float(
                                 position["breakeven_trigger_price"]
                             ),
@@ -452,8 +458,28 @@ class MeanReversionV1Engine:
                             "entry_commission": float(position["entry_commission"]),
                             "exit_commission": float(exit_commission),
                             "net_pnl": float(trade_net_pnl),
+                            "pnl_result": (
+                                "profit"
+                                if trade_net_pnl > 1e-9
+                                else "loss" if trade_net_pnl < -1e-9 else "flat"
+                            ),
                             "equity_after": float(balance),
                             "holding_bars": int(i - int(position["entry_idx"]) + 1),
+                            "initial_risk_price": float(
+                                position["initial_risk_price"]
+                            ),
+                            "initial_risk_money": float(
+                                position["initial_risk_money"]
+                            ),
+                            "r_multiple": float(
+                                trade_net_pnl / float(position["initial_risk_money"])
+                                if float(position["initial_risk_money"]) > 0.0
+                                else 0.0
+                            ),
+                            "sl_update_count": int(
+                                bool(position["breakeven_armed"])
+                            ),
+                            "trail_updates": [],
                         }
                     )
                     position = None
@@ -486,8 +512,10 @@ class MeanReversionV1Engine:
                         session_reject_count += 1
                     else:
                         entry_price = self.entry_fill_price(entry_row, signal)
-                        atr = float(entry_row["atr"])
-                        ema_target = float(entry_row["ema"])
+                        # Entry is at the next bar open, so indicator snapshots must
+                        # come from the completed signal bar.
+                        atr = float(row["atr"])
+                        ema_target = float(row["ema"])
 
                         if signal == "long":
                             tp = ema_target
@@ -495,6 +523,8 @@ class MeanReversionV1Engine:
                         else:
                             tp = ema_target
                             sl = entry_price + self.config.sl_atr_mult * atr
+                        initial_risk_price = abs(entry_price - sl)
+                        initial_risk_money = initial_risk_price * self.side_units()
                         be_retrace_atr_mult = (
                             self.config.band_atr_mult * self.config.breakeven_retrace_ratio
                         )
@@ -517,15 +547,20 @@ class MeanReversionV1Engine:
                             "entry_idx": i + 1,
                             "entry_time": entry_row["time"],
                             "entry_price": float(entry_price),
+                            "initial_sl": float(sl),
                             "tp": float(tp),
                             "sl": float(sl),
                             "target_ema": float(ema_target),
-                            "entry_h1_adx": float(entry_row["h1_adx"]),
-                            "entry_atr_ratio": float(entry_row["atr_ratio"]),
+                            "entry_atr": float(atr),
+                            "entry_h1_adx": float(row["h1_adx"]),
+                            "entry_atr_ratio": float(row["atr_ratio"]),
+                            "entry_spread_points": float(entry_row["spread"]),
                             "breakeven_trigger_price": float(breakeven_trigger_price),
                             "breakeven_armed": False,
                             "breakeven_arm_time": None,
                             "entry_commission": float(entry_commission),
+                            "initial_risk_price": float(initial_risk_price),
+                            "initial_risk_money": float(initial_risk_money),
                         }
 
             floating = 0.0
@@ -619,10 +654,14 @@ class MeanReversionV1Engine:
                 "breakeven_retrace_ratio": float(self.config.breakeven_retrace_ratio),
                 "entry_logic": "touch EMA±k*ATR with candle confirmation; skip fat-tail bars",
                 "tp_logic": "target EMA; move SL to breakeven after partial mean reversion",
-                "sl_logic": "initial SL=entry±1.0*ATR; breakeven trail at retrace ratio",
+                "sl_logic": (
+                    f"initial SL=entry±{self.config.sl_atr_mult}*ATR; "
+                    "breakeven trail at retrace ratio"
+                ),
                 "position_mode": "single_position_no_pyramiding",
             },
             "equity_series": equity_series,
+            "trade_details": trades,
             "sample_trades": trades[:30],
         }
         if position is not None:
@@ -676,7 +715,7 @@ def resolve_input_files(cli_input: str | None) -> list[Path]:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "XAU Mean Reversion V1: EMA20 as mean, 2*ATR deviation band, "
+            "XAU Mean Reversion V1: EMA36 as mean, 2.25*ATR deviation band, "
             "session/time+H1 ADX filter."
         )
     )
@@ -688,22 +727,22 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--contract-size", type=int, default=100)
     parser.add_argument("--leverage", type=float, default=100.0)
 
-    parser.add_argument("--ema-period", type=int, default=20)
-    parser.add_argument("--atr-period", type=int, default=14)
-    parser.add_argument("--band-atr-mult", type=float, default=2.0)
-    parser.add_argument("--sl-atr-mult", type=float, default=1.0)
-    parser.add_argument("--adx-period", type=int, default=14)
-    parser.add_argument("--h1-adx-limit", type=float, default=25.0)
-    parser.add_argument("--atr-ratio-lookback", type=int, default=100)
-    parser.add_argument("--atr-ratio-min", type=float, default=0.8)
-    parser.add_argument("--atr-ratio-max", type=float, default=1.6)
+    parser.add_argument("--ema-period", type=int, default=36)
+    parser.add_argument("--atr-period", type=int, default=7)
+    parser.add_argument("--band-atr-mult", type=float, default=2.25)
+    parser.add_argument("--sl-atr-mult", type=float, default=8.0)
+    parser.add_argument("--adx-period", type=int, default=28)
+    parser.add_argument("--h1-adx-limit", type=float, default=28.0)
+    parser.add_argument("--atr-ratio-lookback", type=int, default=160)
+    parser.add_argument("--atr-ratio-min", type=float, default=0.3)
+    parser.add_argument("--atr-ratio-max", type=float, default=2.0)
 
     parser.add_argument("--session-start-hour-utc", type=int, default=0)
-    parser.add_argument("--session-end-hour-utc", type=int, default=6)
+    parser.add_argument("--session-end-hour-utc", type=int, default=24)
     parser.add_argument("--wick-body-ratio", type=float, default=1.5)
-    parser.add_argument("--fat-tail-body-lookback", type=int, default=5)
-    parser.add_argument("--fat-tail-body-mult", type=float, default=2.0)
-    parser.add_argument("--breakeven-retrace-ratio", type=float, default=0.5)
+    parser.add_argument("--fat-tail-body-lookback", type=int, default=3)
+    parser.add_argument("--fat-tail-body-mult", type=float, default=2.5)
+    parser.add_argument("--breakeven-retrace-ratio", type=float, default=2.0)
 
     parser.add_argument("--point-value", type=float, default=0.01)
     parser.add_argument("--pip-value", type=float, default=0.01)
