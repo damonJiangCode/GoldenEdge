@@ -1,0 +1,12 @@
+{
+  "variant": "02_candle_close_quality",
+  "source_file": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/optimization/results/02_candle_close_quality/unified_trades.csv",
+  "trades": 224,
+  "profit_ratio_pct": 44.2,
+  "net_pnl": 2007.8832,
+  "profit_factor": 2.1611,
+  "avg_r": 0.3266,
+  "sum_r": 73.1655,
+  "avg_sl_update_count": 11.96,
+  "output_dir": "/Users/damon/Documents/GoldenEdge/xau/vb/v1/bucket_analysis/results/02_candle_close_quality"
+}
