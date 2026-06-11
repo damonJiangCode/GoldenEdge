@@ -1,0 +1,511 @@
+{
+  "method": {
+    "timeframe": "M15",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "annual_initial_balance": 1000.0,
+    "annual_reset": true,
+    "notes": [
+      "All years were previously observed.",
+      "Hypothetical compounding is not a continuous portfolio simulation.",
+      "M15 OHLC cannot reproduce tick-level fill ordering."
+    ]
+  },
+  "summaries": [
+    {
+      "variant": "current_default",
+      "params": {
+        "ema_period": 36,
+        "atr_period": 7,
+        "band_atr_mult": 2.25,
+        "sl_atr_mult": 8.0,
+        "adx_period": 28,
+        "h1_adx_limit": 28.0,
+        "atr_ratio_lookback": 160,
+        "atr_ratio_min": 0.3,
+        "atr_ratio_max": 2.0,
+        "wick_body_ratio": 1.5,
+        "fat_tail_body_lookback": 3,
+        "fat_tail_body_mult": 2.5,
+        "breakeven_retrace_ratio": 2.0,
+        "session_start_hour_utc": 0,
+        "session_end_hour_utc": 24
+      },
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "positive_years": 11,
+      "simple_sum_return_pct": 729.6572441290785,
+      "hypothetical_compounded_return_pct": 16913.7366826349,
+      "avg_annual_return_pct": 66.33247673900713,
+      "median_annual_return_pct": 64.19530339225221,
+      "worst_annual_return_pct": 11.969919593084114,
+      "best_annual_return_pct": 193.2405129185067,
+      "avg_annual_profit_factor": 5.7530476612947545,
+      "pooled_profit_factor": 5.689766273742668,
+      "avg_annual_max_drawdown_pct": 2.04077862935098,
+      "worst_annual_max_drawdown_pct": 4.8684101542547085,
+      "total_trades": 22140,
+      "avg_trades_per_year": 2012.7272727272727,
+      "pooled_win_rate_pct": 8.039747064137307,
+      "pooled_expectancy_per_trade": 0.32955769834211274,
+      "pooled_net_pnl": 7296.407441294376,
+      "total_commission": 1107.0250000000633,
+      "total_swap": 0.0,
+      "avg_holding_bars": 2.9967931345980126
+    },
+    {
+      "variant": "rolling_consensus",
+      "params": {
+        "ema_period": 50,
+        "atr_period": 7,
+        "band_atr_mult": 2.25,
+        "sl_atr_mult": 10.0,
+        "adx_period": 28,
+        "h1_adx_limit": 28.0,
+        "atr_ratio_lookback": 40,
+        "atr_ratio_min": 0.0,
+        "atr_ratio_max": 2.0,
+        "wick_body_ratio": 3.0,
+        "fat_tail_body_lookback": 13,
+        "fat_tail_body_mult": 5.0,
+        "breakeven_retrace_ratio": 2.0,
+        "session_start_hour_utc": 0,
+        "session_end_hour_utc": 24
+      },
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "positive_years": 11,
+      "simple_sum_return_pct": 764.8122544245177,
+      "hypothetical_compounded_return_pct": 19098.47879343088,
+      "avg_annual_return_pct": 69.52838676586525,
+      "median_annual_return_pct": 71.70212975074641,
+      "worst_annual_return_pct": 4.873409761283983,
+      "best_annual_return_pct": 214.65977174679142,
+      "avg_annual_profit_factor": 3.418062732074299,
+      "pooled_profit_factor": 3.6022585201842796,
+      "avg_annual_max_drawdown_pct": 4.461120093586668,
+      "worst_annual_max_drawdown_pct": 11.409150385008644,
+      "total_trades": 25556,
+      "avg_trades_per_year": 2323.2727272727275,
+      "pooled_win_rate_pct": 7.778995147910471,
+      "pooled_expectancy_per_trade": 0.2992626993367267,
+      "pooled_net_pnl": 7647.957544249389,
+      "total_commission": 1277.8250000001021,
+      "total_swap": 0.0,
+      "avg_holding_bars": 3.557638128032556
+    }
+  ],
+  "annual": [
+    {
+      "variant": "current_default",
+      "year": 2015,
+      "trades": 1857,
+      "win_rate_pct": 5.008077544426494,
+      "net_pnl": 169.9374293893361,
+      "return_pct": 16.993742938933607,
+      "profit_factor": 2.568299023355068,
+      "expectancy_per_trade": 0.09151180904125188,
+      "max_drawdown_pct": 1.3208809102582204,
+      "avg_holding_bars": 2.9133010231556273,
+      "commission": 92.85000000000399
+    },
+    {
+      "variant": "current_default",
+      "year": 2016,
+      "trades": 1947,
+      "win_rate_pct": 6.163328197226503,
+      "net_pnl": 328.8300693255487,
+      "return_pct": 32.88300693255487,
+      "profit_factor": 3.4366456535370666,
+      "expectancy_per_trade": 0.16889063653101047,
+      "max_drawdown_pct": 2.211959235699164,
+      "avg_holding_bars": 2.9650744735490497,
+      "commission": 97.35000000000501
+    },
+    {
+      "variant": "current_default",
+      "year": 2017,
+      "trades": 2097,
+      "win_rate_pct": 5.5317119694802095,
+      "net_pnl": 119.69919593084114,
+      "return_pct": 11.969919593084114,
+      "profit_factor": 1.8138159826207036,
+      "expectancy_per_trade": 0.05708116162670051,
+      "max_drawdown_pct": 1.720544625791369,
+      "avg_holding_bars": 2.820219360991893,
+      "commission": 104.85000000000672
+    },
+    {
+      "variant": "current_default",
+      "year": 2018,
+      "trades": 2274,
+      "win_rate_pct": 7.036059806508356,
+      "net_pnl": 229.49641561473481,
+      "return_pct": 22.949641561473484,
+      "profit_factor": 2.80933787145293,
+      "expectancy_per_trade": 0.10092190660292177,
+      "max_drawdown_pct": 0.8056466601554598,
+      "avg_holding_bars": 2.6671064204045734,
+      "commission": 113.70000000000873
+    },
+    {
+      "variant": "current_default",
+      "year": 2019,
+      "trades": 2092,
+      "win_rate_pct": 7.934990439770555,
+      "net_pnl": 318.6407577440432,
+      "return_pct": 31.86407577440432,
+      "profit_factor": 3.501531294319198,
+      "expectancy_per_trade": 0.15231393773628488,
+      "max_drawdown_pct": 1.3054537364732517,
+      "avg_holding_bars": 2.947418738049713,
+      "commission": 104.60000000000666
+    },
+    {
+      "variant": "current_default",
+      "year": 2020,
+      "trades": 1774,
+      "win_rate_pct": 8.850056369785793,
+      "net_pnl": 839.2517028903746,
+      "return_pct": 83.92517028903747,
+      "profit_factor": 9.380897429455631,
+      "expectancy_per_trade": 0.47308438719880475,
+      "max_drawdown_pct": 2.330182293804659,
+      "avg_holding_bars": 2.9092446448703493,
+      "commission": 88.70000000000304
+    },
+    {
+      "variant": "current_default",
+      "year": 2021,
+      "trades": 2118,
+      "win_rate_pct": 9.254013220018887,
+      "net_pnl": 684.8153917247673,
+      "return_pct": 68.48153917247673,
+      "profit_factor": 6.938392227933277,
+      "expectancy_per_trade": 0.32333115756616326,
+      "max_drawdown_pct": 1.3125760809097493,
+      "avg_holding_bars": 2.8852691218130313,
+      "commission": 105.90000000000695
+    },
+    {
+      "variant": "current_default",
+      "year": 2022,
+      "trades": 2146,
+      "win_rate_pct": 9.645852749301024,
+      "net_pnl": 864.6331217849306,
+      "return_pct": 86.46331217849306,
+      "profit_factor": 8.412008195490415,
+      "expectancy_per_trade": 0.4028276429568039,
+      "max_drawdown_pct": 2.0719682388112495,
+      "avg_holding_bars": 3.1164958061509784,
+      "commission": 107.32500000000728
+    },
+    {
+      "variant": "current_default",
+      "year": 2023,
+      "trades": 1827,
+      "win_rate_pct": 9.688013136289,
+      "net_pnl": 641.9530339225221,
+      "return_pct": 64.19530339225221,
+      "profit_factor": 7.459036883623105,
+      "expectancy_per_trade": 0.3513700240409631,
+      "max_drawdown_pct": 2.244987564021985,
+      "avg_holding_bars": 3.5599343185550083,
+      "commission": 91.35000000000365
+    },
+    {
+      "variant": "current_default",
+      "year": 2024,
+      "trades": 1986,
+      "win_rate_pct": 10.020140986908359,
+      "net_pnl": 1166.910193778619,
+      "return_pct": 116.6910193778619,
+      "profit_factor": 10.560866572630099,
+      "expectancy_per_trade": 0.5875680734033065,
+      "max_drawdown_pct": 2.255955422680969,
+      "avg_holding_bars": 3.1258811681772407,
+      "commission": 99.30000000000545
+    },
+    {
+      "variant": "current_default",
+      "year": 2025,
+      "trades": 2022,
+      "win_rate_pct": 9.347181008902076,
+      "net_pnl": 1932.405129185067,
+      "return_pct": 193.2405129185067,
+      "profit_factor": 6.402693139824809,
+      "expectancy_per_trade": 0.9556899748691542,
+      "max_drawdown_pct": 4.8684101542547085,
+      "avg_holding_bars": 3.139960435212661,
+      "commission": 101.10000000000586
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2015,
+      "trades": 2335,
+      "win_rate_pct": 5.010706638115631,
+      "net_pnl": 186.3738122888319,
+      "return_pct": 18.63738122888319,
+      "profit_factor": 2.306686991138365,
+      "expectancy_per_trade": 0.07981747849645349,
+      "max_drawdown_pct": 1.5244187449351643,
+      "avg_holding_bars": 2.9961456102783726,
+      "commission": 116.75000000000942
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2016,
+      "trades": 2240,
+      "win_rate_pct": 5.625,
+      "net_pnl": 289.96681580083487,
+      "return_pct": 28.99668158008349,
+      "profit_factor": 2.612372921064719,
+      "expectancy_per_trade": 0.12944947133982204,
+      "max_drawdown_pct": 3.0770634100005294,
+      "avg_holding_bars": 3.523214285714286,
+      "commission": 112.00000000000834
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2017,
+      "trades": 2438,
+      "win_rate_pct": 4.716981132075472,
+      "net_pnl": 48.73409761283983,
+      "return_pct": 4.873409761283983,
+      "profit_factor": 1.2188705218986735,
+      "expectancy_per_trade": 0.019989375559173746,
+      "max_drawdown_pct": 4.568071932604917,
+      "avg_holding_bars": 3.3769483182936835,
+      "commission": 121.90000000001059
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2018,
+      "trades": 2668,
+      "win_rate_pct": 6.709145427286358,
+      "net_pnl": 286.21155955436393,
+      "return_pct": 28.621155955436393,
+      "profit_factor": 2.8102392125515068,
+      "expectancy_per_trade": 0.10727569698453264,
+      "max_drawdown_pct": 1.4681773152046393,
+      "avg_holding_bars": 2.8650674662668667,
+      "commission": 133.4000000000132
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2019,
+      "trades": 2428,
+      "win_rate_pct": 7.0840197693574956,
+      "net_pnl": 267.16753486415837,
+      "return_pct": 26.71675348641584,
+      "profit_factor": 2.265881849778341,
+      "expectancy_per_trade": 0.11003605225059634,
+      "max_drawdown_pct": 4.3322692576769395,
+      "avg_holding_bars": 3.599670510708402,
+      "commission": 121.40000000001048
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2020,
+      "trades": 2144,
+      "win_rate_pct": 9.281716417910447,
+      "net_pnl": 997.5162711975822,
+      "return_pct": 99.75162711975823,
+      "profit_factor": 5.055082551009253,
+      "expectancy_per_trade": 0.4652594548497967,
+      "max_drawdown_pct": 5.440176300061161,
+      "avg_holding_bars": 3.310634328358209,
+      "commission": 107.20000000000725
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2021,
+      "trades": 2408,
+      "win_rate_pct": 9.177740863787376,
+      "net_pnl": 717.0212975074642,
+      "return_pct": 71.70212975074641,
+      "profit_factor": 3.99424121529686,
+      "expectancy_per_trade": 0.2977663195630787,
+      "max_drawdown_pct": 3.4958370416925795,
+      "avg_holding_bars": 3.5191029900332227,
+      "commission": 120.40000000001025
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2022,
+      "trades": 2382,
+      "win_rate_pct": 8.73215785054576,
+      "net_pnl": 837.2508469509062,
+      "return_pct": 83.72508469509062,
+      "profit_factor": 4.121155114427694,
+      "expectancy_per_trade": 0.3514214302902264,
+      "max_drawdown_pct": 4.654938318944882,
+      "avg_holding_bars": 4.188077246011755,
+      "commission": 119.12500000000996
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2023,
+      "trades": 2037,
+      "win_rate_pct": 10.260186548846342,
+      "net_pnl": 723.0505120737837,
+      "return_pct": 72.30505120737837,
+      "profit_factor": 5.133260357106425,
+      "expectancy_per_trade": 0.35495852335500155,
+      "max_drawdown_pct": 4.40600512636129,
+      "avg_holding_bars": 4.281296023564065,
+      "commission": 101.85000000000603
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2024,
+      "trades": 2276,
+      "win_rate_pct": 9.753954305799649,
+      "net_pnl": 1148.2320789264977,
+      "return_pct": 114.82320789264978,
+      "profit_factor": 4.143759560618217,
+      "expectancy_per_trade": 0.5044956410047894,
+      "max_drawdown_pct": 4.696213196962599,
+      "avg_holding_bars": 3.8769771528998245,
+      "commission": 113.80000000000875
+    },
+    {
+      "variant": "rolling_consensus",
+      "year": 2025,
+      "trades": 2200,
+      "win_rate_pct": 10.0,
+      "net_pnl": 2146.597717467914,
+      "return_pct": 214.65977174679142,
+      "profit_factor": 3.9371397579272345,
+      "expectancy_per_trade": 0.9757262352128666,
+      "max_drawdown_pct": 11.409150385008644,
+      "avg_holding_bars": 3.7822727272727272,
+      "commission": 110.00000000000789
+    }
+  ],
+  "parameter_comparison": [
+    {
+      "parameter": "ema_period",
+      "default": 36,
+      "rolling_island": 50,
+      "same": false
+    },
+    {
+      "parameter": "atr_period",
+      "default": 7,
+      "rolling_island": 7,
+      "same": true
+    },
+    {
+      "parameter": "band_atr_mult",
+      "default": 2.25,
+      "rolling_island": 2.25,
+      "same": true
+    },
+    {
+      "parameter": "sl_atr_mult",
+      "default": 8.0,
+      "rolling_island": 10.0,
+      "same": false
+    },
+    {
+      "parameter": "adx_period",
+      "default": 28,
+      "rolling_island": 28,
+      "same": true
+    },
+    {
+      "parameter": "h1_adx_limit",
+      "default": 28.0,
+      "rolling_island": 28.0,
+      "same": true
+    },
+    {
+      "parameter": "atr_ratio_lookback",
+      "default": 160,
+      "rolling_island": 40,
+      "same": false
+    },
+    {
+      "parameter": "atr_ratio_min",
+      "default": 0.3,
+      "rolling_island": 0.0,
+      "same": false
+    },
+    {
+      "parameter": "atr_ratio_max",
+      "default": 2.0,
+      "rolling_island": 2.0,
+      "same": true
+    },
+    {
+      "parameter": "wick_body_ratio",
+      "default": 1.5,
+      "rolling_island": 3.0,
+      "same": false
+    },
+    {
+      "parameter": "fat_tail_body_lookback",
+      "default": 3,
+      "rolling_island": 13,
+      "same": false
+    },
+    {
+      "parameter": "fat_tail_body_mult",
+      "default": 2.5,
+      "rolling_island": 5.0,
+      "same": false
+    },
+    {
+      "parameter": "breakeven_retrace_ratio",
+      "default": 2.0,
+      "rolling_island": 2.0,
+      "same": true
+    },
+    {
+      "parameter": "session_start_hour_utc",
+      "default": 0,
+      "rolling_island": 0,
+      "same": true
+    },
+    {
+      "parameter": "session_end_hour_utc",
+      "default": 24,
+      "rolling_island": 24,
+      "same": true
+    }
+  ]
+}

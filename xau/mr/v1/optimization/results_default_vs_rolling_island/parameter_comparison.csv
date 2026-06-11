@@ -1,0 +1,16 @@
+parameter,default,rolling_island,same
+ema_period,36.0,50.0,False
+atr_period,7.0,7.0,True
+band_atr_mult,2.25,2.25,True
+sl_atr_mult,8.0,10.0,False
+adx_period,28.0,28.0,True
+h1_adx_limit,28.0,28.0,True
+atr_ratio_lookback,160.0,40.0,False
+atr_ratio_min,0.3,0.0,False
+atr_ratio_max,2.0,2.0,True
+wick_body_ratio,1.5,3.0,False
+fat_tail_body_lookback,3.0,13.0,False
+fat_tail_body_mult,2.5,5.0,False
+breakeven_retrace_ratio,2.0,2.0,True
+session_start_hour_utc,0.0,0.0,True
+session_end_hour_utc,24.0,24.0,True
