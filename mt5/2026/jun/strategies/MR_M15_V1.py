@@ -135,24 +135,30 @@ def save_last_signal_bar_time(signal_bar_time):
 def initialize_mt5():
     try:
         if not mt5.initialize(METADATA["path"]):  # type: ignore
-            raise RuntimeError(f"MT5 initialize failed: {mt5.last_error()}")  # type: ignore
+            raise RuntimeError(
+                f"❌ initialize_mt5(): Failed to initialize MT5: {mt5.last_error()}"  # type: ignore
+            )
         if not mt5.login(  # type: ignore
             METADATA["account"], METADATA["password"], METADATA["server"]
         ):
-            raise RuntimeError(f"MT5 login failed: {mt5.last_error()}")  # type: ignore
+            raise RuntimeError(
+                f"❌ initialize_mt5(): Failed to log in MT5 account: {mt5.last_error()}"  # type: ignore
+            )
         if not mt5.symbol_select(PARAMETERS["SYMBOL"], True):  # type: ignore
-            raise RuntimeError(f"Cannot select {PARAMETERS['SYMBOL']}")
+            raise RuntimeError(
+                f"❌ initialize_mt5(): Failed to select symbol {PARAMETERS['SYMBOL']}"
+            )
 
         account = mt5.account_info()  # type: ignore
         notify(
-            "MT5 initialized\n"
+            "✅ MT5 initialized and logged in successfully\n"
             f"Account: {account.login if account else METADATA['account']}\n"
             f"Server: {METADATA['server']}\n"
             f"Strategy: {METADATA['title']}"
         )
         return True
     except Exception as exc:
-        notify(f"initialize_mt5() ERROR: {exc}")
+        notify(f"❌ initialize_mt5() ERROR: {exc}")
         return False
 
 
@@ -230,7 +236,10 @@ def get_data():
         m15 = _rates_to_dataframe(m15_rates)
         h1 = _rates_to_dataframe(h1_rates)
         if m15.empty or h1.empty:
-            notify(f"get_data(): empty rates, M15={m15.empty}, H1={h1.empty}")
+            notify(
+                f"❌ get_data(): empty rates, M15 empty={m15.empty}, "
+                f"H1 empty={h1.empty}"
+            )
             return pd.DataFrame()
 
         m15["ema"] = m15["close"].ewm(
@@ -281,7 +290,7 @@ def get_data():
         m15.reset_index(drop=True, inplace=True)
         return m15
     except Exception as exc:
-        notify(f"get_data() ERROR: {exc}")
+        notify(f"❌ get_data() ERROR: {exc}")
         return pd.DataFrame()
 
 
@@ -331,7 +340,7 @@ def check_signal(row: pd.Series):
             return "long", None
         return None, None
     except Exception as exc:
-        notify(f"check_signal() ERROR: {exc}")
+        notify(f"❌ check_signal() ERROR: {exc}")
         return None, "error"
 
 
@@ -339,7 +348,10 @@ def get_position():
     try:
         positions = mt5.positions_get(symbol=PARAMETERS["SYMBOL"])  # type: ignore
         if positions is None:
-            notify(f"get_position(): positions_get failed: {mt5.last_error()}")  # type: ignore
+            notify(
+                "❌ get_position(): mt5.positions_get() returned None, "
+                f"error code: {mt5.last_error()}"  # type: ignore
+            )
             return "error", None
         strategy_positions = [
             position
@@ -357,7 +369,7 @@ def get_position():
             return "short", position
         return None, position
     except Exception as exc:
-        notify(f"get_position() ERROR: {exc}")
+        notify(f"❌ get_position() ERROR: {exc}")
         return "error", None
 
 
@@ -376,7 +388,7 @@ def update_breakeven():
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         tick = mt5.symbol_info_tick(PARAMETERS["SYMBOL"])  # type: ignore
         if symbol_info is None or tick is None:
-            notify("update_breakeven(): symbol info or tick unavailable")
+            notify("❌ update_breakeven(): symbol info or tick unavailable")
             return
 
         tolerance = float(symbol_info.point) * 2.0
@@ -410,13 +422,13 @@ def update_breakeven():
         if result is None or result.retcode != mt5.TRADE_RETCODE_DONE:
             retcode = getattr(result, "retcode", None)
             notify(
-                "update_breakeven(): failed\n"
+                "❌ update_breakeven(): Failed\n"
                 f"Ticket: {position.ticket}\n"
                 f"Result: {RET_CODE_MESSAGES.get(retcode, 'unknown')} ({retcode})"
             )
             return
         notify(
-            "Breakeven moved\n"
+            "✅ update_breakeven(): SL moved to breakeven\n"
             f"Ticket: {position.ticket}\n"
             f"Direction: {side}\n"
             f"Old SL: {old_sl:.2f}\n"
@@ -424,7 +436,7 @@ def update_breakeven():
             f"Trigger: {trigger:.2f}"
         )
     except Exception as exc:
-        notify(f"update_breakeven() ERROR: {exc}")
+        notify(f"❌ update_breakeven() ERROR: {exc}")
 
 
 def place_order(signal: str, signal_row: pd.Series):
@@ -432,7 +444,7 @@ def place_order(signal: str, signal_row: pd.Series):
         tick = mt5.symbol_info_tick(PARAMETERS["SYMBOL"])  # type: ignore
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
         if tick is None or symbol_info is None:
-            notify("place_order(): symbol info or tick unavailable")
+            notify("❌ place_order(): symbol info or tick unavailable")
             return False
 
         price = float(tick.ask if signal == "long" else tick.bid)
@@ -442,7 +454,7 @@ def place_order(signal: str, signal_row: pd.Series):
             signal == "short" and target_ema >= price
         ):
             notify(
-                "place_order(): skipped because EMA target is no longer valid\n"
+                "⚠️ place_order(): skipped because EMA target is no longer valid\n"
                 f"Signal bar: {signal_row['time']}\n"
                 f"Direction: {signal}\n"
                 f"Current price: {price:.2f}\n"
@@ -474,7 +486,7 @@ def place_order(signal: str, signal_row: pd.Series):
         retcode = getattr(result, "retcode", None)
         success = retcode == mt5.TRADE_RETCODE_DONE
         notify(
-            f"{'Order succeeded' if success else 'Order failed'}\n"
+            f"{'✅ Succeeded' if success else '❌ Failed'}\n"
             f"Strategy: {METADATA['title']}\n"
             f"Signal bar: {signal_row['time']}\n"
             f"Direction: {signal}\n"
@@ -488,7 +500,7 @@ def place_order(signal: str, signal_row: pd.Series):
         )
         return success
     except Exception as exc:
-        notify(f"place_order() ERROR: {exc}")
+        notify(f"❌ place_order() ERROR: {exc}")
         return False
 
 
@@ -501,8 +513,15 @@ def run():
 
         df = get_data()
         utc_now = get_mt5_utc_now()
-        if utc_now is None or df.empty or len(df) < 3:
-            notify("run(): market time or sufficient indicator data unavailable")
+        if utc_now is None:
+            notify("❌ run(): Failed to get MT5 UTC time, skipping cycle")
+            return
+        timestamp = utc_now.strftime("%Y-%m-%d %H:%M:%S")
+
+        if df.empty or len(df) < 3:
+            notify(
+                f"❌ run(): [{timestamp}] get_data returned empty or insufficient data"
+            )
             return
 
         update_breakeven()
@@ -513,7 +532,6 @@ def run():
         account = mt5.account_info()  # type: ignore
         balance = account.balance if account else 0.0
         equity = account.equity if account else 0.0
-        timestamp = utc_now.strftime("%Y-%m-%d %H:%M:%S")
         log_message(
             f"[{timestamp}] BALANCE:{balance:.2f} EQUITY:{equity:.2f}"
             f" SIGNAL_BAR:{signal_row['time']}"
@@ -526,7 +544,8 @@ def run():
             f" H1_ADX:{float(signal_row['h1_adx']):.2f}"
             f" SIGNAL:{signal} REJECT:{reject_reason}"
         )
-        print(f"[{timestamp}] {METADATA['title']} balance={balance:.2f} signal={signal}")
+        short_msg = f"[{timestamp}] --- {METADATA['title']} --- ${balance:.2f}"
+        print(short_msg)
 
         if signal not in ("long", "short"):
             return
@@ -536,10 +555,16 @@ def run():
 
         current_side, _ = get_position()
         if current_side == "error":
-            notify("run(): position query failed, skip trading cycle")
+            notify(
+                f"❌ run(): [{timestamp}] get_position returned error, "
+                "skipping trading cycle"
+            )
             return
         if current_side is not None:
-            notify(f"Open strategy position exists ({current_side}); skip {signal} signal")
+            notify(
+                f"⚠️ [{timestamp}] already have open position ({current_side}), "
+                f"skip new signal ({signal})"
+            )
             LAST_SIGNAL_BAR_TIME = signal_bar_time
             save_last_signal_bar_time(signal_bar_time)
             return
@@ -550,23 +575,27 @@ def run():
         LAST_SIGNAL_BAR_TIME = signal_bar_time
         save_last_signal_bar_time(signal_bar_time)
     except Exception as exc:
-        notify(f"run() ERROR: {exc}")
+        notify(f"❌ run() ERROR: {exc}")
 
 
 def main():
     try:
         if not initialize_mt5():
+            notify("❌ main(): initialize_mt5() failed, exiting")
             return
         while True:
             run()
             time.sleep(PARAMETERS["RUNTIME_SECONDS"])
     except KeyboardInterrupt:
-        notify("Manual stop")
+        notify("⏹️ KeyboardInterrupt: manual stop")
     except Exception as exc:
-        notify(f"main() ERROR: {exc}")
+        notify(f"❌ main() ERROR: {exc}")
     finally:
-        mt5.shutdown()  # type: ignore
-        log_message("MT5 shutdown completed")
+        try:
+            mt5.shutdown()  # type: ignore
+            notify("🔌 MT5 shutdown completed")
+        except Exception:
+            pass
 
 
 if __name__ == "__main__":
