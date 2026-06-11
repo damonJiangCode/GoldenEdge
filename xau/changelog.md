@@ -3,6 +3,89 @@
 > Paths in older entries are historical snapshots. Current structure is documented
 > in `xau/readme.md`.
 
+## [2026-06-11-MR-V1-ROLLING-ROBUST] MR v1 滚动稳健参数岛复核
+
+- 日期：2026-06-11
+- 变更类型：`optimization` / `walk-forward` / `robustness`
+- 范围：`xau/mr/v1/optimization/`
+- 当前决定：保留 MR v1 当前默认参数，不覆盖 engine 配置。
+
+### 测试方法
+
+1. 新增滚动稳健参数岛脚本：
+   - `xau/mr/v1/optimization/rolling_robust_v1.py`
+   - 固定随机种子：`20260611`
+   - 使用固定粗网格中心及每个中心的一轴邻居。
+   - 所有滚动折开始前一次性冻结候选池、评分公式与资格条件。
+
+2. 使用六个固定长度滚动折：
+   - 训练 `2015-2018`，验证 `2019`，测试 `2020`
+   - 训练 `2016-2019`，验证 `2020`，测试 `2021`
+   - 训练 `2017-2020`，验证 `2021`，测试 `2022`
+   - 训练 `2018-2021`，验证 `2022`，测试 `2023`
+   - 训练 `2019-2022`，验证 `2023`，测试 `2024`
+   - 训练 `2020-2023`，验证 `2024`，测试 `2025`
+
+3. 每折候选资格要求：
+   - 训练期至少 `3/4` 年盈利。
+   - 验证年盈利。
+   - 训练期和验证期平均交易数均至少 `100`。
+
+4. 基础评分：
+
+```text
+median_return
++ 0.35 * average_return
++ 0.45 * worst_return
++ 0.50 * positive_years
++ 1.50 * (capped_average_PF - 1)
+- 0.20 * average_max_drawdown
+- low_trade_penalty
+```
+
+5. 稳健选型评分：
+
+```text
+min(candidate_train, candidate_validation, island_train_median, island_validation_median)
++ 0.10 * mean(the same four scores)
+```
+
+### 测试结果
+
+- 含当前默认参数岛：
+  - 固定候选 `226` 组、`10` 个参数岛。
+  - 滚动 OOS `2020-2025`：`6/6` 年盈利，平均收益 `128.92%`，最差年 `+75.04%`。
+  - 六折全部选中当前默认参数附近的 `island_00`。
+  - 由于当前默认参数此前使用历史数据优化过，此结果存在污染。
+
+- 排除当前默认参数岛：
+  - 固定候选 `200` 组、`9` 个参数岛。
+  - 滚动 OOS `2020-2025`：`6/6` 年盈利，平均收益 `109.49%`，最差年 `+71.70%`。
+  - 六折全部选中同一组替代参数，证明存在第二个稳定参数区域。
+
+- 固定使用当前 MR 默认参数：
+  - 同期 OOS `2020-2025`：`6/6` 年盈利，平均收益 `102.17%`。
+  - 平均 PF `8.19`，平均最大回撤 `2.51%`，均优于替代参数。
+
+### 执行成本压力
+
+- 替代参数在 `2x` 滑点与手续费下已出现亏损年份，最差年 `-11.71%`。
+- 当前默认参数在 `2x` 成本下最差年为 `-1.88%`。
+- 当前默认参数在标准成本及所有压力等级下均具有更高 PF、更低回撤和更好的最差年份。
+
+### 当前判断
+
+- 保留 MR v1 当前默认参数。
+- 不使用滚动替代参数覆盖 engine。
+- 滚动结果支持 MR 存在稳定参数区域，但不能视为纯净 OOS 证明。
+- MR 对执行成本敏感，生产决策前必须使用 tick-level 数据和真实 broker 成本验证。
+
+### 研究输出
+
+- `xau/mr/v1/optimization/ROLLING_ROBUST_ASSESSMENT.md`
+- `xau/mr/v1/optimization/results_rolling_robust/`
+- `xau/mr/v1/optimization/results_rolling_robust_no_current_island/`
+
 ## [2026-06-11-TP-V1-PARAM-ISLAND-PAUSED] TP v1 参数岛研究暂停
 
 - 日期：2026-06-11

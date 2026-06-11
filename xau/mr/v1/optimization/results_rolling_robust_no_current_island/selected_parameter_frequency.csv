@@ -1,0 +1,16 @@
+parameter,value,selected_folds,share
+ema_period,50.0,6,1.0
+atr_period,7.0,6,1.0
+band_atr_mult,2.25,6,1.0
+sl_atr_mult,10.0,6,1.0
+adx_period,28.0,6,1.0
+h1_adx_limit,28.0,6,1.0
+atr_ratio_lookback,40.0,6,1.0
+atr_ratio_min,0.0,6,1.0
+atr_ratio_max,2.0,6,1.0
+wick_body_ratio,3.0,6,1.0
+fat_tail_body_lookback,13.0,6,1.0
+fat_tail_body_mult,5.0,6,1.0
+breakeven_retrace_ratio,2.0,6,1.0
+session_start_hour_utc,0.0,6,1.0
+session_end_hour_utc,24.0,6,1.0
