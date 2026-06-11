@@ -3,6 +3,77 @@
 > Paths in older entries are historical snapshots. Current structure is documented
 > in `xau/readme.md`.
 
+## [2026-06-11-TP-V1-PARAM-ISLAND-PAUSED] TP v1 参数岛研究暂停
+
+- 日期：2026-06-11
+- 变更类型：`optimization` / `validation` / `research-status`
+- 范围：`xau/tp/v1/`
+- 当前状态：`暂停，不继续推进`
+
+### 完成事项
+
+1. 新增 TP v1 多阶段参数岛优化器：
+   - `xau/tp/v1/optimization/param_island_v1.py`
+   - 使用 H1 数据执行宽网格、局部参数岛、边界扩展、执行成本压力测试。
+   - 生成阶段候选、Top candidates、敏感性分析和详细结果。
+
+2. 识别原优化流程的数据挖掘偏差：
+   - 原流程使用 `2015-2024` 反复搜索和筛选大量参数。
+   - 原赢家只能视为 in-sample research winner，不能称为可信最优参数。
+   - 单独使用 `2025` 一年不足以证明参数能够泛化。
+
+3. 新增严格时序复核：
+   - 脚本：`xau/tp/v1/optimization/strict_walk_forward_v1.py`
+   - 开发与参数岛生成：`2015-2019`
+   - 验证与唯一参数选型：`2020-2022`
+   - 协议隔离确认：`2023-2024`
+   - 协议隔离最终检查：`2025`
+
+4. 严格时序流程选出的参数：
+
+```json
+{
+  "ema_fast_period": 20,
+  "ema_slow_period": 120,
+  "atr_period": 14,
+  "pullback_depth_atr_mult": 0.75,
+  "atr_sl_mult": 4.0,
+  "tp_rr": 5.0
+}
+```
+
+5. 严格时序分段结果：
+   - 开发集 `2015-2019`：平均收益 `11.64%`，最差年份 `+1.78%`，`5/5` 年盈利。
+   - 验证集 `2020-2022`：平均收益 `13.73%`，最差年份 `+1.13%`，`3/3` 年盈利。
+   - 确认集 `2023-2024`：平均收益 `16.21%`，最差年份 `+10.23%`，`2/2` 年盈利。
+   - `2025`：收益 `78.41%`，PF `1.88`，最大回撤 `44.71%`。
+
+6. 引擎参数诊断：
+   - `adx_period`、`atr_pct_window`、`slope_th_norm` 当前只影响 regime 标签。
+   - 以上参数不影响开仓和平仓，因此未纳入收益参数优化。
+
+### 风险与判断
+
+- `2023-2025` 在早期研究中已经被查看，无法恢复为真正纯净的项目级 holdout。
+- 严格时序复核只能降低本次选型流程的泄漏，不能证明未来盈利。
+- 严格时序候选每年约 `15-31` 笔交易，样本量不足。
+- `2025` 最大回撤达到 `44.71%`，不满足直接生产使用要求。
+- H1 OHLC 无法准确还原同一根 K 线内 SL 与 TP 的触发顺序。
+
+### 当前决定
+
+- TP v1 参数岛研究目前暂停，不做进一步进展。
+- 不继续扩大 grid、不继续调整评分规则、不根据 `2023-2025` 结果回头改参。
+- 不将任何研究候选覆盖到 TP v1 默认参数。
+- 不将 TP v1 当前候选投入生产或组合策略。
+- 后续只有在获得真正未见过的新数据、tick-level 数据，或预先声明的跨市场验证方案后再考虑恢复。
+
+### 研究输出
+
+- `xau/tp/v1/optimization/OVERFITTING_ASSESSMENT.md`
+- `xau/tp/v1/optimization/results/`
+- `xau/tp/v1/optimization/results_strict_walk_forward/`
+
 ## [2026-06-09-DAILY-SUMMARY] XAU strategy-first workspace restructure
 
 - 日期：2026-06-09
