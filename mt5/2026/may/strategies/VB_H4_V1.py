@@ -89,7 +89,6 @@ def log_message(message: str):
     except Exception as e:
         msg = f"❌ log_message() ERROR: {e}"
         print(msg)
-        send_telegram_message(msg)
 
 
 def load_last_signal_bar_time():
@@ -564,6 +563,8 @@ def run():
             save_last_signal_bar_time(signal_bar_time)
             return
 
+        # Consume the signal after one order attempt. Repeating the same H4
+        # signal can create duplicate orders when the first response is delayed.
         place_order(signal, float(signal_row["atr"]), signal_row)
         LAST_SIGNAL_BAR_TIME = signal_bar_time
         save_last_signal_bar_time(signal_bar_time)
