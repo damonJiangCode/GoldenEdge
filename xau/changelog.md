@@ -3,6 +3,84 @@
 > Paths in older entries are historical snapshots. Current structure is documented
 > in `xau/readme.md`.
 
+## [2026-06-11-MR-V1-SECOND-ISLAND-COMPARISON] MR v1 第二参数岛与默认参数总报告
+
+- 日期：2026-06-11
+- 变更类型：`parameter-island` / `comparison-report`
+- 范围：`xau/mr/v1/optimization/`
+- 当前决定：记录第二稳定参数岛；继续保留当前默认参数。
+
+### 第二稳定参数岛
+
+排除当前默认参数及其一轴邻域后，六个滚动折全部独立选中同一组参数：
+
+```json
+{
+  "ema_period": 50,
+  "atr_period": 7,
+  "band_atr_mult": 2.25,
+  "sl_atr_mult": 10.0,
+  "adx_period": 28,
+  "h1_adx_limit": 28.0,
+  "atr_ratio_lookback": 40,
+  "atr_ratio_min": 0.0,
+  "atr_ratio_max": 2.0,
+  "wick_body_ratio": 3.0,
+  "fat_tail_body_lookback": 13,
+  "fat_tail_body_mult": 5.0,
+  "breakeven_retrace_ratio": 2.0,
+  "session_start_hour_utc": 0,
+  "session_end_hour_utc": 24
+}
+```
+
+该参数岛相对当前默认参数具有以下结构差异：
+
+- 更慢 EMA：`36 -> 50`
+- 更宽初始止损：`8 ATR -> 10 ATR`
+- 更短 ATR ratio lookback：`160 -> 40`
+- 取消 ATR ratio 下限：`0.3 -> 0.0`
+- 更严格 wick confirmation：`1.5 -> 3.0`
+- 更长 fat-tail lookback：`3 -> 13`
+- 更宽松 fat-tail 排除倍数：`2.5 -> 5.0`
+
+### 2015-2025 总报告对比
+
+两组参数均使用 M15 年度数据重新运行 `2015-2025`。每年初始资金重置为 `1000`。
+
+| 指标 | 当前默认参数 | 滚动共识参数 |
+| --- | ---: | ---: |
+| 正收益年份 | `11/11` | `11/11` |
+| 平均年度收益 | `66.33%` | `69.53%` |
+| 中位年度收益 | `64.20%` | `71.70%` |
+| 最差年度收益 | `+11.97%` | `+4.87%` |
+| 简单加总收益 | `729.66%` | `764.81%` |
+| 年均 PF | `5.75` | `3.42` |
+| pooled trade PF | `5.69` | `3.60` |
+| 平均年度最大回撤 | `2.04%` | `4.46%` |
+| 最差年度最大回撤 | `4.87%` | `11.41%` |
+| 总交易数 | `22,140` | `25,556` |
+| pooled 每笔期望 | `0.33` | `0.30` |
+| 总手续费 | `1107.03` | `1277.83` |
+
+### 对比判断
+
+- 滚动共识参数在 `11` 年中有 `6` 年收益更高，默认参数有 `5` 年收益更高。
+- 滚动共识参数总收益更高，但增加了 `3,416` 笔交易和约 `170.80` 手续费。
+- 当前默认参数每年的 PF 均不低于滚动参数。
+- 当前默认参数每年的最大回撤均低于滚动参数。
+- 当前默认参数具有更好的最差年份、更高每笔期望和更强执行成本稳健性。
+- 第二参数岛证明 MR 结构不是单一参数尖峰，但不作为默认参数替代品。
+
+### 研究输出
+
+- `xau/mr/v1/optimization/compare_default_vs_rolling_island.py`
+- `xau/mr/v1/optimization/results_default_vs_rolling_island/REPORT.md`
+- `xau/mr/v1/optimization/results_default_vs_rolling_island/comparison.json`
+- `xau/mr/v1/optimization/results_default_vs_rolling_island/annual_comparison.csv`
+- `xau/mr/v1/optimization/results_default_vs_rolling_island/overall_comparison.csv`
+- `xau/mr/v1/optimization/results_default_vs_rolling_island/parameter_comparison.csv`
+
 ## [2026-06-11-MR-V1-ROLLING-ROBUST] MR v1 滚动稳健参数岛复核
 
 - 日期：2026-06-11
