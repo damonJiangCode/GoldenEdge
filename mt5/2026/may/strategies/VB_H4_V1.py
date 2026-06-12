@@ -345,7 +345,6 @@ def update_trailing_stop(df: pd.DataFrame):
             msg = f"❌ update_trailing_stop(): Failed to get {PARAMETERS['SYMBOL']} info"
             print(msg)
             log_message(msg)
-            send_telegram_message(msg)
             return
 
         open_time = pd.to_datetime(position.time, unit="s", utc=True)
@@ -406,12 +405,12 @@ def update_trailing_stop(df: pd.DataFrame):
             )
         print(msg)
         log_message(msg)
-        send_telegram_message(msg)
+        if result is not None and result.retcode == mt5.TRADE_RETCODE_DONE:
+            send_telegram_message(msg)
     except Exception as e:
         msg = f"❌ update_trailing_stop() ERROR: {e}"
         print(msg)
         log_message(msg)
-        send_telegram_message(msg)
 
 
 

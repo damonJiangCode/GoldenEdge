@@ -377,6 +377,7 @@ class MeanReversionV1Engine:
         trend_filter_reject_count = 0
         atr_ratio_filter_reject_count = 0
         fat_tail_filter_reject_count = 0
+        invalid_target_reject_count = 0
         insufficient_margin_reject_count = 0
         breakeven_move_count = 0
         peak_used_margin = 0.0
@@ -532,52 +533,59 @@ class MeanReversionV1Engine:
                         else:
                             tp = ema_target
                             sl = entry_price + self.config.sl_atr_mult * atr
-                        initial_risk_price = abs(entry_price - sl)
-                        initial_risk_money = initial_risk_price * self.side_units()
-                        be_retrace_atr_mult = (
-                            self.config.band_atr_mult * self.config.breakeven_retrace_ratio
+                        invalid_target = (signal == "long" and tp <= entry_price) or (
+                            signal == "short" and tp >= entry_price
                         )
-                        if signal == "long":
-                            breakeven_trigger_price = (
-                                ema_target - be_retrace_atr_mult * atr
-                            )
+                        if invalid_target:
+                            invalid_target_reject_count += 1
                         else:
-                            breakeven_trigger_price = (
-                                ema_target + be_retrace_atr_mult * atr
+                            initial_risk_price = abs(entry_price - sl)
+                            initial_risk_money = initial_risk_price * self.side_units()
+                            be_retrace_atr_mult = (
+                                self.config.band_atr_mult
+                                * self.config.breakeven_retrace_ratio
                             )
+                            if signal == "long":
+                                breakeven_trigger_price = (
+                                    ema_target - be_retrace_atr_mult * atr
+                                )
+                            else:
+                                breakeven_trigger_price = (
+                                    ema_target + be_retrace_atr_mult * atr
+                                )
 
-                        entry_commission = self.commission_one_side()
-                        required_margin = self.required_margin(entry_price)
-                        if balance - entry_commission < required_margin:
-                            insufficient_margin_reject_count += 1
-                        else:
-                            balance -= entry_commission
-                            total_commission += float(entry_commission)
+                            entry_commission = self.commission_one_side()
+                            required_margin = self.required_margin(entry_price)
+                            if balance - entry_commission < required_margin:
+                                insufficient_margin_reject_count += 1
+                            else:
+                                balance -= entry_commission
+                                total_commission += float(entry_commission)
 
-                            position = {
-                                "side": signal,
-                                "signal_time": row["time"],
-                                "entry_idx": i + 1,
-                                "entry_time": entry_row["time"],
-                                "entry_price": float(entry_price),
-                                "initial_sl": float(sl),
-                                "tp": float(tp),
-                                "sl": float(sl),
-                                "target_ema": float(ema_target),
-                                "entry_atr": float(atr),
-                                "entry_h1_adx": float(row["h1_adx"]),
-                                "entry_atr_ratio": float(row["atr_ratio"]),
-                                "entry_spread_points": float(entry_row["spread"]),
-                                "breakeven_trigger_price": float(
-                                    breakeven_trigger_price
-                                ),
-                                "breakeven_armed": False,
-                                "breakeven_arm_time": None,
-                                "entry_commission": float(entry_commission),
-                                "required_margin_at_entry": float(required_margin),
-                                "initial_risk_price": float(initial_risk_price),
-                                "initial_risk_money": float(initial_risk_money),
-                            }
+                                position = {
+                                    "side": signal,
+                                    "signal_time": row["time"],
+                                    "entry_idx": i + 1,
+                                    "entry_time": entry_row["time"],
+                                    "entry_price": float(entry_price),
+                                    "initial_sl": float(sl),
+                                    "tp": float(tp),
+                                    "sl": float(sl),
+                                    "target_ema": float(ema_target),
+                                    "entry_atr": float(atr),
+                                    "entry_h1_adx": float(row["h1_adx"]),
+                                    "entry_atr_ratio": float(row["atr_ratio"]),
+                                    "entry_spread_points": float(entry_row["spread"]),
+                                    "breakeven_trigger_price": float(
+                                        breakeven_trigger_price
+                                    ),
+                                    "breakeven_armed": False,
+                                    "breakeven_arm_time": None,
+                                    "entry_commission": float(entry_commission),
+                                    "required_margin_at_entry": float(required_margin),
+                                    "initial_risk_price": float(initial_risk_price),
+                                    "initial_risk_money": float(initial_risk_money),
+                                }
 
             floating = 0.0
             if position is not None and i >= int(position["entry_idx"]):
@@ -686,6 +694,7 @@ class MeanReversionV1Engine:
                 "trend_filter_reject_count": int(trend_filter_reject_count),
                 "atr_ratio_filter_reject_count": int(atr_ratio_filter_reject_count),
                 "fat_tail_filter_reject_count": int(fat_tail_filter_reject_count),
+                "invalid_target_reject_count": int(invalid_target_reject_count),
                 "insufficient_margin_reject_count": int(
                     insufficient_margin_reject_count
                 ),

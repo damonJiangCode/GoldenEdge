@@ -1,6 +1,6 @@
 {
   "engine": "mean_reversion_v1",
-  "input_file": "xau/marketdata/M15/M15_2018.csv",
+  "input_file": "/Users/damon/Documents/GoldenEdge/xau/marketdata/M15/M15_2018.csv",
   "bars": 23328,
   "time_start_utc": "2018-01-04T02:45:00+00:00",
   "time_end_utc": "2018-12-31T20:45:00+00:00",
@@ -51,6 +51,7 @@
     "trend_filter_reject_count": 3302,
     "atr_ratio_filter_reject_count": 431,
     "fat_tail_filter_reject_count": 2178,
+    "invalid_target_reject_count": 0,
     "insufficient_margin_reject_count": 0,
     "breakeven_move_count": 2248
   },
