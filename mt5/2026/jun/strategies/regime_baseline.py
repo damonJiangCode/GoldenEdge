@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-import argparse
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import importlib.util
 import json
-import os
 from pathlib import Path
 import sys
 import time
@@ -14,41 +12,55 @@ from typing import Any
 
 import MetaTrader5 as mt5  # type: ignore
 import pandas as pd  # type: ignore
+import requests  # type: ignore
 
 
-BASE_DIR = Path(__file__).resolve().parent
-REPO_ROOT = BASE_DIR.parents[2]
-LOG_DIR = BASE_DIR / "logs"
-EVENT_FILE = LOG_DIR / "regime_baseline_events.jsonl"
+STRATEGY_DIR = Path(__file__).resolve().parent
+JUN_DIR = STRATEGY_DIR.parent
+REPO_ROOT = STRATEGY_DIR.parents[3]
+LOG_DIR = JUN_DIR / "logs"
 SNAPSHOT_FILE = LOG_DIR / "regime_baseline_snapshot.json"
 
-SYMBOL = os.getenv("REGIME_SYMBOL", "XAUUSD")
-LOT = float(os.getenv("REGIME_LOT", "0.01"))
-RUNTIME_SECONDS = int(os.getenv("REGIME_RUNTIME_SECONDS", "20"))
-MIN_FREE_MARGIN_AFTER_ORDER = float(
-    os.getenv("REGIME_MIN_FREE_MARGIN_AFTER_ORDER", "100.0")
-)
-MAX_PORTFOLIO_POSITIONS = 2
+METADATA = {
+    "account": 60089392,
+    "password": "Jwz990118.",
+    "server": "TradeMaxGlobal-Demo",
+    "path": r"C:\\Program Files\\MetaTrader 5_3\\terminal64.exe",
+    "log_file": f"REGIME_BASELINE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
+    "title": "REGIME_BASELINE",
+    "comment": "XAUUSD shared-account baseline: MR_M15_V1 + VB_H4_V1",
+}
 
-ACCOUNT = int(os.getenv("MT5_ACCOUNT", "0"))
-PASSWORD = os.getenv("MT5_PASSWORD", "")
-SERVER = os.getenv("MT5_SERVER", "")
-TERMINAL_PATH = os.getenv("MT5_PATH", "")
+PARAMETERS = {
+    "SYMBOL": "XAUUSD",
+    "LOT": 0.01,
+    "RUNTIME_SECONDS": 20,
+    "MIN_FREE_MARGIN_AFTER_ORDER": 100.0,
+    "MAX_PORTFOLIO_POSITIONS": 2,
+    "VB_MAGIC": 2026061502,
+    "MR_MAGIC": 2026061501,
+}
 
-VB_MAGIC = int(os.getenv("REGIME_VB_MAGIC", "2026061502"))
-MR_MAGIC = int(os.getenv("REGIME_MR_MAGIC", "2026061501"))
+TELEGRAM = {
+    "BOT_TOKEN": "8221803362:AAGSmueTIdc5Ca_snea-gloHj1VQtPPSk8c",
+    "CHAT_ID": "7262692073",
+}
+
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+LOG_FILE = LOG_DIR / METADATA["log_file"]
+STATE_FILE = LOG_DIR / f"{METADATA['title']}_state.json"
+
+SYMBOL = PARAMETERS["SYMBOL"]
+LOT = PARAMETERS["LOT"]
+MIN_FREE_MARGIN_AFTER_ORDER = PARAMETERS["MIN_FREE_MARGIN_AFTER_ORDER"]
+MAX_PORTFOLIO_POSITIONS = PARAMETERS["MAX_PORTFOLIO_POSITIONS"]
+VB_MAGIC = PARAMETERS["VB_MAGIC"]
+MR_MAGIC = PARAMETERS["MR_MAGIC"]
 
 STRATEGY_PATHS = {
     "VB": REPO_ROOT / "mt5" / "2026" / "may" / "strategies" / "VB_H4_V1.py",
-    "MR": BASE_DIR / "strategies" / "MR_M15_V1.py",
+    "MR": STRATEGY_DIR / "MR_M15_V1.py",
 }
-
-SUCCESS_RETCODES = {
-    mt5.TRADE_RETCODE_DONE,
-    mt5.TRADE_RETCODE_PLACED,
-    mt5.TRADE_RETCODE_DONE_PARTIAL,
-}
-
 
 @dataclass(frozen=True)
 class StrategySpec:
@@ -69,13 +81,46 @@ def json_default(value: Any) -> Any:
     return str(value)
 
 
-def emit(event: str, **payload: Any) -> None:
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
+def log_message(message: str) -> None:
+    try:
+        with LOG_FILE.open("a", encoding="utf-8") as file:
+            file.write(message + "\n")
+    except Exception as exc:
+        print(f"log_message() ERROR: {exc}")
+
+
+def send_telegram_message(message: str) -> None:
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM['BOT_TOKEN']}/sendMessage"
+        payload = {"chat_id": TELEGRAM["CHAT_ID"], "text": message}
+        response = requests.post(url, data=payload, timeout=10)
+        if response.status_code != 200:
+            log_message(
+                "send_telegram_message() failed: "
+                f"{response.status_code} - {response.text}"
+            )
+    except Exception as exc:
+        log_message(f"send_telegram_message() ERROR: {exc}")
+
+
+def notify(message: str) -> None:
+    print(message)
+    log_message(message)
+    send_telegram_message(message)
+
+
+def log_local(message: str) -> None:
+    print(message)
+    log_message(message)
+
+
+def emit(event: str, notify_user: bool = False, **payload: Any) -> None:
     record = {"time_utc": utc_now_iso(), "event": event, **payload}
-    line = json.dumps(record, default=json_default, separators=(",", ":"))
-    print(line, flush=True)
-    with EVENT_FILE.open("a", encoding="utf-8") as file:
-        file.write(line + "\n")
+    line = json.dumps(record, default=json_default, ensure_ascii=False)
+    if notify_user:
+        notify(line)
+    else:
+        log_local(line)
 
 
 def load_module(name: str, path: Path) -> ModuleType:
@@ -95,15 +140,15 @@ def load_strategies() -> dict[str, StrategySpec]:
     vb.PARAMETERS["LOT"] = LOT
     mr.PARAMETERS["SYMBOL"] = SYMBOL
     mr.PARAMETERS["LOT"] = LOT
+    # Child modules supply calculations only; the combined runner owns all output.
+    vb.send_telegram_message = send_telegram_message
+    vb.log_message = log_message
+    mr.notify = notify
+    mr.log_local = log_local
     return {
         "VB": StrategySpec("VB", VB_MAGIC, vb),
         "MR": StrategySpec("MR", MR_MAGIC, mr),
     }
-
-
-def state_file(dry_run: bool) -> Path:
-    mode = "dry_run" if dry_run else "live"
-    return LOG_DIR / f"regime_baseline_state_{mode}.json"
 
 
 def load_state(path: Path) -> dict[str, Any]:
@@ -126,16 +171,14 @@ def save_state(state: dict[str, Any], path: Path) -> None:
     temporary.replace(path)
 
 
-def initialize_mt5(live: bool) -> None:
+def initialize_mt5() -> None:
     if VB_MAGIC == MR_MAGIC:
         raise RuntimeError("REGIME_VB_MAGIC and REGIME_MR_MAGIC must be different")
-    if not TERMINAL_PATH:
-        raise RuntimeError("MT5_PATH is required")
-    if not ACCOUNT or not PASSWORD or not SERVER:
-        raise RuntimeError("MT5_ACCOUNT, MT5_PASSWORD, and MT5_SERVER are required")
-    if not mt5.initialize(path=TERMINAL_PATH):
+    if not mt5.initialize(METADATA["path"]):
         raise RuntimeError(f"MT5 initialize failed: {mt5.last_error()}")
-    if not mt5.login(ACCOUNT, PASSWORD, SERVER):
+    if not mt5.login(
+        METADATA["account"], METADATA["password"], METADATA["server"]
+    ):
         raise RuntimeError(f"MT5 login failed: {mt5.last_error()}")
     if not mt5.symbol_select(SYMBOL, True):
         raise RuntimeError(f"Cannot select symbol {SYMBOL}: {mt5.last_error()}")
@@ -159,21 +202,23 @@ def initialize_mt5(live: bool) -> None:
     account = mt5.account_info()
     if account is None:
         raise RuntimeError(f"account_info failed: {mt5.last_error()}")
-    if int(account.login) != ACCOUNT:
-        raise RuntimeError(f"Connected account {account.login} does not match {ACCOUNT}")
+    if int(account.login) != METADATA["account"]:
+        raise RuntimeError(
+            f"Connected account {account.login} does not match {METADATA['account']}"
+        )
     hedging_mode = getattr(mt5, "ACCOUNT_MARGIN_MODE_RETAIL_HEDGING", None)
     is_hedging = hedging_mode is not None and int(account.margin_mode) == int(
         hedging_mode
     )
-    if live and not is_hedging:
+    if not is_hedging:
         raise RuntimeError(
-            "Live mode requires an MT5 hedging account so VB and MR can hold "
+            "REGIME_BASELINE requires an MT5 hedging account so VB and MR can hold "
             "independent or opposite positions."
         )
     emit(
         "initialized",
         account=account.login,
-        server=SERVER,
+        server=METADATA["server"],
         symbol=SYMBOL,
         balance=account.balance,
         equity=account.equity,
@@ -184,6 +229,7 @@ def initialize_mt5(live: bool) -> None:
         volume_min=symbol_info.volume_min,
         volume_max=symbol_info.volume_max,
         volume_step=symbol_info.volume_step,
+        notify_user=True,
     )
 
 
@@ -391,7 +437,6 @@ def submit_order(
     signal_row: pd.Series,
     request: dict[str, Any],
     reservations: dict[str, float],
-    dry_run: bool,
 ) -> bool:
     valid, preflight = preflight_order(request, reservations["margin"])
     common = {
@@ -402,28 +447,24 @@ def submit_order(
         "preflight": preflight,
     }
     if not valid:
-        emit("order_blocked", **common)
+        emit("order_blocked", notify_user=True, **common)
         return False
-    if dry_run:
-        reservations["margin"] += float(request["_required_margin"])
-        reservations["positions"] += 1.0
-        emit("dry_run_order", **common)
-        return True
     broker_request = {key: value for key, value in request.items() if not key.startswith("_")}
     result = mt5.order_send(broker_request)
     if result is None:
-        emit("order_failed", **common, error=str(mt5.last_error()))
+        emit("order_failed", notify_user=True, **common, error=str(mt5.last_error()))
         return False
-    success = int(result.retcode) in SUCCESS_RETCODES
+    success = int(result.retcode) == mt5.TRADE_RETCODE_DONE
     emit(
         "order_submitted" if success else "order_failed",
+        notify_user=True,
         **common,
         result=result._asdict(),
     )
     return success
 
 
-def update_stop(position: Any, spec: StrategySpec, new_sl: float, dry_run: bool) -> bool:
+def update_stop(position: Any, spec: StrategySpec, new_sl: float) -> bool:
     symbol_info = mt5.symbol_info(SYMBOL)
     if symbol_info is None:
         return False
@@ -436,19 +477,11 @@ def update_stop(position: Any, spec: StrategySpec, new_sl: float, dry_run: bool)
         "magic": spec.magic,
         "comment": f"REGIME_BASELINE_{spec.name}",
     }
-    if dry_run:
-        emit(
-            "dry_run_stop_update",
-            strategy=spec.name,
-            ticket=position.ticket,
-            old_sl=position.sl,
-            new_sl=request["sl"],
-        )
-        return True
     result = mt5.order_send(request)
-    success = result is not None and int(result.retcode) in SUCCESS_RETCODES
+    success = result is not None and int(result.retcode) == mt5.TRADE_RETCODE_DONE
     emit(
         "stop_updated" if success else "stop_update_failed",
+        notify_user=True,
         strategy=spec.name,
         ticket=position.ticket,
         old_sl=position.sl,
@@ -458,16 +491,13 @@ def update_stop(position: Any, spec: StrategySpec, new_sl: float, dry_run: bool)
     return success
 
 
-def manage_vb(
-    spec: StrategySpec, position: Any, frame: pd.DataFrame, dry_run: bool
-) -> None:
+def manage_vb(spec: StrategySpec, position: Any, frame: pd.DataFrame) -> None:
     completed = frame.iloc[-2]
     active = frame[
-        (frame["time"] >= pd.to_datetime(position.time, unit="s", utc=True))
-        & (frame["time"] <= completed["time"])
+        frame["time"] >= pd.to_datetime(position.time, unit="s", utc=True)
     ]
     if active.empty:
-        return
+        active = frame.tail(1)
     old_sl = float(position.sl or 0.0)
     if old_sl <= 0.0:
         return
@@ -476,25 +506,35 @@ def manage_vb(
             spec.module.PARAMETERS["TRAIL_ATR_MULTIPLIER"]
         ) * float(completed["atr"])
         if candidate > old_sl:
-            update_stop(position, spec, candidate, dry_run)
+            update_stop(position, spec, candidate)
     else:
         candidate = float(active["low"].min()) + float(
             spec.module.PARAMETERS["TRAIL_ATR_MULTIPLIER"]
         ) * float(completed["atr"])
         if candidate < old_sl:
-            update_stop(position, spec, candidate, dry_run)
+            update_stop(position, spec, candidate)
 
 
-def manage_mr(
-    spec: StrategySpec, position: Any, completed: pd.Series, dry_run: bool
-) -> None:
+def manage_mr(spec: StrategySpec, position: Any, completed: pd.Series) -> None:
     entry = float(position.price_open)
     old_sl = float(position.sl or 0.0)
     tp = float(position.tp or 0.0)
     if old_sl <= 0.0 or tp <= 0.0:
         return
     side = "long" if position.type == mt5.POSITION_TYPE_BUY else "short"
-    if (side == "long" and old_sl >= entry) or (side == "short" and old_sl <= entry):
+    position_bar_time = pd.to_datetime(position.time, unit="s", utc=True).floor(
+        "15min"
+    )
+    if completed["time"] < position_bar_time:
+        return
+    symbol_info = mt5.symbol_info(SYMBOL)
+    if symbol_info is None:
+        emit("symbol_info_unavailable", strategy=spec.name)
+        return
+    tolerance = float(symbol_info.point) * 2.0
+    if (side == "long" and old_sl >= entry - tolerance) or (
+        side == "short" and old_sl <= entry + tolerance
+    ):
         return
     entry_atr = abs(entry - old_sl) / float(
         spec.module.PARAMETERS["SL_ATR_MULTIPLIER"]
@@ -511,7 +551,7 @@ def manage_mr(
         else float(completed["low"]) <= trigger
     )
     if hit:
-        update_stop(position, spec, entry, dry_run)
+        update_stop(position, spec, entry)
 
 
 def run_strategy_cycle(
@@ -521,7 +561,6 @@ def run_strategy_cycle(
     state: dict[str, Any],
     state_path: Path,
     reservations: dict[str, float],
-    dry_run: bool,
 ) -> None:
     latest = latest_completed_row(spec)
     if latest is None:
@@ -532,9 +571,9 @@ def run_strategy_cycle(
 
     if position is not None and state["last_managed_bar"].get(spec.name) != completed_time:
         if spec.name == "VB":
-            manage_vb(spec, position, frame, dry_run)
+            manage_vb(spec, position, frame)
         else:
-            manage_mr(spec, position, completed, dry_run)
+            manage_mr(spec, position, completed)
         state["last_managed_bar"][spec.name] = completed_time
 
     signal, reject_reason = spec.module.check_signal(completed)
@@ -578,14 +617,13 @@ def run_strategy_cycle(
         return
     request = calculate_order(spec, signal, completed)
     if request is not None:
-        submit_order(spec, signal, completed, request, reservations, dry_run)
+        submit_order(spec, signal, completed, request, reservations)
 
 
 def run_cycle(
     strategies: dict[str, StrategySpec],
     state: dict[str, Any],
     state_path: Path,
-    dry_run: bool,
 ) -> None:
     positions = get_positions(strategies)
     owned, _, violations = validate_positions(positions, strategies)
@@ -600,7 +638,6 @@ def run_cycle(
             state,
             state_path,
             reservations,
-            dry_run,
         )
         # Refresh before the next strategy so a live order consumes shared capacity.
         positions = get_positions(strategies)
@@ -608,30 +645,16 @@ def run_cycle(
     save_state(state, state_path)
 
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Single-account MT5 simulator/executor for VB + MR regime baseline"
-    )
-    parser.add_argument(
-        "--live",
-        action="store_true",
-        help="Allow real order and stop-update requests. Default is dry-run.",
-    )
-    parser.add_argument("--once", action="store_true", help="Run one cycle and exit.")
-    return parser.parse_args()
-
-
 def main() -> None:
-    args = parse_args()
-    dry_run = not args.live
     strategies = load_strategies()
-    state_path = state_file(dry_run)
+    state_path = STATE_FILE
     state = load_state(state_path)
     try:
-        initialize_mt5(live=args.live)
+        initialize_mt5()
         emit(
             "runner_started",
-            mode="dry_run" if dry_run else "live",
+            notify_user=True,
+            mode="live",
             strategy_magics={name: spec.magic for name, spec in strategies.items()},
             maximum_positions_per_strategy=1,
             maximum_portfolio_positions=MAX_PORTFOLIO_POSITIONS,
@@ -639,19 +662,17 @@ def main() -> None:
         )
         while True:
             try:
-                run_cycle(strategies, state, state_path, dry_run)
+                run_cycle(strategies, state, state_path)
             except Exception as exc:
-                emit("cycle_error", error=str(exc))
-            if args.once:
-                break
-            time.sleep(RUNTIME_SECONDS)
+                emit("cycle_error", notify_user=True, error=str(exc))
+            time.sleep(PARAMETERS["RUNTIME_SECONDS"])
     except KeyboardInterrupt:
-        emit("runner_stopped", reason="keyboard_interrupt")
+        emit("runner_stopped", notify_user=True, reason="keyboard_interrupt")
     except Exception as exc:
-        emit("fatal_error", error=str(exc))
-        raise
+        emit("fatal_error", notify_user=True, error=str(exc))
     finally:
         mt5.shutdown()
+        notify("MT5 shutdown completed")
 
 
 if __name__ == "__main__":
