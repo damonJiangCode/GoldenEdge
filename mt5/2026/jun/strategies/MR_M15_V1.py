@@ -84,6 +84,7 @@ LOG_FILE = LOG_DIR / METADATA["log_file"]
 STATE_FILE = LOG_DIR / f"{METADATA['title']}_state.txt"
 
 LAST_SIGNAL_BAR_TIME = None
+LAST_MANAGED_BAR_TIME = None
 
 
 def log_message(message: str):
@@ -112,6 +113,11 @@ def notify(message: str):
     print(message)
     log_message(message)
     send_telegram_message(message)
+
+
+def log_local(message: str):
+    print(message)
+    log_message(message)
 
 
 def load_last_signal_bar_time():
@@ -373,29 +379,36 @@ def get_position():
         return "error", None
 
 
-def update_breakeven():
+def update_breakeven(completed_row: pd.Series) -> bool:
     try:
         side, position = get_position()
-        if side in (None, "error") or position is None:
-            return
+        if side == "error":
+            return False
+        if side in (None, "foreign") or position is None:
+            return True
 
         entry = float(position.price_open)
         old_sl = float(position.sl or 0.0)
         tp = float(position.tp or 0.0)
         if old_sl <= 0.0 or tp <= 0.0:
-            return
+            return True
+
+        position_bar_time = pd.to_datetime(position.time, unit="s", utc=True).floor(
+            "15min"
+        )
+        if completed_row["time"] < position_bar_time:
+            return True
 
         symbol_info = mt5.symbol_info(PARAMETERS["SYMBOL"])  # type: ignore
-        tick = mt5.symbol_info_tick(PARAMETERS["SYMBOL"])  # type: ignore
-        if symbol_info is None or tick is None:
-            notify("❌ update_breakeven(): symbol info or tick unavailable")
-            return
+        if symbol_info is None:
+            log_local("❌ update_breakeven(): symbol info unavailable")
+            return False
 
         tolerance = float(symbol_info.point) * 2.0
         if (side == "long" and old_sl >= entry - tolerance) or (
             side == "short" and old_sl <= entry + tolerance
         ):
-            return
+            return True
 
         entry_atr = abs(entry - old_sl) / PARAMETERS["SL_ATR_MULTIPLIER"]
         retrace_distance = (
@@ -404,9 +417,15 @@ def update_breakeven():
             * entry_atr
         )
         trigger = tp - retrace_distance if side == "long" else tp + retrace_distance
-        trigger_hit = tick.bid >= trigger if side == "long" else tick.bid <= trigger
+        # Match the backtest engine: only a completed M15 bar may arm
+        # breakeven, after the broker has already handled that bar's SL/TP.
+        trigger_hit = (
+            float(completed_row["high"]) >= trigger
+            if side == "long"
+            else float(completed_row["low"]) <= trigger
+        )
         if not trigger_hit:
-            return
+            return True
 
         new_sl = round(entry, symbol_info.digits)
         request = {
@@ -421,22 +440,25 @@ def update_breakeven():
         result = mt5.order_send(request)  # type: ignore
         if result is None or result.retcode != mt5.TRADE_RETCODE_DONE:
             retcode = getattr(result, "retcode", None)
-            notify(
+            log_local(
                 "❌ update_breakeven(): Failed\n"
                 f"Ticket: {position.ticket}\n"
                 f"Result: {RET_CODE_MESSAGES.get(retcode, 'unknown')} ({retcode})"
             )
-            return
+            return False
         notify(
             "✅ update_breakeven(): SL moved to breakeven\n"
             f"Ticket: {position.ticket}\n"
             f"Direction: {side}\n"
             f"Old SL: {old_sl:.2f}\n"
             f"New SL: {new_sl:.2f}\n"
-            f"Trigger: {trigger:.2f}"
+            f"Trigger: {trigger:.2f}\n"
+            f"Completed bar: {completed_row['time']}"
         )
+        return True
     except Exception as exc:
-        notify(f"❌ update_breakeven() ERROR: {exc}")
+        log_local(f"❌ update_breakeven() ERROR: {exc}")
+        return False
 
 
 def place_order(signal: str, signal_row: pd.Series):
@@ -453,7 +475,7 @@ def place_order(signal: str, signal_row: pd.Series):
         if (signal == "long" and target_ema <= price) or (
             signal == "short" and target_ema >= price
         ):
-            notify(
+            log_local(
                 "⚠️ place_order(): skipped because EMA target is no longer valid\n"
                 f"Signal bar: {signal_row['time']}\n"
                 f"Direction: {signal}\n"
@@ -505,7 +527,7 @@ def place_order(signal: str, signal_row: pd.Series):
 
 
 def run():
-    global LAST_SIGNAL_BAR_TIME
+    global LAST_MANAGED_BAR_TIME, LAST_SIGNAL_BAR_TIME
 
     try:
         if LAST_SIGNAL_BAR_TIME is None:
@@ -524,10 +546,13 @@ def run():
             )
             return
 
-        update_breakeven()
-
         # MT5 row -1 is forming; row -2 is the completed signal candle.
         signal_row = df.iloc[-2]
+        completed_bar_time = signal_row["time"]
+        if LAST_MANAGED_BAR_TIME != completed_bar_time:
+            if update_breakeven(signal_row):
+                LAST_MANAGED_BAR_TIME = completed_bar_time
+
         signal, reject_reason = check_signal(signal_row)
         account = mt5.account_info()  # type: ignore
         balance = account.balance if account else 0.0
