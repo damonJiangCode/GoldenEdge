@@ -461,11 +461,54 @@
       "pip_value": 0.01,
       "slippage_ticks": 1.0,
       "commission_per_trade": 0.05,
+      "lot_size": 0.01,
+      "contract_size": 100,
+      "leverage": 100.0,
+      "margin_formula": "price * lot_size * contract_size / leverage",
       "swap_long_per_lot_per_night": 0.0,
       "swap_short_per_lot_per_night": 0.0,
       "total_realized_swap": 0.0
     },
     "changed_settings": {
+      "minimum_free_margin": [
+        983.8579973468732,
+        988.3683000000001,
+        986.2403000000005,
+        984.132163547599,
+        983.8064867587417,
+        985.3041999999998,
+        978.9742000000003,
+        979.2807000000007,
+        979.0058000000005,
+        973.4724000000002,
+        971.2691999999995
+      ],
+      "minimum_margin_level_pct": [
+        7659.014096569534,
+        8269.99974203658,
+        7947.297505064287,
+        7336.638382472618,
+        7473.083869945313,
+        6436.766697298971,
+        5223.793559724482,
+        5483.955308799206,
+        5283.85989319811,
+        4879.368289418407,
+        3754.7092613456366
+      ],
+      "peak_used_margin": [
+        13.034,
+        13.7141,
+        13.5497,
+        13.6055,
+        15.5427,
+        20.4939,
+        19.1517,
+        20.5672,
+        20.8805,
+        27.863699999999998,
+        45.4664
+      ],
       "spread_mean_points": [
         42.58292388587191,
         33.56625320786998,
@@ -516,7 +559,8 @@
         2.0
       ],
       "fat_tail_body_mult": 2.5,
-      "session_reject_count": 0
+      "session_reject_count": 0,
+      "insufficient_margin_reject_count": 0
     },
     "changed_settings": {
       "atr_ratio_filter_reject_count": [
@@ -576,6 +620,7 @@
       "atr_ratio_filter_reject_count": 6756.0,
       "breakeven_move_count": 21771.0,
       "fat_tail_filter_reject_count": 22922.0,
+      "insufficient_margin_reject_count": 0.0,
       "session_reject_count": 0.0,
       "trend_filter_reject_count": 42898.0
     }
@@ -597,7 +642,8 @@
       "entry_logic": "touch EMA±k*ATR with candle confirmation; skip fat-tail bars",
       "tp_logic": "target EMA; move SL to breakeven after partial mean reversion",
       "sl_logic": "initial SL=entry±8.0*ATR; breakeven trail at retrace ratio",
-      "position_mode": "single_position_no_pyramiding"
+      "position_mode": "single_position_no_pyramiding",
+      "margin_check": "reject entry when post-commission balance is below required margin"
     },
     "changed": {}
   },

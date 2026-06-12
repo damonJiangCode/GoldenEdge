@@ -73,6 +73,11 @@ class VolatilityBreakoutV1Engine:
     def side_units(self) -> float:
         return self.config.lot_size * self.config.contract_size
 
+    def required_margin(self, price: float) -> float:
+        if self.config.leverage <= 0.0:
+            raise ValueError("leverage must be greater than zero")
+        return price * self.side_units() / self.config.leverage
+
     def commission_one_side(self) -> float:
         return self.config.commission_per_trade / 2.0
 
@@ -332,7 +337,11 @@ class VolatilityBreakoutV1Engine:
         spread_filter_reject_count = 0
         adx_filter_reject_count = 0
         both_breakout_reject_count = 0
+        insufficient_margin_reject_count = 0
         trail_move_count = 0
+        peak_used_margin = 0.0
+        minimum_free_margin = float(balance)
+        minimum_margin_level_pct = float("inf")
 
         for i in range(len(self.df)):
             row = self.df.iloc[i]
@@ -482,25 +491,30 @@ class VolatilityBreakoutV1Engine:
                             sl = entry_price + self.config.sl_atr_mult * atr
 
                         entry_commission = self.commission_one_side()
-                        balance -= entry_commission
-                        total_commission += float(entry_commission)
+                        required_margin = self.required_margin(entry_price)
+                        if balance - entry_commission < required_margin:
+                            insufficient_margin_reject_count += 1
+                        else:
+                            balance -= entry_commission
+                            total_commission += float(entry_commission)
 
-                        position = {
-                            "side": signal,
-                            "signal_time": row["time"],
-                            "entry_idx": i + 1,
-                            "entry_time": entry_row["time"],
-                            "entry_price": float(entry_price),
-                            "sl": float(sl),
-                            "entry_atr": float(atr),
-                            "entry_atr_ratio": float(entry_row["atr_ratio"]),
-                            "entry_h1_adx": float(entry_row["h1_adx"]),
-                            "highest_since_entry": float(entry_row["high"]),
-                            "lowest_since_entry": float(entry_row["low"]),
-                            "entry_commission": float(entry_commission),
-                            "sl_update_count": 0,
-                            "trail_updates": [],
-                        }
+                            position = {
+                                "side": signal,
+                                "signal_time": row["time"],
+                                "entry_idx": i + 1,
+                                "entry_time": entry_row["time"],
+                                "entry_price": float(entry_price),
+                                "sl": float(sl),
+                                "entry_atr": float(atr),
+                                "entry_atr_ratio": float(entry_row["atr_ratio"]),
+                                "entry_h1_adx": float(entry_row["h1_adx"]),
+                                "highest_since_entry": float(entry_row["high"]),
+                                "lowest_since_entry": float(entry_row["low"]),
+                                "entry_commission": float(entry_commission),
+                                "required_margin_at_entry": float(required_margin),
+                                "sl_update_count": 0,
+                                "trail_updates": [],
+                            }
 
             floating = 0.0
             if position is not None and i >= int(position["entry_idx"]):
@@ -514,12 +528,34 @@ class VolatilityBreakoutV1Engine:
                     side=str(position["side"]),
                 )
 
+            equity = float(balance + floating)
+            used_margin = 0.0
+            if position is not None and i >= int(position["entry_idx"]):
+                used_margin = self.required_margin(float(row["close"]))
+            free_margin = equity - used_margin
+            margin_level_pct = (
+                equity / used_margin * 100.0 if used_margin > 0.0 else None
+            )
+            peak_used_margin = max(peak_used_margin, used_margin)
+            minimum_free_margin = min(minimum_free_margin, free_margin)
+            if margin_level_pct is not None:
+                minimum_margin_level_pct = min(
+                    minimum_margin_level_pct, margin_level_pct
+                )
+
             equity_series.append(
                 {
                     "time": bar_time.isoformat(),
                     "balance": float(balance),
-                    "equity": float(balance + floating),
+                    "equity": equity,
                     "open_position": int(position is not None),
+                    "used_margin": float(used_margin),
+                    "free_margin": float(free_margin),
+                    "margin_level_pct": (
+                        float(margin_level_pct)
+                        if margin_level_pct is not None
+                        else None
+                    ),
                 }
             )
 
@@ -549,6 +585,17 @@ class VolatilityBreakoutV1Engine:
                 "pip_value": float(self.config.pip_value),
                 "slippage_ticks": float(self.config.slippage_ticks),
                 "commission_per_trade": float(self.config.commission_per_trade),
+                "lot_size": float(self.config.lot_size),
+                "contract_size": int(self.config.contract_size),
+                "leverage": float(self.config.leverage),
+                "margin_formula": "price * lot_size * contract_size / leverage",
+                "peak_used_margin": float(peak_used_margin),
+                "minimum_free_margin": float(minimum_free_margin),
+                "minimum_margin_level_pct": (
+                    float(minimum_margin_level_pct)
+                    if minimum_margin_level_pct != float("inf")
+                    else None
+                ),
                 "swap_long_per_lot_per_night": float(self.config.swap_long_per_lot_per_night),
                 "swap_short_per_lot_per_night": float(self.config.swap_short_per_lot_per_night),
                 "total_realized_swap": float(total_swap),
@@ -567,6 +614,9 @@ class VolatilityBreakoutV1Engine:
                 "spread_filter_reject_count": int(spread_filter_reject_count),
                 "adx_filter_reject_count": int(adx_filter_reject_count),
                 "both_breakout_reject_count": int(both_breakout_reject_count),
+                "insufficient_margin_reject_count": int(
+                    insufficient_margin_reject_count
+                ),
                 "trail_move_count": int(trail_move_count),
             },
             "params": {
@@ -580,6 +630,7 @@ class VolatilityBreakoutV1Engine:
                 "entry_logic": "intrabar donchian breakout (high/low trigger), next bar market entry",
                 "exit_logic": "SL + trailing stop (chandelier/donchian)",
                 "position_mode": "single_position_no_pyramiding",
+                "margin_check": "reject entry when post-commission balance is below required margin",
             },
             "equity_series": equity_series,
             "trade_details": trades,
@@ -591,6 +642,7 @@ class VolatilityBreakoutV1Engine:
                 "entry_time": position["entry_time"].isoformat(),
                 "entry_price": float(position["entry_price"]),
                 "sl": float(position["sl"]),
+                "required_margin_at_entry": float(position["required_margin_at_entry"]),
             }
         return report
 
