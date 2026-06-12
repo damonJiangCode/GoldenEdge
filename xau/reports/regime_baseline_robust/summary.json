@@ -1,0 +1,173 @@
+{
+  "engine": "regime_baseline_robust_audit",
+  "source": "/Users/damon/Documents/GoldenEdge/xau/reports/regime_baseline/trades_all.csv",
+  "method": {
+    "sleeve_initial_balance": 1000.0,
+    "portfolio_initial_balance": 2000.0,
+    "risk_budget_pct_per_sleeve_trade": 1.0,
+    "risk_budget_money_per_sleeve_trade": 10.0,
+    "position_sizing": "original 0.01 lot scaled down only; never scaled up",
+    "drawdown": "closed-trade event curve; excludes intratrade MTM",
+    "scenarios": {
+      "base": {
+        "slippage_ticks": 1.0,
+        "commission_round_turn": 0.05
+      },
+      "stress": {
+        "slippage_ticks": 10.0,
+        "commission_round_turn": 0.1
+      },
+      "severe": {
+        "slippage_ticks": 20.0,
+        "commission_round_turn": 0.2
+      }
+    }
+  },
+  "exposure_audit": {
+    "trades": 22421,
+    "trades_scaled_down": 15837,
+    "trades_scaled_down_pct": 70.63467285134473,
+    "median_size_scale": 0.7286817093692816,
+    "minimum_size_scale": 0.0499575398915331,
+    "original_top_10_winner_share_pct": 15.756401916963464
+  },
+  "overview": {
+    "base": {
+      "positive_years": 11,
+      "average_annual_return_pct": 19.501799894276225,
+      "median_annual_return_pct": 20.630180845142142,
+      "worst_annual_return_pct": 7.784173867838685,
+      "best_annual_return_pct": 31.185721701991902,
+      "average_annual_max_closed_trade_drawdown_pct": 1.075267071591085,
+      "worst_annual_max_closed_trade_drawdown_pct": 2.0722799819849613,
+      "simple_sum_net_pnl": 4290.3959767407705
+    },
+    "stress": {
+      "positive_years": 6,
+      "average_annual_return_pct": 3.0774952446528876,
+      "median_annual_return_pct": 9.450229161448735,
+      "worst_annual_return_pct": -14.336648875160138,
+      "best_annual_return_pct": 24.39800003392561,
+      "average_annual_max_closed_trade_drawdown_pct": 5.885681279476077,
+      "worst_annual_max_closed_trade_drawdown_pct": 14.47212764809486,
+      "simple_sum_net_pnl": 677.0489538236354
+    },
+    "severe": {
+      "positive_years": 2,
+      "average_annual_return_pct": -18.345510820073216,
+      "median_annual_return_pct": -12.956970022418613,
+      "worst_annual_return_pct": -46.50165092600599,
+      "best_annual_return_pct": 15.544450032100007,
+      "average_annual_max_closed_trade_drawdown_pct": 21.51032095613331,
+      "worst_annual_max_closed_trade_drawdown_pct": 46.55651052736934,
+      "simple_sum_net_pnl": -4036.012380416107
+    }
+  },
+  "executable_capital_view": {
+    "sleeve_capital": 10000.0,
+    "portfolio_capital": 20000.0,
+    "position_size": "original executable fixed 0.01 lot",
+    "maximum_observed_initial_risk_pct_of_sleeve": 2.0016998478531605,
+    "positive_years": 11,
+    "average_annual_return_pct": 4.520674734782327,
+    "median_annual_return_pct": 4.664276659977669,
+    "worst_annual_return_pct": 1.040878994046897,
+    "best_annual_return_pct": 16.117010185804165,
+    "worst_annual_max_closed_trade_drawdown_pct": 0.560877549139745,
+    "annual": [
+      {
+        "year": 2015,
+        "net_pnl": 224.2810410607087,
+        "return_pct": 1.1214052053035435,
+        "max_closed_trade_drawdown_abs": 11.173328644556022,
+        "max_closed_trade_drawdown_pct": 0.05551425889732042
+      },
+      {
+        "year": 2016,
+        "net_pnl": 363.4519544842725,
+        "return_pct": 1.8172597724213626,
+        "max_closed_trade_drawdown_abs": 40.472247463269014,
+        "max_closed_trade_drawdown_pct": 0.19870550175416038
+      },
+      {
+        "year": 2017,
+        "net_pnl": 208.1757988093794,
+        "return_pct": 1.040878994046897,
+        "max_closed_trade_drawdown_abs": 49.71770562875099,
+        "max_closed_trade_drawdown_pct": 0.24597135980260382
+      },
+      {
+        "year": 2018,
+        "net_pnl": 223.96926717698915,
+        "return_pct": 1.1198463358849458,
+        "max_closed_trade_drawdown_abs": 24.725564484193455,
+        "max_closed_trade_drawdown_pct": 0.1236014553657799
+      },
+      {
+        "year": 2019,
+        "net_pnl": 314.36529895589905,
+        "return_pct": 1.5718264947794953,
+        "max_closed_trade_drawdown_abs": 70.65601654085185,
+        "max_closed_trade_drawdown_pct": 0.34994821018954875
+      },
+      {
+        "year": 2020,
+        "net_pnl": 1035.739764562999,
+        "return_pct": 5.178698822814995,
+        "max_closed_trade_drawdown_abs": 63.7579603021768,
+        "max_closed_trade_drawdown_pct": 0.3115269903440255
+      },
+      {
+        "year": 2021,
+        "net_pnl": 932.8553319955338,
+        "return_pct": 4.664276659977669,
+        "max_closed_trade_drawdown_abs": 38.429973714333755,
+        "max_closed_trade_drawdown_pct": 0.18912617692240058
+      },
+      {
+        "year": 2022,
+        "net_pnl": 1026.6567713744832,
+        "return_pct": 5.133283856872416,
+        "max_closed_trade_drawdown_abs": 59.5641964628594,
+        "max_closed_trade_drawdown_pct": 0.2826917959530369
+      },
+      {
+        "year": 2023,
+        "net_pnl": 992.9542666034224,
+        "return_pct": 4.964771333017112,
+        "max_closed_trade_drawdown_abs": 35.44367043958846,
+        "max_closed_trade_drawdown_pct": 0.1765550467582936
+      },
+      {
+        "year": 2024,
+        "net_pnl": 1399.6328843365982,
+        "return_pct": 6.998164421682991,
+        "max_closed_trade_drawdown_abs": 103.34570607427668,
+        "max_closed_trade_drawdown_pct": 0.49966288657722374
+      },
+      {
+        "year": 2025,
+        "net_pnl": 3223.402037160833,
+        "return_pct": 16.117010185804165,
+        "max_closed_trade_drawdown_abs": 118.3019131108158,
+        "max_closed_trade_drawdown_pct": 0.560877549139745
+      }
+    ]
+  },
+  "robust_score": -25.837032373015568,
+  "optimization_gate": {
+    "required_positive_stress_years": 8,
+    "required_positive_severe_years": 6,
+    "candidate_must_beat_baseline_robust_score": true,
+    "candidate_must_not_worsen_stress_worst_drawdown": true,
+    "final_2025_result_is_reported_but_not_used_for_parameter_selection": true
+  },
+  "notes": [
+    "This is an optimization comparison baseline, not a replacement execution engine.",
+    "The executable capital view keeps the original 0.01 lot and uses 10000 per sleeve.",
+    "Risk normalization removes much of the fixed-lot exposure drift across gold price regimes.",
+    "Risk-normalized fractional lots are analytical and may be below a broker's minimum lot.",
+    "Stress scenarios penalize MR's high turnover and sensitivity to execution costs.",
+    "Closed-trade drawdown understates intratrade MTM drawdown and is marked accordingly."
+  ]
+}
