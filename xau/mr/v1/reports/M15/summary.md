@@ -76,6 +76,7 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/mr/v1/reports/M15/report_*.json`
 | atr_ratio_filter_reject_count | 6756.00 |
 | breakeven_move_count | 21771.00 |
 | fat_tail_filter_reject_count | 22922.00 |
+| insufficient_margin_reject_count | 0.00 |
 | session_reject_count | 0.00 |
 | trend_filter_reject_count | 42898.00 |
 
@@ -99,6 +100,7 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/mr/v1/reports/M15/report_*.json`
 | tp_logic | target EMA; move SL to breakeven after partial mean reversion |
 | sl_logic | initial SL=entry±8.0*ATR; breakeven trail at retrace ratio |
 | position_mode | single_position_no_pyramiding |
+| margin_check | reject entry when post-commission balance is below required margin |
 
 ## Common Cost Settings
 
@@ -108,6 +110,10 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/mr/v1/reports/M15/report_*.json`
 | pip_value | 0.01 |
 | slippage_ticks | 1.00 |
 | commission_per_trade | 0.05 |
+| lot_size | 0.01 |
+| contract_size | 100.00 |
+| leverage | 100.00 |
+| margin_formula | price * lot_size * contract_size / leverage |
 | swap_long_per_lot_per_night | 0.00 |
 | swap_short_per_lot_per_night | 0.00 |
 | total_realized_swap | 0.00 |

@@ -436,11 +436,54 @@
       "pip_value": 0.01,
       "slippage_ticks": 1.0,
       "commission_per_trade": 0.05,
+      "lot_size": 0.01,
+      "contract_size": 100,
+      "leverage": 100.0,
+      "margin_formula": "price * lot_size * contract_size / leverage",
       "swap_long_per_lot_per_night": 0.0,
       "swap_short_per_lot_per_night": 0.0,
       "total_realized_swap": 0.0
     },
     "changed_settings": {
+      "minimum_free_margin": [
+        981.8677707161216,
+        951.2735975792675,
+        983.0112222335972,
+        924.4056543057692,
+        970.9839037586395,
+        948.0538672649159,
+        977.6880000000001,
+        985.5844000000002,
+        932.8349970366841,
+        943.7192700306405,
+        899.5281598785617
+      ],
+      "minimum_margin_level_pct": [
+        8603.375573458634,
+        7640.467366091835,
+        7983.894119897963,
+        7146.445334197638,
+        6611.644728958451,
+        5804.407530491073,
+        5408.6170386056365,
+        5527.047564507782,
+        4992.203937753709,
+        4049.240821994896,
+        3216.7925929674666
+      ],
+      "peak_used_margin": [
+        11.872,
+        13.7079,
+        13.5381,
+        13.5995,
+        15.2525,
+        20.6748,
+        19.0804,
+        20.5015,
+        20.8773,
+        27.5567,
+        45.3332
+      ],
       "spread_mean_points": [
         42.025122121423585,
         33.715869715869715,
@@ -486,7 +529,8 @@
       "spread_max_points": 30.0,
       "enable_h1_adx_filter": true,
       "h1_adx_min": 18.0,
-      "session_reject_count": 0
+      "session_reject_count": 0,
+      "insufficient_margin_reject_count": 0
     },
     "changed_settings": {
       "adx_filter_reject_count": [
@@ -546,6 +590,7 @@
       "adx_filter_reject_count": 534.0,
       "atr_ratio_filter_reject_count": 6631.0,
       "both_breakout_reject_count": 3.0,
+      "insufficient_margin_reject_count": 0.0,
       "session_reject_count": 0.0,
       "spread_filter_reject_count": 1047.0,
       "trail_move_count": 3546.0
@@ -562,7 +607,8 @@
       "trail_atr_mult": 3.2,
       "entry_logic": "intrabar donchian breakout (high/low trigger), next bar market entry",
       "exit_logic": "SL + trailing stop (chandelier/donchian)",
-      "position_mode": "single_position_no_pyramiding"
+      "position_mode": "single_position_no_pyramiding",
+      "margin_check": "reject entry when post-commission balance is below required margin"
     },
     "changed": {}
   },

@@ -75,6 +75,7 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/vb/v1/reports/H4/report_*.json`
 | adx_filter_reject_count | 534.00 |
 | atr_ratio_filter_reject_count | 6631.00 |
 | both_breakout_reject_count | 3.00 |
+| insufficient_margin_reject_count | 0.00 |
 | session_reject_count | 0.00 |
 | spread_filter_reject_count | 1047.00 |
 | trail_move_count | 3546.00 |
@@ -93,6 +94,7 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/vb/v1/reports/H4/report_*.json`
 | entry_logic | intrabar donchian breakout (high/low trigger), next bar market entry |
 | exit_logic | SL + trailing stop (chandelier/donchian) |
 | position_mode | single_position_no_pyramiding |
+| margin_check | reject entry when post-commission balance is below required margin |
 
 ## Common Cost Settings
 
@@ -102,6 +104,10 @@ Source: `/Users/damon/Documents/GoldenEdge/xau/vb/v1/reports/H4/report_*.json`
 | pip_value | 0.01 |
 | slippage_ticks | 1.00 |
 | commission_per_trade | 0.05 |
+| lot_size | 0.01 |
+| contract_size | 100.00 |
+| leverage | 100.00 |
+| margin_formula | price * lot_size * contract_size / leverage |
 | swap_long_per_lot_per_night | 0.00 |
 | swap_short_per_lot_per_night | 0.00 |
 | total_realized_swap | 0.00 |
