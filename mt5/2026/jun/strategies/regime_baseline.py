@@ -19,7 +19,6 @@ STRATEGY_DIR = Path(__file__).resolve().parent
 JUN_DIR = STRATEGY_DIR.parent
 REPO_ROOT = STRATEGY_DIR.parents[3]
 LOG_DIR = JUN_DIR / "logs"
-SNAPSHOT_FILE = LOG_DIR / "regime_baseline_snapshot.json"
 
 METADATA = {
     "account": 60089392,
@@ -69,18 +68,6 @@ class StrategySpec:
     module: ModuleType
 
 
-def utc_now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
-
-
-def json_default(value: Any) -> Any:
-    if isinstance(value, pd.Timestamp):
-        return value.isoformat()
-    if hasattr(value, "_asdict"):
-        return value._asdict()
-    return str(value)
-
-
 def log_message(message: str) -> None:
     try:
         with LOG_FILE.open("a", encoding="utf-8") as file:
@@ -112,15 +99,6 @@ def notify(message: str) -> None:
 def log_local(message: str) -> None:
     print(message)
     log_message(message)
-
-
-def emit(event: str, notify_user: bool = False, **payload: Any) -> None:
-    record = {"time_utc": utc_now_iso(), "event": event, **payload}
-    line = json.dumps(record, default=json_default, ensure_ascii=False)
-    if notify_user:
-        notify(line)
-    else:
-        log_local(line)
 
 
 def load_module(name: str, path: Path) -> ModuleType:
@@ -160,7 +138,7 @@ def load_state(path: Path) -> dict[str, Any]:
         state.setdefault("last_managed_bar", {})
         return state
     except Exception as exc:
-        emit("state_load_error", error=str(exc))
+        notify(f"❌ load_state() ERROR: {exc}")
         return {"last_signal_bar": {}, "last_managed_bar": {}}
 
 
@@ -171,66 +149,70 @@ def save_state(state: dict[str, Any], path: Path) -> None:
     temporary.replace(path)
 
 
-def initialize_mt5() -> None:
-    if VB_MAGIC == MR_MAGIC:
-        raise RuntimeError("REGIME_VB_MAGIC and REGIME_MR_MAGIC must be different")
-    if not mt5.initialize(METADATA["path"]):
-        raise RuntimeError(f"MT5 initialize failed: {mt5.last_error()}")
-    if not mt5.login(
-        METADATA["account"], METADATA["password"], METADATA["server"]
-    ):
-        raise RuntimeError(f"MT5 login failed: {mt5.last_error()}")
-    if not mt5.symbol_select(SYMBOL, True):
-        raise RuntimeError(f"Cannot select symbol {SYMBOL}: {mt5.last_error()}")
-    symbol_info = mt5.symbol_info(SYMBOL)
-    if symbol_info is None:
-        raise RuntimeError(f"symbol_info failed: {mt5.last_error()}")
-    volume_step = float(symbol_info.volume_step)
-    normalized_steps = round(LOT / volume_step) if volume_step > 0.0 else 0
-    normalized_lot = normalized_steps * volume_step
-    if (
-        LOT < float(symbol_info.volume_min)
-        or LOT > float(symbol_info.volume_max)
-        or volume_step <= 0.0
-        or abs(normalized_lot - LOT) > 1e-9
-    ):
-        raise RuntimeError(
-            f"REGIME_LOT={LOT} violates broker volume constraints: "
-            f"min={symbol_info.volume_min}, max={symbol_info.volume_max}, "
-            f"step={symbol_info.volume_step}"
+def initialize_mt5() -> bool:
+    try:
+        if VB_MAGIC == MR_MAGIC:
+            raise RuntimeError("VB_MAGIC and MR_MAGIC must be different")
+        if not mt5.initialize(METADATA["path"]):
+            raise RuntimeError(
+                f"❌ initialize_mt5(): Failed to initialize MT5: {mt5.last_error()}"
+            )
+        if not mt5.login(
+            METADATA["account"], METADATA["password"], METADATA["server"]
+        ):
+            raise RuntimeError(
+                f"❌ initialize_mt5(): Failed to log in MT5 account: {mt5.last_error()}"
+            )
+        if not mt5.symbol_select(SYMBOL, True):
+            raise RuntimeError(f"❌ initialize_mt5(): Failed to select symbol {SYMBOL}")
+        symbol_info = mt5.symbol_info(SYMBOL)
+        if symbol_info is None:
+            raise RuntimeError(f"symbol_info failed: {mt5.last_error()}")
+        volume_step = float(symbol_info.volume_step)
+        normalized_steps = round(LOT / volume_step) if volume_step > 0.0 else 0
+        normalized_lot = normalized_steps * volume_step
+        if (
+            LOT < float(symbol_info.volume_min)
+            or LOT > float(symbol_info.volume_max)
+            or volume_step <= 0.0
+            or abs(normalized_lot - LOT) > 1e-9
+        ):
+            raise RuntimeError(
+                f"LOT={LOT} violates broker volume constraints: "
+                f"min={symbol_info.volume_min}, max={symbol_info.volume_max}, "
+                f"step={symbol_info.volume_step}"
+            )
+        account = mt5.account_info()
+        if account is None:
+            raise RuntimeError(f"account_info failed: {mt5.last_error()}")
+        if int(account.login) != METADATA["account"]:
+            raise RuntimeError(
+                f"Connected account {account.login} does not match "
+                f"{METADATA['account']}"
+            )
+        hedging_mode = getattr(mt5, "ACCOUNT_MARGIN_MODE_RETAIL_HEDGING", None)
+        is_hedging = hedging_mode is not None and int(account.margin_mode) == int(
+            hedging_mode
         )
-    account = mt5.account_info()
-    if account is None:
-        raise RuntimeError(f"account_info failed: {mt5.last_error()}")
-    if int(account.login) != METADATA["account"]:
-        raise RuntimeError(
-            f"Connected account {account.login} does not match {METADATA['account']}"
+        if not is_hedging:
+            raise RuntimeError(
+                "REGIME_BASELINE requires an MT5 hedging account so VB and MR can "
+                "hold independent or opposite positions."
+            )
+        notify(
+            "✅ MT5 initialized and logged in successfully\n"
+            f"Account: {account.login}\n"
+            f"Server: {METADATA['server']}\n"
+            f"Strategy: {METADATA['title']}\n"
+            f"Balance: ${account.balance:.2f}\n"
+            f"Equity: ${account.equity:.2f}\n"
+            f"Free Margin: ${account.margin_free:.2f}\n"
+            "Position Limit: MR 1 + VB 1"
         )
-    hedging_mode = getattr(mt5, "ACCOUNT_MARGIN_MODE_RETAIL_HEDGING", None)
-    is_hedging = hedging_mode is not None and int(account.margin_mode) == int(
-        hedging_mode
-    )
-    if not is_hedging:
-        raise RuntimeError(
-            "REGIME_BASELINE requires an MT5 hedging account so VB and MR can hold "
-            "independent or opposite positions."
-        )
-    emit(
-        "initialized",
-        account=account.login,
-        server=METADATA["server"],
-        symbol=SYMBOL,
-        balance=account.balance,
-        equity=account.equity,
-        margin=account.margin,
-        margin_free=account.margin_free,
-        margin_mode=account.margin_mode,
-        hedging_account=is_hedging,
-        volume_min=symbol_info.volume_min,
-        volume_max=symbol_info.volume_max,
-        volume_step=symbol_info.volume_step,
-        notify_user=True,
-    )
+        return True
+    except Exception as exc:
+        notify(f"❌ initialize_mt5() ERROR: {exc}")
+        return False
 
 
 def strategy_for_magic(
@@ -242,25 +224,19 @@ def strategy_for_magic(
     return None
 
 
-def position_payload(
-    position: Any, strategies: dict[str, StrategySpec]
-) -> dict[str, Any]:
+def position_line(position: Any, strategies: dict[str, StrategySpec]) -> str:
     strategy = strategy_for_magic(int(getattr(position, "magic", 0)), strategies)
     side = "long" if position.type == mt5.POSITION_TYPE_BUY else "short"
-    return {
-        "ticket": int(position.ticket),
-        "strategy": strategy or "FOREIGN",
-        "magic": int(getattr(position, "magic", 0)),
-        "symbol": position.symbol,
-        "side": side,
-        "volume": float(position.volume),
-        "entry_price": float(position.price_open),
-        "current_price": float(position.price_current),
-        "sl": float(position.sl or 0.0),
-        "tp": float(position.tp or 0.0),
-        "profit": float(position.profit),
-        "time_utc": datetime.fromtimestamp(position.time, timezone.utc).isoformat(),
-    }
+    return (
+        f"{strategy or 'FOREIGN'}:{side}"
+        f" TICKET:{int(position.ticket)}"
+        f" LOT:{float(position.volume):.2f}"
+        f" OPEN:{float(position.price_open):.2f}"
+        f" CURRENT:{float(position.price_current):.2f}"
+        f" SL:{float(position.sl or 0.0):.2f}"
+        f" TP:{float(position.tp or 0.0):.2f}"
+        f" PNL:{float(position.profit):.2f}"
+    )
 
 
 def get_positions(strategies: dict[str, StrategySpec]) -> list[Any]:
@@ -296,40 +272,44 @@ def validate_positions(
     return owned, foreign, violations
 
 
-def account_snapshot(
+def log_account_status(
     strategies: dict[str, StrategySpec],
     positions: list[Any],
     violations: list[str],
-) -> dict[str, Any]:
+) -> None:
     account = mt5.account_info()
     if account is None:
         raise RuntimeError(f"account_info failed: {mt5.last_error()}")
-    payload = {
-        "time_utc": utc_now_iso(),
-        "account": int(account.login),
-        "symbol": SYMBOL,
-        "balance": float(account.balance),
-        "equity": float(account.equity),
-        "margin": float(account.margin),
-        "margin_free": float(account.margin_free),
-        "margin_level": float(account.margin_level or 0.0),
-        "position_count": len(positions),
-        "positions": [position_payload(position, strategies) for position in positions],
-        "violations": violations,
-    }
-    LOG_DIR.mkdir(parents=True, exist_ok=True)
-    temporary = SNAPSHOT_FILE.with_suffix(".tmp")
-    temporary.write_text(
-        json.dumps(payload, indent=2, default=json_default), encoding="utf-8"
+    tick = mt5.symbol_info_tick(SYMBOL)
+    timestamp = (
+        datetime.fromtimestamp(tick.time, tz=timezone.utc)
+        if tick is not None
+        else datetime.now(timezone.utc)
     )
-    temporary.replace(SNAPSHOT_FILE)
-    return payload
+    timestamp_text = timestamp.strftime("%Y-%m-%d %H:%M:%S")
+    lines = [
+        f"[{timestamp_text}] BALANCE:{account.balance:.2f}"
+        f" EQUITY:{account.equity:.2f}"
+        f" MARGIN:{account.margin:.2f}"
+        f" FREE_MARGIN:{account.margin_free:.2f}"
+        f" MARGIN_LEVEL:{float(account.margin_level or 0.0):.2f}%"
+        f" POSITIONS:{len(positions)}"
+    ]
+    lines.extend(f"  ---  {position_line(position, strategies)}" for position in positions)
+    if not positions:
+        lines.append("  ---  POSITIONS:NONE")
+    if violations:
+        lines.append(f"  ---  VIOLATIONS:{', '.join(violations)}")
+    log_message("\n".join(lines))
 
 
 def latest_completed_row(spec: StrategySpec) -> tuple[pd.DataFrame, pd.Series] | None:
     frame = spec.module.get_data()
     if frame.empty or len(frame) < 3:
-        emit("data_unavailable", strategy=spec.name, rows=len(frame))
+        notify(
+            f"❌ run_{spec.name.lower()}(): get_data returned empty or "
+            f"insufficient data ({len(frame)} rows)"
+        )
         return None
     return frame, frame.iloc[-2]
 
@@ -344,7 +324,10 @@ def calculate_order(
     tick = mt5.symbol_info_tick(SYMBOL)
     symbol_info = mt5.symbol_info(SYMBOL)
     if tick is None or symbol_info is None:
-        emit("quote_unavailable", strategy=spec.name, error=str(mt5.last_error()))
+        notify(
+            f"❌ place_order(): {spec.name} symbol info or tick unavailable, "
+            f"error: {mt5.last_error()}"
+        )
         return None
     price = float(tick.ask if signal == "long" else tick.bid)
     atr = float(signal_row["atr"])
@@ -355,13 +338,12 @@ def calculate_order(
         sl_distance = float(spec.module.PARAMETERS["SL_ATR_MULTIPLIER"]) * atr
         tp = float(signal_row["ema"])
         if (signal == "long" and tp <= price) or (signal == "short" and tp >= price):
-            emit(
-                "signal_rejected",
-                strategy=spec.name,
-                reason="ema_target_invalid_at_entry",
-                signal=signal,
-                price=price,
-                tp=tp,
+            log_local(
+                "⚠️ place_order(): MR skipped because EMA target is no longer valid\n"
+                f"Signal bar: {signal_row['time']}\n"
+                f"Direction: {signal}\n"
+                f"Current price: {price:.2f}\n"
+                f"Target EMA: {tp:.2f}"
             )
             return None
     sl = price - sl_distance if signal == "long" else price + sl_distance
@@ -382,11 +364,10 @@ def calculate_order(
         request["tp"] = round(tp, symbol_info.digits)
     margin = mt5.order_calc_margin(request["type"], SYMBOL, LOT, request["price"])
     if margin is None:
-        emit(
-            "margin_calculation_failed",
-            strategy=spec.name,
-            signal=signal,
-            error=str(mt5.last_error()),
+        notify(
+            f"❌ place_order(): {spec.name} margin calculation failed\n"
+            f"Direction: {signal}\n"
+            f"Error: {mt5.last_error()}"
         )
         return None
     request["_required_margin"] = float(margin)
@@ -439,27 +420,42 @@ def submit_order(
     reservations: dict[str, float],
 ) -> bool:
     valid, preflight = preflight_order(request, reservations["margin"])
-    common = {
-        "strategy": spec.name,
-        "signal": signal,
-        "signal_bar_time": signal_row["time"],
-        "request": request,
-        "preflight": preflight,
-    }
     if not valid:
-        emit("order_blocked", notify_user=True, **common)
+        notify(
+            "⚠️ place_order(): blocked by shared-account margin check\n"
+            f"Strategy: {spec.name}\n"
+            f"Signal bar: {signal_row['time']}\n"
+            f"Direction: {signal}\n"
+            f"Reason: {preflight.get('reason')}\n"
+            f"Required margin: ${float(preflight.get('required_margin', 0.0)):.2f}\n"
+            f"Current free margin: ${float(preflight.get('current_free_margin', 0.0)):.2f}\n"
+            f"Projected free margin: ${float(preflight.get('projected_free_margin', 0.0)):.2f}"
+        )
         return False
     broker_request = {key: value for key, value in request.items() if not key.startswith("_")}
     result = mt5.order_send(broker_request)
     if result is None:
-        emit("order_failed", notify_user=True, **common, error=str(mt5.last_error()))
+        notify(
+            "❌ place_order(): Failed to place order: no return result\n"
+            f"Strategy: {spec.name}\n"
+            f"Signal bar: {signal_row['time']}\n"
+            f"Direction: {signal}\n"
+            f"Error: {mt5.last_error()}"
+        )
         return False
     success = int(result.retcode) == mt5.TRADE_RETCODE_DONE
-    emit(
-        "order_submitted" if success else "order_failed",
-        notify_user=True,
-        **common,
-        result=result._asdict(),
+    notify(
+        f"{'✅ Succeeded' if success else '❌ Failed'}\n"
+        f"Strategy: {spec.name}\n"
+        f"Signal bar: {signal_row['time']}\n"
+        f"Order #: {getattr(result, 'order', 0)}\n"
+        f"Direction: {'Buy' if signal == 'long' else 'Sell'}\n"
+        f"Price: {float(request['price']):.2f}\n"
+        f"SL: {float(request['sl']):.2f}\n"
+        f"TP: {float(request.get('tp', 0.0)):.2f}\n"
+        f"Required margin: ${float(request['_required_margin']):.2f}\n"
+        f"Projected free margin: ${float(preflight['projected_free_margin']):.2f}\n"
+        f"Result: {getattr(result, 'comment', 'unknown')} ({result.retcode})"
     )
     return success
 
@@ -479,14 +475,14 @@ def update_stop(position: Any, spec: StrategySpec, new_sl: float) -> bool:
     }
     result = mt5.order_send(request)
     success = result is not None and int(result.retcode) == mt5.TRADE_RETCODE_DONE
-    emit(
-        "stop_updated" if success else "stop_update_failed",
-        notify_user=True,
-        strategy=spec.name,
-        ticket=position.ticket,
-        old_sl=position.sl,
-        new_sl=request["sl"],
-        result=result._asdict() if result is not None else None,
+    notify(
+        f"{'✅ update_stop(): SL moved' if success else '❌ update_stop(): Failed'}\n"
+        f"Strategy: {spec.name}\n"
+        f"Ticket: {position.ticket}\n"
+        f"Old SL: {float(position.sl or 0.0):.2f}\n"
+        f"New SL: {float(request['sl']):.2f}\n"
+        f"Result: {getattr(result, 'comment', 'no return')} "
+        f"({getattr(result, 'retcode', None)})"
     )
     return success
 
@@ -529,7 +525,7 @@ def manage_mr(spec: StrategySpec, position: Any, completed: pd.Series) -> None:
         return
     symbol_info = mt5.symbol_info(SYMBOL)
     if symbol_info is None:
-        emit("symbol_info_unavailable", strategy=spec.name)
+        log_local(f"❌ update_breakeven(): {spec.name} symbol info unavailable")
         return
     tolerance = float(symbol_info.point) * 2.0
     if (side == "long" and old_sl >= entry - tolerance) or (
@@ -552,6 +548,65 @@ def manage_mr(spec: StrategySpec, position: Any, completed: pd.Series) -> None:
     )
     if hit:
         update_stop(position, spec, entry)
+
+
+def log_strategy_cycle(
+    spec: StrategySpec,
+    frame: pd.DataFrame,
+    completed: pd.Series,
+    signal: str | None,
+    reject_reason: str | None,
+    position: Any | None,
+) -> None:
+    account = mt5.account_info()
+    tick = mt5.symbol_info_tick(SYMBOL)
+    timestamp = (
+        datetime.fromtimestamp(tick.time, tz=timezone.utc)
+        if tick is not None
+        else datetime.now(timezone.utc)
+    ).strftime("%Y-%m-%d %H:%M:%S")
+    balance = float(account.balance) if account else 0.0
+    equity = float(account.equity) if account else 0.0
+    side = "none"
+    if position is not None:
+        side = "long" if position.type == mt5.POSITION_TYPE_BUY else "short"
+    if spec.name == "MR":
+        message = (
+            f"[{timestamp}] --- MR_M15_V1 ---"
+            f" BALANCE:{balance:.2f} EQUITY:{equity:.2f}"
+            f" POSITION:{side}"
+            f" SIGNAL_BAR:{completed['time']}"
+            f" CLOSE:{float(completed['close']):.2f}"
+            f" EMA:{float(completed['ema']):.2f}"
+            f" BAND:({float(completed['lower_band']):.2f},"
+            f"{float(completed['upper_band']):.2f})"
+            f" ATR:{float(completed['atr']):.2f}"
+            f" ATR_RATIO:{float(completed['atr_ratio']):.2f}"
+            f" H1_ADX:{float(completed['h1_adx']):.2f}"
+            f" SIGNAL:{signal} REJECT:{reject_reason}"
+        )
+    else:
+        current = frame.iloc[-1]
+        message = (
+            f"[{timestamp}] --- VB_H4_V1 ---"
+            f" BALANCE:{balance:.2f} EQUITY:{equity:.2f}"
+            f" POSITION:{side}"
+            f" SIGNAL_BAR:{completed['time']}"
+            f" CLOSE:({float(completed['close']):.2f},"
+            f"{float(current['close']):.2f})"
+            f" HIGH/LOW:({float(completed['high']):.2f},"
+            f"{float(completed['low']):.2f})"
+            f" DC_HIGH/LOW:({float(completed['donchian_high_n']):.2f},"
+            f"{float(completed['donchian_low_n']):.2f})"
+            f" EXIT_DC_HIGH/LOW:({float(completed['donchian_exit_high_m']):.2f},"
+            f"{float(completed['donchian_exit_low_m']):.2f})"
+            f" ATR:{float(completed['atr']):.2f}"
+            f" ATR_RATIO:{float(completed['atr_ratio']):.2f}"
+            f" H1_ADX:{float(completed['h1_adx']):.2f}"
+            f" SIGNAL:{signal} REJECT:{reject_reason}"
+        )
+    print(f"[{timestamp}] --- {spec.module.METADATA['title']} --- ${balance:.2f}")
+    log_message(message)
 
 
 def run_strategy_cycle(
@@ -577,14 +632,7 @@ def run_strategy_cycle(
         state["last_managed_bar"][spec.name] = completed_time
 
     signal, reject_reason = spec.module.check_signal(completed)
-    emit(
-        "strategy_cycle",
-        strategy=spec.name,
-        signal_bar_time=completed["time"],
-        signal=signal,
-        reject_reason=reject_reason,
-        has_position=position is not None,
-    )
+    log_strategy_cycle(spec, frame, completed, signal, reject_reason, position)
     if signal not in ("long", "short"):
         return
     if state["last_signal_bar"].get(spec.name) == completed_time:
@@ -594,25 +642,27 @@ def run_strategy_cycle(
     # cannot repeat the same completed-bar signal.
     save_state(state, state_path)
     if violations:
-        emit("signal_blocked", strategy=spec.name, signal=signal, reasons=violations)
+        notify(
+            f"⚠️ [{spec.name}] signal blocked\n"
+            f"Signal bar: {completed['time']}\n"
+            f"Direction: {signal}\n"
+            f"Reason: {', '.join(violations)}"
+        )
         return
     if position is not None:
-        emit(
-            "signal_blocked",
-            strategy=spec.name,
-            signal=signal,
-            reasons=["strategy already has one position"],
+        side = "long" if position.type == mt5.POSITION_TYPE_BUY else "short"
+        notify(
+            f"⚠️ [{spec.name}] already have open position ({side}), "
+            f"skip new signal ({signal})"
         )
         return
     owned_count = sum(len(value) for value in owned_positions.values()) + int(
         reservations["positions"]
     )
     if owned_count >= MAX_PORTFOLIO_POSITIONS:
-        emit(
-            "signal_blocked",
-            strategy=spec.name,
-            signal=signal,
-            reasons=["portfolio already has two positions"],
+        notify(
+            f"⚠️ [{spec.name}] portfolio already has two positions, "
+            f"skip new signal ({signal})"
         )
         return
     request = calculate_order(spec, signal, completed)
@@ -627,8 +677,7 @@ def run_cycle(
 ) -> None:
     positions = get_positions(strategies)
     owned, _, violations = validate_positions(positions, strategies)
-    snapshot = account_snapshot(strategies, positions, violations)
-    emit("account_snapshot", **snapshot)
+    log_account_status(strategies, positions, violations)
     reservations = {"margin": 0.0, "positions": 0.0}
     for name in ("MR", "VB"):
         run_strategy_cycle(
@@ -650,29 +699,25 @@ def main() -> None:
     state_path = STATE_FILE
     state = load_state(state_path)
     try:
-        initialize_mt5()
-        emit(
-            "runner_started",
-            notify_user=True,
-            mode="live",
-            strategy_magics={name: spec.magic for name, spec in strategies.items()},
-            maximum_positions_per_strategy=1,
-            maximum_portfolio_positions=MAX_PORTFOLIO_POSITIONS,
-            minimum_free_margin_after_order=MIN_FREE_MARGIN_AFTER_ORDER,
-        )
+        if not initialize_mt5():
+            notify("❌ main(): initialize_mt5() failed, exiting")
+            return
         while True:
             try:
                 run_cycle(strategies, state, state_path)
             except Exception as exc:
-                emit("cycle_error", notify_user=True, error=str(exc))
+                notify(f"❌ run() ERROR: {exc}")
             time.sleep(PARAMETERS["RUNTIME_SECONDS"])
     except KeyboardInterrupt:
-        emit("runner_stopped", notify_user=True, reason="keyboard_interrupt")
+        notify("⏹️ KeyboardInterrupt: manual stop")
     except Exception as exc:
-        emit("fatal_error", notify_user=True, error=str(exc))
+        notify(f"❌ main() ERROR: {exc}")
     finally:
-        mt5.shutdown()
-        notify("MT5 shutdown completed")
+        try:
+            mt5.shutdown()
+            notify("🔌 MT5 shutdown completed")
+        except Exception:
+            pass
 
 
 if __name__ == "__main__":
