@@ -28,6 +28,8 @@ xau/
 │       ├── optimization/
 │       └── bucket_analysis/
 ├── marketdata/
+│   ├── ingest/
+│   │   └── mt5_m1_ingest.py
 │   └── <TF>/<TF>_YEAR.csv
 ├── changelog.md
 └── readme.md
@@ -46,7 +48,11 @@ Common commands:
 .venv/bin/python xau/mr/v1/engine.py --input xau/marketdata/M15/M15_2025.csv
 .venv/bin/python xau/tp/v1/engine.py --input xau/marketdata/H1/H1_2025.csv
 .venv/bin/python xau/vb/v1/reports/summarize.py
+.venv/bin/python xau/marketdata/ingest/mt5_m1_ingest.py resample --start 2026-01-01 --end 2026-06-01
 ```
+
+Run `python xau/marketdata/ingest/mt5_m1_ingest.py run` on a Windows machine
+with MetaTrader 5 to download M1 data and build the higher timeframes.
 
 ## Unified Trade Schema
 
