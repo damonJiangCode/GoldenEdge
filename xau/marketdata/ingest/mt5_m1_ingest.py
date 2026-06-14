@@ -182,7 +182,14 @@ def normalize_bars(df: pd.DataFrame) -> pd.DataFrame:
         raise ValueError(f"Market data is missing columns: {missing}")
 
     clean = df.loc[:, REQUIRED_COLUMNS].copy()
-    clean["time"] = pd.to_datetime(clean["time"], utc=True, errors="coerce")
+    if pd.api.types.is_numeric_dtype(clean["time"]):
+        # MT5 copy_rates_* returns Unix timestamps in seconds. Without unit="s",
+        # pandas interprets integers as nanoseconds and turns 2026 into 1970.
+        clean["time"] = pd.to_datetime(
+            clean["time"], unit="s", utc=True, errors="coerce"
+        )
+    else:
+        clean["time"] = pd.to_datetime(clean["time"], utc=True, errors="coerce")
     for column in REQUIRED_COLUMNS[1:]:
         clean[column] = pd.to_numeric(clean[column], errors="coerce")
     clean.dropna(subset=["time", "open", "high", "low", "close"], inplace=True)
@@ -209,7 +216,16 @@ def download_m1(mt5: Any, symbol: str, start: datetime, end: datetime) -> pd.Dat
 
     if not frames:
         raise RuntimeError(f"MT5 returned no M1 bars for {symbol} in the requested range.")
-    return filter_range(pd.concat(frames, ignore_index=True), start, end)
+    downloaded = normalize_bars(pd.concat(frames, ignore_index=True))
+    filtered = filter_range(downloaded, start, end)
+    if filtered.empty:
+        raise RuntimeError(
+            "MT5 returned bars, but none were inside the requested UTC range. "
+            f"Requested: {start.isoformat()} -> {end.isoformat()}; "
+            f"returned: {downloaded['time'].iloc[0].isoformat()} -> "
+            f"{downloaded['time'].iloc[-1].isoformat()}."
+        )
+    return filtered
 
 
 def load_m1(path: Path) -> pd.DataFrame:

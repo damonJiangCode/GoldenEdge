@@ -30,10 +30,10 @@ year. Use `--merge-existing` when extending an existing annual M1 file.
 Credentials should be passed with environment variables rather than committed:
 
 ```powershell
-$env:MT5_LOGIN="60089394"
-$env:MT5_PASSWORD="Jwz990118."
-$env:MT5_SERVER="TradeMaxGlobal-Demo"
-$env:MT5_TERMINAL_PATH="C:\Program Files\MetaTrader 5_1\terminal64.exe"
+$env:MT5_LOGIN="5051744378"
+$env:MT5_PASSWORD="_0VrVcQk"
+$env:MT5_SERVER="MetaQuotes-Demo"
+$env:MT5_TERMINAL_PATH="C:\Program Files\MetaTrader 5_4\terminal64.exe"
 python xau/marketdata/ingest/mt5_m1_ingest.py run
 ```
 
