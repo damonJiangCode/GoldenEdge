@@ -55,6 +55,23 @@ class ResampleM1Test(unittest.TestCase):
 
         self.assertEqual(result["open"].tolist(), [1, 3])
 
+    def test_normalize_reads_mt5_epoch_seconds(self) -> None:
+        rows = pd.DataFrame(
+            {
+                "time": [1767225600],
+                "open": [1],
+                "high": [1],
+                "low": [1],
+                "close": [1],
+                "tick_volume": [1],
+                "spread": [1],
+            }
+        )
+
+        result = INGEST.normalize_bars(rows)
+
+        self.assertEqual(str(result.iloc[0]["time"]), "2026-01-01 00:00:00+00:00")
+
     def test_filter_range_excludes_end_timestamp(self) -> None:
         rows = pd.DataFrame(
             {
