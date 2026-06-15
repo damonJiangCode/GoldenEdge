@@ -1,0 +1,952 @@
+[
+  {
+    "candidate": "00_corrected_intrabar",
+    "overrides": {
+      "close_quality_min": 0.0,
+      "atr_ratio_min": 1.0
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 7,
+    "average_return_pct": 7.520784742847687,
+    "median_return_pct": 9.186935749444626,
+    "worst_return_pct": -1.1909422748007326,
+    "average_max_drawdown_pct": 6.030117341124171,
+    "worst_max_drawdown_pct": 8.676625924651741,
+    "average_profit_factor": 1.619713546897601,
+    "total_trades": 262,
+    "pooled_average_r": 0.27598568297323683,
+    "pooled_sum_r": 72.30824893898804,
+    "stress": {
+      "base": {
+        "positive_years": 7,
+        "median_return_pct": 9.186935749444626,
+        "worst_return_pct": -1.1909422748005694,
+        "simple_sum_return_pct": 67.68706268562944
+      },
+      "stress": {
+        "positive_years": 7,
+        "median_return_pct": 8.837335749444621,
+        "worst_return_pct": -1.9361422748005694,
+        "simple_sum_return_pct": 64.04616268562944
+      },
+      "severe": {
+        "positive_years": 7,
+        "median_return_pct": 8.381335749444624,
+        "worst_return_pct": -2.9081422748005683,
+        "simple_sum_return_pct": 59.29716268562945
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 10,
+        "net_pnl": -32.3300384955819,
+        "return_pct": -0.3233003849558158,
+        "win_rate": 0.3,
+        "profit_factor": 0.9392032422801381,
+        "average_r": -0.010575479713459245,
+        "sum_r": -0.10575479713459224,
+        "max_drawdown_abs": 451.5485267519507,
+        "max_drawdown_pct": 4.333804183690904
+      },
+      {
+        "year": 2016,
+        "trades": 21,
+        "net_pnl": 980.5323179773532,
+        "return_pct": 9.80532317977354,
+        "win_rate": 0.38095238095238093,
+        "profit_factor": 2.0095114697332,
+        "average_r": 0.5015943529306955,
+        "sum_r": 10.533481411544606,
+        "max_drawdown_abs": 647.145357561818,
+        "max_drawdown_pct": 6.065606853831725
+      },
+      {
+        "year": 2017,
+        "trades": 27,
+        "net_pnl": 849.4686965681576,
+        "return_pct": 8.494686965681586,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 1.839405727833327,
+        "average_r": 0.3298176921567521,
+        "sum_r": 8.905077688232309,
+        "max_drawdown_abs": 463.897256602515,
+        "max_drawdown_pct": 4.119487040145125
+      },
+      {
+        "year": 2018,
+        "trades": 39,
+        "net_pnl": -119.09422748007273,
+        "return_pct": -1.1909422748007326,
+        "win_rate": 0.358974358974359,
+        "profit_factor": 0.9206167714926188,
+        "average_r": -0.026365248922159534,
+        "sum_r": -1.028244707964221,
+        "max_drawdown_abs": 825.283753694268,
+        "max_drawdown_pct": 8.162249937799142
+      },
+      {
+        "year": 2019,
+        "trades": 35,
+        "net_pnl": 1124.309342488732,
+        "return_pct": 11.243093424887318,
+        "win_rate": 0.42857142857142855,
+        "profit_factor": 1.72240835335417,
+        "average_r": 0.32786127359862566,
+        "sum_r": 11.475144575951898,
+        "max_drawdown_abs": 1017.1485248254594,
+        "max_drawdown_pct": 8.676625924651741
+      },
+      {
+        "year": 2020,
+        "trades": 29,
+        "net_pnl": 732.7308325607737,
+        "return_pct": 7.327308325607729,
+        "win_rate": 0.3793103448275862,
+        "profit_factor": 1.6469115059780954,
+        "average_r": 0.2937863047896798,
+        "sum_r": 8.519802838900716,
+        "max_drawdown_abs": 609.5710656688789,
+        "max_drawdown_pct": 5.664791810487663
+      },
+      {
+        "year": 2021,
+        "trades": 31,
+        "net_pnl": 1027.6886017957622,
+        "return_pct": 10.27688601795762,
+        "win_rate": 0.45161290322580644,
+        "profit_factor": 1.9132807393064666,
+        "average_r": 0.3429328463264872,
+        "sum_r": 10.630918236121103,
+        "max_drawdown_abs": 599.3423563116321,
+        "max_drawdown_pct": 5.3859780101483965
+      },
+      {
+        "year": 2022,
+        "trades": 36,
+        "net_pnl": 918.693574944462,
+        "return_pct": 9.186935749444626,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 1.752905037339767,
+        "average_r": 0.27543465988771976,
+        "sum_r": 9.915647755957911,
+        "max_drawdown_abs": 510.0142070197144,
+        "max_drawdown_pct": 4.508559233258561
+      },
+      {
+        "year": 2023,
+        "trades": 34,
+        "net_pnl": 1286.707168203331,
+        "return_pct": 12.867071682033316,
+        "win_rate": 0.35294117647058826,
+        "profit_factor": 1.8331790747606262,
+        "average_r": 0.3959463510993623,
+        "sum_r": 13.462175937378321,
+        "max_drawdown_abs": 776.0744359185555,
+        "max_drawdown_pct": 7.353953076104284
+      }
+    ]
+  },
+  {
+    "candidate": "01_close_confirmation",
+    "overrides": {
+      "signal_mode": "close",
+      "close_quality_min": 0.0,
+      "atr_ratio_min": 1.0
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 7,
+    "average_return_pct": 5.207511543003899,
+    "median_return_pct": 3.4977601120747215,
+    "worst_return_pct": -2.722455622681541,
+    "average_max_drawdown_pct": 5.234631305714357,
+    "worst_max_drawdown_pct": 7.26823122068412,
+    "average_profit_factor": 1.5920956703290132,
+    "total_trades": 218,
+    "pooled_average_r": 0.2440151243214326,
+    "pooled_sum_r": 53.19529710207231,
+    "stress": {
+      "base": {
+        "positive_years": 7,
+        "median_return_pct": 3.497760112074795,
+        "worst_return_pct": -2.7224556226814154,
+        "simple_sum_return_pct": 46.867603887035266
+      },
+      "stress": {
+        "positive_years": 7,
+        "median_return_pct": 3.0170601120747946,
+        "worst_return_pct": -3.3894556226814156,
+        "simple_sum_return_pct": 43.87990388703526
+      },
+      "severe": {
+        "positive_years": 7,
+        "median_return_pct": 2.4190832833904907,
+        "worst_return_pct": -4.259455622681415,
+        "simple_sum_return_pct": 39.98290388703528
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 7,
+        "net_pnl": 47.833737853563434,
+        "return_pct": 0.4783373785356426,
+        "win_rate": 0.2857142857142857,
+        "profit_factor": 1.117483963003125,
+        "average_r": 0.07619051052914845,
+        "sum_r": 0.5333335737040391,
+        "max_drawdown_abs": 414.5442021975032,
+        "max_drawdown_pct": 3.9622369271385716
+      },
+      {
+        "year": 2016,
+        "trades": 18,
+        "net_pnl": 1166.2851195207186,
+        "return_pct": 11.66285119520718,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 2.484690162255695,
+        "average_r": 0.7013970736906676,
+        "sum_r": 12.625147326432018,
+        "max_drawdown_abs": 470.0259977698606,
+        "max_drawdown_pct": 4.405490791579422
+      },
+      {
+        "year": 2017,
+        "trades": 25,
+        "net_pnl": 349.77601120747204,
+        "return_pct": 3.4977601120747215,
+        "win_rate": 0.48,
+        "profit_factor": 1.3654322024208443,
+        "average_r": 0.15151676632683134,
+        "sum_r": 3.787919158170785,
+        "max_drawdown_abs": 621.4327496504629,
+        "max_drawdown_pct": 5.691356169715018
+      },
+      {
+        "year": 2018,
+        "trades": 34,
+        "net_pnl": -272.24556226815366,
+        "return_pct": -2.722455622681541,
+        "win_rate": 0.29411764705882354,
+        "profit_factor": 0.8096892998373297,
+        "average_r": -0.08521690583138905,
+        "sum_r": -2.8973747982672275,
+        "max_drawdown_abs": 547.2772419127741,
+        "max_drawdown_pct": 5.444625513034514
+      },
+      {
+        "year": 2019,
+        "trades": 29,
+        "net_pnl": 757.4309806708188,
+        "return_pct": 7.57430980670819,
+        "win_rate": 0.4482758620689655,
+        "profit_factor": 1.5612962251212734,
+        "average_r": 0.27735667055182345,
+        "sum_r": 8.043343446002876,
+        "max_drawdown_abs": 835.2990786269384,
+        "max_drawdown_pct": 7.26823122068412
+      },
+      {
+        "year": 2020,
+        "trades": 27,
+        "net_pnl": -6.642628180194151,
+        "return_pct": -0.06642628180194565,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 0.9935125149309597,
+        "average_r": 0.050448661062796406,
+        "sum_r": 1.3621138486955011,
+        "max_drawdown_abs": 559.4758095560246,
+        "max_drawdown_pct": 5.442672788812768
+      },
+      {
+        "year": 2021,
+        "trades": 23,
+        "net_pnl": 670.6013826613507,
+        "return_pct": 6.7060138266135105,
+        "win_rate": 0.43478260869565216,
+        "profit_factor": 1.8132972811927055,
+        "average_r": 0.350470600591361,
+        "sum_r": 8.060823813601303,
+        "max_drawdown_abs": 323.50509869348934,
+        "max_drawdown_pct": 3.038342701468787
+      },
+      {
+        "year": 2022,
+        "trades": 31,
+        "net_pnl": 307.0983283390433,
+        "return_pct": 3.0709832833904382,
+        "win_rate": 0.41935483870967744,
+        "profit_factor": 1.2729753273316,
+        "average_r": 0.14292386671888188,
+        "sum_r": 4.430639868285338,
+        "max_drawdown_abs": 761.9713873299315,
+        "max_drawdown_pct": 7.214021448750731
+      },
+      {
+        "year": 2023,
+        "trades": 24,
+        "net_pnl": 1666.6230188988902,
+        "return_pct": 16.666230188988894,
+        "win_rate": 0.5,
+        "profit_factor": 2.910484056867584,
+        "average_r": 0.7187229527269867,
+        "sum_r": 17.24935086544768,
+        "max_drawdown_abs": 490.2513282446798,
+        "max_drawdown_pct": 4.6447041902452835
+      }
+    ]
+  },
+  {
+    "candidate": "02_close_quality_65",
+    "overrides": {
+      "close_quality_min": 0.65,
+      "atr_ratio_min": 1.0
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 6,
+    "average_return_pct": 5.285972414225463,
+    "median_return_pct": 2.378776266306115,
+    "worst_return_pct": -1.9989992257197997,
+    "average_max_drawdown_pct": 5.314920173557449,
+    "worst_max_drawdown_pct": 7.272556778362796,
+    "average_profit_factor": 1.6423001211525414,
+    "total_trades": 218,
+    "pooled_average_r": 0.24091687168409576,
+    "pooled_sum_r": 52.519878027132876,
+    "stress": {
+      "base": {
+        "positive_years": 6,
+        "median_return_pct": 2.378776266306164,
+        "worst_return_pct": -1.998999225719637,
+        "simple_sum_return_pct": 47.573751728029414
+      },
+      "stress": {
+        "positive_years": 6,
+        "median_return_pct": 2.0958762663061634,
+        "worst_return_pct": -2.6521992257196376,
+        "simple_sum_return_pct": 44.58145172802942
+      },
+      "severe": {
+        "positive_years": 5,
+        "median_return_pct": 1.7268762663061643,
+        "worst_return_pct": -3.504199225719637,
+        "simple_sum_return_pct": 40.678451728029415
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 10,
+        "net_pnl": -72.7076438529366,
+        "return_pct": -0.7270764385293615,
+        "win_rate": 0.2,
+        "profit_factor": 0.8725081743383704,
+        "average_r": -0.07015037027665687,
+        "sum_r": -0.7015037027665683,
+        "max_drawdown_abs": 451.5485267519507,
+        "max_drawdown_pct": 4.350664316435925
+      },
+      {
+        "year": 2016,
+        "trades": 17,
+        "net_pnl": 1092.581051867337,
+        "return_pct": 10.925810518673362,
+        "win_rate": 0.47058823529411764,
+        "profit_factor": 2.514056223379448,
+        "average_r": 0.6840376399779705,
+        "sum_r": 11.628639879625496,
+        "max_drawdown_abs": 470.0259977698606,
+        "max_drawdown_pct": 4.405490791579422
+      },
+      {
+        "year": 2017,
+        "trades": 26,
+        "net_pnl": 78.43965569756256,
+        "return_pct": 0.7843965569756195,
+        "win_rate": 0.38461538461538464,
+        "profit_factor": 1.0682034500434638,
+        "average_r": 0.049809027029462626,
+        "sum_r": 1.29503470276603,
+        "max_drawdown_abs": 737.2695993273392,
+        "max_drawdown_pct": 6.849791470113529
+      },
+      {
+        "year": 2018,
+        "trades": 35,
+        "net_pnl": -199.8999225719799,
+        "return_pct": -1.9989992257197997,
+        "win_rate": 0.37142857142857144,
+        "profit_factor": 0.8568527048471251,
+        "average_r": -0.06163338552655208,
+        "sum_r": -2.1571684934293245,
+        "max_drawdown_abs": 727.2556778362796,
+        "max_drawdown_pct": 7.272556778362796
+      },
+      {
+        "year": 2019,
+        "trades": 24,
+        "net_pnl": 1205.0921848309063,
+        "return_pct": 12.05092184830907,
+        "win_rate": 0.5416666666666666,
+        "profit_factor": 2.329814969878176,
+        "average_r": 0.5222565638988371,
+        "sum_r": 12.534157533572094,
+        "max_drawdown_abs": 589.8587415110505,
+        "max_drawdown_pct": 5.114565208789005
+      },
+      {
+        "year": 2020,
+        "trades": 26,
+        "net_pnl": -144.96480769323898,
+        "return_pct": -1.449648076932386,
+        "win_rate": 0.3076923076923077,
+        "profit_factor": 0.8549208785712556,
+        "average_r": -0.017819624159000312,
+        "sum_r": -0.46331022813400785,
+        "max_drawdown_abs": 519.9412409119341,
+        "max_drawdown_pct": 5.011493223706816
+      },
+      {
+        "year": 2021,
+        "trades": 23,
+        "net_pnl": 1128.7847822508775,
+        "return_pct": 11.287847822508779,
+        "win_rate": 0.5217391304347826,
+        "profit_factor": 2.6593398724447,
+        "average_r": 0.506032979441767,
+        "sum_r": 11.63875852716064,
+        "max_drawdown_abs": 374.2141305796613,
+        "max_drawdown_pct": 3.3759481245000798
+      },
+      {
+        "year": 2022,
+        "trades": 31,
+        "net_pnl": 237.8776266306122,
+        "return_pct": 2.378776266306115,
+        "win_rate": 0.41935483870967744,
+        "profit_factor": 1.210218106035357,
+        "average_r": 0.12499694610411795,
+        "sum_r": 3.8749053292276563,
+        "max_drawdown_abs": 555.1272054647725,
+        "max_drawdown_pct": 5.351324625310157
+      },
+      {
+        "year": 2023,
+        "trades": 26,
+        "net_pnl": 1432.1722456437765,
+        "return_pct": 14.321722456437769,
+        "win_rate": 0.4230769230769231,
+        "profit_factor": 2.414786710834978,
+        "average_r": 0.5719370953504178,
+        "sum_r": 14.870364479110863,
+        "max_drawdown_abs": 644.1169633491918,
+        "max_drawdown_pct": 6.10244702321931
+      }
+    ]
+  },
+  {
+    "candidate": "03_atr_ratio_1_1",
+    "overrides": {
+      "close_quality_min": 0.0,
+      "atr_ratio_min": 1.1
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 7,
+    "average_return_pct": 4.520005454763258,
+    "median_return_pct": 1.2289484308612098,
+    "worst_return_pct": -1.8048303791516118,
+    "average_max_drawdown_pct": 4.702604975208067,
+    "worst_max_drawdown_pct": 8.252830371332534,
+    "average_profit_factor": 1.7301809662907761,
+    "total_trades": 173,
+    "pooled_average_r": 0.2591089733666358,
+    "pooled_sum_r": 44.82585239242799,
+    "stress": {
+      "base": {
+        "positive_years": 7,
+        "median_return_pct": 1.2289484308611818,
+        "worst_return_pct": -1.8048303791515241,
+        "simple_sum_return_pct": 40.68004909286961
+      },
+      "stress": {
+        "positive_years": 7,
+        "median_return_pct": 1.1093484308611823,
+        "worst_return_pct": -2.209630379151524,
+        "simple_sum_return_pct": 38.45594909286961
+      },
+      "severe": {
+        "positive_years": 7,
+        "median_return_pct": 0.953348430861183,
+        "worst_return_pct": -2.7376303791515237,
+        "simple_sum_return_pct": 35.55494909286962
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 8,
+        "net_pnl": 122.89484308612191,
+        "return_pct": 1.2289484308612098,
+        "win_rate": 0.375,
+        "profit_factor": 1.3263727236336342,
+        "average_r": 0.19742221301599705,
+        "sum_r": 1.5793777041279768,
+        "max_drawdown_abs": 296.3236451702469,
+        "max_drawdown_pct": 2.84401028257769
+      },
+      {
+        "year": 2016,
+        "trades": 15,
+        "net_pnl": -169.7659804227278,
+        "return_pct": -1.6976598042272806,
+        "win_rate": 0.26666666666666666,
+        "profit_factor": 0.79996950713708,
+        "average_r": -0.0848691661195767,
+        "sum_r": -1.2730374917936507,
+        "max_drawdown_abs": 852.7876575533119,
+        "max_drawdown_pct": 8.252830371332534
+      },
+      {
+        "year": 2017,
+        "trades": 20,
+        "net_pnl": 1192.8167670497805,
+        "return_pct": 11.928167670497803,
+        "win_rate": 0.55,
+        "profit_factor": 3.181275383291624,
+        "average_r": 0.622359220592192,
+        "sum_r": 12.447184411843839,
+        "max_drawdown_abs": 443.56662179559316,
+        "max_drawdown_pct": 3.874450468644329
+      },
+      {
+        "year": 2018,
+        "trades": 22,
+        "net_pnl": -180.48303791516082,
+        "return_pct": -1.8048303791516118,
+        "win_rate": 0.4090909090909091,
+        "profit_factor": 0.7967107264992035,
+        "average_r": -0.07620325995664942,
+        "sum_r": -1.6764717190462877,
+        "max_drawdown_abs": 532.8045049937791,
+        "max_drawdown_pct": 5.26019564470254
+      },
+      {
+        "year": 2019,
+        "trades": 23,
+        "net_pnl": 874.9129224297576,
+        "return_pct": 8.74912922429758,
+        "win_rate": 0.391304347826087,
+        "profit_factor": 2.0492761729469993,
+        "average_r": 0.3799719433601807,
+        "sum_r": 8.739354697284156,
+        "max_drawdown_abs": 577.9616344867991,
+        "max_drawdown_pct": 5.32415633469391
+      },
+      {
+        "year": 2020,
+        "trades": 20,
+        "net_pnl": 561.4767165656576,
+        "return_pct": 5.614767165656587,
+        "win_rate": 0.5,
+        "profit_factor": 1.898966030473024,
+        "average_r": 0.32850512112357483,
+        "sum_r": 6.570102422471496,
+        "max_drawdown_abs": 356.0196394263421,
+        "max_drawdown_pct": 3.2610007626056405
+      },
+      {
+        "year": 2021,
+        "trades": 21,
+        "net_pnl": 99.69444852668494,
+        "return_pct": 0.9969444852668596,
+        "win_rate": 0.47619047619047616,
+        "profit_factor": 1.1380759581994568,
+        "average_r": 0.09523413093339761,
+        "sum_r": 1.9999167496013504,
+        "max_drawdown_abs": 474.418432434657,
+        "max_drawdown_pct": 4.614227852984363
+      },
+      {
+        "year": 2022,
+        "trades": 25,
+        "net_pnl": 122.05216684979132,
+        "return_pct": 1.2205216684979092,
+        "win_rate": 0.32,
+        "profit_factor": 1.1652771176501515,
+        "average_r": 0.07553477915400304,
+        "sum_r": 1.8883694788500751,
+        "max_drawdown_abs": 453.9799660119279,
+        "max_drawdown_pct": 4.3575497221810595
+      },
+      {
+        "year": 2023,
+        "trades": 19,
+        "net_pnl": 1444.4060631170269,
+        "return_pct": 14.444060631170274,
+        "win_rate": 0.5263157894736842,
+        "profit_factor": 3.2157050767858113,
+        "average_r": 0.7658450599520549,
+        "sum_r": 14.551056139089042,
+        "max_drawdown_abs": 482.6890512229784,
+        "max_drawdown_pct": 4.5350233371505375
+      }
+    ]
+  },
+  {
+    "candidate": "04_close_confirm_atr_1_1",
+    "overrides": {
+      "signal_mode": "close",
+      "close_quality_min": 0.0,
+      "atr_ratio_min": 1.1
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 8,
+    "average_return_pct": 3.5503269174160295,
+    "median_return_pct": 2.0134067890950735,
+    "worst_return_pct": -1.5057465841517348,
+    "average_max_drawdown_pct": 4.246288832952726,
+    "worst_max_drawdown_pct": 5.639177085744666,
+    "average_profit_factor": 1.6915527474047396,
+    "total_trades": 143,
+    "pooled_average_r": 0.2493586952105892,
+    "pooled_sum_r": 35.65829341511426,
+    "stress": {
+      "base": {
+        "positive_years": 8,
+        "median_return_pct": 2.0134067890950984,
+        "worst_return_pct": -1.5057465841516955,
+        "simple_sum_return_pct": 31.952942256744443
+      },
+      "stress": {
+        "positive_years": 8,
+        "median_return_pct": 1.8455067890950982,
+        "worst_return_pct": -1.8277465841516949,
+        "simple_sum_return_pct": 30.14974225674444
+      },
+      "severe": {
+        "positive_years": 8,
+        "median_return_pct": 1.6265067890950988,
+        "worst_return_pct": -2.247746584151695,
+        "simple_sum_return_pct": 27.797742256744442
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 6,
+        "net_pnl": 118.77819094180632,
+        "return_pct": 1.187781909418062,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 1.3532891234785784,
+        "average_r": 0.22341497617862274,
+        "sum_r": 1.3404898570717365,
+        "max_drawdown_abs": 343.5997491092603,
+        "max_drawdown_pct": 3.2841458326020216
+      },
+      {
+        "year": 2016,
+        "trades": 12,
+        "net_pnl": 100.31000112360198,
+        "return_pct": 1.0031000112360244,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 1.1733594014052093,
+        "average_r": 0.14461891364625942,
+        "sum_r": 1.7354269637551127,
+        "max_drawdown_abs": 582.7116760069821,
+        "max_drawdown_pct": 5.639177085744666
+      },
+      {
+        "year": 2017,
+        "trades": 15,
+        "net_pnl": 481.5734518114041,
+        "return_pct": 4.815734518114034,
+        "win_rate": 0.5333333333333333,
+        "profit_factor": 2.0655361681431303,
+        "average_r": 0.329199470901135,
+        "sum_r": 4.937992063517025,
+        "max_drawdown_abs": 451.7404174081712,
+        "max_drawdown_pct": 4.155685222505278
+      },
+      {
+        "year": 2018,
+        "trades": 18,
+        "net_pnl": -150.57465841517296,
+        "return_pct": -1.5057465841517348,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 0.8135811621727701,
+        "average_r": -0.08818580277017168,
+        "sum_r": -1.5873444498630906,
+        "max_drawdown_abs": 437.2801216450498,
+        "max_drawdown_pct": 4.3452650704136255
+      },
+      {
+        "year": 2019,
+        "trades": 20,
+        "net_pnl": 444.8272397053115,
+        "return_pct": 4.448272397053121,
+        "win_rate": 0.4,
+        "profit_factor": 1.5785335977658157,
+        "average_r": 0.2125805728802566,
+        "sum_r": 4.251611457605134,
+        "max_drawdown_abs": 507.3087333743297,
+        "max_drawdown_pct": 4.722177342398617
+      },
+      {
+        "year": 2020,
+        "trades": 18,
+        "net_pnl": 137.8228278314291,
+        "return_pct": 1.3782282783142863,
+        "win_rate": 0.3888888888888889,
+        "profit_factor": 1.2478947713066348,
+        "average_r": 0.14752955478111907,
+        "sum_r": 2.655531986060143,
+        "max_drawdown_abs": 319.11530417508766,
+        "max_drawdown_pct": 3.1434316785030862
+      },
+      {
+        "year": 2021,
+        "trades": 17,
+        "net_pnl": 308.7948650088292,
+        "return_pct": 3.0879486500883013,
+        "win_rate": 0.5294117647058824,
+        "profit_factor": 1.5918799573152973,
+        "average_r": 0.23049266077550426,
+        "sum_r": 3.9183752331835717,
+        "max_drawdown_abs": 377.0049083165104,
+        "max_drawdown_pct": 3.6683567320184545
+      },
+      {
+        "year": 2022,
+        "trades": 20,
+        "net_pnl": 201.34067890950791,
+        "return_pct": 2.0134067890950735,
+        "win_rate": 0.35,
+        "profit_factor": 1.3347750850262117,
+        "average_r": 0.1407568777215251,
+        "sum_r": 2.815137554430501,
+        "max_drawdown_abs": 533.2490579010118,
+        "max_drawdown_pct": 5.091686273883078
+      },
+      {
+        "year": 2023,
+        "trades": 17,
+        "net_pnl": 1552.4216287577092,
+        "return_pct": 15.524216287577097,
+        "win_rate": 0.5882352941176471,
+        "profit_factor": 4.065125460029009,
+        "average_r": 0.9171219264325958,
+        "sum_r": 15.59107274935413,
+        "max_drawdown_abs": 443.48350495082923,
+        "max_drawdown_pct": 4.166674258505707
+      }
+    ]
+  },
+  {
+    "candidate": "05_close_quality_atr_1_1",
+    "overrides": {
+      "close_quality_min": 0.65,
+      "atr_ratio_min": 1.1
+    },
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "positive_years": 9,
+    "average_return_pct": 3.7492748491707877,
+    "median_return_pct": 1.5592051801175622,
+    "worst_return_pct": 0.525316094167283,
+    "average_max_drawdown_pct": 3.8648911285382255,
+    "worst_max_drawdown_pct": 5.728651932433138,
+    "average_profit_factor": 1.7999765042716076,
+    "total_trades": 142,
+    "pooled_average_r": 0.2648260297722997,
+    "pooled_sum_r": 37.60529622766656,
+    "stress": {
+      "base": {
+        "positive_years": 9,
+        "median_return_pct": 1.559205180117594,
+        "worst_return_pct": 0.5253160941672504,
+        "simple_sum_return_pct": 33.743473642537225
+      },
+      "stress": {
+        "positive_years": 9,
+        "median_return_pct": 1.4025282783142479,
+        "worst_return_pct": 0.4057160941672501,
+        "simple_sum_return_pct": 31.935673642537218
+      },
+      "severe": {
+        "positive_years": 9,
+        "median_return_pct": 1.2435282783142476,
+        "worst_return_pct": 0.08669641646172038,
+        "simple_sum_return_pct": 29.57767364253722
+      }
+    },
+    "annual": [
+      {
+        "year": 2015,
+        "trades": 8,
+        "net_pnl": 82.51723772876721,
+        "return_pct": 0.8251723772876751,
+        "win_rate": 0.25,
+        "profit_factor": 1.1988042804657202,
+        "average_r": 0.12295359981200002,
+        "sum_r": 0.9836287984960005,
+        "max_drawdown_abs": 296.3236451702469,
+        "max_drawdown_pct": 2.855074555179787
+      },
+      {
+        "year": 2016,
+        "trades": 11,
+        "net_pnl": 52.531609416728315,
+        "return_pct": 0.525316094167283,
+        "win_rate": 0.36363636363636365,
+        "profit_factor": 1.100750509503467,
+        "average_r": 0.0929297227355042,
+        "sum_r": 1.0222269500905463,
+        "max_drawdown_abs": 493.7466743277346,
+        "max_drawdown_pct": 4.778220596352411
+      },
+      {
+        "year": 2017,
+        "trades": 17,
+        "net_pnl": 256.2130885331735,
+        "return_pct": 2.562130885331726,
+        "win_rate": 0.4117647058823529,
+        "profit_factor": 1.4224610896863377,
+        "average_r": 0.1714353480206171,
+        "sum_r": 2.91440091635049,
+        "max_drawdown_abs": 619.96356375305,
+        "max_drawdown_pct": 5.728651932433138
+      },
+      {
+        "year": 2018,
+        "trades": 16,
+        "net_pnl": 74.3896416461721,
+        "return_pct": 0.7438964164617312,
+        "win_rate": 0.4375,
+        "profit_factor": 1.1242738481104029,
+        "average_r": 0.045564998778079846,
+        "sum_r": 0.7290399804492782,
+        "max_drawdown_abs": 348.9274055675669,
+        "max_drawdown_pct": 3.489274055675669
+      },
+      {
+        "year": 2019,
+        "trades": 19,
+        "net_pnl": 501.53051076833253,
+        "return_pct": 5.015305107683332,
+        "win_rate": 0.42105263157894735,
+        "profit_factor": 1.7042145907374542,
+        "average_r": 0.25270661120470317,
+        "sum_r": 4.80142561288936,
+        "max_drawdown_abs": 450.60546231130866,
+        "max_drawdown_pct": 4.194366791863289
+      },
+      {
+        "year": 2020,
+        "trades": 18,
+        "net_pnl": 152.4428278314299,
+        "return_pct": 1.5244282783142937,
+        "win_rate": 0.4444444444444444,
+        "profit_factor": 1.2606429427924497,
+        "average_r": 0.1577508013665889,
+        "sum_r": 2.8395144245985997,
+        "max_drawdown_abs": 319.11530417508766,
+        "max_drawdown_pct": 3.1434316785030862
+      },
+      {
+        "year": 2021,
+        "trades": 16,
+        "net_pnl": 382.79639011037943,
+        "return_pct": 3.8279639011038036,
+        "win_rate": 0.5625,
+        "profit_factor": 1.8549959174475263,
+        "average_r": 0.2905298413523821,
+        "sum_r": 4.648477461638112,
+        "max_drawdown_abs": 290.96569151574295,
+        "max_drawdown_pct": 2.8311725648995663
+      },
+      {
+        "year": 2022,
+        "trades": 21,
+        "net_pnl": 155.92051801175694,
+        "return_pct": 1.5592051801175622,
+        "win_rate": 0.3333333333333333,
+        "profit_factor": 1.2410492566672042,
+        "average_r": 0.11232238304484558,
+        "sum_r": 2.358770043941757,
+        "max_drawdown_abs": 491.32986852513204,
+        "max_drawdown_pct": 4.691424223730345
+      },
+      {
+        "year": 2023,
+        "trades": 16,
+        "net_pnl": 1716.0055402069684,
+        "return_pct": 17.160055402069684,
+        "win_rate": 0.625,
+        "profit_factor": 5.2925961030339055,
+        "average_r": 1.0817382524507761,
+        "sum_r": 17.30781203921242,
+        "max_drawdown_abs": 327.01389712242053,
+        "max_drawdown_pct": 3.0724037582067356
+      }
+    ]
+  }
+]

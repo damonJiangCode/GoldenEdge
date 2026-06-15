@@ -6,7 +6,7 @@ reports, optimization work, and bucket analysis.
 ```text
 xau/
 ├── vb/
-│   └── v1/
+│   ├── v1/
 │       ├── engine.py
 │       ├── reports/
 │       ├── optimization/
@@ -15,6 +15,10 @@ xau/
 │       └── bucket_analysis/
 │           ├── analyze.py
 │           └── results/
+│   └── v2/
+│       ├── engine.py
+│       ├── RESEARCH_POLICY.md
+│       └── research/
 ├── mr/
 │   └── v1/
 │       ├── engine.py
@@ -45,6 +49,7 @@ Common commands:
 
 ```bash
 .venv/bin/python xau/vb/v1/engine.py --input xau/marketdata/H4/H4_2025.csv
+.venv/bin/python xau/vb/v2/engine.py
 .venv/bin/python xau/mr/v1/engine.py --input xau/marketdata/M15/M15_2025.csv
 .venv/bin/python xau/tp/v1/engine.py --input xau/marketdata/H1/H1_2025.csv
 .venv/bin/python xau/vb/v1/reports/summarize.py
