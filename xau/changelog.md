@@ -3,6 +3,13 @@
 > Paths in older entries are historical snapshots. Current structure is documented
 > in `xau/readme.md`.
 
+## [2026-06-14-XAU-VB-V2] VB V2 training-only research baseline
+
+- Froze 2024-2026 as OOS; VB V2 code rejects those years.
+- Corrected H1 ADX sourcing, entry ATR timing, gap-stop fills, and position risk.
+- Added 2015-2023-only candidate, parameter-neighborhood, cost-stress, and
+  risk-budget research.
+
 ## [2026-06-11-XAU-REGIME-SINGLE-ACCOUNT] Regime baseline 单一 `$2000` 账户
 
 - 日期：2026-06-11
