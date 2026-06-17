@@ -1,0 +1,13 @@
+symbol,asset_class,requested_start,actual_start,actual_end,rows,status,file_path
+SPY,equity,2000-01-01,2000-01-03,2025-12-31,6539,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/SPY.csv
+QQQ,equity,2000-01-01,2000-01-03,2025-12-31,6539,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/QQQ.csv
+IWM,equity,2000-01-01,2000-05-26,2025-12-31,6438,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/IWM.csv
+EFA,equity,2000-01-01,2001-08-27,2025-12-31,6123,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/EFA.csv
+GLD,commodity,2000-01-01,2004-11-18,2025-12-31,5313,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/GLD.csv
+SLV,commodity,2000-01-01,2006-04-28,2025-12-31,4951,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/SLV.csv
+USO,commodity,2000-01-01,2006-04-10,2025-12-31,4964,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/USO.csv
+DBA,commodity,2000-01-01,2007-01-05,2025-12-31,4778,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/DBA.csv
+TLT,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/TLT.csv
+IEF,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/IEF.csv
+SHY,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/SHY.csv
+LQD,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/LQD.csv
