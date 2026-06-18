@@ -339,6 +339,74 @@ MA200 在跨资产样本上再次表现为风险过滤器，而不是稳定的�
 
 Top5 策略的风险收益形态在 `105-252` 日的连续参数区间内稳定存在，126 日不是孤立尖峰。但严格的 benchmark-relative Alpha 只得到部分支持：相对 Equal Weight 的经济超额方向稳定，显著性不稳定；相对 SPY 没有稳定超额收益。
 
+## 2026-06-18
+
+### 假设
+
+如果横截面 Momentum Alpha 在同类资产内更纯粹，那么在 24 只 Equity ETF 内部排名应该比 Mixed Asset Universe 更强、更稳定。
+
+### 实验
+
+- Universe：自动读取 24 只 Equity ETF
+- 固定 window：`mom_126`, `mom_168`
+- 组合：`Top3`, `Top5`，月度调仓、等权、5 bps 成本
+- 基准：SPY、Equity Equal Weight
+- 公平比较：Mixed Asset 在相同 `2016-07-01` 至 `2025-12-31` 样本和相同规则下重新计算
+
+### 结果
+
+| Strategy | CAGR | Sharpe | MaxDD |
+|---|---:|---:|---:|
+| mom_126 Top3 | 9.74% | 0.58 | -29.92% |
+| mom_126 Top5 | 12.06% | 0.72 | -30.35% |
+| mom_168 Top3 | 14.09% | 0.78 | -30.20% |
+| mom_168 Top5 | 13.92% | 0.80 | -32.11% |
+
+- Top5 平均优于 Top3，`mom_168` 平均优于 `mom_126`。
+- 0/4 策略显著优于 Equity Equal Weight，0/4 显著优于 SPY。
+- `mom_126` 的 Top3/Top5 相对 Equity Equal Weight 均为负超额；`mom_168` 虽为正超额，但 p-value 均高于 0.50。
+- Equity 四个规格平均 Sharpe 为 0.72，低于同期 Mixed 的 0.82。
+- Equity 最差 Sharpe 为 0.58，低于 Mixed 的 0.72；平均 MaxDD 也更深。
+
+### 结论
+
+Equity-only Momentum 没有比 Mixed Asset Momentum 更强或更稳定。它的绝对收益不差，但超额收益没有在 126/168 两个固定 window 上保持一致，改善更多来自较低回撤，而不是稳定 Alpha。
+
+## 2026-06-18
+
+### 假设
+
+Commodity ETF 的价格趋势可能比 Equity ETF 更持久，因此 Commodity 内部的横截面 Momentum 可能更明显。
+
+### 实验
+
+- Universe：14 只 Commodity ETF
+- 数据共同区间：`2011-09-19` 至 `2025-12-31`
+- 策略样本：`2012-06-01` 至 `2025-12-31`
+- 固定 window：`mom_126`, `mom_168`
+- 组合：`Top1`, `Top3`，月度调仓、等权、5 bps 成本
+- 基准：Commodity Equal Weight、SPY、QQQ
+- Commodity vs Equity 只比较同期、同 window、同 Top3 规则
+
+### 结果
+
+| Strategy | CAGR | Sharpe | MaxDD |
+|---|---:|---:|---:|
+| mom_126 Top1 | -0.96% | 0.15 | -67.55% |
+| mom_126 Top3 | 7.34% | 0.42 | -54.61% |
+| mom_168 Top1 | -10.82% | -0.13 | -90.20% |
+| mom_168 Top3 | 2.53% | 0.21 | -60.52% |
+
+- Top3 明显优于 Top1，`mom_126` 优于 `mom_168`。
+- 3/4 规格的平均月度超额相对 Commodity Equal Weight 为正，但 0/4 统计显著。
+- 只有 2/4 规格的最终 CAGR 高于 Commodity Equal Weight；Top1 存在严重波动拖累和复利损耗。
+- Commodity 策略平均 Sharpe 为 0.17，远低于 SPY 的 0.91 和 QQQ 的 0.96。
+- 同期 Top3 比较中，Commodity 平均 Sharpe 为 0.55，Equity 为 0.68；Commodity 的回撤和参数离散度都更大。
+
+### 结论
+
+Commodity Top3 相对自身 Equal Weight 有一定选择效应，但被高波动、深回撤和低 Sharpe 抵消。Top1 组合不可用，两个 window 之间也不稳定。因此 Commodity Universe 没有比 Equity 或 Mixed Asset Universe 更适合构建横截面 Momentum 策略。
+
 ## 当前总判断
 
 ### 已经学到的事
@@ -347,15 +415,19 @@ Top5 策略的风险收益形态在 `105-252` 日的连续参数区间内稳定�
 - `52 Week High`：中长期事件效应存在，但很小且集中在 Commodity。
 - `Time-Series Momentum Validation`：过去 3/6 个月的强势对未来中长期收益有一定预测力，但跨资产一致性有限。
 - `Cross-Sectional Momentum`：Top5 在 `105-252` 日形成稳定参数平台，126 日不是孤立最优点；相对 Equal Weight 的经济超额方向稳定，但优于 SPY 的证据仍不足。
+- `Equity-only Momentum`：绝对收益可以，但相对 Equity Equal Weight 的 Alpha 在 126/168 上不一致，强度和稳定性都弱于 Mixed Asset。
+- `Commodity-only Momentum`：Top3 有局部选择效应，但高波动、深回撤和低 Sharpe 使其难以组合化，也弱于 Mixed Asset。
 
 ### 当前结论
 
-目前最值得继续推进的主线是 `medium-term cross-sectional momentum + Top5 monthly portfolio`。参数邻域测试已经通过，下一个核心问题是该结果能否在样本外和不同资产池中存活。MA200 更适合作为后续的风险过滤模块，52 周新高则保留为 Commodity 子研究。
+目前最值得继续推进的主线仍是 `Mixed Asset medium-term cross-sectional momentum + Top5 monthly portfolio`。参数邻域和单一资产类别敏感性已经测试：Alpha 并没有在 Equity-only 或 Commodity-only 中变得更强，说明跨资产分散本身可能是组合效果的重要来源。
+
+MA200 更适合作为后续的风险过滤模块，52 周新高则保留为 Commodity 子研究。
 
 下一阶段的目标不是寻找更好的回测参数，而是判断当前结果是否能离开全样本后仍然存活：
 
 1. 固定 Top5 和中期 momentum 规则，做 chronological out-of-sample split，不在样本外重新挑选 window。
 2. 使用 rolling/expanding walk-forward 检查不同时期的稳定性。
-3. 做资产池敏感性测试，避免结论被 QQQ/SPY 或某一资产类别主导。
-4. 压力测试更高交易成本，并拆分换手的实际影响。
+3. 压力测试更高交易成本，并拆分换手的实际影响。
+4. 进一步做 leave-one-asset/leave-one-class-out，检查 Mixed 结果是否被少数 ETF 主导。
 5. 在主策略稳健性确认后，再独立测试 MA200 风险过滤是否增值。
