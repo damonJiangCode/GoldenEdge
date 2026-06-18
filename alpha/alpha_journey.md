@@ -407,6 +407,48 @@ Commodity ETF 的价格趋势可能比 Equity ETF 更持久，因此 Commodity �
 
 Commodity Top3 相对自身 Equal Weight 有一定选择效应，但被高波动、深回撤和低 Sharpe 抵消。Top1 组合不可用，两个 window 之间也不稳定。因此 Commodity Universe 没有比 Equity 或 Mixed Asset Universe 更适合构建横截面 Momentum 策略。
 
+## 2026-06-18
+
+### 假设
+
+Mixed Asset `mom_126 Top5` 的高 Sharpe 应该来自多个资产的广泛贡献，而不是少数长期赢家撑起全部收益。
+
+### 实验
+
+- 策略：12 ETF Mixed Asset `mom_126 Top5`
+- 样本：`2007-08-01` 至 `2025-12-31`
+- 资产日度贡献：期初组合净值 × 期初权重 × 资产收益
+- 5 bps 成本按各资产绝对调仓额分摊
+- 资产贡献之和与组合最终 Total Return 精确对账
+- 移除测试：从 Universe 删除前 1/2/3 大贡献资产后，重新排名、建仓和计算成本
+
+### 结果
+
+| Symbol | Selection % | Total Contribution | Contribution % |
+|---|---:|---:|---:|
+| QQQ | 67.87% | 136.49% | 21.88% |
+| GLD | 48.87% | 113.46% | 18.19% |
+| SLV | 42.99% | 89.04% | 14.27% |
+| SPY | 61.54% | 56.57% | 9.07% |
+| EFA | 38.91% | 51.42% | 8.24% |
+
+- 前三大贡献资产是 `QQQ`, `GLD`, `SLV`，合计贡献净收益的 54.34%。
+- 所有 12 只 ETF 在全样本中的净贡献都为正。
+
+| Scenario | CAGR | Sharpe | MaxDD |
+|---|---:|---:|---:|
+| Baseline | 11.36% | 0.88 | -29.06% |
+| Remove QQQ | 10.05% | 0.83 | -26.51% |
+| Remove QQQ, GLD | 8.40% | 0.75 | -25.72% |
+| Remove QQQ, GLD, SLV | 6.26% | 0.65 | -21.07% |
+
+- 移除前三大贡献资产后，策略保留 55.09% CAGR 和 73.56% Sharpe。
+- 移除贡献资产后 MaxDD 反而改善，说明主要赢家同时也带来了更高风险。
+
+### 结论
+
+Mixed Asset Momentum 不是由单一 ETF 驱动：移除 QQQ 后 CAGR 和 Sharpe 仍保留 88.45%/94.47%，移除前三大贡献资产后策略仍有 6.26% CAGR 和 0.65 Sharpe。但前三大贡献占 54.34%，说明赢家集中度不可忽略。当前最合理的判断是：收益具有一定 Cross-Asset breadth，同时存在中等程度的核心赢家依赖。
+
 ## 当前总判断
 
 ### 已经学到的事
@@ -414,7 +456,7 @@ Commodity Top3 相对自身 Equal Weight 有一定选择效应，但被高波动
 - `MA200`：对降低回撤有高度一致性，但不是稳定的收益 Alpha。
 - `52 Week High`：中长期事件效应存在，但很小且集中在 Commodity。
 - `Time-Series Momentum Validation`：过去 3/6 个月的强势对未来中长期收益有一定预测力，但跨资产一致性有限。
-- `Cross-Sectional Momentum`：Top5 在 `105-252` 日形成稳定参数平台，126 日不是孤立最优点；相对 Equal Weight 的经济超额方向稳定，但优于 SPY 的证据仍不足。
+- `Cross-Sectional Momentum`：Top5 在 `105-252` 日形成稳定参数平台；收益不是由单一 ETF 驱动，但 QQQ/GLD/SLV 合计贡献 54.34%，存在中等赢家集中度。相对 Equal Weight 的经济超额方向稳定，但优于 SPY 的证据仍不足。
 - `Equity-only Momentum`：绝对收益可以，但相对 Equity Equal Weight 的 Alpha 在 126/168 上不一致，强度和稳定性都弱于 Mixed Asset。
 - `Commodity-only Momentum`：Top3 有局部选择效应，但高波动、深回撤和低 Sharpe 使其难以组合化，也弱于 Mixed Asset。
 
@@ -429,5 +471,5 @@ MA200 更适合作为后续的风险过滤模块，52 周新高则保留为 Comm
 1. 固定 Top5 和中期 momentum 规则，做 chronological out-of-sample split，不在样本外重新挑选 window。
 2. 使用 rolling/expanding walk-forward 检查不同时期的稳定性。
 3. 压力测试更高交易成本，并拆分换手的实际影响。
-4. 进一步做 leave-one-asset/leave-one-class-out，检查 Mixed 结果是否被少数 ETF 主导。
+4. 继续做 leave-one-class-out，检查 Mixed 结果是否依赖 Equity、Commodity 或 Bond 某一资产类别。
 5. 在主策略稳健性确认后，再独立测试 MA200 风险过滤是否增值。
