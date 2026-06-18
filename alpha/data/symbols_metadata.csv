@@ -1,13 +1,33 @@
-symbol,asset_class,requested_start,actual_start,actual_end,rows,status,file_path
-SPY,equity,2000-01-01,2000-01-03,2025-12-31,6539,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/SPY.csv
-QQQ,equity,2000-01-01,2000-01-03,2025-12-31,6539,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/QQQ.csv
-IWM,equity,2000-01-01,2000-05-26,2025-12-31,6438,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/IWM.csv
-EFA,equity,2000-01-01,2001-08-27,2025-12-31,6123,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/equity/EFA.csv
-GLD,commodity,2000-01-01,2004-11-18,2025-12-31,5313,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/GLD.csv
-SLV,commodity,2000-01-01,2006-04-28,2025-12-31,4951,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/SLV.csv
-USO,commodity,2000-01-01,2006-04-10,2025-12-31,4964,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/USO.csv
-DBA,commodity,2000-01-01,2007-01-05,2025-12-31,4778,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/commodity/DBA.csv
-TLT,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/TLT.csv
-IEF,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/IEF.csv
-SHY,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/SHY.csv
-LQD,bond,2000-01-01,2002-07-30,2025-12-31,5895,"OK, limited history",/Users/damon/Documents/GoldenEdge/Alpha/data/bond/LQD.csv
+symbol,asset_class,category,actual_start,actual_end,rows,status
+SPY,equity,Core,2000-01-03,2025-12-31,6539,OK
+QQQ,equity,Core,2000-01-03,2025-12-31,6539,OK
+IWM,equity,Core,2000-05-26,2025-12-31,6438,OK
+EFA,equity,Core,2001-08-27,2025-12-31,6123,OK
+EEM,equity,Core,2003-04-14,2025-12-31,5717,OK
+VTI,equity,Core,2001-06-15,2025-12-31,6173,OK
+DIA,equity,Core,2000-01-03,2025-12-31,6539,OK
+XLK,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLF,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLV,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLY,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLP,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLE,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLI,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLU,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLB,equity,Sector,2000-01-03,2025-12-31,6539,OK
+XLRE,equity,Sector,2015-10-08,2025-12-31,2573,OK
+IWF,equity,StyleFactor,2000-05-26,2025-12-31,6438,OK
+IWD,equity,StyleFactor,2000-05-26,2025-12-31,6438,OK
+MTUM,equity,StyleFactor,2013-04-18,2025-12-31,3197,OK
+QUAL,equity,StyleFactor,2013-07-18,2025-12-31,3134,OK
+USMV,equity,StyleFactor,2011-10-20,2025-12-31,3570,OK
+VLUE,equity,StyleFactor,2013-04-18,2025-12-31,3197,OK
+VNQ,equity,RealEstate,2004-09-29,2025-12-31,5349,OK
+GLD,commodity,Commodity,2004-11-18,2025-12-31,5313,OK
+SLV,commodity,Commodity,2006-04-28,2025-12-31,4951,OK
+USO,commodity,Commodity,2006-04-10,2025-12-31,4964,OK
+DBA,commodity,Commodity,2007-01-05,2025-12-31,4778,OK
+TLT,bond,Bond,2002-07-30,2025-12-31,5895,OK
+IEF,bond,Bond,2002-07-30,2025-12-31,5895,OK
+SHY,bond,Bond,2002-07-30,2025-12-31,5895,OK
+LQD,bond,Bond,2002-07-30,2025-12-31,5895,OK
