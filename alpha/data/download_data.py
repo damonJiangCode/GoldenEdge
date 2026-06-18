@@ -25,7 +25,10 @@ UNIVERSE = {
         "RealEstate": ["VNQ"],
     },
     "commodity": {
-        "Commodity": ["GLD", "SLV", "USO", "DBA"],
+        "PreciousMetal": ["GLD", "SLV", "PPLT", "PALL"],
+        "Energy": ["USO", "UNG", "DBO", "XOP"],
+        "Agriculture": ["DBA", "CORN", "WEAT", "SOYB"],
+        "BroadCommodity": ["DBC", "GSG"],
     },
     "bond": {
         "Bond": ["TLT", "IEF", "SHY", "LQD"],
@@ -211,6 +214,16 @@ def main() -> None:
     print("\nBy asset class and status:")
     print(metadata.groupby(["asset_class", "status"]).size().rename("symbols").to_string())
     print(f"\nMetadata saved to: {METADATA_PATH}")
+
+    available_commodity = metadata.loc[
+        (metadata["asset_class"] == "commodity") & (metadata["status"] == "OK")
+    ].copy()
+    if not available_commodity.empty:
+        actual_starts = pd.to_datetime(available_commodity["actual_start"])
+        print("\nCommodity research readiness:")
+        print(f"Available ETFs   : {len(available_commodity)}")
+        print(f"Earliest history : {actual_starts.min().date()}")
+        print(f"Common start date: {actual_starts.max().date()}")
 
     failures = metadata.loc[metadata["status"].str.startswith("FAILED"), ["symbol", "status"]]
     if not failures.empty:
