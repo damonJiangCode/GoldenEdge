@@ -449,6 +449,48 @@ Mixed Asset `mom_126 Top5` 的高 Sharpe 应该来自多个资产的广泛贡献
 
 Mixed Asset Momentum 不是由单一 ETF 驱动：移除 QQQ 后 CAGR 和 Sharpe 仍保留 88.45%/94.47%，移除前三大贡献资产后策略仍有 6.26% CAGR 和 0.65 Sharpe。但前三大贡献占 54.34%，说明赢家集中度不可忽略。当前最合理的判断是：收益具有一定 Cross-Asset breadth，同时存在中等程度的核心赢家依赖。
 
+## 2026-06-18
+
+### 假设
+
+Mixed Asset Momentum 的优势可能来自特定资产类别，也可能来自 Equity、Commodity、Bond 在收益与风险上的互补和跨类别轮动。
+
+### 实验
+
+- 基准：12 ETF Mixed Asset `mom_126 Top5`
+- 固定月度调仓、等权、5 bps 成本
+- 从 Universe 中分别删除全部 Equity、Commodity、Bond
+- 删除后重新计算 momentum 排名、Top5 持仓、换手和成本
+- `Remove Equity/Commodity/Bond` 分别等价于 `Commodity + Bond` / `Equity + Bond` / `Equity + Commodity`
+
+### 结果
+
+| Scenario | CAGR | Sharpe | MaxDD | CAGR Retention | Sharpe Retention |
+|---|---:|---:|---:|---:|---:|
+| Baseline | 11.36% | 0.88 | -29.06% | 100.00% | 100.00% |
+| Remove Equity | 6.37% | 0.61 | -24.05% | 56.07% | 69.42% |
+| Remove Commodity | 8.71% | 0.86 | -24.61% | 76.67% | 97.87% |
+| Remove Bond | 9.35% | 0.62 | -47.04% | 82.33% | 70.22% |
+
+| Asset Class | Historical PnL Contribution |
+|---|---:|
+| Equity | 45.42% |
+| Commodity | 42.54% |
+| Bond | 12.04% |
+
+- Equity 的历史 PnL 贡献最高，删除后 CAGR 和 Sharpe 损失也最大，是主要收益引擎。
+- Commodity 贡献 42.54% 历史 PnL，但删除后仍保留 97.87% Sharpe，且 MaxDD 改善，更像收益增强而非必要的风险调整 Alpha 来源。
+- Bond 只贡献 12.04% PnL，但删除后 MaxDD 恶化 17.98 个百分点、波动率上升 3.53 个百分点，是主要风险分散器。
+- 完整 Mixed Universe 的 CAGR 和 Sharpe 都高于任何双类别 Universe，支持跨类别轮动有增值。
+
+### 结论
+
+- **Strong Evidence:** Equity 是主要收益引擎；Bond 是主要风险分散器。
+- **Moderate Evidence:** Commodity 提供重要收益增强，跨类别排名和轮动提高完整组合的 CAGR/Sharpe。
+- **Weak Evidence:** Commodity 是不可替代的风险调整 Alpha 来源。
+
+当前最准确的结构性解释是：`Equity Trend + Commodity Return Enhancement + Bond Diversification + Cross-Class Rotation`。
+
 ## 当前总判断
 
 ### 已经学到的事
@@ -456,7 +498,7 @@ Mixed Asset Momentum 不是由单一 ETF 驱动：移除 QQQ 后 CAGR 和 Sharpe
 - `MA200`：对降低回撤有高度一致性，但不是稳定的收益 Alpha。
 - `52 Week High`：中长期事件效应存在，但很小且集中在 Commodity。
 - `Time-Series Momentum Validation`：过去 3/6 个月的强势对未来中长期收益有一定预测力，但跨资产一致性有限。
-- `Cross-Sectional Momentum`：Top5 在 `105-252` 日形成稳定参数平台；收益不是由单一 ETF 驱动，但 QQQ/GLD/SLV 合计贡献 54.34%，存在中等赢家集中度。相对 Equal Weight 的经济超额方向稳定，但优于 SPY 的证据仍不足。
+- `Cross-Sectional Momentum`：Top5 在 `105-252` 日形成稳定参数平台；收益不是由单一 ETF 驱动，但 QQQ/GLD/SLV 合计贡献 54.34%，存在中等赢家集中度。类别归因显示 Equity 负责核心收益、Commodity 增强收益、Bond 提供关键分散，完整 Universe 轮动优于所有双类别组合。
 - `Equity-only Momentum`：绝对收益可以，但相对 Equity Equal Weight 的 Alpha 在 126/168 上不一致，强度和稳定性都弱于 Mixed Asset。
 - `Commodity-only Momentum`：Top3 有局部选择效应，但高波动、深回撤和低 Sharpe 使其难以组合化，也弱于 Mixed Asset。
 
@@ -471,5 +513,5 @@ MA200 更适合作为后续的风险过滤模块，52 周新高则保留为 Comm
 1. 固定 Top5 和中期 momentum 规则，做 chronological out-of-sample split，不在样本外重新挑选 window。
 2. 使用 rolling/expanding walk-forward 检查不同时期的稳定性。
 3. 压力测试更高交易成本，并拆分换手的实际影响。
-4. 继续做 leave-one-class-out，检查 Mixed 结果是否依赖 Equity、Commodity 或 Bond 某一资产类别。
+4. 做市场状态分段，检查 Equity 收益、Commodity 增强和 Bond 分散角色是否在不同 regime 中稳定。
 5. 在主策略稳健性确认后，再独立测试 MA200 风险过滤是否增值。
