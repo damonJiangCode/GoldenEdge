@@ -41,6 +41,9 @@
 - Found no isolated Sharpe spike, while every tested MA length improved MaxDD versus the unfiltered baseline.
 - Completed the requested 40-ETF shared-data universe by adding TIP, HYG, and UUP through the unified download pipeline.
 - Added currency as a shared asset class while retaining five extra Equity ETFs pending a deletion decision.
+- Completed the fixed-parameter Expanded Universe Momentum test on the strict 45-ETF common sample.
+- Found that expansion increased nominal selection breadth but reduced Sharpe from 0.89 to 0.46 and worsened MaxDD from -23.09% to -39.59%.
+- Observed that original 12 ETFs supplied only 28.62% of expanded Top5 slots, while Bond exposure fell from 17.89% to 2.73%; the strategy is materially Universe-sensitive.
 
 ## Current Direction
 
