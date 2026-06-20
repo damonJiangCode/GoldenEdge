@@ -30,7 +30,10 @@ UNIVERSE = {
         "BroadCommodity": ["DBC", "GSG"],
     },
     "bond": {
-        "Bond": ["TLT", "IEF", "SHY", "LQD"],
+        "Bond": ["TLT", "IEF", "SHY", "LQD", "TIP", "HYG"],
+    },
+    "currency": {
+        "USD": ["UUP"],
     },
 }
 

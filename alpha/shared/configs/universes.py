@@ -1,4 +1,4 @@
-ASSET_CLASSES = ["equity", "commodity", "bond"]
+ASSET_CLASSES = ["equity", "commodity", "bond", "currency"]
 
 MIXED_ASSET_SYMBOLS = [
     "SPY",
