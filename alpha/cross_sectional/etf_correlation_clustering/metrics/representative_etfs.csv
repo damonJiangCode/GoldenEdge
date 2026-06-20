@@ -1,0 +1,10 @@
+Cluster ID,Cluster Label,Representative ETF,Reason
+1,Agriculture / Broad Commodity,DBA,"History from 2007-01-05; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+2,Energy / Broad Commodity,DBC,"History from 2006-02-06; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+3,Broad Equity Beta,SPY,"History from 2000-01-03; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+4,Precious Metals,GLD,"History from 2004-11-18; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+5,Treasury / Investment Grade Bonds,IEF,"History from 2002-07-30; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+6,Palladium,PALL,"History from 2010-01-08; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+7,Natural Gas,UNG,"History from 2007-04-18; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+8,US Dollar,UUP,"History from 2007-03-01; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."
+9,Utilities Equity,XLU,"History from 2000-01-03; selected from the earliest-history cohort using liquidity and broad/clean exposure preference, not return performance."

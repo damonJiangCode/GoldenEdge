@@ -1,0 +1,10 @@
+Cluster ID,Cluster Size,Symbols,Cluster Label,Dominant Asset Class,Dominant Category,Intra-Cluster Average Correlation,Average Annualized Volatility
+1,4,"CORN,DBA,SOYB,WEAT",Agriculture / Broad Commodity,Commodity,Agriculture,0.5333661897004146,0.16184595633538676
+2,6,"DBC,DBO,GSG,USO,XLE,XOP",Energy / Broad Commodity,Commodity,Energy,0.7492468483512135,0.29033882556123075
+3,23,"DIA,EEM,EFA,HYG,IWD,IWF,IWM,MTUM,QQQ,QUAL,SPY,USMV,VLUE,VNQ,VTI,XLB,XLF,XLI,XLK,XLP,XLRE,XLV,XLY",Broad Equity Beta,Equity,Sector,0.7570214891251805,0.16269883940790694
+4,3,"GLD,PPLT,SLV",Precious Metals,Commodity,PreciousMetal,0.6301714191594877,0.22387394313901265
+5,5,"IEF,LQD,SHY,TIP,TLT",Treasury / Investment Grade Bonds,Bond,Bond,0.755489586968244,0.07006976795682765
+6,1,PALL,Palladium,Commodity,PreciousMetal,,0.3135638734140287
+7,1,UNG,Natural Gas,Commodity,Energy,,0.5305512245504049
+8,1,UUP,US Dollar,Currency,USD,,0.06656051632293375
+9,1,XLU,Utilities Equity,Equity,Sector,,0.1512516507930693

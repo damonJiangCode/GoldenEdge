@@ -1,0 +1,11 @@
+Class Pair,Average Correlation,Pair Count
+Equity - Equity,0.7172389240566961,276
+Equity - Commodity,0.22982447530390676,336
+Equity - Bond,0.3532702167735863,144
+Equity - Currency,-0.36480985064336985,24
+Commodity - Commodity,0.2696834392937117,91
+Commodity - Bond,0.03182852451226173,84
+Commodity - Currency,-0.20136857083182957,14
+Bond - Bond,0.6576520076741372,15
+Bond - Currency,-0.44958512670494644,6
+Currency - Currency,,0

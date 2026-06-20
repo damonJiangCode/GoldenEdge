@@ -1,0 +1,21 @@
+ETF 1,ETF 2,Correlation,Asset Class 1,Asset Class 2,Category 1,Category 2
+SPY,VTI,0.9961127198847737,Equity,Equity,Core,Core
+SPY,QUAL,0.9848364679017655,Equity,Equity,Core,StyleFactor
+XLRE,VNQ,0.983168949801424,Equity,Equity,Sector,RealEstate
+QQQ,IWF,0.9794449832468054,Equity,Equity,Core,StyleFactor
+VTI,QUAL,0.9788297623028412,Equity,Equity,Core,StyleFactor
+QQQ,XLK,0.9724577450464607,Equity,Equity,Core,Sector
+DBC,GSG,0.9601771747221653,Commodity,Commodity,BroadCommodity,BroadCommodity
+XLK,IWF,0.9577861449880357,Equity,Equity,Sector,StyleFactor
+IWD,VLUE,0.9567602242235205,Equity,Equity,StyleFactor,StyleFactor
+DIA,IWD,0.9543749192438468,Equity,Equity,Core,StyleFactor
+SPY,IWF,0.9519649133560032,Equity,Equity,Core,StyleFactor
+VTI,IWF,0.9466981138118605,Equity,Equity,Core,StyleFactor
+USO,GSG,0.9388626181717403,Commodity,Commodity,Energy,BroadCommodity
+SPY,DIA,0.938651887081483,Equity,Equity,Core,Core
+IWF,QUAL,0.9384184527535954,Equity,Equity,StyleFactor,StyleFactor
+VTI,DIA,0.9381660923085536,Equity,Equity,Core,Core
+XLI,IWD,0.935559527788184,Equity,Equity,Sector,StyleFactor
+DBO,GSG,0.9349241757891774,Commodity,Commodity,Energy,BroadCommodity
+TLT,IEF,0.932707149865346,Bond,Bond,Bond,Bond
+VTI,IWD,0.9323844969288011,Equity,Equity,Core,StyleFactor
