@@ -25,6 +25,12 @@
 - Refactored the research repository into `cross_sectional/`, `time_series/`, and `shared/`, with a consistent `scripts/`, `summary.md`, `metrics/`, and `outputs/` convention for every study.
 - Moved the unified ETF data store and download pipeline to `shared/data/`; research folders continue to reference one shared data source.
 
+## 2026-06-19
+- Completed the fixed-parameter MA200 filter test for Mixed Asset mom_126 Top5.
+- Version A (ineligible allocations held as cash) preserved CAGR, improved Sharpe from 0.88 to 0.91, and reduced MaxDD from -29.06% to -17.82%.
+- Version B (fully invested among fewer eligible assets) reduced Sharpe to 0.77 and worsened MaxDD to -32.77%.
+- Concluded that MA200 is useful as a conditional cash and risk overlay, not as a fully invested concentration rule.
+
 ## Current Direction
 
 - Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection.
