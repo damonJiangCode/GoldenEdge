@@ -1,0 +1,6 @@
+Strategy,Distinct Assets Selected,Average Holdings,Average Turnover,Number of Rebalances
+Original 12 ETF Top5,12,5.0,0.47060631320348956,116
+Expanded Global Top5,40,5.0,0.8207145594523623,116
+Category Balanced,39,5.0,0.7875454225873352,116
+Category Winner (Class Mean),38,3.5517241379310347,0.7567985826001379,116
+Category Winner (Top3 Mean),38,3.939655172413793,0.862990669692201,116

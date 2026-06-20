@@ -1,0 +1,13 @@
+Strategy,Asset Class,Total Gross PnL Contribution,Contribution Percent
+Category Balanced,Equity,0.7671980118014183,0.3853048781838446
+Category Balanced,Commodity,1.109617665432366,0.5572760784483428
+Category Balanced,Bond,0.11432966049889015,0.057419043367812526
+Category Balanced,Currency,0.0,0.0
+Category Winner (Class Mean),Equity,0.45500463188432705,0.30708805522789223
+Category Winner (Class Mean),Commodity,0.958225293594108,0.6467176843043622
+Category Winner (Class Mean),Bond,0.06282018602071075,0.04239809312327792
+Category Winner (Class Mean),Currency,0.005624685479410776,0.0037961673444676797
+Category Winner (Top3 Mean),Equity,0.571620046934928,0.45773352667947703
+Category Winner (Top3 Mean),Commodity,0.6258813628561005,0.5011841082887938
+Category Winner (Top3 Mean),Bond,0.05709399422017697,0.04571889223751158
+Category Winner (Top3 Mean),Currency,-0.00579011967554724,-0.004636527205782508
