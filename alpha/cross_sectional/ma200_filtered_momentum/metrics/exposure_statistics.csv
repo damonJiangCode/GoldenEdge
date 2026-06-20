@@ -1,0 +1,13 @@
+Strategy,Metric,Value
+MA200 Version A,Average Eligible Assets,7.895927601809955
+MA200 Version A,Minimum Eligible Assets,0.0
+MA200 Version A,Maximum Eligible Assets,12.0
+MA200 Version A,Average Portfolio Holdings,4.714932126696833
+MA200 Version A,Percent Months Below 5 Assets,0.11312217194570136
+MA200 Version A,Average Cash Allocation,0.057013574660633476
+MA200 Version B,Average Eligible Assets,7.895927601809955
+MA200 Version B,Minimum Eligible Assets,0.0
+MA200 Version B,Maximum Eligible Assets,12.0
+MA200 Version B,Average Portfolio Holdings,4.714932126696833
+MA200 Version B,Percent Months Below 5 Assets,0.11312217194570136
+MA200 Version B,Average Cash Allocation,0.00904977375565611
