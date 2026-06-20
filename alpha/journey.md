@@ -44,6 +44,9 @@
 - Completed the fixed-parameter Expanded Universe Momentum test on the strict 45-ETF common sample.
 - Found that expansion increased nominal selection breadth but reduced Sharpe from 0.89 to 0.46 and worsened MaxDD from -23.09% to -39.59%.
 - Observed that original 12 ETFs supplied only 28.62% of expanded Top5 slots, while Bond exposure fell from 17.89% to 2.73%; the strategy is materially Universe-sensitive.
+- Completed the Asset Rotation vs Category Rotation test using the same Expanded Universe sample and fixed momentum design.
+- Category Balanced restored roughly 20% Bond exposure and recovered CAGR/MaxDD to 11.77%/-22.43%, making it the closest structure to Original 12 ETF Top5.
+- Category Winner based on whole-class momentum reached Sharpe 0.71 and MaxDD -18.66%; evidence supports combining asset-level momentum with explicit category structure.
 
 ## Current Direction
 
