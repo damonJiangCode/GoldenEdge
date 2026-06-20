@@ -47,6 +47,9 @@
 - Completed the Asset Rotation vs Category Rotation test using the same Expanded Universe sample and fixed momentum design.
 - Category Balanced restored roughly 20% Bond exposure and recovered CAGR/MaxDD to 11.77%/-22.43%, making it the closest structure to Original 12 ETF Top5.
 - Category Winner based on whole-class momentum reached Sharpe 0.71 and MaxDD -18.66%; evidence supports combining asset-level momentum with explicit category structure.
+- Completed monthly-return correlation clustering for the 45-ETF Expanded Universe without running a strategy backtest.
+- Identified 9 interpretable risk clusters at correlation-distance threshold 0.50; 23 ETFs collapsed into one Broad Equity Beta cluster.
+- Confirmed that much of the expanded breadth is nominal, with Energy/Broad Commodity duplication and only a few standalone diversifiers such as UUP and UNG.
 
 ## Current Direction
 

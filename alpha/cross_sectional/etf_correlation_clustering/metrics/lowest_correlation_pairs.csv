@@ -1,0 +1,21 @@
+ETF 1,ETF 2,Correlation,Asset Class 1,Asset Class 2,Category 1,Category 2
+EEM,UUP,-0.6263176450777053,Equity,Currency,Core,USD
+EFA,UUP,-0.6199500171574923,Equity,Currency,Core,USD
+LQD,UUP,-0.5553064553656287,Bond,Currency,Bond,USD
+GLD,UUP,-0.5130693792346956,Commodity,Currency,PreciousMetal,USD
+SLV,UUP,-0.5086725113548191,Commodity,Currency,PreciousMetal,USD
+PPLT,UUP,-0.5004617982367281,Commodity,Currency,PreciousMetal,USD
+TIP,UUP,-0.48228451244565085,Bond,Currency,Bond,USD
+HYG,UUP,-0.4572005154878809,Bond,Currency,Bond,USD
+XLB,UUP,-0.4563083399780931,Equity,Currency,Sector,USD
+IEF,UUP,-0.4258192234948783,Bond,Currency,Bond,USD
+SHY,UUP,-0.4076669762275187,Bond,Currency,Bond,USD
+XLV,UUP,-0.4054073969713352,Equity,Currency,Sector,USD
+USMV,UUP,-0.40127630720878954,Equity,Currency,StyleFactor,USD
+XLRE,UUP,-0.3951335048357447,Equity,Currency,Sector,USD
+VNQ,UUP,-0.3828539013640053,Equity,Currency,RealEstate,USD
+XLP,UUP,-0.3795853733265601,Equity,Currency,Sector,USD
+MTUM,UUP,-0.37774021000182684,Equity,Currency,StyleFactor,USD
+IWD,UUP,-0.3769164496194987,Equity,Currency,StyleFactor,USD
+TLT,UUP,-0.36923307720812115,Bond,Currency,Bond,USD
+QUAL,UUP,-0.36846484558282483,Equity,Currency,StyleFactor,USD

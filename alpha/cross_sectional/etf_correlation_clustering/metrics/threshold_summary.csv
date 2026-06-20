@@ -1,0 +1,6 @@
+Distance Threshold,Number of Clusters,Largest Cluster Size,Median Cluster Size,Singleton Count
+0.3,24,8,1.0,17
+0.4,16,21,1.0,11
+0.5,9,23,3.0,4
+0.6,6,30,4.0,2
+0.7,2,44,22.5,1
