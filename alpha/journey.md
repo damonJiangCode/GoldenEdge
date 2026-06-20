@@ -50,6 +50,9 @@
 - Completed monthly-return correlation clustering for the 45-ETF Expanded Universe without running a strategy backtest.
 - Identified 9 interpretable risk clusters at correlation-distance threshold 0.50; 23 ETFs collapsed into one Broad Equity Beta cluster.
 - Confirmed that much of the expanded breadth is nominal, with Energy/Broad Commodity duplication and only a few standalone diversifiers such as UUP and UNG.
+- Completed the fixed Representative Cluster Universe Momentum test using one ETF from each of the 9 identified risk clusters.
+- Removing duplicate ranking opportunities raised Sharpe from 0.46 to 0.67 and improved MaxDD from -39.59% to -20.91%, but CAGR remained 7.93% versus 11.34% for Original 12.
+- Concluded that cluster deduplication repairs much of the risk profile but is insufficient without balancing the number of ranking opportunities across asset classes.
 
 ## Current Direction
 
