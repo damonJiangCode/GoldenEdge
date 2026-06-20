@@ -31,6 +31,17 @@
 - Version B (fully invested among fewer eligible assets) reduced Sharpe to 0.77 and worsened MaxDD to -32.77%.
 - Concluded that MA200 is useful as a conditional cash and risk overlay, not as a fully invested concentration rule.
 
+## 2026-06-20
+- Completed annual and market-regime attribution for the MA200 Version A filter.
+- Found that drawdown protection survives excluding 2008, but the full-sample Sharpe improvement does not.
+- Identified meaningful protection in several stress periods and a 4.75 percentage-point return drag during 2023-2025.
+- Reclassified MA200 Version A as a crisis-risk overlay rather than a persistent return enhancer.
+- Completed MA-length robustness testing from MA100 through MA300 using the fixed Version A framework.
+- Identified MA125-MA250 as the longest stable platform under the predeclared Sharpe, CAGR, and MaxDD thresholds; MA200 lies inside the platform.
+- Found no isolated Sharpe spike, while every tested MA length improved MaxDD versus the unfiltered baseline.
+- Completed the requested 40-ETF shared-data universe by adding TIP, HYG, and UUP through the unified download pipeline.
+- Added currency as a shared asset class while retaining five extra Equity ETFs pending a deletion decision.
+
 ## Current Direction
 
 - Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection.
