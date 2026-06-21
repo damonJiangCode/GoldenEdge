@@ -53,6 +53,18 @@
 - Completed the fixed Representative Cluster Universe Momentum test using one ETF from each of the 9 identified risk clusters.
 - Removing duplicate ranking opportunities raised Sharpe from 0.46 to 0.67 and improved MaxDD from -39.59% to -20.91%, but CAGR remained 7.93% versus 11.34% for Original 12.
 - Concluded that cluster deduplication repairs much of the risk profile but is insufficient without balancing the number of ranking opportunities across asset classes.
+- Completed the Representative Cluster Universe plus fixed Category Balanced allocation test.
+- Category balancing raised CAGR/Sharpe to 9.81%/0.79, restored Bond exposure to 19.89%, and reduced total turnover while remaining close to Original 12 under predeclared criteria.
+- Confirmed that robust Universe design requires both correlation deduplication and balanced ranking opportunities across asset classes.
+- Completed cluster-level direct contribution and one-at-a-time removal sensitivity for the Representative Category Balanced framework.
+- Equity was the primary return and Sharpe engine; Precious Metals and Palladium were secondary return sources, while Bond provided the clearest drawdown protection.
+- Natural Gas was the main sample-period drag and USD had no role under the current zero-currency-slot rule; removal findings remain sensitivity evidence rather than optimization instructions.
+- Completed the Bond Anchor vs Category Balanced comparison with fixed IEF and two predefined Alpha-sleeve ranking rules.
+- Bond Anchor Global Top4 lowered drawdown but reduced CAGR/Sharpe; adding a two-Commodity cap restored Sharpe to 0.80 but did not dominate Category Balanced across all metrics.
+- Concluded that a fixed risk anchor cannot replace category concentration control; future sizing research should separate the Bond anchor from Alpha-sleeve risk limits.
+- Completed the Original 12 ETF category-allocation comparison across free Top5, 3-1-1, 2-2-1, and 1-3-1 structures.
+- Original Top5 outperformed every fixed allocation and averaged 2.20 Equity, 1.60 Commodity, and 1.20 Bond slots; 2-2-1 was the nearest fixed structure.
+- Exact 2-2-1 occurred in only 6.51% of months, confirming that dynamic category rotation rather than a stable mechanical allocation explains much of Original 12's success.
 
 ## Current Direction
 

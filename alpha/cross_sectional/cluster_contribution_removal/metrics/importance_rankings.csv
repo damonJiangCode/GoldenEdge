@@ -1,0 +1,25 @@
+Dimension,Rank,Cluster,Scenario,Impact
+CAGR Impact,1,Equity,Remove Equity,0.05080525763455079
+CAGR Impact,2,Precious Metals,Remove Precious Metals,0.025673360001166934
+CAGR Impact,3,Palladium,Remove Palladium,0.019981171242130502
+CAGR Impact,4,Bond,Remove Bond,0.00185727252755008
+CAGR Impact,5,US Dollar,Remove USD,0.0
+CAGR Impact,6,Energy / Broad Commodity,Remove Energy,-0.0021403862807540808
+CAGR Impact,7,Agriculture,Remove Agriculture,-0.003705485501483974
+CAGR Impact,8,Natural Gas,Remove Natural Gas,-0.016749637701342523
+Sharpe Impact,1,Equity,Remove Equity,0.27815755896924954
+Sharpe Impact,2,Precious Metals,Remove Precious Metals,0.18501628361223343
+Sharpe Impact,3,Palladium,Remove Palladium,0.06866190579118958
+Sharpe Impact,4,Bond,Remove Bond,0.008752421504424679
+Sharpe Impact,5,US Dollar,Remove USD,0.0
+Sharpe Impact,6,Agriculture,Remove Agriculture,-0.009372591758820548
+Sharpe Impact,7,Energy / Broad Commodity,Remove Energy,-0.019368958340309272
+Sharpe Impact,8,Natural Gas,Remove Natural Gas,-0.24366657708951045
+Risk Impact,1,Bond,Remove Bond,0.007366312015787968
+Risk Impact,2,Precious Metals,Remove Precious Metals,0.0026768628999084276
+Risk Impact,3,Energy / Broad Commodity,Remove Energy,0.0
+Risk Impact,4,Natural Gas,Remove Natural Gas,0.0
+Risk Impact,5,US Dollar,Remove USD,0.0
+Risk Impact,6,Agriculture,Remove Agriculture,-0.005205102398698536
+Risk Impact,7,Equity,Remove Equity,-0.03737836603280642
+Risk Impact,8,Palladium,Remove Palladium,-0.044241759215825405

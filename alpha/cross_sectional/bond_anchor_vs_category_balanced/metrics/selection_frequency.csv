@@ -1,0 +1,28 @@
+Strategy,ETF,Selection Count,Selection Percent
+Representative Category Balanced,SPY,116,1.0
+Representative Category Balanced,XLU,116,1.0
+Representative Category Balanced,DBA,35,0.3017241379310345
+Representative Category Balanced,DBC,43,0.3706896551724138
+Representative Category Balanced,GLD,64,0.5517241379310345
+Representative Category Balanced,PALL,57,0.49137931034482757
+Representative Category Balanced,UNG,33,0.28448275862068967
+Representative Category Balanced,IEF,116,1.0
+Representative Category Balanced,UUP,0,0.0
+Bond Anchor Global Top4,SPY,90,0.7758620689655172
+Bond Anchor Global Top4,XLU,64,0.5517241379310345
+Bond Anchor Global Top4,DBA,51,0.4396551724137931
+Bond Anchor Global Top4,DBC,49,0.4224137931034483
+Bond Anchor Global Top4,GLD,70,0.603448275862069
+Bond Anchor Global Top4,PALL,64,0.5517241379310345
+Bond Anchor Global Top4,UNG,34,0.29310344827586204
+Bond Anchor Global Top4,IEF,116,1.0
+Bond Anchor Global Top4,UUP,42,0.3620689655172414
+Bond Anchor Commodity Cap,SPY,99,0.853448275862069
+Bond Anchor Commodity Cap,XLU,85,0.7327586206896551
+Bond Anchor Commodity Cap,DBA,34,0.29310344827586204
+Bond Anchor Commodity Cap,DBC,38,0.3275862068965517
+Bond Anchor Commodity Cap,GLD,63,0.5431034482758621
+Bond Anchor Commodity Cap,PALL,55,0.47413793103448276
+Bond Anchor Commodity Cap,UNG,33,0.28448275862068967
+Bond Anchor Commodity Cap,IEF,116,1.0
+Bond Anchor Commodity Cap,UUP,57,0.49137931034482757
