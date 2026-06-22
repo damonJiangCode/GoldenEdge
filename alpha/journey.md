@@ -66,6 +66,24 @@
 - Original Top5 outperformed every fixed allocation and averaged 2.20 Equity, 1.60 Commodity, and 1.20 Bond slots; 2-2-1 was the nearest fixed structure.
 - Exact 2-2-1 occurred in only 6.51% of months, confirming that dynamic category rotation rather than a stable mechanical allocation explains much of Original 12's success.
 
+## 2026-06-22
+- Completed the first fixed-signal position-sizing test on Original 12 ETF Top5.
+- Inverse Volatility preserved CAGR near 10.3% while raising Sharpe from 0.81 to 0.97 and improving MaxDD from -29.06% to -17.22%.
+- Rank Weight reduced Sharpe and increased volatility; Rank x Inverse Vol delivered only partial risk improvement.
+- Identified Inverse Volatility as the strongest in-sample sizing candidate for chronological out-of-sample validation, without changing the Alpha signal.
+- Completed the fixed MA200 x Inverse Vol interaction test using both Cash and Reweight implementations.
+- MA200 Cash reduced Equal Weight drawdown but did not improve Sharpe; MA200 Reweight materially worsened both EW and IV variants.
+- Inverse Volatility alone remained superior to every MA200 combination, providing no evidence of incremental MA/IV complementarity in the current framework.
+- Completed Inverse Volatility window robustness testing from 21 through 252 trading days.
+- All ten windows formed one stable plateau with only 0.034 Sharpe range, 0.30 percentage-point CAGR range, and 1.51 percentage-point MaxDD range.
+- Confirmed that IV improvement comes from a stable risk-balancing mechanism: Rank1 assets were consistently more volatile and downweighted across every window, with no isolated parameter spike.
+- Completed the fixed Inverse Vol versus Inverse Variance position-sizing comparison.
+- Inverse Variance reduced volatility further but increased HHI from 0.286 to 0.419, cut effective positions to 3.07, and shifted roughly 40% of ex-ante risk to Bonds.
+- The additional 0.008 Sharpe came with a 0.70 percentage-point CAGR loss and slightly worse MaxDD, supporting Inverse Vol as the better risk/return balance.
+- Completed the fixed Correlation-Aware Inverse Vol position-sizing test on Original 12 ETF Top5.
+- The adjustment lowered weighted pairwise correlation from 0.372 to 0.308, but Sharpe slipped from 0.965 to 0.958 and MaxDD worsened from -17.22% to -17.96%.
+- Concluded that the simple average-correlation penalty adds no incremental value beyond Inverse Vol in this universe; lower measured correlation alone did not improve realized risk-adjusted performance.
+
 ## Current Direction
 
 - Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection.
