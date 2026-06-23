@@ -1,0 +1,15 @@
+Regime Set,Regime,Contribution To Total Return,Contribution Percent
+SPY Trend Regime,SPY Bull Regime,1.9453097257813503,1.0478551669648093
+SPY Trend Regime,SPY Bear Regime,-0.08884159248380219,-0.0478551669648094
+SPY Return Regime,Strong Equity Regime,1.5453191947134948,0.832397371652496
+SPY Return Regime,Neutral Equity Regime,0.3131693833020951,0.16869095552199356
+SPY Return Regime,Weak Equity Regime,-0.002020444718041664,-0.0010883271744895793
+Commodity Regime,Commodity Bull Regime,0.8613731361766852,0.4639848757579656
+Commodity Regime,Commodity Neutral Regime,0.9809034914372055,0.528370766965376
+Commodity Regime,Commodity Bear Regime,0.014191505683657561,0.007644357276658407
+Bond Stress Regime,Bond Bull Regime,0.5033433470887385,0.2711295378901419
+Bond Stress Regime,Bond Neutral Regime,1.1783365766091483,0.6347195276205092
+Bond Stress Regime,Bond Bear Regime,0.17478820959966143,0.09415093448934897
+Realized Volatility Regime,Low Volatility Regime,0.35176097742276063,0.18947859708097756
+Realized Volatility Regime,Medium Volatility Regime,0.906629324513356,0.48836244924008326
+Realized Volatility Regime,High Volatility Regime,0.5980778313614314,0.32215895367893915

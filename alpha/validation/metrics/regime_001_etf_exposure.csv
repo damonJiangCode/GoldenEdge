@@ -1,0 +1,169 @@
+Regime Set,Regime,ETF,Asset Class,Average Weight
+SPY Trend Regime,SPY Bull Regime,SPY,Equity,0.16858811905369553
+SPY Trend Regime,SPY Bull Regime,QQQ,Equity,0.13890084641067196
+SPY Trend Regime,SPY Bull Regime,IWM,Equity,0.09903883705612929
+SPY Trend Regime,SPY Bull Regime,EFA,Equity,0.09569676197486542
+SPY Trend Regime,SPY Bull Regime,GLD,Commodity,0.07966195846184985
+SPY Trend Regime,SPY Bull Regime,SLV,Commodity,0.051587740164547105
+SPY Trend Regime,SPY Bull Regime,USO,Commodity,0.04320501186547179
+SPY Trend Regime,SPY Bull Regime,DBA,Commodity,0.06440809797040942
+SPY Trend Regime,SPY Bull Regime,TLT,Bond,0.058455574490333985
+SPY Trend Regime,SPY Bull Regime,IEF,Bond,0.062391021171171866
+SPY Trend Regime,SPY Bull Regime,SHY,Bond,0.06059153922120865
+SPY Trend Regime,SPY Bull Regime,LQD,Bond,0.07747449215964516
+SPY Trend Regime,SPY Bear Regime,SPY,Equity,0.025231735804224054
+SPY Trend Regime,SPY Bear Regime,QQQ,Equity,0.02518846094604748
+SPY Trend Regime,SPY Bear Regime,IWM,Equity,0.018018910281876882
+SPY Trend Regime,SPY Bear Regime,EFA,Equity,0.006123163449786111
+SPY Trend Regime,SPY Bear Regime,GLD,Commodity,0.07751685020860344
+SPY Trend Regime,SPY Bear Regime,SLV,Commodity,0.036488910983976185
+SPY Trend Regime,SPY Bear Regime,USO,Commodity,0.029245144393950213
+SPY Trend Regime,SPY Bear Regime,DBA,Commodity,0.04830710347921001
+SPY Trend Regime,SPY Bear Regime,TLT,Bond,0.05512364680020942
+SPY Trend Regime,SPY Bear Regime,IEF,Bond,0.18514461890910924
+SPY Trend Regime,SPY Bear Regime,SHY,Bond,0.4118320161504129
+SPY Trend Regime,SPY Bear Regime,LQD,Bond,0.08177943859259401
+SPY Return Regime,Strong Equity Regime,SPY,Equity,0.2102663104467675
+SPY Return Regime,Strong Equity Regime,QQQ,Equity,0.17215156841660967
+SPY Return Regime,Strong Equity Regime,IWM,Equity,0.12662278815010788
+SPY Return Regime,Strong Equity Regime,EFA,Equity,0.11763736166647767
+SPY Return Regime,Strong Equity Regime,GLD,Commodity,0.0777679950717746
+SPY Return Regime,Strong Equity Regime,SLV,Commodity,0.059968547547605715
+SPY Return Regime,Strong Equity Regime,USO,Commodity,0.05759653393882568
+SPY Return Regime,Strong Equity Regime,DBA,Commodity,0.07746880235476221
+SPY Return Regime,Strong Equity Regime,TLT,Bond,0.03148370797908182
+SPY Return Regime,Strong Equity Regime,IEF,Bond,0.01863357565524341
+SPY Return Regime,Strong Equity Regime,SHY,Bond,0.02140435152390579
+SPY Return Regime,Strong Equity Regime,LQD,Bond,0.028998457248837997
+SPY Return Regime,Neutral Equity Regime,SPY,Equity,0.10726564704859323
+SPY Return Regime,Neutral Equity Regime,QQQ,Equity,0.09075066563718878
+SPY Return Regime,Neutral Equity Regime,IWM,Equity,0.062223618435408426
+SPY Return Regime,Neutral Equity Regime,EFA,Equity,0.05936197876081393
+SPY Return Regime,Neutral Equity Regime,GLD,Commodity,0.08177982338365196
+SPY Return Regime,Neutral Equity Regime,SLV,Commodity,0.04360898731650245
+SPY Return Regime,Neutral Equity Regime,USO,Commodity,0.030681124620534687
+SPY Return Regime,Neutral Equity Regime,DBA,Commodity,0.05283845230091789
+SPY Return Regime,Neutral Equity Regime,TLT,Bond,0.07348731274649982
+SPY Return Regime,Neutral Equity Regime,IEF,Bond,0.12055785562665958
+SPY Return Regime,Neutral Equity Regime,SHY,Bond,0.16659195564209084
+SPY Return Regime,Neutral Equity Regime,LQD,Bond,0.1108525784811384
+SPY Return Regime,Weak Equity Regime,SPY,Equity,0.007668621095169567
+SPY Return Regime,Weak Equity Regime,QQQ,Equity,0.00620875648973576
+SPY Return Regime,Weak Equity Regime,IWM,Equity,0.004930813253547072
+SPY Return Regime,Weak Equity Regime,EFA,Equity,0.0001430791358114152
+SPY Return Regime,Weak Equity Regime,GLD,Commodity,0.06531764807200069
+SPY Return Regime,Weak Equity Regime,SLV,Commodity,0.026413146983572167
+SPY Return Regime,Weak Equity Regime,USO,Commodity,0.027819791678132793
+SPY Return Regime,Weak Equity Regime,DBA,Commodity,0.04135778221692517
+SPY Return Regime,Weak Equity Regime,TLT,Bond,0.06434249630448652
+SPY Return Regime,Weak Equity Regime,IEF,Bond,0.19550269169624443
+SPY Return Regime,Weak Equity Regime,SHY,Bond,0.49240615811698946
+SPY Return Regime,Weak Equity Regime,LQD,Bond,0.06788901495738495
+Commodity Regime,Commodity Bull Regime,SPY,Equity,0.15621954990970469
+Commodity Regime,Commodity Bull Regime,QQQ,Equity,0.11711227964651864
+Commodity Regime,Commodity Bull Regime,IWM,Equity,0.09942278780518914
+Commodity Regime,Commodity Bull Regime,EFA,Equity,0.09952927618227549
+Commodity Regime,Commodity Bull Regime,GLD,Commodity,0.08128152088921171
+Commodity Regime,Commodity Bull Regime,SLV,Commodity,0.07056937216523183
+Commodity Regime,Commodity Bull Regime,USO,Commodity,0.07295521019956173
+Commodity Regime,Commodity Bull Regime,DBA,Commodity,0.11879216584079819
+Commodity Regime,Commodity Bull Regime,TLT,Bond,0.025303423464729937
+Commodity Regime,Commodity Bull Regime,IEF,Bond,0.07039233449088647
+Commodity Regime,Commodity Bull Regime,SHY,Bond,0.07486878681990806
+Commodity Regime,Commodity Bull Regime,LQD,Bond,0.013553292585984068
+Commodity Regime,Commodity Neutral Regime,SPY,Equity,0.15559406268631681
+Commodity Regime,Commodity Neutral Regime,QQQ,Equity,0.12872996165269707
+Commodity Regime,Commodity Neutral Regime,IWM,Equity,0.08831205302618815
+Commodity Regime,Commodity Neutral Regime,EFA,Equity,0.08389392462284506
+Commodity Regime,Commodity Neutral Regime,GLD,Commodity,0.08737203809898429
+Commodity Regime,Commodity Neutral Regime,SLV,Commodity,0.0495102227065754
+Commodity Regime,Commodity Neutral Regime,USO,Commodity,0.03758548613631363
+Commodity Regime,Commodity Neutral Regime,DBA,Commodity,0.054303878024413506
+Commodity Regime,Commodity Neutral Regime,TLT,Bond,0.05919837123794212
+Commodity Regime,Commodity Neutral Regime,IEF,Bond,0.0638846615987094
+Commodity Regime,Commodity Neutral Regime,SHY,Bond,0.09664910219026342
+Commodity Regime,Commodity Neutral Regime,LQD,Bond,0.09496623801875109
+Commodity Regime,Commodity Bear Regime,SPY,Equity,0.052521587664738384
+Commodity Regime,Commodity Bear Regime,QQQ,Equity,0.06289072251506211
+Commodity Regime,Commodity Bear Regime,IWM,Equity,0.034304308486841094
+Commodity Regime,Commodity Bear Regime,EFA,Equity,0.019249525133298574
+Commodity Regime,Commodity Bear Regime,GLD,Commodity,0.0496903505752831
+Commodity Regime,Commodity Bear Regime,SLV,Commodity,0.01373086299322304
+Commodity Regime,Commodity Bear Regime,USO,Commodity,0.003446330904721126
+Commodity Regime,Commodity Bear Regime,DBA,Commodity,0.0027049489444252476
+Commodity Regime,Commodity Bear Regime,TLT,Bond,0.0976255556119801
+Commodity Regime,Commodity Bear Regime,IEF,Bond,0.19672339361236232
+Commodity Regime,Commodity Bear Regime,SHY,Bond,0.35329765292441806
+Commodity Regime,Commodity Bear Regime,LQD,Bond,0.1138147606336469
+Bond Stress Regime,Bond Bull Regime,SPY,Equity,0.04776773580204223
+Bond Stress Regime,Bond Bull Regime,QQQ,Equity,0.0592186903448983
+Bond Stress Regime,Bond Bull Regime,IWM,Equity,0.01852854063764206
+Bond Stress Regime,Bond Bull Regime,EFA,Equity,0.016584716386394725
+Bond Stress Regime,Bond Bull Regime,GLD,Commodity,0.09106762956116729
+Bond Stress Regime,Bond Bull Regime,SLV,Commodity,0.03276966938430581
+Bond Stress Regime,Bond Bull Regime,USO,Commodity,0.01363888248289341
+Bond Stress Regime,Bond Bull Regime,DBA,Commodity,0.024162360957465656
+Bond Stress Regime,Bond Bull Regime,TLT,Bond,0.12690388829480245
+Bond Stress Regime,Bond Bull Regime,IEF,Bond,0.23211714150775684
+Bond Stress Regime,Bond Bull Regime,SHY,Bond,0.13965013456462455
+Bond Stress Regime,Bond Bull Regime,LQD,Bond,0.19759061007600662
+Bond Stress Regime,Bond Neutral Regime,SPY,Equity,0.1624096244624761
+Bond Stress Regime,Bond Neutral Regime,QQQ,Equity,0.13098009204564534
+Bond Stress Regime,Bond Neutral Regime,IWM,Equity,0.09599420522320669
+Bond Stress Regime,Bond Neutral Regime,EFA,Equity,0.08898781653090423
+Bond Stress Regime,Bond Neutral Regime,GLD,Commodity,0.08264729350964664
+Bond Stress Regime,Bond Neutral Regime,SLV,Commodity,0.053747781383089104
+Bond Stress Regime,Bond Neutral Regime,USO,Commodity,0.04310766563535515
+Bond Stress Regime,Bond Neutral Regime,DBA,Commodity,0.05979356137125501
+Bond Stress Regime,Bond Neutral Regime,TLT,Bond,0.048583460004759646
+Bond Stress Regime,Bond Neutral Regime,IEF,Bond,0.06069455133326009
+Bond Stress Regime,Bond Neutral Regime,SHY,Bond,0.11578490612390925
+Bond Stress Regime,Bond Neutral Regime,LQD,Bond,0.05726904237649271
+Bond Stress Regime,Bond Bear Regime,SPY,Equity,0.13385704638602086
+Bond Stress Regime,Bond Bear Regime,QQQ,Equity,0.10316228737070916
+Bond Stress Regime,Bond Bear Regime,IWM,Equity,0.09662512788694927
+Bond Stress Regime,Bond Bear Regime,EFA,Equity,0.0969541861834892
+Bond Stress Regime,Bond Bear Regime,GLD,Commodity,0.03919861787821211
+Bond Stress Regime,Bond Bear Regime,SLV,Commodity,0.041000465379261775
+Bond Stress Regime,Bond Bear Regime,USO,Commodity,0.06576552608180103
+Bond Stress Regime,Bond Bear Regime,DBA,Commodity,0.1274065803659751
+Bond Stress Regime,Bond Bear Regime,TLT,Bond,0.0
+Bond Stress Regime,Bond Bear Regime,IEF,Bond,0.02616842126872898
+Bond Stress Regime,Bond Bear Regime,SHY,Bond,0.2586977541416298
+Bond Stress Regime,Bond Bear Regime,LQD,Bond,0.011163987057222734
+Realized Volatility Regime,Low Volatility Regime,SPY,Equity,0.1913795663863288
+Realized Volatility Regime,Low Volatility Regime,QQQ,Equity,0.15664764749394997
+Realized Volatility Regime,Low Volatility Regime,IWM,Equity,0.10602809715877921
+Realized Volatility Regime,Low Volatility Regime,EFA,Equity,0.11118248738562517
+Realized Volatility Regime,Low Volatility Regime,GLD,Commodity,0.05264682546762093
+Realized Volatility Regime,Low Volatility Regime,SLV,Commodity,0.03708787663530966
+Realized Volatility Regime,Low Volatility Regime,USO,Commodity,0.04865570816055381
+Realized Volatility Regime,Low Volatility Regime,DBA,Commodity,0.06337540444052078
+Realized Volatility Regime,Low Volatility Regime,TLT,Bond,0.057513540218902676
+Realized Volatility Regime,Low Volatility Regime,IEF,Bond,0.02570714444959538
+Realized Volatility Regime,Low Volatility Regime,SHY,Bond,0.07356468627681481
+Realized Volatility Regime,Low Volatility Regime,LQD,Bond,0.0762110159259988
+Realized Volatility Regime,Medium Volatility Regime,SPY,Equity,0.17790724417051973
+Realized Volatility Regime,Medium Volatility Regime,QQQ,Equity,0.12931220171194555
+Realized Volatility Regime,Medium Volatility Regime,IWM,Equity,0.09846972654112432
+Realized Volatility Regime,Medium Volatility Regime,EFA,Equity,0.07790466782430884
+Realized Volatility Regime,Medium Volatility Regime,GLD,Commodity,0.09167598936801823
+Realized Volatility Regime,Medium Volatility Regime,SLV,Commodity,0.0565974249306578
+Realized Volatility Regime,Medium Volatility Regime,USO,Commodity,0.03806779976174803
+Realized Volatility Regime,Medium Volatility Regime,DBA,Commodity,0.07363705488873945
+Realized Volatility Regime,Medium Volatility Regime,TLT,Bond,0.0638048377571754
+Realized Volatility Regime,Medium Volatility Regime,IEF,Bond,0.07538231142467443
+Realized Volatility Regime,Medium Volatility Regime,SHY,Bond,0.03874436225448956
+Realized Volatility Regime,Medium Volatility Regime,LQD,Bond,0.0784963793665986
+Realized Volatility Regime,High Volatility Regime,SPY,Equity,0.043106568509683335
+Realized Volatility Regime,High Volatility Regime,QQQ,Equity,0.05666816307032121
+Realized Volatility Regime,High Volatility Regime,IWM,Equity,0.039844850194693124
+Realized Volatility Regime,High Volatility Regime,EFA,Equity,0.03964628104719505
+Realized Volatility Regime,High Volatility Regime,GLD,Commodity,0.09327380775614984
+Realized Volatility Regime,High Volatility Regime,SLV,Commodity,0.05124641920511043
+Realized Volatility Regime,High Volatility Regime,USO,Commodity,0.03379515544076469
+Realized Volatility Regime,High Volatility Regime,DBA,Commodity,0.04573036774899006
+Realized Volatility Regime,High Volatility Regime,TLT,Bond,0.051881607008320355
+Realized Volatility Regime,High Volatility Regime,IEF,Bond,0.16604951813538302
+Realized Volatility Regime,High Volatility Regime,SHY,Bond,0.29823641393386796
+Realized Volatility Regime,High Volatility Regime,LQD,Bond,0.08052084794952095

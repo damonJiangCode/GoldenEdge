@@ -1,0 +1,22 @@
+Method,Percentile,Final Wealth Multiple
+Return Shuffle,1%,5.769363630852834
+Return Shuffle,5%,5.769363630852847
+Return Shuffle,25%,5.769363630852865
+Return Shuffle,50%,5.769363630852878
+Return Shuffle,75%,5.76936363085289
+Return Shuffle,95%,5.769363630852909
+Return Shuffle,99%,5.769363630852921
+Block Monte Carlo,1%,2.131471744562368
+Block Monte Carlo,5%,2.8779625940369744
+Block Monte Carlo,25%,4.289956729819258
+Block Monte Carlo,50%,5.713543071929038
+Block Monte Carlo,75%,7.4298352187954535
+Block Monte Carlo,95%,11.174398297268866
+Block Monte Carlo,99%,14.676669625056231
+Stationary Bootstrap,1%,2.297797195428531
+Stationary Bootstrap,5%,2.981235866719612
+Stationary Bootstrap,25%,4.412974769108387
+Stationary Bootstrap,50%,5.79813154127049
+Stationary Bootstrap,75%,7.543733628499667
+Stationary Bootstrap,95%,11.245969971920069
+Stationary Bootstrap,99%,14.817749304413113

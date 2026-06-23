@@ -1,0 +1,28 @@
+Method,Metric,Probability
+Return Shuffle,CAGR > 0,1.0
+Return Shuffle,CAGR > 5%,1.0
+Return Shuffle,CAGR > 10%,1.0
+Return Shuffle,Sharpe > 0.5,1.0
+Return Shuffle,Sharpe > 1.0,0.0
+Return Shuffle,MaxDD worse than -20%,0.4825
+Return Shuffle,MaxDD worse than -30%,0.0352
+Return Shuffle,MaxDD worse than -40%,0.0013
+Return Shuffle,MaxDD worse than -50%,0.0
+Block Monte Carlo,CAGR > 0,1.0
+Block Monte Carlo,CAGR > 5%,0.9804
+Block Monte Carlo,CAGR > 10%,0.5384
+Block Monte Carlo,Sharpe > 0.5,0.9809
+Block Monte Carlo,Sharpe > 1.0,0.4396
+Block Monte Carlo,MaxDD worse than -20%,0.4395
+Block Monte Carlo,MaxDD worse than -30%,0.0422
+Block Monte Carlo,MaxDD worse than -40%,0.0033
+Block Monte Carlo,MaxDD worse than -50%,0.0002
+Stationary Bootstrap,CAGR > 0,1.0
+Stationary Bootstrap,CAGR > 5%,0.9866
+Stationary Bootstrap,CAGR > 10%,0.5528
+Stationary Bootstrap,Sharpe > 0.5,0.987
+Stationary Bootstrap,Sharpe > 1.0,0.4436
+Stationary Bootstrap,MaxDD worse than -20%,0.3857
+Stationary Bootstrap,MaxDD worse than -30%,0.0269
+Stationary Bootstrap,MaxDD worse than -40%,0.001
+Stationary Bootstrap,MaxDD worse than -50%,0.0

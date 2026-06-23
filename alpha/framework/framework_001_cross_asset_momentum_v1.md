@@ -2,14 +2,15 @@
 
 ## Document Status
 
-- Status: Research framework milestone
+- Status: Validated Research Framework
 - Version: V1
 - Framework date: 2026-06-22
+- Validation date: 2026-06-23
 - Evidence basis: Existing repository studies only
 - Scope: Long-only cross-asset ETF momentum
-- Readiness: Research champion; not yet validated for live deployment
+- Readiness: Validated research framework; ready for live-readiness assessment, not live deployment
 
-This document archives the first formal Alpha Framework in the project. It consolidates completed research and does not introduce a new experiment, parameter search, or unverified conclusion.
+This document archives the first formal Alpha Framework in the project. It consolidates completed research and validation records and does not introduce a new experiment, parameter search, or unverified conclusion.
 
 ## Objective
 
@@ -188,20 +189,27 @@ The following ideas are excluded from Framework V1 because current evidence reje
 
 These figures include the study's 5 bps turnover cost model. They are in-sample research results, not a forecast and not evidence of live execution readiness.
 
+## Validation Status
+
+Framework 001 has completed the first formal validation sequence without changing rules or optimizing parameters:
+
+- **Walk-Forward Validation:** positive CAGR and Sharpe in all four sequential segments; MaxDD improved versus Equal Weight Top5 in every segment.
+- **Regime Analysis:** return contribution is strongest in favorable risk-asset regimes, while SPY Bear and Weak Equity regimes show materially shallower drawdown than SPY and Equal Weight Top5.
+- **Bootstrap Validation:** monthly-block bootstrap showed 100.00% positive-CAGR probability, 2.27% probability of MaxDD worse than -30%, and persistent Sharpe/MaxDD advantage versus Equal Weight Top5.
+- **Monte Carlo Path Simulation:** path randomization confirmed sequence risk mainly affects drawdown, while long-run wealth remains stable across shuffle, fixed-block, and stationary-bootstrap simulations.
+
+The validation sequence supports promoting Framework 001 from research champion to **Validated Research Framework**. This is not live-trading approval.
+
 ## Open Questions
 
-The next research phase should validate the frozen Framework V1 rather than tune it:
+The next phase should focus on live-readiness and implementation risk:
 
-- **Chronological Out-of-Sample Validation:** freeze the framework and evaluate genuinely unseen periods.
-- **Walk-Forward Validation:** measure stability across sequential training and evaluation windows without repeated parameter selection.
-- **Regime Analysis:** identify where returns and drawdowns arise across inflation, deflation, crisis, recovery, and sustained bull markets.
-- **Bootstrap:** use block-based resampling suitable for serially dependent returns and monthly rebalancing.
-- **Monte Carlo:** stress return ordering, drawdown paths, and concentration without changing the framework rules.
 - **Transaction-Cost Stress:** test whether the conclusion survives wider spreads, slippage, and implementation shortfall.
 - **Data and Instrument Robustness:** address ETF inception, survivorship, adjusted-price quality, and investability constraints.
 - **Live Trading Readiness:** define broker execution, order timing, fractional-share constraints, cash handling, monitoring, reconciliation, and failure procedures.
+- **Paper Trading Simulation:** rehearse signal generation, order creation, fills, logging, and exception handling before any live deployment.
 
-Until these questions are completed, Framework 001 should be treated as the project's current research champion and frozen reference specification, not as a production strategy.
+Until these questions are completed, Framework 001 should be treated as a validated research framework and frozen reference specification, not as a production strategy.
 
 ## Evidence Index
 
@@ -217,3 +225,4 @@ This framework is consolidated from the following existing research records:
 - MA200 studies: [`research/cross_sectional/ma200_filtered_momentum/summary.md`](../research/cross_sectional/ma200_filtered_momentum/summary.md), [`research/cross_sectional/ma_filter_robustness/summary.md`](../research/cross_sectional/ma_filter_robustness/summary.md), [`research/cross_sectional/ma200_inverse_vol_interaction/summary.md`](../research/cross_sectional/ma200_inverse_vol_interaction/summary.md)
 - Position sizing: [`research/cross_sectional/position_sizing_test_a/summary.md`](../research/cross_sectional/position_sizing_test_a/summary.md), [`research/cross_sectional/inverse_vol_window_robustness/summary.md`](../research/cross_sectional/inverse_vol_window_robustness/summary.md), [`research/cross_sectional/position_sizing_test_b/summary.md`](../research/cross_sectional/position_sizing_test_b/summary.md)
 - Correlation-aware sizing: [`research/cross_sectional/correlation_aware_position_sizing/summary.md`](../research/cross_sectional/correlation_aware_position_sizing/summary.md)
+- Formal validation: [`validation/walk_forward_001_cross_asset_momentum_v1.md`](../validation/walk_forward_001_cross_asset_momentum_v1.md), [`validation/regime_001_cross_asset_momentum_v1.md`](../validation/regime_001_cross_asset_momentum_v1.md), [`validation/bootstrap_001_cross_asset_momentum_v1.md`](../validation/bootstrap_001_cross_asset_momentum_v1.md), [`validation/monte_carlo_001_cross_asset_momentum_v1.md`](../validation/monte_carlo_001_cross_asset_momentum_v1.md)
