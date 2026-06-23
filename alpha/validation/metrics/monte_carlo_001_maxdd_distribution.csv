@@ -1,0 +1,16 @@
+Method,Percentile,MaxDD
+Return Shuffle,1% Worst,-0.34280197903601556
+Return Shuffle,5% Worst,-0.2872198688517577
+Return Shuffle,Median,-0.19797045627308046
+Return Shuffle,95%,-0.14585584508876456
+Return Shuffle,99%,-0.13122983803699345
+Block Monte Carlo,1% Worst,-0.3556997931299738
+Block Monte Carlo,5% Worst,-0.29336432853094185
+Block Monte Carlo,Median,-0.19271021749262607
+Block Monte Carlo,95%,-0.13484652192149602
+Block Monte Carlo,99%,-0.11722371757496894
+Stationary Bootstrap,1% Worst,-0.336575082216069
+Stationary Bootstrap,5% Worst,-0.27661377965892836
+Stationary Bootstrap,Median,-0.18776379284989658
+Stationary Bootstrap,95%,-0.1326174049678875
+Stationary Bootstrap,99%,-0.11622458225210475

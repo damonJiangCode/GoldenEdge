@@ -1,0 +1,9 @@
+Method,Strategy,P(CAGR > 0),P(Sharpe > 0),P(MaxDD worse than -20%),P(MaxDD worse than -30%),P(MaxDD worse than -40%)
+Daily Bootstrap,Inverse Vol Framework,1.0,1.0,0.5068,0.0616,0.0042
+Daily Bootstrap,Equal Weight Top5 Momentum,0.9995,0.9998,0.8702,0.2989,0.051
+Daily Bootstrap,SPY Buy & Hold,0.9903,0.9972,0.9998,0.9071,0.5152
+Daily Bootstrap,Original 12 Equal Weight,0.9891,0.9941,0.79,0.2431,0.0473
+Monthly-Block Bootstrap,Inverse Vol Framework,1.0,1.0,0.3613,0.0227,0.0011
+Monthly-Block Bootstrap,Equal Weight Top5 Momentum,0.9999,1.0,0.8204,0.2055,0.0291
+Monthly-Block Bootstrap,SPY Buy & Hold,0.9983,0.9999,0.9974,0.8354,0.3425
+Monthly-Block Bootstrap,Original 12 Equal Weight,0.9902,0.9957,0.8438,0.2928,0.059

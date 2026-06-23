@@ -89,9 +89,22 @@
 - The framework produced positive CAGR and positive Sharpe in all four walk-forward segments from 2008-2025.
 - Inverse Vol improved MaxDD versus Equal Weight Top5 in 4/4 segments and improved Sharpe in 3/4 segments; WF3 was nearly flat but slightly lower on Sharpe.
 - Confirmed that Framework 001 is robust enough to proceed to deeper validation, with the caveat that it is mainly a Sharpe and drawdown framework rather than a SPY-CAGR maximizer.
+- Completed Regime Analysis 001 for Framework 001 using objective SPY trend, SPY return, Commodity proxy, Bond stress, and realized-volatility regimes.
+- Found that absolute return is concentrated in favorable risk-asset regimes such as SPY Bull and Strong Equity, while Commodity Bull and Bond Bull regimes also show strong Sharpe.
+- Confirmed that the framework is defensive but not immune in SPY Bear and Weak Equity regimes; the main benefit there is materially shallower drawdown versus SPY and Equal Weight Top5.
+- High-volatility regimes show clear inverse-vol sizing value, with better Sharpe and much shallower MaxDD versus Equal Weight Top5.
+- Completed Bootstrap Validation 001 using 10,000 daily bootstrap simulations and 10,000 monthly-block bootstrap simulations on Framework 001 daily net returns.
+- Monthly-block bootstrap showed Framework 001 P(CAGR > 0) = 100.00%, P(Sharpe > 0) = 100.00%, and P(MaxDD worse than -30%) = 2.27%.
+- Framework 001 preserved its Sharpe and MaxDD advantages over Equal Weight Top5 with 96.36% and 97.12% monthly-block probabilities.
+- Bootstrap confirmed the recurring thesis: the framework is statistically credible for Sharpe and drawdown control, but not a reliable SPY-CAGR maximizer.
+- Completed Monte Carlo Path Simulation 001 using return shuffle, fixed 21-day block sampling, and stationary bootstrap with average block length 21 trading days.
+- Confirmed that sequence risk mainly affects drawdown rather than terminal wealth under pure return shuffling; shuffled paths kept CAGR fixed near 10.29% while MaxDD varied widely.
+- Fixed block Monte Carlo was the strictest tail-risk method, with P(MaxDD worse than -30%) = 4.22% and a worst path near flat final wealth.
+- Stationary bootstrap showed P(CAGR > 0) = 100.00%, P(CAGR > 5%) = 98.66%, and 5th percentile final wealth = 2.98x.
+- Marked Framework 001 as a Validated Research Framework and opened `alpha/live_readiness/` for pre-live assessment work.
 
 ## Current Direction
 
 - Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection and Inverse Volatility sizing.
-- Next validation priorities: regime analysis, bootstrap, Monte Carlo, transaction-cost stress, and paper trading simulation.
+- Next validation priorities: transaction-cost stress, paper trading simulation, execution assumptions, monitoring, reconciliation, and live failure procedures.
 - MA200 remains a candidate risk-control module rather than a standalone Alpha source.

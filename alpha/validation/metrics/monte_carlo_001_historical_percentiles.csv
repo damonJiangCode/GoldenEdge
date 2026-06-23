@@ -1,0 +1,13 @@
+Method,Metric,Historical Percentile
+Return Shuffle,CAGR,0.5445
+Return Shuffle,Sharpe,0.9999
+Return Shuffle,MaxDD,0.7556
+Return Shuffle,Final Wealth,0.4502
+Block Monte Carlo,CAGR,0.5096
+Block Monte Carlo,Sharpe,0.5021
+Block Monte Carlo,MaxDD,0.6813
+Block Monte Carlo,Final Wealth,0.5096
+Stationary Bootstrap,CAGR,0.496
+Stationary Bootstrap,Sharpe,0.492
+Stationary Bootstrap,MaxDD,0.6647
+Stationary Bootstrap,Final Wealth,0.496

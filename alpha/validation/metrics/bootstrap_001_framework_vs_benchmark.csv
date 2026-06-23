@@ -1,0 +1,7 @@
+Method,Comparison,P(Framework Sharpe > Benchmark Sharpe),P(Framework MaxDD shallower than Benchmark MaxDD),P(Framework CAGR > Benchmark CAGR)
+Daily Bootstrap,Framework vs Equal Weight Top5,0.9604,0.9713,0.4999
+Daily Bootstrap,Framework vs SPY,0.8913,0.9904,0.4045
+Daily Bootstrap,Framework vs Original 12 Equal Weight,0.9595,0.7601,0.9629
+Monthly-Block Bootstrap,Framework vs Equal Weight Top5,0.9636,0.9712,0.4857
+Monthly-Block Bootstrap,Framework vs SPY,0.931,0.9953,0.3657
+Monthly-Block Bootstrap,Framework vs Original 12 Equal Weight,0.9759,0.8899,0.9849
