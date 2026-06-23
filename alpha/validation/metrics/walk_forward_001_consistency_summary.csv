@@ -1,0 +1,9 @@
+Metric,Value
+Number of segments,4.0
+Segments with positive CAGR,4.0
+Segments with Sharpe > 0,4.0
+Segments where IV Sharpe > EW Top5 Sharpe,3.0
+Segments where IV MaxDD is shallower than EW Top5 MaxDD,4.0
+Worst segment CAGR,0.08221416671386184
+Worst segment Sharpe,0.7880741553644574
+Worst segment MaxDD,-0.1721795680650019

@@ -22,7 +22,7 @@
 - Completed top-contributor removal tests. Removing QQQ/GLD/SLV reduced CAGR and Sharpe but did not eliminate the strategy.
 - Completed asset-class removal analysis. Equity is the main return engine, Commodity enhances return, and Bond is the main risk diversifier.
 - Completed Bottom Loser Continuation validation. Evidence primarily supports Winner Continuation, with limited relative loser weakness and no robust evidence that losers continue falling.
-- Refactored the research repository into `cross_sectional/`, `time_series/`, and `shared/`, with a consistent `scripts/`, `summary.md`, `metrics/`, and `outputs/` convention for every study.
+- Refactored the research repository into `research/cross_sectional/`, `research/time_series/`, and `shared/`, with a consistent `scripts/`, `summary.md`, `metrics/`, and `outputs/` convention for every study.
 - Moved the unified ETF data store and download pipeline to `shared/data/`; research folders continue to reference one shared data source.
 
 ## 2026-06-19
@@ -84,8 +84,14 @@
 - The adjustment lowered weighted pairwise correlation from 0.372 to 0.308, but Sharpe slipped from 0.965 to 0.958 and MaxDD worsened from -17.22% to -17.96%.
 - Concluded that the simple average-correlation penalty adds no incremental value beyond Inverse Vol in this universe; lower measured correlation alone did not improve realized risk-adjusted performance.
 
+## 2026-06-23
+- Completed Walk Forward Validation 001 for Framework 001 using the frozen Original 12 ETF, mom_126, Top5, 126-day Inverse Vol framework.
+- The framework produced positive CAGR and positive Sharpe in all four walk-forward segments from 2008-2025.
+- Inverse Vol improved MaxDD versus Equal Weight Top5 in 4/4 segments and improved Sharpe in 3/4 segments; WF3 was nearly flat but slightly lower on Sharpe.
+- Confirmed that Framework 001 is robust enough to proceed to deeper validation, with the caveat that it is mainly a Sharpe and drawdown framework rather than a SPY-CAGR maximizer.
+
 ## Current Direction
 
-- Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection.
-- Next validation priorities: chronological out-of-sample testing, walk-forward stability, transaction-cost stress, and market-regime analysis.
+- Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection and Inverse Volatility sizing.
+- Next validation priorities: regime analysis, bootstrap, Monte Carlo, transaction-cost stress, and paper trading simulation.
 - MA200 remains a candidate risk-control module rather than a standalone Alpha source.
