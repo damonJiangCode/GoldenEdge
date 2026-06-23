@@ -16,7 +16,7 @@ from shared.loaders.prices import load_mixed_asset_prices
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_ROOT = PROJECT_ROOT / "shared" / "data"
-STUDY_DIR = PROJECT_ROOT / "cross_sectional" / "mixed_asset_momentum"
+STUDY_DIR = PROJECT_ROOT / "research" / "cross_sectional" / "mixed_asset_momentum"
 METRICS_DIR = STUDY_DIR / "metrics"
 OUTPUTS_DIR = STUDY_DIR / "outputs"
 SUMMARY_PATH = STUDY_DIR / "summary.md"
