@@ -103,6 +103,13 @@
 - Stationary bootstrap showed P(CAGR > 0) = 100.00%, P(CAGR > 5%) = 98.66%, and 5th percentile final wealth = 2.98x.
 - Marked Framework 001 as a Validated Research Framework and opened `alpha/live_readiness/` for pre-live assessment work.
 
+## 2026-06-24
+- Completed Cross-Sectional Loser Effect 001 under `alpha/research/cross_sectional/down/loser_effect_001`.
+- Tested Original 12 ETF monthly worst-ranked assets using fixed 126-day lookback and forward horizons of 5, 10, 20, 40, 60, and 120 trading days.
+- Found no statistically robust standalone loser continuation: 7/18 aggregate cells had negative mean forward returns, but 0/18 were significantly negative.
+- Longer horizons showed more mean-reversion behavior, especially Top3/Top5 Losers at FR60 and FR120.
+- Classified the loser side as mixed behavior rather than a validated short-side alpha direction; loser research remains useful for future long-short spread diagnostics.
+
 ## Current Direction
 
 - Primary research candidate: Mixed Asset medium-term Cross-Sectional Momentum with monthly Top5 selection and Inverse Volatility sizing.
