@@ -109,6 +109,11 @@
 - Found no statistically robust standalone loser continuation: 7/18 aggregate cells had negative mean forward returns, but 0/18 were significantly negative.
 - Longer horizons showed more mean-reversion behavior, especially Top3/Top5 Losers at FR60 and FR120.
 - Classified the loser side as mixed behavior rather than a validated short-side alpha direction; loser research remains useful for future long-short spread diagnostics.
+- Updated Original 12 ETF shared data through 2026-06-23 by re-downloading and overwriting the 12 source CSVs to keep adjusted-close history internally consistent.
+- Completed Out-of-Sample 001 for Framework 001 using 2026 data only, with 2025 data used solely for warm-up and first-position initialization.
+- Framework 001 returned 9.34% from 2026-01-02 through 2026-06-23, with Sharpe 1.11 and MaxDD -8.66%.
+- The framework improved Sharpe and MaxDD versus Equal Weight Top5, slightly exceeded SPY CAGR/MaxDD, but lagged Original 12 Equal Weight on Sharpe and drawdown so far.
+- Classified 2026 OOS behavior as normal but partial-year: no framework break, no rule changes, and no parameter changes.
 
 ## Current Direction
 
