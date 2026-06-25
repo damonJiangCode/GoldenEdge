@@ -114,6 +114,18 @@
 - Framework 001 returned 9.34% from 2026-01-02 through 2026-06-23, with Sharpe 1.11 and MaxDD -8.66%.
 - The framework improved Sharpe and MaxDD versus Equal Weight Top5, slightly exceeded SPY CAGR/MaxDD, but lagged Original 12 Equal Weight on Sharpe and drawdown so far.
 - Classified 2026 OOS behavior as normal but partial-year: no framework break, no rule changes, and no parameter changes.
+- Completed Research 002 on Absolute Momentum integration for Framework001 using the fixed 126-day return > 0 filter.
+- Found that filtering before ranking and filtering after ranking are equivalent when both use the same 126-day return signal.
+- Reweight variants raised CAGR to 10.74% but worsened Sharpe and MaxDD, while Cash variants only marginally improved Sharpe from 0.965 to 0.969 with unchanged MaxDD.
+- Classified Absolute Momentum Cash as a weak candidate for future validation, not a confirmed Framework002 upgrade.
+- Completed Research 003 on Framework001 holding count using fixed Top3, Top5, and Top7 comparisons.
+- Top3 raised concentration and volatility, reducing Sharpe to 0.70 and worsening MaxDD to -30.15%.
+- Top7 reduced volatility and produced the shallowest MaxDD at -15.24%, but diluted momentum enough to cut CAGR to 6.73%.
+- Confirmed Top5 as the best overall balance with CAGR 10.32%, Sharpe 0.97, and MaxDD -17.22%; Framework001 remains unchanged.
+- Completed Research 004 on a predefined 63/126/252 average-rank momentum ensemble while keeping Top5 and 126-day inverse-volatility sizing unchanged.
+- Ensemble improved MaxDD from -17.22% to -14.06%, but slightly reduced CAGR from 10.32% to 10.21% and Sharpe from 0.965 to 0.957.
+- Average selection overlap with the 126-day baseline was 4.35/5, with identical Top5 selections in 94 months.
+- Classified the ensemble as a drawdown-improvement candidate, but not strong enough to replace the simpler 126-day signal in Framework001.
 
 ## Current Direction
 
