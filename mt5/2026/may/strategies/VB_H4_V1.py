@@ -1,3 +1,4 @@
+import os
 from datetime import datetime, timezone
 import time
 from pathlib import Path
@@ -9,8 +10,8 @@ import requests  # type: ignore
 
 # META DATA
 METADATA = {
-    "account": REDACTED,
-    "password": "REDACTED",
+    "account": int(os.getenv("MT5_ACCOUNT", "0")),
+    "password": os.getenv("MT5_PASSWORD", ""),
     "server": "TradeMaxGlobal-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
     "log_file": f"VB_H4_V1_{datetime.now().strftime('%m-%d__%H-%M')}.log",
@@ -42,8 +43,8 @@ PARAMETERS = {
 
 # TELEGRAM
 TELEGRAM = {
-    "BOT_TOKEN": "REDACTED",
-    "CHAT_ID": "REDACTED",
+    "BOT_TOKEN": os.getenv("TELEGRAM_BOT_TOKEN", ""),
+    "CHAT_ID": os.getenv("TELEGRAM_CHAT_ID", ""),
 }
 TELEGRAM["API"] = f"https://api.telegram.org/bot{TELEGRAM['BOT_TOKEN']}"
 

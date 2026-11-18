@@ -1,3 +1,4 @@
+import os
 import MetaTrader5 as mt5  
 import pandas as pd  
 from datetime import datetime
@@ -22,8 +23,8 @@ OUTPUT_FILE = OUTPUT_DIR / OUTPUT_NAME
 
 # CONFIGURATION
 METADATA = {
-    "account": REDACTED,
-    "password": "REDACTED",
+    "account": int(os.getenv("MT5_ACCOUNT", "0")),
+    "password": os.getenv("MT5_PASSWORD", ""),
     "server": "MetaQuotes-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_1\\terminal64.exe",
 }

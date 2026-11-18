@@ -8,8 +8,8 @@ from pathlib import Path
 
 # META DATA
 METADATA = {
-    "account": REDACTED,
-    "password": "REDACTED",
+    "account": int(os.getenv("MT5_ACCOUNT", "0")),
+    "password": os.getenv("MT5_PASSWORD", ""),
     "server": "MetaQuotes-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_4\\terminal64.exe",
     "log_file": f"RSI_BB_ATR_RANGE_{datetime.now().strftime('%m-%d__%H-%M')}.log",

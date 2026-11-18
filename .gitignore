@@ -8,3 +8,8 @@ run.ps1
 utlib/instructions.txt
 __pycache__/
 *.py[cod]
+
+# secrets & runtime logs
+.env
+*.log
+**/logs/

@@ -10,15 +10,15 @@ from pathlib import Path
 
 
 # ==== Telegram configurations ====
-TELEGRAM_BOT_TOKEN = "REDACTED"
-TELEGRAM_CHAT_ID = "REDACTED"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}"
 last_update_id = -1
 is_mt5_trading_enabled = True
 
 # ==== MT5 configurations ====
-ACCOUNT = REDACTED
-PASSWORD = "REDACTED"
+ACCOUNT = int(os.getenv("MT5_ACCOUNT", "0"))
+PASSWORD = os.getenv("MT5_PASSWORD", "")
 SERVER = "MetaQuotes-Demo"
 MT5_PATH = r"C:\\Program Files\\MetaTrader 5_5\\terminal64.exe"
 RET_CODE_MESSAGES = {

@@ -1,4 +1,5 @@
 from __future__ import annotations
+import os
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
@@ -21,8 +22,8 @@ REPO_ROOT = STRATEGY_DIR.parents[3]
 LOG_DIR = JUN_DIR / "logs"
 
 METADATA = {
-    "account": REDACTED,
-    "password": "REDACTED",
+    "account": int(os.getenv("MT5_ACCOUNT", "0")),
+    "password": os.getenv("MT5_PASSWORD", ""),
     "server": "TradeMaxGlobal-Demo",
     "path": r"C:\\Program Files\\MetaTrader 5_3\\terminal64.exe",
     "log_file": f"REGIME_BASELINE_{datetime.now().strftime('%m-%d__%H-%M')}.log",
@@ -41,8 +42,8 @@ PARAMETERS = {
 }
 
 TELEGRAM = {
-    "BOT_TOKEN": "REDACTED",
-    "CHAT_ID": "REDACTED",
+    "BOT_TOKEN": os.getenv("TELEGRAM_BOT_TOKEN", ""),
+    "CHAT_ID": os.getenv("TELEGRAM_CHAT_ID", ""),
 }
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
